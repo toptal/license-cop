@@ -2,6 +2,8 @@
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 [packages]
+requests = "*"
+
 
 
 
@@ -9,4 +11,7 @@ verify_ssl = true
 
 [dev-packages]
 pytest = "*"
+vcrpy = "*"
+
+
 
