@@ -4,7 +4,7 @@ A nifty script that fetches the licenses for all your third-party libraries.
 
 ![Dog cop meme](meme.jpg)
 
-## System requirements
+## System Requirements
 
 You will need:
 
@@ -26,3 +26,10 @@ following environment variables, otherwise Pipenv will not work:
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 ```
+
+## Running Tests
+
+We use [pytest](https://docs.pytest.org/en/latest/) to execute our automated
+test suite, which is installed by Pipenv.
+
+To run the entire test suite, just invoke the `./test.sh` script.
