@@ -1,5 +1,6 @@
 import vcr
 import pytest
+import requests
 
 from app.ruby_package_repository import *
 
@@ -52,20 +53,21 @@ def test_fetch_latest_version(repository):
 
 @vcr.use_cassette('cassettes/ruby_package_version_name_does_not_exist.yaml')
 def test_fetch_version_when_name_does_not_exist(repository):
-    version = repository.fetch_version('foobar666', '666')
-    assert version is None
+    with pytest.raises(requests.exceptions.HTTPError):
+        repository.fetch_version('foobar666', '666')
 
 
 @vcr.use_cassette('cassettes/ruby_package_version_number_does_not_exist.yaml')
 def test_fetch_version_when_version_does_not_exist(repository):
-    version = repository.fetch_version('rails', '666')
-    assert version is None
+    with pytest.raises(Exception) as e:
+        repository.fetch_version('rails', '666')
+    assert str(e.value) == 'Could not find Ruby gem rails:666'
 
 
 @vcr.use_cassette('cassettes/ruby_package_version_name_does_not_exist.yaml')
 def test_fetch_latest_version_when_name_does_not_exist(repository):
-    version = repository.fetch_latest_version('foobar666')
-    assert version is None
+    with pytest.raises(requests.exceptions.HTTPError):
+        repository.fetch_latest_version('foobar666')
 
 
 @vcr.use_cassette('cassettes/ruby_package_version_without_license.yaml')

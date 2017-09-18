@@ -8,32 +8,27 @@ class RubyPackageRepository(PackageRepository):
 
     def fetch_version(self, name, number):
         package_data = self.__fetch_package_data(name)
-        if package_data is None:
-            return None
         version_data = self.__fetch_version_data(name, number)
-        if version_data is None:
-            return None
         return self.__build_version(name, number, package_data, version_data)
 
     def fetch_latest_version(self, name):
         package_data = self.__fetch_package_data(name)
-        if package_data is None:
-            return None
         number = package_data['version']
         version_data = self.__fetch_version_data(name, number)
         return self.__build_version(name, number, package_data, version_data)
 
     def __fetch_package_data(self, name):
         response = self._session.get(GEMS_URI.format(name))
-        if response.ok:
-            return response.json()
+        response.raise_for_status()
+        return response.json()
 
-    def __fetch_version_data(self, name, version):
+    def __fetch_version_data(self, name, number):
         response = self._session.get(VERSIONS_URI.format(name))
-        if response.ok:
-            for data in response.json():
-                if data['number'] == version:
-                    return data
+        response.raise_for_status()
+        for data in response.json():
+            if data['number'] == number:
+                return data
+        raise Exception('Could not find Ruby gem {0}:{1}'.format(name, number))
 
     def __extract_dependencies(self, data):
         dependencies = []
