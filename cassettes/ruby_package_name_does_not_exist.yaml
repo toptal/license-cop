@@ -12,7 +12,7 @@ interactions:
     body: {string: This rubygem could not be found.}
     headers:
       Accept-Ranges: [bytes]
-      Age: ['0']
+      Age: ['93']
       Cache-Control: [no-cache]
       Connection: [keep-alive]
       Content-Length: ['32']
@@ -22,19 +22,19 @@ interactions:
           connect-src https://s3-us-west-2.amazonaws.com/rubygems-dumps/; frame-src
           https://ghbtns.com']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 15 Sep 2017 06:36:16 GMT']
+      Date: ['Mon, 18 Sep 2017 04:14:03 GMT']
       Server: [RubyGems.org]
       Strict-Transport-Security: [max-age=0]
       Vary: [Accept-Encoding]
       Via: [1.1 varnish]
-      X-Cache: [MISS]
-      X-Cache-Hits: ['0']
+      X-Cache: [HIT]
+      X-Cache-Hits: ['1']
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [31bb2c5e-92b0-4cb2-bf4b-c8c089393a9e]
-      X-Runtime: ['0.005323']
-      X-Served-By: [cache-gru17125-GRU]
-      X-Timer: ['S1505457376.126826,VS0,VE194']
+      X-Request-Id: [002b6cb5-eff0-41ed-b36f-8de423239b68]
+      X-Runtime: ['0.003456']
+      X-Served-By: [cache-gru17126-GRU]
+      X-Timer: ['S1505708043.031087,VS0,VE0']
       X-XSS-Protection: [1; mode=block]
     status: {code: 404, message: Not Found}
 version: 1
