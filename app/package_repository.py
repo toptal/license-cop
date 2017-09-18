@@ -1,7 +1,7 @@
 import requests
 
 
-class BaseLicenseFetcher:
+class PackageRepository:
     def __init__(self, http_compression=True):
         self._session = requests.Session()
         if not http_compression:

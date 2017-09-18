@@ -1,11 +1,11 @@
 import vcr
 import pytest
 
-from app.ruby_license_fetcher import RubyLicenseFetcher
+from app.ruby_package_repository import *
 
 
 @pytest.fixture
-def fetcher(): return RubyLicenseFetcher(http_compression=False)
+def fetcher(): return RubyPackageRepository(http_compression=False)
 
 
 @vcr.use_cassette('cassettes/ruby_gem_has_one_license.yaml')
