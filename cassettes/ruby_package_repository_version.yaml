@@ -7,24 +7,76 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.18.4]
     method: GET
+    uri: https://rubygems.org/api/v1/gems/rails.json
+  response:
+    body: {string: '{"name":"rails","downloads":107972984,"version":"5.1.4","version_downloads":84198,"platform":"ruby","authors":"David
+        Heinemeier Hansson","info":"Ruby on Rails is a full-stack web framework optimized
+        for programmer happiness and sustainable productivity. It encourages beautiful
+        code by favoring convention over configuration.","licenses":["MIT"],"metadata":{},"sha":"5cc2192045678789e5e7b289476af8bc0a79210ee6713886200cb303ed6f98b8","project_uri":"https://rubygems.org/gems/rails","gem_uri":"https://rubygems.org/gems/rails-5.1.4.gem","homepage_uri":"http://rubyonrails.org","wiki_uri":"","documentation_uri":"http://api.rubyonrails.org","mailing_list_uri":"http://groups.google.com/group/rubyonrails-talk","source_code_uri":"http://github.com/rails/rails","bug_tracker_uri":"http://github.com/rails/rails/issues","changelog_uri":null,"dependencies":{"development":[],"runtime":[{"name":"actioncable","requirements":"=
+        5.1.4"},{"name":"actionmailer","requirements":"= 5.1.4"},{"name":"actionpack","requirements":"=
+        5.1.4"},{"name":"actionview","requirements":"= 5.1.4"},{"name":"activejob","requirements":"=
+        5.1.4"},{"name":"activemodel","requirements":"= 5.1.4"},{"name":"activerecord","requirements":"=
+        5.1.4"},{"name":"activesupport","requirements":"= 5.1.4"},{"name":"bundler","requirements":"\u003e=
+        1.3.0"},{"name":"railties","requirements":"= 5.1.4"},{"name":"sprockets-rails","requirements":"\u003e=
+        2.0.0"}]}}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Methods: [GET]
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Max-Age: ['1728000']
+      Age: ['0']
+      Cache-Control: ['max-age=0, private, must-revalidate']
+      Connection: [keep-alive]
+      Content-Security-Policy: ['default-src ''self''; script-src ''self'' https://secure.gaug.es;
+          style-src ''self'' https://fonts.googleapis.com; img-src ''self'' https://secure.gaug.es
+          https://gravatar.com https://secure.gravatar.com; font-src ''self'' https://fonts.gstatic.com;
+          connect-src https://s3-us-west-2.amazonaws.com/rubygems-dumps/; frame-src
+          https://ghbtns.com']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Mon, 18 Sep 2017 05:53:57 GMT']
+      ETag: ['"684d4e034c0a5791412c55440a123f5c"']
+      Server: [RubyGems.org]
+      Strict-Transport-Security: [max-age=0]
+      Vary: ['Accept-Encoding,Fastly-SSL']
+      Via: [1.1 varnish]
+      X-Backend: ['F_Rails 54.186.104.15:443']
+      X-Cache: [MISS]
+      X-Cache-Hits: ['0']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [0348c97a-f95f-4fa0-8549-656f366879bd]
+      X-Runtime: ['0.017985']
+      X-Served-By: [cache-gru17125-GRU]
+      X-Timer: ['S1505714038.692965,VS0,VE203']
+      X-UA-Compatible: ['IE=Edge,chrome=1']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
     uri: https://rubygems.org/api/v1/versions/rails.json
   response:
     body: {string: '[{"authors":"David Heinemeier Hansson","built_at":"2017-09-08T00:00:00.000Z","created_at":"2017-09-08T00:52:07.791Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":83765,"metadata":{},"number":"5.1.4","summary":"Full-stack
+        over configuration.","downloads_count":84167,"metadata":{},"number":"5.1.4","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"5cc2192045678789e5e7b289476af8bc0a79210ee6713886200cb303ed6f98b8"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-08-24T00:00:00.000Z","created_at":"2017-08-24T19:37:37.728Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":2231,"metadata":{},"number":"5.1.4.rc1","summary":"Full-stack
+        over configuration.","downloads_count":2235,"metadata":{},"number":"5.1.4.rc1","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":[],"sha":"c8134e1efcc5f17ac28927a76423146f3a7baf618d97a5d752d09edf4c5eeb7c"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-08-03T00:00:00.000Z","created_at":"2017-08-03T19:15:15.370Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":337812,"metadata":{},"number":"5.1.3","summary":"Full-stack
+        over configuration.","downloads_count":337939,"metadata":{},"number":"5.1.3","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"28c73c5aba5ce71d4bcd6af273be3e565ab7a49abd22fd511dc79fcb36329d19"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-07-31T00:00:00.000Z","created_at":"2017-07-31T19:12:53.241Z","description":"Ruby
@@ -48,7 +100,7 @@ interactions:
         Heinemeier Hansson","built_at":"2017-06-26T00:00:00.000Z","created_at":"2017-06-26T21:51:41.161Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":468484,"metadata":{},"number":"5.1.2","summary":"Full-stack
+        over configuration.","downloads_count":468555,"metadata":{},"number":"5.1.2","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"4ee8ea1a2760cafbd70fbc878fd0c4ad2fec105082719c818934b39fd4ff0e9b"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-06-20T00:00:00.000Z","created_at":"2017-06-20T17:03:49.322Z","description":"Ruby
@@ -60,13 +112,13 @@ interactions:
         Heinemeier Hansson","built_at":"2017-05-12T00:00:00.000Z","created_at":"2017-05-12T20:11:39.743Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":489167,"metadata":{},"number":"5.1.1","summary":"Full-stack
+        over configuration.","downloads_count":489199,"metadata":{},"number":"5.1.1","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"175e79dd0770470e4ff7055989ae136fee9cbb4b3145bcb00a5c4783e941aed7"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-04-27T00:00:00.000Z","created_at":"2017-04-27T21:00:47.670Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":171933,"metadata":{},"number":"5.1.0","summary":"Full-stack
+        over configuration.","downloads_count":171950,"metadata":{},"number":"5.1.0","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"d843e2d2c61987f1fb7877cd98bc5d1f2704ad4eee9adf9c1455858769b6ec32"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-04-21T00:00:00.000Z","created_at":"2017-04-21T01:31:13.442Z","description":"Ruby
@@ -90,7 +142,7 @@ interactions:
         Heinemeier Hansson","built_at":"2017-09-08T00:00:00.000Z","created_at":"2017-09-08T00:47:42.201Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":23050,"metadata":{},"number":"5.0.6","summary":"Full-stack
+        over configuration.","downloads_count":23142,"metadata":{},"number":"5.0.6","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"a86663f8d0d4dd0cb07272394a6d0c7d250be617c6efe77edd2ebc9c9d139746"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-08-24T00:00:00.000Z","created_at":"2017-08-24T19:21:20.599Z","description":"Ruby
@@ -102,7 +154,7 @@ interactions:
         Heinemeier Hansson","built_at":"2017-07-31T00:00:00.000Z","created_at":"2017-07-31T19:05:29.060Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":149735,"metadata":{},"number":"5.0.5","summary":"Full-stack
+        over configuration.","downloads_count":149801,"metadata":{},"number":"5.0.5","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"15e2c25872e5dc2069b0d7bf4535eb4887e77d49166ccfba5871a904c18957b1"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-07-25T00:00:00.000Z","created_at":"2017-07-25T20:26:10.369Z","description":"Ruby
@@ -120,7 +172,7 @@ interactions:
         Heinemeier Hansson","built_at":"2017-06-19T00:00:00.000Z","created_at":"2017-06-19T21:58:56.501Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":243813,"metadata":{},"number":"5.0.4","summary":"Full-stack
+        over configuration.","downloads_count":243871,"metadata":{},"number":"5.0.4","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"956e9bd0acf86701b139432eb3c9e6bc6d2f51e7cccec9a5dcf9c7d3cb14d87d"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-06-14T00:00:00.000Z","created_at":"2017-06-14T20:49:29.610Z","description":"Ruby
@@ -132,13 +184,13 @@ interactions:
         Heinemeier Hansson","built_at":"2017-05-12T00:00:00.000Z","created_at":"2017-05-12T20:08:33.226Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":343148,"metadata":{},"number":"5.0.3","summary":"Full-stack
+        over configuration.","downloads_count":343171,"metadata":{},"number":"5.0.3","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"fba5f99999f1b01367010f0d85a28b5d992d5866766fbc3d485bce8e14915f2b"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-03-01T00:00:00.000Z","created_at":"2017-03-01T23:13:53.219Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":1237580,"metadata":{},"number":"5.0.2","summary":"Full-stack
+        over configuration.","downloads_count":1237656,"metadata":{},"number":"5.0.2","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"49c6c350286e2f177df5c2214f9668f0866d87411ab5a63e051e25eb64453f70"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-02-25T00:00:00.000Z","created_at":"2017-02-25T00:55:48.618Z","description":"Ruby
@@ -150,7 +202,7 @@ interactions:
         Heinemeier Hansson","built_at":"2016-12-21T00:00:00.000Z","created_at":"2016-12-21T00:07:46.527Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":1232260,"metadata":{},"number":"5.0.1","summary":"Full-stack
+        over configuration.","downloads_count":1232319,"metadata":{},"number":"5.0.1","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"3f9acd2c489c9eed11ff200a37cb32784cf15ddc5e561657d50b847ced3c361d"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-12-09T00:00:00.000Z","created_at":"2016-12-09T19:13:12.953Z","description":"Ruby
@@ -168,19 +220,19 @@ interactions:
         Heinemeier Hansson","built_at":"2016-08-10T00:00:00.000Z","created_at":"2016-08-11T17:35:27.196Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":1675180,"metadata":{},"number":"5.0.0.1","summary":"Full-stack
+        over configuration.","downloads_count":1675219,"metadata":{},"number":"5.0.0.1","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"b51cf641a376e16166587cfe41f46e37bd3a510c13a8b79f0682985c1603e4d8"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-06-30T00:00:00.000Z","created_at":"2016-06-30T21:32:45.255Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":601131,"metadata":{},"number":"5.0.0","summary":"Full-stack
+        over configuration.","downloads_count":601162,"metadata":{},"number":"5.0.0","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"2e7be2dd453d6ccd7561cc21c5d60a4042f7b3455325f1d9e8dc3d7f79e2d5ef"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-06-22T00:00:00.000Z","created_at":"2016-06-22T20:03:41.237Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":35930,"metadata":{},"number":"5.0.0.rc2","summary":"Full-stack
+        over configuration.","downloads_count":35931,"metadata":{},"number":"5.0.0.rc2","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":[],"sha":"e2a9e578d1c86057028a91de3e0d1084479f22833ce361a9317597e0c8631c19"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-05-06T00:00:00.000Z","created_at":"2016-05-06T21:57:46.793Z","description":"Ruby
@@ -228,7 +280,7 @@ interactions:
         Heinemeier Hansson","built_at":"2017-06-26T00:00:00.000Z","created_at":"2017-06-26T21:30:56.077Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":427573,"metadata":{},"number":"4.2.9","summary":"Full-stack
+        over configuration.","downloads_count":427800,"metadata":{},"number":"4.2.9","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"eaaa4c1cafb3f9bd9f8dd58dd142522e398a5ad0d03abf2e3de364a63d4b7d1a"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-06-19T00:00:00.000Z","created_at":"2017-06-19T22:28:22.086Z","description":"Ruby
@@ -246,7 +298,7 @@ interactions:
         Heinemeier Hansson","built_at":"2017-02-21T00:00:00.000Z","created_at":"2017-02-21T16:08:53.220Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":1825325,"metadata":{},"number":"4.2.8","summary":"Full-stack
+        over configuration.","downloads_count":1825444,"metadata":{},"number":"4.2.8","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"90552099146e785e66cf90ede51dca0c1814440026eef2f8c418aebffc70eb36"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-02-10T00:00:00.000Z","created_at":"2017-02-10T02:46:51.222Z","description":"Ruby
@@ -258,13 +310,13 @@ interactions:
         Heinemeier Hansson","built_at":"2016-08-10T00:00:00.000Z","created_at":"2016-08-11T17:35:16.160Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":4170442,"metadata":{},"number":"4.2.7.1","summary":"Full-stack
+        over configuration.","downloads_count":4170576,"metadata":{},"number":"4.2.7.1","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"9414bef218365d548c5e42080e70364ad2809d6263856f591ba2e393a3096dab"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-07-13T00:00:00.000Z","created_at":"2016-07-13T02:57:05.601Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":506878,"metadata":{},"number":"4.2.7","summary":"Full-stack
+        over configuration.","downloads_count":506907,"metadata":{},"number":"4.2.7","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"76dbbc22ac7fc20edb2fb653a9517590537073ef57669c2da8f3d32ff1767c0c"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-07-01T00:00:00.000Z","created_at":"2016-07-01T00:33:36.424Z","description":"Ruby
@@ -276,7 +328,7 @@ interactions:
         Heinemeier Hansson","built_at":"2016-03-07T00:00:00.000Z","created_at":"2016-03-07T22:33:22.563Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":3184184,"metadata":{},"number":"4.2.6","summary":"Full-stack
+        over configuration.","downloads_count":3184286,"metadata":{},"number":"4.2.6","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"a199258c0d2bae09993a6932c49df254fd66428899d1823b8c5285de02e5bc33"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-03-01T00:00:00.000Z","created_at":"2016-03-01T18:37:54.172Z","description":"Ruby
@@ -288,19 +340,19 @@ interactions:
         Heinemeier Hansson","built_at":"2016-02-29T00:00:00.000Z","created_at":"2016-02-29T19:17:10.564Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":802799,"metadata":{},"number":"4.2.5.2","summary":"Full-stack
+        over configuration.","downloads_count":802817,"metadata":{},"number":"4.2.5.2","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"aa93c1b9eb8b535eee58280504e30237f88217699fe9bb016e458e5122eefa2e"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-01-25T00:00:00.000Z","created_at":"2016-01-25T19:26:41.410Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":1242750,"metadata":{},"number":"4.2.5.1","summary":"Full-stack
+        over configuration.","downloads_count":1242771,"metadata":{},"number":"4.2.5.1","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"0bb3795fc6d971522f2681dea730b49be880809012939a8a570bd086b583460e"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-11-12T00:00:00.000Z","created_at":"2015-11-12T17:06:55.226Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":1624299,"metadata":{},"number":"4.2.5","summary":"Full-stack
+        over configuration.","downloads_count":1624382,"metadata":{},"number":"4.2.5","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"6248f75d4ecbcaa004166aa2b1484f87b7e956013853e905e49b68f29397b565"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-11-05T00:00:00.000Z","created_at":"2015-11-05T03:02:33.340Z","description":"Ruby
@@ -318,7 +370,7 @@ interactions:
         Heinemeier Hansson","built_at":"2015-08-24T00:00:00.000Z","created_at":"2015-08-24T18:27:12.716Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":2004048,"metadata":{},"number":"4.2.4","summary":"Full-stack
+        over configuration.","downloads_count":2004074,"metadata":{},"number":"4.2.4","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"1c33dd7c280d1c5dc4235509f774d673bac1d3f2e8c53b1353f677e7578ffc5a"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-08-14T00:00:00.000Z","created_at":"2015-08-14T15:21:15.566Z","description":"Ruby
@@ -330,7 +382,7 @@ interactions:
         Heinemeier Hansson","built_at":"2015-06-25T00:00:00.000Z","created_at":"2015-06-25T21:30:57.890Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":1633596,"metadata":{},"number":"4.2.3","summary":"Full-stack
+        over configuration.","downloads_count":1633631,"metadata":{},"number":"4.2.3","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"6a19b32cf92ac3585c2effbf5356642e84349abf55ee82827313ec3c7ce34870"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-06-22T00:00:00.000Z","created_at":"2015-06-22T14:23:17.788Z","description":"Ruby
@@ -342,13 +394,13 @@ interactions:
         Heinemeier Hansson","built_at":"2015-06-16T00:00:00.000Z","created_at":"2015-06-16T18:03:17.061Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":736626,"metadata":{},"number":"4.2.2","summary":"Full-stack
+        over configuration.","downloads_count":736629,"metadata":{},"number":"4.2.2","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"60826c698420631bd4b623c8eb305510a428e507c202885b4cc52551293901c1"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-03-19T00:00:00.000Z","created_at":"2015-03-19T16:42:01.191Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":2037814,"metadata":{},"number":"4.2.1","summary":"Full-stack
+        over configuration.","downloads_count":2037836,"metadata":{},"number":"4.2.1","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"6b5f7d3a4a9eb2f181bab4a657315dbe08d0be218eae6017bef8a45dede211cb"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-03-12T00:00:00.000Z","created_at":"2015-03-12T21:25:52.551Z","description":"Ruby
@@ -378,7 +430,7 @@ interactions:
         Heinemeier Hansson","built_at":"2014-12-20T00:00:00.000Z","created_at":"2014-12-20T00:15:37.476Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":21325835,"metadata":{},"number":"4.2.0","summary":"Full-stack
+        over configuration.","downloads_count":21328132,"metadata":{},"number":"4.2.0","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"d394a78b2237145fffff3b7556ae64006139a7d1c04bc66b0bd39bbd5e4d3088"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-12-13T00:00:00.000Z","created_at":"2014-12-13T02:58:44.762Z","description":"Ruby
@@ -426,7 +478,7 @@ interactions:
         Heinemeier Hansson","built_at":"2016-07-12T00:00:00.000Z","created_at":"2016-07-12T22:20:56.527Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":469978,"metadata":{},"number":"4.1.16","summary":"Full-stack
+        over configuration.","downloads_count":470008,"metadata":{},"number":"4.1.16","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"a19899f82c0a03a08cd2629636b75b582e0a64d908bda84c57e9cb70ac7adbd3"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-07-02T00:00:00.000Z","created_at":"2016-07-02T02:15:20.923Z","description":"Ruby
@@ -438,7 +490,7 @@ interactions:
         Heinemeier Hansson","built_at":"2016-03-07T00:00:00.000Z","created_at":"2016-03-07T22:37:14.594Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":306209,"metadata":{},"number":"4.1.15","summary":"Full-stack
+        over configuration.","downloads_count":306230,"metadata":{},"number":"4.1.15","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"9c94775ade272961c3bfae2a5a4ff2cddc319e48fd269d8e779240e2c94677d1"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-03-01T00:00:00.000Z","created_at":"2016-03-01T18:43:40.764Z","description":"Ruby
@@ -450,19 +502,19 @@ interactions:
         Heinemeier Hansson","built_at":"2016-02-29T00:00:00.000Z","created_at":"2016-02-29T19:19:55.523Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":256040,"metadata":{},"number":"4.1.14.2","summary":"Full-stack
+        over configuration.","downloads_count":256043,"metadata":{},"number":"4.1.14.2","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"e5ca9faf11ef90c3e17b7e116b9297fc479910b22ef0775e64aaddcb8779885b"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-01-25T00:00:00.000Z","created_at":"2016-01-25T19:26:27.339Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":173256,"metadata":{},"number":"4.1.14.1","summary":"Full-stack
+        over configuration.","downloads_count":173261,"metadata":{},"number":"4.1.14.1","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"bde7704f906e5cf7dd4b098231a6e6471ac1b13ce1ac4940a320144be37f778d"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-11-12T00:00:00.000Z","created_at":"2015-11-12T18:20:40.613Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":190873,"metadata":{},"number":"4.1.14","summary":"Full-stack
+        over configuration.","downloads_count":190874,"metadata":{},"number":"4.1.14","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"b617d83abc53f51a053a73678b6a5bc9357e6ae8348fadcc1461986b3deb59b9"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-11-05T00:00:00.000Z","created_at":"2015-11-05T02:55:44.276Z","description":"Ruby
@@ -480,7 +532,7 @@ interactions:
         Heinemeier Hansson","built_at":"2015-08-24T00:00:00.000Z","created_at":"2015-08-24T18:02:56.741Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":227952,"metadata":{},"number":"4.1.13","summary":"Full-stack
+        over configuration.","downloads_count":227954,"metadata":{},"number":"4.1.13","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"d11d1a3ca07f1494f2abb634677f390f897bb5ae4b818e1612aa6a6412837d1b"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-08-14T00:00:00.000Z","created_at":"2015-08-14T15:13:26.943Z","description":"Ruby
@@ -492,7 +544,7 @@ interactions:
         Heinemeier Hansson","built_at":"2015-06-25T00:00:00.000Z","created_at":"2015-06-25T21:26:08.544Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":258123,"metadata":{},"number":"4.1.12","summary":"Full-stack
+        over configuration.","downloads_count":258124,"metadata":{},"number":"4.1.12","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"bb45840dc30f8accb1c38170383f8407b851b6321e06693c9adad7279237564c"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-06-22T00:00:00.000Z","created_at":"2015-06-22T14:05:08.486Z","description":"Ruby
@@ -504,13 +556,13 @@ interactions:
         Heinemeier Hansson","built_at":"2015-06-16T00:00:00.000Z","created_at":"2015-06-16T18:00:13.043Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":231619,"metadata":{},"number":"4.1.11","summary":"Full-stack
+        over configuration.","downloads_count":231621,"metadata":{},"number":"4.1.11","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"eb7a9f8c5cb838e16f934e53f71f14e14ac2ef646939134a59eb65b3e209102b"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-03-19T00:00:00.000Z","created_at":"2015-03-19T16:50:27.388Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":348055,"metadata":{},"number":"4.1.10","summary":"Full-stack
+        over configuration.","downloads_count":348056,"metadata":{},"number":"4.1.10","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"9f81f8b716ba76ea768b1c0ed4a185a3f7647b384fc297c26c2b51be82856fd3"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-03-12T00:00:00.000Z","created_at":"2015-03-12T21:32:52.724Z","description":"Ruby
@@ -540,7 +592,7 @@ interactions:
         Heinemeier Hansson","built_at":"2015-01-06T00:00:00.000Z","created_at":"2015-01-06T20:04:31.185Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":411923,"metadata":{},"number":"4.1.9","summary":"Full-stack
+        over configuration.","downloads_count":411936,"metadata":{},"number":"4.1.9","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"19df2af2a3c6cd142714aca26a54e433bf39c20f82ac7b0fc7e1bcd38eed96d3"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-01-02T00:00:00.000Z","created_at":"2015-01-02T01:11:10.973Z","description":"Ruby
@@ -552,25 +604,25 @@ interactions:
         Heinemeier Hansson","built_at":"2014-11-16T00:00:00.000Z","created_at":"2014-11-17T16:01:13.385Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":909585,"metadata":{},"number":"4.1.8","summary":"Full-stack
+        over configuration.","downloads_count":909599,"metadata":{},"number":"4.1.8","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"20f4a46c30dac40585721caf3b4b1c961a3cf425fd1ccbc6109ccd6df723599d"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-11-19T00:00:00.000Z","created_at":"2014-11-19T19:12:12.692Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":17779,"metadata":{},"number":"4.1.7.1","summary":"Full-stack
+        over configuration.","downloads_count":17780,"metadata":{},"number":"4.1.7.1","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"cc9e81e9396ca0a4161798d349db181dde75f829c941a7ad7cebcb3c3bda8edd"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-10-29T00:00:00.000Z","created_at":"2014-10-30T18:37:49.213Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":411918,"metadata":{},"number":"4.1.7","summary":"Full-stack
+        over configuration.","downloads_count":411920,"metadata":{},"number":"4.1.7","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"20972f5ce418d5b938afa42680bcbe8c52770c0664429233fa0e567a25bd3515"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-09-11T00:00:00.000Z","created_at":"2014-09-11T17:26:04.576Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":892420,"metadata":{},"number":"4.1.6","summary":"Full-stack
+        over configuration.","downloads_count":892427,"metadata":{},"number":"4.1.6","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"f351c95673cb833652deeaab5c67998ab0af9ff3c89c585abe23dafa0648efa0"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-09-08T00:00:00.000Z","created_at":"2014-09-08T18:13:12.723Z","description":"Ruby
@@ -588,25 +640,25 @@ interactions:
         Heinemeier Hansson","built_at":"2014-08-18T00:00:00.000Z","created_at":"2014-08-18T17:01:03.727Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":1081141,"metadata":{},"number":"4.1.5","summary":"Full-stack
+        over configuration.","downloads_count":1081144,"metadata":{},"number":"4.1.5","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"47e2d4a43e1b9c238d8b7c51a6ccf0461ffd3e1b270dd6af02c42ed3f694438b"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-07-02T00:00:00.000Z","created_at":"2014-07-02T19:53:35.556Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":908241,"metadata":{},"number":"4.1.4","summary":"Full-stack
+        over configuration.","downloads_count":908249,"metadata":{},"number":"4.1.4","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"54272fde189892c5e55e53646b871236d8c513a438d38ad91b9d54d64453cf31"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-07-02T00:00:00.000Z","created_at":"2014-07-02T17:06:42.181Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":15050,"metadata":{},"number":"4.1.3","summary":"Full-stack
+        over configuration.","downloads_count":15051,"metadata":{},"number":"4.1.3","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"028ed6d06d8b8c0c32fc19aaa0cd1c73fe662e505180f26542fccda38ba84236"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-06-26T00:00:00.000Z","created_at":"2014-06-26T14:50:09.079Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":149070,"metadata":{},"number":"4.1.2","summary":"Full-stack
+        over configuration.","downloads_count":149071,"metadata":{},"number":"4.1.2","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"7797e5e3f1f917339ecaf2d85cb71e95fea40cd3f7e8f3c9c19c884d425b34fa"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-06-23T00:00:00.000Z","created_at":"2014-06-23T17:28:46.002Z","description":"Ruby
@@ -630,13 +682,13 @@ interactions:
         Heinemeier Hansson","built_at":"2014-05-06T00:00:00.000Z","created_at":"2014-05-06T16:11:31.458Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":994509,"metadata":{},"number":"4.1.1","summary":"Full-stack
+        over configuration.","downloads_count":994512,"metadata":{},"number":"4.1.1","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"602275642419e731637c91421cf498f2994c2d9f1b94f6c713f3b7b8757b2aa5"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-04-08T00:00:00.000Z","created_at":"2014-04-08T19:21:51.275Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":546596,"metadata":{},"number":"4.1.0","summary":"Full-stack
+        over configuration.","downloads_count":546608,"metadata":{},"number":"4.1.0","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"d2ce7d3965f8c5d4b9076012d52512022dc0b0a0e4a427d801e84db449e140bf"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-03-25T00:00:00.000Z","created_at":"2014-03-25T20:12:47.195Z","description":"Ruby
@@ -666,7 +718,7 @@ interactions:
         Heinemeier Hansson","built_at":"2015-01-06T00:00:00.000Z","created_at":"2015-01-06T20:08:59.935Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":827055,"metadata":{},"number":"4.0.13","summary":"Full-stack
+        over configuration.","downloads_count":827073,"metadata":{},"number":"4.0.13","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"d4b3ca8517b394459fd31773c5c6877b4aded8f2c84e6f5422061d231b2af9f6"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-01-02T00:00:00.000Z","created_at":"2015-01-02T00:54:54.587Z","description":"Ruby
@@ -678,25 +730,25 @@ interactions:
         Heinemeier Hansson","built_at":"2014-11-16T00:00:00.000Z","created_at":"2014-11-17T16:01:00.306Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":224413,"metadata":{},"number":"4.0.12","summary":"Full-stack
+        over configuration.","downloads_count":224415,"metadata":{},"number":"4.0.12","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"96f47a8a2f06df95c78ac3baea02c01eefbd214034a715055f67b193988c4aec"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-11-19T00:00:00.000Z","created_at":"2014-11-19T19:09:54.075Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":13740,"metadata":{},"number":"4.0.11.1","summary":"Full-stack
+        over configuration.","downloads_count":13741,"metadata":{},"number":"4.0.11.1","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"80e495107ea0df0c607abdf141e91fec6b091ed0d0910036408e9c69dad68013"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-10-29T00:00:00.000Z","created_at":"2014-10-30T18:37:38.192Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":57091,"metadata":{},"number":"4.0.11","summary":"Full-stack
+        over configuration.","downloads_count":57092,"metadata":{},"number":"4.0.11","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"ca9da5665e2e8e124a71fb4e7dcac32e38ae3188d869cda3f8c8593aeeafeec3"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-09-11T00:00:00.000Z","created_at":"2014-09-11T17:33:15.455Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":84632,"metadata":{},"number":"4.0.10","summary":"Full-stack
+        over configuration.","downloads_count":84633,"metadata":{},"number":"4.0.10","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"0c9d3fc3fb0eaccd480e1fd3786ee0714923478ade4ed4c746eaca98786e018e"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-09-08T00:00:00.000Z","created_at":"2014-09-08T17:55:45.314Z","description":"Ruby
@@ -714,25 +766,25 @@ interactions:
         Heinemeier Hansson","built_at":"2014-08-18T00:00:00.000Z","created_at":"2014-08-18T17:03:01.087Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":104878,"metadata":{},"number":"4.0.9","summary":"Full-stack
+        over configuration.","downloads_count":104880,"metadata":{},"number":"4.0.9","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"b93edde41a48108589cf0684c7fb95a684b5193768166d3fc692d0dc0ad87d17"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-07-02T00:00:00.000Z","created_at":"2014-07-02T19:42:37.603Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":178159,"metadata":{},"number":"4.0.8","summary":"Full-stack
+        over configuration.","downloads_count":178160,"metadata":{},"number":"4.0.8","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"34a589d9718b8fbbb2fa557acda14e1639d796018d29873c7912f52e67056f15"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-07-02T00:00:00.000Z","created_at":"2014-07-02T17:04:32.418Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":13136,"metadata":{},"number":"4.0.7","summary":"Full-stack
+        over configuration.","downloads_count":13137,"metadata":{},"number":"4.0.7","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"86b89e68418745706b8a0cd76d8ae3ed49f298e59278be7350a3359c5f97b2e9"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-06-26T00:00:00.000Z","created_at":"2014-06-26T16:30:13.579Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":20935,"metadata":{},"number":"4.0.6","summary":"Full-stack
+        over configuration.","downloads_count":20936,"metadata":{},"number":"4.0.6","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"a1631de04f0ce6634b56801a2046af5d42f8dde474fb82ba46194e2a6de5fdce"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-06-23T00:00:00.000Z","created_at":"2014-06-23T17:24:41.466Z","description":"Ruby
@@ -756,13 +808,13 @@ interactions:
         Heinemeier Hansson","built_at":"2014-05-06T00:00:00.000Z","created_at":"2014-05-06T16:13:27.132Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":389804,"metadata":{},"number":"4.0.5","summary":"Full-stack
+        over configuration.","downloads_count":389806,"metadata":{},"number":"4.0.5","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"22cc7501b6d4b0e7b6b215777b0faf7f8181a1d5058ef7c88c3c328227485253"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-03-14T00:00:00.000Z","created_at":"2014-03-14T17:37:07.331Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":482207,"metadata":{},"number":"4.0.4","summary":"Full-stack
+        over configuration.","downloads_count":482209,"metadata":{},"number":"4.0.4","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":null,"prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"ead3f37942b32496cd07837a01c40acc4f8c8df72e839f3d087a2c3543d760bc"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-03-11T00:00:00.000Z","created_at":"2014-03-11T17:31:18.568Z","description":"Ruby
@@ -774,19 +826,19 @@ interactions:
         Heinemeier Hansson","built_at":"2014-02-18T00:00:00.000Z","created_at":"2014-02-18T18:49:43.150Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":614488,"metadata":{},"number":"4.0.3","summary":"Full-stack
+        over configuration.","downloads_count":614490,"metadata":{},"number":"4.0.3","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":null,"prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"649f8ca0cdc10d47e6bef73e098937a2a61f5aabbcf2fde930d28675021e81be"},{"authors":"David
         Heinemeier Hansson","built_at":"2013-12-03T00:00:00.000Z","created_at":"2013-12-03T19:01:29.867Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":1121070,"metadata":{},"number":"4.0.2","summary":"Full-stack
+        over configuration.","downloads_count":1121078,"metadata":{},"number":"4.0.2","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":null,"prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"b7485afabce7c526eee714f7daf020cc7f18be66567a55ad806b81294cc19ffa"},{"authors":"David
         Heinemeier Hansson","built_at":"2013-11-01T00:00:00.000Z","created_at":"2013-11-01T19:08:16.307Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":475594,"metadata":{},"number":"4.0.1","summary":"Full-stack
+        over configuration.","downloads_count":475596,"metadata":{},"number":"4.0.1","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":null,"prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"e3759fcd9fd550589404ba0975857142dbdcef2bbfdf71c43a7ee372196cc76e"},{"authors":"David
         Heinemeier Hansson","built_at":"2013-10-30T00:00:00.000Z","created_at":"2013-10-30T20:49:25.297Z","description":"Ruby
@@ -810,13 +862,13 @@ interactions:
         Heinemeier Hansson","built_at":"2013-10-17T00:00:00.000Z","created_at":"2013-10-17T16:46:23.993Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":3228,"metadata":{},"number":"4.0.1.rc1","summary":"Full-stack
+        over configuration.","downloads_count":3229,"metadata":{},"number":"4.0.1.rc1","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":null,"prerelease":true,"licenses":["MIT"],"requirements":[],"sha":"3b186b3822d62ef5caaf71dfb1a495e595e3fef99397b4a88ded88d1f09ccb68"},{"authors":"David
         Heinemeier Hansson","built_at":"2013-06-25T00:00:00.000Z","created_at":"2013-06-25T14:32:58.526Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":2444574,"metadata":{},"number":"4.0.0","summary":"Full-stack
+        over configuration.","downloads_count":2444577,"metadata":{},"number":"4.0.0","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.8.11","ruby_version":null,"prerelease":false,"licenses":["MIT"],"requirements":null,"sha":"6eabebfbe7dcdabeddf69356f84cec3d78e395b08aa1de700e265f7cbff8028b"},{"authors":"David
         Heinemeier Hansson","built_at":"2013-06-11T00:00:00.000Z","created_at":"2013-06-11T20:26:00.144Z","description":"Ruby
@@ -840,79 +892,79 @@ interactions:
         Heinemeier Hansson","built_at":"2016-09-14T00:00:00.000Z","created_at":"2016-09-14T21:19:01.962Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":488909,"metadata":{},"number":"3.2.22.5","summary":"Full-stack
+        over configuration.","downloads_count":489036,"metadata":{},"number":"3.2.22.5","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":"\u003e= 1.8.7","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"c7ba428e51536d961e2fba7bbc65527901ee015ea41696ac803a97716ad58d14"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-08-11T00:00:00.000Z","created_at":"2016-08-11T19:20:46.883Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":361463,"metadata":{},"number":"3.2.22.4","summary":"Full-stack
+        over configuration.","downloads_count":361490,"metadata":{},"number":"3.2.22.4","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":"\u003e= 1.8.7","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"cd62b28ac2f2e4e6eb41dd785c02eae4ea48fb198ce08d062170c86b9fefd8ad"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-08-10T00:00:00.000Z","created_at":"2016-08-11T17:34:59.710Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":50663,"metadata":{},"number":"3.2.22.3","summary":"Full-stack
+        over configuration.","downloads_count":50669,"metadata":{},"number":"3.2.22.3","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":"\u003e= 1.8.7","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"933b7ca70386fd8ec9693a254ffc177c82de54c7d7635e385b92a2d7179d23e8"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-02-29T00:00:00.000Z","created_at":"2016-02-29T19:24:19.757Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":883648,"metadata":{},"number":"3.2.22.2","summary":"Full-stack
+        over configuration.","downloads_count":883681,"metadata":{},"number":"3.2.22.2","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":"\u003e= 1.8.7","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"e40902aa453b1ce4e0048221d8d1d4e8dda1f3bd58c80c23f6c38c7bd3fae9cb"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-01-25T00:00:00.000Z","created_at":"2016-01-25T19:26:12.364Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":341359,"metadata":{},"number":"3.2.22.1","summary":"Full-stack
+        over configuration.","downloads_count":341365,"metadata":{},"number":"3.2.22.1","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":"\u003e= 1.8.7","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"55bc070a05d583ffc0028bfc6b1c5be60e9d5fc7655ebada06c5c83ae38249e9"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-06-16T00:00:00.000Z","created_at":"2015-06-16T18:06:38.294Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":997113,"metadata":{},"number":"3.2.22","summary":"Full-stack
+        over configuration.","downloads_count":997125,"metadata":{},"number":"3.2.22","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":"\u003e= 1.8.7","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"4e6341bbab6d88aa0578034474699c3793448dfbaa09d89f708304591f3b8a21"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-11-16T00:00:00.000Z","created_at":"2014-11-17T16:00:44.994Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":1109421,"metadata":{},"number":"3.2.21","summary":"Full-stack
+        over configuration.","downloads_count":1109424,"metadata":{},"number":"3.2.21","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":"\u003e= 1.8.7","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"d0f6904bc864307cb0236a3cc8b252d355e4536223614aee33265f23ead3c55a"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-10-29T00:00:00.000Z","created_at":"2014-10-30T18:37:26.434Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":187996,"metadata":{},"number":"3.2.20","summary":"Full-stack
+        over configuration.","downloads_count":187997,"metadata":{},"number":"3.2.20","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":"\u003e= 1.8.7","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"38cc06efd458dde28f1ea20f3c4095d7cf2aae5a74a1689ebcc0ab7d8af88a7c"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-07-02T03:00:00.000Z","created_at":"2014-07-02T17:02:48.733Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":891175,"metadata":{},"number":"3.2.19","summary":"Full-stack
+        over configuration.","downloads_count":891187,"metadata":{},"number":"3.2.19","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":"\u003e= 1.8.7","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"33b64cf78dfcf3206d961ce03e8fe6d260081da696e60da39d0b2a4a160fe22b"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-05-06T00:00:00.000Z","created_at":"2014-05-06T16:17:02.829Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":1078131,"metadata":{},"number":"3.2.18","summary":"Full-stack
+        over configuration.","downloads_count":1078132,"metadata":{},"number":"3.2.18","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":"\u003e= 1.8.7","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"b087466024542c7abebc85cb5638ba8bed302616a914996cad454bf8d6e54198"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-02-18T03:00:00.000Z","created_at":"2014-02-18T18:54:56.443Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":858409,"metadata":{},"number":"3.2.17","summary":"Full-stack
+        over configuration.","downloads_count":858412,"metadata":{},"number":"3.2.17","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"8eff1bbf9f22fa943e58e9b71c6bdbe5d5d95caf022bec38ce083599961cb984"},{"authors":"David
         Heinemeier Hansson","built_at":"2013-12-03T00:00:00.000Z","created_at":"2013-12-03T19:01:19.549Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":748167,"metadata":{},"number":"3.2.16","summary":"Full-stack
+        over configuration.","downloads_count":748169,"metadata":{},"number":"3.2.16","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"fc470010d70c7628e9e6c4bd535f85571a24cdfadf9b58560e6b2d5f3d396ab0"},{"authors":"David
         Heinemeier Hansson","built_at":"2013-10-16T00:00:00.000Z","created_at":"2013-10-16T17:23:10.503Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":367467,"metadata":{},"number":"3.2.15","summary":"Full-stack
+        over configuration.","downloads_count":367468,"metadata":{},"number":"3.2.15","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"9ed01092cb939f8c9be82138a8ba83df45260d544f86a0465893491dbdc2794c"},{"authors":"David
         Heinemeier Hansson","built_at":"2013-10-11T00:00:00.000Z","created_at":"2013-10-11T21:17:17.374Z","description":"Ruby
@@ -936,7 +988,7 @@ interactions:
         Heinemeier Hansson","built_at":"2013-07-22T03:00:00.000Z","created_at":"2013-07-22T16:44:50.870Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":746609,"metadata":{},"number":"3.2.14","summary":"Full-stack
+        over configuration.","downloads_count":746645,"metadata":{},"number":"3.2.14","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"d63321eb0231dbf576ba19017cf87b3e2d8b863dd6402f26f198455fd1377963"},{"authors":"David
         Heinemeier Hansson","built_at":"2013-07-16T03:00:00.000Z","created_at":"2013-07-16T16:13:33.339Z","description":"Ruby
@@ -954,7 +1006,7 @@ interactions:
         Heinemeier Hansson","built_at":"2013-03-18T00:00:00.000Z","created_at":"2013-03-18T17:13:33.058Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":4496515,"metadata":{},"number":"3.2.13","summary":"Full-stack
+        over configuration.","downloads_count":4496519,"metadata":{},"number":"3.2.13","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"dfc57cb7d289513dd89a99db6f714fbdb407223160abf98293b74be07724bcb8"},{"authors":"David
         Heinemeier Hansson","built_at":"2013-03-06T00:00:00.000Z","created_at":"2013-03-06T23:06:19.052Z","description":"Ruby
@@ -972,25 +1024,25 @@ interactions:
         Heinemeier Hansson","built_at":"2013-02-11T00:00:00.000Z","created_at":"2013-02-11T18:17:41.481Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":1482107,"metadata":{},"number":"3.2.12","summary":"Full-stack
+        over configuration.","downloads_count":1482131,"metadata":{},"number":"3.2.12","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"bff3605849350b46cceab64e0b9136cd8743d45db902160c19bbd06fc9a956ca"},{"authors":"David
         Heinemeier Hansson","built_at":"2013-01-08T00:00:00.000Z","created_at":"2013-01-08T20:08:45.798Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":1457101,"metadata":{},"number":"3.2.11","summary":"Full-stack
+        over configuration.","downloads_count":1457105,"metadata":{},"number":"3.2.11","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"f5e02999889aa39af2c7d2c882d9e3b5c71e8adfc98236a69dadacdfbce5603e"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-12-23T00:00:00.000Z","created_at":"2013-01-02T21:20:01.186Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":120486,"metadata":{},"number":"3.2.10","summary":"Full-stack
+        over configuration.","downloads_count":120487,"metadata":{},"number":"3.2.10","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"a90e9d6d953b63b4ff19c99fc0a5c823537ede5ef0528cf6dce6debde4f0e1ef"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-11-12T00:00:00.000Z","created_at":"2012-11-12T15:21:34.822Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":707834,"metadata":{},"number":"3.2.9","summary":"Full-stack
+        over configuration.","downloads_count":707835,"metadata":{},"number":"3.2.9","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"8e4dcd26fe5db9ac017d0b30194190e12e0023edd93e3dd8401fe7f5e91d666a"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-11-09T00:00:00.000Z","created_at":"2012-11-09T18:00:50.077Z","description":"Ruby
@@ -1014,7 +1066,7 @@ interactions:
         Heinemeier Hansson","built_at":"2012-08-09T00:00:00.000Z","created_at":"2012-08-09T21:23:34.632Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":1394818,"metadata":{},"number":"3.2.8","summary":"Full-stack
+        over configuration.","downloads_count":1394820,"metadata":{},"number":"3.2.8","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"f671d492f91e52e203c99cd989682df89993abaca8b4861732afe1413ead7fcc"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-08-03T00:00:00.000Z","created_at":"2012-08-03T14:29:05.254Z","description":"Ruby
@@ -1032,7 +1084,7 @@ interactions:
         Heinemeier Hansson","built_at":"2012-07-26T00:00:00.000Z","created_at":"2012-07-26T22:09:06.275Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":215156,"metadata":{},"number":"3.2.7","summary":"Full-stack
+        over configuration.","downloads_count":215157,"metadata":{},"number":"3.2.7","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"8aad4faaabd497b3c4f07a02b9720e3111c7fa0967cf7d4d7a9c18b88d13997f"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-07-23T00:00:00.000Z","created_at":"2012-07-23T21:45:55.204Z","description":"Ruby
@@ -1044,19 +1096,19 @@ interactions:
         Heinemeier Hansson","built_at":"2012-06-12T00:00:00.000Z","created_at":"2012-06-12T21:26:21.434Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":760600,"metadata":{},"number":"3.2.6","summary":"Full-stack
+        over configuration.","downloads_count":760601,"metadata":{},"number":"3.2.6","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"55389d82ad04ea822c7236a1a877d90b18ad4defed4c0e7a2a9bb2e6bcd19ea0"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-06-01T00:00:00.000Z","created_at":"2012-06-01T03:39:04.678Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":194040,"metadata":{},"number":"3.2.5","summary":"Full-stack
+        over configuration.","downloads_count":194041,"metadata":{},"number":"3.2.5","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"d8888a6e10a1d680b9c8ba02047d2627cb23c6aefe30c058d454d07404dde73c"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-05-31T00:00:00.000Z","created_at":"2012-05-31T18:25:13.532Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":12483,"metadata":{},"number":"3.2.4","summary":"Full-stack
+        over configuration.","downloads_count":12484,"metadata":{},"number":"3.2.4","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"912f6ab1389714d1c6413af35166dddccb8dc813601ff4f6135073944a19f464"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-05-28T00:00:00.000Z","created_at":"2012-05-28T19:01:55.834Z","description":"Ruby
@@ -1068,7 +1120,7 @@ interactions:
         Heinemeier Hansson","built_at":"2012-03-30T03:00:00.000Z","created_at":"2012-03-30T22:26:20.685Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":802297,"metadata":{},"number":"3.2.3","summary":"Full-stack
+        over configuration.","downloads_count":802298,"metadata":{},"number":"3.2.3","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"b8d6e5332d0473ffda078440a1692b97ad0053320fc1d041f00e133f78ff7c22"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-03-29T03:00:00.000Z","created_at":"2012-03-29T16:14:14.715Z","description":"Ruby
@@ -1086,7 +1138,7 @@ interactions:
         Heinemeier Hansson","built_at":"2012-03-01T00:00:00.000Z","created_at":"2012-03-01T17:52:33.094Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":429610,"metadata":{},"number":"3.2.2","summary":"Full-stack
+        over configuration.","downloads_count":429611,"metadata":{},"number":"3.2.2","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"c957b71fd93372a3d1aa411e8449387e415e5941afd404d4cedbf72f4840904f"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-02-22T00:00:00.000Z","created_at":"2012-02-22T21:39:35.308Z","description":"Ruby
@@ -1098,13 +1150,13 @@ interactions:
         Heinemeier Hansson","built_at":"2012-01-26T08:00:00.000Z","created_at":"2012-01-26T23:09:41.494Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":487659,"metadata":{},"number":"3.2.1","summary":"Full-stack
+        over configuration.","downloads_count":487660,"metadata":{},"number":"3.2.1","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"255bc08d24e2c6fcc1c8087e5c14b51d13b632191b9bd686111ac0cd7dbda53b"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-01-20T00:00:00.000Z","created_at":"2012-01-20T16:47:48.848Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":190549,"metadata":{},"number":"3.2.0","summary":"Full-stack
+        over configuration.","downloads_count":190550,"metadata":{},"number":"3.2.0","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"f0cba07568a9ddae8e62cd170021e7ba2edc6ea0248249ca2f6d476062264c82"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-01-04T02:00:00.000Z","created_at":"2012-01-04T21:05:27.454Z","description":"Ruby
@@ -1122,49 +1174,49 @@ interactions:
         Heinemeier Hansson","built_at":"2013-03-18T00:00:00.000Z","created_at":"2013-03-18T17:13:29.344Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":478960,"metadata":{},"number":"3.1.12","summary":"Full-stack
+        over configuration.","downloads_count":478962,"metadata":{},"number":"3.1.12","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"8e6ce8ddb8b69051ec8109d0439c622a986aa4da47f5156141e7a936656f958c"},{"authors":"David
         Heinemeier Hansson","built_at":"2013-02-11T00:00:00.000Z","created_at":"2013-02-11T18:17:37.200Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":60939,"metadata":{},"number":"3.1.11","summary":"Full-stack
+        over configuration.","downloads_count":60940,"metadata":{},"number":"3.1.11","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"45f4a20aaff2ca71b6096e3a0ab6c770ccabae17203510b43bb26f862d9a35fa"},{"authors":"David
         Heinemeier Hansson","built_at":"2013-01-08T00:00:00.000Z","created_at":"2013-01-08T20:08:37.727Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":96136,"metadata":{},"number":"3.1.10","summary":"Full-stack
+        over configuration.","downloads_count":96137,"metadata":{},"number":"3.1.10","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"1bdd1d8597d50e2b3bcea99491541855774182dbe0b39d07ed75c321c1e6b621"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-12-23T00:00:00.000Z","created_at":"2013-01-02T21:19:56.845Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":6518,"metadata":{},"number":"3.1.9","summary":"Full-stack
+        over configuration.","downloads_count":6519,"metadata":{},"number":"3.1.9","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"3f8187f4651afa2cc25c9adcf98cd1292ca3d868484c1cb230ef0534b5be923b"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-08-09T00:00:00.000Z","created_at":"2012-08-09T21:20:27.129Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":57242,"metadata":{},"number":"3.1.8","summary":"Full-stack
+        over configuration.","downloads_count":57243,"metadata":{},"number":"3.1.8","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"9d98892e0b34d02ba229a7978edb204d209991a9964617018613f221a5deb7ae"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-07-26T00:00:00.000Z","created_at":"2012-07-26T22:09:00.975Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":13753,"metadata":{},"number":"3.1.7","summary":"Full-stack
+        over configuration.","downloads_count":13754,"metadata":{},"number":"3.1.7","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"dc9a69eb2baf2e76e8342bf63c2f10e8cdf1935c53696e41df3923d937a7f60e"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-06-12T00:00:00.000Z","created_at":"2012-06-12T21:26:16.856Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":36115,"metadata":{},"number":"3.1.6","summary":"Full-stack
+        over configuration.","downloads_count":36116,"metadata":{},"number":"3.1.6","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"0b6aeb69bfc2b62ad32a3f51ac94b9b9f1df1175d113e53e53435b259540be25"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-05-31T00:00:00.000Z","created_at":"2012-05-31T18:25:06.617Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":13249,"metadata":{},"number":"3.1.5","summary":"Full-stack
+        over configuration.","downloads_count":13250,"metadata":{},"number":"3.1.5","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"7dc2e7e85492f697897a17b00108b3e3f8f402d0662ab94f78d78bc82be06414"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-05-28T00:00:00.000Z","created_at":"2012-05-28T19:01:51.050Z","description":"Ruby
@@ -1176,7 +1228,7 @@ interactions:
         Heinemeier Hansson","built_at":"2012-03-01T00:00:00.000Z","created_at":"2012-03-01T17:52:28.342Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":82964,"metadata":{},"number":"3.1.4","summary":"Full-stack
+        over configuration.","downloads_count":82965,"metadata":{},"number":"3.1.4","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"54daf5c2efb87ab97b6db0017095d9e4135384e68a007f9ed5570e8de9ffe347"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-02-22T00:00:00.000Z","created_at":"2012-02-22T21:39:29.633Z","description":"Ruby
@@ -1188,13 +1240,13 @@ interactions:
         Heinemeier Hansson","built_at":"2011-11-20T00:00:00.000Z","created_at":"2011-11-20T22:52:57.492Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":674525,"metadata":{},"number":"3.1.3","summary":"Full-stack
+        over configuration.","downloads_count":674527,"metadata":{},"number":"3.1.3","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"e817252efd196b32a16b0af6a92eecd8b2e0b1cbe1511b36fab6c8acdc53e81e"},{"authors":"David
         Heinemeier Hansson","built_at":"2011-11-18T00:00:00.000Z","created_at":"2011-11-18T01:33:32.509Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":43345,"metadata":{},"number":"3.1.2","summary":"Full-stack
+        over configuration.","downloads_count":43346,"metadata":{},"number":"3.1.2","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"497d2cea86aef0dd771b06e40f34a2b9f7bdf36e1aee2c5f120efccd6779b8ca"},{"authors":"David
         Heinemeier Hansson","built_at":"2011-11-14T00:00:00.000Z","created_at":"2011-11-14T15:49:20.198Z","description":"Ruby
@@ -1212,7 +1264,7 @@ interactions:
         Heinemeier Hansson","built_at":"2011-10-07T02:00:00.000Z","created_at":"2011-10-07T15:30:09.628Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":581326,"metadata":{},"number":"3.1.1","summary":"Full-stack
+        over configuration.","downloads_count":581327,"metadata":{},"number":"3.1.1","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"42cb4042721dce66f99f4c0a746d25fe2fcddd2a6bcd8311aee82ce2c2590a71"},{"authors":"David
         Heinemeier Hansson","built_at":"2011-10-05T02:00:00.000Z","created_at":"2011-10-06T02:31:00.452Z","description":"Ruby
@@ -1236,7 +1288,7 @@ interactions:
         Heinemeier Hansson","built_at":"2011-08-31T00:00:00.000Z","created_at":"2011-08-31T02:18:30.035Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":641092,"metadata":{},"number":"3.1.0","summary":"Full-stack
+        over configuration.","downloads_count":641093,"metadata":{},"number":"3.1.0","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"baceb82d8eba98f2a5a1eb9e43f14b36019968b6fbdb3dc76d6e4f40b09520ce"},{"authors":"David
         Heinemeier Hansson","built_at":"2011-08-29T03:00:00.000Z","created_at":"2011-08-29T03:27:19.194Z","description":"Ruby
@@ -1290,49 +1342,49 @@ interactions:
         Heinemeier Hansson","built_at":"2013-01-28T00:00:00.000Z","created_at":"2013-01-28T21:01:34.374Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":359263,"metadata":{},"number":"3.0.20","summary":"Full-stack
+        over configuration.","downloads_count":359264,"metadata":{},"number":"3.0.20","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"e22944d88c22d206e719bee3757fbbc0d025d00419421e5609a9a52136be3190"},{"authors":"David
         Heinemeier Hansson","built_at":"2013-01-08T00:00:00.000Z","created_at":"2013-01-08T20:08:33.922Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":96744,"metadata":{},"number":"3.0.19","summary":"Full-stack
+        over configuration.","downloads_count":96745,"metadata":{},"number":"3.0.19","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"da9e6e21a032770f56c0e92f7099897a3638392f8d4a37cd572641915056c7ca"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-12-23T00:00:00.000Z","created_at":"2013-01-02T21:19:52.960Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":11081,"metadata":{},"number":"3.0.18","summary":"Full-stack
+        over configuration.","downloads_count":11082,"metadata":{},"number":"3.0.18","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"c96ba8e2455bc77afa663361e741897c8b495c6f626345c1db8b609348cdb122"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-08-09T00:00:00.000Z","created_at":"2012-08-09T21:16:44.882Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":79844,"metadata":{},"number":"3.0.17","summary":"Full-stack
+        over configuration.","downloads_count":79845,"metadata":{},"number":"3.0.17","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"ac0b85ef41d5f6ebb6aefb351dc6e76b900afb94b461a3c8d8ec7a63a99c64e3"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-07-26T00:00:00.000Z","created_at":"2012-07-26T22:08:54.212Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":14702,"metadata":{},"number":"3.0.16","summary":"Full-stack
+        over configuration.","downloads_count":14703,"metadata":{},"number":"3.0.16","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"7b14ba4cea871bebaed72e08cf79416422fe95120b1401c6b23a79eff9d1e54b"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-06-13T00:00:00.000Z","created_at":"2012-06-13T03:07:06.509Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":44570,"metadata":{},"number":"3.0.15","summary":"Full-stack
+        over configuration.","downloads_count":44571,"metadata":{},"number":"3.0.15","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"173991d2fc89845a1a40e72577c03570fb1ce13c0f26b81aa3b99023e17a985a"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-06-12T00:00:00.000Z","created_at":"2012-06-12T21:26:07.460Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":35277,"metadata":{},"number":"3.0.14","summary":"Full-stack
+        over configuration.","downloads_count":35278,"metadata":{},"number":"3.0.14","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"31209d39bcef559372fe8eb3c9e7769051c69591d375034d0e8eee536353e19e"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-05-31T00:00:00.000Z","created_at":"2012-05-31T18:24:59.747Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":29421,"metadata":{},"number":"3.0.13","summary":"Full-stack
+        over configuration.","downloads_count":29422,"metadata":{},"number":"3.0.13","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"a5cdefded06acd971b26f69a9576a8118e921ec9f108f335c22cfe21fc766e56"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-05-28T00:00:00.000Z","created_at":"2012-05-28T19:01:47.715Z","description":"Ruby
@@ -1344,7 +1396,7 @@ interactions:
         Heinemeier Hansson","built_at":"2012-03-01T00:00:00.000Z","created_at":"2012-03-01T17:52:15.609Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":69380,"metadata":{},"number":"3.0.12","summary":"Full-stack
+        over configuration.","downloads_count":69381,"metadata":{},"number":"3.0.12","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"5ab5c1db3c93443b950dee6cdd6895521ca37ed52b0963950bbe6b240af041da"},{"authors":"David
         Heinemeier Hansson","built_at":"2012-02-22T00:00:00.000Z","created_at":"2012-02-22T21:39:19.764Z","description":"Ruby
@@ -1356,13 +1408,13 @@ interactions:
         Heinemeier Hansson","built_at":"2011-11-18T00:00:00.000Z","created_at":"2011-11-18T01:23:23.249Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":145111,"metadata":{},"number":"3.0.11","summary":"Full-stack
+        over configuration.","downloads_count":145112,"metadata":{},"number":"3.0.11","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"7ed7792bfd4696bc049d95e4e377b682b51796b93cc91a2af42a0392bbc2e08b"},{"authors":"David
         Heinemeier Hansson","built_at":"2011-08-16T00:00:00.000Z","created_at":"2011-08-16T22:14:17.045Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":518370,"metadata":{},"number":"3.0.10","summary":"Full-stack
+        over configuration.","downloads_count":518371,"metadata":{},"number":"3.0.10","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"834755313f61aae189be2c288702fbb0d64897d0c69ea49899e6509eb3f6601c"},{"authors":"David
         Heinemeier Hansson","built_at":"2011-08-04T07:00:00.000Z","created_at":"2011-08-05T00:12:05.290Z","description":"Ruby
@@ -1374,7 +1426,7 @@ interactions:
         Heinemeier Hansson","built_at":"2011-06-16T00:00:00.000Z","created_at":"2011-06-16T10:05:11.080Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":630240,"metadata":{},"number":"3.0.9","summary":"Full-stack
+        over configuration.","downloads_count":630241,"metadata":{},"number":"3.0.9","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"91f10c3d1e0eb0f8689eaf6faa5bd8b3ab0fab43841795858d3ef04e8f4c54e6"},{"authors":"David
         Heinemeier Hansson","built_at":"2011-06-12T00:00:00.000Z","created_at":"2011-06-12T21:30:07.555Z","description":"Ruby
@@ -1404,7 +1456,7 @@ interactions:
         Heinemeier Hansson","built_at":"2011-06-07T00:00:00.000Z","created_at":"2011-06-08T00:16:45.270Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":79522,"metadata":{},"number":"3.0.8","summary":"Full-stack
+        over configuration.","downloads_count":79523,"metadata":{},"number":"3.0.8","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"a3825a0604bd76e3a08d1f0b36066a90e2f61081a49ae0de201cebb3b017c07f"},{"authors":"David
         Heinemeier Hansson","built_at":"2011-05-31T00:00:00.000Z","created_at":"2011-05-31T00:08:18.745Z","description":"Ruby
@@ -1428,7 +1480,7 @@ interactions:
         Heinemeier Hansson","built_at":"2011-04-18T00:00:00.000Z","created_at":"2011-04-18T21:05:54.308Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":560266,"metadata":{},"number":"3.0.7","summary":"Full-stack
+        over configuration.","downloads_count":560267,"metadata":{},"number":"3.0.7","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"e4ea21b341e13eea253f5731d08e84df39b0cdf0073d2f3964dc8852fc08d677"},{"authors":"David
         Heinemeier Hansson","built_at":"2011-04-15T03:00:00.000Z","created_at":"2011-04-15T17:33:53.132Z","description":"Ruby
@@ -1446,7 +1498,7 @@ interactions:
         Heinemeier Hansson","built_at":"2011-04-05T07:00:00.000Z","created_at":"2011-04-05T23:05:21.745Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":179408,"metadata":{},"number":"3.0.6","summary":"Full-stack
+        over configuration.","downloads_count":179409,"metadata":{},"number":"3.0.6","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"6954253775af9586738dacc2ca46c842bf6d9641d7b8aff47799b682ba53f788"},{"authors":"David
         Heinemeier Hansson","built_at":"2011-03-30T07:00:00.000Z","created_at":"2011-03-31T05:28:51.216Z","description":"Ruby
@@ -1464,7 +1516,7 @@ interactions:
         Heinemeier Hansson","built_at":"2011-02-26T08:00:00.000Z","created_at":"2011-02-27T02:30:55.377Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":433339,"metadata":{},"number":"3.0.5","summary":"Full-stack
+        over configuration.","downloads_count":433340,"metadata":{},"number":"3.0.5","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"54fba5b3b2de73b1cb1328f3f713e4dcf9aa50487bf38a0e9014dcdb5cc31060"},{"authors":"David
         Heinemeier Hansson","built_at":"2011-02-22T08:00:00.000Z","created_at":"2011-02-23T19:08:34.691Z","description":"Ruby
@@ -1476,7 +1528,7 @@ interactions:
         Heinemeier Hansson","built_at":"2011-02-08T11:00:00.000Z","created_at":"2011-02-08T21:17:48.221Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":230868,"metadata":{},"number":"3.0.4","summary":"Full-stack
+        over configuration.","downloads_count":230869,"metadata":{},"number":"3.0.4","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"788f91450de432af7dc92759d628651a64670eb4512b0b2e53f1518408d7102b"},{"authors":"David
         Heinemeier Hansson","built_at":"2011-01-30T11:00:00.000Z","created_at":"2011-01-30T23:00:37.572Z","description":"Ruby
@@ -1488,25 +1540,25 @@ interactions:
         Heinemeier Hansson","built_at":"2010-11-16T06:00:00.000Z","created_at":"2010-11-16T16:29:00.892Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":1790090,"metadata":{},"number":"3.0.3","summary":"Full-stack
+        over configuration.","downloads_count":1790096,"metadata":{},"number":"3.0.3","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"8b8d64141d764123e37d969f484a7024f8d318e5b4b58f57023b5e5910873a16"},{"authors":"David
         Heinemeier Hansson","built_at":"2010-11-15T06:00:00.000Z","created_at":"2010-11-15T19:33:41.460Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":14677,"metadata":{},"number":"3.0.2","summary":"Full-stack
+        over configuration.","downloads_count":14678,"metadata":{},"number":"3.0.2","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"26fd8f1afbe5e57da2bcb7478c0ad3e07c68d663455193804030b4853387582f"},{"authors":"David
         Heinemeier Hansson","built_at":"2010-10-14T11:00:00.000Z","created_at":"2010-10-14T20:55:44.846Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":280273,"metadata":{},"number":"3.0.1","summary":"Full-stack
+        over configuration.","downloads_count":280274,"metadata":{},"number":"3.0.1","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"fba018f56c5a1f59cb728c99eeb5d5e8c33e2840e7659ac0ef37126fa56096af"},{"authors":"David
         Heinemeier Hansson","built_at":"2010-08-29T05:00:00.000Z","created_at":"2010-08-29T23:11:11.490Z","description":"Ruby
         on Rails is a full-stack web framework optimized for programmer happiness
         and sustainable productivity. It encourages beautiful code by favoring convention
-        over configuration.","downloads_count":469407,"metadata":{},"number":"3.0.0","summary":"Full-stack
+        over configuration.","downloads_count":469408,"metadata":{},"number":"3.0.0","summary":"Full-stack
         web application framework.","platform":"ruby","rubygems_version":"\u003e=
         1.3.6","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"5a9a2c14077d27d849ae660c03dd9427b8cd9c3151135968d89b0454be8c5efe"},{"authors":"David
         Heinemeier Hansson","built_at":"2010-08-23T05:00:00.000Z","created_at":"2010-08-24T03:04:45.033Z","description":"Ruby
@@ -1545,55 +1597,55 @@ interactions:
         Heinemeier Hansson","built_at":"2013-03-18T07:00:00.000Z","created_at":"2013-03-18T17:13:25.422Z","description":"    Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick\n    on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server,
-        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":453724,"metadata":{},"number":"2.3.18","summary":"Web-application
+        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":453730,"metadata":{},"number":"2.3.18","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"f92ee63fdb481d5d0758db6a955f850d44f525558ccc5ad7ce4367220a72314d"},{"authors":"David
         Heinemeier Hansson","built_at":"2013-02-11T00:00:00.000Z","created_at":"2013-02-11T18:17:30.726Z","description":"    Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick\n    on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server,
-        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":84996,"metadata":{},"number":"2.3.17","summary":"Web-application
+        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":84997,"metadata":{},"number":"2.3.17","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"644c7b054638c0b7e92c12dfe0574c63c5929abfb42a1cc6b9196bfdd9e5b017"},{"authors":"David
         Heinemeier Hansson","built_at":"2013-01-28T00:00:00.000Z","created_at":"2013-01-28T21:01:30.451Z","description":"    Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick\n    on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server,
-        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":59490,"metadata":{},"number":"2.3.16","summary":"Web-application
+        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":59491,"metadata":{},"number":"2.3.16","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"8228c5404bddc2dd7b99495f348b40302709da577a096619f90e8c37e824060a"},{"authors":"David
         Heinemeier Hansson","built_at":"2013-01-08T08:00:00.000Z","created_at":"2013-01-08T20:08:28.812Z","description":"    Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick\n    on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server,
-        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":90946,"metadata":{},"number":"2.3.15","summary":"Web-application
+        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":90949,"metadata":{},"number":"2.3.15","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"21c177e2577faa9d09319a965870ee5f03d944d2e558573df852659cd729a79e"},{"authors":"David
         Heinemeier Hansson","built_at":"2011-08-16T00:00:00.000Z","created_at":"2011-08-16T22:01:21.962Z","description":"    Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick\n    on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server,
-        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":417238,"metadata":{},"number":"2.3.14","summary":"Web-application
+        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":417239,"metadata":{},"number":"2.3.14","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"d73302e2ba500ac8efef9d0397c341c0c40b055a67a5fc43503df67d1df29852"},{"authors":"David
         Heinemeier Hansson","built_at":"2011-06-08T00:00:00.000Z","created_at":"2011-06-08T00:22:06.357Z","description":"    Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick\n    on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server,
-        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":60786,"metadata":{},"number":"2.3.12","summary":"Web-application
+        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":60787,"metadata":{},"number":"2.3.12","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"51c06714ba199ef678d0e7c9425c76da2a5b233dae7743e22737243ee9dc0780"},{"authors":"David
         Heinemeier Hansson","built_at":"2011-02-08T11:00:00.000Z","created_at":"2011-02-08T21:17:36.254Z","description":"    Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick\n    on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server,
-        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":329585,"metadata":{},"number":"2.3.11","summary":"Web-application
+        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":329586,"metadata":{},"number":"2.3.11","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"dafba5bf713c2f035dbd3f1b594571e261a233ab022afb25c9fc12684b7cfd75"},{"authors":"David
         Heinemeier Hansson","built_at":"2010-10-14T11:00:00.000Z","created_at":"2010-10-14T20:53:17.413Z","description":"    Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick\n    on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server,
-        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":164326,"metadata":{},"number":"2.3.10","summary":"Web-application
+        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":164327,"metadata":{},"number":"2.3.10","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"70f996afe90e4d3475550a6095899597b54cd058125bf31ef53af2738d5085c8"},{"authors":"David
         Heinemeier Hansson","built_at":"2010-09-04T07:00:00.000Z","created_at":"2010-09-04T21:54:41.257Z","description":"    Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick\n    on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server,
-        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":75381,"metadata":{},"number":"2.3.9","summary":"Web-application
+        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":75382,"metadata":{},"number":"2.3.9","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"1716920fe21e7e9f48e385f8bd7e24c5b3ac9f3d3285cd83cee5dbe09acb2ebb"},{"authors":"David
         Heinemeier Hansson","built_at":"2010-08-29T07:00:00.000Z","created_at":"2010-08-30T03:32:34.689Z","description":"    Rails
@@ -1605,7 +1657,7 @@ interactions:
         Heinemeier Hansson","built_at":"2010-05-24T07:00:00.000Z","created_at":"2010-05-25T04:53:06.895Z","description":"    Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick\n    on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server,
-        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":1066156,"metadata":{},"number":"2.3.8","summary":"Web-application
+        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":1066157,"metadata":{},"number":"2.3.8","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"59efc4532e0886ad4912dc06a113ba2d455f7a380f972b24da8414df1dfb377d"},{"authors":"David
         Heinemeier Hansson","built_at":"2010-05-24T07:00:00.000Z","created_at":"2010-05-24T21:17:25.987Z","description":"    Rails
@@ -1617,297 +1669,297 @@ interactions:
         Heinemeier Hansson","built_at":"2010-05-24T07:00:00.000Z","created_at":"2010-05-24T08:23:05.731Z","description":"    Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick\n    on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server,
-        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":11530,"metadata":{},"number":"2.3.7","summary":"Web-application
+        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":11531,"metadata":{},"number":"2.3.7","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"92cd367849dd21e165ccc4143f471051568588a2c89a5f873e9afdf4ea9d32cf"},{"authors":"David
         Heinemeier Hansson","built_at":"2010-05-23T07:00:00.000Z","created_at":"2010-05-23T07:49:23.602Z","description":"    Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick\n    on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server,
-        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":16570,"metadata":{},"number":"2.3.6","summary":"Web-application
+        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":16571,"metadata":{},"number":"2.3.6","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"0e05a80cd707a19ea92120ea9b1c91a3711b204cd71c860964637e631eb31f9b"},{"authors":"David
         Heinemeier Hansson","built_at":"2009-11-26T11:00:00.000Z","created_at":"2009-11-27T00:12:56.921Z","description":"    Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick\n    on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server,
-        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":1150914,"metadata":{},"number":"2.3.5","summary":"Web-application
+        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":1150918,"metadata":{},"number":"2.3.5","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"adb5bea1831c536a64fcd420da01d5a3b3fbe21807c9dce1c458fd62bc2afa7f"},{"authors":"David
         Heinemeier Hansson","built_at":"2009-09-03T15:00:00.000Z","created_at":"2009-09-04T17:33:48.000Z","description":"    Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick\n    on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server,
-        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":243005,"metadata":{},"number":"2.3.4","summary":"Web-application
+        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":243006,"metadata":{},"number":"2.3.4","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"94ffc90b6d0456feaf8610b1d0007c4d2836c0e1c88b33f89d7b8c0043c2f15c"},{"authors":"David
         Heinemeier Hansson","built_at":"2009-07-20T05:00:00.000Z","created_at":"2009-08-05T13:21:07.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":34003,"metadata":{},"number":"2.3.3","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":34004,"metadata":{},"number":"2.3.3","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"50b373c47c0a59a16790f8630194e3cd732c28acfcb3ec89bc1ff83ec1f12979"},{"authors":"David
         Heinemeier Hansson","built_at":"2009-03-15T05:00:00.000Z","created_at":"2009-07-25T18:01:49.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":122564,"metadata":{},"number":"2.3.2","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":122565,"metadata":{},"number":"2.3.2","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"ac61e0356987df34dbbafb803b98f153a663d3878a31f1db7333b7cd987fd044"},{"authors":"David
         Heinemeier Hansson","built_at":"2009-09-27T14:00:00.000Z","created_at":"2009-09-28T09:25:13.132Z","description":"    Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick\n    on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server,
-        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":32493,"metadata":{},"number":"2.2.3","summary":"Web-application
+        or Oracle with eRuby- or Builder-based templates.\n","downloads_count":32494,"metadata":{},"number":"2.2.3","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"ea02684c1073e42a50be2d30b4ebdef8cb35aefc29c3c250c1fc598a52790cdf"},{"authors":"David
         Heinemeier Hansson","built_at":"2008-11-20T23:00:00.000Z","created_at":"2009-07-25T18:01:49.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":135914,"metadata":{},"number":"2.2.2","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":135915,"metadata":{},"number":"2.2.2","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"84fd0ee92f92088cff81d1a4bcb61306bd4b7440b8634d7ac3d1396571a2133f"},{"authors":"David
         Heinemeier Hansson","built_at":"2008-10-22T22:00:00.000Z","created_at":"2009-07-25T18:01:50.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":67138,"metadata":{},"number":"2.1.2","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":67139,"metadata":{},"number":"2.1.2","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"4a55304ae08e3fcd2a2e2bb627d442e5aa9f1b1d6a542587b97ed0cee6079276"},{"authors":"David
         Heinemeier Hansson","built_at":"2008-09-03T22:00:00.000Z","created_at":"2009-07-25T18:01:50.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":19814,"metadata":{},"number":"2.1.1","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":19815,"metadata":{},"number":"2.1.1","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"44f2f19ddd15f51725a5b92447adefbc9ee5a500fcb8db6e9bdb4a3a7ead7438"},{"authors":"David
         Heinemeier Hansson","built_at":"2008-05-31T07:00:00.000Z","created_at":"2009-07-25T18:01:50.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":43124,"metadata":{},"number":"2.1.0","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":43125,"metadata":{},"number":"2.1.0","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"9a9a2b7c710926e83d76ed308e5863be0c9011146bc983703437820d9cd405fe"},{"authors":"David
         Heinemeier Hansson","built_at":"2008-10-18T22:00:00.000Z","created_at":"2009-07-25T18:01:50.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":16529,"metadata":{},"number":"2.0.5","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":16530,"metadata":{},"number":"2.0.5","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"5e8a6e36f2537b795b7bb237e2aea18a166349e1e54e463a64beba5ae84cd406"},{"authors":"David
         Heinemeier Hansson","built_at":"2008-09-03T22:00:00.000Z","created_at":"2009-07-25T18:01:51.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":3177,"metadata":{},"number":"2.0.4","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":3178,"metadata":{},"number":"2.0.4","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"85a7294bc816e6104b11b34403750f032f7e36ec15cb412cfd489b3a11e64f03"},{"authors":"David
         Heinemeier Hansson","built_at":"2007-12-20T06:00:00.000Z","created_at":"2009-07-25T18:01:51.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":43982,"metadata":{},"number":"2.0.2","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":43983,"metadata":{},"number":"2.0.2","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"ae11c0c3e237c9e46feab39277cd8190f1ee36a5fced6215ed7c9327b19bddf6"},{"authors":"David
         Heinemeier Hansson","built_at":"2007-12-07T06:00:00.000Z","created_at":"2009-07-25T18:01:51.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":4985,"metadata":{},"number":"2.0.1","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":4986,"metadata":{},"number":"2.0.1","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"64e35d0669cff20baf406d8e4d0ca55ecc842ce75ea8e78b9102f663af57d8c4"},{"authors":"David
         Heinemeier Hansson","built_at":"2007-12-06T06:00:00.000Z","created_at":"2009-07-25T18:01:51.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":4407,"metadata":{},"number":"2.0.0","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":4408,"metadata":{},"number":"2.0.0","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"e4ed2b3b62babf3afc27d507ca6198776cb9e640f29503950e5c7900d96f468d"},{"authors":"David
         Heinemeier Hansson","built_at":"2007-11-23T11:00:00.000Z","created_at":"2009-07-25T18:01:51.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":27647,"metadata":{},"number":"1.2.6","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":27648,"metadata":{},"number":"1.2.6","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"5e83cfc2a47d9c4bb5390ffee63e69b32034da281d51b2955c605dcdbecf5c79"},{"authors":"David
         Heinemeier Hansson","built_at":"2007-10-12T05:00:00.000Z","created_at":"2009-07-25T18:01:52.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":8287,"metadata":{},"number":"1.2.5","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":8288,"metadata":{},"number":"1.2.5","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"6e39819f3237d50045883c6fc37a0caa360db9a68f47caa23ef772d16081d890"},{"authors":"David
         Heinemeier Hansson","built_at":"2007-10-04T05:00:00.000Z","created_at":"2009-07-25T18:01:52.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":3379,"metadata":{},"number":"1.2.4","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":3380,"metadata":{},"number":"1.2.4","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"e96c057e7dc58cc08ec127d793605af977801b72162781d0e46355c17aecfc66"},{"authors":"David
         Heinemeier Hansson","built_at":"2007-03-13T05:00:00.000Z","created_at":"2009-07-25T18:01:52.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":23173,"metadata":{},"number":"1.2.3","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":23174,"metadata":{},"number":"1.2.3","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"58ed2135a5b41b825350113924d34e1f36cf5fa05030c78e8d3c49614dfbf209"},{"authors":"David
         Heinemeier Hansson","built_at":"2007-02-06T06:00:00.000Z","created_at":"2009-07-25T18:01:52.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":10361,"metadata":{},"number":"1.2.2","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":10362,"metadata":{},"number":"1.2.2","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"e3482caade87a05c36971a6c4920a35ec8742a639f4c6c76276c49fa99a88df6"},{"authors":"David
         Heinemeier Hansson","built_at":"2007-01-18T06:00:00.000Z","created_at":"2009-07-25T18:01:52.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":3475,"metadata":{},"number":"1.2.1","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":3476,"metadata":{},"number":"1.2.1","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"4bd8daec4cdabae8d70a4d00706512d0d1d8f8415b904f3bc8e40be1f693d67e"},{"authors":"David
         Heinemeier Hansson","built_at":"2007-01-17T06:00:00.000Z","created_at":"2009-07-25T18:01:53.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":3618,"metadata":{},"number":"1.2.0","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":3619,"metadata":{},"number":"1.2.0","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"df29db2e0987cfbcf237097d1a45cb0aedef6b56f6eb502b3131ced78b05f1df"},{"authors":"David
         Heinemeier Hansson","built_at":"2006-08-10T05:00:00.000Z","created_at":"2009-07-25T18:01:54.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":10018,"metadata":{},"number":"1.1.6","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":10019,"metadata":{},"number":"1.1.6","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"f78cc3dfe77ceaa3cdd808735dcb81c8d3bdbd8e4d6b72ecc3a1b7fc19f1bd49"},{"authors":"David
         Heinemeier Hansson","built_at":"2006-08-09T05:00:00.000Z","created_at":"2009-07-25T18:01:54.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":2730,"metadata":{},"number":"1.1.5","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":2731,"metadata":{},"number":"1.1.5","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"d2608db4e073295d471b212bdf9c332df120a49bb6de02b77ba4d7d19f7fdf72"},{"authors":"David
         Heinemeier Hansson","built_at":"2006-06-29T05:00:00.000Z","created_at":"2009-07-25T18:01:54.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":3150,"metadata":{},"number":"1.1.4","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":3151,"metadata":{},"number":"1.1.4","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"dc0cd4d9bb95ddcae3ccdaa3e21ae3b0d2b4606070ea3e0944cd1bf6ec71a70f"},{"authors":"David
         Heinemeier Hansson","built_at":"2006-06-27T05:00:00.000Z","created_at":"2009-07-25T18:01:54.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":2633,"metadata":{},"number":"1.1.3","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":2634,"metadata":{},"number":"1.1.3","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"90bf03ffc9852684f5839f6144d218caebf1da373258b5e85209d62b0cb7c3eb"},{"authors":"David
         Heinemeier Hansson","built_at":"2006-04-09T05:00:00.000Z","created_at":"2009-07-25T18:01:54.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":4090,"metadata":{},"number":"1.1.2","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":4091,"metadata":{},"number":"1.1.2","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"1ffd33463d5ed4aa4079f46816dd08af3028f361e623be57a6dec9784263f26f"},{"authors":"David
         Heinemeier Hansson","built_at":"2006-04-06T05:00:00.000Z","created_at":"2009-07-25T18:01:55.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":2783,"metadata":{},"number":"1.1.1","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":2784,"metadata":{},"number":"1.1.1","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"6c54ca011610c17c1c0ad6816480b596b008f450b875141ebd10ed65b0e4d3df"},{"authors":"David
         Heinemeier Hansson","built_at":"2006-03-27T06:00:00.000Z","created_at":"2009-07-25T18:01:55.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":2927,"metadata":{},"number":"1.1.0","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":2928,"metadata":{},"number":"1.1.0","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"b4d455cb02eae13ec3b48abbd95cfeaf5c05cd092ab9fe4fd809636d1bab3e6c"},{"authors":"David
         Heinemeier Hansson","built_at":"2005-12-13T06:00:00.000Z","created_at":"2009-07-25T18:01:55.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":3941,"metadata":{},"number":"1.0.0","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":3942,"metadata":{},"number":"1.0.0","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"52b06ee61c4826f545f6e4e6c33eef8f8772f6a1f5ce66a812abab2b5388aed2"},{"authors":"David
         Heinemeier Hansson","built_at":"2005-12-07T06:00:00.000Z","created_at":"2009-07-25T18:01:56.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":2668,"metadata":{},"number":"0.14.4","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":2669,"metadata":{},"number":"0.14.4","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"ae161659ac9a467a782319fb960fcfe7dbc2b7e28752c9b44acf4227718271b9"},{"authors":"David
         Heinemeier Hansson","built_at":"2005-11-06T23:00:00.000Z","created_at":"2009-07-25T18:01:56.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":2579,"metadata":{},"number":"0.14.3","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":2580,"metadata":{},"number":"0.14.3","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"141f70ad1d05f5f2f89ee1fc8324f99b3eb5e05dbea2eb2febf42c89efaad135"},{"authors":"David
         Heinemeier Hansson","built_at":"2005-10-25T22:00:00.000Z","created_at":"2009-07-25T18:01:57.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":2652,"metadata":{},"number":"0.14.2","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":2653,"metadata":{},"number":"0.14.2","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"98d96be5c6d0da79ab33b75ea2d7472cec863fd45394baf6634925685c3ea2fd"},{"authors":"David
         Heinemeier Hansson","built_at":"2005-10-19T04:00:00.000Z","created_at":"2009-07-25T18:01:57.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":2642,"metadata":{},"number":"0.14.1","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":2643,"metadata":{},"number":"0.14.1","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"7725daf25f6cd232ea3c3bc1c5693502add0e9ad10fdab33dd0fb402ab6373a2"},{"authors":"David
         Heinemeier Hansson","built_at":"2005-07-11T04:00:00.000Z","created_at":"2009-07-25T18:01:57.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
         WEBrick on top of either MySQL, PostgreSQL, SQLite, DB2, SQL Server, or Oracle
-        with eRuby- or Builder-based templates.","downloads_count":3974,"metadata":{},"number":"0.13.1","summary":"Web-application
+        with eRuby- or Builder-based templates.","downloads_count":3975,"metadata":{},"number":"0.13.1","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"b7bfea7a5dbb456f33cef9e2de59bbb08e25d7612240a8f0613b02ae1d7f2d58"},{"authors":"David
         Heinemeier Hansson","built_at":"2005-07-06T04:00:00.000Z","created_at":"2009-07-25T18:01:57.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
-        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2638,"metadata":{},"number":"0.13.0","summary":"Web-application
+        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2639,"metadata":{},"number":"0.13.0","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"30715907b5809db8c44cb438b9bda6d0bcc62451e13274edc5ea108b5c14f608"},{"authors":"David
         Heinemeier Hansson","built_at":"2005-04-20T04:00:00.000Z","created_at":"2009-07-25T18:01:57.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
-        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2955,"metadata":{},"number":"0.12.1","summary":"Web-application
+        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2956,"metadata":{},"number":"0.12.1","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"1347f1cf31a7786c92cecdea53401a1f1fc3bd3e8cf15c00d65de8109b6615eb"},{"authors":"David
         Heinemeier Hansson","built_at":"2005-04-19T04:00:00.000Z","created_at":"2009-07-25T18:01:58.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
-        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2596,"metadata":{},"number":"0.12.0","summary":"Web-application
+        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2597,"metadata":{},"number":"0.12.0","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"4f9b4eb0e2dfe2da9e8f0efd25872d2347f8b26e7091e2175516a6d626236501"},{"authors":"David
         Heinemeier Hansson","built_at":"2005-03-27T05:00:00.000Z","created_at":"2009-07-25T18:01:58.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
-        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2556,"metadata":{},"number":"0.11.1","summary":"Web-application
+        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2557,"metadata":{},"number":"0.11.1","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"e807ae18b85ef6603e839d8c32155c0379419a441c5ce390d1e31e86a929b3f3"},{"authors":"David
         Heinemeier Hansson","built_at":"2005-03-22T05:00:00.000Z","created_at":"2009-07-25T18:01:58.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
-        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2601,"metadata":{},"number":"0.11.0","summary":"Web-application
+        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2602,"metadata":{},"number":"0.11.0","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"dffce238995d10e754f1633b702e733c0a80f9b447a54048e42c77a4d1fc0734"},{"authors":"David
         Heinemeier Hansson","built_at":"2005-03-07T05:00:00.000Z","created_at":"2009-07-25T18:01:58.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
-        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2595,"metadata":{},"number":"0.10.1","summary":"Web-application
+        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2596,"metadata":{},"number":"0.10.1","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"f7b3896f3b13536b075bcf4036122ed50bac0d3b34d80d194fcdb0240a16e384"},{"authors":"David
         Heinemeier Hansson","built_at":"2005-02-24T05:00:00.000Z","created_at":"2009-07-25T18:01:58.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
-        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2643,"metadata":{},"number":"0.10.0","summary":"Web-application
+        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2644,"metadata":{},"number":"0.10.0","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"51fcc55a23e06245e97a8088d0122ac85b6ad16dcb2156d1f53499309a4c7141"},{"authors":"David
         Heinemeier Hansson","built_at":"2005-01-25T05:00:00.000Z","created_at":"2009-07-25T18:01:55.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
-        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":27748,"metadata":{},"number":"0.9.5","summary":"Web-application
+        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":27749,"metadata":{},"number":"0.9.5","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"8a03d2c37e6efc2ed1084c2b5189caed0522fb6a09881c8c73e28f0ffca966f2"},{"authors":"David
         Heinemeier Hansson","built_at":"2005-01-18T05:00:00.000Z","created_at":"2009-07-25T18:01:55.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
-        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2643,"metadata":{},"number":"0.9.4.1","summary":"Web-application
+        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2644,"metadata":{},"number":"0.9.4.1","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"81989d02f78771857da3e0136b459a5cb7d7a02ce0c540993c4febf2047a5ee9"},{"authors":"David
         Heinemeier Hansson","built_at":"2005-01-17T05:00:00.000Z","created_at":"2009-07-25T18:01:55.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
-        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2632,"metadata":{},"number":"0.9.4","summary":"Web-application
+        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2633,"metadata":{},"number":"0.9.4","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"9be6e8cfe3d937b6f46c71df1c751cb0f06d5bc06539b85d584a1439783dbfa7"},{"authors":"David
         Heinemeier Hansson","built_at":"2005-01-04T05:00:00.000Z","created_at":"2009-07-25T18:01:55.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
-        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2574,"metadata":{},"number":"0.9.3","summary":"Web-application
+        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2575,"metadata":{},"number":"0.9.3","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"5cc763df669215dc7556a7eb6e7b1437701818c1cfbcd3c0e0f405fe2d023aad"},{"authors":"","built_at":"2004-12-23T05:00:00.000Z","created_at":"2009-07-25T18:01:56.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
-        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2678,"metadata":{},"number":"0.9.2","summary":"Web-application
+        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2679,"metadata":{},"number":"0.9.2","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"740c3b4fb642972e706e2d3d5ce1988326877971eb91bcf414ef992a19926394"},{"authors":"","built_at":"2004-12-17T05:00:00.000Z","created_at":"2009-07-25T18:01:56.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
-        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2643,"metadata":{},"number":"0.9.1","summary":"Web-application
+        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2644,"metadata":{},"number":"0.9.1","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"e4fdddacb663ec8b7d3a01e6db74edbcd61e503c674ab2f222e78f91fb7daa01"},{"authors":"","built_at":"2004-12-16T05:00:00.000Z","created_at":"2009-07-25T18:01:56.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
-        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2606,"metadata":{},"number":"0.9.0","summary":"Web-application
+        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2607,"metadata":{},"number":"0.9.0","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"4d53b8a98282c7602200345d9b92e53ba12688fb0a36b04cc10b2c42709d7824"},{"authors":"","built_at":"2004-11-18T05:00:00.000Z","created_at":"2009-07-25T18:01:56.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
-        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2612,"metadata":{},"number":"0.8.5","summary":"Web-application
+        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":2613,"metadata":{},"number":"0.8.5","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"f828c544ba8bc529d352f0fcb6687c7fb8809488142510e255caafda8cc8801f"},{"authors":"","built_at":"2004-10-25T04:00:00.000Z","created_at":"2009-07-25T18:01:56.000Z","description":"Rails
         is a framework for building web-application using CGI, FCGI, mod_ruby, or
-        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":6375906,"metadata":{},"number":"0.8.0","summary":"Web-application
+        WEBrick on top of either MySQL, PostgreSQL, or SQLite with eRuby-based templates.","downloads_count":6375907,"metadata":{},"number":"0.8.0","summary":"Web-application
         framework with template engine, control-flow layer, and ORM.","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"182794b9b4af4eff6884c979f0ae6a632ea42bf4f309cf16553b02fc4be344d3"}]'}
     headers:
       Accept-Ranges: [bytes]
-      Age: ['0']
+      Age: ['222']
       Cache-Control: ['max-age=0, public']
       Connection: [keep-alive]
       Content-Length: ['203404']
@@ -1917,7 +1969,7 @@ interactions:
           connect-src https://s3-us-west-2.amazonaws.com/rubygems-dumps/; frame-src
           https://ghbtns.com']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Mon, 18 Sep 2017 04:14:03 GMT']
+      Date: ['Mon, 18 Sep 2017 05:53:57 GMT']
       ETag: ['"8d113aeeed09c2d7684635096cffe910"']
       Last-Modified: ['Fri, 08 Sep 2017 00:52:10 GMT']
       Server: [RubyGems.org]
@@ -1926,13 +1978,13 @@ interactions:
       Via: [1.1 varnish]
       X-Backend: ['F_Rails 54.186.104.15:443']
       X-Cache: [HIT]
-      X-Cache-Hits: ['1']
+      X-Cache-Hits: ['2']
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [ae99d2ae-4650-4eda-b107-0ab6928772d6]
-      X-Runtime: ['0.461646']
-      X-Served-By: [cache-gru17120-GRU]
-      X-Timer: ['S1505708043.159217,VS0,VE197']
+      X-Request-Id: [74812430-f7bc-45fa-974a-ccbd45826729]
+      X-Runtime: ['0.627196']
+      X-Served-By: [cache-gru17125-GRU]
+      X-Timer: ['S1505714038.924444,VS0,VE0']
       X-UA-Compatible: ['IE=Edge,chrome=1']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}

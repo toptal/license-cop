@@ -7,6 +7,52 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.18.4]
     method: GET
+    uri: https://rubygems.org/api/v1/gems/coulda.json
+  response:
+    body: {string: '{"name":"coulda","downloads":53383,"version":"0.7.1","version_downloads":3332,"platform":"ruby","authors":"Evan
+        David Light","info":"Behaviour Driven Development derived from Cucumber but
+        as an internal DSL with methods for reuse","licenses":null,"metadata":{},"sha":"777c3a7ed83e44198b0a624976ec99822eb6f4a44bf1513eafbc7c13997cd86c","project_uri":"https://rubygems.org/gems/coulda","gem_uri":"https://rubygems.org/gems/coulda-0.7.1.gem","homepage_uri":"http://coulda.tiggerpalace.com","wiki_uri":null,"documentation_uri":"http://www.rubydoc.info/gems/coulda/0.7.1","mailing_list_uri":null,"source_code_uri":null,"bug_tracker_uri":null,"changelog_uri":null,"dependencies":{"development":[],"runtime":[{"name":"yourdsl","requirements":"~\u003e
+        0.7"}]}}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Methods: [GET]
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Max-Age: ['1728000']
+      Age: ['0']
+      Cache-Control: ['max-age=0, private, must-revalidate']
+      Connection: [keep-alive]
+      Content-Security-Policy: ['default-src ''self''; script-src ''self'' https://secure.gaug.es;
+          style-src ''self'' https://fonts.googleapis.com; img-src ''self'' https://secure.gaug.es
+          https://gravatar.com https://secure.gravatar.com; font-src ''self'' https://fonts.gstatic.com;
+          connect-src https://s3-us-west-2.amazonaws.com/rubygems-dumps/; frame-src
+          https://ghbtns.com']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Mon, 18 Sep 2017 05:53:59 GMT']
+      ETag: ['"0bf208151c3654848d4db6b70cea95ee"']
+      Server: [RubyGems.org]
+      Strict-Transport-Security: [max-age=0]
+      Vary: ['Accept-Encoding,Fastly-SSL']
+      Via: [1.1 varnish]
+      X-Backend: ['F_Rails 54.186.104.15:443']
+      X-Cache: [MISS]
+      X-Cache-Hits: ['0']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [5ed6e9a8-6dcb-4f4b-86f2-87c681f855ca]
+      X-Runtime: ['0.012837']
+      X-Served-By: [cache-gru17134-GRU]
+      X-Timer: ['S1505714039.454545,VS0,VE201']
+      X-UA-Compatible: ['IE=Edge,chrome=1']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
     uri: https://rubygems.org/api/v1/versions/coulda.json
   response:
     body: {string: '[{"authors":"Evan David Light","built_at":"2011-08-08T04:00:00.000Z","created_at":"2011-08-08T21:23:40.254Z","description":"Behaviour
@@ -116,7 +162,7 @@ interactions:
           connect-src https://s3-us-west-2.amazonaws.com/rubygems-dumps/; frame-src
           https://ghbtns.com']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Mon, 18 Sep 2017 04:14:04 GMT']
+      Date: ['Mon, 18 Sep 2017 05:53:59 GMT']
       ETag: ['"c68c99dd1663c921828972bffbf9fbce"']
       Last-Modified: ['Mon, 27 Mar 2017 03:40:04 GMT']
       Server: [RubyGems.org]
@@ -128,56 +174,10 @@ interactions:
       X-Cache-Hits: ['0']
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [fb3d273f-3b3c-4363-a97c-36fe8bc2b3ad]
-      X-Runtime: ['0.033476']
-      X-Served-By: [cache-gru17123-GRU]
-      X-Timer: ['S1505708044.191211,VS0,VE196']
-      X-UA-Compatible: ['IE=Edge,chrome=1']
-      X-XSS-Protection: [1; mode=block]
-    status: {code: 200, message: OK}
-- request:
-    body: null
-    headers:
-      Accept: ['*/*']
-      Accept-Encoding: [identity]
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4]
-    method: GET
-    uri: https://rubygems.org/api/v1/gems/coulda.json
-  response:
-    body: {string: '{"name":"coulda","downloads":53383,"version":"0.7.1","version_downloads":3332,"platform":"ruby","authors":"Evan
-        David Light","info":"Behaviour Driven Development derived from Cucumber but
-        as an internal DSL with methods for reuse","licenses":null,"metadata":{},"sha":"777c3a7ed83e44198b0a624976ec99822eb6f4a44bf1513eafbc7c13997cd86c","project_uri":"https://rubygems.org/gems/coulda","gem_uri":"https://rubygems.org/gems/coulda-0.7.1.gem","homepage_uri":"http://coulda.tiggerpalace.com","wiki_uri":null,"documentation_uri":"http://www.rubydoc.info/gems/coulda/0.7.1","mailing_list_uri":null,"source_code_uri":null,"bug_tracker_uri":null,"changelog_uri":null,"dependencies":{"development":[],"runtime":[{"name":"yourdsl","requirements":"~\u003e
-        0.7"}]}}'}
-    headers:
-      Accept-Ranges: [bytes]
-      Access-Control-Allow-Methods: [GET]
-      Access-Control-Allow-Origin: ['*']
-      Access-Control-Max-Age: ['1728000']
-      Age: ['0']
-      Cache-Control: ['max-age=0, private, must-revalidate']
-      Connection: [keep-alive]
-      Content-Security-Policy: ['default-src ''self''; script-src ''self'' https://secure.gaug.es;
-          style-src ''self'' https://fonts.googleapis.com; img-src ''self'' https://secure.gaug.es
-          https://gravatar.com https://secure.gravatar.com; font-src ''self'' https://fonts.gstatic.com;
-          connect-src https://s3-us-west-2.amazonaws.com/rubygems-dumps/; frame-src
-          https://ghbtns.com']
-      Content-Type: [application/json; charset=utf-8]
-      Date: ['Mon, 18 Sep 2017 04:14:04 GMT']
-      ETag: ['"0bf208151c3654848d4db6b70cea95ee"']
-      Server: [RubyGems.org]
-      Strict-Transport-Security: [max-age=0]
-      Vary: ['Accept-Encoding,Fastly-SSL']
-      Via: [1.1 varnish]
-      X-Backend: ['F_Rails 54.186.104.15:443']
-      X-Cache: [MISS]
-      X-Cache-Hits: ['0']
-      X-Content-Type-Options: [nosniff]
-      X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [6c1fd295-6218-480d-8ad4-d70f228c820f]
-      X-Runtime: ['0.012742']
-      X-Served-By: [cache-gru17123-GRU]
-      X-Timer: ['S1505708044.433640,VS0,VE201']
+      X-Request-Id: [3d67c834-7ff1-447f-a2a4-e23ebc56606d]
+      X-Runtime: ['0.032217']
+      X-Served-By: [cache-gru17134-GRU]
+      X-Timer: ['S1505714040.685204,VS0,VE187']
       X-UA-Compatible: ['IE=Edge,chrome=1']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}

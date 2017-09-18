@@ -7,12 +7,12 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.18.4]
     method: GET
-    uri: https://rubygems.org/api/v1/versions/foobar666.json
+    uri: https://rubygems.org/api/v1/gems/foobar666.json
   response:
     body: {string: This rubygem could not be found.}
     headers:
       Accept-Ranges: [bytes]
-      Age: ['93']
+      Age: ['0']
       Cache-Control: [no-cache]
       Connection: [keep-alive]
       Content-Length: ['32']
@@ -22,19 +22,19 @@ interactions:
           connect-src https://s3-us-west-2.amazonaws.com/rubygems-dumps/; frame-src
           https://ghbtns.com']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Mon, 18 Sep 2017 04:14:03 GMT']
+      Date: ['Mon, 18 Sep 2017 05:53:58 GMT']
       Server: [RubyGems.org]
       Strict-Transport-Security: [max-age=0]
       Vary: [Accept-Encoding]
       Via: [1.1 varnish]
-      X-Cache: [HIT]
-      X-Cache-Hits: ['1']
+      X-Cache: [MISS]
+      X-Cache-Hits: ['0']
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [002b6cb5-eff0-41ed-b36f-8de423239b68]
-      X-Runtime: ['0.003456']
-      X-Served-By: [cache-gru17126-GRU]
-      X-Timer: ['S1505708043.031087,VS0,VE0']
+      X-Request-Id: [b7bb448f-847c-496d-98ee-c34f3d45d1c1]
+      X-Runtime: ['0.005850']
+      X-Served-By: [cache-gru17123-GRU]
+      X-Timer: ['S1505714039.662953,VS0,VE191']
       X-XSS-Protection: [1; mode=block]
     status: {code: 404, message: Not Found}
 version: 1

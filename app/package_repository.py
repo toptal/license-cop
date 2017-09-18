@@ -11,10 +11,10 @@ class Dependency(DataObject):
         self.name = name
 
 
-class Package(DataObject):
-    def __init__(self, name, version, dependencies, licenses):
+class PackageVersion(DataObject):
+    def __init__(self, name, number, dependencies, licenses):
         self.name = name
-        self.version = version
+        self.number = number
         self.dependencies = dependencies
         self.licenses = licenses
 
@@ -26,5 +26,9 @@ class PackageRepository(ABC):
             self._session.headers.update({'Accept-Encoding': 'identity'})
 
     @abstractmethod
-    def fetch_package(self, name, version):
+    def fetch_version(self, name, number):
+        pass
+
+    @abstractmethod
+    def fetch_latest_version(self, name):
         pass

@@ -7,121 +7,40 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.18.4]
     method: GET
-    uri: https://rubygems.org/api/v1/versions/rdiscount.json
+    uri: https://rubygems.org/api/v1/gems/rdiscount.json
   response:
-    body: {string: '[{"authors":"Ryan Tomayko, David Loren Parsons, Andrew White,
-        David Foster","built_at":"2016-05-07T00:00:00.000Z","created_at":"2016-05-08T00:58:06.174Z","description":"","downloads_count":388718,"metadata":{},"number":"2.2.0.1","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":"!= 1.9.2","prerelease":false,"licenses":["BSD-3-Clause"],"requirements":[],"sha":"a34f55937c84f390f979808c7002fd24ab1e8b0172c916b0563d5f03e6983bab"},{"authors":"Ryan
-        Tomayko, David Loren Parsons, Andrew White, David Foster","built_at":"2015-02-01T00:00:00.000Z","created_at":"2016-05-08T00:47:12.153Z","description":"","downloads_count":1557,"metadata":{},"number":"2.2.0","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":"!= 1.9.2","prerelease":false,"licenses":["BSD-3-Clause"],"requirements":[],"sha":"ec2fb57d5ace9b9aefff6a930a6f8cf7d7bb60db99820b9559ad1e538a6bdbad"},{"authors":"Ryan
-        Tomayko, David Loren Parsons, Andrew White, David Foster","built_at":"2015-02-01T00:00:00.000Z","created_at":"2015-02-01T23:08:27.157Z","description":"","downloads_count":598004,"metadata":{},"number":"2.1.8","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":"!= 1.9.2","prerelease":false,"licenses":["BSD"],"requirements":[],"sha":"1b1c2b8e3c2afd2993efa14e28f992d8b755441b17f3e2c102cf719341f29e6d"},{"authors":"Ryan
-        Tomayko, David Loren Parsons, Andrew White, David Foster","built_at":"2014-04-12T00:00:00.000Z","created_at":"2014-04-12T19:02:54.580Z","description":null,"downloads_count":332460,"metadata":{},"number":"2.1.7.1","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":"!= 1.9.2","prerelease":false,"licenses":["BSD"],"requirements":[],"sha":"31e26bf4a71b18c2ca1872729cef3157614c2a3f4af69ca667bcd5b39fdee0bc"},{"authors":"Ryan
-        Tomayko, David Loren Parsons, Andrew White, David Foster","built_at":"2013-10-13T00:00:00.000Z","created_at":"2013-10-14T00:18:18.966Z","description":null,"downloads_count":416886,"metadata":{},"number":"2.1.7","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":[],"sha":"12544e913100bccbb9271ee7d70d2ffbda4988fae65904893fa480e9794a2498"},{"authors":"Ryan
-        Tomayko, David Loren Parsons, Andrew White, David Foster","built_at":"2013-05-28T00:00:00.000Z","created_at":"2013-05-29T02:30:18.555Z","description":null,"downloads_count":92494,"metadata":{},"number":"2.1.6","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"0297f26df8ba56dd8b598c8c8c3796952a2fcf8e3b44f0a8f30cd8ce5fb214a0"},{"authors":"Ryan
-        Tomayko, David Loren Parsons, Andrew White, David Foster","built_at":"2013-05-07T00:00:00.000Z","created_at":"2013-05-08T04:34:03.357Z","description":null,"downloads_count":143295,"metadata":{},"number":"2.0.7.3","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"56f07118ce3e49100d6d1c148b4fd58de18d0b8404fd76059e34122e2ec80ac0"},{"authors":"Ryan
-        Tomayko, David Loren Parsons, Andrew White, David Foster","built_at":"2013-04-06T07:00:00.000Z","created_at":"2013-04-07T01:18:44.217Z","description":null,"downloads_count":25857,"metadata":{},"number":"2.0.7.2","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"212fa71a77474ae5f49e1373a41cf6e6bca0a716510722affd44caa99dad31b8"},{"authors":"Ryan
-        Tomayko, David Loren Parsons, Andrew White, David Foster","built_at":"2013-02-26T00:00:00.000Z","created_at":"2013-02-27T06:13:18.312Z","description":null,"downloads_count":44314,"metadata":{},"number":"2.0.7.1","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"b6d78d961fc846f35cff7ac6fd05aff85a81d74ce04c04c5b1507ac7538a5cf6"},{"authors":"Ryan
-        Tomayko, David Loren Parsons, Andrew White, David Foster","built_at":"2013-01-29T00:00:00.000Z","created_at":"2013-02-03T07:12:57.215Z","description":null,"downloads_count":32026,"metadata":{},"number":"2.0.7","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"417fa105b9c282b430a60f7c450e8cb50bd3a28d36b4fd377d4ae29e8a6d49b2"},{"authors":"Ryan
-        Tomayko, David Loren Parsons, Andrew White","built_at":"2011-01-25T08:00:00.000Z","created_at":"2011-01-25T11:15:13.962Z","description":null,"downloads_count":1585597,"metadata":{},"number":"1.6.8","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"a085178fc7d6372222af192bdc8aa8b6b24c8014f0c2a3c227a1c173f104d4df"},{"authors":"Ryan
-        Tomayko, David Loren Parsons, Andrew White","built_at":"2010-06-15T07:00:00.000Z","created_at":"2010-06-15T21:03:29.908Z","description":null,"downloads_count":86165,"metadata":{},"number":"1.6.5","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"6c4177bb5e08332d301e352810c337899a89849e63936fe133baff4ac877bae9"},{"authors":"Ryan
-        Tomayko, David Loren Parsons, Andrew White","built_at":"2010-05-14T07:00:00.000Z","created_at":"2010-05-14T23:23:12.657Z","description":null,"downloads_count":8972,"metadata":{},"number":"1.6.3.2","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"d2ab3191dd26df7619894b861449380818a26f722bc4c8252f53ba6703423bc7"},{"authors":"Ryan
-        Tomayko, David Loren Parsons, Andrew White","built_at":"2010-04-20T07:00:00.000Z","created_at":"2010-04-20T22:07:26.344Z","description":null,"downloads_count":6941,"metadata":{},"number":"1.6.3.1","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"934aa3ef8f3a987af4ebe3194144d1e577d279bfc3f17a3fefa6089306f1920a"},{"authors":"Ryan
-        Tomayko, David Loren Parsons, Andrew White","built_at":"2010-03-08T08:00:00.000Z","created_at":"2010-03-08T21:24:49.058Z","description":null,"downloads_count":37033,"metadata":{},"number":"1.6.3","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"0cd8843d2fa682e782476624f1e42021ec7993734a921ea0b1c4a9b3c57ab113"},{"authors":"Ryan
-        Tomayko, David Loren Parsons, Andrew White","built_at":"2010-03-08T08:00:00.000Z","created_at":"2010-03-08T20:28:13.781Z","description":null,"downloads_count":2985,"metadata":{},"number":"1.5.8.1","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"f69219d6a408d50b2d9f4313ad8f5e2e6e6cc92ebac2af90d9507da0e1b9f35e"},{"authors":"Ryan
-        Tomayko, David Loren Parsons, Andrew White","built_at":"2010-02-03T08:00:00.000Z","created_at":"2010-02-03T16:49:35.411Z","description":null,"downloads_count":9305,"metadata":{},"number":"1.5.8","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"09cb42c3777e477b5b6c103848b3fa82cddd7c98c5178bd0ddece678495cbec5"},{"authors":"Ryan
-        Tomayko, Andrew White","built_at":"2009-11-13T11:00:00.000Z","created_at":"2009-11-14T01:59:25.772Z","description":null,"downloads_count":15004,"metadata":{},"number":"1.5.5","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"5aa9eb3ee75cbfd7db93f3f63b6fd580f140673c03cedaafde426a6130fa14f9"},{"authors":"Ryan
-        Tomayko, Andrew White","built_at":"2009-07-26T07:00:00.000Z","created_at":"2009-08-05T13:25:55.000Z","description":"","downloads_count":4619,"metadata":{},"number":"1.3.5","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"1a8d9a2cc13134fe94bb198fe92fd7316f95b0811449c845dc3d0616202c1c05"},{"authors":"Ryan
-        Tomayko, Andrew White","built_at":"2009-03-04T08:00:00.000Z","created_at":"2009-07-25T18:00:33.000Z","description":"","downloads_count":2694,"metadata":{},"number":"1.3.4","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"689da7464fee59ff26067230c806ddc96514cbc623ae713e4a16e6bfb2016419"},{"authors":"Ryan
-        Tomayko, Andrew White","built_at":"2009-01-31T08:00:00.000Z","created_at":"2009-07-25T18:00:33.000Z","description":"","downloads_count":50000,"metadata":{},"number":"1.3.1.1","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"6174ded940a47e2744bb9f6ee7d9564dae51d209196ca601c7cdba7bc397b748"},{"authors":"Ryan
-        Tomayko, Andrew White","built_at":"2009-01-10T08:00:00.000Z","created_at":"2009-07-25T18:00:33.000Z","description":"","downloads_count":2320,"metadata":{},"number":"1.3.1","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"8706eafa5ca1caef1330aba4d721248f7abe97fff9057929b1e9e3ab2025a235"},{"authors":"Ryan
-        Tomayko","built_at":"2008-11-02T08:00:00.000Z","created_at":"2009-07-25T18:00:33.000Z","description":"","downloads_count":2219,"metadata":{},"number":"1.2.11","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"425a8685be2afaa13e0b0616eeb137b41f4536d4bd8e46207c301ac76f0b0ce7"},{"authors":"Ryan
-        Tomayko","built_at":"2008-09-30T07:00:00.000Z","created_at":"2009-07-25T18:00:33.000Z","description":"","downloads_count":2139,"metadata":{},"number":"1.2.10","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"dab826a59aeb021a600661ba4987e4a28e3955ffa14b5e6adafbf46cc1beebd2"},{"authors":"Ryan
-        Tomayko","built_at":"2008-08-26T07:00:00.000Z","created_at":"2009-07-25T18:00:33.000Z","description":"","downloads_count":2150,"metadata":{},"number":"1.2.9","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"eb5c3825ec15b75dc08e275a641e2bc5071b6cd0decb95d28841af0afac539fe"},{"authors":"Ryan
-        Tomayko","built_at":"2008-08-09T07:00:00.000Z","created_at":"2009-07-25T18:00:33.000Z","description":"","downloads_count":2048,"metadata":{},"number":"1.2.7.1","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"85b19ad51641983eec2389181db0671affc38110e86ce3d62342b46e5f4fa285"},{"authors":"Ryan
-        Tomayko","built_at":"2008-08-02T07:00:00.000Z","created_at":"2009-07-25T18:00:33.000Z","description":"","downloads_count":2115,"metadata":{},"number":"1.2.7","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"16862dd73f905d53921ae88927620d5bac23d57dce9c90ec2b023aa9633d6855"},{"authors":"Ryan
-        Tomayko","built_at":"2008-06-03T04:00:00.000Z","created_at":"2009-07-25T18:00:33.000Z","description":"","downloads_count":2093,"metadata":{},"number":"1.2.6.2","summary":"Fast
-        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
-        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"e48c6eb20efea251b8918fb8cad78364a5f4c545e3a3c56aa750de6cd4361afb"}]'}
+    body: {string: '{"name":"rdiscount","downloads":3900201,"version":"2.2.0.1","version_downloads":388778,"platform":"ruby","authors":"Ryan
+        Tomayko, David Loren Parsons, Andrew White, David Foster","info":"Fast Implementation
+        of Gruber''s Markdown in C","licenses":["BSD-3-Clause"],"metadata":{},"sha":"a34f55937c84f390f979808c7002fd24ab1e8b0172c916b0563d5f03e6983bab","project_uri":"https://rubygems.org/gems/rdiscount","gem_uri":"https://rubygems.org/gems/rdiscount-2.2.0.1.gem","homepage_uri":"http://dafoster.net/projects/rdiscount/","wiki_uri":"https://github.com/davidfstr/rdiscount/wiki","documentation_uri":"http://rdoc.info/github/davidfstr/rdiscount/master/RDiscount","mailing_list_uri":"","source_code_uri":"https://github.com/davidfstr/rdiscount","bug_tracker_uri":"https://github.com/davidfstr/rdiscount/issues","changelog_uri":null,"dependencies":{"development":[],"runtime":[]}}'}
     headers:
       Accept-Ranges: [bytes]
-      Age: ['70']
-      Cache-Control: ['max-age=0, public']
+      Access-Control-Allow-Methods: [GET]
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Max-Age: ['1728000']
+      Age: ['0']
+      Cache-Control: ['max-age=0, private, must-revalidate']
       Connection: [keep-alive]
-      Content-Length: ['12981']
       Content-Security-Policy: ['default-src ''self''; script-src ''self'' https://secure.gaug.es;
           style-src ''self'' https://fonts.googleapis.com; img-src ''self'' https://secure.gaug.es
           https://gravatar.com https://secure.gravatar.com; font-src ''self'' https://fonts.gstatic.com;
           connect-src https://s3-us-west-2.amazonaws.com/rubygems-dumps/; frame-src
           https://ghbtns.com']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Mon, 18 Sep 2017 04:14:07 GMT']
-      ETag: ['"a3dfffa1716032820fd22ecfc716730b"']
-      Last-Modified: ['Mon, 27 Mar 2017 03:38:11 GMT']
+      Date: ['Mon, 18 Sep 2017 05:54:00 GMT']
+      ETag: ['"41092b52ea128974b0d917634fbaccbd"']
       Server: [RubyGems.org]
       Strict-Transport-Security: [max-age=0]
       Vary: ['Accept-Encoding,Fastly-SSL']
       Via: [1.1 varnish]
       X-Backend: ['F_Rails 54.186.104.15:443']
-      X-Cache: [HIT]
-      X-Cache-Hits: ['1']
+      X-Cache: [MISS]
+      X-Cache-Hits: ['0']
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [2262b4ec-ffd5-4855-a884-812628cd10b4]
-      X-Runtime: ['0.058860']
-      X-Served-By: [cache-gru17134-GRU]
-      X-Timer: ['S1505708048.537776,VS0,VE0']
+      X-Request-Id: [05eac634-3fb0-46a3-88f3-c16f372bbed7]
+      X-Runtime: ['0.019069']
+      X-Served-By: [cache-gru17130-GRU]
+      X-Timer: ['S1505714040.987037,VS0,VE209']
       X-UA-Compatible: ['IE=Edge,chrome=1']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
@@ -133,26 +52,108 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.18.4]
     method: GET
-    uri: https://rubygems.org/api/v1/gems/rdiscount.json
+    uri: https://rubygems.org/api/v1/versions/rdiscount.json
   response:
-    body: {string: '{"name":"rdiscount","downloads":3900064,"version":"2.2.0.1","version_downloads":388718,"platform":"ruby","authors":"Ryan
-        Tomayko, David Loren Parsons, Andrew White, David Foster","info":"Fast Implementation
-        of Gruber''s Markdown in C","licenses":["BSD-3-Clause"],"metadata":{},"sha":"a34f55937c84f390f979808c7002fd24ab1e8b0172c916b0563d5f03e6983bab","project_uri":"https://rubygems.org/gems/rdiscount","gem_uri":"https://rubygems.org/gems/rdiscount-2.2.0.1.gem","homepage_uri":"http://dafoster.net/projects/rdiscount/","wiki_uri":"https://github.com/davidfstr/rdiscount/wiki","documentation_uri":"http://rdoc.info/github/davidfstr/rdiscount/master/RDiscount","mailing_list_uri":"","source_code_uri":"https://github.com/davidfstr/rdiscount","bug_tracker_uri":"https://github.com/davidfstr/rdiscount/issues","changelog_uri":null,"dependencies":{"development":[],"runtime":[]}}'}
+    body: {string: '[{"authors":"Ryan Tomayko, David Loren Parsons, Andrew White,
+        David Foster","built_at":"2016-05-07T00:00:00.000Z","created_at":"2016-05-08T00:58:06.174Z","description":"","downloads_count":388777,"metadata":{},"number":"2.2.0.1","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"!= 1.9.2","prerelease":false,"licenses":["BSD-3-Clause"],"requirements":[],"sha":"a34f55937c84f390f979808c7002fd24ab1e8b0172c916b0563d5f03e6983bab"},{"authors":"Ryan
+        Tomayko, David Loren Parsons, Andrew White, David Foster","built_at":"2015-02-01T00:00:00.000Z","created_at":"2016-05-08T00:47:12.153Z","description":"","downloads_count":1558,"metadata":{},"number":"2.2.0","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"!= 1.9.2","prerelease":false,"licenses":["BSD-3-Clause"],"requirements":[],"sha":"ec2fb57d5ace9b9aefff6a930a6f8cf7d7bb60db99820b9559ad1e538a6bdbad"},{"authors":"Ryan
+        Tomayko, David Loren Parsons, Andrew White, David Foster","built_at":"2015-02-01T00:00:00.000Z","created_at":"2015-02-01T23:08:27.157Z","description":"","downloads_count":598009,"metadata":{},"number":"2.1.8","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"!= 1.9.2","prerelease":false,"licenses":["BSD"],"requirements":[],"sha":"1b1c2b8e3c2afd2993efa14e28f992d8b755441b17f3e2c102cf719341f29e6d"},{"authors":"Ryan
+        Tomayko, David Loren Parsons, Andrew White, David Foster","built_at":"2014-04-12T00:00:00.000Z","created_at":"2014-04-12T19:02:54.580Z","description":null,"downloads_count":332465,"metadata":{},"number":"2.1.7.1","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"!= 1.9.2","prerelease":false,"licenses":["BSD"],"requirements":[],"sha":"31e26bf4a71b18c2ca1872729cef3157614c2a3f4af69ca667bcd5b39fdee0bc"},{"authors":"Ryan
+        Tomayko, David Loren Parsons, Andrew White, David Foster","built_at":"2013-10-13T00:00:00.000Z","created_at":"2013-10-14T00:18:18.966Z","description":null,"downloads_count":416887,"metadata":{},"number":"2.1.7","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":[],"sha":"12544e913100bccbb9271ee7d70d2ffbda4988fae65904893fa480e9794a2498"},{"authors":"Ryan
+        Tomayko, David Loren Parsons, Andrew White, David Foster","built_at":"2013-05-28T00:00:00.000Z","created_at":"2013-05-29T02:30:18.555Z","description":null,"downloads_count":92495,"metadata":{},"number":"2.1.6","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"0297f26df8ba56dd8b598c8c8c3796952a2fcf8e3b44f0a8f30cd8ce5fb214a0"},{"authors":"Ryan
+        Tomayko, David Loren Parsons, Andrew White, David Foster","built_at":"2013-05-07T00:00:00.000Z","created_at":"2013-05-08T04:34:03.357Z","description":null,"downloads_count":143296,"metadata":{},"number":"2.0.7.3","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"56f07118ce3e49100d6d1c148b4fd58de18d0b8404fd76059e34122e2ec80ac0"},{"authors":"Ryan
+        Tomayko, David Loren Parsons, Andrew White, David Foster","built_at":"2013-04-06T07:00:00.000Z","created_at":"2013-04-07T01:18:44.217Z","description":null,"downloads_count":25858,"metadata":{},"number":"2.0.7.2","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"212fa71a77474ae5f49e1373a41cf6e6bca0a716510722affd44caa99dad31b8"},{"authors":"Ryan
+        Tomayko, David Loren Parsons, Andrew White, David Foster","built_at":"2013-02-26T00:00:00.000Z","created_at":"2013-02-27T06:13:18.312Z","description":null,"downloads_count":44315,"metadata":{},"number":"2.0.7.1","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"b6d78d961fc846f35cff7ac6fd05aff85a81d74ce04c04c5b1507ac7538a5cf6"},{"authors":"Ryan
+        Tomayko, David Loren Parsons, Andrew White, David Foster","built_at":"2013-01-29T00:00:00.000Z","created_at":"2013-02-03T07:12:57.215Z","description":null,"downloads_count":32027,"metadata":{},"number":"2.0.7","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"417fa105b9c282b430a60f7c450e8cb50bd3a28d36b4fd377d4ae29e8a6d49b2"},{"authors":"Ryan
+        Tomayko, David Loren Parsons, Andrew White","built_at":"2011-01-25T08:00:00.000Z","created_at":"2011-01-25T11:15:13.962Z","description":null,"downloads_count":1585638,"metadata":{},"number":"1.6.8","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"a085178fc7d6372222af192bdc8aa8b6b24c8014f0c2a3c227a1c173f104d4df"},{"authors":"Ryan
+        Tomayko, David Loren Parsons, Andrew White","built_at":"2010-06-15T07:00:00.000Z","created_at":"2010-06-15T21:03:29.908Z","description":null,"downloads_count":86166,"metadata":{},"number":"1.6.5","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"6c4177bb5e08332d301e352810c337899a89849e63936fe133baff4ac877bae9"},{"authors":"Ryan
+        Tomayko, David Loren Parsons, Andrew White","built_at":"2010-05-14T07:00:00.000Z","created_at":"2010-05-14T23:23:12.657Z","description":null,"downloads_count":8973,"metadata":{},"number":"1.6.3.2","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"d2ab3191dd26df7619894b861449380818a26f722bc4c8252f53ba6703423bc7"},{"authors":"Ryan
+        Tomayko, David Loren Parsons, Andrew White","built_at":"2010-04-20T07:00:00.000Z","created_at":"2010-04-20T22:07:26.344Z","description":null,"downloads_count":6942,"metadata":{},"number":"1.6.3.1","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"934aa3ef8f3a987af4ebe3194144d1e577d279bfc3f17a3fefa6089306f1920a"},{"authors":"Ryan
+        Tomayko, David Loren Parsons, Andrew White","built_at":"2010-03-08T08:00:00.000Z","created_at":"2010-03-08T21:24:49.058Z","description":null,"downloads_count":37034,"metadata":{},"number":"1.6.3","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"0cd8843d2fa682e782476624f1e42021ec7993734a921ea0b1c4a9b3c57ab113"},{"authors":"Ryan
+        Tomayko, David Loren Parsons, Andrew White","built_at":"2010-03-08T08:00:00.000Z","created_at":"2010-03-08T20:28:13.781Z","description":null,"downloads_count":2986,"metadata":{},"number":"1.5.8.1","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"f69219d6a408d50b2d9f4313ad8f5e2e6e6cc92ebac2af90d9507da0e1b9f35e"},{"authors":"Ryan
+        Tomayko, David Loren Parsons, Andrew White","built_at":"2010-02-03T08:00:00.000Z","created_at":"2010-02-03T16:49:35.411Z","description":null,"downloads_count":9306,"metadata":{},"number":"1.5.8","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"09cb42c3777e477b5b6c103848b3fa82cddd7c98c5178bd0ddece678495cbec5"},{"authors":"Ryan
+        Tomayko, Andrew White","built_at":"2009-11-13T11:00:00.000Z","created_at":"2009-11-14T01:59:25.772Z","description":null,"downloads_count":15005,"metadata":{},"number":"1.5.5","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"5aa9eb3ee75cbfd7db93f3f63b6fd580f140673c03cedaafde426a6130fa14f9"},{"authors":"Ryan
+        Tomayko, Andrew White","built_at":"2009-07-26T07:00:00.000Z","created_at":"2009-08-05T13:25:55.000Z","description":"","downloads_count":4620,"metadata":{},"number":"1.3.5","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"1a8d9a2cc13134fe94bb198fe92fd7316f95b0811449c845dc3d0616202c1c05"},{"authors":"Ryan
+        Tomayko, Andrew White","built_at":"2009-03-04T08:00:00.000Z","created_at":"2009-07-25T18:00:33.000Z","description":"","downloads_count":2695,"metadata":{},"number":"1.3.4","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"689da7464fee59ff26067230c806ddc96514cbc623ae713e4a16e6bfb2016419"},{"authors":"Ryan
+        Tomayko, Andrew White","built_at":"2009-01-31T08:00:00.000Z","created_at":"2009-07-25T18:00:33.000Z","description":"","downloads_count":50002,"metadata":{},"number":"1.3.1.1","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"6174ded940a47e2744bb9f6ee7d9564dae51d209196ca601c7cdba7bc397b748"},{"authors":"Ryan
+        Tomayko, Andrew White","built_at":"2009-01-10T08:00:00.000Z","created_at":"2009-07-25T18:00:33.000Z","description":"","downloads_count":2321,"metadata":{},"number":"1.3.1","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"8706eafa5ca1caef1330aba4d721248f7abe97fff9057929b1e9e3ab2025a235"},{"authors":"Ryan
+        Tomayko","built_at":"2008-11-02T08:00:00.000Z","created_at":"2009-07-25T18:00:33.000Z","description":"","downloads_count":2220,"metadata":{},"number":"1.2.11","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"425a8685be2afaa13e0b0616eeb137b41f4536d4bd8e46207c301ac76f0b0ce7"},{"authors":"Ryan
+        Tomayko","built_at":"2008-09-30T07:00:00.000Z","created_at":"2009-07-25T18:00:33.000Z","description":"","downloads_count":2140,"metadata":{},"number":"1.2.10","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"dab826a59aeb021a600661ba4987e4a28e3955ffa14b5e6adafbf46cc1beebd2"},{"authors":"Ryan
+        Tomayko","built_at":"2008-08-26T07:00:00.000Z","created_at":"2009-07-25T18:00:33.000Z","description":"","downloads_count":2151,"metadata":{},"number":"1.2.9","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"eb5c3825ec15b75dc08e275a641e2bc5071b6cd0decb95d28841af0afac539fe"},{"authors":"Ryan
+        Tomayko","built_at":"2008-08-09T07:00:00.000Z","created_at":"2009-07-25T18:00:33.000Z","description":"","downloads_count":2049,"metadata":{},"number":"1.2.7.1","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"85b19ad51641983eec2389181db0671affc38110e86ce3d62342b46e5f4fa285"},{"authors":"Ryan
+        Tomayko","built_at":"2008-08-02T07:00:00.000Z","created_at":"2009-07-25T18:00:33.000Z","description":"","downloads_count":2116,"metadata":{},"number":"1.2.7","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"16862dd73f905d53921ae88927620d5bac23d57dce9c90ec2b023aa9633d6855"},{"authors":"Ryan
+        Tomayko","built_at":"2008-06-03T04:00:00.000Z","created_at":"2009-07-25T18:00:33.000Z","description":"","downloads_count":2094,"metadata":{},"number":"1.2.6.2","summary":"Fast
+        Implementation of Gruber''s Markdown in C","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"e48c6eb20efea251b8918fb8cad78364a5f4c545e3a3c56aa750de6cd4361afb"}]'}
     headers:
       Accept-Ranges: [bytes]
-      Access-Control-Allow-Methods: [GET]
-      Access-Control-Allow-Origin: ['*']
-      Access-Control-Max-Age: ['1728000']
-      Cache-Control: ['max-age=0, private, must-revalidate']
+      Age: ['0']
+      Cache-Control: ['max-age=0, public']
       Connection: [keep-alive]
+      Content-Length: ['12981']
       Content-Security-Policy: ['default-src ''self''; script-src ''self'' https://secure.gaug.es;
           style-src ''self'' https://fonts.googleapis.com; img-src ''self'' https://secure.gaug.es
           https://gravatar.com https://secure.gravatar.com; font-src ''self'' https://fonts.gstatic.com;
           connect-src https://s3-us-west-2.amazonaws.com/rubygems-dumps/; frame-src
           https://ghbtns.com']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Mon, 18 Sep 2017 04:14:07 GMT']
-      ETag: ['"19f5fc5302e93d48a8b87e34199d42ff"']
+      Date: ['Mon, 18 Sep 2017 05:54:00 GMT']
+      ETag: ['"a3dfffa1716032820fd22ecfc716730b"']
+      Last-Modified: ['Mon, 27 Mar 2017 03:38:11 GMT']
       Server: [RubyGems.org]
       Strict-Transport-Security: [max-age=0]
       Vary: ['Accept-Encoding,Fastly-SSL']
@@ -162,10 +163,10 @@ interactions:
       X-Cache-Hits: ['0']
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [1c716704-04cb-494c-a84d-31ecca14ec7a]
-      X-Runtime: ['0.012397']
-      X-Served-By: [cache-gru17134-GRU]
-      X-Timer: ['S1505708048.588371,VS0,VE246']
+      X-Request-Id: [24deed30-a497-45d8-9096-725989c8ec4f]
+      X-Runtime: ['0.048816']
+      X-Served-By: [cache-gru17130-GRU]
+      X-Timer: ['S1505714040.225130,VS0,VE192']
       X-UA-Compatible: ['IE=Edge,chrome=1']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
