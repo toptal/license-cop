@@ -1,5 +1,6 @@
 import requests
 
+
 class BaseLicenseFetcher:
     def __init__(self, http_compression=True):
         self._session = requests.Session()

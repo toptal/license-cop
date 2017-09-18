@@ -1,21 +1,31 @@
 from app.base_license_fetcher import BaseLicenseFetcher
 
-GET_VERSIONS_URI = 'https://rubygems.org/api/v1/versions/{0}.json'
+VERSIONS_URI = 'https://rubygems.org/api/v1/versions/{0}.json'
+GEMS_URI = 'https://rubygems.org/api/v1/gems/{0}.json'
 
 
 class RubyLicenseFetcher(BaseLicenseFetcher):
 
     def fetch_licenses(self, name, number):
-        version = self.__fetch_version(name, number)
-        if version is not None:
-            licenses = version['licenses']
+        info = self.__fetch_version_info(name, number)
+        if info is not None:
+            licenses = info['licenses']
             if licenses is None:
                 return []
             return licenses
 
-    def __fetch_version(self, name, number):
-        response = self._session.get(GET_VERSIONS_URI.format(name))
+    def fetch_immediate_dependencies(self, name, number):
+        response = self._session.get(GEMS_URI.format(name))
         if response.ok:
-            for version in response.json():
-                if version['number'] == number:
-                    return version
+            data = response.json()
+            dependencies = []
+            dependencies.extend(data['dependencies']['development'])
+            dependencies.extend(data['dependencies']['runtime'])
+            return list(map(lambda i: i['name'], dependencies))
+
+    def __fetch_version_info(self, name, number):
+        response = self._session.get(VERSIONS_URI.format(name))
+        if response.ok:
+            for info in response.json():
+                if info['number'] == number:
+                    return info
