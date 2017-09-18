@@ -1,7 +1,13 @@
 import requests
 from abc import *
+from enum import Enum
 
 from app.data_object import *
+
+
+class DependencyKind(Enum):
+    RUNTIME = 1
+    DEVELOPMENT = 2
 
 
 # Right now, this is a dumb class. But we plan to add logic to compute
@@ -12,10 +18,12 @@ class Dependency(DataObject):
 
 
 class PackageVersion(DataObject):
-    def __init__(self, name, number, dependencies, licenses):
+    def __init__(self, name, number, licenses,
+                 runtime_dependencies, development_dependencies):
         self.name = name
         self.number = number
-        self.dependencies = dependencies
+        self.runtime_dependencies = runtime_dependencies
+        self.development_dependencies = development_dependencies
         self.licenses = licenses
 
 

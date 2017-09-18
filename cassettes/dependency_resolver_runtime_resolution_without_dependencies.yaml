@@ -1,0 +1,581 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://rubygems.org/api/v1/gems/rake.json
+  response:
+    body: {string: '{"name":"rake","downloads":168190624,"version":"12.1.0","version_downloads":361378,"platform":"ruby","authors":"Hiroshi
+        SHIBATA, Eric Hodel, Jim Weirich","info":"Rake is a Make-like program implemented
+        in Ruby. Tasks and dependencies are\nspecified in standard Ruby syntax.\nRake
+        has the following features:\n  * Rakefiles (rake''s version of Makefiles)
+        are completely defined in standard Ruby syntax.\n    No XML files to edit.
+        No quirky Makefile syntax to worry about (is that a tab or a space?)\n  *
+        Users can specify tasks with prerequisites.\n  * Rake supports rule patterns
+        to synthesize implicit tasks.\n  * Flexible FileLists that act like arrays
+        but know about manipulating file names and paths.\n  * Supports parallel execution
+        of tasks.\n","licenses":["MIT"],"metadata":{},"sha":"5cbb774dfd1c31c4ef19e365728b8a9ecb8b0b74349496c32e3a993aee7dd855","project_uri":"https://rubygems.org/gems/rake","gem_uri":"https://rubygems.org/gems/rake-12.1.0.gem","homepage_uri":"https://github.com/ruby/rake","wiki_uri":"","documentation_uri":"http://docs.seattlerb.org/rake","mailing_list_uri":"","source_code_uri":"https://github.com/ruby/rake","bug_tracker_uri":"https://github.com/ruby/rake/issues","changelog_uri":null,"dependencies":{"development":[{"name":"bundler","requirements":"\u003e=
+        0"},{"name":"coveralls","requirements":"\u003e= 0"},{"name":"minitest","requirements":"\u003e=
+        0"},{"name":"rdoc","requirements":"\u003e= 0"},{"name":"rubocop","requirements":"\u003e=
+        0"}],"runtime":[]}}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Methods: [GET]
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Max-Age: ['1728000']
+      Age: ['0']
+      Cache-Control: ['max-age=0, private, must-revalidate']
+      Connection: [keep-alive]
+      Content-Security-Policy: ['default-src ''self''; script-src ''self'' https://secure.gaug.es;
+          style-src ''self'' https://fonts.googleapis.com; img-src ''self'' https://secure.gaug.es
+          https://gravatar.com https://secure.gravatar.com; font-src ''self'' https://fonts.gstatic.com;
+          connect-src https://s3-us-west-2.amazonaws.com/rubygems-dumps/; frame-src
+          https://ghbtns.com']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Mon, 18 Sep 2017 12:51:05 GMT']
+      ETag: ['"9664c61aca7867722e52a36554abdabc"']
+      Server: [RubyGems.org]
+      Strict-Transport-Security: [max-age=0]
+      Vary: ['Accept-Encoding,Fastly-SSL']
+      Via: [1.1 varnish]
+      X-Backend: ['F_Rails 54.186.104.15:443']
+      X-Cache: [MISS]
+      X-Cache-Hits: ['0']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [2f680211-e018-4e4f-8235-08625b58923b]
+      X-Runtime: ['0.013696']
+      X-Served-By: [cache-gru17125-GRU]
+      X-Timer: ['S1505739065.315008,VS0,VE202']
+      X-UA-Compatible: ['IE=Edge,chrome=1']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://rubygems.org/api/v1/versions/rake.json
+  response:
+    body: {string: '[{"authors":"Hiroshi SHIBATA, Eric Hodel, Jim Weirich","built_at":"2016-12-06T00:00:00.000Z","created_at":"2017-09-11T02:23:09.491Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\nRake has the following features:\n  * Rakefiles
+        (rake''s version of Makefiles) are completely defined in standard Ruby syntax.\n    No
+        XML files to edit. No quirky Makefile syntax to worry about (is that a tab
+        or a space?)\n  * Users can specify tasks with prerequisites.\n  * Rake supports
+        rule patterns to synthesize implicit tasks.\n  * Flexible FileLists that act
+        like arrays but know about manipulating file names and paths.\n  * Supports
+        parallel execution of tasks.\n","downloads_count":361378,"metadata":{},"number":"12.1.0","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"5cbb774dfd1c31c4ef19e365728b8a9ecb8b0b74349496c32e3a993aee7dd855"},{"authors":"Hiroshi
+        SHIBATA, Eric Hodel, Jim Weirich","built_at":"2016-12-06T00:00:00.000Z","created_at":"2016-12-06T11:44:43.964Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\nRake has the following features:\n  * Rakefiles
+        (rake''s version of Makefiles) are completely defined in standard Ruby syntax.\n    No
+        XML files to edit. No quirky Makefile syntax to worry about (is that a tab
+        or a space?)\n  * Users can specify tasks with prerequisites.\n  * Rake supports
+        rule patterns to synthesize implicit tasks.\n  * Flexible FileLists that act
+        like arrays but know about manipulating file names and paths.\n  * Supports
+        parallel execution of tasks.\n","downloads_count":14924134,"metadata":{},"number":"12.0.0","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"f6b43059e2923ddd30128fbbf4eb2e610c020b888ad97b57d7d94abc12734806"},{"authors":"Hiroshi
+        SHIBATA, Eric Hodel, Jim Weirich","built_at":"2016-06-12T00:00:00.000Z","created_at":"2016-12-02T09:07:22.342Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\nRake has the following features:\n  * Rakefiles
+        (rake''s version of Makefiles) are completely defined in standard Ruby syntax.\n    No
+        XML files to edit. No quirky Makefile syntax to worry about (is that a tab
+        or a space?)\n  * Users can specify tasks with prerequisites.\n  * Rake supports
+        rule patterns to synthesize implicit tasks.\n  * Flexible FileLists that act
+        like arrays but know about manipulating file names and paths.\n  * Supports
+        parallel execution of tasks.\n","downloads_count":898,"metadata":{},"number":"12.0.0.beta1","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":[],"sha":"bac96d95926789ab4c107f6e15090caf2792c92bc092cabaeb6cb90ff9acbf7b"},{"authors":"Hiroshi
+        SHIBATA, Eric Hodel, Jim Weirich","built_at":"2016-09-20T00:00:00.000Z","created_at":"2016-09-20T08:48:00.475Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\n\nRake has the following features:\n\n* Rakefiles
+        (rake''s version of Makefiles) are completely defined in\n  standard Ruby
+        syntax.  No XML files to edit.  No quirky Makefile\n  syntax to worry about
+        (is that a tab or a space?)\n\n* Users can specify tasks with prerequisites.\n\n*
+        Rake supports rule patterns to synthesize implicit tasks.\n\n* Flexible FileLists
+        that act like arrays but know about manipulating\n  file names and paths.\n\n*
+        A library of prepackaged tasks to make building rakefiles easier. For example,\n  tasks
+        for building tarballs and publishing to FTP or SSH sites.  (Formerly\n  tasks
+        for building RDoc and Gems were included in rake but they''re now\n  available
+        in RDoc and RubyGems respectively.)\n\n* Supports parallel execution of tasks.","downloads_count":6655242,"metadata":{},"number":"11.3.0","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"8af6541547dd7e031fa78c1c978084862b7bc3ab670c2b2f539054e8d9aad232"},{"authors":"Hiroshi
+        SHIBATA, Eric Hodel, Jim Weirich","built_at":"2016-06-12T00:00:00.000Z","created_at":"2016-06-12T02:03:27.963Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\n\nRake has the following features:\n\n* Rakefiles
+        (rake''s version of Makefiles) are completely defined in\n  standard Ruby
+        syntax.  No XML files to edit.  No quirky Makefile\n  syntax to worry about
+        (is that a tab or a space?)\n\n* Users can specify tasks with prerequisites.\n\n*
+        Rake supports rule patterns to synthesize implicit tasks.\n\n* Flexible FileLists
+        that act like arrays but know about manipulating\n  file names and paths.\n\n*
+        A library of prepackaged tasks to make building rakefiles easier. For example,\n  tasks
+        for building tarballs and publishing to FTP or SSH sites.  (Formerly\n  tasks
+        for building RDoc and Gems were included in rake but they''re now\n  available
+        in RDoc and RubyGems respectively.)\n\n* Supports parallel execution of tasks.","downloads_count":7112473,"metadata":{},"number":"11.2.2","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"ce75c108d785fa7697074f65a960d60424f3fd03f832635058a9100cec99ee54"},{"authors":"Hiroshi
+        SHIBATA, Eric Hodel, Jim Weirich","built_at":"2016-03-27T00:00:00.000Z","created_at":"2016-06-11T09:19:59.532Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\n\nRake has the following features:\n\n* Rakefiles
+        (rake''s version of Makefiles) are completely defined in\n  standard Ruby
+        syntax.  No XML files to edit.  No quirky Makefile\n  syntax to worry about
+        (is that a tab or a space?)\n\n* Users can specify tasks with prerequisites.\n\n*
+        Rake supports rule patterns to synthesize implicit tasks.\n\n* Flexible FileLists
+        that act like arrays but know about manipulating\n  file names and paths.\n\n*
+        A library of prepackaged tasks to make building rakefiles easier. For example,\n  tasks
+        for building tarballs and publishing to FTP or SSH sites.  (Formerly\n  tasks
+        for building RDoc and Gems were included in rake but they''re now\n  available
+        in RDoc and RubyGems respectively.)\n\n* Supports parallel execution of tasks.","downloads_count":26070,"metadata":{},"number":"11.2.0","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"3fcf829793505ef9543c3bf2814a068072a4b0b2e56f1bb62456c2b08be96668"},{"authors":"Hiroshi
+        SHIBATA, Eric Hodel, Jim Weirich","built_at":"2016-03-27T00:00:00.000Z","created_at":"2016-03-27T13:25:57.406Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\n\nRake has the following features:\n\n* Rakefiles
+        (rake''s version of Makefiles) are completely defined in\n  standard Ruby
+        syntax.  No XML files to edit.  No quirky Makefile\n  syntax to worry about
+        (is that a tab or a space?)\n\n* Users can specify tasks with prerequisites.\n\n*
+        Rake supports rule patterns to synthesize implicit tasks.\n\n* Flexible FileLists
+        that act like arrays but know about manipulating\n  file names and paths.\n\n*
+        A library of prepackaged tasks to make building rakefiles easier. For example,\n  tasks
+        for building tarballs and publishing to FTP or SSH sites.  (Formerly\n  tasks
+        for building RDoc and Gems were included in rake but they''re now\n  available
+        in RDoc and RubyGems respectively.)\n\n* Supports parallel execution of tasks.","downloads_count":5681363,"metadata":{},"number":"11.1.2","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"1f2fb518497639c8fe2212f76fef8cd2e0c3832ae339d2466c7490d2e6f1d549"},{"authors":"Hiroshi
+        SHIBATA, Eric Hodel, Jim Weirich","built_at":"2016-03-14T00:00:00.000Z","created_at":"2016-03-14T04:48:29.347Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\n\nRake has the following features:\n\n* Rakefiles
+        (rake''s version of Makefiles) are completely defined in\n  standard Ruby
+        syntax.  No XML files to edit.  No quirky Makefile\n  syntax to worry about
+        (is that a tab or a space?)\n\n* Users can specify tasks with prerequisites.\n\n*
+        Rake supports rule patterns to synthesize implicit tasks.\n\n* Flexible FileLists
+        that act like arrays but know about manipulating\n  file names and paths.\n\n*
+        A library of prepackaged tasks to make building rakefiles easier. For example,\n  tasks
+        for building tarballs and publishing to FTP or SSH sites.  (Formerly\n  tasks
+        for building RDoc and Gems were included in rake but they''re now\n  available
+        in RDoc and RubyGems respectively.)\n\n* Supports parallel execution of tasks.","downloads_count":1757028,"metadata":{},"number":"11.1.1","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"0fe21c345852d5fea819e1388408f512a0859dc5b700bdfdd974c02e58641c41"},{"authors":"Hiroshi
+        SHIBATA, Eric Hodel, Jim Weirich","built_at":"2016-03-11T00:00:00.000Z","created_at":"2016-03-11T03:37:26.840Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\n\nRake has the following features:\n\n* Rakefiles
+        (rake''s version of Makefiles) are completely defined in\n  standard Ruby
+        syntax.  No XML files to edit.  No quirky Makefile\n  syntax to worry about
+        (is that a tab or a space?)\n\n* Users can specify tasks with prerequisites.\n\n*
+        Rake supports rule patterns to synthesize implicit tasks.\n\n* Flexible FileLists
+        that act like arrays but know about manipulating\n  file names and paths.\n\n*
+        A library of prepackaged tasks to make building rakefiles easier. For example,\n  tasks
+        for building tarballs and publishing to FTP or SSH sites.  (Formerly\n  tasks
+        for building RDoc and Gems were included in rake but they''re now\n  available
+        in RDoc and RubyGems respectively.)\n\n* Supports parallel execution of tasks.","downloads_count":353423,"metadata":{},"number":"11.1.0","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"aef48a72ef8101b4400f3eb67a7adc27e39cedcbfe83bf57f1d759f00596b4f7"},{"authors":"Hiroshi
+        SHIBATA, Eric Hodel, Jim Weirich","built_at":"2016-03-09T00:00:00.000Z","created_at":"2016-03-09T07:58:40.061Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\n\nRake has the following features:\n\n* Rakefiles
+        (rake''s version of Makefiles) are completely defined in\n  standard Ruby
+        syntax.  No XML files to edit.  No quirky Makefile\n  syntax to worry about
+        (is that a tab or a space?)\n\n* Users can specify tasks with prerequisites.\n\n*
+        Rake supports rule patterns to synthesize implicit tasks.\n\n* Flexible FileLists
+        that act like arrays but know about manipulating\n  file names and paths.\n\n*
+        A library of prepackaged tasks to make building rakefiles easier. For example,\n  tasks
+        for building tarballs and publishing to FTP or SSH sites.  (Formerly\n  tasks
+        for building RDoc and Gems were included in rake but they''re now\n  available
+        in RDoc and RubyGems respectively.)\n\n* Supports parallel execution of tasks.","downloads_count":145824,"metadata":{},"number":"11.0.1","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"c4c902e78f2eb4d87ce7f18fe13483ab92d964197431113f422233dca340feda"},{"authors":"Eric
+        Hodel, Jim Weirich","built_at":"2016-01-13T00:00:00.000Z","created_at":"2016-01-13T00:47:46.110Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\n\nRake has the following features:\n\n* Rakefiles
+        (rake''s version of Makefiles) are completely defined in\n  standard Ruby
+        syntax.  No XML files to edit.  No quirky Makefile\n  syntax to worry about
+        (is that a tab or a space?)\n\n* Users can specify tasks with prerequisites.\n\n*
+        Rake supports rule patterns to synthesize implicit tasks.\n\n* Flexible FileLists
+        that act like arrays but know about manipulating\n  file names and paths.\n\n*
+        A library of prepackaged tasks to make building rakefiles easier. For example,\n  tasks
+        for building tarballs and publishing to FTP or SSH sites.  (Formerly\n  tasks
+        for building RDoc and Gems were included in rake but they''re now\n  available
+        in RDoc and RubyGems respectively.)\n\n* Supports parallel execution of tasks.","downloads_count":12102670,"metadata":{},"number":"10.5.0","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.8.7","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"2b55a1ad44b5c945719d8a97c302a316af770b835187d12143e83069df5a8a49"},{"authors":"Eric
+        Hodel, Jim Weirich","built_at":"2014-12-03T00:00:00.000Z","created_at":"2014-12-03T07:34:59.161Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\n\nRake has the following features:\n\n* Rakefiles
+        (rake''s version of Makefiles) are completely defined in\n  standard Ruby
+        syntax.  No XML files to edit.  No quirky Makefile\n  syntax to worry about
+        (is that a tab or a space?)\n\n* Users can specify tasks with prerequisites.\n\n*
+        Rake supports rule patterns to synthesize implicit tasks.\n\n* Flexible FileLists
+        that act like arrays but know about manipulating\n  file names and paths.\n\n*
+        A library of prepackaged tasks to make building rakefiles easier. For example,\n  tasks
+        for building tarballs and publishing to FTP or SSH sites.  (Formerly\n  tasks
+        for building RDoc and Gems were included in rake but they''re now\n  available
+        in RDoc and RubyGems respectively.)\n\n* Supports parallel execution of tasks.","downloads_count":19594143,"metadata":{},"number":"10.4.2","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.8.7","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"28970905a7bb57ba7ebcd2eda820ccea622f549b101d7590353b0647711ec0e6"},{"authors":"Eric
+        Hodel, Jim Weirich","built_at":"2014-12-02T00:00:00.000Z","created_at":"2014-12-02T05:51:11.065Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\n\nRake has the following features:\n\n* Rakefiles
+        (rake''s version of Makefiles) are completely defined in\n  standard Ruby
+        syntax.  No XML files to edit.  No quirky Makefile\n  syntax to worry about
+        (is that a tab or a space?)\n\n* Users can specify tasks with prerequisites.\n\n*
+        Rake supports rule patterns to synthesize implicit tasks.\n\n* Flexible FileLists
+        that act like arrays but know about manipulating\n  file names and paths.\n\n*
+        A library of prepackaged tasks to make building rakefiles easier. For example,\n  tasks
+        for building tarballs and publishing to FTP or SSH sites.  (Formerly\n  tasks
+        for building RDoc and Gems were included in rake but they''re now\n  available
+        in RDoc and RubyGems respectively.)\n\n* Supports parallel execution of tasks.","downloads_count":117861,"metadata":{},"number":"10.4.1","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.8.7","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"82cfce8fb9c53bc2d96acc88456056b1ed5aab162b85f9419b7c5f7edbff8690"},{"authors":"Eric
+        Hodel, Jim Weirich","built_at":"2014-11-25T00:00:00.000Z","created_at":"2014-11-25T06:09:40.152Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\n\nRake has the following features:\n\n* Rakefiles
+        (rake''s version of Makefiles) are completely defined in\n  standard Ruby
+        syntax.  No XML files to edit.  No quirky Makefile\n  syntax to worry about
+        (is that a tab or a space?)\n\n* Users can specify tasks with prerequisites.\n\n*
+        Rake supports rule patterns to synthesize implicit tasks.\n\n* Flexible FileLists
+        that act like arrays but know about manipulating\n  file names and paths.\n\n*
+        A library of prepackaged tasks to make building rakefiles easier. For example,\n  tasks
+        for building tarballs and publishing to FTP or SSH sites.  (Formerly\n  tasks
+        for building RDoc and Gems were included in rake but they''re now\n  available
+        in RDoc and RubyGems respectively.)\n\n* Supports parallel execution of tasks.","downloads_count":481645,"metadata":{},"number":"10.4.0","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.8.7","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"887f72d6711c31576abab37f1f7db45972402cc8544fa9a67c06d2c0f0ef2028"},{"authors":"Eric
+        Hodel, Jim Weirich","built_at":"2014-05-16T00:00:00.000Z","created_at":"2014-05-16T04:15:59.895Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\n\nRake has the following features:\n\n* Rakefiles
+        (rake''s version of Makefiles) are completely defined in\n  standard Ruby
+        syntax.  No XML files to edit.  No quirky Makefile\n  syntax to worry about
+        (is that a tab or a space?)\n\n* Users can specify tasks with prerequisites.\n\n*
+        Rake supports rule patterns to synthesize implicit tasks.\n\n* Flexible FileLists
+        that act like arrays but know about manipulating\n  file names and paths.\n\n*
+        A library of prepackaged tasks to make building rakefiles easier. For example,\n  tasks
+        for building tarballs and publishing to FTP or SSH sites.  (Formerly\n  tasks
+        for building RDoc and Gems were included in rake but they''re now\n  available
+        in RDoc and RubyGems respectively.)\n\n* Supports parallel execution of tasks.","downloads_count":10606425,"metadata":{},"number":"10.3.2","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.8.7","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"b504ad9d610b85ef0856a4771d024e4a66656c63a17121a3ed1d4d7db39c775b"},{"authors":"Eric
+        Hodel, Jim Weirich","built_at":"2014-04-17T00:00:00.000Z","created_at":"2014-04-17T23:26:37.204Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\n\nRake has the following features:\n\n* Rakefiles
+        (rake''s version of Makefiles) are completely defined in\n  standard Ruby
+        syntax.  No XML files to edit.  No quirky Makefile\n  syntax to worry about
+        (is that a tab or a space?)\n\n* Users can specify tasks with prerequisites.\n\n*
+        Rake supports rule patterns to synthesize implicit tasks.\n\n* Flexible FileLists
+        that act like arrays but know about manipulating\n  file names and paths.\n\n*
+        A library of prepackaged tasks to make building rakefiles easier. For example,\n  tasks
+        for building tarballs and publishing to FTP or SSH sites.  (Formerly\n  tasks
+        for building RDoc and Gems were included in rake but they''re now\n  available
+        in RDoc and RubyGems respectively.)\n\n* Supports parallel execution of tasks.","downloads_count":1769198,"metadata":{},"number":"10.3.1","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.8.7","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"25d0a9cccb145d69e7c91bafbee80f44a4838ef04e07c657e45585c069b61a6a"},{"authors":"Eric
+        Hodel, Jim Weirich","built_at":"2014-04-15T00:00:00.000Z","created_at":"2014-04-15T23:03:59.768Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\n\nRake has the following features:\n\n* Rakefiles
+        (rake''s version of Makefiles) are completely defined in\n  standard Ruby
+        syntax.  No XML files to edit.  No quirky Makefile\n  syntax to worry about
+        (is that a tab or a space?)\n\n* Users can specify tasks with prerequisites.\n\n*
+        Rake supports rule patterns to synthesize implicit tasks.\n\n* Flexible FileLists
+        that act like arrays but know about manipulating\n  file names and paths.\n\n*
+        A library of prepackaged tasks to make building rakefiles easier. For example,\n  tasks
+        for building tarballs and publishing to FTP or SSH sites.  (Formerly\n  tasks
+        for building RDoc and Gems were included in rake but they''re now\n  available
+        in RDoc and RubyGems respectively.)\n\n* Supports parallel execution of tasks.","downloads_count":132805,"metadata":{},"number":"10.3.0","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.8.7","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"eb84d908f896e6e646ada64feaef7e205c4f87befa8071c543eaeba702825e53"},{"authors":"Eric
+        Hodel, Jim Weirich","built_at":"2014-03-27T00:00:00.000Z","created_at":"2014-03-27T23:07:08.015Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\n\nRake has the following features:\n\n* Rakefiles
+        (rake''s version of Makefiles) are completely defined in\n  standard Ruby
+        syntax.  No XML files to edit.  No quirky Makefile\n  syntax to worry about
+        (is that a tab or a space?)\n\n* Users can specify tasks with prerequisites.\n\n*
+        Rake supports rule patterns to synthesize implicit tasks.\n\n* Flexible FileLists
+        that act like arrays but know about manipulating\n  file names and paths.\n\n*
+        A library of prepackaged tasks to make building rakefiles easier. For example,\n  tasks
+        for building tarballs and publishing to FTP or SSH sites.  (Formerly\n  tasks
+        for building RDoc and Gems were included in rake but they''re now\n  available
+        in RDoc and RubyGems respectively.)\n\n* Supports parallel execution of tasks.","downloads_count":26141755,"metadata":{},"number":"10.2.2","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.8.7","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"c90b61a6c77c88512ed7d148a8398f2b635ff1a3405cba6dd89473d8fb0fb9fd"},{"authors":"Eric
+        Hodel, Jim Weirich","built_at":"2014-03-25T00:00:00.000Z","created_at":"2014-03-25T22:36:27.902Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\n\nRake has the following features:\n\n* Rakefiles
+        (rake''s version of Makefiles) are completely defined in\n  standard Ruby
+        syntax.  No XML files to edit.  No quirky Makefile\n  syntax to worry about
+        (is that a tab or a space?)\n\n* Users can specify tasks with prerequisites.\n\n*
+        Rake supports rule patterns to synthesize implicit tasks.\n\n* Flexible FileLists
+        that act like arrays but know about manipulating\n  file names and paths.\n\n*
+        A library of prepackaged tasks to make building rakefiles easier. For example,\n  tasks
+        for building tarballs and publishing to FTP or SSH sites.  (Formerly\n  tasks
+        for building RDoc and Gems were included in rake but they''re now\n  available
+        in RDoc and RubyGems respectively.)\n\n* Supports parallel execution of tasks.","downloads_count":175172,"metadata":{},"number":"10.2.1","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.9","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"bf0e63be924118e15c8cf7948200252afcff98b950e155f497b4f500339bab4e"},{"authors":"Eric
+        Hodel, Jim Weirich","built_at":"2014-03-24T00:00:00.000Z","created_at":"2014-03-24T21:05:55.640Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+        in standard Ruby syntax.\n\nRake has the following features:\n\n* Rakefiles
+        (rake''s version of Makefiles) are completely defined in\n  standard Ruby
+        syntax.  No XML files to edit.  No quirky Makefile\n  syntax to worry about
+        (is that a tab or a space?)\n\n* Users can specify tasks with prerequisites.\n\n*
+        Rake supports rule patterns to synthesize implicit tasks.\n\n* Flexible FileLists
+        that act like arrays but know about manipulating\n  file names and paths.\n\n*
+        A library of prepackaged tasks to make building rakefiles easier. For example,\n  tasks
+        for building tarballs and publishing to FTP or SSH sites.  (Formerly\n  tasks
+        for building RDoc and Gems were included in rake but they''re now\n  available
+        in RDoc and RubyGems respectively.)\n\n* Supports parallel execution of tasks.","downloads_count":381141,"metadata":{},"number":"10.2.0","summary":"Rake
+        is a Make-like program implemented in Ruby","platform":"ruby","rubygems_version":"\u003e=
+        1.3.2","ruby_version":"\u003e= 1.9","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"88e6d8f36e5baf221238cb646ead0e5fd9a065805227fbab772f995c83fbe19f"},{"authors":"Jim
+        Weirich","built_at":"2013-12-20T00:00:00.000Z","created_at":"2013-12-20T05:35:43.218Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":5818966,"metadata":{},"number":"10.1.1","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"85e446590871dd3469c80dfe70a0296c20b76a9006af6b728c1f47d0b460412d"},{"authors":"Jim
+        Weirich","built_at":"2013-06-20T00:00:00.000Z","created_at":"2013-06-20T03:32:08.935Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":9012680,"metadata":{},"number":"10.1.0","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":false,"licenses":["MIT"],"requirements":null,"sha":"f8b06839ab1df58879bcacc8351927a2cda0e9daa91ea5b01f3d8d08e3c53abb"},{"authors":"Jim
+        Weirich","built_at":"2013-04-30T00:00:00.000Z","created_at":"2013-04-30T21:28:53.840Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":2648,"metadata":{},"number":"10.1.0.beta.3","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":true,"licenses":["MIT"],"requirements":null,"sha":"81081eabd77a7f4275ba0dcc2cfe55727b64eb25393b17098c60f30fbe4ae38e"},{"authors":"Jim
+        Weirich","built_at":"2013-04-30T00:00:00.000Z","created_at":"2013-04-30T20:52:05.758Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":1015,"metadata":{},"number":"10.1.0.beta.2","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":true,"licenses":["MIT"],"requirements":null,"sha":"b99b27ecfe0bd252b253b9a9ea20200e4574ca1317779eea916ce47f3b7ad4b9"},{"authors":"Jim
+        Weirich","built_at":"2013-04-26T00:00:00.000Z","created_at":"2013-04-26T21:18:10.348Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":1157,"metadata":{},"number":"10.1.0.beta.1","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":true,"licenses":["MIT"],"requirements":null,"sha":"84166efface7de58618014c34aca17584d1dc8e1331666adc9a93c3e4ed3fb9c"},{"authors":"Jim
+        Weirich","built_at":"2013-03-25T00:00:00.000Z","created_at":"2013-03-25T18:19:21.108Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":6833257,"metadata":{},"number":"10.0.4","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":false,"licenses":["MIT"],"requirements":null,"sha":"4137018e07c9bb79d5ff1085d2dd1aeeba1437de36f281ff737295e835035f0c"},{"authors":"Jim
+        Weirich","built_at":"2012-12-12T00:00:00.000Z","created_at":"2012-12-12T21:35:17.887Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":4956830,"metadata":{},"number":"10.0.3","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"ee2ed7d45f6390ac9cba94e101e7b7ba198a0f1b54aaf33708793648fd707b27"},{"authors":"Jim
+        Weirich","built_at":"2012-11-19T00:00:00.000Z","created_at":"2012-11-19T14:36:03.748Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":1089076,"metadata":{},"number":"10.0.2","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"58c64d3f10f8ce13941a21b25fb9df401f08e4f503c075d7a95bfcd08027324c"},{"authors":"Jim
+        Weirich","built_at":"2012-11-14T00:00:00.000Z","created_at":"2012-11-14T21:36:21.274Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":187617,"metadata":{},"number":"10.0.1","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"6b3424d3eae8ccc7b9a1c8128caedb6035799aa04eb1f2a7fa619f6f5ee5faf2"},{"authors":"Jim
+        Weirich","built_at":"2012-11-12T00:00:00.000Z","created_at":"2012-11-12T17:21:00.914Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":4423875,"metadata":{},"number":"10.0.0","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"50c6ef8415a88c8fe60a87d7508094a3c6f51f1ba36963ab56572fdac3b86c1c"},{"authors":"Jim
+        Weirich","built_at":"2012-10-26T00:00:00.000Z","created_at":"2012-10-26T22:39:57.388Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":1899,"metadata":{},"number":"10.0.0.beta.2","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":true,"licenses":null,"requirements":null,"sha":"2078df1416b62c6e811b8b52b86ca44741012b9f87cdf52a8f732058e8792f51"},{"authors":"Jim
+        Weirich","built_at":"2012-10-25T00:00:00.000Z","created_at":"2012-10-25T19:07:34.225Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":1198,"metadata":{},"number":"10.0.0.beta.1","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":true,"licenses":null,"requirements":null,"sha":"f642c76318f87934f3de7f83e30f4928ffc0af5caf25cd558251c99d69e4d13f"},{"authors":"Jim
+        Weirich","built_at":"2012-12-12T00:00:00.000Z","created_at":"2012-12-12T21:34:40.803Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":1564444,"metadata":{},"number":"0.9.6","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"0cde8637bc097b984b602d7db77b1982b3a0be5ab014f1e533b6b517ca807e26"},{"authors":"Jim
+        Weirich","built_at":"2012-11-19T00:00:00.000Z","created_at":"2012-11-19T14:25:31.167Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":88277,"metadata":{},"number":"0.9.5","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"96300b919dac5225795f7253e8a73b95513ab79f539f9c60045cc0a411efcd8f"},{"authors":"Jim
+        Weirich","built_at":"2012-11-14T00:00:00.000Z","created_at":"2012-11-14T21:22:42.412Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":12202,"metadata":{},"number":"0.9.4","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"616f21351617a57b9bc8cad9ba13cd431e07340928384532c9f727ae4183dce6"},{"authors":"Jim
+        Weirich","built_at":"2012-11-12T00:00:00.000Z","created_at":"2012-11-12T17:20:28.572Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":26929,"metadata":{},"number":"0.9.3","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"f58b49198013ceaf893c1ee3113799c3f2930d6331e7dbd55509eb212980799d"},{"authors":"Jim
+        Weirich","built_at":"2012-11-09T00:00:00.000Z","created_at":"2012-11-09T20:43:23.299Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":1182,"metadata":{},"number":"0.9.3.beta.4","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":true,"licenses":null,"requirements":null,"sha":"a69dc72717d57d7431528fa5c182925eed846dc131d7254d23663267f293dc01"},{"authors":"Jim
+        Weirich","built_at":"2012-10-25T00:00:00.000Z","created_at":"2012-10-25T18:55:15.326Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":1281,"metadata":{},"number":"0.9.3.beta.3","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":true,"licenses":null,"requirements":null,"sha":"a68df2844ac17947662b5f30464afe94f22010feef269e9330b332d06a0bd225"},{"authors":"Jim
+        Weirich","built_at":"2012-10-22T00:00:00.000Z","created_at":"2012-10-22T18:51:03.508Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":1312,"metadata":{},"number":"0.9.3.beta.2","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":true,"licenses":null,"requirements":null,"sha":"27bc46192698d87415308ef6bf68143c943b7225880bd8e8517e14919dbf2ce5"},{"authors":"Jim
+        Weirich","built_at":"2011-08-06T00:00:00.000Z","created_at":"2011-08-06T02:34:14.926Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":24221,"metadata":{},"number":"0.9.3.beta.1","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":true,"licenses":null,"requirements":null,"sha":"30cf0630917e891b1cfd09a9611a8f8d70ae82e09ed2a141dd34ed994e7c175f"},{"authors":"Jim
+        Weirich","built_at":"2011-10-22T00:00:00.000Z","created_at":"2011-10-22T15:19:11.555Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies arespecified
+        in standard Ruby syntax.","downloads_count":10909379,"metadata":{},"number":"0.9.2.2","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"d83ceb634b73530b3e56dbc3cf2c143cddb4317fd3142855f298adffcac5c4a6"},{"authors":"Jim
+        Weirich","built_at":"2011-06-05T00:00:00.000Z","created_at":"2011-06-05T23:34:18.518Z","description":"      Rake
+        is a Make-like program implemented in Ruby. Tasks\n      and dependencies
+        are specified in standard Ruby syntax.\n","downloads_count":5446528,"metadata":{},"number":"0.9.2","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"c55b525b421fd833a93171ad3d7f04528ca8e87d99ac273f8933038942a5888c"},{"authors":"Jim
+        Weirich","built_at":"2011-06-01T00:00:00.000Z","created_at":"2011-06-01T05:04:30.606Z","description":"      Rake
+        is a Make-like program implemented in Ruby. Tasks\n      and dependencies
+        are specified in standard Ruby syntax.\n","downloads_count":74206,"metadata":{},"number":"0.9.1","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"834727db723c3cef0b4880cfa729808135aa3a24b5b2b12c6ebc2636ff2ff9ca"},{"authors":"Jim
+        Weirich","built_at":"2011-05-20T00:00:00.000Z","created_at":"2011-05-20T16:17:29.163Z","description":"      Rake
+        is a Make-like program implemented in Ruby. Tasks\n      and dependencies
+        are specified in standard Ruby syntax.\n","downloads_count":181282,"metadata":{},"number":"0.9.0","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"762fc0d94d409f949ee68d440472c5282dfca0c861323b7c5a3a38213229b631"},{"authors":"Jim
+        Weirich","built_at":"2011-03-13T04:00:00.000Z","created_at":"2011-03-14T01:18:37.395Z","description":"      Rake
+        is a Make-like program implemented in Ruby. Tasks\n      and dependencies
+        are specified in standard Ruby syntax.\n","downloads_count":4136,"metadata":{},"number":"0.9.0.beta.5","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":true,"licenses":null,"requirements":null,"sha":"e29cba357aa5dd7a9b809eb6d1a749f9e4a4eb9e9aadfd9bcc76553048fe8425"},{"authors":"Jim
+        Weirich","built_at":"2011-03-06T05:00:00.000Z","created_at":"2011-03-06T23:45:05.218Z","description":"      Rake
+        is a Make-like program implemented in Ruby. Tasks\n      and dependencies
+        are specified in standard Ruby syntax.\n","downloads_count":1714,"metadata":{},"number":"0.9.0.beta.4","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":true,"licenses":null,"requirements":null,"sha":"57277a891eeeaa2bf93eb2b6339a25a42c47fb5f9bf71a521bf15fc83c0adf17"},{"authors":"Jim
+        Weirich","built_at":"2011-03-05T05:00:00.000Z","created_at":"2011-03-05T21:53:55.370Z","description":"      Rake
+        is a Make-like program implemented in Ruby. Tasks\n      and dependencies
+        are specified in standard Ruby syntax.\n","downloads_count":1299,"metadata":{},"number":"0.9.0.beta.2","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":true,"licenses":null,"requirements":null,"sha":"59c3c67cba5a48e3dfaa509cbe6af1425954db7f22661ec58a658560b838016d"},{"authors":"Jim
+        Weirich","built_at":"2011-02-28T05:00:00.000Z","created_at":"2011-02-28T12:24:35.457Z","description":"      Rake
+        is a Make-like program implemented in Ruby. Tasks\n      and dependencies
+        are specified in standard Ruby syntax.\n","downloads_count":1463,"metadata":{},"number":"0.9.0.beta.1","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":true,"licenses":null,"requirements":null,"sha":"054b5bb2de435d649b7a17aa15c221f9b2aa98adeb54580fd058d68feaafc4e1"},{"authors":"Jim
+        Weirich","built_at":"2011-02-22T05:00:00.000Z","created_at":"2011-02-23T04:42:06.096Z","description":"      Rake
+        is a Make-like program implemented in Ruby. Tasks\n      and dependencies
+        are specified in standard Ruby syntax.\n","downloads_count":1676,"metadata":{},"number":"0.9.0.beta.0","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 1.3.2","ruby_version":null,"prerelease":true,"licenses":null,"requirements":null,"sha":"b0e98e47b19fbfe23cb0a3d76104212f1a09c9ddcfd8e364616515325684129f"},{"authors":"Jim
+        Weirich","built_at":"2009-05-15T04:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":8802550,"metadata":{},"number":"0.8.7","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"10b37bdad695497c98aa8d7632e2aa5a589ddae2abaa42d24e5950de4ffde10f"},{"authors":"Jim
+        Weirich","built_at":"2009-05-11T04:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":4851,"metadata":{},"number":"0.8.6","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"49f8f701dd28a74eaf2587bd3915856fbf865142e7167d6ad1c2231a7c275cd7"},{"authors":"Jim
+        Weirich","built_at":"2009-05-06T07:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":3364,"metadata":{},"number":"0.8.5","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"cb39a683e0756954f12e54c841c8670931af4ce7fc4751e28d05185008e9c837"},{"authors":"Jim
+        Weirich","built_at":"2009-03-04T05:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":14638,"metadata":{},"number":"0.8.4","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"ce856915b6b65a9f3fd5689a88f39010bbb8a7a68e685beaee4e1bd8687b7d65"},{"authors":"Jim
+        Weirich","built_at":"2008-09-25T04:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":81896,"metadata":{},"number":"0.8.3","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"c4792392fa21fd3b00b4909947cff70dcf327ebf07b86858a35b711f7391db9c"},{"authors":"Jim
+        Weirich","built_at":"2008-09-09T04:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":3518,"metadata":{},"number":"0.8.2","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"6d932c26000dbbd95c3a059e11239e2a525dd9d1ef9a26168ef3919d1e23292f"},{"authors":"Jim
+        Weirich","built_at":"2007-12-26T05:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":29890,"metadata":{},"number":"0.8.1","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"7cd2e89c7736a7829f1fbc2a2ecbd7f911ee68d170ea31ad2b8277b943380227"},{"authors":"Jim
+        Weirich","built_at":"2007-12-20T05:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":3574,"metadata":{},"number":"0.8.0","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"8b7c3eff140ee82d38c9a504e16f54876fd619296cdecb006748f01bec3b6a81"},{"authors":"Jim
+        Weirich","built_at":"2007-04-20T04:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":7709,"metadata":{},"number":"0.7.3","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"4ed1dcade70490ee45fd7eba5e2a831675594d789e5fecb6da1cc525b3b991b5"},{"authors":"Jim
+        Weirich","built_at":"2007-02-27T05:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":3450,"metadata":{},"number":"0.7.2","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"0d7a8992692c61c70b6960a959a23171fa513beb47096fa7c8970a19477b99ed"},{"authors":"Jim
+        Weirich","built_at":"2006-04-03T04:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":3075,"metadata":{},"number":"0.7.1","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"053b509165221b9cd568f1fe14bc4a8e4fb08faf0f069c7db9c5f9ee772f05bd"},{"authors":"Jim
+        Weirich","built_at":"2006-01-19T05:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":2633,"metadata":{},"number":"0.7.0","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"0a984cf90ed300af78f345de7e8b8406ef5a8f0c0a629351506c6d266df75546"},{"authors":"Jim
+        Weirich","built_at":"2005-10-06T04:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":2623,"metadata":{},"number":"0.6.2","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"42218787f9f570afcd9770c01b56f76ef41b572df648d5f1c06132829150fd19"},{"authors":"Jim
+        Weirich","built_at":"2005-09-05T04:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":2434,"metadata":{},"number":"0.6.0","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"70f6539518e9e3a487b04cf1e5bc6b2d40da4672996eb732fa41fa28069a1d8a"},{"authors":"Jim
+        Weirich","built_at":"2005-04-30T04:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":2373,"metadata":{},"number":"0.5.4","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"dec1f52850b86bf4dd42a8d35931957fff2fc257345a91c5ae3614154acc814b"},{"authors":"Jim
+        Weirich","built_at":"2005-04-09T04:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":2396,"metadata":{},"number":"0.5.3","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"8544394c7e83c56e4856e58ebe2f85fadeff981dd8c3361ac81a7b43b4305855"},{"authors":"Jim
+        Weirich","built_at":"2005-03-25T05:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":2436,"metadata":{},"number":"0.5.0","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"8a77471f03ffccbaf1837930370d2a03c5aa764d694bf60a26711223414faf23"},{"authors":"Jim
+        Weirich","built_at":"2005-01-03T05:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":2404,"metadata":{},"number":"0.4.15","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"308a4187f532a694d81a8e111a3cab80bca72b9cbb96923bb1b8564eecf55911"},{"authors":"Jim
+        Weirich","built_at":"2004-12-30T05:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":2445,"metadata":{},"number":"0.4.14","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"6c164b4dc70b96746fb1653d611460ec605cb17e6773a670b956a31242da4e68"},{"authors":"Jim
+        Weirich","built_at":"2004-12-22T05:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":2359,"metadata":{},"number":"0.4.13","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"29bc67c0b4668ad2e431de0d06e7501577202e85c04b16608bc748718daced10"},{"authors":"Jim
+        Weirich","built_at":"2004-12-03T05:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":2361,"metadata":{},"number":"0.4.12","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"0e0d9357893053a369e7f9f3fc13eb4a61aff3058dd419fcb61f73d762e0b9ed"},{"authors":"","built_at":"2004-11-12T05:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":2390,"metadata":{},"number":"0.4.11","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"ceab46efc69e21259f97393a92d1f4ec29582ec1137545183abbd11b26459e94"},{"authors":"","built_at":"2004-11-05T05:00:00.000Z","created_at":"2009-07-25T18:01:33.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":2373,"metadata":{},"number":"0.4.10","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"d9cdf5e13126b304f390080283f62038cf2c5eee3486c266ff028db08dadbda0"},{"authors":"","built_at":"2004-10-30T04:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":2310,"metadata":{},"number":"0.4.9","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"4a74e2893f5ed0304f8b6c7cd8f46167e116b774f70e12b432cfc8915bd9a020"},{"authors":"","built_at":"2004-09-15T04:00:00.000Z","created_at":"2009-07-25T18:01:32.000Z","description":"Rake
+        is a Make-like program implemented in Ruby. Tasks and dependencies are specified
+        in standard Ruby syntax.","downloads_count":2566,"metadata":{},"number":"0.4.8","summary":"Ruby
+        based make-like utility.","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"d71e9b6d7776fd8293eb5d28ca3cef33b4aa09b8045d4ebf35baa5ba575bfa86"}]'}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['0']
+      Cache-Control: ['max-age=0, public']
+      Connection: [keep-alive]
+      Content-Length: ['54732']
+      Content-Security-Policy: ['default-src ''self''; script-src ''self'' https://secure.gaug.es;
+          style-src ''self'' https://fonts.googleapis.com; img-src ''self'' https://secure.gaug.es
+          https://gravatar.com https://secure.gravatar.com; font-src ''self'' https://fonts.gstatic.com;
+          connect-src https://s3-us-west-2.amazonaws.com/rubygems-dumps/; frame-src
+          https://ghbtns.com']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Mon, 18 Sep 2017 12:51:05 GMT']
+      ETag: ['"9579ea655652d4ee17dab298b05db0ef"']
+      Last-Modified: ['Mon, 11 Sep 2017 02:23:10 GMT']
+      Server: [RubyGems.org]
+      Strict-Transport-Security: [max-age=0]
+      Vary: ['Accept-Encoding,Fastly-SSL']
+      Via: [1.1 varnish]
+      X-Backend: ['F_Rails 54.186.104.15:443']
+      X-Cache: [MISS]
+      X-Cache-Hits: ['0']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [1d22ae14-46d9-4439-a993-c342817db576]
+      X-Runtime: ['0.159725']
+      X-Served-By: [cache-gru17125-GRU]
+      X-Timer: ['S1505739066.545142,VS0,VE192']
+      X-UA-Compatible: ['IE=Edge,chrome=1']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1

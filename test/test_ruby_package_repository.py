@@ -11,43 +11,39 @@ def repository(): return RubyPackageRepository(http_compression=False)
 
 @vcr.use_cassette('cassettes/ruby_package_repository_version.yaml')
 def test_fetch_version(repository):
-    version = repository.fetch_version('rails', '3.2.22')
-    assert version.name == 'rails'
-    assert version.number == '3.2.22'
+    version = repository.fetch_version('actionview', '4.1.0')
+    assert version.name == 'actionview'
+    assert version.number == '4.1.0'
     assert version.licenses == ['MIT']
-    assert version.dependencies == [
-        Dependency('actioncable'),
-        Dependency('actionmailer'),
+    assert version.development_dependencies == [
         Dependency('actionpack'),
-        Dependency('actionview'),
-        Dependency('activejob'),
-        Dependency('activemodel'),
-        Dependency('activerecord'),
+        Dependency('activemodel')
+    ]
+    assert version.runtime_dependencies == [
         Dependency('activesupport'),
-        Dependency('bundler'),
-        Dependency('railties'),
-        Dependency('sprockets-rails')
+        Dependency('builder'),
+        Dependency('erubi'),
+        Dependency('rails-dom-testing'),
+        Dependency('rails-html-sanitizer')
     ]
 
 
 @vcr.use_cassette('cassettes/ruby_package_repository_latest_version.yaml')
 def test_fetch_latest_version(repository):
-    version = repository.fetch_latest_version('rails')
-    assert version.name == 'rails'
+    version = repository.fetch_latest_version('actionview')
+    assert version.name == 'actionview'
     assert version.number == '5.1.4'
     assert version.licenses == ['MIT']
-    assert version.dependencies == [
-        Dependency('actioncable'),
-        Dependency('actionmailer'),
+    assert version.development_dependencies == [
         Dependency('actionpack'),
-        Dependency('actionview'),
-        Dependency('activejob'),
-        Dependency('activemodel'),
-        Dependency('activerecord'),
+        Dependency('activemodel')
+    ]
+    assert version.runtime_dependencies == [
         Dependency('activesupport'),
-        Dependency('bundler'),
-        Dependency('railties'),
-        Dependency('sprockets-rails')
+        Dependency('builder'),
+        Dependency('erubi'),
+        Dependency('rails-dom-testing'),
+        Dependency('rails-html-sanitizer')
     ]
 
 
@@ -76,7 +72,41 @@ def test_fetch_version_without_license(repository):
     assert version.licenses == []
 
 
-@vcr.use_cassette('cassettes/ruby_package_version_without_dependencies.yaml')
-def test_fetch_version_without_dependencies(repository):
+@vcr.use_cassette('cassettes/ruby_package_version_without_any_dependencies.yaml')
+def test_fetch_version_without_any_dependencies(repository):
     version = repository.fetch_version('rdiscount', '2.2.0.1')
-    assert version.dependencies == []
+    assert version.runtime_dependencies == []
+    assert version.development_dependencies == []
+
+
+@vcr.use_cassette('cassettes/ruby_package_version_without_runtime_dependencies.yaml')
+def test_fetch_version_without_runtime_dependencies(repository):
+    version = repository.fetch_version('bundler', '1.15.4')
+    assert version.runtime_dependencies == []
+    assert version.development_dependencies == [
+        Dependency('automatiek'),
+        Dependency('mustache'),
+        Dependency('rake'),
+        Dependency('rdiscount'),
+        Dependency('ronn'),
+        Dependency('rspec')
+    ]
+
+
+@vcr.use_cassette('cassettes/ruby_package_version_without_development_dependencies.yaml')
+def test_fetch_version_without_development_dependencies(repository):
+    version = repository.fetch_version('rails', '5.1.4')
+    assert version.runtime_dependencies == [
+        Dependency('actioncable'),
+        Dependency('actionmailer'),
+        Dependency('actionpack'),
+        Dependency('actionview'),
+        Dependency('activejob'),
+        Dependency('activemodel'),
+        Dependency('activerecord'),
+        Dependency('activesupport'),
+        Dependency('bundler'),
+        Dependency('railties'),
+        Dependency('sprockets-rails')
+    ]
+    assert version.development_dependencies == []

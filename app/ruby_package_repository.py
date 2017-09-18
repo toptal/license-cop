@@ -30,11 +30,11 @@ class RubyPackageRepository(PackageRepository):
                 return data
         raise Exception('Could not find Ruby gem {0}:{1}'.format(name, number))
 
-    def __extract_dependencies(self, data):
-        dependencies = []
-        dependencies.extend(data['dependencies']['development'])
-        dependencies.extend(data['dependencies']['runtime'])
-        return list(map(lambda i: Dependency(i['name']), dependencies))
+    def __extract_dependencies(self, data, kind):
+        return list(map(
+            lambda i: Dependency(i['name']),
+            data['dependencies'][kind]
+        ))
 
     def __extract_licenses(self, data):
         licenses = data['licenses']
@@ -46,6 +46,7 @@ class RubyPackageRepository(PackageRepository):
         return PackageVersion(
             name,
             number,
-            dependencies=self.__extract_dependencies(package_data),
-            licenses=self.__extract_licenses(version_data)
+            licenses=self.__extract_licenses(version_data),
+            runtime_dependencies=self.__extract_dependencies(package_data, 'runtime'),
+            development_dependencies=self.__extract_dependencies(package_data, 'development')
         )
