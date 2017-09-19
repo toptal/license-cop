@@ -3,7 +3,7 @@ import pytest
 
 from app.dependency_resolver import *
 from app.dependency_resolution import *
-from app.ruby_package_repository import *
+from app.platforms.ruby.package_repository import *
 
 
 @pytest.fixture

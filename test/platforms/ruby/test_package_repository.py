@@ -2,7 +2,7 @@ import vcr
 import pytest
 import requests
 
-from app.ruby_package_repository import *
+from app.platforms.ruby.package_repository import *
 from app.dependency import *
 
 
