@@ -15,33 +15,19 @@ def repository(): return RubyPackageRepository(http_compression=False)
 def resolver(repository): return DependencyResolver(repository)
 
 
-@vcr.use_cassette('cassettes/dependency_resolver_runtime_resolution_without_dependencies.yaml')
-def test_runtime_resolution_without_dependencies(resolver):
+@vcr.use_cassette('cassettes/dependency_resolution_without_dependencies.yaml')
+def test_resolution_without_dependencies(resolver):
     name = 'rake'
     number = '12.1.0'
-    resolution = resolver.resolve_version(DependencyKind.RUNTIME, name, number)
+    resolution = resolver.resolve_version(DependencyResolutionKind.RUNTIME, name, number)
     resolution.name == name
-    resolution.number == number
-    resolution.kind == DependencyKind.RUNTIME
     assert resolution.is_root
     assert resolution.is_leaf
 
 
-@vcr.use_cassette('cassettes/dependency_resolver_development_resolution_without_dependencies.yaml')
-def test_development_resolution_without_dependencies(resolver):
-    name = 'rails'
-    number = '5.1.4'
-    resolution = resolver.resolve_version(DependencyKind.DEVELOPMENT, name, number)
-    resolution.name == name
-    resolution.number == number
-    resolution.kind == DependencyKind.DEVELOPMENT
-    assert resolution.is_root
-    assert resolution.is_leaf
-
-
-@vcr.use_cassette('cassettes/dependency_resolver_runtime_resolution_without_circular_dependencies.yaml')
+@vcr.use_cassette('cassettes/dependency_runtime_resolution_without_circular_dependencies.yaml')
 def test_runtime_resolution_without_circular_dependencies(resolver):
-    root = resolver.resolve_version(DependencyKind.RUNTIME, 'activesupport', '5.1.4')
+    root = resolver.resolve_version(DependencyResolutionKind.RUNTIME, 'activesupport', '5.1.4')
 
     assert len(root.children) == 4
 

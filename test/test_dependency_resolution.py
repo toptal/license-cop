@@ -23,11 +23,6 @@ def build_version(name, number='5.1.4'):
     )
 
 
-def build_runtime_resolution(name):
-    version = build_version(name)
-    return DependencyResolution(DependencyKind.RUNTIME, version)
-
-
 @pytest.fixture
 def rails(): return build_version('rails', '5.1.4')
 
@@ -36,26 +31,14 @@ def rails(): return build_version('rails', '5.1.4')
 def rake(): return build_version('rake', '12.1.0')
 
 
-def test_scalar_properties(rails):
-    resolution = DependencyResolution(DependencyKind.RUNTIME, rails)
+def test_name(rails):
+    resolution = DependencyResolution(rails)
     assert resolution.name == rails.name
-    assert resolution.number == rails.number
-    assert resolution.licenses == rails.licenses
-
-
-def test_runtime_dependencies(rails):
-    resolution = DependencyResolution(DependencyKind.RUNTIME, rails)
-    assert resolution.dependencies == rails.runtime_dependencies
-
-
-def test_development_dependencies(rails):
-    resolution = DependencyResolution(DependencyKind.DEVELOPMENT, rails)
-    assert resolution.dependencies == rails.development_dependencies
 
 
 def test_add_child(rails, rake):
-    parent = DependencyResolution(DependencyKind.RUNTIME, rails)
-    child = DependencyResolution(DependencyKind.RUNTIME, rake)
+    parent = DependencyResolution(rails)
+    child = DependencyResolution(rake)
 
     parent.add_child(child)
     assert parent.children == [child]
@@ -63,8 +46,8 @@ def test_add_child(rails, rake):
 
 
 def test_is_root(rails, rake):
-    parent = DependencyResolution(DependencyKind.RUNTIME, rails)
-    child = DependencyResolution(DependencyKind.RUNTIME, rake)
+    parent = DependencyResolution(rails)
+    child = DependencyResolution(rake)
     parent.add_child(child)
 
     assert parent.is_root
@@ -72,9 +55,21 @@ def test_is_root(rails, rake):
 
 
 def test_is_leaf(rails, rake):
-    parent = DependencyResolution(DependencyKind.RUNTIME, rails)
-    child = DependencyResolution(DependencyKind.RUNTIME, rake)
+    parent = DependencyResolution(rails)
+    child = DependencyResolution(rake)
     parent.add_child(child)
 
     assert not parent.is_leaf
     assert child.is_leaf
+
+
+def test_compute_runtime_dependencies(rails):
+    resolution = DependencyResolution(rails)
+    dependencies = resolution.dependencies(DependencyResolutionKind.RUNTIME)
+    assert dependencies == rails.runtime_dependencies
+
+
+def test_compute_runtime_and_development_dependencies(rails):
+    resolution = DependencyResolution(rails)
+    dependencies = resolution.dependencies(DependencyResolutionKind.RUNTIME_AND_DEVELOPMENT)
+    assert dependencies == (rails.runtime_dependencies + rails.development_dependencies)

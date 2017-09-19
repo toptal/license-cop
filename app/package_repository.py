@@ -1,13 +1,7 @@
 import requests
 from abc import *
-from enum import Enum
 
 from app.data_object import *
-
-
-class DependencyKind(Enum):
-    RUNTIME = 1
-    DEVELOPMENT = 2
 
 
 # Right now, this is a dumb class. But we plan to add logic to compute

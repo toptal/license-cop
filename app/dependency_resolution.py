@@ -1,28 +1,18 @@
+from enum import Enum
+
 from app.package_repository import *
 
 
+class DependencyResolutionKind(Enum):
+    RUNTIME = 1
+    RUNTIME_AND_DEVELOPMENT = 2
+
+
 class DependencyResolution:
-    def __init__(self, kind, version):
-        self.kind = kind
+    def __init__(self, version):
         self.version = version
         self.parent = None
         self.children = []
-
-    @property
-    def name(self): return self.version.name
-
-    @property
-    def number(self): return self.version.number
-
-    @property
-    def licenses(self): return self.version.licenses
-
-    @property
-    def dependencies(self):
-        if self.kind == DependencyKind.RUNTIME:
-            return self.version.runtime_dependencies
-        else:
-            return self.version.development_dependencies
 
     @property
     def is_root(self): return self.parent is None
@@ -30,6 +20,16 @@ class DependencyResolution:
     @property
     def is_leaf(self): return self.children == []
 
-    def add_child(self, dependency_resolution):
-        dependency_resolution.parent = self
-        self.children.append(dependency_resolution)
+    @property
+    def name(self): return self.version.name
+
+    def dependencies(self, resolution_kind):
+        if resolution_kind == DependencyResolutionKind.RUNTIME:
+            return self.version.runtime_dependencies
+        else:
+            return (self.version.runtime_dependencies +
+                    self.version.development_dependencies)
+
+    def add_child(self, child):
+        child.parent = self
+        self.children.append(child)
