@@ -33,11 +33,3 @@ class DependencyResolution:
     def add_child(self, dependency_resolution):
         dependency_resolution.parent = self
         self.children.append(dependency_resolution)
-
-    def is_circular(self, dependency):
-        node = self
-        while not node.is_root:
-            if node.name == dependency.name:
-                return True
-            node = node.parent
-        return False

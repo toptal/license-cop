@@ -1,3 +1,5 @@
+from collections import deque
+
 from app.package_repository import *
 from app.dependency_resolution import *
 
@@ -8,21 +10,19 @@ class DependencyResolver:
 
     def resolve_version(self, kind, name, number):
         root = self.__build_node(kind, name, number)
-        nodes_to_expand = [root]
-        while nodes_to_expand:
-            node = nodes_to_expand.pop()
-            expansion = self.__expand_node(node)
-            nodes_to_expand.extend(expansion)
-        return root
+        visited_dependencies = set()
+        nodes_to_expand = deque()
 
-    def __expand_node(self, node):
-        expansion = []
-        for dependency in node.dependencies:
-            if not node.is_circular(dependency):
-                child = self.__build_node(node.kind, dependency.name)
-                node.add_child(child)
-                expansion.append(child)
-        return expansion
+        nodes_to_expand.append(root)
+        while nodes_to_expand:
+            current_node = nodes_to_expand.popleft()
+            for dependency in current_node.dependencies:
+                if dependency not in visited_dependencies:
+                    child = self.__build_node(current_node.kind, dependency.name)
+                    current_node.add_child(child)
+                    visited_dependencies.add(dependency)
+                    nodes_to_expand.append(child)
+        return root
 
     def __build_node(self, kind, name, number=None):
         if number is not None:
