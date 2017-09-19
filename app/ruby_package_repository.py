@@ -1,4 +1,7 @@
 from app.package_repository import *
+from app.package_version import *
+from app.dependency import *
+
 
 GEMS_URI = 'https://rubygems.org/api/v1/gems/{0}.json'
 VERSIONS_URI = 'https://rubygems.org/api/v1/versions/{0}.json'

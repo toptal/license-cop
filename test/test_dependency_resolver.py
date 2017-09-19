@@ -3,7 +3,6 @@ import pytest
 
 from app.dependency_resolver import *
 from app.dependency_resolution import *
-from app.package_repository import *
 from app.ruby_package_repository import *
 
 

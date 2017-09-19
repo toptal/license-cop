@@ -3,6 +3,7 @@ import pytest
 import requests
 
 from app.ruby_package_repository import *
+from app.dependency import *
 
 
 @pytest.fixture

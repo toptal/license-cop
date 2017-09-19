@@ -1,6 +1,5 @@
 from collections import deque
 
-from app.package_repository import *
 from app.dependency_resolution import *
 
 

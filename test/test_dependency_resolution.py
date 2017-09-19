@@ -1,7 +1,8 @@
 import pytest
 
 from app.dependency_resolution import *
-from app.package_repository import *
+from app.package_version import *
+from app.dependency import *
 
 
 def build_version(name, number='5.1.4'):
