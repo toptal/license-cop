@@ -1,3 +1,5 @@
+import collections
+
 
 class DataObject:
 
@@ -10,4 +12,19 @@ class DataObject:
         return not self.__eq__(other)
 
     def __hash__(self):
-        return hash(tuple(self.__dict__.values()))
+        hashes = []
+        for value in self.__dict__.values():
+            if isinstance(value, collections.Mapping):
+                hashes.append(hash(tuple(value.values())))
+            elif isinstance(value, collections.Iterable):
+                hashes.append(hash(tuple(value)))
+            else:
+                hashes.append(hash(value))
+
+        return hash(tuple(hashes))
+
+    def __repr__(self):
+        return repr(self.__dict__)
+
+    def __str__(self):
+        return str(self.__dict__)
