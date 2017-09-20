@@ -1,6 +1,6 @@
-import vcr
 import pytest
 
+from test import *
 from app.dependency_resolver import *
 from app.dependency_resolution import *
 from app.platforms.ruby.package_registry import *
@@ -38,7 +38,7 @@ def assert_branch(root, expected_branch, expected_number, is_leaf):
             name, current_node.number, expected_number)
 
 
-@vcr.use_cassette('cassettes/dependency_resolution_without_dependencies.yaml')
+@VCR.use_cassette('dependency_resolution_without_dependencies.yaml')
 def test_resolution_without_dependencies(resolver):
     name = 'rake'
     number = '12.1.0'
@@ -49,7 +49,7 @@ def test_resolution_without_dependencies(resolver):
     assert resolution.is_leaf
 
 
-@vcr.use_cassette('cassettes/dependency_runtime_resolution_without_circular_dependencies.yaml')
+@VCR.use_cassette('dependency_runtime_resolution_without_circular_dependencies.yaml')
 def test_runtime_resolution_without_circular_dependencies(resolver):
     name = 'activesupport'
     number = '5.1.4'
@@ -66,7 +66,7 @@ def test_runtime_resolution_without_circular_dependencies(resolver):
     assert_branch(root, ['tzinfo', 'thread_safe'], '0.3.6', True)
 
 
-@vcr.use_cassette('cassettes/dependency_runtime_resolution_with_circular_dependencies.yaml')
+@VCR.use_cassette('dependency_runtime_resolution_with_circular_dependencies.yaml')
 def test_runtime_resolution_with_circular_dependencies(resolver):
     name = 'rails'
     number = '5.1.4'
