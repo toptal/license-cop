@@ -12,21 +12,21 @@ def build_version(name, number='5.1.4', licenses=['MIT']):
         number=number,
         licenses=licenses,
         runtime_dependencies=[
-            Dependency('activesupport'),
-            Dependency('activemodel'),
-            Dependency('activerecord'),
-            Dependency('builder'),
-            Dependency('erubi')
+            Dependency('activesupport', Dependency.RUNTIME),
+            Dependency('activemodel', Dependency.RUNTIME),
+            Dependency('activerecord', Dependency.RUNTIME),
+            Dependency('builder', Dependency.RUNTIME),
+            Dependency('erubi', Dependency.RUNTIME)
         ],
         development_dependencies=[
-            Dependency('actionpack'),
-            Dependency('activemodel')
+            Dependency('actionpack', Dependency.DEVELOPMENT),
+            Dependency('activemodel', Dependency.DEVELOPMENT)
         ]
     )
 
 
 def build_resolution(name, number, licenses):
-    return DependencyResolution(build_version(name, number, licenses))
+    return DependencyResolution(build_version(name, number, licenses), Dependency.RUNTIME)
 
 
 @pytest.fixture
@@ -38,18 +38,18 @@ def rake(): return build_version('rake', '12.1.0')
 
 
 def test_name(rails):
-    resolution = DependencyResolution(rails)
+    resolution = DependencyResolution(rails, Dependency.RUNTIME)
     assert resolution.name == rails.name
 
 
 def test_number(rails):
-    resolution = DependencyResolution(rails)
+    resolution = DependencyResolution(rails, Dependency.RUNTIME)
     assert resolution.number == rails.number
 
 
 def test_add_child(rails, rake):
-    parent = DependencyResolution(rails)
-    child = DependencyResolution(rake)
+    parent = DependencyResolution(rails, Dependency.RUNTIME)
+    child = DependencyResolution(rake, Dependency.RUNTIME)
 
     assert parent.add_child(child) == parent
     assert parent.children == [child]
@@ -57,8 +57,8 @@ def test_add_child(rails, rake):
 
 
 def test_is_root(rails, rake):
-    parent = DependencyResolution(rails)
-    child = DependencyResolution(rake)
+    parent = DependencyResolution(rails, Dependency.RUNTIME)
+    child = DependencyResolution(rake, Dependency.RUNTIME)
     parent.add_child(child)
 
     assert parent.is_root
@@ -66,8 +66,8 @@ def test_is_root(rails, rake):
 
 
 def test_is_leaf(rails, rake):
-    parent = DependencyResolution(rails)
-    child = DependencyResolution(rake)
+    parent = DependencyResolution(rails, Dependency.RUNTIME)
+    child = DependencyResolution(rake, Dependency.RUNTIME)
     parent.add_child(child)
 
     assert not parent.is_leaf
@@ -75,19 +75,19 @@ def test_is_leaf(rails, rake):
 
 
 def test_compute_runtime_dependencies(rails):
-    resolution = DependencyResolution(rails)
-    dependencies = resolution.dependencies(DependencyResolutionKind.RUNTIME)
+    resolution = DependencyResolution(rails, Dependency.RUNTIME)
+    dependencies = resolution.dependencies(runtime_only=True)
     assert dependencies == rails.runtime_dependencies
 
 
 def test_compute_runtime_and_development_dependencies(rails):
-    resolution = DependencyResolution(rails)
-    dependencies = resolution.dependencies(DependencyResolutionKind.RUNTIME_AND_DEVELOPMENT)
+    resolution = DependencyResolution(rails, Dependency.RUNTIME)
+    dependencies = resolution.dependencies(runtime_only=False)
     assert dependencies == (rails.runtime_dependencies + rails.development_dependencies)
 
 
 def test_repr_without_children(rails):
-    resolution = DependencyResolution(rails)
+    resolution = DependencyResolution(rails, Dependency.RUNTIME)
     assert repr(resolution) == dedent(
         '''\
         • rails:5.1.4 → MIT
@@ -96,7 +96,7 @@ def test_repr_without_children(rails):
 
 
 def test_repr_with_children(rails):
-    resolution = DependencyResolution(rails)\
+    resolution = DependencyResolution(rails, Dependency.RUNTIME)\
         .add_child(
             build_resolution('activesupport', '5.1.4', ['MIT'])
                 .add_child(build_resolution('concurrent-ruby', '1.0.2', ['BSD']))

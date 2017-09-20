@@ -35,8 +35,10 @@ class RubyPackageRegistry(PackageRegistry):
 
     def __extract_dependencies(self, data, kind):
         return list(map(
-            lambda i: Dependency(i['name']),
-            data['dependencies'][kind]
+            lambda i: Dependency(i['name'], kind),
+            data['dependencies'][
+                'runtime' if kind == Dependency.RUNTIME else 'development'
+            ]
         ))
 
     def __extract_licenses(self, data):
@@ -50,6 +52,6 @@ class RubyPackageRegistry(PackageRegistry):
             name,
             number,
             licenses=self.__extract_licenses(version_data),
-            runtime_dependencies=self.__extract_dependencies(package_data, 'runtime'),
-            development_dependencies=self.__extract_dependencies(package_data, 'development')
+            runtime_dependencies=self.__extract_dependencies(package_data, Dependency.RUNTIME),
+            development_dependencies=self.__extract_dependencies(package_data, Dependency.DEVELOPMENT)
         )

@@ -4,15 +4,11 @@ from io import StringIO
 from app.package_registry import *
 
 
-class DependencyResolutionKind(Enum):
-    RUNTIME = 1
-    RUNTIME_AND_DEVELOPMENT = 2
-
-
 class DependencyResolution:
 
-    def __init__(self, version):
+    def __init__(self, version, kind):
         self.version = version
+        self.kind = kind
         self.parent = None
         self.children = []
 
@@ -28,8 +24,8 @@ class DependencyResolution:
     @property
     def number(self): return self.version.number
 
-    def dependencies(self, resolution_kind):
-        if resolution_kind == DependencyResolutionKind.RUNTIME:
+    def dependencies(self, runtime_only):
+        if runtime_only:
             return self.version.runtime_dependencies
         else:
             return (self.version.runtime_dependencies +

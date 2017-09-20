@@ -40,23 +40,24 @@ def assert_branch(root, expected_branch, expected_number, is_leaf):
 
 @VCR.use_cassette('dependency_resolution_without_dependencies.yaml')
 def test_resolution_without_dependencies(resolver):
-    name = 'rake'
-    number = '12.1.0'
-    resolution = resolver.resolve_version(DependencyResolutionKind.RUNTIME, name, number)
-    resolution.name == name
-    resolution.number == number
-    assert resolution.is_root
-    assert resolution.is_leaf
+    dependency = Dependency('rake', Dependency.RUNTIME, '12.1.0')
+
+    root = resolver.resolve(dependency, runtime_only=True)
+    root.name == dependency.name
+    root.number == dependency.number
+    root.kind == dependency.kind
+    assert root.is_root
+    assert root.is_leaf
 
 
 @VCR.use_cassette('dependency_runtime_resolution_without_circular_dependencies.yaml')
 def test_runtime_resolution_without_circular_dependencies(resolver):
-    name = 'activesupport'
-    number = '5.1.4'
+    dependency = Dependency('activesupport', Dependency.RUNTIME, '5.1.4')
 
-    root = resolver.resolve_version(DependencyResolutionKind.RUNTIME, name, number)
-    assert root.name == name
-    assert root.number == number
+    root = resolver.resolve(dependency, runtime_only=True)
+    root.name == dependency.name
+    root.number == dependency.number
+    root.kind == dependency.kind
     assert len(root.children) == 4
 
     assert_branch(root, ['concurrent-ruby'], '1.0.5', True)
@@ -68,12 +69,12 @@ def test_runtime_resolution_without_circular_dependencies(resolver):
 
 @VCR.use_cassette('dependency_runtime_resolution_with_circular_dependencies.yaml')
 def test_runtime_resolution_with_circular_dependencies(resolver):
-    name = 'rails'
-    number = '5.1.4'
+    dependency = Dependency('rails', Dependency.RUNTIME, '5.1.4')
 
-    root = resolver.resolve_version(DependencyResolutionKind.RUNTIME, name, number)
-    assert root.name == name
-    assert root.number == number
+    root = resolver.resolve(dependency, runtime_only=True)
+    root.name == dependency.name
+    root.number == dependency.number
+    root.kind == dependency.kind
     assert len(root.children) == 11
 
     assert_branch(root, ['actioncable'], '5.1.4', False)

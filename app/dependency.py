@@ -1,8 +1,11 @@
 from app.data_object import *
 
 
-# Right now, this is a dumb class. But we plan to add logic to compute
-# version requirements into it soon.
 class Dependency(DataObject):
-    def __init__(self, name):
+    RUNTIME = 1
+    DEVELOPMENT = 2
+
+    def __init__(self, name, kind, number=None):
         self.name = name
+        self.kind = kind
+        self.number = None

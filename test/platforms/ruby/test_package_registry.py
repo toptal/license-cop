@@ -17,15 +17,15 @@ def test_fetch_version(registry):
     assert version.number == '4.1.0'
     assert version.licenses == ['MIT']
     assert version.development_dependencies == [
-        Dependency('actionpack'),
-        Dependency('activemodel')
+        Dependency('actionpack', Dependency.DEVELOPMENT),
+        Dependency('activemodel', Dependency.DEVELOPMENT)
     ]
     assert version.runtime_dependencies == [
-        Dependency('activesupport'),
-        Dependency('builder'),
-        Dependency('erubi'),
-        Dependency('rails-dom-testing'),
-        Dependency('rails-html-sanitizer')
+        Dependency('activesupport', Dependency.RUNTIME),
+        Dependency('builder', Dependency.RUNTIME),
+        Dependency('erubi', Dependency.RUNTIME),
+        Dependency('rails-dom-testing', Dependency.RUNTIME),
+        Dependency('rails-html-sanitizer', Dependency.RUNTIME)
     ]
 
 
@@ -36,15 +36,15 @@ def test_fetch_latest_version(registry):
     assert version.number == '5.1.4'
     assert version.licenses == ['MIT']
     assert version.development_dependencies == [
-        Dependency('actionpack'),
-        Dependency('activemodel')
+        Dependency('actionpack', Dependency.DEVELOPMENT),
+        Dependency('activemodel', Dependency.DEVELOPMENT)
     ]
     assert version.runtime_dependencies == [
-        Dependency('activesupport'),
-        Dependency('builder'),
-        Dependency('erubi'),
-        Dependency('rails-dom-testing'),
-        Dependency('rails-html-sanitizer')
+        Dependency('activesupport', Dependency.RUNTIME),
+        Dependency('builder', Dependency.RUNTIME),
+        Dependency('erubi', Dependency.RUNTIME),
+        Dependency('rails-dom-testing', Dependency.RUNTIME),
+        Dependency('rails-html-sanitizer', Dependency.RUNTIME)
     ]
 
 
@@ -85,12 +85,12 @@ def test_fetch_version_without_runtime_dependencies(registry):
     version = registry.fetch_version('bundler', '1.15.4')
     assert version.runtime_dependencies == []
     assert version.development_dependencies == [
-        Dependency('automatiek'),
-        Dependency('mustache'),
-        Dependency('rake'),
-        Dependency('rdiscount'),
-        Dependency('ronn'),
-        Dependency('rspec')
+        Dependency('automatiek', Dependency.DEVELOPMENT),
+        Dependency('mustache', Dependency.DEVELOPMENT),
+        Dependency('rake', Dependency.DEVELOPMENT),
+        Dependency('rdiscount', Dependency.DEVELOPMENT),
+        Dependency('ronn', Dependency.DEVELOPMENT),
+        Dependency('rspec', Dependency.DEVELOPMENT)
     ]
 
 
@@ -98,16 +98,16 @@ def test_fetch_version_without_runtime_dependencies(registry):
 def test_fetch_version_without_development_dependencies(registry):
     version = registry.fetch_version('rails', '5.1.4')
     assert version.runtime_dependencies == [
-        Dependency('actioncable'),
-        Dependency('actionmailer'),
-        Dependency('actionpack'),
-        Dependency('actionview'),
-        Dependency('activejob'),
-        Dependency('activemodel'),
-        Dependency('activerecord'),
-        Dependency('activesupport'),
-        Dependency('bundler'),
-        Dependency('railties'),
-        Dependency('sprockets-rails')
+        Dependency('actioncable', Dependency.RUNTIME),
+        Dependency('actionmailer', Dependency.RUNTIME),
+        Dependency('actionpack', Dependency.RUNTIME),
+        Dependency('actionview', Dependency.RUNTIME),
+        Dependency('activejob', Dependency.RUNTIME),
+        Dependency('activemodel', Dependency.RUNTIME),
+        Dependency('activerecord', Dependency.RUNTIME),
+        Dependency('activesupport', Dependency.RUNTIME),
+        Dependency('bundler', Dependency.RUNTIME),
+        Dependency('railties', Dependency.RUNTIME),
+        Dependency('sprockets-rails', Dependency.RUNTIME)
     ]
     assert version.development_dependencies == []
