@@ -1,4 +1,5 @@
 from enum import Enum
+from io import StringIO
 
 from app.package_repository import *
 
@@ -9,6 +10,7 @@ class DependencyResolutionKind(Enum):
 
 
 class DependencyResolution:
+
     def __init__(self, version):
         self.version = version
         self.parent = None
@@ -33,3 +35,27 @@ class DependencyResolution:
     def add_child(self, child):
         child.parent = self
         self.children.append(child)
+        return self
+
+    def __repr__(self):
+        io = StringIO()
+        self.__print_node(io, self, 0)
+        return io.getvalue()
+
+    def __print_node(self, io, node, level):
+        self.__print_node_header(io, node, level)
+        for child in node.children:
+            self.__print_node(io, child, level + 1)
+
+    def __print_node_header(self, io, node, level):
+        header = '{0}{1} {2}'.format(
+            self.__indentation(level),
+            '•' if node.is_leaf else '+',
+            str(node.version)
+        )
+        print(header, file=io)
+
+    def __indentation(self, level):
+        if level == 0:
+            return ''
+        return ('⎮  ' * (level - 1)) + '⎮--'

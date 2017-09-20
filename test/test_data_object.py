@@ -82,3 +82,21 @@ def test_hash_should_be_very_different_for_very_different_objects():
     b = hash(a_very_different_object())
     assert a != b
     assert abs(a - b) > 1000000000000000
+
+
+def test_str():
+    assert str(a_object()) == str({
+        'a_string': 'foobar',
+        'a_integer': 666,
+        'a_list': [1, 2, 'three'],
+        'a_dict': {'one': 1, 'two': 2}
+    })
+
+
+def test_repr():
+    assert repr(a_object()) == repr({
+        'a_string': 'foobar',
+        'a_integer': 666,
+        'a_list': [1, 2, 'three'],
+        'a_dict': {'one': 1, 'two': 2}
+    })
