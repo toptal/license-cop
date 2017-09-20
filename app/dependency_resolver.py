@@ -16,9 +16,9 @@ class DependencyResolver:
         while nodes_to_expand:
             current_node = nodes_to_expand.popleft()
             for dependency in current_node.dependencies(resolution_kind):
+                child = self.__build_node(dependency.name)
+                current_node.add_child(child)
                 if dependency not in visited_dependencies:
-                    child = self.__build_node(dependency.name)
-                    current_node.add_child(child)
                     visited_dependencies.add(dependency)
                     nodes_to_expand.append(child)
 

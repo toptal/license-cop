@@ -42,6 +42,11 @@ def test_name(rails):
     assert resolution.name == rails.name
 
 
+def test_number(rails):
+    resolution = DependencyResolution(rails)
+    assert resolution.number == rails.number
+
+
 def test_add_child(rails, rake):
     parent = DependencyResolution(rails)
     child = DependencyResolution(rake)

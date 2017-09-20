@@ -25,6 +25,9 @@ class DependencyResolution:
     @property
     def name(self): return self.version.name
 
+    @property
+    def number(self): return self.version.number
+
     def dependencies(self, resolution_kind):
         if resolution_kind == DependencyResolutionKind.RUNTIME:
             return self.version.runtime_dependencies
