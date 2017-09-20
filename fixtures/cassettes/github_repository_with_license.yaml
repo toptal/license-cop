@@ -1,0 +1,44 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: [application/vnd.github.drax-preview+json]
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/ruby/rake
+  response:
+    body: {string: '{"id":20037550,"name":"rake","full_name":"ruby/rake","owner":{"login":"ruby","id":210414,"avatar_url":"https://avatars3.githubusercontent.com/u/210414?v=4","gravatar_id":"","url":"https://api.github.com/users/ruby","html_url":"https://github.com/ruby","followers_url":"https://api.github.com/users/ruby/followers","following_url":"https://api.github.com/users/ruby/following{/other_user}","gists_url":"https://api.github.com/users/ruby/gists{/gist_id}","starred_url":"https://api.github.com/users/ruby/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ruby/subscriptions","organizations_url":"https://api.github.com/users/ruby/orgs","repos_url":"https://api.github.com/users/ruby/repos","events_url":"https://api.github.com/users/ruby/events{/privacy}","received_events_url":"https://api.github.com/users/ruby/received_events","type":"Organization","site_admin":false},"private":false,"html_url":"https://github.com/ruby/rake","description":"A
+        make-like build utility for Ruby.","fork":false,"url":"https://api.github.com/repos/ruby/rake","forks_url":"https://api.github.com/repos/ruby/rake/forks","keys_url":"https://api.github.com/repos/ruby/rake/keys{/key_id}","collaborators_url":"https://api.github.com/repos/ruby/rake/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/ruby/rake/teams","hooks_url":"https://api.github.com/repos/ruby/rake/hooks","issue_events_url":"https://api.github.com/repos/ruby/rake/issues/events{/number}","events_url":"https://api.github.com/repos/ruby/rake/events","assignees_url":"https://api.github.com/repos/ruby/rake/assignees{/user}","branches_url":"https://api.github.com/repos/ruby/rake/branches{/branch}","tags_url":"https://api.github.com/repos/ruby/rake/tags","blobs_url":"https://api.github.com/repos/ruby/rake/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/ruby/rake/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/ruby/rake/git/refs{/sha}","trees_url":"https://api.github.com/repos/ruby/rake/git/trees{/sha}","statuses_url":"https://api.github.com/repos/ruby/rake/statuses/{sha}","languages_url":"https://api.github.com/repos/ruby/rake/languages","stargazers_url":"https://api.github.com/repos/ruby/rake/stargazers","contributors_url":"https://api.github.com/repos/ruby/rake/contributors","subscribers_url":"https://api.github.com/repos/ruby/rake/subscribers","subscription_url":"https://api.github.com/repos/ruby/rake/subscription","commits_url":"https://api.github.com/repos/ruby/rake/commits{/sha}","git_commits_url":"https://api.github.com/repos/ruby/rake/git/commits{/sha}","comments_url":"https://api.github.com/repos/ruby/rake/comments{/number}","issue_comment_url":"https://api.github.com/repos/ruby/rake/issues/comments{/number}","contents_url":"https://api.github.com/repos/ruby/rake/contents/{+path}","compare_url":"https://api.github.com/repos/ruby/rake/compare/{base}...{head}","merges_url":"https://api.github.com/repos/ruby/rake/merges","archive_url":"https://api.github.com/repos/ruby/rake/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/ruby/rake/downloads","issues_url":"https://api.github.com/repos/ruby/rake/issues{/number}","pulls_url":"https://api.github.com/repos/ruby/rake/pulls{/number}","milestones_url":"https://api.github.com/repos/ruby/rake/milestones{/number}","notifications_url":"https://api.github.com/repos/ruby/rake/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/ruby/rake/labels{/name}","releases_url":"https://api.github.com/repos/ruby/rake/releases{/id}","deployments_url":"https://api.github.com/repos/ruby/rake/deployments","created_at":"2014-05-21T21:11:31Z","updated_at":"2017-09-19T14:48:16Z","pushed_at":"2017-09-19T13:05:43Z","git_url":"git://github.com/ruby/rake.git","ssh_url":"git@github.com:ruby/rake.git","clone_url":"https://github.com/ruby/rake.git","svn_url":"https://github.com/ruby/rake","homepage":"https://ruby.github.io/rake","size":3508,"stargazers_count":1062,"watchers_count":1062,"language":"Ruby","has_issues":true,"has_projects":false,"has_downloads":true,"has_wiki":false,"has_pages":true,"forks_count":434,"mirror_url":null,"open_issues_count":31,"forks":434,"open_issues":31,"watchers":1062,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true},"license":{"key":"mit","name":"MIT
+        License","spdx_id":"MIT","url":"https://api.github.com/licenses/mit","featured":true},"organization":{"login":"ruby","id":210414,"avatar_url":"https://avatars3.githubusercontent.com/u/210414?v=4","gravatar_id":"","url":"https://api.github.com/users/ruby","html_url":"https://github.com/ruby","followers_url":"https://api.github.com/users/ruby/followers","following_url":"https://api.github.com/users/ruby/following{/other_user}","gists_url":"https://api.github.com/users/ruby/gists{/gist_id}","starred_url":"https://api.github.com/users/ruby/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ruby/subscriptions","organizations_url":"https://api.github.com/users/ruby/orgs","repos_url":"https://api.github.com/users/ruby/repos","events_url":"https://api.github.com/users/ruby/events{/privacy}","received_events_url":"https://api.github.com/users/ruby/received_events","type":"Organization","site_admin":false},"network_count":434,"subscribers_count":73}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['5325']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Wed, 20 Sep 2017 14:53:23 GMT']
+      ETag: ['"22c69cb95f3652d4aee713691bd63628"']
+      Last-Modified: ['Tue, 19 Sep 2017 14:48:16 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: [repo]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.drax-preview; format=json]
+      X-GitHub-Request-Id: ['B95D:438D:5EE39F5:CC3DB4E:59C280E3']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3644']
+      X-RateLimit-Reset: ['1505921651']
+      X-Runtime-rack: ['0.054457']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1
