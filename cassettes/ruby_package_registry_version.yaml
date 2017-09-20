@@ -9,7 +9,7 @@ interactions:
     method: GET
     uri: https://rubygems.org/api/v1/gems/actionview.json
   response:
-    body: {string: '{"name":"actionview","downloads":59424067,"version":"5.1.4","version_downloads":108550,"platform":"ruby","authors":"David
+    body: {string: '{"name":"actionview","downloads":59467953,"version":"5.1.4","version_downloads":113141,"platform":"ruby","authors":"David
         Heinemeier Hansson","info":"Simple, battle-tested conventions and helpers
         for building web pages.","licenses":["MIT"],"metadata":{},"sha":"302f398a86337818e6f4225934b136436cab5fdfe2fcd6dd7509b1f595a417c2","project_uri":"https://rubygems.org/gems/actionview","gem_uri":"https://rubygems.org/gems/actionview-5.1.4.gem","homepage_uri":"http://rubyonrails.org","wiki_uri":null,"documentation_uri":"http://www.rubydoc.info/gems/actionview/5.1.4","mailing_list_uri":null,"source_code_uri":null,"bug_tracker_uri":null,"changelog_uri":null,"dependencies":{"development":[{"name":"actionpack","requirements":"=
         5.1.4"},{"name":"activemodel","requirements":"= 5.1.4"}],"runtime":[{"name":"activesupport","requirements":"=
@@ -30,8 +30,8 @@ interactions:
           connect-src https://s3-us-west-2.amazonaws.com/rubygems-dumps/; frame-src
           https://ghbtns.com']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Tue, 19 Sep 2017 19:25:19 GMT']
-      ETag: ['"a693449a146909d99338e080f87a6345"']
+      Date: ['Wed, 20 Sep 2017 06:25:06 GMT']
+      ETag: ['"8a3295c39dc2cd3080eada62a1c5034b"']
       Server: [RubyGems.org]
       Strict-Transport-Security: [max-age=0]
       Vary: ['Accept-Encoding,Fastly-SSL']
@@ -41,10 +41,10 @@ interactions:
       X-Cache-Hits: ['0']
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [762f0bd3-0d57-4d2d-89b7-d7ee84f857a2]
-      X-Runtime: ['0.017545']
-      X-Served-By: [cache-gru17124-GRU]
-      X-Timer: ['S1505849119.077475,VS0,VE207']
+      X-Request-Id: [aaab1a70-b4f7-4e9c-b34c-e7acf5fb2053]
+      X-Runtime: ['0.018113']
+      X-Served-By: [cache-gru17128-GRU]
+      X-Timer: ['S1505888706.832380,VS0,VE206']
       X-UA-Compatible: ['IE=Edge,chrome=1']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
@@ -59,31 +59,31 @@ interactions:
     uri: https://rubygems.org/api/v1/versions/actionview.json
   response:
     body: {string: '[{"authors":"David Heinemeier Hansson","built_at":"2017-09-08T00:00:00.000Z","created_at":"2017-09-08T00:50:24.313Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":108470,"metadata":{},"number":"5.1.4","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":112678,"metadata":{},"number":"5.1.4","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"302f398a86337818e6f4225934b136436cab5fdfe2fcd6dd7509b1f595a417c2"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-08-24T00:00:00.000Z","created_at":"2017-08-24T19:36:22.397Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":2331,"metadata":{},"number":"5.1.4.rc1","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":2333,"metadata":{},"number":"5.1.4.rc1","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"9930cccacbe71085b894ca0410da07625b801c4db1775b655357bd2bf5824ae9"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-08-03T00:00:00.000Z","created_at":"2017-08-03T19:14:03.234Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":364288,"metadata":{},"number":"5.1.3","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":366394,"metadata":{},"number":"5.1.3","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"b744e9cbb2760754fa4c3c2b57c68916756a5f032fa6307ca362379e02a48857"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-07-31T00:00:00.000Z","created_at":"2017-07-31T19:11:47.863Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":1741,"metadata":{},"number":"5.1.3.rc3","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":1744,"metadata":{},"number":"5.1.3.rc3","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"d93ac77d4d6d2fa468a7407fda4088c9ca975aa00e78c18dd2b71e398af3b3dd"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-07-25T00:00:00.000Z","created_at":"2017-07-25T20:17:09.832Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":2566,"metadata":{},"number":"5.1.3.rc2","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":2568,"metadata":{},"number":"5.1.3.rc2","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"f6666a49474da4261c0bc00e9301e46075fe2c6453cf96033f5f3fa05397ceb5"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-07-19T00:00:00.000Z","created_at":"2017-07-19T19:32:07.081Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":1106,"metadata":{},"number":"5.1.3.rc1","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":1107,"metadata":{},"number":"5.1.3.rc1","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"e02e704e2c2696dd5ad7fc208803308d585f6c016a98cb016165e1368f4036cd"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-06-26T00:00:00.000Z","created_at":"2017-06-26T21:50:33.621Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":457719,"metadata":{},"number":"5.1.2","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":458696,"metadata":{},"number":"5.1.2","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"82efdca96308476cb644d65bc9842167099ed1210ce3c8b626be9ebdcc8c311e"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-06-20T00:00:00.000Z","created_at":"2017-06-20T17:02:48.574Z","description":"Simple,
@@ -91,35 +91,35 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"689d6580dbef9c81e43fc77185a7916ef7ca2a3d863300f6e47d8199e4bdbd1c"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-05-12T00:00:00.000Z","created_at":"2017-05-12T20:10:46.149Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":516203,"metadata":{},"number":"5.1.1","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":516849,"metadata":{},"number":"5.1.1","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"40b7fc3f05619d6efd3d60a66b2f24a0da05cecab05e816903f8bbc01b303a8b"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-04-27T00:00:00.000Z","created_at":"2017-04-27T20:59:42.158Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":179756,"metadata":{},"number":"5.1.0","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":180032,"metadata":{},"number":"5.1.0","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"14caf5b39236f2633215532c58fec0b6b32441064576766358953335ccfb66a1"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-04-21T00:00:00.000Z","created_at":"2017-04-21T01:29:45.790Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":14078,"metadata":{},"number":"5.1.0.rc2","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":14085,"metadata":{},"number":"5.1.0.rc2","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"86d2daa215fe4bfd001b31d0edd8757c920d0e7523f741144b17d7ba34515961"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-03-20T00:00:00.000Z","created_at":"2017-03-20T18:56:58.820Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":43843,"metadata":{},"number":"5.1.0.rc1","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":43853,"metadata":{},"number":"5.1.0.rc1","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"1dd8a3d3a59d3e2b0a87ec823dfbb48cc150cba828b5f204ddac7e9ae979acaf"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-02-23T00:00:00.000Z","created_at":"2017-02-23T19:55:30.851Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":20743,"metadata":{},"number":"5.1.0.beta1","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":20745,"metadata":{},"number":"5.1.0.beta1","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"e28b4826f1dba40db42bb8ffbd8ba00e64576028ebc4571d90b10c9eb431afb3"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-09-08T00:00:00.000Z","created_at":"2017-09-08T00:46:19.089Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":30451,"metadata":{},"number":"5.0.6","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":31644,"metadata":{},"number":"5.0.6","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"6d256fba84733b0dc8a22de7264ceb77ef2ddeae2913632300c76182ecd6d36d"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-08-24T00:00:00.000Z","created_at":"2017-08-24T19:10:26.752Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":620,"metadata":{},"number":"5.0.6.rc1","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":621,"metadata":{},"number":"5.0.6.rc1","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"673d06523edf733163ad668fe3cd64bd1c7fb97244c952241d1e00ee6835101b"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-07-31T00:00:00.000Z","created_at":"2017-07-31T19:04:23.236Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":156947,"metadata":{},"number":"5.0.5","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":157775,"metadata":{},"number":"5.0.5","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"cb4d2928b63f29931a6d05adde78bcf7dac83bf79a05911547068af2da765a6b"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-07-25T00:00:00.000Z","created_at":"2017-07-25T20:25:07.445Z","description":"Simple,
@@ -131,7 +131,7 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"117d39ee700e82903a3f0c3c242e986326acd08e7bab1059fd0afc6e58a2d19c"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-06-19T00:00:00.000Z","created_at":"2017-06-19T21:57:55.297Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":251677,"metadata":{},"number":"5.0.4","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":252292,"metadata":{},"number":"5.0.4","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"f5b53d280c894afd423be26ffc7546266fd6490c91f7e0e3c2dd6524d8d3dbcb"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-06-14T00:00:00.000Z","created_at":"2017-06-14T20:48:23.862Z","description":"Simple,
@@ -139,11 +139,11 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"c8f07e7f26dd86467be877e17f637b76770ee571dd858e037995754ae38dbcd7"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-05-12T00:00:00.000Z","created_at":"2017-05-12T20:03:51.227Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":351081,"metadata":{},"number":"5.0.3","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":351397,"metadata":{},"number":"5.0.3","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"6b488cd87023024bdbc75f7fed1e9a705c16e4d8635210d71c61b87f7a46491d"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-03-01T00:00:00.000Z","created_at":"2017-03-01T23:12:53.334Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":1283236,"metadata":{},"number":"5.0.2","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":1284234,"metadata":{},"number":"5.0.2","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"002b3c3b858b0748a73ebcb6f8fcdec24b5ccda948646261530ff028ded43365"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-02-25T00:00:00.000Z","created_at":"2017-02-25T00:54:54.935Z","description":"Simple,
@@ -151,11 +151,11 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"f0e55b9cc876f55dd4d1585a65db8f4b15b3e90ad4e65cc1f3e2dfe893da4460"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-12-21T00:00:00.000Z","created_at":"2016-12-21T00:06:49.490Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":1282733,"metadata":{},"number":"5.0.1","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":1283493,"metadata":{},"number":"5.0.1","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"e702a4e22e68fdc20597f6cf53123077c242372081daef011eb8d4200cce718d"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-12-09T00:00:00.000Z","created_at":"2016-12-09T19:12:11.587Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":5933,"metadata":{},"number":"5.0.1.rc2","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":5935,"metadata":{},"number":"5.0.1.rc2","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"ce8246457e322a4d37c49ff1a4226a4bf8c346f16828eacab250d77929a953e3"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-11-30T00:00:00.000Z","created_at":"2016-11-30T20:01:42.165Z","description":"Simple,
@@ -163,19 +163,19 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"60fbeba5de91adbb31cf133ec99df187adab766b115a91d301b14579e6da0bc0"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-08-10T00:00:00.000Z","created_at":"2016-08-11T17:32:32.892Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":1751963,"metadata":{},"number":"5.0.0.1","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":1752565,"metadata":{},"number":"5.0.0.1","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"bc52e5208208f1a3847511e79be55a94d6881860edfe1575579eaca30bf1d1d9"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-06-30T00:00:00.000Z","created_at":"2016-06-30T21:21:42.685Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":629947,"metadata":{},"number":"5.0.0","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":630256,"metadata":{},"number":"5.0.0","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 2.2.2","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"a12651fed45b286546b7db1737065e6dd2e1f2d9283b4d28c8bb90446568c981"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-06-22T00:00:00.000Z","created_at":"2016-06-22T20:02:36.953Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":44783,"metadata":{},"number":"5.0.0.rc2","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":44794,"metadata":{},"number":"5.0.0.rc2","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"c6054e6c0781104a9088c525cc325f4a64726f84f838d94a510b3743956f3d61"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-05-06T00:00:00.000Z","created_at":"2016-05-06T21:56:27.762Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":125052,"metadata":{},"number":"5.0.0.rc1","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":125055,"metadata":{},"number":"5.0.0.rc1","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"db375b31cffca66029f421e8c5c2b9aa2c074b37bee4f0286201c51d3ae03e41"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-05-06T00:00:00.000Z","created_at":"2016-05-06T22:01:15.539Z","description":"Simple,
@@ -187,11 +187,11 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"0e4832101a902cac24fe1a52bf44ea46ccdbb5b0b41cee107469118ac392b7c6"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-02-24T00:00:00.000Z","created_at":"2016-02-24T16:15:41.515Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":101029,"metadata":{},"number":"5.0.0.beta3","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":101033,"metadata":{},"number":"5.0.0.beta3","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"1f7d56cb43872a4f5da94a550cb5592646d37bb2b9fbd4953baba4e3d6f26093"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-02-01T00:00:00.000Z","created_at":"2016-02-01T22:05:40.158Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":27457,"metadata":{},"number":"5.0.0.beta2","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":27458,"metadata":{},"number":"5.0.0.beta2","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"c4a32f216a67afbb42f55d0e415b8948821559bf183322dc7d7d0c6de115ca7e"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-01-25T00:00:00.000Z","created_at":"2016-01-25T19:24:11.003Z","description":"Simple,
@@ -203,7 +203,7 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 2.2.2","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"112b5c6826dd3cb65deaa706ffe8757e56fdc1f741f3300cbda3c40a38b8458d"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-06-26T00:00:00.000Z","created_at":"2017-06-26T21:30:02.451Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":480667,"metadata":{},"number":"4.2.9","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":484281,"metadata":{},"number":"4.2.9","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"d7fbbe069f74a6e7ce76cf91d0fede1593a0ed0db875f4630d8343551fb96f12"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-06-19T00:00:00.000Z","created_at":"2017-06-19T22:27:31.498Z","description":"Simple,
@@ -215,7 +215,7 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"e815d4d9ee866145cf9ae78716fed8453a12eace055f4fbd80ae7f4b74e08d27"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-02-21T00:00:00.000Z","created_at":"2017-02-21T16:08:05.038Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":1925157,"metadata":{},"number":"4.2.8","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":1927462,"metadata":{},"number":"4.2.8","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"371b54defc64b715739b12bc2dcb4f44ec2993a1cf568225945ce0410252e4d5"},{"authors":"David
         Heinemeier Hansson","built_at":"2017-02-10T00:00:00.000Z","created_at":"2017-02-10T02:45:05.197Z","description":"Simple,
@@ -223,11 +223,11 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"4d2dd1cfef338aad2bf23deb5d7fe20685db0fe12bac9b0ec1d14db2921df96d"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-08-10T00:00:00.000Z","created_at":"2016-08-11T17:32:22.862Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":4348036,"metadata":{},"number":"4.2.7.1","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":4350304,"metadata":{},"number":"4.2.7.1","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"0ccc4160fc8bc6f3f0db0d2c313ce747cd4c0921f540035d3a3ce3456de9a286"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-07-13T00:00:00.000Z","created_at":"2016-07-13T02:55:07.675Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":552672,"metadata":{},"number":"4.2.7","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":552927,"metadata":{},"number":"4.2.7","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"c32193bd7ceba43464d627c04d8ac755972d5aac1689e236d995a93dff515d73"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-07-01T00:00:00.000Z","created_at":"2016-07-01T00:31:49.712Z","description":"Simple,
@@ -235,7 +235,7 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"10d20e7608140d7e3840d0b31fab8d6d9ea13c513a72355f57e58337b666612e"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-03-07T00:00:00.000Z","created_at":"2016-03-07T22:32:31.788Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":3479562,"metadata":{},"number":"4.2.6","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":3480380,"metadata":{},"number":"4.2.6","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"8758ee3acfe8305fcc26b804c182d8a417c8c16b6a6633f6563d643f71505acb"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-03-01T00:00:00.000Z","created_at":"2016-03-01T18:37:07.293Z","description":"Simple,
@@ -243,15 +243,15 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"059c3d3e2a5031dfbfb0d2162a3918f331c405a2edf6ac20eede649e0357f731"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-02-29T00:00:00.000Z","created_at":"2016-02-29T19:16:16.296Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":844217,"metadata":{},"number":"4.2.5.2","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":844502,"metadata":{},"number":"4.2.5.2","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"e8ce01cf6cc822ec023a15a856a0fae0e078ebb232b95b722c23af4117d2d635"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-01-25T00:00:00.000Z","created_at":"2016-01-25T19:24:05.018Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":1295196,"metadata":{},"number":"4.2.5.1","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":1295486,"metadata":{},"number":"4.2.5.1","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"5584f76f5db2bc9cea4d2cc969213e89f3bba404aaa9a07ef3fe760f207ee1b6"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-11-12T00:00:00.000Z","created_at":"2015-11-12T17:06:02.499Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":1709443,"metadata":{},"number":"4.2.5","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":1709827,"metadata":{},"number":"4.2.5","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"b5dfaa0d77c8f9117f0a4d96174e89465f36a2db7cf7195ec10cb8b367076abc"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-11-05T00:00:00.000Z","created_at":"2015-11-05T03:01:30.303Z","description":"Simple,
@@ -263,7 +263,7 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"5292e55c6f68d33ce98f3ef058aff0dab6f0ca3f0809e2512050d8a1b5026696"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-08-24T00:00:00.000Z","created_at":"2015-08-24T18:25:46.252Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":2076906,"metadata":{},"number":"4.2.4","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":2077210,"metadata":{},"number":"4.2.4","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"f21d7c6b5a5641e68bf7270667d65a63adec4fc05cf55b4f16489b0c4c32cddc"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-08-14T00:00:00.000Z","created_at":"2015-08-14T15:19:58.521Z","description":"Simple,
@@ -271,7 +271,7 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"20a3f42ac71d4c60f652fc3fbd5c8dcca624e9f39cd9b3909f4dbf0b8d6780dd"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-06-25T00:00:00.000Z","created_at":"2015-06-25T21:29:42.695Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":1703614,"metadata":{},"number":"4.2.3","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":1703849,"metadata":{},"number":"4.2.3","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"338dd33a0d87735d97279635e28132d47587fed760a1b2ee4e490a429bea3845"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-06-22T00:00:00.000Z","created_at":"2015-06-22T14:22:29.163Z","description":"Simple,
@@ -279,11 +279,11 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"0682aa04bcec8e9122fac7486e96b01032c875c3d7b0e54606fe5055e47f8be8"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-06-16T00:00:00.000Z","created_at":"2015-06-16T18:02:18.126Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":748339,"metadata":{},"number":"4.2.2","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":748463,"metadata":{},"number":"4.2.2","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"1a6e02537f2701ddf2a7cd1988503625848fad03738a9af41e3ce0654f8f5b03"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-03-19T00:00:00.000Z","created_at":"2015-03-19T16:41:07.057Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":2122847,"metadata":{},"number":"4.2.1","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":2123138,"metadata":{},"number":"4.2.1","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"cf7dbb0b5d7a9ccb9be1870be97e5ec319e3ee0f5dc766e62c20fafe92c02bd5"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-03-12T00:00:00.000Z","created_at":"2015-03-12T21:25:06.196Z","description":"Simple,
@@ -303,7 +303,7 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"fca91cb6b9be8ee24e5d2f61d27adf417e0738bcadfb904efdb0bfd464542184"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-12-20T00:00:00.000Z","created_at":"2014-12-20T00:15:15.544Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":21167382,"metadata":{},"number":"4.2.0","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":21181262,"metadata":{},"number":"4.2.0","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"b4cb6f3ed721b2c8e32d2f86f2a6a04a954cba93f3b519800b213aff07bfcbb4"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-12-13T00:00:00.000Z","created_at":"2014-12-13T02:58:17.515Z","description":"Simple,
@@ -323,7 +323,7 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"715fa451a40cce65f872c8a6e2463302e0ca08d0b1627c6c7889aaae824b4cc9"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-10-29T00:00:00.000Z","created_at":"2014-10-30T18:49:52.086Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":1438,"metadata":{},"number":"4.2.0.beta3","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":1439,"metadata":{},"number":"4.2.0.beta3","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"3634e2cc978a288966c5576f593612dddd1cf7f6aae3acce78e87cfac9f979a8"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-09-26T00:00:00.000Z","created_at":"2014-09-26T17:44:50.231Z","description":"Simple,
@@ -335,7 +335,7 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"59716050774ff48062b69221a5ec1345a5897dadf25056f713aa6cb609e0778c"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-07-12T00:00:00.000Z","created_at":"2016-07-12T22:20:02.083Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":496249,"metadata":{},"number":"4.1.16","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":496709,"metadata":{},"number":"4.1.16","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"78cc6f7c12216d8ab44201372ff561d8085be58bc550608751c86d0aad463c2e"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-07-02T00:00:00.000Z","created_at":"2016-07-02T02:14:23.871Z","description":"Simple,
@@ -343,7 +343,7 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"bf283a587c656b37f2bc29625d02fa34d507c6c646ec9a0caeb38a9ecdcc4c76"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-03-07T00:00:00.000Z","created_at":"2016-03-07T22:36:20.794Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":326103,"metadata":{},"number":"4.1.15","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":326239,"metadata":{},"number":"4.1.15","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"e8367b6e7068379b83d6f25e289658ea9e267ad1b2ab3b3f763a092e84fb350e"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-03-01T00:00:00.000Z","created_at":"2016-03-01T18:42:53.003Z","description":"Simple,
@@ -351,15 +351,15 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"0f1b030b9f8b10f50a1fda1e5e89514cb6bb9585e27836806f5f67297bc9de20"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-02-29T00:00:00.000Z","created_at":"2016-02-29T19:18:36.666Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":267004,"metadata":{},"number":"4.1.14.2","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":267079,"metadata":{},"number":"4.1.14.2","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"d4403f8622012654622a02da611b0591b7f842ad7bb9e962b434a41a290b6960"},{"authors":"David
         Heinemeier Hansson","built_at":"2016-01-25T00:00:00.000Z","created_at":"2016-01-25T19:23:59.149Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":181785,"metadata":{},"number":"4.1.14.1","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":181848,"metadata":{},"number":"4.1.14.1","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"34cd85851493adde88871e1f745dc1b44e906a7f45ea09cc52f88734a0d1ebe1"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-11-12T00:00:00.000Z","created_at":"2015-11-12T17:20:53.502Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":201290,"metadata":{},"number":"4.1.14","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":201304,"metadata":{},"number":"4.1.14","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"c2c2dd18403c0a43c7e5d53e0165189a2ba743c6ec9a5cbc94d0202e5ada713c"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-11-05T00:00:00.000Z","created_at":"2015-11-05T02:54:50.074Z","description":"Simple,
@@ -371,7 +371,7 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"0c2e6e8b0e39d3715c76812f2bf6b96368e14d66dc2149ca33fb0b9caae11700"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-08-24T00:00:00.000Z","created_at":"2015-08-24T18:00:50.304Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":246693,"metadata":{},"number":"4.1.13","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":246703,"metadata":{},"number":"4.1.13","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"956d0947048370d0f983df214b58ef9bacde84df53603b8de229554a6d644d46"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-08-14T00:00:00.000Z","created_at":"2015-08-14T15:12:27.599Z","description":"Simple,
@@ -379,7 +379,7 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"b517d88e79402f1779fc170c3ae963757d2748c8161aa16abf77718321e73c13"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-06-25T00:00:00.000Z","created_at":"2015-06-25T21:25:17.224Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":271691,"metadata":{},"number":"4.1.12","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":271713,"metadata":{},"number":"4.1.12","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"161c7d0d0e82a94c7b3ad3ddc7b916108810491edcbd4fcc27a128ac5cc468af"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-06-22T00:00:00.000Z","created_at":"2015-06-22T14:04:26.020Z","description":"Simple,
@@ -387,11 +387,11 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"a0d3dbd0d446e32291f7dd967a52928cb1101876e030f5da6aa8f9c3cebc0fb5"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-06-16T00:00:00.000Z","created_at":"2015-06-16T17:59:17.454Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":236590,"metadata":{},"number":"4.1.11","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":236597,"metadata":{},"number":"4.1.11","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"2df689e88413b106955eddc256eb9f0dff4263ac3fe1dd95d2be26aba7c81b59"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-03-19T00:00:00.000Z","created_at":"2015-03-19T16:49:45.102Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":363489,"metadata":{},"number":"4.1.10","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":363504,"metadata":{},"number":"4.1.10","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"4c72eca866e4a80b3a56760aeb859e26bbe221fc2c06c13bc8d3220284900330"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-03-12T00:00:00.000Z","created_at":"2015-03-12T21:32:06.837Z","description":"Simple,
@@ -411,7 +411,7 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"1b6b49ff5a0bbf253ba974fb2ddaf888fd885bc1ef8bf9e4ce8e7a3356bfc779"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-01-06T00:00:00.000Z","created_at":"2015-01-06T20:03:45.405Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":431944,"metadata":{},"number":"4.1.9","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":432053,"metadata":{},"number":"4.1.9","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"77aaef9976b2ce9dfbd78c1266791bbfbbf1cbebec58685d15dde93ab34573cd"},{"authors":"David
         Heinemeier Hansson","built_at":"2015-01-02T00:00:00.000Z","created_at":"2015-01-02T01:10:32.960Z","description":"Simple,
@@ -419,7 +419,7 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"d19fb0112a05c0e4c9038fad89e9195f9c0f78752d841172ee7b5e48dd6c3978"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-11-16T00:00:00.000Z","created_at":"2014-11-17T15:59:02.159Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":950059,"metadata":{},"number":"4.1.8","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":950104,"metadata":{},"number":"4.1.8","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"f3c5da68cce5cb2c221948994b68ba53f12c0adedc826655cf049b2cf00607a9"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-11-19T00:00:00.000Z","created_at":"2014-11-19T19:11:36.852Z","description":"Simple,
@@ -427,11 +427,11 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"7d84b754a02e08a6ec17935a4e6b3cf2c243db02ea46bb4461c34d576973f2db"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-10-29T00:00:00.000Z","created_at":"2014-10-30T18:49:42.290Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":445502,"metadata":{},"number":"4.1.7","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":445535,"metadata":{},"number":"4.1.7","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"5d8d50df260f7c0f65ee71fb0dcc8bb344b78d0ff7d26de4b152d8ebde19571b"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-09-11T00:00:00.000Z","created_at":"2014-09-11T17:25:23.015Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":941263,"metadata":{},"number":"4.1.6","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":941338,"metadata":{},"number":"4.1.6","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"87a79d47f1447828ffb6f59fa5ced8a070e6ad4de2098f3d0f5863a53fc906e4"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-09-08T00:00:00.000Z","created_at":"2014-09-08T18:12:10.669Z","description":"Simple,
@@ -443,11 +443,11 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"4f6782023366df4c48ab370ea01e84719017151e028e7be329f7160e487c886a"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-08-18T00:00:00.000Z","created_at":"2014-08-18T17:00:01.509Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":693748,"metadata":{},"number":"4.1.5","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":693769,"metadata":{},"number":"4.1.5","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"68e2543a2b1ad68239332f0db93695f178eaa1ee5c252912823f2b276227eb0b"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-07-02T00:00:00.000Z","created_at":"2014-07-02T19:52:51.040Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":952642,"metadata":{},"number":"4.1.4","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":952690,"metadata":{},"number":"4.1.4","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"4f0a30aa60da01ab7693467baf192a1c123f71988d023970e5dbd692f78a2804"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-07-02T00:00:00.000Z","created_at":"2014-07-02T17:05:53.485Z","description":"Simple,
@@ -455,7 +455,7 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"e07fd8728012362aa7698387274bfef810daada9604611f5a430cf9044d568c2"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-06-26T00:00:00.000Z","created_at":"2014-06-26T14:49:29.768Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":158122,"metadata":{},"number":"4.1.2","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":158131,"metadata":{},"number":"4.1.2","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"f627db92b6d51b1f058c280558987926557fc11054077e9b38a0f7259af08508"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-06-23T00:00:00.000Z","created_at":"2014-06-23T17:27:55.576Z","description":"Simple,
@@ -471,11 +471,11 @@ interactions:
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":"\u003e= 1.9.3","prerelease":true,"licenses":["MIT"],"requirements":["none"],"sha":"d00ff954465cc9e96d330ee1d95d4a7a0322b10ee6c43aef6ef1ade1eb75c4ec"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-05-06T00:00:00.000Z","created_at":"2014-05-06T16:10:36.606Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":1019836,"metadata":{},"number":"4.1.1","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":1019856,"metadata":{},"number":"4.1.1","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"5892b097fc3556c4ac25307f3c406ba697b6520ca7c34b7d1ff17e0c93d79072"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-04-08T00:00:00.000Z","created_at":"2014-04-08T19:20:41.382Z","description":"Simple,
-        battle-tested conventions and helpers for building web pages.","downloads_count":570947,"metadata":{},"number":"4.1.0","summary":"Rendering
+        battle-tested conventions and helpers for building web pages.","downloads_count":570970,"metadata":{},"number":"4.1.0","summary":"Rendering
         framework putting the V in MVC (part of Rails).","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":"\u003e= 1.9.3","prerelease":false,"licenses":["MIT"],"requirements":["none"],"sha":"2427bcf26917a82d110da916324553b301c4ee4e1e768a1632c0a41cc6536f72"},{"authors":"David
         Heinemeier Hansson","built_at":"2014-03-25T00:00:00.000Z","created_at":"2014-03-25T20:11:52.746Z","description":"Simple,
@@ -506,7 +506,7 @@ interactions:
           connect-src https://s3-us-west-2.amazonaws.com/rubygems-dumps/; frame-src
           https://ghbtns.com']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Tue, 19 Sep 2017 19:25:19 GMT']
+      Date: ['Wed, 20 Sep 2017 06:25:06 GMT']
       ETag: ['"f4503182d406274f34501c5ec7733ed3"']
       Last-Modified: ['Fri, 08 Sep 2017 00:50:26 GMT']
       Server: [RubyGems.org]
@@ -518,10 +518,10 @@ interactions:
       X-Cache-Hits: ['0']
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [457e1a95-7dd7-4297-bd85-1f50cf74f1e7]
-      X-Runtime: ['0.244148']
-      X-Served-By: [cache-gru17124-GRU]
-      X-Timer: ['S1505849119.306910,VS0,VE195']
+      X-Request-Id: [66dace31-e1b4-4eb1-a4b9-05fd5f63344f]
+      X-Runtime: ['0.175600']
+      X-Served-By: [cache-gru17128-GRU]
+      X-Timer: ['S1505888706.067929,VS0,VE197']
       X-UA-Compatible: ['IE=Edge,chrome=1']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}

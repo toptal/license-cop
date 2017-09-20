@@ -2,7 +2,7 @@ import requests
 from abc import *
 
 
-class PackageRepository(ABC):
+class PackageRegistry(ABC):
     def __init__(self, http_compression=True):
         self._session = requests.Session()
         if not http_compression:

@@ -3,15 +3,15 @@ import pytest
 
 from app.dependency_resolver import *
 from app.dependency_resolution import *
-from app.platforms.ruby.package_repository import *
+from app.platforms.ruby.package_registry import *
 
 
 @pytest.fixture
-def repository(): return RubyPackageRepository(http_compression=False)
+def registry(): return RubyPackageRegistry(http_compression=False)
 
 
 @pytest.fixture
-def resolver(repository): return DependencyResolver(repository)
+def resolver(registry): return DependencyResolver(registry)
 
 
 def find_child(node, name):

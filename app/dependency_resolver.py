@@ -4,8 +4,8 @@ from app.dependency_resolution import *
 
 
 class DependencyResolver:
-    def __init__(self, repository):
-        self.__repository = repository
+    def __init__(self, registry):
+        self.__registry = registry
 
     def resolve_version(self, resolution_kind, name, number):
         root = self.__build_node(name, number)
@@ -26,7 +26,7 @@ class DependencyResolver:
 
     def __build_node(self, name, number=None):
         if number is not None:
-            version = self.__repository.fetch_version(name, number)
+            version = self.__registry.fetch_version(name, number)
         else:
-            version = self.__repository.fetch_latest_version(name)
+            version = self.__registry.fetch_latest_version(name)
         return DependencyResolution(version)

@@ -1,7 +1,7 @@
 from enum import Enum
 from io import StringIO
 
-from app.package_repository import *
+from app.package_registry import *
 
 
 class DependencyResolutionKind(Enum):

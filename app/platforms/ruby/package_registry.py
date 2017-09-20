@@ -1,4 +1,4 @@
-from app.package_repository import *
+from app.package_registry import *
 from app.package_version import *
 from app.dependency import *
 
@@ -7,7 +7,7 @@ GEMS_URI = 'https://rubygems.org/api/v1/gems/{0}.json'
 VERSIONS_URI = 'https://rubygems.org/api/v1/versions/{0}.json'
 
 
-class RubyPackageRepository(PackageRepository):
+class RubyPackageRegistry(PackageRegistry):
 
     def fetch_version(self, name, number):
         package_data = self.__fetch_package_data(name)

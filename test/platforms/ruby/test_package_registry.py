@@ -2,17 +2,17 @@ import vcr
 import pytest
 import requests
 
-from app.platforms.ruby.package_repository import *
+from app.platforms.ruby.package_registry import *
 from app.dependency import *
 
 
 @pytest.fixture
-def repository(): return RubyPackageRepository(http_compression=False)
+def registry(): return RubyPackageRegistry(http_compression=False)
 
 
-@vcr.use_cassette('cassettes/ruby_package_repository_version.yaml')
-def test_fetch_version(repository):
-    version = repository.fetch_version('actionview', '4.1.0')
+@vcr.use_cassette('cassettes/ruby_package_registry_version.yaml')
+def test_fetch_version(registry):
+    version = registry.fetch_version('actionview', '4.1.0')
     assert version.name == 'actionview'
     assert version.number == '4.1.0'
     assert version.licenses == ['MIT']
@@ -29,9 +29,9 @@ def test_fetch_version(repository):
     ]
 
 
-@vcr.use_cassette('cassettes/ruby_package_repository_latest_version.yaml')
-def test_fetch_latest_version(repository):
-    version = repository.fetch_latest_version('actionview')
+@vcr.use_cassette('cassettes/ruby_package_registry_latest_version.yaml')
+def test_fetch_latest_version(registry):
+    version = registry.fetch_latest_version('actionview')
     assert version.name == 'actionview'
     assert version.number == '5.1.4'
     assert version.licenses == ['MIT']
@@ -49,40 +49,40 @@ def test_fetch_latest_version(repository):
 
 
 @vcr.use_cassette('cassettes/ruby_package_version_name_does_not_exist.yaml')
-def test_fetch_version_when_name_does_not_exist(repository):
+def test_fetch_version_when_name_does_not_exist(registry):
     with pytest.raises(requests.exceptions.HTTPError):
-        repository.fetch_version('foobar666', '666')
+        registry.fetch_version('foobar666', '666')
 
 
 @vcr.use_cassette('cassettes/ruby_package_version_number_does_not_exist.yaml')
-def test_fetch_version_when_version_does_not_exist(repository):
+def test_fetch_version_when_version_does_not_exist(registry):
     with pytest.raises(Exception) as e:
-        repository.fetch_version('rails', '666')
+        registry.fetch_version('rails', '666')
     assert str(e.value) == 'Could not find Ruby gem rails:666'
 
 
 @vcr.use_cassette('cassettes/ruby_package_version_name_does_not_exist.yaml')
-def test_fetch_latest_version_when_name_does_not_exist(repository):
+def test_fetch_latest_version_when_name_does_not_exist(registry):
     with pytest.raises(requests.exceptions.HTTPError):
-        repository.fetch_latest_version('foobar666')
+        registry.fetch_latest_version('foobar666')
 
 
 @vcr.use_cassette('cassettes/ruby_package_version_without_license.yaml')
-def test_fetch_version_without_license(repository):
-    version = repository.fetch_version('coulda', '0.7.1')
+def test_fetch_version_without_license(registry):
+    version = registry.fetch_version('coulda', '0.7.1')
     assert version.licenses == []
 
 
 @vcr.use_cassette('cassettes/ruby_package_version_without_any_dependencies.yaml')
-def test_fetch_version_without_any_dependencies(repository):
-    version = repository.fetch_version('rdiscount', '2.2.0.1')
+def test_fetch_version_without_any_dependencies(registry):
+    version = registry.fetch_version('rdiscount', '2.2.0.1')
     assert version.runtime_dependencies == []
     assert version.development_dependencies == []
 
 
 @vcr.use_cassette('cassettes/ruby_package_version_without_runtime_dependencies.yaml')
-def test_fetch_version_without_runtime_dependencies(repository):
-    version = repository.fetch_version('bundler', '1.15.4')
+def test_fetch_version_without_runtime_dependencies(registry):
+    version = registry.fetch_version('bundler', '1.15.4')
     assert version.runtime_dependencies == []
     assert version.development_dependencies == [
         Dependency('automatiek'),
@@ -95,8 +95,8 @@ def test_fetch_version_without_runtime_dependencies(repository):
 
 
 @vcr.use_cassette('cassettes/ruby_package_version_without_development_dependencies.yaml')
-def test_fetch_version_without_development_dependencies(repository):
-    version = repository.fetch_version('rails', '5.1.4')
+def test_fetch_version_without_development_dependencies(registry):
+    version = registry.fetch_version('rails', '5.1.4')
     assert version.runtime_dependencies == [
         Dependency('actioncable'),
         Dependency('actionmailer'),
