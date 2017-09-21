@@ -39,11 +39,16 @@ class GithubRepository:
     def name(self): return self.__name
 
     @staticmethod
-    def from_url(url):
+    def from_url(url, token=TOKEN, http_compression=True):
         url = url.lower()
         path = re.match(URL_REGEX, url)
         if path:
-            return GithubRepository(path.group('owner'), path.group('name'))
+            return GithubRepository(
+                path.group('owner'),
+                path.group('name'),
+                token,
+                http_compression
+            )
 
     def path_exists(self, path):
         response = self.__session.head(self.__contents_uri(path))

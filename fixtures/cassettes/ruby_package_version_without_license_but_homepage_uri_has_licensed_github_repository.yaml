@@ -1,0 +1,246 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://rubygems.org/api/v1/gems/puffing-billy.json
+  response:
+    body: {string: '{"name":"puffing-billy","downloads":435123,"version":"0.10.0","version_downloads":21699,"platform":"ruby","authors":"Olly
+        Smith","info":"A stubbing proxy server for ruby. Connect it to your browser
+        in integration tests to fake interactions with remote HTTP(S) servers.","licenses":[],"metadata":{},"sha":"6eeb7ff85f9d5eca5e45858b4e802502d1a7bd98d4b8f52ce99de79608e74d90","project_uri":"https://rubygems.org/gems/puffing-billy","gem_uri":"https://rubygems.org/gems/puffing-billy-0.10.0.gem","homepage_uri":"https://github.com/oesmith/puffing-billy","wiki_uri":null,"documentation_uri":"http://www.rubydoc.info/gems/puffing-billy/0.10.0","mailing_list_uri":null,"source_code_uri":null,"bug_tracker_uri":null,"changelog_uri":null,"dependencies":{"development":[{"name":"capybara","requirements":"\u003e=
+        0"},{"name":"capybara-webkit","requirements":"~\u003e 1.0"},{"name":"cucumber","requirements":"\u003e=
+        0"},{"name":"faraday","requirements":"\u003e= 0"},{"name":"guard","requirements":"\u003e=
+        0"},{"name":"poltergeist","requirements":"\u003e= 0"},{"name":"pry","requirements":"\u003e=
+        0"},{"name":"rack","requirements":"\u003e= 0"},{"name":"rb-inotify","requirements":"\u003e=
+        0"},{"name":"rspec","requirements":"\u003e= 0"},{"name":"selenium-webdriver","requirements":"\u003e=
+        0"},{"name":"thin","requirements":"\u003e= 0"},{"name":"watir-webdriver","requirements":"\u003e=
+        0"}],"runtime":[{"name":"addressable","requirements":"~\u003e 2.4.0"},{"name":"em-http-request","requirements":"~\u003e
+        1.1.0"},{"name":"em-synchrony","requirements":"\u003e= 0"},{"name":"eventmachine","requirements":"~\u003e
+        1.0.4"},{"name":"eventmachine_httpserver","requirements":"\u003e= 0"},{"name":"http_parser.rb","requirements":"~\u003e
+        0.6.0"},{"name":"multi_json","requirements":"\u003e= 0"}]}}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Methods: [GET]
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Max-Age: ['1728000']
+      Age: ['0']
+      Cache-Control: ['max-age=0, private, must-revalidate']
+      Connection: [keep-alive]
+      Content-Security-Policy: ['default-src ''self''; script-src ''self'' https://secure.gaug.es;
+          style-src ''self'' https://fonts.googleapis.com; img-src ''self'' https://secure.gaug.es
+          https://gravatar.com https://secure.gravatar.com; font-src ''self'' https://fonts.gstatic.com;
+          connect-src https://s3-us-west-2.amazonaws.com/rubygems-dumps/; frame-src
+          https://ghbtns.com']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Thu, 21 Sep 2017 23:03:16 GMT']
+      ETag: ['"75acc8fda2ca48906ec5db1a740d10c6"']
+      Server: [RubyGems.org]
+      Strict-Transport-Security: [max-age=0]
+      Vary: ['Accept-Encoding,Fastly-SSL']
+      Via: [1.1 varnish]
+      X-Backend: ['F_Rails 54.186.104.15:443']
+      X-Cache: [MISS]
+      X-Cache-Hits: ['0']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [ed18a051-d665-4320-8d44-6a0ac73f3c14]
+      X-Runtime: ['0.015356']
+      X-Served-By: [cache-gru17121-GRU]
+      X-Timer: ['S1506034996.066885,VS0,VE206']
+      X-UA-Compatible: ['IE=Edge,chrome=1']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://rubygems.org/api/v1/versions/puffing-billy.json
+  response:
+    body: {string: '[{"authors":"Olly Smith","built_at":"2017-04-06T00:00:00.000Z","created_at":"2017-04-06T18:56:07.661Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":21690,"metadata":{},"number":"0.10.0","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"6eeb7ff85f9d5eca5e45858b4e802502d1a7bd98d4b8f52ce99de79608e74d90"},{"authors":"Olly
+        Smith","built_at":"2017-01-18T00:00:00.000Z","created_at":"2017-01-18T17:19:48.876Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":13939,"metadata":{},"number":"0.9.2","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"f3120c0c139e6cd5ce07f2fc175a78eff5cc60762540d481dcd9a40b1d39c159"},{"authors":"Olly
+        Smith","built_at":"2016-07-29T00:00:00.000Z","created_at":"2016-07-29T03:10:48.729Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":29949,"metadata":{},"number":"0.9.1","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"b6972b4cd76454616d6dd2865dbfd422467e13c0477be2bc8db46a0b249a1b5d"},{"authors":"Olly
+        Smith","built_at":"2016-07-23T00:00:00.000Z","created_at":"2016-07-23T21:57:39.607Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":1357,"metadata":{},"number":"0.9.0","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"08a4b2a4b02606588aeb3b36cf07797a045c227ca0ccbbc6afcfb02b6985e5bb"},{"authors":"Olly
+        Smith","built_at":"2016-06-02T00:00:00.000Z","created_at":"2016-06-02T16:11:37.979Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":8600,"metadata":{},"number":"0.8.0","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"eada638cae64f4445000b0acfdf919e611ac96466e8d5b9b33c034a1f8293016"},{"authors":"Olly
+        Smith","built_at":"2016-05-06T00:00:00.000Z","created_at":"2016-05-06T03:43:53.212Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":4247,"metadata":{},"number":"0.7.0","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"844e970ce835c99540ea6b6ad8171c3f9b1248dd5e33b265a9d33523f6599e53"},{"authors":"Olly
+        Smith","built_at":"2015-11-24T00:00:00.000Z","created_at":"2015-11-24T03:15:50.851Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":220235,"metadata":{},"number":"0.6.2","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"7e7a2ff6c96b54fad564d909f66067881ac11b9ba08d2f1891efa52337c7e124"},{"authors":"Olly
+        Smith","built_at":"2015-08-25T00:00:00.000Z","created_at":"2015-08-25T17:56:28.197Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":18636,"metadata":{},"number":"0.6.1","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"7cf952ed95036be6aa01dd496377c8b0235f2c855dccb6f398d70f4da8f57376"},{"authors":"Olly
+        Smith","built_at":"2015-08-25T00:00:00.000Z","created_at":"2015-08-25T17:12:44.148Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":654,"metadata":{},"number":"0.6.0","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"8fb95aecf05fb89d6ac93ed43760d35178b5654b9b493378631bf29e6fce88a4"},{"authors":"Olly
+        Smith","built_at":"2015-04-22T00:00:00.000Z","created_at":"2015-04-22T18:27:58.066Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":32345,"metadata":{},"number":"0.5.1","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"fa53ff08402d05fe176e84f25b47658dd82a3462a69c956baf8fcb3868c5c07d"},{"authors":"Olly
+        Smith","built_at":"2015-02-23T00:00:00.000Z","created_at":"2015-02-23T03:50:08.415Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":5711,"metadata":{},"number":"0.5.0","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"992b6976056d07edc193a47f039ed5a76f8c576ec3667514f1e703f7b6b7bbed"},{"authors":"Olly
+        Smith","built_at":"2015-01-03T00:00:00.000Z","created_at":"2015-01-03T00:19:29.655Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":19822,"metadata":{},"number":"0.4.1","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"a4ae26c3e561fc1100089de28aeb8bbd7aa37d6b0f36474ceb2edbb0f36aec16"},{"authors":"Olly
+        Smith","built_at":"2015-01-02T00:00:00.000Z","created_at":"2015-01-02T17:54:25.835Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":755,"metadata":{},"number":"0.4.0","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"18d983c0d00467bf8f4df536f6556a33ea2708d1160d1e12ad168e970c1a4f07"},{"authors":"Olly
+        Smith","built_at":"2014-12-29T00:00:00.000Z","created_at":"2014-12-29T16:10:35.342Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":884,"metadata":{},"number":"0.3.0","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":"\u003e= 0","prerelease":false,"licenses":[],"requirements":[],"sha":"55ff8f1f47aa43b95f7e5148777f61532e51ede3c28a07816549bed37b0f565c"},{"authors":"Olly
+        Smith","built_at":"2014-02-07T00:00:00.000Z","created_at":"2014-02-07T08:06:24.485Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":20019,"metadata":{},"number":"0.2.3","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":[],"sha":"8c8ec562cae74b829a3c60741842440755d13ea55cacd00bcadaab093da4f493"},{"authors":"Olly
+        Smith","built_at":"2013-05-12T00:00:00.000Z","created_at":"2013-05-12T17:59:31.559Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":21517,"metadata":{},"number":"0.2.1","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"2af92032ed3bf19cdf7a4cb6dd24e49bb0bdf2f642815b32cc80badde6cddd38"},{"authors":"Olly
+        Smith","built_at":"2013-03-17T00:00:00.000Z","created_at":"2013-03-17T16:07:26.940Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":7153,"metadata":{},"number":"0.2.0","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"bbe94ede426eceffc9fd3a02bf5f13c9be1a3a591cc95244becaae3c539080e0"},{"authors":"Olly
+        Smith","built_at":"2012-11-05T00:00:00.000Z","created_at":"2012-11-05T20:39:34.701Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":3321,"metadata":{},"number":"0.1.3","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"2d4dd3938d016adda524e4dee69d9696a55f95dabb0a71ce21a44e01d3b0216b"},{"authors":"Olly
+        Smith","built_at":"2012-10-15T00:00:00.000Z","created_at":"2012-10-15T16:52:20.660Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":1489,"metadata":{},"number":"0.1.2","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"0247681c88f8c60fc3f3c597ecb52d2d186d30c88837dbd0596d391c61d48e06"},{"authors":"Olly
+        Smith","built_at":"2012-10-12T00:00:00.000Z","created_at":"2012-10-12T08:10:14.886Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":1403,"metadata":{},"number":"0.1.1","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"b6e46f1454832ea33a0552504333442d8b54170a9e02efe332a32da6399a94a7"},{"authors":"Olly
+        Smith","built_at":"2012-10-11T00:00:00.000Z","created_at":"2012-10-11T21:45:12.611Z","description":"A
+        stubbing proxy server for ruby. Connect it to your browser in integration
+        tests to fake interactions with remote HTTP(S) servers.","downloads_count":1387,"metadata":{},"number":"0.1.0","summary":"Easy
+        request stubs for browser tests.","platform":"ruby","rubygems_version":"\u003e=
+        0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"c6a41bdb57dcd73babc755ca5b6919a192503e0b618921f51b6e5d0da82df2d7"}]'}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['0']
+      Cache-Control: ['max-age=0, public']
+      Connection: [keep-alive]
+      Content-Length: ['11635']
+      Content-Security-Policy: ['default-src ''self''; script-src ''self'' https://secure.gaug.es;
+          style-src ''self'' https://fonts.googleapis.com; img-src ''self'' https://secure.gaug.es
+          https://gravatar.com https://secure.gravatar.com; font-src ''self'' https://fonts.gstatic.com;
+          connect-src https://s3-us-west-2.amazonaws.com/rubygems-dumps/; frame-src
+          https://ghbtns.com']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Thu, 21 Sep 2017 23:03:16 GMT']
+      ETag: ['"447425152201d7cce3e9b34df780fb6a"']
+      Last-Modified: ['Thu, 06 Apr 2017 18:56:08 GMT']
+      Server: [RubyGems.org]
+      Strict-Transport-Security: [max-age=0]
+      Vary: ['Accept-Encoding,Fastly-SSL']
+      Via: [1.1 varnish]
+      X-Backend: ['F_Rails 54.186.104.15:443']
+      X-Cache: [HIT]
+      X-Cache-Hits: ['1']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Request-Id: [2ae8eb39-38a7-447b-85a7-ddf6a800cdeb]
+      X-Runtime: ['0.049833']
+      X-Served-By: [cache-gru17121-GRU]
+      X-Timer: ['S1506034996.295113,VS0,VE195']
+      X-UA-Compatible: ['IE=Edge,chrome=1']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: [application/vnd.github.drax-preview+json]
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/oesmith/puffing-billy
+  response:
+    body: {string: '{"id":6022475,"name":"puffing-billy","full_name":"oesmith/puffing-billy","owner":{"login":"oesmith","id":116292,"avatar_url":"https://avatars0.githubusercontent.com/u/116292?v=4","gravatar_id":"","url":"https://api.github.com/users/oesmith","html_url":"https://github.com/oesmith","followers_url":"https://api.github.com/users/oesmith/followers","following_url":"https://api.github.com/users/oesmith/following{/other_user}","gists_url":"https://api.github.com/users/oesmith/gists{/gist_id}","starred_url":"https://api.github.com/users/oesmith/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/oesmith/subscriptions","organizations_url":"https://api.github.com/users/oesmith/orgs","repos_url":"https://api.github.com/users/oesmith/repos","events_url":"https://api.github.com/users/oesmith/events{/privacy}","received_events_url":"https://api.github.com/users/oesmith/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/oesmith/puffing-billy","description":"A
+        rewriting web proxy for testing interactions between your browser and external
+        sites.  Works with ruby + rspec.","fork":false,"url":"https://api.github.com/repos/oesmith/puffing-billy","forks_url":"https://api.github.com/repos/oesmith/puffing-billy/forks","keys_url":"https://api.github.com/repos/oesmith/puffing-billy/keys{/key_id}","collaborators_url":"https://api.github.com/repos/oesmith/puffing-billy/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/oesmith/puffing-billy/teams","hooks_url":"https://api.github.com/repos/oesmith/puffing-billy/hooks","issue_events_url":"https://api.github.com/repos/oesmith/puffing-billy/issues/events{/number}","events_url":"https://api.github.com/repos/oesmith/puffing-billy/events","assignees_url":"https://api.github.com/repos/oesmith/puffing-billy/assignees{/user}","branches_url":"https://api.github.com/repos/oesmith/puffing-billy/branches{/branch}","tags_url":"https://api.github.com/repos/oesmith/puffing-billy/tags","blobs_url":"https://api.github.com/repos/oesmith/puffing-billy/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/oesmith/puffing-billy/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/oesmith/puffing-billy/git/refs{/sha}","trees_url":"https://api.github.com/repos/oesmith/puffing-billy/git/trees{/sha}","statuses_url":"https://api.github.com/repos/oesmith/puffing-billy/statuses/{sha}","languages_url":"https://api.github.com/repos/oesmith/puffing-billy/languages","stargazers_url":"https://api.github.com/repos/oesmith/puffing-billy/stargazers","contributors_url":"https://api.github.com/repos/oesmith/puffing-billy/contributors","subscribers_url":"https://api.github.com/repos/oesmith/puffing-billy/subscribers","subscription_url":"https://api.github.com/repos/oesmith/puffing-billy/subscription","commits_url":"https://api.github.com/repos/oesmith/puffing-billy/commits{/sha}","git_commits_url":"https://api.github.com/repos/oesmith/puffing-billy/git/commits{/sha}","comments_url":"https://api.github.com/repos/oesmith/puffing-billy/comments{/number}","issue_comment_url":"https://api.github.com/repos/oesmith/puffing-billy/issues/comments{/number}","contents_url":"https://api.github.com/repos/oesmith/puffing-billy/contents/{+path}","compare_url":"https://api.github.com/repos/oesmith/puffing-billy/compare/{base}...{head}","merges_url":"https://api.github.com/repos/oesmith/puffing-billy/merges","archive_url":"https://api.github.com/repos/oesmith/puffing-billy/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/oesmith/puffing-billy/downloads","issues_url":"https://api.github.com/repos/oesmith/puffing-billy/issues{/number}","pulls_url":"https://api.github.com/repos/oesmith/puffing-billy/pulls{/number}","milestones_url":"https://api.github.com/repos/oesmith/puffing-billy/milestones{/number}","notifications_url":"https://api.github.com/repos/oesmith/puffing-billy/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/oesmith/puffing-billy/labels{/name}","releases_url":"https://api.github.com/repos/oesmith/puffing-billy/releases{/id}","deployments_url":"https://api.github.com/repos/oesmith/puffing-billy/deployments","created_at":"2012-09-30T21:24:43Z","updated_at":"2017-09-20T04:01:54Z","pushed_at":"2017-06-02T09:58:43Z","git_url":"git://github.com/oesmith/puffing-billy.git","ssh_url":"git@github.com:oesmith/puffing-billy.git","clone_url":"https://github.com/oesmith/puffing-billy.git","svn_url":"https://github.com/oesmith/puffing-billy","homepage":"","size":484,"stargazers_count":389,"watchers_count":389,"language":"Ruby","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":108,"mirror_url":null,"open_issues_count":17,"forks":108,"open_issues":17,"watchers":389,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true},"license":{"key":"mit","name":"MIT
+        License","spdx_id":"MIT","url":"https://api.github.com/licenses/mit","featured":true},"network_count":108,"subscribers_count":13}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['5076']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Thu, 21 Sep 2017 23:03:17 GMT']
+      ETag: ['"7e00b4ec90da30234216df325e0774db"']
+      Last-Modified: ['Wed, 20 Sep 2017 04:01:54 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: [repo]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.drax-preview; format=json]
+      X-GitHub-Request-Id: ['D517:2B20F:1FB4B78:49BDA0E:59C44534']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4285']
+      X-RateLimit-Reset: ['1506036960']
+      X-Runtime-rack: ['0.060042']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1

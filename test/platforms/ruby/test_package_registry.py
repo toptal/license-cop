@@ -67,10 +67,22 @@ def test_fetch_latest_version_when_name_does_not_exist(registry):
         registry.fetch_latest_version('foobar666')
 
 
-@VCR.use_cassette('ruby_package_version_without_license.yaml')
-def test_fetch_version_without_license(registry):
+@VCR.use_cassette('ruby_package_version_without_license_nor_code_repository.yaml')
+def test_fetch_version_without_license_nor_source_code_repository(registry):
     version = registry.fetch_version('coulda', '0.7.1')
     assert version.licenses == []
+
+
+@VCR.use_cassette('ruby_package_version_without_license_but_homepage_uri_has_licensed_github_repository.yaml')
+def test_fetch_version_without_license_but_homepage_uri_has_licensed_github_repository(registry):
+    version = registry.fetch_version('puffing-billy', '0.10.0')
+    assert version.licenses == ['MIT']
+
+
+@VCR.use_cassette('ruby_package_version_without_license_but_source_code_uri_has_licensed_github_repository.yaml')
+def test_fetch_version_without_license_but_source_code_uri_has_licensed_github_repository(registry):
+    version = registry.fetch_version('method_source', '0.8.2')
+    assert version.licenses == ['MIT']
 
 
 @VCR.use_cassette('ruby_package_version_without_any_dependencies.yaml')

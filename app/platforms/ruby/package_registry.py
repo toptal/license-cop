@@ -41,17 +41,31 @@ class RubyPackageRegistry(PackageRegistry):
             ]
         ))
 
+    def __determine_licenses(self, package_data, version_data):
+        licenses = self.__extract_licenses(version_data)
+        if licenses:
+            return licenses
+        return self.__fetch_licenses(package_data)
+
     def __extract_licenses(self, data):
         licenses = data['licenses']
         if licenses is None:
             return []
         return licenses
 
+    def __fetch_licenses(self, data):
+        urls = [
+            data['source_code_uri'],
+            data['homepage_uri'],
+            data['project_uri']
+        ]
+        return self._search_licenses_in_code_repository_urls(filter(None, urls))
+
     def __build_version(self, name, number, package_data, version_data):
         return PackageVersion(
             name,
             number,
-            licenses=self.__extract_licenses(version_data),
+            licenses=self.__determine_licenses(package_data, version_data),
             runtime_dependencies=self.__extract_dependencies(package_data, Dependency.RUNTIME),
             development_dependencies=self.__extract_dependencies(package_data, Dependency.DEVELOPMENT)
         )
