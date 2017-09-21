@@ -1,6 +1,8 @@
 import os
+import re
 import requests
 import base64
+from urllib.parse import urlparse, urljoin
 
 from app.require_environment import *
 
@@ -15,11 +17,13 @@ CONTENTS_URI = 'https://api.github.com/repos/{0}/{1}/contents/{2}'
 PREVIEW_MEDIA_TYPE = 'application/vnd.github.drax-preview+json'
 
 
+TOKEN = require_environment('GITHUB_TOKEN')
+URL_REGEX = '^((http:|https:)?//)?(www\.)?github.com/(?P<owner>[\w\-]+)/(?P<name>[\w\-]+)'
+
+
 class GithubRepository:
 
-    def __init__(self, owner, name,
-                 token=require_environment('GITHUB_TOKEN'),
-                 http_compression=True):
+    def __init__(self, owner, name, token=TOKEN, http_compression=True):
         self.__session = requests.Session()
         self.__session.headers.update({'Authorization': 'token {0}'.format(token)})
         if not http_compression:
@@ -27,6 +31,19 @@ class GithubRepository:
 
         self.__owner = owner
         self.__name = name
+
+    @property
+    def owner(self): return self.__owner
+
+    @property
+    def name(self): return self.__name
+
+    @staticmethod
+    def from_url(url):
+        url = url.lower()
+        path = re.match(URL_REGEX, url)
+        if path:
+            return GithubRepository(path.group('owner'), path.group('name'))
 
     def path_exists(self, path):
         response = self.__session.head(self.__contents_uri(path))
