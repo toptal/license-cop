@@ -9,12 +9,12 @@ VERSIONS_URI = 'https://rubygems.org/api/v1/versions/{0}.json'
 
 class RubyPackageRegistry(PackageRegistry):
 
-    def fetch_version(self, name, number):
+    def _fetch_version(self, name, number):
         package_data = self.__fetch_package_data(name)
         version_data = self.__fetch_version_data(name, number)
         return self.__build_version(name, number, package_data, version_data)
 
-    def fetch_latest_version(self, name):
+    def _fetch_latest_version(self, name):
         package_data = self.__fetch_package_data(name)
         number = package_data['version']
         version_data = self.__fetch_version_data(name, number)
@@ -59,7 +59,7 @@ class RubyPackageRegistry(PackageRegistry):
             data['homepage_uri'],
             data['project_uri']
         ]
-        return self._search_licenses_in_code_repository_urls(filter(None, urls))
+        return self._find_licenses_in_code_repository_urls(filter(None, urls))
 
     def __build_version(self, name, number, package_data, version_data):
         return PackageVersion(

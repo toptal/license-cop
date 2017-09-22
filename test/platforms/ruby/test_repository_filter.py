@@ -34,9 +34,9 @@ def test_mismatches_python_repository(ruby_filter, python_repository):
     assert not ruby_filter.match(python_repository)
 
 
-@VCR.use_cassette('ruby_repository_filter_dependencies.yaml')
+@VCR.use_cassette('ruby_repository_filter_extract_dependencies.yaml')
 def test_mismatches_python_repository(ruby_filter, ruby_repository):
-    dependencies = ruby_filter.filter_dependencies(ruby_repository)
+    dependencies = ruby_filter.extract_dependencies(ruby_repository)
     assert len(dependencies) == 205
 
     assert dependency('rails') in dependencies

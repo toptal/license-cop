@@ -11,7 +11,7 @@ class RubyRepositoryFilter(RepositoryFilter):
     def match(self, repository):
         return repository.path_exists(GEMFILE)
 
-    def filter_dependencies(self, repository):
+    def extract_dependencies(self, repository):
         gemfile = repository.read_text_file(GEMFILE)
         dependencies = []
 

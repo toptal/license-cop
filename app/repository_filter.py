@@ -8,5 +8,5 @@ class RepositoryFilter(ABC):
         pass
 
     @abstractmethod
-    def filter_dependencies(self, repository):
+    def extract_dependencies(self, repository):
         pass
