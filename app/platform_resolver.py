@@ -1,3 +1,6 @@
+import sys
+import requests
+
 from app.dependency_resolver import *
 
 
@@ -14,5 +17,8 @@ class PlatformResolver:
         dependencies = self.__repository_filter.extract_dependencies(repository)
         resolutions = []
         for dependency in dependencies:
-            resolutions.append(self.__dependency_resolver.resolve(dependency))
+            try:
+                resolutions.append(self.__dependency_resolver.resolve(dependency))
+            except PackageVersionNotFound as e:
+                print('WARNING: {0}'.format(e), file=sys.stderr)
         return resolutions

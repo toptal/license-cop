@@ -6,9 +6,13 @@ from app.data_object import *
 from app.github_repository import *
 
 
+class PackageVersionNotFound(Exception):
+    pass
+
+
 class PackageRegistry(ABC):
 
-    class Id(DataObject):
+    class __Id(DataObject):
         def __init__(self, name, number=None):
             self.name = name
             self.number = number
@@ -40,11 +44,11 @@ class PackageRegistry(ABC):
         pass
 
     def fetch_version(self, name, number):
-        id = self.Id(name, number)
+        id = self.__Id(name, number)
         return self.__cached_fetch(id, self._fetch_version)
 
     def fetch_latest_version(self, name):
-        id = self.Id(name)
+        id = self.__Id(name)
         return self.__cached_fetch(id, self._fetch_latest_version)
 
     def __cached_fetch(self, id, fetch_function):
@@ -53,10 +57,13 @@ class PackageRegistry(ABC):
         return self.__cache_miss(id, fetch_function)
 
     def __cache_miss(self, id, fetch_function):
-        self.__report_progress('  → {0}'.format(id))
-        version = fetch_function(*id)
-        self.__cache[id] = version
-        return version
+        try:
+            self.__report_progress('  → {0}'.format(id))
+            version = fetch_function(*id)
+            self.__cache[id] = version
+            return version
+        except requests.exceptions.HTTPError as e:
+            raise PackageVersionNotFound('Could not find package version {0}. {1}'.format(id, e))
 
     def __report_progress(self, message):
         sys.stdout.write('\033[K')

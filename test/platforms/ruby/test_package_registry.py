@@ -2,6 +2,7 @@ import pytest
 import requests
 
 from test import *
+from app.package_registry import *
 from app.platforms.ruby.package_registry import *
 from app.dependency import *
 
@@ -50,22 +51,27 @@ def test_fetch_latest_version(registry):
 
 @VCR.use_cassette('ruby_package_version_name_does_not_exist.yaml')
 def test_fetch_version_when_name_does_not_exist(registry):
-    with pytest.raises(requests.exceptions.HTTPError):
+    with pytest.raises(PackageVersionNotFound) as e:
         registry.fetch_version('foobar666', '666')
+    assert str(e.value) ==\
+        'Could not find package version foobar666:666. '\
+        '404 Client Error: Not Found for url: https://rubygems.org/api/v1/gems/foobar666.json'
 
 
 @VCR.use_cassette('ruby_package_version_number_does_not_exist.yaml')
 def test_fetch_version_when_version_does_not_exist(registry):
-    with pytest.raises(Exception) as e:
+    with pytest.raises(PackageVersionNotFound) as e:
         registry.fetch_version('rails', '666')
-    assert str(e.value) == 'Could not find Ruby gem rails:666'
+    assert str(e.value) == 'Could not find package version rails:666.'
 
 
 @VCR.use_cassette('ruby_package_version_name_does_not_exist.yaml')
 def test_fetch_latest_version_when_name_does_not_exist(registry):
-    with pytest.raises(requests.exceptions.HTTPError):
+    with pytest.raises(PackageVersionNotFound) as e:
         registry.fetch_latest_version('foobar666')
-
+    assert str(e.value) ==\
+        'Could not find package version foobar666:latest. '\
+        '404 Client Error: Not Found for url: https://rubygems.org/api/v1/gems/foobar666.json'
 
 @VCR.use_cassette('ruby_package_version_without_license_nor_code_repository.yaml')
 def test_fetch_version_without_license_nor_source_code_repository(registry):
