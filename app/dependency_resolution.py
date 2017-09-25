@@ -56,9 +56,9 @@ class DependencyResolution:
     def hide(self):
         self.is_hidden = True
 
-    def __repr__(self):
+    def __repr__(self, level=0):
         io = StringIO()
-        self.__print_node(io, self, 0)
+        self.__print_node(io, self, level)
         return io.getvalue()
 
     def __print_node(self, io, node, level):

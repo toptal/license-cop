@@ -73,6 +73,7 @@ def test_fetch_latest_version_name_not_found(registry):
         'Could not find package version foobar666:latest. '\
         '404 Client Error: Not Found for url: https://rubygems.org/api/v1/gems/foobar666.json'
 
+
 @VCR.use_cassette('ruby_package_registry_fetch_version_without_license_nor_code_repository.yaml')
 def test_fetch_version_without_license_nor_source_code_repository(registry):
     version = registry.fetch_version('coulda', '0.7.1')

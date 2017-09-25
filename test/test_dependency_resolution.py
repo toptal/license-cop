@@ -188,3 +188,23 @@ def test_repr_with_children(rails):
         ⎮--• [runtime] activemodel:5.1.4 → MIT
         '''
     )
+
+
+def test_repr_with_children_and_one_indentation_level(rails):
+    node = DependencyResolution.development(rails)\
+        .add_child(
+            DependencyResolution.runtime(version('activerecord', '5.1.4', ['MIT']))
+            .add_child(
+                DependencyResolution.runtime(version('activemodel', '5.1.4', ['MIT']))
+                .add_child(DependencyResolution.runtime(version('activesupport', '5.1.4', ['MIT']), is_hidden=True))
+            )
+        )
+
+    assert node.__repr__(1) == dedent(
+        '''\
+        ⎮--+ [development] rails:5.1.4 → MIT
+        ⎮  ⎮--+ [runtime] activerecord:5.1.4 → MIT
+        ⎮  ⎮  ⎮--+ [runtime] activemodel:5.1.4 → MIT
+        ⎮  ⎮  ⎮  ⎮--• [runtime] activesupport:5.1.4 → MIT
+        '''
+    )
