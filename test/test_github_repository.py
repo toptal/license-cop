@@ -32,6 +32,12 @@ def test_parses_valid_github_url_with_git_scheme():
     assert repo.name == 'license-cop'
 
 
+def test_parses_valid_github_url_with_git_over_ssh_scheme():
+    repo = GithubRepository.from_url('git@github.com:toptal/license-cop.git')
+    assert repo.owner == 'toptal'
+    assert repo.name == 'license-cop'
+
+
 def test_parses_valid_github_url_with_git_over_https_scheme():
     repo = GithubRepository.from_url('git+https://github.com/toptal/license-cop.git')
     assert repo.owner == 'toptal'

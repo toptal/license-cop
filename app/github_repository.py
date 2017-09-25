@@ -19,7 +19,7 @@ PREVIEW_MEDIA_TYPE = 'application/vnd.github.drax-preview+json'
 
 
 TOKEN = require_environment('GITHUB_TOKEN')
-URL_REGEX = '^((git[+:])?(http:|https:)?//)?(www\.)?github.com/(?P<owner>[\w\-\.]+)/(?P<name>[\w\-\.]+)'
+URL_REGEX = '^((git[+:@])?((http:|https:)?//)?)?(www\.)?github.com[:/](?P<owner>[\w\-\.]+)/(?P<name>[\w\-\.]+)'
 
 
 class GithubRepository:
