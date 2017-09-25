@@ -51,7 +51,7 @@ def test_fetch_latest_version(registry):
 
 @VCR.use_cassette('ruby_package_registry_fetch_version_name_not_found.yaml')
 def test_fetch_version_name_not_found(registry):
-    with pytest.raises(PackageVersionNotFound) as e:
+    with pytest.raises(PackageVersionNotFoundError) as e:
         registry.fetch_version('foobar666', '666')
     assert str(e.value) ==\
         'Could not find package version foobar666:666. '\
@@ -60,14 +60,14 @@ def test_fetch_version_name_not_found(registry):
 
 @VCR.use_cassette('ruby_package_registry_fetch_version_number_not_found.yaml')
 def test_fetch_version_number_not_found(registry):
-    with pytest.raises(PackageVersionNotFound) as e:
+    with pytest.raises(PackageVersionNotFoundError) as e:
         registry.fetch_version('rails', '666')
     assert str(e.value) == 'Could not find package version rails:666.'
 
 
 @VCR.use_cassette('ruby_package_registry_fetch_latest_version_name_not_found.yaml')
 def test_fetch_latest_version_name_not_found(registry):
-    with pytest.raises(PackageVersionNotFound) as e:
+    with pytest.raises(PackageVersionNotFoundError) as e:
         registry.fetch_latest_version('foobar666')
     assert str(e.value) ==\
         'Could not find package version foobar666:latest. '\
@@ -99,10 +99,6 @@ def test_fetch_version_without_license_but_source_code_uri_has_licensed_github_r
 def test_fetch_version_without_license_and_github_repository_not_found(registry, capsys):
     version = registry.fetch_version('rspectacular', '0.70.7')
     assert version.licenses == []
-
-    _, err = capsys.readouterr()
-    assert err == 'WARNING: package specifies invalid GitHub repository '\
-                  '[https://github.com/jfelchner/rspectacular]\n'
 
 
 @VCR.use_cassette('ruby_package_registry_fetch_version_without_runtime_dependencies.yaml')

@@ -34,8 +34,10 @@ class Platform:
     def __resolve_dependencies(self, resolver, dependencies):
         resolutions = []
         for dependency in dependencies:
-            try:
-                resolutions.append(resolver.resolve(dependency))
-            except PackageVersionNotFound as e:
-                print('WARNING: {0}'.format(e), file=sys.stderr)
+            print('>>>> Resolving {0}'.format(dependency))
+            resolution = resolver.resolve(dependency)
+            resolutions.append(resolution)
+            sys.stdout.write('\033[F')
+            sys.stdout.write('\033[K')
+            print(repr(resolution))
         return resolutions

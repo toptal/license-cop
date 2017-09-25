@@ -120,7 +120,7 @@ def test_fetch_version_with_at_and_slash_in_the_name(registry):
 
 @VCR.use_cassette('nodejs_package_registry_fetch_version_name_not_found.yaml')
 def test_fetch_version_name_not_found(registry):
-    with pytest.raises(PackageVersionNotFound) as e:
+    with pytest.raises(PackageVersionNotFoundError) as e:
         registry.fetch_version('foobar666', '4.2.1')
     assert str(e.value) == \
         'Could not find package version foobar666:4.2.1. '\
@@ -129,7 +129,7 @@ def test_fetch_version_name_not_found(registry):
 
 @VCR.use_cassette('nodejs_package_registry_fetch_version_number_not_found.yaml')
 def test_fetch_version_number_not_found(registry):
-    with pytest.raises(PackageVersionNotFound) as e:
+    with pytest.raises(PackageVersionNotFoundError) as e:
         registry.fetch_version('babel-core', '666')
     assert str(e.value) == \
         'Could not find package version babel-core:666. '\
@@ -139,7 +139,7 @@ def test_fetch_version_number_not_found(registry):
 @VCR.use_cassette(
     'nodejs_package_registry_fetch_version_for_scoped_package_name_not_found.yaml')
 def test_fetch_version_for_scoped_package_name_not_found(registry):
-    with pytest.raises(PackageVersionNotFound) as e:
+    with pytest.raises(PackageVersionNotFoundError) as e:
         registry.fetch_version('@foobar666/bla', '4.2.1')
     assert str(e.value) == \
         'Could not find package version @foobar666/bla:4.2.1. '\
@@ -149,14 +149,14 @@ def test_fetch_version_for_scoped_package_name_not_found(registry):
 @VCR.use_cassette(
     'nodejs_package_registry_fetch_version_for_scoped_package_number_not_found.yaml')
 def test_fetch_version_for_scoped_package_number_not_found(registry):
-    with pytest.raises(PackageVersionNotFound) as e:
+    with pytest.raises(PackageVersionNotFoundError) as e:
         registry.fetch_version('@types/chai', '5.0.5')
     assert str(e.value) == 'Could not find package version @types/chai:5.0.5.'
 
 
 @VCR.use_cassette('nodejs_package_registry_fetch_latest_version_name_not_found.yaml')
 def test_fetch_latest_version_name_not_found(registry):
-    with pytest.raises(PackageVersionNotFound) as e:
+    with pytest.raises(PackageVersionNotFoundError) as e:
         registry.fetch_latest_version('foobar666')
     assert str(e.value) == \
         'Could not find package version foobar666:latest. '\
@@ -166,7 +166,7 @@ def test_fetch_latest_version_name_not_found(registry):
 @VCR.use_cassette(
     'nodejs_package_registry_fetch_latest_version_for_scoped_package_name_not_found.yaml')
 def test_fetch_latest_version_for_scoped_package_name_not_found(registry):
-    with pytest.raises(PackageVersionNotFound) as e:
+    with pytest.raises(PackageVersionNotFoundError) as e:
         registry.fetch_version('@foobar666/bla', '4.2.1')
     assert str(e.value) == \
         'Could not find package version @foobar666/bla:4.2.1. '\

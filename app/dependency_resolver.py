@@ -29,7 +29,10 @@ class DependencyResolver:
         return root
 
     def __build_node(self, dependency):
-        version = self.__fetch_version(dependency)
+        try:
+            version = self.__fetch_version(dependency)
+        except PackageVersionNotFoundError as e:
+            version = PackageVersionNotFound(dependency.name, dependency.number)
         return DependencyResolution(version, dependency.kind)
 
     def __fetch_version(self, dependency):

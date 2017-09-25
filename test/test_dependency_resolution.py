@@ -26,6 +26,11 @@ def version(name, number='5.1.4', licenses=['MIT']):
 
 
 @pytest.fixture
+def version_not_found():
+    return PackageVersionNotFound('foobar')
+
+
+@pytest.fixture
 def rails(): return version('rails', '5.1.4')
 
 
@@ -154,7 +159,17 @@ def test_repr_hidden_dependency_branch(rails):
     )
 
 
-def test_repr_with_children(rails):
+def test_repr_package_version_not_found(rails):
+    version = PackageVersionNotFound('rails')
+    node = DependencyResolution.runtime(version)
+    assert repr(node) == dedent(
+        '''\
+        ! [runtime] rails:latest → <version not found on registry>
+        '''
+    )
+
+
+def test_repr_with_children(rails, version_not_found):
     node = DependencyResolution.development(rails)\
         .add_child(
             DependencyResolution.runtime(version('activesupport', '5.1.4', ['MIT']))
@@ -162,6 +177,7 @@ def test_repr_with_children(rails):
             .add_child(DependencyResolution.runtime(version('i18n', '0.7', ['Ruby', 'MIT'])))
             .add_child(DependencyResolution.runtime(version('minitest', '5.1', ['MIT'])))
         )\
+        .add_child(DependencyResolution.runtime(version_not_found))\
         .add_child(
             DependencyResolution.runtime(version('activerecord', '5.1.4', ['MIT']))
             .add_child(
@@ -180,6 +196,7 @@ def test_repr_with_children(rails):
         ⎮  ⎮--- [runtime] concurrent-ruby:1.0.2 → BSD
         ⎮  ⎮--- [runtime] i18n:0.7 → Ruby, MIT
         ⎮  ⎮--- [runtime] minitest:5.1 → MIT
+        ⎮--! [runtime] foobar:latest → <version not found on registry>
         ⎮--+ [runtime] activerecord:5.1.4 → MIT
         ⎮  ⎮--+ [runtime] activemodel:5.1.4 → MIT
         ⎮  ⎮  ⎮--• [runtime] activesupport:5.1.4 → MIT

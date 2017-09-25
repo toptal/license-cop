@@ -25,4 +25,14 @@ def test_str_with_multiple_licenses():
 
 def test_str_without_licenses():
     version = build_version(licenses=[])
-    assert str(version) == 'pytest:3.2.2 → <no license>'
+    assert str(version) == 'pytest:3.2.2 → <no licenses found>'
+
+
+def test_str_not_found_with_number():
+    version = PackageVersionNotFound('pytest', '3.2.2')
+    assert str(version) == 'pytest:3.2.2 → <version not found on registry>'
+
+
+def test_str_not_found_without_number():
+    version = PackageVersionNotFound('pytest')
+    assert str(version) == 'pytest:latest → <version not found on registry>'

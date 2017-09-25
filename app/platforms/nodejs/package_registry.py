@@ -43,7 +43,7 @@ class NodejsPackageRegistry(PackageRegistry):
             number = package_data['dist-tags']['latest']
         if number in package_data['versions']:
             return package_data['versions'][number]
-        raise PackageVersionNotFound(
+        raise PackageVersionNotFoundError(
             'Could not find package version {0}:{1}.'.format(name, number))
 
     def __fetch_package_data(self, name):

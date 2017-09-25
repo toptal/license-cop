@@ -6,7 +6,7 @@ from app.data_object import *
 from app.github_repository import *
 
 
-class PackageVersionNotFound(Exception):
+class PackageVersionNotFoundError(Exception):
     pass
 
 
@@ -63,7 +63,7 @@ class PackageRegistry(ABC):
             self.__cache[id] = version
             return version
         except requests.exceptions.HTTPError as e:
-            raise PackageVersionNotFound('Could not find package version {0}. {1}'.format(id, e))
+            raise PackageVersionNotFoundError('Could not find package version {0}. {1}'.format(id, e))
 
     def __report_progress(self, message):
         sys.stdout.write('\033[K')
@@ -78,11 +78,7 @@ class PackageRegistry(ABC):
                 if license:
                     return [license]
             except requests.exceptions.HTTPError as e:
-                print(
-                    'WARNING: package specifies invalid '
-                    'GitHub repository [{0}]'.format(url),
-                    file=sys.stderr
-                )
+                continue
         return []
 
     # Right now, only GitHub is supported, but this could be extended

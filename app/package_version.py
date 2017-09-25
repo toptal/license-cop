@@ -14,5 +14,16 @@ class PackageVersion(DataObject):
         return '{0}:{1} → {2}'.format(
             self.name,
             self.number,
-            ', '.join(self.licenses) if self.licenses else '<no license>'
+            ', '.join(self.licenses) if self.licenses else '<no licenses found>'
+        )
+
+
+class PackageVersionNotFound(PackageVersion):
+    def __init__(self, name, number=None):
+        super().__init__(name, number, [], [], [])
+
+    def __str__(self):
+        return '{0}:{1} → <version not found on registry>'.format(
+            self.name,
+            'latest' if self.number is None else self.number
         )

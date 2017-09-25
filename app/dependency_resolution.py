@@ -1,6 +1,7 @@
 from enum import Enum
 from io import StringIO
 
+from app.package_version import *
 from app.dependency import *
 from app.package_registry import *
 
@@ -27,6 +28,10 @@ class DependencyResolution:
 
     @property
     def is_leaf(self): return self.children == []
+
+    @property
+    def is_found(self):
+        return not isinstance(self.version, PackageVersionNotFound)
 
     @property
     def name(self): return self.version.name
@@ -67,27 +72,22 @@ class DependencyResolution:
             self.__print_node(io, child, level + 1)
 
     def __print_node_header(self, io, node, level):
-        header = '{0}{1} {2} {3}'.format(
+        header = '{0}{1} [{2}] {3}'.format(
             self.__indentation(level),
             self.__format_bullet(node),
-            self.__format_kind(node),
+            str(node.kind),
             str(node.version)
         )
         print(header, file=io)
 
-    def __format_kind(self, node):
-        if node.kind == DependencyKind.RUNTIME:
-            return '[runtime]'
-        elif node.kind == DependencyKind.DEVELOPMENT:
-            return '[development]'
-        else:
-            return '[unknown]'
 
     def __format_bullet(self, node):
         if node.is_hidden:
             return '•'
         elif not node.is_leaf:
             return '+'
+        elif not node.is_found:
+            return '!'
         else:
             return '-'
 
