@@ -6,7 +6,7 @@ from app.package_version import *
 from app.dependency import *
 
 
-def build_version(name, number='5.1.4', licenses=['MIT']):
+def version(name, number='5.1.4', licenses=['MIT']):
     return PackageVersion(
         name=name,
         number=number,
@@ -25,26 +25,22 @@ def build_version(name, number='5.1.4', licenses=['MIT']):
     )
 
 
-def build_resolution(name, number, licenses):
-    return DependencyResolution.runtime(build_version(name, number, licenses))
+@pytest.fixture
+def rails(): return version('rails', '5.1.4')
 
 
 @pytest.fixture
-def rails(): return build_version('rails', '5.1.4')
-
-
-@pytest.fixture
-def rake(): return build_version('rake', '12.1.0')
+def rake(): return version('rake', '12.1.0')
 
 
 def test_name(rails):
-    resolution = DependencyResolution.runtime(rails)
-    assert resolution.name == rails.name
+    node = DependencyResolution.runtime(rails)
+    assert node.name == rails.name
 
 
 def test_number(rails):
-    resolution = DependencyResolution.runtime(rails)
-    assert resolution.number == rails.number
+    node = DependencyResolution.runtime(rails)
+    assert node.number == rails.number
 
 
 def test_add_child(rails, rake):
@@ -54,6 +50,12 @@ def test_add_child(rails, rake):
     assert parent.add_child(child) == parent
     assert parent.children == [child]
     assert child.parent == parent
+
+
+def test_hide(rails, rake):
+    node = DependencyResolution.runtime(rake, is_hidden=False)
+    node.hide()
+    assert node.is_hidden
 
 
 def test_is_root(rails, rake):
@@ -74,76 +76,115 @@ def test_is_leaf(rails, rake):
     assert child.is_leaf
 
 
-def test_compute_runtime_dependencies(rails):
-    resolution = DependencyResolution.runtime(rails)
-    dependencies = resolution.dependencies(runtime_only=True)
+def test_get_runtime_dependencies(rails):
+    node = DependencyResolution.runtime(rails)
+    dependencies = node.dependencies(runtime_only=True)
     assert dependencies == rails.runtime_dependencies
 
 
-def test_compute_runtime_and_development_dependencies(rails):
-    resolution = DependencyResolution.runtime(rails)
-    dependencies = resolution.dependencies(runtime_only=False)
+def test_has_runtime_dependencies(rails):
+    node = DependencyResolution.runtime(rails)
+    assert node.has_dependencies(runtime_only=True)
+
+
+def test_has_not_runtime_dependencies(rails):
+    rails.runtime_dependencies = []
+    node = DependencyResolution.runtime(rails)
+    assert not node.has_dependencies(runtime_only=True)
+
+
+def test_get_runtime_and_development_dependencies(rails):
+    node = DependencyResolution.runtime(rails)
+    dependencies = node.dependencies(runtime_only=False)
     assert dependencies == (rails.runtime_dependencies + rails.development_dependencies)
 
 
+def test_has_runtime_and_development_dependencies_even_without_runtime_dependencies(rails):
+    rails.runtime_dependencies = []
+    node = DependencyResolution.runtime(rails)
+    assert node.has_dependencies(runtime_only=False)
+
+
+def test_has_runtime_and_development_dependencies_even_without_development_dependencies(rails):
+    rails.development_dependencies = []
+    node = DependencyResolution.runtime(rails)
+    assert node.has_dependencies(runtime_only=False)
+
+
+def test_has_not_runtime_nor_dependencies_dependencies(rails):
+    rails.runtime_dependencies = []
+    rails.development_dependencies = []
+    node = DependencyResolution.runtime(rails)
+    assert not node.has_dependencies(runtime_only=False)
+
+
 def test_repr_runtime_dependency_without_children(rails):
-    resolution = DependencyResolution.runtime(rails)
-    assert repr(resolution) == dedent(
+    node = DependencyResolution.runtime(rails)
+    assert repr(node) == dedent(
+        '''\
+        - [runtime] rails:5.1.4 → MIT
+        '''
+    )
+
+
+def test_repr_development_dependency_without_children(rails):
+    node = DependencyResolution.development(rails)
+    assert repr(node) == dedent(
+        '''\
+        - [development] rails:5.1.4 → MIT
+        '''
+    )
+
+
+def test_repr_dependency_with_unknown_kind_without_children(rails):
+    node = DependencyResolution(rails, DependencyKind.UNKNOWN)
+    assert repr(node) == dedent(
+        '''\
+        - [unknown] rails:5.1.4 → MIT
+        '''
+    )
+
+
+def test_repr_hidden_dependency_branch(rails):
+    node = DependencyResolution.runtime(rails, is_hidden=True)
+    assert repr(node) == dedent(
         '''\
         • [runtime] rails:5.1.4 → MIT
         '''
     )
 
 
-def test_repr_development_dependency_without_children(rails):
-    resolution = DependencyResolution.development(rails)
-    assert repr(resolution) == dedent(
-        '''\
-        • [development] rails:5.1.4 → MIT
-        '''
-    )
-
-
-def test_repr_dependency_with_unknown_kind_without_children(rails):
-    resolution = DependencyResolution(rails, DependencyKind.UNKNOWN)
-    assert repr(resolution) == dedent(
-        '''\
-        • [unknown] rails:5.1.4 → MIT
-        '''
-    )
-
-
 def test_repr_with_children(rails):
-    resolution = DependencyResolution.development(rails)\
+    node = DependencyResolution.development(rails)\
         .add_child(
-            build_resolution('activesupport', '5.1.4', ['MIT'])
-            .add_child(build_resolution('concurrent-ruby', '1.0.2', ['BSD']))
-            .add_child(build_resolution('i18n', '0.7', ['Ruby', 'MIT']))
-            .add_child(build_resolution('minitest', '5.1', ['MIT']))
+            DependencyResolution.runtime(version('activesupport', '5.1.4', ['MIT']))
+            .add_child(DependencyResolution.runtime(version('concurrent-ruby', '1.0.2', ['BSD'])))
+            .add_child(DependencyResolution.runtime(version('i18n', '0.7', ['Ruby', 'MIT'])))
+            .add_child(DependencyResolution.runtime(version('minitest', '5.1', ['MIT'])))
         )\
         .add_child(
-            build_resolution('activerecord', '5.1.4', ['MIT'])
+            DependencyResolution.runtime(version('activerecord', '5.1.4', ['MIT']))
             .add_child(
-                build_resolution('activemodel', '5.1.4', ['MIT'])
-                .add_child(build_resolution('activesupport', '5.1.4', ['MIT']))
+                DependencyResolution.runtime(version('activemodel', '5.1.4', ['MIT']))
+                .add_child(DependencyResolution.runtime(version('activesupport', '5.1.4', ['MIT']), is_hidden=True))
             )
-            .add_child(build_resolution('activesupport', '5.1.4', ['MIT']))
-            .add_child(build_resolution('arel', '8.0', ['Apache']))
+            .add_child(DependencyResolution.development(version('activesupport', '5.1.4', ['MIT']), is_hidden=True))
+            .add_child(DependencyResolution.development(version('arel', '8.0', ['Apache'])))
         )\
-        .add_child(build_resolution('activemodel', '5.1.4', ['MIT']))
+        .add_child(DependencyResolution.runtime(version('activemodel', '5.1.4', ['MIT']), is_hidden=True))
 
-    assert repr(resolution) == dedent(
+    assert repr(node) == dedent(
         '''\
         + [development] rails:5.1.4 → MIT
         ⎮--+ [runtime] activesupport:5.1.4 → MIT
-        ⎮  ⎮--• [runtime] concurrent-ruby:1.0.2 → BSD
-        ⎮  ⎮--• [runtime] i18n:0.7 → Ruby, MIT
-        ⎮  ⎮--• [runtime] minitest:5.1 → MIT
+        ⎮  ⎮--- [runtime] concurrent-ruby:1.0.2 → BSD
+        ⎮  ⎮--- [runtime] i18n:0.7 → Ruby, MIT
+        ⎮  ⎮--- [runtime] minitest:5.1 → MIT
         ⎮--+ [runtime] activerecord:5.1.4 → MIT
         ⎮  ⎮--+ [runtime] activemodel:5.1.4 → MIT
         ⎮  ⎮  ⎮--• [runtime] activesupport:5.1.4 → MIT
-        ⎮  ⎮--• [runtime] activesupport:5.1.4 → MIT
-        ⎮  ⎮--• [runtime] arel:8.0 → Apache
+        ⎮  ⎮--• [development] activesupport:5.1.4 → MIT
+        ⎮  ⎮--- [development] arel:8.0 → Apache
         ⎮--• [runtime] activemodel:5.1.4 → MIT
         '''
     )

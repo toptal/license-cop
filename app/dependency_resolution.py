@@ -7,19 +7,20 @@ from app.package_registry import *
 
 class DependencyResolution:
 
-    def __init__(self, version, kind):
+    def __init__(self, version, kind, is_hidden=False):
         self.version = version
         self.kind = kind
         self.parent = None
+        self.is_hidden = is_hidden
         self.children = []
 
     @staticmethod
-    def runtime(version):
-        return DependencyResolution(version, DependencyKind.RUNTIME)
+    def runtime(version, is_hidden=False):
+        return DependencyResolution(version, DependencyKind.RUNTIME, is_hidden)
 
     @staticmethod
-    def development(version):
-        return DependencyResolution(version, DependencyKind.DEVELOPMENT)
+    def development(version, is_hidden=False):
+        return DependencyResolution(version, DependencyKind.DEVELOPMENT, is_hidden)
 
     @property
     def is_root(self): return self.parent is None
@@ -33,17 +34,27 @@ class DependencyResolution:
     @property
     def number(self): return self.version.number
 
-    def dependencies(self, runtime_only):
+    def dependencies(self, runtime_only=False):
         if runtime_only:
             return self.version.runtime_dependencies
         else:
             return (self.version.runtime_dependencies +
                     self.version.development_dependencies)
 
+    def has_dependencies(self, runtime_only=False):
+        if runtime_only:
+            return len(self.version.runtime_dependencies) > 0
+        else:
+            return (len(self.version.runtime_dependencies) > 0 or
+                    len(self.version.development_dependencies) > 0)
+
     def add_child(self, child):
         child.parent = self
         self.children.append(child)
         return self
+
+    def hide(self):
+        self.is_hidden = True
 
     def __repr__(self):
         io = StringIO()
@@ -58,19 +69,27 @@ class DependencyResolution:
     def __print_node_header(self, io, node, level):
         header = '{0}{1} {2} {3}'.format(
             self.__indentation(level),
-            '•' if node.is_leaf else '+',
-            self.__format_kind(node.kind),
+            self.__format_bullet(node),
+            self.__format_kind(node),
             str(node.version)
         )
         print(header, file=io)
 
-    def __format_kind(self, kind):
-        if kind == DependencyKind.RUNTIME:
+    def __format_kind(self, node):
+        if node.kind == DependencyKind.RUNTIME:
             return '[runtime]'
-        elif kind == DependencyKind.DEVELOPMENT:
+        elif node.kind == DependencyKind.DEVELOPMENT:
             return '[development]'
         else:
             return '[unknown]'
+
+    def __format_bullet(self, node):
+        if node.is_hidden:
+            return '•'
+        elif not node.is_leaf:
+            return '+'
+        else:
+            return '-'
 
     def __indentation(self, level):
         if level == 0:

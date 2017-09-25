@@ -18,9 +18,13 @@ class DependencyResolver:
             for dependency in current_node.dependencies(runtime_only):
                 child = self.__build_node(dependency)
                 current_node.add_child(child)
-                if dependency not in visited_dependencies:
-                    visited_dependencies.add(dependency)
-                    nodes_to_expand.append(child)
+
+                if child.has_dependencies(runtime_only):
+                    if dependency not in visited_dependencies:
+                        visited_dependencies.add(dependency)
+                        nodes_to_expand.append(child)
+                    else:
+                        child.hide()
 
         return root
 
