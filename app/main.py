@@ -63,6 +63,7 @@ def main():
 
     with open(report_filename, 'w') as report:
         print('Processing {0}'.format(repository))
+        print('The report will be written in {0}'.format(report_filename))
         process(repository, report)
 
 

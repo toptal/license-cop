@@ -44,7 +44,4 @@ class Platform:
             print('>>>> Resolving {0}'.format(dependency))
             resolution = resolver.resolve(dependency)
             resolutions.append(resolution)
-            sys.stdout.write('\033[F')
-            sys.stdout.write('\033[K')
-            sys.stdout.write(repr(resolution))
         return resolutions
