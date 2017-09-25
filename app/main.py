@@ -34,11 +34,8 @@ def process(repository, report):
             sys.stdout.write('\033[F')
             sys.stdout.write('\033[K')
             print('>> Found {0} package descriptors. This will take a while...'.format(platform.name))
-            resolutions = platform.resolve(match)
+            platform.resolve(match, report)
             sys.stdout.write('\033[K')
-            for resolution in resolutions:
-                print(repr(resolution), file=report)
-                print(file=report)
         else:
             sys.stdout.write('\033[F')
             sys.stdout.write('\033[K')
@@ -54,10 +51,6 @@ def get_repository(url):
         )
         sys.exit(1)
     return repository
-
-
-def open_report_file(name):
-    return open(name, 'w')
 
 
 def main():

@@ -15,11 +15,18 @@ class Platform:
     def match(self, repository):
         return self.__matcher.match(repository)
 
-    def resolve(self, match):
-        return list(map(
-            lambda i: self.__resolve_package_descriptor(i),
-            match.package_descriptors()
-        ))
+    def resolve(self, match, report):
+        resolutions = []
+        for i in match.package_descriptors():
+            r = self.__resolve_package_descriptor(i)
+            resolutions.append(r)
+            self.__report_resolution(r, report)
+        return resolutions
+
+    def __report_resolution(self, resolution, report):
+        print(repr(resolution), file=report)
+        print(file=report)
+        print(file=report)
 
     def __resolve_package_descriptor(self, descriptor):
         resolver = DependencyResolver(self.__registry)
@@ -39,5 +46,5 @@ class Platform:
             resolutions.append(resolution)
             sys.stdout.write('\033[F')
             sys.stdout.write('\033[K')
-            print(repr(resolution))
+            sys.stdout.write(repr(resolution))
         return resolutions
