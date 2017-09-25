@@ -80,6 +80,24 @@ def test_parses_valid_github_url_ignoring_extra_path():
     assert repo.name == 'license-cop'
 
 
+def test_parses_valid_github_url_with_dot_in_name():
+    repo = GithubRepository.from_url('https://github.com/toptal/license.cop')
+    assert repo.owner == 'toptal'
+    assert repo.name == 'license.cop'
+
+
+def test_parses_valid_github_url_with_dot_in_name_and_git_suffix():
+    repo = GithubRepository.from_url('https://github.com/toptal/license.cop.git')
+    assert repo.owner == 'toptal'
+    assert repo.name == 'license.cop'
+
+
+def test_parses_valid_github_url_with_dot_in_owner():
+    repo = GithubRepository.from_url('https://github.com/cowboy.d/commonjs')
+    assert repo.owner == 'cowboy.d'
+    assert repo.name == 'commonjs'
+
+
 def test_parses_valid_github_url_from_issues_url():
     repo = GithubRepository.from_url('https://github.com/toptal/license-cop/issues')
     assert repo.owner == 'toptal'

@@ -19,7 +19,7 @@ PREVIEW_MEDIA_TYPE = 'application/vnd.github.drax-preview+json'
 
 
 TOKEN = require_environment('GITHUB_TOKEN')
-URL_REGEX = '^((git[+:])?(http:|https:)?//)?(www\.)?github.com/(?P<owner>[\w\-]+)/(?P<name>[\w\-]+)(.git)?'
+URL_REGEX = '^((git[+:])?(http:|https:)?//)?(www\.)?github.com/(?P<owner>[\w\-\.]+)/(?P<name>[\w\-\.]+)'
 
 
 class GithubRepository:
@@ -40,10 +40,16 @@ class GithubRepository:
         if path:
             return GithubRepository(
                 path.group('owner'),
-                path.group('name'),
+                GithubRepository.__remove_dot_git_suffix(path.group('name')),
                 token,
                 http_compression
             )
+
+    @staticmethod
+    def __remove_dot_git_suffix(name):
+        if name.endswith('.git'):
+            return name[:-len('.git')]
+        return name
 
     def path_exists(self, path):
         response = self.__session.head(self.__contents_uri(path))
