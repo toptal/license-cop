@@ -63,8 +63,8 @@ class NodejsPackageRegistry(PackageRegistry):
             name=data['name'],
             number=data['version'],
             licenses=self.__extract_licenses(data),
-            runtime_dependencies=parse_dependencies(data, Dependency.RUNTIME),
-            development_dependencies=parse_dependencies(data, Dependency.DEVELOPMENT),
+            runtime_dependencies=parse_dependencies(data, DependencyKind.RUNTIME),
+            development_dependencies=parse_dependencies(data, DependencyKind.DEVELOPMENT),
         )
 
     def __extract_licenses(self, data):

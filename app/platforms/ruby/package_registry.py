@@ -37,7 +37,7 @@ class RubyPackageRegistry(PackageRegistry):
         return list(map(
             lambda i: Dependency(i['name'], kind),
             data['dependencies'][
-                'runtime' if kind == Dependency.RUNTIME else 'development'
+                'runtime' if kind == DependencyKind.RUNTIME else 'development'
             ]
         ))
 
@@ -66,6 +66,6 @@ class RubyPackageRegistry(PackageRegistry):
             name,
             number,
             licenses=self.__determine_licenses(package_data, version_data),
-            runtime_dependencies=self.__parse_dependencies(package_data, Dependency.RUNTIME),
-            development_dependencies=self.__parse_dependencies(package_data, Dependency.DEVELOPMENT)
+            runtime_dependencies=self.__parse_dependencies(package_data, DependencyKind.RUNTIME),
+            development_dependencies=self.__parse_dependencies(package_data, DependencyKind.DEVELOPMENT)
         )

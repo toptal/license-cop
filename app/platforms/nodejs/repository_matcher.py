@@ -19,6 +19,6 @@ class NodejsRepositoryMatcher(RepositoryMatcher):
             platform='Node.js',
             repository=repository,
             path=path,
-            runtime_dependencies=parse_dependencies(data, Dependency.RUNTIME),
-            development_dependencies=parse_dependencies(data, Dependency.DEVELOPMENT)
+            runtime_dependencies=parse_dependencies(data, DependencyKind.RUNTIME),
+            development_dependencies=parse_dependencies(data, DependencyKind.DEVELOPMENT)
         )
