@@ -22,7 +22,7 @@ def print_usage():
 
 
 def process(repository):
-    for platform in PLATFORM_RESOLVERS:
+    for platform in PLATFORMS:
         print()
         print('==> Looking for {0} artifacts...'.format(platform.name))
         match = platform.match(repository)

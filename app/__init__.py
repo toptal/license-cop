@@ -2,7 +2,7 @@ import app.platforms.ruby
 import app.platforms.nodejs
 
 
-PLATFORM_RESOLVERS = [
+PLATFORMS = [
     app.platforms.ruby.INSTANCE,
     app.platforms.nodejs.INSTANCE
 ]
