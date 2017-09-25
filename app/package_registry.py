@@ -91,7 +91,7 @@ class PackageRegistry(ABC):
         if url:
             repository = self.__github_repository(url)
             if repository:
-                return repository.license
+                return repository.license()
 
     def __github_repository(self, url):
         return GithubRepository.from_url(

@@ -40,7 +40,7 @@ def assert_branch(root, expected_branch, expected_number, is_leaf):
 
 @VCR.use_cassette('dependency_resolution_without_dependencies.yaml')
 def test_resolution_without_dependencies(resolver):
-    dependency = Dependency('rake', Dependency.RUNTIME, '12.1.0')
+    dependency = Dependency.runtime('rake', '12.1.0')
 
     root = resolver.resolve(dependency, runtime_only=True)
     root.name == dependency.name
@@ -52,7 +52,7 @@ def test_resolution_without_dependencies(resolver):
 
 @VCR.use_cassette('dependency_runtime_resolution_without_circular_dependencies.yaml')
 def test_runtime_resolution_without_circular_dependencies(resolver):
-    dependency = Dependency('activesupport', Dependency.RUNTIME, '5.1.4')
+    dependency = Dependency.runtime('activesupport', '5.1.4')
 
     root = resolver.resolve(dependency, runtime_only=True)
     root.name == dependency.name
@@ -69,7 +69,7 @@ def test_runtime_resolution_without_circular_dependencies(resolver):
 
 @VCR.use_cassette('dependency_runtime_resolution_with_circular_dependencies.yaml')
 def test_runtime_resolution_with_circular_dependencies(resolver):
-    dependency = Dependency('rails', Dependency.RUNTIME, '5.1.4')
+    dependency = Dependency.runtime('rails', '5.1.4')
 
     root = resolver.resolve(dependency, runtime_only=True)
     root.name == dependency.name
@@ -103,7 +103,7 @@ def test_runtime_resolution_with_circular_dependencies(resolver):
     assert_branch(root, ['actionpack', 'rack-test', 'rack'], '2.0.3', True)
     assert_branch(root, ['actionpack', 'rails-dom-testing'], '2.0.3', True)
     assert_branch(root, ['actionpack', 'rails-html-sanitizer'], '1.0.3', False)
-    assert_branch(root, ['actionpack', 'rails-html-sanitizer', 'loofah'], '2.0.3', False)
+    assert_branch(root, ['actionpack', 'rails-html-sanitizer', 'loofah'], '2.1.0', False)
     assert_branch(root, ['actionpack', 'rails-html-sanitizer', 'loofah', 'nokogiri'], '1.8.1', True)
 
     assert_branch(root, ['actionview'], '5.1.4', False)

@@ -1,0 +1,28 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://registry.npmjs.org/babel-core/666
+  response:
+    body: {string: '{}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['0']
+      Cache-Control: [max-age=0]
+      Connection: [keep-alive]
+      Content-Length: ['2']
+      Content-Type: [application/json]
+      Date: ['Mon, 25 Sep 2017 00:18:38 GMT']
+      Vary: [Accept-Encoding]
+      Via: [1.1 varnish]
+      X-Cache: [MISS]
+      X-Cache-Hits: ['0']
+      X-Served-By: [cache-gru17133-GRU]
+      X-Timer: ['S1506298718.575962,VS0,VE873']
+    status: {code: 404, message: Not Found}
+version: 1

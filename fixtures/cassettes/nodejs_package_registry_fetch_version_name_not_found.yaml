@@ -1,0 +1,28 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://registry.npmjs.org/foobar666/4.2.1
+  response:
+    body: {string: '{"error":"not_found","reason":"document not found"}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['0']
+      Cache-Control: [max-age=0]
+      Connection: [keep-alive]
+      Content-Length: ['51']
+      Content-Type: [text/plain]
+      Date: ['Mon, 25 Sep 2017 00:18:37 GMT']
+      Via: [1.1 varnish]
+      X-Cache: [MISS]
+      X-Cache-Hits: ['0']
+      X-Served-By: [cache-gru17133-GRU]
+      X-Timer: ['S1506298716.488847,VS0,VE806']
+      server: [CouchDB/1.6.1 (Erlang OTP/R16B03)]
+    status: {code: 404, message: Not Found}
+version: 1

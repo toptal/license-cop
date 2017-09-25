@@ -1,0 +1,35 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://registry.npmjs.org/lodash/4.17.4
+  response:
+    body: {string: '{"name":"lodash","version":"4.17.4","description":"Lodash modular
+        utilities.","keywords":["modules","stdlib","util"],"homepage":"https://lodash.com/","repository":{"type":"git","url":"git+https://github.com/lodash/lodash.git"},"icon":"https://lodash.com/icon.svg","license":"MIT","main":"lodash.js","author":{"name":"John-David
+        Dalton","email":"john.david.dalton@gmail.com","url":"http://allyoucanleet.com/"},"contributors":[{"name":"John-David
+        Dalton","email":"john.david.dalton@gmail.com","url":"http://allyoucanleet.com/"},{"name":"Mathias
+        Bynens","email":"mathias@qiwi.be","url":"https://mathiasbynens.be/"}],"scripts":{"test":"echo
+        \"See https://travis-ci.org/lodash/lodash-cli for testing details.\""},"bugs":{"url":"https://github.com/lodash/lodash/issues"},"_id":"lodash@4.17.4","_shasum":"78203a4d1c328ae1d86dca6460e369b57f4055ae","_from":".","_npmVersion":"2.15.11","_nodeVersion":"7.2.1","_npmUser":{"name":"jdalton","email":"john.david.dalton@gmail.com"},"dist":{"shasum":"78203a4d1c328ae1d86dca6460e369b57f4055ae","tarball":"http://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz"},"maintainers":[{"name":"jdalton","email":"john.david.dalton@gmail.com"},{"name":"mathias","email":"mathias@qiwi.be"}],"_npmOperationalInternal":{"host":"packages-12-west.internal.npmjs.com","tmp":"tmp/lodash-4.17.4.tgz_1483223634314_0.5332164366263896"},"directories":{}}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['0']
+      Cache-Control: [max-age=300]
+      Connection: [keep-alive]
+      Content-Length: ['1364']
+      Content-Type: [application/json]
+      Date: ['Mon, 25 Sep 2017 00:18:44 GMT']
+      Vary: ['Accept-Encoding, Accept']
+      Via: [1.1 varnish]
+      X-Cache: [HIT]
+      X-Cache-Hits: ['1']
+      X-Served-By: [cache-gru17135-GRU]
+      X-Timer: ['S1506298724.013390,VS0,VE792']
+      etag: ['"3RM5K5TNYUXO587NCACB8TTML"']
+      server: [CouchDB/1.5.0 (Erlang OTP/R16B03)]
+    status: {code: 200, message: OK}
+version: 1

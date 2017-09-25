@@ -26,6 +26,24 @@ def test_parses_valid_github_url_with_http_scheme():
     assert repo.name == 'license-cop'
 
 
+def test_parses_valid_github_url_with_git_scheme():
+    repo = GithubRepository.from_url('git://github.com/toptal/license-cop.git')
+    assert repo.owner == 'toptal'
+    assert repo.name == 'license-cop'
+
+
+def test_parses_valid_github_url_with_git_over_https_scheme():
+    repo = GithubRepository.from_url('git+https://github.com/toptal/license-cop.git')
+    assert repo.owner == 'toptal'
+    assert repo.name == 'license-cop'
+
+
+def test_parses_valid_github_url_with_git_over_http_scheme():
+    repo = GithubRepository.from_url('git+http://github.com/toptal/license-cop.git')
+    assert repo.owner == 'toptal'
+    assert repo.name == 'license-cop'
+
+
 def test_parses_valid_github_url_with_double_slash_prefix():
     repo = GithubRepository.from_url('//github.com/toptal/license-cop')
     assert repo.owner == 'toptal'
@@ -57,7 +75,19 @@ def test_parses_valid_github_url_with_www_prefix_but_no_scheme():
 
 
 def test_parses_valid_github_url_ignoring_extra_path():
-    repo = GithubRepository.from_url('https://github.com/toptal/license-cop/foobar')
+    repo = GithubRepository.from_url('https://github.com/toptal/license-cop/tree/master/packages/foobar')
+    assert repo.owner == 'toptal'
+    assert repo.name == 'license-cop'
+
+
+def test_parses_valid_github_url_from_issues_url():
+    repo = GithubRepository.from_url('https://github.com/toptal/license-cop/issues')
+    assert repo.owner == 'toptal'
+    assert repo.name == 'license-cop'
+
+
+def test_parses_valid_github_url_with_fragment():
+    repo = GithubRepository.from_url('https://github.com/toptal/license-cop#readme')
     assert repo.owner == 'toptal'
     assert repo.name == 'license-cop'
 
@@ -130,12 +160,18 @@ def test_read_directory(repository):
 
 
 @VCR.use_cassette('github_repository_with_license.yaml')
-def test_read_mit_license():
-    license = build_repository('ruby', 'rake').license
+def test_with_license():
+    license = build_repository('ruby', 'rake').license()
     assert license == 'MIT'
 
 
 @VCR.use_cassette('github_repository_without_license.yaml')
-def test_read_mit_license():
-    license = build_repository('toptal', 'license-cop-test-fixture').license
+def test_without_license():
+    license = build_repository('toptal', 'license-cop-test-fixture').license()
     assert license is None
+
+
+def test_str():
+    url = 'https://github.com/toptal/license-cop'
+    repo = GithubRepository.from_url(url)
+    assert str(repo) == url

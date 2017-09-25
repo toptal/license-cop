@@ -10,7 +10,7 @@ interactions:
     method: GET
     uri: https://api.github.com/repos/toptal/license-cop/contents/fixtures/empty_file
   response:
-    body: {string: '{"name":"empty_file","path":"fixtures/empty_file","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/empty_file?ref=master","html_url":"https://github.com/toptal/license-cop/blob/master/fixtures/empty_file","git_url":"https://api.github.com/repos/toptal/license-cop/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/toptal/license-cop/master/fixtures/empty_file?token=ADMStEpaihrrxAd_vIr-_ptTcN6K0EXbks5ZwkD4wA%3D%3D","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/empty_file?ref=master","git":"https://api.github.com/repos/toptal/license-cop/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/toptal/license-cop/blob/master/fixtures/empty_file"}}'}
+    body: {string: '{"name":"empty_file","path":"fixtures/empty_file","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/empty_file?ref=master","html_url":"https://github.com/toptal/license-cop/blob/master/fixtures/empty_file","git_url":"https://api.github.com/repos/toptal/license-cop/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/toptal/license-cop/master/fixtures/empty_file?token=ADMStODFIjYcs_Vtjr9t4UUvrrtZuIkgks5ZyEuWwA%3D%3D","type":"file","content":"","encoding":"base64","_links":{"self":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/empty_file?ref=master","git":"https://api.github.com/repos/toptal/license-cop/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/toptal/license-cop/blob/master/fixtures/empty_file"}}'}
     headers:
       Access-Control-Allow-Origin: ['*']
       Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
@@ -20,9 +20,9 @@ interactions:
       Content-Length: ['891']
       Content-Security-Policy: [default-src 'none']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Wed, 20 Sep 2017 10:19:40 GMT']
-      ETag: ['"02e35e6f0ab2bfec4804d8676da176ef"']
-      Last-Modified: ['Wed, 20 Sep 2017 10:04:32 GMT']
+      Date: ['Mon, 25 Sep 2017 00:18:34 GMT']
+      ETag: ['"c201546dbd4c318e61918103bd6edbf4"']
+      Last-Modified: ['Sun, 24 Sep 2017 19:15:54 GMT']
       Server: [GitHub.com]
       Status: [200 OK]
       Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
@@ -31,12 +31,12 @@ interactions:
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [deny]
       X-GitHub-Media-Type: [github.v3; format=json]
-      X-GitHub-Request-Id: ['9BB9:4392:A453B4B:14C2A140:59C240BC']
+      X-GitHub-Request-Id: ['8DE2:06C8:1AA4BAD:529F239:59C84B59']
       X-OAuth-Scopes: ['read:org, repo']
       X-RateLimit-Limit: ['5000']
-      X-RateLimit-Remaining: ['1359']
-      X-RateLimit-Reset: ['1505903651']
-      X-Runtime-rack: ['0.041119']
+      X-RateLimit-Remaining: ['4479']
+      X-RateLimit-Reset: ['1506301141']
+      X-Runtime-rack: ['0.039820']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
 version: 1

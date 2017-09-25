@@ -33,7 +33,7 @@ class RubyPackageRegistry(PackageRegistry):
                 return data
         raise PackageVersionNotFound('Could not find package version {0}:{1}.'.format(name, number))
 
-    def __extract_dependencies(self, data, kind):
+    def __parse_dependencies(self, data, kind):
         return list(map(
             lambda i: Dependency(i['name'], kind),
             data['dependencies'][
@@ -66,6 +66,6 @@ class RubyPackageRegistry(PackageRegistry):
             name,
             number,
             licenses=self.__determine_licenses(package_data, version_data),
-            runtime_dependencies=self.__extract_dependencies(package_data, Dependency.RUNTIME),
-            development_dependencies=self.__extract_dependencies(package_data, Dependency.DEVELOPMENT)
+            runtime_dependencies=self.__parse_dependencies(package_data, Dependency.RUNTIME),
+            development_dependencies=self.__parse_dependencies(package_data, Dependency.DEVELOPMENT)
         )

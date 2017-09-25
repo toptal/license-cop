@@ -8,7 +8,7 @@ interactions:
       User-Agent: [python-requests/2.18.4]
       authorization: [token FOOBAR]
     method: HEAD
-    uri: https://api.github.com/repos/toptal/platform/contents/Gemfile
+    uri: https://api.github.com/repos/toptal/license-cop/contents/package.json
   response:
     body: {string: ''}
     headers:
@@ -16,27 +16,23 @@ interactions:
       Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
           X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
           X-Poll-Interval']
-      Cache-Control: ['private, max-age=60, s-maxage=60']
-      Content-Length: ['10988']
+      Content-Length: ['77']
       Content-Security-Policy: [default-src 'none']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Wed, 20 Sep 2017 12:32:10 GMT']
-      ETag: ['"918c5bf1a3b194ef498644111207d819"']
-      Last-Modified: ['Wed, 20 Sep 2017 12:28:27 GMT']
+      Date: ['Mon, 25 Sep 2017 01:20:09 GMT']
       Server: [GitHub.com]
-      Status: [200 OK]
+      Status: [404 Not Found]
       Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
-      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
       X-Accepted-OAuth-Scopes: ['']
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [deny]
       X-GitHub-Media-Type: [github.v3; format=json]
-      X-GitHub-Request-Id: ['9F2B:438B:7F01D29:109D853F:59C25FC9']
+      X-GitHub-Request-Id: ['9DEB:06C4:12F5B09:27ACBDA:59C859C8']
       X-OAuth-Scopes: ['read:org, repo']
       X-RateLimit-Limit: ['5000']
-      X-RateLimit-Remaining: ['462']
-      X-RateLimit-Reset: ['1505910851']
-      X-Runtime-rack: ['0.114166']
+      X-RateLimit-Remaining: ['4439']
+      X-RateLimit-Reset: ['1506304741']
+      X-Runtime-rack: ['0.029163']
       X-XSS-Protection: [1; mode=block]
-    status: {code: 200, message: OK}
+    status: {code: 404, message: Not Found}
 version: 1

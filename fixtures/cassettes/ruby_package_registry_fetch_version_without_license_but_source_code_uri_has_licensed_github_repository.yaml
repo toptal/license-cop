@@ -9,7 +9,7 @@ interactions:
     method: GET
     uri: https://rubygems.org/api/v1/gems/method_source.json
   response:
-    body: {string: '{"name":"method_source","downloads":53368246,"version":"0.8.2","version_downloads":48837254,"platform":"ruby","authors":"John
+    body: {string: '{"name":"method_source","downloads":53522908,"version":"0.8.2","version_downloads":48991375,"platform":"ruby","authors":"John
         Mair (banisterfiend)","info":"retrieve the sourcecode for a method","licenses":[],"metadata":{},"sha":"c2e9d0f4ebefd6b37efe38fe2964337b1d315fe198cad850681fd2da0027b1bc","project_uri":"https://rubygems.org/gems/method_source","gem_uri":"https://rubygems.org/gems/method_source-0.8.2.gem","homepage_uri":"http://banisterfiend.wordpress.com","wiki_uri":"","documentation_uri":"http://www.rubydoc.info/gems/method_source/0.8.2","mailing_list_uri":"","source_code_uri":"https://github.com/banister/method_source","bug_tracker_uri":"","changelog_uri":null,"dependencies":{"development":[{"name":"bacon","requirements":"~\u003e
         1.1.0"},{"name":"rake","requirements":"~\u003e 0.9"}],"runtime":[]}}'}
     headers:
@@ -26,8 +26,8 @@ interactions:
           connect-src https://s3-us-west-2.amazonaws.com/rubygems-dumps/; frame-src
           https://ghbtns.com']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Thu, 21 Sep 2017 23:10:59 GMT']
-      ETag: ['"bc3244412cdda4b75c653ee47bc62217"']
+      Date: ['Mon, 25 Sep 2017 00:18:55 GMT']
+      ETag: ['"6046c80f8365df47b6f70466ff1ece36"']
       Server: [RubyGems.org]
       Strict-Transport-Security: [max-age=0]
       Vary: ['Accept-Encoding,Fastly-SSL']
@@ -37,10 +37,10 @@ interactions:
       X-Cache-Hits: ['0']
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [c6c3a520-eb4e-4326-bbb0-68c2836e42de]
-      X-Runtime: ['0.016984']
+      X-Request-Id: [fdb1b1e4-e415-48ab-81d7-b800ac7dde9a]
+      X-Runtime: ['0.017679']
       X-Served-By: [cache-gru17124-GRU]
-      X-Timer: ['S1506035460.714486,VS0,VE201']
+      X-Timer: ['S1506298735.420885,VS0,VE207']
       X-UA-Compatible: ['IE=Edge,chrome=1']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
@@ -55,104 +55,104 @@ interactions:
     uri: https://rubygems.org/api/v1/versions/method_source.json
   response:
     body: {string: '[{"authors":"John Mair (banisterfiend)","built_at":"2013-07-27T00:00:00.000Z","created_at":"2013-07-27T23:24:07.055Z","description":"retrieve
-        the sourcecode for a method","downloads_count":48837254,"metadata":{},"number":"0.8.2","summary":"retrieve
+        the sourcecode for a method","downloads_count":48991375,"metadata":{},"number":"0.8.2","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":[],"sha":"c2e9d0f4ebefd6b37efe38fe2964337b1d315fe198cad850681fd2da0027b1bc"},{"authors":"John
         Mair (banisterfiend)","built_at":"2013-07-27T00:00:00.000Z","created_at":"2013-07-27T22:02:19.987Z","description":"retrieve
-        the sourcecode for a method","downloads_count":1077,"metadata":{},"number":"0.8.2pre1","summary":"retrieve
+        the sourcecode for a method","downloads_count":1078,"metadata":{},"number":"0.8.2pre1","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":null,"prerelease":true,"licenses":[],"requirements":[],"sha":"1eb82f81173b51018393afde47032a9cbf980fc719828a653e35f3928f9282f6"},{"authors":"John
         Mair (banisterfiend)","built_at":"2012-10-17T00:00:00.000Z","created_at":"2012-10-17T02:54:51.199Z","description":"retrieve
-        the sourcecode for a method","downloads_count":3232182,"metadata":{},"number":"0.8.1","summary":"retrieve
+        the sourcecode for a method","downloads_count":3232556,"metadata":{},"number":"0.8.1","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"997746b618752232ba6a224cc701161702bca28237520241deabe7d1c128e95e"},{"authors":"John
         Mair (banisterfiend)","built_at":"2012-07-05T00:00:00.000Z","created_at":"2012-07-06T06:12:34.369Z","description":"retrieve
-        the sourcecode for a method","downloads_count":465518,"metadata":{},"number":"0.8","summary":"retrieve
+        the sourcecode for a method","downloads_count":465620,"metadata":{},"number":"0.8","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"246c3d1bd3ccf6f4d22a025d671826c722f7cadb24f06ea74f6975557bab2a81"},{"authors":"John
         Mair (banisterfiend)","built_at":"2012-07-02T00:00:00.000Z","created_at":"2012-07-02T07:34:07.266Z","description":"retrieve
-        the sourcecode for a method","downloads_count":1204,"metadata":{},"number":"0.8.pre.4","summary":"retrieve
+        the sourcecode for a method","downloads_count":1205,"metadata":{},"number":"0.8.pre.4","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":null,"prerelease":true,"licenses":null,"requirements":null,"sha":"103967d0e940ac0f5d4bb111554399ca44c2d2c0dc91b329997a5f217cec2a4e"},{"authors":"John
         Mair (banisterfiend)","built_at":"2012-06-29T00:00:00.000Z","created_at":"2012-06-29T09:00:37.621Z","description":"retrieve
-        the sourcecode for a method","downloads_count":1044,"metadata":{},"number":"0.8.pre.3","summary":"retrieve
+        the sourcecode for a method","downloads_count":1045,"metadata":{},"number":"0.8.pre.3","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":null,"prerelease":true,"licenses":null,"requirements":null,"sha":"2a36888b0b978154a02536b692cd30c00fe215f76631f0ec684b6d2c6b425358"},{"authors":"John
         Mair (banisterfiend)","built_at":"2012-06-03T00:00:00.000Z","created_at":"2012-06-04T01:39:02.102Z","description":"retrieve
-        the sourcecode for a method","downloads_count":1725,"metadata":{},"number":"0.8.pre.2","summary":"retrieve
+        the sourcecode for a method","downloads_count":1726,"metadata":{},"number":"0.8.pre.2","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":null,"prerelease":true,"licenses":null,"requirements":null,"sha":"83591f863f00af385a72fee2875f9a20f10414e2a35e9a41e946b8431c69c85c"},{"authors":"John
         Mair (banisterfiend)","built_at":"2012-06-03T00:00:00.000Z","created_at":"2012-06-04T01:34:19.144Z","description":"retrieve
-        the sourcecode for a method","downloads_count":1180,"metadata":{},"number":"0.8.pre.1","summary":"retrieve
+        the sourcecode for a method","downloads_count":1181,"metadata":{},"number":"0.8.pre.1","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e
         1.3.1","ruby_version":null,"prerelease":true,"licenses":null,"requirements":null,"sha":"90b38c3e06dba83e1f706839326418364480931966d05cc2c52cbf0093e22c58"},{"authors":"John
         Mair (banisterfiend)","built_at":"2012-02-29T00:00:00.000Z","created_at":"2012-02-28T15:04:02.719Z","description":"retrieve
-        the sourcecode for a method","downloads_count":507709,"metadata":{},"number":"0.7.1","summary":"retrieve
+        the sourcecode for a method","downloads_count":507742,"metadata":{},"number":"0.7.1","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"ec4183e5828f6bb97f9fe30c6caa4ec21ad69257eef7a70465dab4a8b336b2f5"},{"authors":"John
         Mair (banisterfiend)","built_at":"2012-01-01T00:00:00.000Z","created_at":"2012-01-01T05:15:42.225Z","description":"retrieve
-        the sourcecode for a method","downloads_count":77839,"metadata":{},"number":"0.7.0","summary":"retrieve
+        the sourcecode for a method","downloads_count":77840,"metadata":{},"number":"0.7.0","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"b19bed636fb1f0bb523c578d0fb045e90c3e218e9014a2c4171b8eb2a0ba6a01"},{"authors":"John
         Mair (banisterfiend)","built_at":"2011-10-26T00:00:00.000Z","created_at":"2011-10-26T06:37:50.569Z","description":"retrieve
-        the sourcecode for a method","downloads_count":121298,"metadata":{},"number":"0.6.7","summary":"retrieve
+        the sourcecode for a method","downloads_count":121304,"metadata":{},"number":"0.6.7","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"a756ec0a61dbedc95048c8acff641d8cb80075044fb67d2d9754a039bc8c072d"},{"authors":"John
         Mair (banisterfiend)","built_at":"2011-10-03T00:00:00.000Z","created_at":"2011-10-02T11:58:48.026Z","description":"retrieve
-        the sourcecode for a method","downloads_count":34685,"metadata":{},"number":"0.6.6","summary":"retrieve
+        the sourcecode for a method","downloads_count":34689,"metadata":{},"number":"0.6.6","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"88163260208af7c0ffee227f4ce593fc3b2e8c52fd47e041d2a0d5c5bdcb4c63"},{"authors":"John
         Mair (banisterfiend)","built_at":"2011-09-07T00:00:00.000Z","created_at":"2011-09-06T17:00:28.350Z","description":"retrieve
-        the sourcecode for a method","downloads_count":24965,"metadata":{},"number":"0.6.5","summary":"retrieve
+        the sourcecode for a method","downloads_count":24966,"metadata":{},"number":"0.6.5","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"c29bf3173ad848e6e1768d43232f12a3a95a287878b1ac23d3b99c5e75dc7d2b"},{"authors":"John
         Mair (banisterfiend)","built_at":"2011-06-09T00:00:00.000Z","created_at":"2011-06-08T18:03:05.306Z","description":"retrieve
-        the sourcecode for a method","downloads_count":33509,"metadata":{},"number":"0.6.0","summary":"retrieve
+        the sourcecode for a method","downloads_count":33514,"metadata":{},"number":"0.6.0","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"309e9daa9d75f0954e597c112a42d3e87f66fb9fcfb73b3970f9242ee29280b0"},{"authors":"John
         Mair (banisterfiend)","built_at":"2011-04-10T12:00:00.000Z","created_at":"2011-04-11T03:35:48.100Z","description":"retrieve
-        the sourcecode for a method","downloads_count":7733,"metadata":{},"number":"0.4.1","summary":"retrieve
+        the sourcecode for a method","downloads_count":7734,"metadata":{},"number":"0.4.1","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"59273f2316f6f35c3eaf90d651cc0a872677ddba630048613604308d82027bc1"},{"authors":"John
         Mair (banisterfiend)","built_at":"2011-03-15T11:00:00.000Z","created_at":"2011-03-16T07:32:09.468Z","description":"retrieve
-        the sourcecode for a method","downloads_count":2266,"metadata":{},"number":"0.4.0","summary":"retrieve
+        the sourcecode for a method","downloads_count":2267,"metadata":{},"number":"0.4.0","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"755c5ba1eab78ac54198bef6d310f07bc3b8ab54f27c52d16babcc383160c71f"},{"authors":"John
         Mair (banisterfiend)","built_at":"2011-03-04T11:00:00.000Z","created_at":"2011-03-04T11:52:00.560Z","description":"retrieve
-        the sourcecode for a method","downloads_count":1949,"metadata":{},"number":"0.3.5","summary":"retrieve
+        the sourcecode for a method","downloads_count":1950,"metadata":{},"number":"0.3.5","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"4d4150c28aaecce2abb74bdda524c3dc7d445a2a7e4a85f88ea219ac6f39a09e"},{"authors":"John
         Mair (banisterfiend)","built_at":"2011-02-27T11:00:00.000Z","created_at":"2011-02-27T15:56:41.019Z","description":"retrieve
-        the sourcecode for a method","downloads_count":2000,"metadata":{},"number":"0.3.4","summary":"retrieve
+        the sourcecode for a method","downloads_count":2001,"metadata":{},"number":"0.3.4","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"19200170df27a0f2f4d5dd5e003d175c0b346b69ea9dde85e715d5787edd9df4"},{"authors":"John
         Mair (banisterfiend)","built_at":"2011-02-27T11:00:00.000Z","created_at":"2011-02-27T15:12:51.162Z","description":"retrieve
-        the sourcecode for a method","downloads_count":1914,"metadata":{},"number":"0.3.3","summary":"retrieve
+        the sourcecode for a method","downloads_count":1915,"metadata":{},"number":"0.3.3","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"1812647ab07d7f1443d3f5a9ab42e10b3858ba672c5fb2099defda3358b93e5e"},{"authors":"John
         Mair (banisterfiend)","built_at":"2011-02-27T11:00:00.000Z","created_at":"2011-02-27T15:05:38.056Z","description":"retrieve
-        the sourcecode for a method","downloads_count":1914,"metadata":{},"number":"0.3.2","summary":"retrieve
+        the sourcecode for a method","downloads_count":1915,"metadata":{},"number":"0.3.2","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"42555959e1829a6854a124b4d01f3ea8291a2271cf6fa032b4aedecbcb566c75"},{"authors":"John
         Mair (banisterfiend)","built_at":"2010-12-17T11:00:00.000Z","created_at":"2010-12-18T06:45:57.054Z","description":"retrieve
-        the sourcecode for a method","downloads_count":2994,"metadata":{},"number":"0.2.0","summary":"retrieve
+        the sourcecode for a method","downloads_count":2995,"metadata":{},"number":"0.2.0","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"ab2cbe281d4bec9ff9bb075a0408db910501b59fbf9118ab791549cae170b3c9"},{"authors":"John
         Mair (banisterfiend)","built_at":"2010-12-16T11:00:00.000Z","created_at":"2010-12-17T02:36:48.969Z","description":"retrieve
-        the sourcecode for a method","downloads_count":2136,"metadata":{},"number":"0.1.4","summary":"retrieve
+        the sourcecode for a method","downloads_count":2137,"metadata":{},"number":"0.1.4","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"da786c92bad29841214eb0d5898fe2db3a47ad789b84eeb14fc22991d4f3b076"},{"authors":"John
         Mair (banisterfiend)","built_at":"2010-12-16T11:00:00.000Z","created_at":"2010-12-16T15:36:37.635Z","description":"retrieve
-        the sourcecode for a method","downloads_count":2109,"metadata":{},"number":"0.1.1","summary":"retrieve
+        the sourcecode for a method","downloads_count":2110,"metadata":{},"number":"0.1.1","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"f58ff0c322f5fb2552c7b083c9f888ae9a6a8a7900eafb621bd0cd4a2cc03908"},{"authors":"John
         Mair (banisterfiend)","built_at":"2010-12-16T11:00:00.000Z","created_at":"2010-12-16T14:00:04.869Z","description":"retrieve
-        the sourcecode for a method","downloads_count":2103,"metadata":{},"number":"0.1.0","summary":"retrieve
+        the sourcecode for a method","downloads_count":2104,"metadata":{},"number":"0.1.0","summary":"retrieve
         the sourcecode for a method","platform":"ruby","rubygems_version":"\u003e=
         0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"031a321bfd84029e3a45b9f5e19692b4d75e00062353abad02d94a5fa4e30003"}]'}
     headers:
       Accept-Ranges: [bytes]
-      Age: ['0']
+      Age: ['37']
       Cache-Control: ['max-age=0, public']
       Connection: [keep-alive]
       Content-Length: ['11342']
@@ -162,7 +162,7 @@ interactions:
           connect-src https://s3-us-west-2.amazonaws.com/rubygems-dumps/; frame-src
           https://ghbtns.com']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Thu, 21 Sep 2017 23:11:00 GMT']
+      Date: ['Mon, 25 Sep 2017 00:18:55 GMT']
       ETag: ['"7cf90d4a3fc324b22f20212293b5336f"']
       Last-Modified: ['Mon, 27 Mar 2017 03:45:14 GMT']
       Server: [RubyGems.org]
@@ -170,14 +170,14 @@ interactions:
       Vary: ['Accept-Encoding,Fastly-SSL']
       Via: [1.1 varnish]
       X-Backend: ['F_Rails 54.186.104.15:443']
-      X-Cache: [MISS]
-      X-Cache-Hits: ['0']
+      X-Cache: [HIT]
+      X-Cache-Hits: ['1']
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [6cb7b756-3ddb-41a1-beaf-eabbdc921f41]
-      X-Runtime: ['0.042862']
+      X-Request-Id: [15621c8d-a35c-4e8f-bdd1-ead0b027751e]
+      X-Runtime: ['0.054651']
       X-Served-By: [cache-gru17124-GRU]
-      X-Timer: ['S1506035460.938655,VS0,VE233']
+      X-Timer: ['S1506298736.694240,VS0,VE0']
       X-UA-Compatible: ['IE=Edge,chrome=1']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
@@ -193,7 +193,7 @@ interactions:
     uri: https://api.github.com/repos/banister/method_source
   response:
     body: {string: '{"id":1174143,"name":"method_source","full_name":"banister/method_source","owner":{"login":"banister","id":17518,"avatar_url":"https://avatars3.githubusercontent.com/u/17518?v=4","gravatar_id":"","url":"https://api.github.com/users/banister","html_url":"https://github.com/banister","followers_url":"https://api.github.com/users/banister/followers","following_url":"https://api.github.com/users/banister/following{/other_user}","gists_url":"https://api.github.com/users/banister/gists{/gist_id}","starred_url":"https://api.github.com/users/banister/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/banister/subscriptions","organizations_url":"https://api.github.com/users/banister/orgs","repos_url":"https://api.github.com/users/banister/repos","events_url":"https://api.github.com/users/banister/events{/privacy}","received_events_url":"https://api.github.com/users/banister/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/banister/method_source","description":"return
-        the sourcecode for a method","fork":false,"url":"https://api.github.com/repos/banister/method_source","forks_url":"https://api.github.com/repos/banister/method_source/forks","keys_url":"https://api.github.com/repos/banister/method_source/keys{/key_id}","collaborators_url":"https://api.github.com/repos/banister/method_source/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/banister/method_source/teams","hooks_url":"https://api.github.com/repos/banister/method_source/hooks","issue_events_url":"https://api.github.com/repos/banister/method_source/issues/events{/number}","events_url":"https://api.github.com/repos/banister/method_source/events","assignees_url":"https://api.github.com/repos/banister/method_source/assignees{/user}","branches_url":"https://api.github.com/repos/banister/method_source/branches{/branch}","tags_url":"https://api.github.com/repos/banister/method_source/tags","blobs_url":"https://api.github.com/repos/banister/method_source/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/banister/method_source/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/banister/method_source/git/refs{/sha}","trees_url":"https://api.github.com/repos/banister/method_source/git/trees{/sha}","statuses_url":"https://api.github.com/repos/banister/method_source/statuses/{sha}","languages_url":"https://api.github.com/repos/banister/method_source/languages","stargazers_url":"https://api.github.com/repos/banister/method_source/stargazers","contributors_url":"https://api.github.com/repos/banister/method_source/contributors","subscribers_url":"https://api.github.com/repos/banister/method_source/subscribers","subscription_url":"https://api.github.com/repos/banister/method_source/subscription","commits_url":"https://api.github.com/repos/banister/method_source/commits{/sha}","git_commits_url":"https://api.github.com/repos/banister/method_source/git/commits{/sha}","comments_url":"https://api.github.com/repos/banister/method_source/comments{/number}","issue_comment_url":"https://api.github.com/repos/banister/method_source/issues/comments{/number}","contents_url":"https://api.github.com/repos/banister/method_source/contents/{+path}","compare_url":"https://api.github.com/repos/banister/method_source/compare/{base}...{head}","merges_url":"https://api.github.com/repos/banister/method_source/merges","archive_url":"https://api.github.com/repos/banister/method_source/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/banister/method_source/downloads","issues_url":"https://api.github.com/repos/banister/method_source/issues{/number}","pulls_url":"https://api.github.com/repos/banister/method_source/pulls{/number}","milestones_url":"https://api.github.com/repos/banister/method_source/milestones{/number}","notifications_url":"https://api.github.com/repos/banister/method_source/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/banister/method_source/labels{/name}","releases_url":"https://api.github.com/repos/banister/method_source/releases{/id}","deployments_url":"https://api.github.com/repos/banister/method_source/deployments","created_at":"2010-12-16T13:43:39Z","updated_at":"2017-08-29T12:49:55Z","pushed_at":"2017-07-22T13:00:46Z","git_url":"git://github.com/banister/method_source.git","ssh_url":"git@github.com:banister/method_source.git","clone_url":"https://github.com/banister/method_source.git","svn_url":"https://github.com/banister/method_source","homepage":"","size":61,"stargazers_count":208,"watchers_count":208,"language":"Ruby","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":23,"mirror_url":null,"open_issues_count":24,"forks":23,"open_issues":24,"watchers":208,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true},"license":{"key":"mit","name":"MIT
+        the sourcecode for a method","fork":false,"url":"https://api.github.com/repos/banister/method_source","forks_url":"https://api.github.com/repos/banister/method_source/forks","keys_url":"https://api.github.com/repos/banister/method_source/keys{/key_id}","collaborators_url":"https://api.github.com/repos/banister/method_source/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/banister/method_source/teams","hooks_url":"https://api.github.com/repos/banister/method_source/hooks","issue_events_url":"https://api.github.com/repos/banister/method_source/issues/events{/number}","events_url":"https://api.github.com/repos/banister/method_source/events","assignees_url":"https://api.github.com/repos/banister/method_source/assignees{/user}","branches_url":"https://api.github.com/repos/banister/method_source/branches{/branch}","tags_url":"https://api.github.com/repos/banister/method_source/tags","blobs_url":"https://api.github.com/repos/banister/method_source/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/banister/method_source/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/banister/method_source/git/refs{/sha}","trees_url":"https://api.github.com/repos/banister/method_source/git/trees{/sha}","statuses_url":"https://api.github.com/repos/banister/method_source/statuses/{sha}","languages_url":"https://api.github.com/repos/banister/method_source/languages","stargazers_url":"https://api.github.com/repos/banister/method_source/stargazers","contributors_url":"https://api.github.com/repos/banister/method_source/contributors","subscribers_url":"https://api.github.com/repos/banister/method_source/subscribers","subscription_url":"https://api.github.com/repos/banister/method_source/subscription","commits_url":"https://api.github.com/repos/banister/method_source/commits{/sha}","git_commits_url":"https://api.github.com/repos/banister/method_source/git/commits{/sha}","comments_url":"https://api.github.com/repos/banister/method_source/comments{/number}","issue_comment_url":"https://api.github.com/repos/banister/method_source/issues/comments{/number}","contents_url":"https://api.github.com/repos/banister/method_source/contents/{+path}","compare_url":"https://api.github.com/repos/banister/method_source/compare/{base}...{head}","merges_url":"https://api.github.com/repos/banister/method_source/merges","archive_url":"https://api.github.com/repos/banister/method_source/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/banister/method_source/downloads","issues_url":"https://api.github.com/repos/banister/method_source/issues{/number}","pulls_url":"https://api.github.com/repos/banister/method_source/pulls{/number}","milestones_url":"https://api.github.com/repos/banister/method_source/milestones{/number}","notifications_url":"https://api.github.com/repos/banister/method_source/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/banister/method_source/labels{/name}","releases_url":"https://api.github.com/repos/banister/method_source/releases{/id}","deployments_url":"https://api.github.com/repos/banister/method_source/deployments","created_at":"2010-12-16T13:43:39Z","updated_at":"2017-09-23T12:52:51Z","pushed_at":"2017-07-22T13:00:46Z","git_url":"git://github.com/banister/method_source.git","ssh_url":"git@github.com:banister/method_source.git","clone_url":"https://github.com/banister/method_source.git","svn_url":"https://github.com/banister/method_source","homepage":"","size":61,"stargazers_count":209,"watchers_count":209,"language":"Ruby","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":23,"mirror_url":null,"open_issues_count":24,"forks":23,"open_issues":24,"watchers":209,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true},"license":{"key":"mit","name":"MIT
         License","spdx_id":"MIT","url":"https://api.github.com/licenses/mit","featured":true},"network_count":23,"subscribers_count":8}'}
     headers:
       Access-Control-Allow-Origin: ['*']
@@ -204,9 +204,9 @@ interactions:
       Content-Length: ['5045']
       Content-Security-Policy: [default-src 'none']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Thu, 21 Sep 2017 23:11:00 GMT']
-      ETag: ['"9d5595b0c0d0e9d345d48e5089bca902"']
-      Last-Modified: ['Tue, 29 Aug 2017 12:49:55 GMT']
+      Date: ['Mon, 25 Sep 2017 00:18:56 GMT']
+      ETag: ['"fd2f6f7c8e9733ea538655ae8cadd26c"']
+      Last-Modified: ['Sat, 23 Sep 2017 12:52:51 GMT']
       Server: [GitHub.com]
       Status: [200 OK]
       Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
@@ -215,12 +215,12 @@ interactions:
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [deny]
       X-GitHub-Media-Type: [github.drax-preview; format=json]
-      X-GitHub-Request-Id: ['34B0:2B20F:1FC9C31:49F0EFB:59C44704']
+      X-GitHub-Request-Id: ['9A36:06C5:1FE2859:3C6A6C2:59C84B6F']
       X-OAuth-Scopes: ['read:org, repo']
       X-RateLimit-Limit: ['5000']
-      X-RateLimit-Remaining: ['3998']
-      X-RateLimit-Reset: ['1506036960']
-      X-Runtime-rack: ['0.053680']
+      X-RateLimit-Remaining: ['4466']
+      X-RateLimit-Reset: ['1506301141']
+      X-Runtime-rack: ['0.045064']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
 version: 1

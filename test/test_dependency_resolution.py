@@ -12,15 +12,15 @@ def build_version(name, number='5.1.4', licenses=['MIT']):
         number=number,
         licenses=licenses,
         runtime_dependencies=[
-            Dependency('activesupport', Dependency.RUNTIME),
-            Dependency('activemodel', Dependency.RUNTIME),
-            Dependency('activerecord', Dependency.RUNTIME),
-            Dependency('builder', Dependency.RUNTIME),
-            Dependency('erubi', Dependency.RUNTIME)
+            Dependency.runtime('activesupport'),
+            Dependency.runtime('activemodel'),
+            Dependency.runtime('activerecord'),
+            Dependency.runtime('builder'),
+            Dependency.runtime('erubi')
         ],
         development_dependencies=[
-            Dependency('actionpack', Dependency.DEVELOPMENT),
-            Dependency('activemodel', Dependency.DEVELOPMENT)
+            Dependency.development('actionpack'),
+            Dependency.development('activemodel')
         ]
     )
 

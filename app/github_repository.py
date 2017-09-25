@@ -7,8 +7,9 @@ from urllib.parse import urlparse, urljoin
 from app.require_environment import *
 
 
-REPOSITORY_URI = 'https://api.github.com/repos/{0}/{1}'
-CONTENTS_URI = 'https://api.github.com/repos/{0}/{1}/contents/{2}'
+USER_REPOSITORY_URI = 'https://github.com/{0}/{1}'
+API_REPOSITORY_URI = 'https://api.github.com/repos/{0}/{1}'
+API_CONTENTS_URI = 'https://api.github.com/repos/{0}/{1}/contents/{2}'
 
 # The Licenses API is currently available for developers to preview.
 # During the preview period, the API may change without advance notice.
@@ -18,7 +19,7 @@ PREVIEW_MEDIA_TYPE = 'application/vnd.github.drax-preview+json'
 
 
 TOKEN = require_environment('GITHUB_TOKEN')
-URL_REGEX = '^((http:|https:)?//)?(www\.)?github.com/(?P<owner>[\w\-]+)/(?P<name>[\w\-]+)'
+URL_REGEX = '^((git[+:])?(http:|https:)?//)?(www\.)?github.com/(?P<owner>[\w\-]+)/(?P<name>[\w\-]+)(.git)?'
 
 
 class GithubRepository:
@@ -29,14 +30,8 @@ class GithubRepository:
         if not http_compression:
             self.__session.headers.update({'Accept-Encoding': 'identity'})
 
-        self.__owner = owner
-        self.__name = name
-
-    @property
-    def owner(self): return self.__owner
-
-    @property
-    def name(self): return self.__name
+        self.owner = owner
+        self.name = name
 
     @staticmethod
     def from_url(url, token=TOKEN, http_compression=True):
@@ -66,7 +61,6 @@ class GithubRepository:
             raise Exception('Path "{0}" is not a file.'.format(path))
         return self.__decode_text_from_base64(data['content'])
 
-    @property
     def license(self):
         response = self.__session.get(
             self.__repository_uri(),
@@ -83,7 +77,10 @@ class GithubRepository:
         return license['spdx_id'] if license else None
 
     def __contents_uri(self, path):
-        return CONTENTS_URI.format(self.__owner, self.__name, path)
+        return API_CONTENTS_URI.format(self.owner, self.name, path)
 
     def __repository_uri(self):
-        return REPOSITORY_URI.format(self.__owner, self.__name)
+        return API_REPOSITORY_URI.format(self.owner, self.name)
+
+    def __str__(self):
+        return USER_REPOSITORY_URI.format(self.owner, self.name)

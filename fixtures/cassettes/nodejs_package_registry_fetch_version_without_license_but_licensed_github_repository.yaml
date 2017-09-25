@@ -1,0 +1,74 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://registry.npmjs.org/babel-core/4.2.1
+  response:
+    body: {string: '{"name":"babel-core","description":"Turn ES6 code into readable
+        vanilla ES5 with source maps","version":"4.2.1","author":{"name":"Sebastian
+        McKenzie","email":"sebmck@gmail.com"},"homepage":"https://babeljs.io/","repository":{"type":"git","url":"https://github.com/babel/babel"},"main":"lib/babel/api/node.js","browser":{"./lib/babel/api/register/node.js":"./lib/babel/api/register/browser.js"},"keywords":["harmony","classes","modules","let","const","var","es6","transpile","transpiler","6to5","babel"],"dependencies":{"acorn-babel":"0.11.1-33","ast-types":"~0.6.1","chalk":"^0.5.1","commander":"^2.6.0","core-js":"^0.5.4","debug":"^2.1.1","detect-indent":"^3.0.0","estraverse":"^1.9.1","esutils":"^1.1.6","fs-readdir-recursive":"^0.1.0","globals":"^6.2.0","is-integer":"^1.0.4","js-tokenizer":"^1.3.3","leven":"^1.0.1","lodash":"^3.2.0","output-file-sync":"^1.1.0","path-is-absolute":"^1.0.0","private":"^0.1.6","regenerator-babel":"0.8.10-2","regexpu":"^1.1.1","repeating":"^1.1.2","shebang-regex":"^1.0.0","slash":"^1.0.0","source-map":"^0.1.43","source-map-support":"^0.2.9","source-map-to-comment":"^1.0.0","trim-right":"^1.0.0"},"gitHead":"45553f1fb78eb8e71925d7f65c74e8afc537051e","bugs":{"url":"https://github.com/babel/babel/issues"},"_id":"babel-core@4.2.1","scripts":{},"_shasum":"d7ba1f4c37b0c2026ef4505d2900ea7a71607ac0","_from":".","_npmVersion":"2.1.18","_nodeVersion":"1.0.2","_npmUser":{"name":"sebmck","email":"sebmck@gmail.com"},"maintainers":[{"name":"sebmck","email":"sebmck@gmail.com"}],"dist":{"shasum":"d7ba1f4c37b0c2026ef4505d2900ea7a71607ac0","tarball":"http://registry.npmjs.org/babel-core/-/babel-core-4.2.1.tgz"},"directories":{}}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['0']
+      Cache-Control: [max-age=300]
+      Connection: [keep-alive]
+      Content-Length: ['1659']
+      Content-Type: [application/json]
+      Date: ['Mon, 25 Sep 2017 00:18:41 GMT']
+      Vary: ['Accept-Encoding, Accept']
+      Via: [1.1 varnish]
+      X-Cache: [HIT]
+      X-Cache-Hits: ['1']
+      X-Served-By: [cache-gru17121-GRU]
+      X-Timer: ['S1506298721.463826,VS0,VE202']
+      etag: ['"BSYVMGCEA4S3FGPXUPCZJCO3M"']
+      server: [CouchDB/1.5.0 (Erlang OTP/R16B03)]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: [application/vnd.github.drax-preview+json]
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/babel/babel
+  response:
+    body: {string: '{"id":24560307,"name":"babel","full_name":"babel/babel","owner":{"login":"babel","id":9637642,"avatar_url":"https://avatars1.githubusercontent.com/u/9637642?v=4","gravatar_id":"","url":"https://api.github.com/users/babel","html_url":"https://github.com/babel","followers_url":"https://api.github.com/users/babel/followers","following_url":"https://api.github.com/users/babel/following{/other_user}","gists_url":"https://api.github.com/users/babel/gists{/gist_id}","starred_url":"https://api.github.com/users/babel/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/babel/subscriptions","organizations_url":"https://api.github.com/users/babel/orgs","repos_url":"https://api.github.com/users/babel/repos","events_url":"https://api.github.com/users/babel/events{/privacy}","received_events_url":"https://api.github.com/users/babel/received_events","type":"Organization","site_admin":false},"private":false,"html_url":"https://github.com/babel/babel","description":":tropical_fish:
+        Babel is a compiler for writing next generation JavaScript.","fork":false,"url":"https://api.github.com/repos/babel/babel","forks_url":"https://api.github.com/repos/babel/babel/forks","keys_url":"https://api.github.com/repos/babel/babel/keys{/key_id}","collaborators_url":"https://api.github.com/repos/babel/babel/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/babel/babel/teams","hooks_url":"https://api.github.com/repos/babel/babel/hooks","issue_events_url":"https://api.github.com/repos/babel/babel/issues/events{/number}","events_url":"https://api.github.com/repos/babel/babel/events","assignees_url":"https://api.github.com/repos/babel/babel/assignees{/user}","branches_url":"https://api.github.com/repos/babel/babel/branches{/branch}","tags_url":"https://api.github.com/repos/babel/babel/tags","blobs_url":"https://api.github.com/repos/babel/babel/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/babel/babel/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/babel/babel/git/refs{/sha}","trees_url":"https://api.github.com/repos/babel/babel/git/trees{/sha}","statuses_url":"https://api.github.com/repos/babel/babel/statuses/{sha}","languages_url":"https://api.github.com/repos/babel/babel/languages","stargazers_url":"https://api.github.com/repos/babel/babel/stargazers","contributors_url":"https://api.github.com/repos/babel/babel/contributors","subscribers_url":"https://api.github.com/repos/babel/babel/subscribers","subscription_url":"https://api.github.com/repos/babel/babel/subscription","commits_url":"https://api.github.com/repos/babel/babel/commits{/sha}","git_commits_url":"https://api.github.com/repos/babel/babel/git/commits{/sha}","comments_url":"https://api.github.com/repos/babel/babel/comments{/number}","issue_comment_url":"https://api.github.com/repos/babel/babel/issues/comments{/number}","contents_url":"https://api.github.com/repos/babel/babel/contents/{+path}","compare_url":"https://api.github.com/repos/babel/babel/compare/{base}...{head}","merges_url":"https://api.github.com/repos/babel/babel/merges","archive_url":"https://api.github.com/repos/babel/babel/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/babel/babel/downloads","issues_url":"https://api.github.com/repos/babel/babel/issues{/number}","pulls_url":"https://api.github.com/repos/babel/babel/pulls{/number}","milestones_url":"https://api.github.com/repos/babel/babel/milestones{/number}","notifications_url":"https://api.github.com/repos/babel/babel/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/babel/babel/labels{/name}","releases_url":"https://api.github.com/repos/babel/babel/releases{/id}","deployments_url":"https://api.github.com/repos/babel/babel/deployments","created_at":"2014-09-28T13:38:23Z","updated_at":"2017-09-24T18:48:33Z","pushed_at":"2017-09-23T18:25:30Z","git_url":"git://github.com/babel/babel.git","ssh_url":"git@github.com:babel/babel.git","clone_url":"https://github.com/babel/babel.git","svn_url":"https://github.com/babel/babel","homepage":"https://babeljs.io/","size":19145,"stargazers_count":22641,"watchers_count":22641,"language":"JavaScript","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":2104,"mirror_url":null,"open_issues_count":311,"forks":2104,"open_issues":311,"watchers":22641,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true},"license":{"key":"mit","name":"MIT
+        License","spdx_id":"MIT","url":"https://api.github.com/licenses/mit","featured":true},"organization":{"login":"babel","id":9637642,"avatar_url":"https://avatars1.githubusercontent.com/u/9637642?v=4","gravatar_id":"","url":"https://api.github.com/users/babel","html_url":"https://github.com/babel","followers_url":"https://api.github.com/users/babel/followers","following_url":"https://api.github.com/users/babel/following{/other_user}","gists_url":"https://api.github.com/users/babel/gists{/gist_id}","starred_url":"https://api.github.com/users/babel/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/babel/subscriptions","organizations_url":"https://api.github.com/users/babel/orgs","repos_url":"https://api.github.com/users/babel/repos","events_url":"https://api.github.com/users/babel/events{/privacy}","received_events_url":"https://api.github.com/users/babel/received_events","type":"Organization","site_admin":false},"network_count":2104,"subscribers_count":703}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['5487']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Mon, 25 Sep 2017 00:18:42 GMT']
+      ETag: ['"d274a7651eb8d60d72ccc0049dd695b1"']
+      Last-Modified: ['Sun, 24 Sep 2017 18:48:33 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: [repo]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.drax-preview; format=json]
+      X-GitHub-Request-Id: ['BDB6:06C6:2E01502:5074454:59C84B61']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4474']
+      X-RateLimit-Reset: ['1506301141']
+      X-Runtime-rack: ['0.048907']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1

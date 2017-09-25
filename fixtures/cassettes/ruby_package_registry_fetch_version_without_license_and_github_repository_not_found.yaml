@@ -9,7 +9,7 @@ interactions:
     method: GET
     uri: https://rubygems.org/api/v1/gems/rspectacular.json
   response:
-    body: {string: '{"name":"rspectacular","downloads":102011,"version":"0.70.7","version_downloads":2446,"platform":"ruby","authors":"jfelchner","info":"We
+    body: {string: '{"name":"rspectacular","downloads":102134,"version":"0.70.7","version_downloads":2460,"platform":"ruby","authors":"jfelchner","info":"We
         rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","licenses":[],"metadata":{},"sha":"c2dc854ad3c4ed8a745971003df5e9db4aaefb7fe9251b664510c6ea59e10fd4","project_uri":"https://rubygems.org/gems/rspectacular","gem_uri":"https://rubygems.org/gems/rspectacular-0.70.7.gem","homepage_uri":"https://github.com/jfelchner/rspectacular","wiki_uri":null,"documentation_uri":"http://www.rubydoc.info/gems/rspectacular/0.70.7","mailing_list_uri":null,"source_code_uri":null,"bug_tracker_uri":null,"changelog_uri":null,"dependencies":{"development":[],"runtime":[{"name":"fuubar","requirements":"~\u003e
         2.0"},{"name":"rspec","requirements":"~\u003e 3.1"}]}}'}
     headers:
@@ -26,8 +26,8 @@ interactions:
           connect-src https://s3-us-west-2.amazonaws.com/rubygems-dumps/; frame-src
           https://ghbtns.com']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 22 Sep 2017 05:40:16 GMT']
-      ETag: ['"e7380c7e010fa9cad6bcd45a7492c2c4"']
+      Date: ['Mon, 25 Sep 2017 00:18:56 GMT']
+      ETag: ['"6f260e1044c03a160346b8064069793e"']
       Server: [RubyGems.org]
       Strict-Transport-Security: [max-age=0]
       Vary: ['Accept-Encoding,Fastly-SSL']
@@ -37,10 +37,10 @@ interactions:
       X-Cache-Hits: ['0']
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [9f4ceb8d-cf9b-4973-81c0-bf9c2e1a829e]
-      X-Runtime: ['0.013504']
-      X-Served-By: [cache-gru17131-GRU]
-      X-Timer: ['S1506058816.028015,VS0,VE203']
+      X-Request-Id: [61734ffe-242b-4f52-87c6-15c97747b284]
+      X-Runtime: ['0.012638']
+      X-Served-By: [cache-gru17121-GRU]
+      X-Timer: ['S1506298737.622685,VS0,VE199']
       X-UA-Compatible: ['IE=Edge,chrome=1']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
@@ -55,272 +55,272 @@ interactions:
     uri: https://rubygems.org/api/v1/versions/rspectacular.json
   response:
     body: {string: '[{"authors":"jfelchner","built_at":"2016-05-11T00:00:00.000Z","created_at":"2016-05-12T03:41:10.347Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":2446,"metadata":{},"number":"0.70.7","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":2460,"metadata":{},"number":"0.70.7","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"c2dc854ad3c4ed8a745971003df5e9db4aaefb7fe9251b664510c6ea59e10fd4"},{"authors":"jfelchner","built_at":"2016-04-24T00:00:00.000Z","created_at":"2016-04-24T21:28:46.194Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":791,"metadata":{},"number":"0.70.6","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":792,"metadata":{},"number":"0.70.6","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"4503844dbc9423272b40708debea824a631b577e746f3a333e477f2de9e60b2e"},{"authors":"jfelchner","built_at":"2016-04-24T00:00:00.000Z","created_at":"2016-04-24T20:45:31.607Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":409,"metadata":{},"number":"0.70.5","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":410,"metadata":{},"number":"0.70.5","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"62a9a814b863fedb2d400b5dc73e6b71fe7772e122f81dcee63953651a4afe77"},{"authors":"jfelchner","built_at":"2016-04-24T00:00:00.000Z","created_at":"2016-04-24T20:25:08.917Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":399,"metadata":{},"number":"0.70.4","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":400,"metadata":{},"number":"0.70.4","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"c69ca14eb2d5bf3ece37d5ffb1e00ecdb0723a012ac7a56348c5a3f6b4e977cf"},{"authors":"jfelchner","built_at":"2016-04-24T00:00:00.000Z","created_at":"2016-04-24T20:15:33.076Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":936,"metadata":{},"number":"0.70.3","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":940,"metadata":{},"number":"0.70.3","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"065581ee6e6322d18fd266608345cd6fda75582eb232f4a24086db3fa309e5e0"},{"authors":"jfelchner","built_at":"2016-04-24T00:00:00.000Z","created_at":"2016-04-24T04:00:44.358Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":415,"metadata":{},"number":"0.70.2","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":416,"metadata":{},"number":"0.70.2","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"5d87ca0ccdbe098b92284651032165243c8673801f561c9fe53e11f0fea3e14b"},{"authors":"jfelchner","built_at":"2016-04-24T00:00:00.000Z","created_at":"2016-04-24T02:01:36.879Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":396,"metadata":{},"number":"0.70.1","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":398,"metadata":{},"number":"0.70.1","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":["MIT"],"requirements":[],"sha":"c159cb750aaeb1772e78dd85f2419286b71b7c069e840c4e9c7776998af54d77"},{"authors":"jfelchner","built_at":"2015-11-01T00:00:00.000Z","created_at":"2015-11-01T23:06:34.308Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":830,"metadata":{},"number":"0.70.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":831,"metadata":{},"number":"0.70.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"51784e8125d45e69c26f47e668a1f3c045df87c42ebb258e23c3c7bc7207caa9"},{"authors":"jfelchner","built_at":"2015-10-28T00:00:00.000Z","created_at":"2015-10-28T15:53:11.294Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":644,"metadata":{},"number":"0.69.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":645,"metadata":{},"number":"0.69.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"3cf172e25e9b0028208b1683a4faba2b6df2284c2d566783c6807dc3a8391cd0"},{"authors":"jfelchner","built_at":"2015-10-21T00:00:00.000Z","created_at":"2015-10-21T04:20:28.613Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":674,"metadata":{},"number":"0.68.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":675,"metadata":{},"number":"0.68.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"b0432a85d318a6875e7552c500a768e978a86a2ff55846b84299e9458e3a5b1b"},{"authors":"jfelchner","built_at":"2015-10-20T00:00:00.000Z","created_at":"2015-10-20T22:05:01.772Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":643,"metadata":{},"number":"0.67.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":644,"metadata":{},"number":"0.67.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"f0a94edecb895998c2195e655bc7cb2a1d24931989ae375a6611e86c1c3b74a3"},{"authors":"jfelchner","built_at":"2015-10-20T00:00:00.000Z","created_at":"2015-10-20T21:24:49.624Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":623,"metadata":{},"number":"0.66.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":624,"metadata":{},"number":"0.66.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"b3ed69fba9979b51f927d3f6e65d1603464e61d818d8513e84d95bab57c89956"},{"authors":"jfelchner","built_at":"2015-10-14T00:00:00.000Z","created_at":"2015-10-14T21:03:01.152Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":659,"metadata":{},"number":"0.65.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":660,"metadata":{},"number":"0.65.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"2dbddb0384c6a0388471315306561d7b2da9f59a2f095da9996a5b2bcc4c262c"},{"authors":"jfelchner","built_at":"2015-08-11T00:00:00.000Z","created_at":"2015-08-11T07:26:25.173Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1102,"metadata":{},"number":"0.64.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1104,"metadata":{},"number":"0.64.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"280a50e4dc11198ccd68873ddd365c460ebbd3335e96ed842f331d731bb74412"},{"authors":"jfelchner","built_at":"2015-07-23T00:00:00.000Z","created_at":"2015-07-23T21:14:25.242Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":740,"metadata":{},"number":"0.63.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":741,"metadata":{},"number":"0.63.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"2bd2ffda1727f789815fdc8bc3e6833de0b13d050eee09e1e82218fd20cdb51d"},{"authors":"jfelchner","built_at":"2015-03-26T00:00:00.000Z","created_at":"2015-03-26T08:19:08.242Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":883,"metadata":{},"number":"0.62.1","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":885,"metadata":{},"number":"0.62.1","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"2a5e394b96f56ad5f96dbd491666ea96d3ec542815cf3fc6b206bb14141508ca"},{"authors":"jfelchner","built_at":"2015-03-17T00:00:00.000Z","created_at":"2015-03-17T20:51:15.736Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":741,"metadata":{},"number":"0.62.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":742,"metadata":{},"number":"0.62.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"e824f5bd8ea2153f66cec2da52562c55d0fa61e22a8015981f949439c1b99134"},{"authors":"jfelchner","built_at":"2015-02-21T00:00:00.000Z","created_at":"2015-02-22T04:24:21.031Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":762,"metadata":{},"number":"0.61.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":763,"metadata":{},"number":"0.61.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"fffd8099063f110244314aa87e20058899d8dca15378eb4de21f740c2c0c4f82"},{"authors":"jfelchner","built_at":"2015-02-12T00:00:00.000Z","created_at":"2015-02-12T07:30:50.564Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":807,"metadata":{},"number":"0.60.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":808,"metadata":{},"number":"0.60.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"cd920f4265d37127469d2b90084cf95f504239a09d739d637d450d578c93fa90"},{"authors":"jfelchner","built_at":"2015-02-07T00:00:00.000Z","created_at":"2015-02-07T06:07:09.277Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":800,"metadata":{},"number":"0.59.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":801,"metadata":{},"number":"0.59.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"eb70bcb24adaa03dfe7129d0195df8d3ec37fcefc66e6d51484fd84e356ebf8a"},{"authors":"jfelchner","built_at":"2015-02-06T00:00:00.000Z","created_at":"2015-02-07T04:42:06.901Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":798,"metadata":{},"number":"0.58.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":799,"metadata":{},"number":"0.58.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"44a9fb6a11051707181e7e6ad2461213ef819d4feb78c51befa457a1a1b76632"},{"authors":"jfelchner","built_at":"2015-01-27T00:00:00.000Z","created_at":"2015-01-27T23:29:09.226Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":838,"metadata":{},"number":"0.57.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":839,"metadata":{},"number":"0.57.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"86df7c463a50aaff9fe4b144a59a0017b1417f18c4ecb9a9e48f646c63edd6df"},{"authors":"jfelchner","built_at":"2015-01-27T00:00:00.000Z","created_at":"2015-01-27T20:30:32.246Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":795,"metadata":{},"number":"0.56.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":796,"metadata":{},"number":"0.56.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"e78255fe1f0c57fdbe7844bd4261f19b07c05d3d1f791d18306c6bdd6f8741a1"},{"authors":"jfelchner","built_at":"2015-01-15T00:00:00.000Z","created_at":"2015-01-16T00:03:33.962Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":869,"metadata":{},"number":"0.55.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":870,"metadata":{},"number":"0.55.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"5c87e79b41fbcd47c0f88e4cdc7b0792e584c2b89ecec11ce396fc8efa0bb341"},{"authors":"jfelchner","built_at":"2014-11-07T00:00:00.000Z","created_at":"2014-11-07T21:07:00.392Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":887,"metadata":{},"number":"0.54.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":888,"metadata":{},"number":"0.54.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"51583572d3226bdc435457094b2d677ed6e7766593600faf7c7e64655a425466"},{"authors":"jfelchner","built_at":"2014-11-04T00:00:00.000Z","created_at":"2014-11-05T00:31:30.594Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":848,"metadata":{},"number":"0.53.1","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":849,"metadata":{},"number":"0.53.1","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"f0da2e12a3106f9b56e58ed32e8283dabf2c2b385f301f5e572a310dc728985d"},{"authors":"jfelchner","built_at":"2014-10-21T00:00:00.000Z","created_at":"2014-10-22T00:14:23.431Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":855,"metadata":{},"number":"0.53.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":856,"metadata":{},"number":"0.53.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"1ab086f1da743cb0daae7df708cb83cb4b12ebc6c82a0096ca7c1f46318ea285"},{"authors":"jfelchner","built_at":"2014-10-15T00:00:00.000Z","created_at":"2014-10-16T04:54:53.864Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":869,"metadata":{},"number":"0.52.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":870,"metadata":{},"number":"0.52.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"374b5e089fc8a6874defebfcbd1f41c4ddb5e699b3d178e59895cb07be30ed5d"},{"authors":"jfelchner","built_at":"2014-10-15T00:00:00.000Z","created_at":"2014-10-15T21:31:43.595Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":872,"metadata":{},"number":"0.51.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":873,"metadata":{},"number":"0.51.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"0ef04488260bf17051bff859ded2ef3689685a16b7cd8d32b43d40badf04852c"},{"authors":"jfelchner","built_at":"2014-08-03T00:00:00.000Z","created_at":"2014-08-03T21:53:55.504Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1019,"metadata":{},"number":"0.50.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1020,"metadata":{},"number":"0.50.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"9daf0e23ba32b9bf13537cf4511aa361c035ccb6eef9878c4da33bb396e2a505"},{"authors":"jfelchner","built_at":"2014-08-01T00:00:00.000Z","created_at":"2014-08-01T07:46:12.407Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":960,"metadata":{},"number":"0.49.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":961,"metadata":{},"number":"0.49.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"092054e47d41e89dab7050bfabc30f74d2438e2a36b9af1ea0ef786cfabb5c30"},{"authors":"jfelchner","built_at":"2014-07-31T00:00:00.000Z","created_at":"2014-08-01T03:17:37.493Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":929,"metadata":{},"number":"0.48.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":930,"metadata":{},"number":"0.48.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"d43a2b7100688619a204c337448023b7821797d0d92376be30cf0fb414eb48cd"},{"authors":"jfelchner","built_at":"2014-06-29T00:00:00.000Z","created_at":"2014-06-29T23:43:01.399Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1589,"metadata":{},"number":"0.47.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1590,"metadata":{},"number":"0.47.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"5980f353ebd1345b32c1042c3b1167e10c14afb3dbfc326eaf013f4a766c7f34"},{"authors":"jfelchner","built_at":"2014-06-25T00:00:00.000Z","created_at":"2014-06-25T20:51:58.367Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":922,"metadata":{},"number":"0.46.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":923,"metadata":{},"number":"0.46.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"5999708e8b3df47cc3f4adceb044d2a45de4c4e051cd64b9b5384fdc8bcece80"},{"authors":"jfelchner","built_at":"2014-06-20T00:00:00.000Z","created_at":"2014-06-21T03:09:39.189Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":955,"metadata":{},"number":"0.45.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":956,"metadata":{},"number":"0.45.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"86556755b513325a01a1d6d2fa5918ee726a5a5523596e0f666f797310877cbc"},{"authors":"jfelchner","built_at":"2014-06-15T00:00:00.000Z","created_at":"2014-06-15T22:03:30.468Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":952,"metadata":{},"number":"0.44.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":953,"metadata":{},"number":"0.44.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"c5cda85561ef502542284cbc1842dc9b639e120770a5b7af4adb16a9b2d3119e"},{"authors":"jfelchner","built_at":"2014-06-14T00:00:00.000Z","created_at":"2014-06-14T23:45:22.601Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":924,"metadata":{},"number":"0.43.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":926,"metadata":{},"number":"0.43.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"d10af753de5a991848114a131930c1627e01bd435480ddbffc072062739d7dc1"},{"authors":"jfelchner","built_at":"2014-06-14T00:00:00.000Z","created_at":"2014-06-14T23:05:17.945Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":911,"metadata":{},"number":"0.42.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":912,"metadata":{},"number":"0.42.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"f8be39e03b0db52b3d18ef5f524c1262562d78743bebc6929a2e819894695277"},{"authors":"jfelchner","built_at":"2014-06-14T00:00:00.000Z","created_at":"2014-06-14T22:39:39.782Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":919,"metadata":{},"number":"0.41.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":920,"metadata":{},"number":"0.41.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"f9e5962c606a16001be7f18428b9a1f847779af9915d2f489b5a4288d21df246"},{"authors":"jfelchner","built_at":"2014-06-14T00:00:00.000Z","created_at":"2014-06-14T21:34:17.026Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":923,"metadata":{},"number":"0.40.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":924,"metadata":{},"number":"0.40.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"9cce87ded7a28c54e7b6be7325b4c841915ae21bbcf3dbc4959edf32dc6d9acd"},{"authors":"jfelchner","built_at":"2014-06-08T00:00:00.000Z","created_at":"2014-06-08T19:46:04.626Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1069,"metadata":{},"number":"0.39.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1070,"metadata":{},"number":"0.39.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"824896063e3946813997ebd41902c665aeb7ae514a13bcd595917733c10e4b15"},{"authors":"jfelchner","built_at":"2014-05-22T00:00:00.000Z","created_at":"2014-05-22T21:17:29.259Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1009,"metadata":{},"number":"0.38.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1010,"metadata":{},"number":"0.38.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"0bde30c840d3edcff0d9764aa76657ed5e40d658eb2c047a6223ecc765e1978e"},{"authors":"jfelchner","built_at":"2014-05-20T00:00:00.000Z","created_at":"2014-05-20T22:42:09.234Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1083,"metadata":{},"number":"0.37.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1084,"metadata":{},"number":"0.37.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"feb65e0fc0d33e418bf67f29af6e8b99a9565cae760571bb9e76fbe51f357137"},{"authors":"jfelchner","built_at":"2014-05-17T00:00:00.000Z","created_at":"2014-05-18T04:11:55.209Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1017,"metadata":{},"number":"0.36.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1018,"metadata":{},"number":"0.36.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"c2c18fe17108f0bdf3492db189b0e7c2bdfab7ce957ba2ff80f382084fb0df42"},{"authors":"jfelchner","built_at":"2014-05-17T00:00:00.000Z","created_at":"2014-05-18T03:52:31.175Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1007,"metadata":{},"number":"0.35.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1009,"metadata":{},"number":"0.35.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"e82a9091c8702935f70d720bcd388a5a1e142bd167a6e41ee6894c2b189c67fb"},{"authors":"jfelchner","built_at":"2014-05-08T00:00:00.000Z","created_at":"2014-05-08T23:50:54.498Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1101,"metadata":{},"number":"0.34.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1102,"metadata":{},"number":"0.34.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"cc933b1cee580ba1da8fe1359e283fbc7e814ca1668bd33fd4169b066777d9bc"},{"authors":"jfelchner","built_at":"2014-05-01T00:00:00.000Z","created_at":"2014-05-01T23:59:12.832Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1130,"metadata":{},"number":"0.33.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1131,"metadata":{},"number":"0.33.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"b85b4c6f93676d0219aba6b1e70a3609acd03a6b6a0e036c0734993409e98792"},{"authors":"jfelchner","built_at":"2014-04-30T00:00:00.000Z","created_at":"2014-05-01T03:57:53.238Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1151,"metadata":{},"number":"0.31.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1152,"metadata":{},"number":"0.31.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"4fdcd69436bf59d0f088544d6fb2f2391d64ab288396e00c1d0e017ae27bd9b1"},{"authors":"jfelchner","built_at":"2014-04-29T00:00:00.000Z","created_at":"2014-04-29T21:16:12.805Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1114,"metadata":{},"number":"0.30.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1115,"metadata":{},"number":"0.30.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"ef568b26cf376ef9a07d8024977885bd0148f17b586ae83880aea6ffd3d21993"},{"authors":"jfelchner","built_at":"2014-04-25T00:00:00.000Z","created_at":"2014-04-26T02:56:42.250Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":970,"metadata":{},"number":"0.29.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":972,"metadata":{},"number":"0.29.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"33288e37d4f7ae95434253b0208e74c2c3f510e43e2c560a6cfdad851089d33c"},{"authors":"jfelchner","built_at":"2014-04-25T00:00:00.000Z","created_at":"2014-04-26T02:54:48.958Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":944,"metadata":{},"number":"0.28.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":945,"metadata":{},"number":"0.28.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"623142189762b0f7c628d67278c7c80f530fc655976ae4b8b364603db283c5cc"},{"authors":"jfelchner","built_at":"2014-04-17T00:00:00.000Z","created_at":"2014-04-18T01:47:05.904Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":975,"metadata":{},"number":"0.27.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":976,"metadata":{},"number":"0.27.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"d762e6c1334aaf76b322a4701b92187fa9ed0b0875e1551061278016815bc291"},{"authors":"jfelchner","built_at":"2014-04-17T00:00:00.000Z","created_at":"2014-04-17T06:31:34.975Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":960,"metadata":{},"number":"0.26.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":961,"metadata":{},"number":"0.26.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"2ac67a0e5ca0192e2de6e825b84bbd417ecd520b0b18fe1344feb7dd551e126f"},{"authors":"jfelchner","built_at":"2014-04-16T00:00:00.000Z","created_at":"2014-04-16T05:41:52.928Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":976,"metadata":{},"number":"0.25.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":977,"metadata":{},"number":"0.25.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"0eb8ba4962355956260b1199b87425e8187364d2e0b625af73a7bc82e1427f06"},{"authors":"jfelchner","built_at":"2014-04-14T00:00:00.000Z","created_at":"2014-04-14T20:07:33.069Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":961,"metadata":{},"number":"0.24.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":962,"metadata":{},"number":"0.24.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"286e023cf82337acb14317b1c9f3785208cb6b9dbd35ef8f838d42c7bf2185bc"},{"authors":"jfelchner","built_at":"2014-04-09T00:00:00.000Z","created_at":"2014-04-10T01:36:28.115Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":977,"metadata":{},"number":"0.23.1","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":978,"metadata":{},"number":"0.23.1","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"d42a74f2277139ba7fb166ec042d54b141cf3ef235b81dbc2b779ef5a8510aa3"},{"authors":"jfelchner","built_at":"2014-04-03T00:00:00.000Z","created_at":"2014-04-03T18:57:04.426Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1103,"metadata":{},"number":"0.23.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1104,"metadata":{},"number":"0.23.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"d95b94af42b2d2537866c6ba209304f4a3a3a1921915219daeac32d7545ee803"},{"authors":"jfelchner","built_at":"2014-03-28T00:00:00.000Z","created_at":"2014-03-28T05:39:44.152Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1058,"metadata":{},"number":"0.22.2","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1059,"metadata":{},"number":"0.22.2","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"893007d32268a28ae50e01229581fe6ed724461dcd88f1fcd03ad8dc6d0cf7cd"},{"authors":"jfelchner","built_at":"2014-03-27T00:00:00.000Z","created_at":"2014-03-27T23:34:30.114Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":979,"metadata":{},"number":"0.22.1","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":981,"metadata":{},"number":"0.22.1","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"2cec5ffe01fa2cbecb2c42c7c8eea353a5c31c866709d3416cd018474e458a86"},{"authors":"jfelchner","built_at":"2014-03-27T00:00:00.000Z","created_at":"2014-03-27T23:14:10.977Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":960,"metadata":{},"number":"0.22.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":961,"metadata":{},"number":"0.22.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"ea42a9b74288c05e6ba3c0e31d53cce79a103de2840db681a9e49b8a1329f0c4"},{"authors":"jfelchner","built_at":"2014-03-27T00:00:00.000Z","created_at":"2014-03-27T09:35:19.004Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1972,"metadata":{},"number":"0.21.6","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1973,"metadata":{},"number":"0.21.6","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"ed1890ecdb82e2280aa2d6e989156e5ed0c930d4103bae1d7111cf4ecfb44e9a"},{"authors":"jfelchner","built_at":"2014-03-27T00:00:00.000Z","created_at":"2014-03-27T09:31:04.542Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":977,"metadata":{},"number":"0.21.5","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":978,"metadata":{},"number":"0.21.5","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"6b19b0b2dccf0c7b0a4d9f227a83a1305cac7a569338859b018587e84fc4a3f6"},{"authors":"jfelchner","built_at":"2014-03-27T00:00:00.000Z","created_at":"2014-03-27T09:22:17.373Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":990,"metadata":{},"number":"0.21.4","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":991,"metadata":{},"number":"0.21.4","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"4dbb0109001fda62e3829be31a1b6398fdc297a2c519157a5c0150a4d4e309cb"},{"authors":"jfelchner","built_at":"2014-03-27T00:00:00.000Z","created_at":"2014-03-27T09:14:48.033Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":962,"metadata":{},"number":"0.21.3","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":963,"metadata":{},"number":"0.21.3","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"d4c65da453e13e420094501d947de5871ca7aeb3b3516c8dcc89d131992e1b81"},{"authors":"jfelchner","built_at":"2014-03-27T00:00:00.000Z","created_at":"2014-03-27T09:08:02.773Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":981,"metadata":{},"number":"0.21.2","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":982,"metadata":{},"number":"0.21.2","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"6ed430bd7668ec96bb3539ccbb8c3526802fdca21c365cd76d7cd4ffeda9b62f"},{"authors":"jfelchner","built_at":"2014-03-27T00:00:00.000Z","created_at":"2014-03-27T09:00:11.202Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":974,"metadata":{},"number":"0.21.1","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":975,"metadata":{},"number":"0.21.1","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"808f2405eccf46b4f0a08a2609ad8359a3700be6cfb56e4b0c91c79c0ef7dc07"},{"authors":"jfelchner","built_at":"2014-03-27T00:00:00.000Z","created_at":"2014-03-27T08:42:51.008Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":971,"metadata":{},"number":"0.21.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":972,"metadata":{},"number":"0.21.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"06f4f4fac89a26321523b21c56dec6d5a5e09df8f324f060a214694673093b06"},{"authors":"jfelchner","built_at":"2014-03-27T00:00:00.000Z","created_at":"2014-03-27T07:11:22.637Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":993,"metadata":{},"number":"0.20.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":994,"metadata":{},"number":"0.20.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":"\u003e=
         0","prerelease":false,"licenses":[],"requirements":[],"sha":"d1ef4b07252b3ddee469450d5c428c5c5d3e9c0b34c3c24761b591757e0961d9"},{"authors":"jfelchner","built_at":"2014-03-01T00:00:00.000Z","created_at":"2014-03-01T21:43:55.255Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1035,"metadata":{},"number":"0.19.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1036,"metadata":{},"number":"0.19.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":[],"sha":"6562bcce8865119a646d08afa7cafd06007856436b18ed41b9f08c19ce7c0ac7"},{"authors":"jfelchner","built_at":"2014-01-18T00:00:00.000Z","created_at":"2014-01-19T00:30:05.530Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1071,"metadata":{},"number":"0.18.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1072,"metadata":{},"number":"0.18.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":[],"sha":"75f74b10cd6c6500d9933d90d81eeaf230483d5a8d8cf94740ea984a53c906d0"},{"authors":"jfelchner","built_at":"2013-12-29T00:00:00.000Z","created_at":"2013-12-29T20:40:43.572Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1422,"metadata":{},"number":"0.17.1","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1423,"metadata":{},"number":"0.17.1","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":[],"sha":"921122bea5d796b46a8c09482a5a0a9569a3c8f3b71c6fcc3efd4a469fa0891c"},{"authors":"jfelchner","built_at":"2013-12-29T00:00:00.000Z","created_at":"2013-12-29T20:07:30.701Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1074,"metadata":{},"number":"0.17.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1075,"metadata":{},"number":"0.17.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":[],"sha":"44a3601299a718b7e4436a3d721d9541c9c7fd7a3f62a475f5cc3b1f5940cce8"},{"authors":"jfelchner","built_at":"2013-12-24T00:00:00.000Z","created_at":"2013-12-24T09:40:36.061Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1080,"metadata":{},"number":"0.16.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1081,"metadata":{},"number":"0.16.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":[],"sha":"331f89ab1c50a41255ec6b299f35ba2e5f94594328f359c3367321dab66a4176"},{"authors":"jfelchner","built_at":"2013-12-16T00:00:00.000Z","created_at":"2013-12-17T00:40:23.667Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1054,"metadata":{},"number":"0.15.2","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1055,"metadata":{},"number":"0.15.2","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":[],"sha":"a0cefada38dedcb9cb7981f06338944205ec1e0b9c6a9f1b9dff622db4847431"},{"authors":"jfelchner","built_at":"2013-12-13T00:00:00.000Z","created_at":"2013-12-13T22:57:32.082Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1065,"metadata":{},"number":"0.15.1","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1066,"metadata":{},"number":"0.15.1","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":[],"sha":"fba5308d9a745e862ebb4e4495ce630164a3ca2317a4206351787bbf61b3c764"},{"authors":"jfelchner","built_at":"2013-12-06T00:00:00.000Z","created_at":"2013-12-06T23:48:37.000Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1076,"metadata":{},"number":"0.15.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1077,"metadata":{},"number":"0.15.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":[],"sha":"dda3ecbc4416846329a13de23063a39b64e20514589b6aeadde8e9a7abdb5848"},{"authors":"jfelchner","built_at":"2013-10-24T00:00:00.000Z","created_at":"2013-10-24T06:31:34.969Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1144,"metadata":{},"number":"0.14.1","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1145,"metadata":{},"number":"0.14.1","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":[],"sha":"0742718f2e54f11935f1cafdab72c061ffd04478c7099eed06970a18ed266b96"},{"authors":"jfelchner","built_at":"2013-08-21T00:00:00.000Z","created_at":"2013-08-22T02:34:29.417Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1184,"metadata":{},"number":"0.14.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1186,"metadata":{},"number":"0.14.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":[],"sha":"4d6368ff2d73472233f7b1e93819fa7793d0ace4745488b4a510b557d5f77796"},{"authors":"jfelchner","built_at":"2013-05-22T00:00:00.000Z","created_at":"2013-05-23T04:51:27.238Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1495,"metadata":{},"number":"0.13.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1496,"metadata":{},"number":"0.13.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"5e9f477c4d56f44785952b34416ae6a3baea44734181411876e83b2414371ad8"},{"authors":"jfelchner","built_at":"2013-04-23T00:00:00.000Z","created_at":"2013-04-23T21:17:33.471Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1233,"metadata":{},"number":"0.12.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1234,"metadata":{},"number":"0.12.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"a9e8b12cad7c2d40b29ba5ae62a8138bee6d3b26b933e25c4ba012ff3b912d92"},{"authors":"jfelchner","built_at":"2013-04-16T00:00:00.000Z","created_at":"2013-04-16T18:42:41.393Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1239,"metadata":{},"number":"0.11.1","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1240,"metadata":{},"number":"0.11.1","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"94b0d6d2cb10df78894fd5b52539e182ee2b4279e12a977581ee01f144622c37"},{"authors":"jfelchner","built_at":"2013-04-16T00:00:00.000Z","created_at":"2013-04-16T18:11:26.746Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1220,"metadata":{},"number":"0.11.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1221,"metadata":{},"number":"0.11.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"0e5cff46dbd05f6b2cd417aa50199aaa22ba72a2a78af426e0ada02b7f0b6820"},{"authors":"jfelchner","built_at":"2013-04-16T00:00:00.000Z","created_at":"2013-04-16T17:38:01.186Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1243,"metadata":{},"number":"0.10.1","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1244,"metadata":{},"number":"0.10.1","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"21179e3e007bcbfe9b9f40684cf1afe45f87ace9fe44240d70fdd602063ef334"},{"authors":"jfelchner","built_at":"2013-04-16T00:00:00.000Z","created_at":"2013-04-16T17:10:16.571Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1257,"metadata":{},"number":"0.10.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1258,"metadata":{},"number":"0.10.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"55a374d75a853eb5babcb331130fb5af370905795570f49c76567605ec62de76"},{"authors":"jfelchner","built_at":"2013-03-16T00:00:00.000Z","created_at":"2013-03-16T20:56:59.534Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1266,"metadata":{},"number":"0.9.2","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1267,"metadata":{},"number":"0.9.2","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"563bcd0db7d00ac99ea8f66a5956a844a7eb7585e9f6f3f3ec546376851cb9ac"},{"authors":"jfelchner","built_at":"2013-03-16T00:00:00.000Z","created_at":"2013-03-16T19:47:50.128Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1248,"metadata":{},"number":"0.9.1","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1249,"metadata":{},"number":"0.9.1","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"a59ea6b6027fd4753b624dadfcf6c2bdc8dfbebe3108c61b75574692a1b16545"},{"authors":"jfelchner","built_at":"2013-03-16T00:00:00.000Z","created_at":"2013-03-16T16:40:57.671Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1246,"metadata":{},"number":"0.9.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1247,"metadata":{},"number":"0.9.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"07f5c1f045fe33a9514db60f49e3c12332e3fb3f5e2306a87b8de1f9da010f91"},{"authors":"jfelchner","built_at":"2013-03-15T00:00:00.000Z","created_at":"2013-03-15T20:13:32.526Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1276,"metadata":{},"number":"0.8.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1277,"metadata":{},"number":"0.8.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"368be2ca3f4246ef58fbf861c7031b87f306e842bd97a65ed93ecf8151159d78"},{"authors":"jfelchner","built_at":"2013-02-03T00:00:00.000Z","created_at":"2013-02-03T20:34:55.927Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1310,"metadata":{},"number":"0.7.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1311,"metadata":{},"number":"0.7.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"8547591f328c6488c7fbc7da6ebc71b730f02c85e838369e19b4d0d2956ef1c5"},{"authors":"jfelchner","built_at":"2013-02-03T00:00:00.000Z","created_at":"2013-02-03T20:30:20.108Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1299,"metadata":{},"number":"0.6.1","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1301,"metadata":{},"number":"0.6.1","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"6c03bc9427da5bea7fa41fe946444ed93ded998800a626caf27889b9bcf8152a"},{"authors":"jfelchner","built_at":"2013-01-28T00:00:00.000Z","created_at":"2013-01-28T21:24:38.052Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1308,"metadata":{},"number":"0.5.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1309,"metadata":{},"number":"0.5.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"c4a903eb513af75782409c4b9840ebbc889a0da48c094076d757708157053998"},{"authors":"jfelchner","built_at":"2013-01-28T00:00:00.000Z","created_at":"2013-01-28T21:13:30.655Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1305,"metadata":{},"number":"0.4.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1306,"metadata":{},"number":"0.4.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"86c2f4e2ca3411815c9ac7e2af59ada915e5407f1fc0b3aeb37045458409caa7"},{"authors":"jfelchner","built_at":"2013-01-28T00:00:00.000Z","created_at":"2013-01-28T20:31:30.350Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1290,"metadata":{},"number":"0.3.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1291,"metadata":{},"number":"0.3.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"4b1b4dbc051194a2f6600d0e22704823eddc131d4dff5a7e09cfdef27fbd6ea2"},{"authors":"jfelchner","built_at":"2013-01-26T00:00:00.000Z","created_at":"2013-01-26T07:06:33.921Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1318,"metadata":{},"number":"0.2.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1319,"metadata":{},"number":"0.2.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"1356b1a202a3bc52ef4cb3836f1fd416cf1b2ea9dfd2788ef689498453c60fe9"},{"authors":"jfelchner","built_at":"2013-01-25T00:00:00.000Z","created_at":"2013-01-26T05:48:54.910Z","description":"We
-        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1323,"metadata":{},"number":"0.1.0","summary":"RSpec
+        rock some RSpec configurations and matchers like it ain''t nobody''s bidnezz.","downloads_count":1324,"metadata":{},"number":"0.1.0","summary":"RSpec
         Support And Matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":[],"requirements":null,"sha":"5ccecac56fa31bd98d85ed6ca1dda174e4bbfc9e7505da081affed3b01a54d30"},{"authors":"jfelchner,
         thekompanee","built_at":"2011-07-01T05:00:00.000Z","created_at":"2011-07-02T02:31:01.202Z","description":"We
-        rock some custom RSpec matchers like it ain''t nobody''s bidnezz.","downloads_count":1692,"metadata":{},"number":"0.0.3","summary":"Custom
+        rock some custom RSpec matchers like it ain''t nobody''s bidnezz.","downloads_count":1693,"metadata":{},"number":"0.0.3","summary":"Custom
         RSpec matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"bfa296839c0165f2197e76f6ab167a1902fb5799b89f3ef11432121c6c895737"},{"authors":"jfelchner,
         thekompanee","built_at":"2011-05-12T05:00:00.000Z","created_at":"2011-05-12T19:29:18.032Z","description":"We
-        rock some custom RSpec matchers like it ain''t nobody''s bidnezz.","downloads_count":1701,"metadata":{},"number":"0.0.2","summary":"Custom
+        rock some custom RSpec matchers like it ain''t nobody''s bidnezz.","downloads_count":1702,"metadata":{},"number":"0.0.2","summary":"Custom
         RSpec matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"11d79917575aa51bfaaa7977ae8c6852b60842dd7ad0ef65f163cbfbce9a6b9c"},{"authors":"jfelchner,
         thekompanee","built_at":"2011-01-30T06:00:00.000Z","created_at":"2011-01-31T02:19:32.529Z","description":"We
-        rock some custom RSpec matchers like it ain''t nobody''s bidnezz.","downloads_count":1839,"metadata":{},"number":"0.0.1","summary":"Custom
+        rock some custom RSpec matchers like it ain''t nobody''s bidnezz.","downloads_count":1840,"metadata":{},"number":"0.0.1","summary":"Custom
         RSpec matchers","platform":"ruby","rubygems_version":"\u003e= 0","ruby_version":null,"prerelease":false,"licenses":null,"requirements":null,"sha":"3b3376041f5721f53c01621f0d5e821edbe0e7b341b18279bbee810a4d3d49cd"}]'}
     headers:
       Accept-Ranges: [bytes]
@@ -334,7 +334,7 @@ interactions:
           connect-src https://s3-us-west-2.amazonaws.com/rubygems-dumps/; frame-src
           https://ghbtns.com']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 22 Sep 2017 05:40:17 GMT']
+      Date: ['Mon, 25 Sep 2017 00:18:57 GMT']
       ETag: ['"e919d35a673190d2d11222c286fde4d2"']
       Last-Modified: ['Mon, 27 Mar 2017 03:45:47 GMT']
       Server: [RubyGems.org]
@@ -346,10 +346,10 @@ interactions:
       X-Cache-Hits: ['0']
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [SAMEORIGIN]
-      X-Request-Id: [70842f7c-4827-4667-906a-813b722dcedd]
-      X-Runtime: ['0.194181']
-      X-Served-By: [cache-gru17131-GRU]
-      X-Timer: ['S1506058816.259191,VS0,VE759']
+      X-Request-Id: [e396d197-6018-4e44-a334-4740ea5c18b3]
+      X-Runtime: ['0.191018']
+      X-Served-By: [cache-gru17121-GRU]
+      X-Timer: ['S1506298737.886561,VS0,VE194']
       X-UA-Compatible: ['IE=Edge,chrome=1']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
@@ -373,7 +373,7 @@ interactions:
       Content-Length: ['77']
       Content-Security-Policy: [default-src 'none']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 22 Sep 2017 05:40:17 GMT']
+      Date: ['Mon, 25 Sep 2017 00:18:57 GMT']
       Server: [GitHub.com]
       Status: [404 Not Found]
       Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
@@ -382,12 +382,12 @@ interactions:
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [deny]
       X-GitHub-Media-Type: [github.drax-preview; format=json]
-      X-GitHub-Request-Id: ['94CC:14D5:C83C6B:1AFAF42:59C4A241']
+      X-GitHub-Request-Id: ['9C74:06C4:127B558:26AB082:59C84B71']
       X-OAuth-Scopes: ['read:org, repo']
       X-RateLimit-Limit: ['5000']
-      X-RateLimit-Remaining: ['4813']
-      X-RateLimit-Reset: ['1506062160']
-      X-Runtime-rack: ['0.030147']
+      X-RateLimit-Remaining: ['4465']
+      X-RateLimit-Reset: ['1506301141']
+      X-Runtime-rack: ['0.037352']
       X-XSS-Protection: [1; mode=block]
     status: {code: 404, message: Not Found}
 version: 1

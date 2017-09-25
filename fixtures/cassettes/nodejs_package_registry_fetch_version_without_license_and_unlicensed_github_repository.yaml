@@ -1,0 +1,112 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://registry.npmjs.org/lodash/0.3.2
+  response:
+    body: {string: '{"name":"lodash","version":"0.3.2","description":"A drop-in replacement
+        for Underscore.js that delivers performance improvements, bug fixes, and additional
+        features.","homepage":"http://lodash.com","main":"lodash","keywords":["browser","client","functional","performance","server","speed","util"],"licenses":[{"type":"MIT","url":"http://lodash.com/license"}],"author":{"name":"John-David
+        Dalton","email":"john@fusejs.com","url":"http://allyoucanleet.com/"},"bugs":{"url":"https://github.com/bestiejs/lodash/issues"},"repository":{"type":"git","url":"git://github.com/bestiejs/lodash.git"},"engines":["node","rhino"],"directories":{"doc":"./doc","test":"./test"},"_npmUser":{"name":"jdalton","email":"john@fusejs.com"},"_id":"lodash@0.3.2","dependencies":{},"devDependencies":{},"optionalDependencies":{},"_engineSupported":true,"_npmVersion":"1.1.22","_nodeVersion":"v0.6.18","_defaultsLoaded":true,"dist":{"shasum":"b28474cacc670134c856b24ad4183ff20dec7b8e","tarball":"http://registry.npmjs.org/lodash/-/lodash-0.3.2.tgz"},"maintainers":[{"name":"jdalton","email":"john@fusejs.com"}]}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['0']
+      Cache-Control: [max-age=300]
+      Connection: [keep-alive]
+      Content-Length: ['1085']
+      Content-Type: [application/json]
+      Date: ['Mon, 25 Sep 2017 00:18:40 GMT']
+      Vary: ['Accept-Encoding, Accept']
+      Via: [1.1 varnish]
+      X-Cache: [HIT]
+      X-Cache-Hits: ['1']
+      X-Served-By: [cache-gru17123-GRU]
+      X-Timer: ['S1506298719.402006,VS0,VE940']
+      etag: ['"3RM5K5TNYUXO587NCACB8TTML"']
+      server: [CouchDB/1.5.0 (Erlang OTP/R16B03)]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: [application/vnd.github.drax-preview+json]
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/bestiejs/lodash
+  response:
+    body: {string: '{"message":"Moved Permanently","url":"https://api.github.com/repositories/3955647","documentation_url":"https://developer.github.com/v3/#http-redirects"}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['153']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Mon, 25 Sep 2017 00:18:41 GMT']
+      Location: ['https://api.github.com/repositories/3955647']
+      Server: [GitHub.com]
+      Status: [301 Moved Permanently]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['admin:repo_hook, delete_repo, read:repo_hook, repo,
+          repo:status, repo:task, repo_deployment, write:repo_hook']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.drax-preview; format=json]
+      X-GitHub-Request-Id: ['9679:06C8:1AA5042:52A00AD:59C84B60']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4476']
+      X-RateLimit-Reset: ['1506301141']
+      X-Runtime-rack: ['0.028181']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 301, message: Moved Permanently}
+- request:
+    body: null
+    headers:
+      Accept: [application/vnd.github.drax-preview+json]
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repositories/3955647
+  response:
+    body: {string: '{"id":3955647,"name":"lodash","full_name":"lodash/lodash","owner":{"login":"lodash","id":2565403,"avatar_url":"https://avatars3.githubusercontent.com/u/2565403?v=4","gravatar_id":"","url":"https://api.github.com/users/lodash","html_url":"https://github.com/lodash","followers_url":"https://api.github.com/users/lodash/followers","following_url":"https://api.github.com/users/lodash/following{/other_user}","gists_url":"https://api.github.com/users/lodash/gists{/gist_id}","starred_url":"https://api.github.com/users/lodash/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/lodash/subscriptions","organizations_url":"https://api.github.com/users/lodash/orgs","repos_url":"https://api.github.com/users/lodash/repos","events_url":"https://api.github.com/users/lodash/events{/privacy}","received_events_url":"https://api.github.com/users/lodash/received_events","type":"Organization","site_admin":false},"private":false,"html_url":"https://github.com/lodash/lodash","description":"A
+        modern JavaScript utility library delivering modularity, performance, & extras.","fork":false,"url":"https://api.github.com/repos/lodash/lodash","forks_url":"https://api.github.com/repos/lodash/lodash/forks","keys_url":"https://api.github.com/repos/lodash/lodash/keys{/key_id}","collaborators_url":"https://api.github.com/repos/lodash/lodash/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/lodash/lodash/teams","hooks_url":"https://api.github.com/repos/lodash/lodash/hooks","issue_events_url":"https://api.github.com/repos/lodash/lodash/issues/events{/number}","events_url":"https://api.github.com/repos/lodash/lodash/events","assignees_url":"https://api.github.com/repos/lodash/lodash/assignees{/user}","branches_url":"https://api.github.com/repos/lodash/lodash/branches{/branch}","tags_url":"https://api.github.com/repos/lodash/lodash/tags","blobs_url":"https://api.github.com/repos/lodash/lodash/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/lodash/lodash/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/lodash/lodash/git/refs{/sha}","trees_url":"https://api.github.com/repos/lodash/lodash/git/trees{/sha}","statuses_url":"https://api.github.com/repos/lodash/lodash/statuses/{sha}","languages_url":"https://api.github.com/repos/lodash/lodash/languages","stargazers_url":"https://api.github.com/repos/lodash/lodash/stargazers","contributors_url":"https://api.github.com/repos/lodash/lodash/contributors","subscribers_url":"https://api.github.com/repos/lodash/lodash/subscribers","subscription_url":"https://api.github.com/repos/lodash/lodash/subscription","commits_url":"https://api.github.com/repos/lodash/lodash/commits{/sha}","git_commits_url":"https://api.github.com/repos/lodash/lodash/git/commits{/sha}","comments_url":"https://api.github.com/repos/lodash/lodash/comments{/number}","issue_comment_url":"https://api.github.com/repos/lodash/lodash/issues/comments{/number}","contents_url":"https://api.github.com/repos/lodash/lodash/contents/{+path}","compare_url":"https://api.github.com/repos/lodash/lodash/compare/{base}...{head}","merges_url":"https://api.github.com/repos/lodash/lodash/merges","archive_url":"https://api.github.com/repos/lodash/lodash/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/lodash/lodash/downloads","issues_url":"https://api.github.com/repos/lodash/lodash/issues{/number}","pulls_url":"https://api.github.com/repos/lodash/lodash/pulls{/number}","milestones_url":"https://api.github.com/repos/lodash/lodash/milestones{/number}","notifications_url":"https://api.github.com/repos/lodash/lodash/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/lodash/lodash/labels{/name}","releases_url":"https://api.github.com/repos/lodash/lodash/releases{/id}","deployments_url":"https://api.github.com/repos/lodash/lodash/deployments","created_at":"2012-04-07T04:11:46Z","updated_at":"2017-09-24T18:31:30Z","pushed_at":"2017-09-22T20:42:59Z","git_url":"git://github.com/lodash/lodash.git","ssh_url":"git@github.com:lodash/lodash.git","clone_url":"https://github.com/lodash/lodash.git","svn_url":"https://github.com/lodash/lodash","homepage":"https://lodash.com/","size":45275,"stargazers_count":26412,"watchers_count":26412,"language":"JavaScript","has_issues":true,"has_projects":false,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":2749,"mirror_url":null,"open_issues_count":1,"forks":2749,"open_issues":1,"watchers":26412,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true},"license":{"key":"other","name":"Other","spdx_id":null,"url":null,"featured":false},"organization":{"login":"lodash","id":2565403,"avatar_url":"https://avatars3.githubusercontent.com/u/2565403?v=4","gravatar_id":"","url":"https://api.github.com/users/lodash","html_url":"https://github.com/lodash","followers_url":"https://api.github.com/users/lodash/followers","following_url":"https://api.github.com/users/lodash/following{/other_user}","gists_url":"https://api.github.com/users/lodash/gists{/gist_id}","starred_url":"https://api.github.com/users/lodash/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/lodash/subscriptions","organizations_url":"https://api.github.com/users/lodash/orgs","repos_url":"https://api.github.com/users/lodash/repos","events_url":"https://api.github.com/users/lodash/events{/privacy}","received_events_url":"https://api.github.com/users/lodash/received_events","type":"Organization","site_admin":false},"network_count":2749,"subscribers_count":711}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['5563']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Mon, 25 Sep 2017 00:18:41 GMT']
+      ETag: ['"fc36076cf4c4c009fdc515f79ced0465"']
+      Last-Modified: ['Sun, 24 Sep 2017 18:31:30 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: [repo]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.drax-preview; format=json]
+      X-GitHub-Request-Id: ['9679:06C8:1AA5067:52A0109:59C84B61']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4475']
+      X-RateLimit-Reset: ['1506301141']
+      X-Runtime-rack: ['0.058946']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1

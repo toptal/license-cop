@@ -9,3 +9,11 @@ class Dependency(DataObject):
         self.name = name
         self.kind = kind
         self.number = None
+
+    @staticmethod
+    def runtime(name, number=None):
+        return Dependency(name, Dependency.RUNTIME, number)
+
+    @staticmethod
+    def development(name, number=None):
+        return Dependency(name, Dependency.DEVELOPMENT, number)

@@ -10,7 +10,7 @@ interactions:
     method: GET
     uri: https://api.github.com/repos/toptal/license-cop/contents/fixtures/what_does_the_fox_say.txt
   response:
-    body: {string: '{"name":"what_does_the_fox_say.txt","path":"fixtures/what_does_the_fox_say.txt","sha":"4ad34a99d9e935c395a6d41c6afca832b23c4660","size":266,"url":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/what_does_the_fox_say.txt?ref=master","html_url":"https://github.com/toptal/license-cop/blob/master/fixtures/what_does_the_fox_say.txt","git_url":"https://api.github.com/repos/toptal/license-cop/git/blobs/4ad34a99d9e935c395a6d41c6afca832b23c4660","download_url":"https://raw.githubusercontent.com/toptal/license-cop/master/fixtures/what_does_the_fox_say.txt?token=ADMStFymEq0SR79c2XWF1AEPdrj0gSdbks5ZwkD3wA%3D%3D","type":"file","content":"RG9nIGdvZXMgIndvb2YiCkNhdCBnb2VzICJtZW93IgpCaXJkIGdvZXMgInR3\nZWV0IgpBbmQgbW91c2UgZ29lcyAic3F1ZWVrIgpDb3cgZ29lcyAibW9vIgpG\ncm9nIGdvZXMgImNyb2FrIgpBbmQgdGhlIGVsZXBoYW50IGdvZXMgInRvb3Qi\nCkR1Y2tzIHNheSAicXVhY2siCkFuZCBmaXNoIGdvICJibHViIgpBbmQgdGhl\nIHNlYWwgZ29lcyAib3cgb3cgb3ciCgpCdXQgdGhlcmUncyBvbmUgc291bmQK\nVGhhdCBubyBvbmUga25vd3MKV2hhdCBkb2VzIHRoZSBmb3ggc2F5Pwo=\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/what_does_the_fox_say.txt?ref=master","git":"https://api.github.com/repos/toptal/license-cop/git/blobs/4ad34a99d9e935c395a6d41c6afca832b23c4660","html":"https://github.com/toptal/license-cop/blob/master/fixtures/what_does_the_fox_say.txt"}}'}
+    body: {string: '{"name":"what_does_the_fox_say.txt","path":"fixtures/what_does_the_fox_say.txt","sha":"4ad34a99d9e935c395a6d41c6afca832b23c4660","size":266,"url":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/what_does_the_fox_say.txt?ref=master","html_url":"https://github.com/toptal/license-cop/blob/master/fixtures/what_does_the_fox_say.txt","git_url":"https://api.github.com/repos/toptal/license-cop/git/blobs/4ad34a99d9e935c395a6d41c6afca832b23c4660","download_url":"https://raw.githubusercontent.com/toptal/license-cop/master/fixtures/what_does_the_fox_say.txt?token=ADMStO9TtxqizOIzW0WqABAqnPSNgJ9jks5ZyEuVwA%3D%3D","type":"file","content":"RG9nIGdvZXMgIndvb2YiCkNhdCBnb2VzICJtZW93IgpCaXJkIGdvZXMgInR3\nZWV0IgpBbmQgbW91c2UgZ29lcyAic3F1ZWVrIgpDb3cgZ29lcyAibW9vIgpG\ncm9nIGdvZXMgImNyb2FrIgpBbmQgdGhlIGVsZXBoYW50IGdvZXMgInRvb3Qi\nCkR1Y2tzIHNheSAicXVhY2siCkFuZCBmaXNoIGdvICJibHViIgpBbmQgdGhl\nIHNlYWwgZ29lcyAib3cgb3cgb3ciCgpCdXQgdGhlcmUncyBvbmUgc291bmQK\nVGhhdCBubyBvbmUga25vd3MKV2hhdCBkb2VzIHRoZSBmb3ggc2F5Pwo=\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/what_does_the_fox_say.txt?ref=master","git":"https://api.github.com/repos/toptal/license-cop/git/blobs/4ad34a99d9e935c395a6d41c6afca832b23c4660","html":"https://github.com/toptal/license-cop/blob/master/fixtures/what_does_the_fox_say.txt"}}'}
     headers:
       Access-Control-Allow-Origin: ['*']
       Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
@@ -20,9 +20,9 @@ interactions:
       Content-Length: ['1366']
       Content-Security-Policy: [default-src 'none']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Wed, 20 Sep 2017 10:19:39 GMT']
-      ETag: ['"e35ce4b41ee2d2c77028078eec12d4b2"']
-      Last-Modified: ['Wed, 20 Sep 2017 10:04:32 GMT']
+      Date: ['Mon, 25 Sep 2017 00:18:33 GMT']
+      ETag: ['"fe180ba07807a4c144633f3bbcfa865d"']
+      Last-Modified: ['Sun, 24 Sep 2017 19:15:54 GMT']
       Server: [GitHub.com]
       Status: [200 OK]
       Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
@@ -31,12 +31,12 @@ interactions:
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [deny]
       X-GitHub-Media-Type: [github.v3; format=json]
-      X-GitHub-Request-Id: ['8549:4392:A453A8A:14C29FF3:59C240BB']
+      X-GitHub-Request-Id: ['8871:06C5:1FE1818:3C68634:59C84B59']
       X-OAuth-Scopes: ['read:org, repo']
       X-RateLimit-Limit: ['5000']
-      X-RateLimit-Remaining: ['1360']
-      X-RateLimit-Reset: ['1505903651']
-      X-Runtime-rack: ['0.049031']
+      X-RateLimit-Remaining: ['4480']
+      X-RateLimit-Reset: ['1506301141']
+      X-Runtime-rack: ['0.040665']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
 version: 1

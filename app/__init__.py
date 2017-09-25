@@ -1,8 +1,8 @@
-from app.platforms.ruby.package_registry import *
-from app.platforms.ruby.repository_filter import *
-from app.platform_resolver import *
+import app.platforms.ruby
+import app.platforms.nodejs
 
 
 PLATFORM_RESOLVERS = [
-    PlatformResolver('Ruby', RubyRepositoryFilter(), RubyPackageRegistry())
+    app.platforms.ruby.INSTANCE,
+    app.platforms.nodejs.INSTANCE
 ]

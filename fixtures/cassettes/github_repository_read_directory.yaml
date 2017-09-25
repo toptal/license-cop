@@ -10,7 +10,7 @@ interactions:
     method: GET
     uri: https://api.github.com/repos/toptal/license-cop/contents/fixtures
   response:
-    body: {string: '[{"name":"cassettes","path":"fixtures/cassettes","sha":"f646192579d2d78450aacc7114a2cb97a98ad893","size":0,"url":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/cassettes?ref=master","html_url":"https://github.com/toptal/license-cop/tree/master/fixtures/cassettes","git_url":"https://api.github.com/repos/toptal/license-cop/git/trees/f646192579d2d78450aacc7114a2cb97a98ad893","download_url":null,"type":"dir","_links":{"self":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/cassettes?ref=master","git":"https://api.github.com/repos/toptal/license-cop/git/trees/f646192579d2d78450aacc7114a2cb97a98ad893","html":"https://github.com/toptal/license-cop/tree/master/fixtures/cassettes"}},{"name":"empty_file","path":"fixtures/empty_file","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/empty_file?ref=master","html_url":"https://github.com/toptal/license-cop/blob/master/fixtures/empty_file","git_url":"https://api.github.com/repos/toptal/license-cop/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/toptal/license-cop/master/fixtures/empty_file?token=ADMStHnVfjgnhZqEzdQALLUpvY1GGmOqks5ZwkD5wA%3D%3D","type":"file","_links":{"self":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/empty_file?ref=master","git":"https://api.github.com/repos/toptal/license-cop/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/toptal/license-cop/blob/master/fixtures/empty_file"}},{"name":"what_does_the_fox_say.txt","path":"fixtures/what_does_the_fox_say.txt","sha":"4ad34a99d9e935c395a6d41c6afca832b23c4660","size":266,"url":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/what_does_the_fox_say.txt?ref=master","html_url":"https://github.com/toptal/license-cop/blob/master/fixtures/what_does_the_fox_say.txt","git_url":"https://api.github.com/repos/toptal/license-cop/git/blobs/4ad34a99d9e935c395a6d41c6afca832b23c4660","download_url":"https://raw.githubusercontent.com/toptal/license-cop/master/fixtures/what_does_the_fox_say.txt?token=ADMStKyWGL0a4Hl6bLm3cPhmKz06UJXWks5ZwkD5wA%3D%3D","type":"file","_links":{"self":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/what_does_the_fox_say.txt?ref=master","git":"https://api.github.com/repos/toptal/license-cop/git/blobs/4ad34a99d9e935c395a6d41c6afca832b23c4660","html":"https://github.com/toptal/license-cop/blob/master/fixtures/what_does_the_fox_say.txt"}}]'}
+    body: {string: '[{"name":"cassettes","path":"fixtures/cassettes","sha":"2d43ab591a8d8eb11b235751ba4e8f0c34d9b409","size":0,"url":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/cassettes?ref=master","html_url":"https://github.com/toptal/license-cop/tree/master/fixtures/cassettes","git_url":"https://api.github.com/repos/toptal/license-cop/git/trees/2d43ab591a8d8eb11b235751ba4e8f0c34d9b409","download_url":null,"type":"dir","_links":{"self":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/cassettes?ref=master","git":"https://api.github.com/repos/toptal/license-cop/git/trees/2d43ab591a8d8eb11b235751ba4e8f0c34d9b409","html":"https://github.com/toptal/license-cop/tree/master/fixtures/cassettes"}},{"name":"empty_file","path":"fixtures/empty_file","sha":"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","size":0,"url":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/empty_file?ref=master","html_url":"https://github.com/toptal/license-cop/blob/master/fixtures/empty_file","git_url":"https://api.github.com/repos/toptal/license-cop/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","download_url":"https://raw.githubusercontent.com/toptal/license-cop/master/fixtures/empty_file?token=ADMStODFIjYcs_Vtjr9t4UUvrrtZuIkgks5ZyEuWwA%3D%3D","type":"file","_links":{"self":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/empty_file?ref=master","git":"https://api.github.com/repos/toptal/license-cop/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391","html":"https://github.com/toptal/license-cop/blob/master/fixtures/empty_file"}},{"name":"what_does_the_fox_say.txt","path":"fixtures/what_does_the_fox_say.txt","sha":"4ad34a99d9e935c395a6d41c6afca832b23c4660","size":266,"url":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/what_does_the_fox_say.txt?ref=master","html_url":"https://github.com/toptal/license-cop/blob/master/fixtures/what_does_the_fox_say.txt","git_url":"https://api.github.com/repos/toptal/license-cop/git/blobs/4ad34a99d9e935c395a6d41c6afca832b23c4660","download_url":"https://raw.githubusercontent.com/toptal/license-cop/master/fixtures/what_does_the_fox_say.txt?token=ADMStGSoLvPSuBDm9zWQDmKxrvaZbYTCks5ZyEuWwA%3D%3D","type":"file","_links":{"self":"https://api.github.com/repos/toptal/license-cop/contents/fixtures/what_does_the_fox_say.txt?ref=master","git":"https://api.github.com/repos/toptal/license-cop/git/blobs/4ad34a99d9e935c395a6d41c6afca832b23c4660","html":"https://github.com/toptal/license-cop/blob/master/fixtures/what_does_the_fox_say.txt"}}]'}
     headers:
       Access-Control-Allow-Origin: ['*']
       Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
@@ -20,8 +20,8 @@ interactions:
       Content-Length: ['2546']
       Content-Security-Policy: [default-src 'none']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Wed, 20 Sep 2017 10:19:41 GMT']
-      ETag: ['"a31ab6dd3bffa416d922b0939065261c"']
+      Date: ['Mon, 25 Sep 2017 00:18:34 GMT']
+      ETag: ['"671993a4112dd2cff8c2f7be46d265b5"']
       Last-Modified: ['Fri, 15 Sep 2017 07:40:29 GMT']
       Server: [GitHub.com]
       Status: [200 OK]
@@ -31,12 +31,12 @@ interactions:
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [deny]
       X-GitHub-Media-Type: [github.v3; format=json]
-      X-GitHub-Request-Id: ['BB04:438B:7DA7C37:1070019B:59C240BC']
+      X-GitHub-Request-Id: ['9C92:06C4:127ACCC:26A9D73:59C84B5A']
       X-OAuth-Scopes: ['read:org, repo']
       X-RateLimit-Limit: ['5000']
-      X-RateLimit-Remaining: ['1358']
-      X-RateLimit-Reset: ['1505903651']
-      X-Runtime-rack: ['0.031834']
+      X-RateLimit-Remaining: ['4478']
+      X-RateLimit-Reset: ['1506301141']
+      X-Runtime-rack: ['0.039491']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
 version: 1
