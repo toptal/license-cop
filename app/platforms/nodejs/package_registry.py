@@ -72,7 +72,7 @@ class NodejsPackageRegistry(PackageRegistry):
             return [data['license']]
         else:
             urls = []
-            if 'repository' in data:
+            if 'repository' in data and 'url' in data['repository']:
                 urls.append(data['repository']['url'])
             if 'homepage' in data:
                 urls.append(data['homepage'])
