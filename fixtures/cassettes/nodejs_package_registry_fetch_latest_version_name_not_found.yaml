@@ -7,22 +7,22 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.18.4]
     method: GET
-    uri: http://registry.npmjs.org/foobar666
+    uri: http://registry.npmjs.org/foobar666/latest
   response:
-    body: {string: '{}'}
+    body: {string: '{"error":"not_found","reason":"document not found"}'}
     headers:
       Accept-Ranges: [bytes]
       Age: ['0']
       Cache-Control: [max-age=0]
       Connection: [keep-alive]
-      Content-Length: ['2']
-      Content-Type: [application/json]
-      Date: ['Mon, 25 Sep 2017 00:18:39 GMT']
-      Vary: [Accept-Encoding]
+      Content-Length: ['51']
+      Content-Type: [text/plain]
+      Date: ['Mon, 25 Sep 2017 03:26:33 GMT']
       Via: [1.1 varnish]
       X-Cache: [MISS]
       X-Cache-Hits: ['0']
-      X-Served-By: [cache-gru17122-GRU]
-      X-Timer: ['S1506298719.795301,VS0,VE329']
+      X-Served-By: [cache-gru17120-GRU]
+      X-Timer: ['S1506309992.485285,VS0,VE799']
+      server: [CouchDB/1.5.0 (Erlang OTP/R16B03)]
     status: {code: 404, message: Not Found}
 version: 1

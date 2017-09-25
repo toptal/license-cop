@@ -102,6 +102,22 @@ def test_fetch_latest_version(registry):
     ]
 
 
+@VCR.use_cassette('nodejs_package_registry_fetch_version_for_scoped_package.yaml')
+def test_fetch_version_with_at_and_slash_in_the_name(registry):
+    version = registry.fetch_version('@types/chai', '4.0.4')
+    assert version
+    assert version.name == '@types/chai'
+    assert version.number == '4.0.4'
+
+
+@VCR.use_cassette('nodejs_package_registry_fetch_latest_version_for_scoped_package.yaml')
+def test_fetch_version_with_at_and_slash_in_the_name(registry):
+    version = registry.fetch_latest_version('@types/chai')
+    assert version
+    assert version.name == '@types/chai'
+    assert version.number == '4.0.4'
+
+
 @VCR.use_cassette('nodejs_package_registry_fetch_version_name_not_found.yaml')
 def test_fetch_version_name_not_found(registry):
     with pytest.raises(PackageVersionNotFound) as e:
@@ -120,13 +136,41 @@ def test_fetch_version_number_not_found(registry):
         '404 Client Error: Not Found for url: http://registry.npmjs.org/babel-core/666'
 
 
+@VCR.use_cassette(
+    'nodejs_package_registry_fetch_version_for_scoped_package_name_not_found.yaml')
+def test_fetch_version_for_scoped_package_name_not_found(registry):
+    with pytest.raises(PackageVersionNotFound) as e:
+        registry.fetch_version('@foobar666/bla', '4.2.1')
+    assert str(e.value) == \
+        'Could not find package version @foobar666/bla:4.2.1. '\
+        '404 Client Error: Not Found for url: http://registry.npmjs.org/@foobar666%2Fbla'
+
+
+@VCR.use_cassette(
+    'nodejs_package_registry_fetch_version_for_scoped_package_number_not_found.yaml')
+def test_fetch_version_for_scoped_package_number_not_found(registry):
+    with pytest.raises(PackageVersionNotFound) as e:
+        registry.fetch_version('@types/chai', '5.0.5')
+    assert str(e.value) == 'Could not find package version @types/chai:5.0.5.'
+
+
 @VCR.use_cassette('nodejs_package_registry_fetch_latest_version_name_not_found.yaml')
 def test_fetch_latest_version_name_not_found(registry):
     with pytest.raises(PackageVersionNotFound) as e:
         registry.fetch_latest_version('foobar666')
     assert str(e.value) == \
         'Could not find package version foobar666:latest. '\
-        '404 Client Error: Not Found for url: http://registry.npmjs.org/foobar666'
+        '404 Client Error: Not Found for url: http://registry.npmjs.org/foobar666/latest'
+
+
+@VCR.use_cassette(
+    'nodejs_package_registry_fetch_latest_version_for_scoped_package_name_not_found.yaml')
+def test_fetch_latest_version_for_scoped_package_name_not_found(registry):
+    with pytest.raises(PackageVersionNotFound) as e:
+        registry.fetch_version('@foobar666/bla', '4.2.1')
+    assert str(e.value) == \
+        'Could not find package version @foobar666/bla:4.2.1. '\
+        '404 Client Error: Not Found for url: http://registry.npmjs.org/@foobar666%2Fbla'
 
 
 @VCR.use_cassette('nodejs_package_registry_fetch_version_without_license_and_unlicensed_github_repository.yaml')

@@ -17,12 +17,12 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['2']
       Content-Type: [application/json]
-      Date: ['Mon, 25 Sep 2017 00:18:38 GMT']
+      Date: ['Mon, 25 Sep 2017 03:25:29 GMT']
       Vary: [Accept-Encoding]
       Via: [1.1 varnish]
       X-Cache: [MISS]
       X-Cache-Hits: ['0']
-      X-Served-By: [cache-gru17133-GRU]
-      X-Timer: ['S1506298718.575962,VS0,VE873']
+      X-Served-By: [cache-gru17120-GRU]
+      X-Timer: ['S1506309929.725597,VS0,VE879']
     status: {code: 404, message: Not Found}
 version: 1
