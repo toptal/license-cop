@@ -6,11 +6,11 @@ from app.dependency_resolution import *
 class DependencyResolver:
     def __init__(self, registry):
         self.__registry = registry
+        self.__visited_dependencies = set()
 
     def resolve(self, dependency, runtime_only=False):
         root = self.__build_node(dependency)
 
-        visited_dependencies = set()
         nodes_to_expand = deque([root])
 
         while nodes_to_expand:
@@ -20,8 +20,8 @@ class DependencyResolver:
                 current_node.add_child(child)
 
                 if child.has_dependencies(runtime_only):
-                    if dependency not in visited_dependencies:
-                        visited_dependencies.add(dependency)
+                    if dependency not in self.__visited_dependencies:
+                        self.__visited_dependencies.add(dependency)
                         nodes_to_expand.append(child)
                     else:
                         child.hide()

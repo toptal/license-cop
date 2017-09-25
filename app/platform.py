@@ -10,7 +10,7 @@ class Platform:
     def __init__(self, name, matcher, registry):
         self.name = name
         self.__matcher = matcher
-        self.__dependency_resolver = DependencyResolver(registry)
+        self.__registry = registry
 
     def match(self, repository):
         return self.__matcher.match(repository)
@@ -22,19 +22,20 @@ class Platform:
         ))
 
     def __resolve_package_descriptor(self, descriptor):
+        resolver = DependencyResolver(self.__registry)
         return PackageDescriptorResolution(
             descriptor,
             runtime_resolutions=self.__resolve_dependencies(
-                descriptor.runtime_dependencies),
+                resolver, descriptor.runtime_dependencies),
             development_resolutions=self.__resolve_dependencies(
-                descriptor.development_dependencies)
+                resolver, descriptor.development_dependencies)
         )
 
-    def __resolve_dependencies(self, dependencies):
+    def __resolve_dependencies(self, resolver, dependencies):
         resolutions = []
         for dependency in dependencies:
             try:
-                resolutions.append(self.__dependency_resolver.resolve(dependency))
+                resolutions.append(resolver.resolve(dependency))
             except PackageVersionNotFound as e:
                 print('WARNING: {0}'.format(e), file=sys.stderr)
         return resolutions
