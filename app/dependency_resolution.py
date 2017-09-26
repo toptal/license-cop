@@ -80,16 +80,15 @@ class DependencyResolution:
         )
         print(header, file=io)
 
-
     def __format_bullet(self, node):
         if node.is_hidden:
             return '•'
-        elif not node.is_leaf:
-            return '+'
         elif not node.is_found:
             return '!'
+        elif node.is_leaf:
+            return '='
         else:
-            return '-'
+            return '+'
 
     def __indentation(self, level):
         if level == 0:

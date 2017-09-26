@@ -102,25 +102,25 @@ def test_repr(descriptor):
         + https://github.com/rails/rails - Ruby [Gemfile]
         ⎮--+ [runtime] rails:5.1.4 → MIT
         ⎮  ⎮--+ [runtime] activesupport:5.1.4 → MIT
-        ⎮  ⎮  ⎮--- [runtime] concurrent-ruby:1.0.2 → BSD
-        ⎮  ⎮  ⎮--- [runtime] i18n:0.7 → Ruby, MIT
-        ⎮  ⎮  ⎮--- [runtime] minitest:5.1 → MIT
+        ⎮  ⎮  ⎮--= [runtime] concurrent-ruby:1.0.2 → BSD
+        ⎮  ⎮  ⎮--= [runtime] i18n:0.7 → Ruby, MIT
+        ⎮  ⎮  ⎮--= [runtime] minitest:5.1 → MIT
         ⎮  ⎮--+ [runtime] activerecord:5.1.4 → MIT
         ⎮  ⎮  ⎮--+ [runtime] activemodel:5.1.4 → MIT
         ⎮  ⎮  ⎮  ⎮--• [runtime] activesupport:5.1.4 → MIT
         ⎮  ⎮  ⎮--• [development] activesupport:5.1.4 → MIT
-        ⎮  ⎮  ⎮--- [development] arel:8.0 → Apache
+        ⎮  ⎮  ⎮--= [development] arel:8.0 → Apache
         ⎮  ⎮--• [runtime] activemodel:5.1.4 → MIT
         ⎮--+ [runtime] rails:5.1.4 → MIT
         ⎮  ⎮--+ [runtime] activesupport:5.1.4 → MIT
-        ⎮  ⎮  ⎮--- [runtime] concurrent-ruby:1.0.2 → BSD
-        ⎮  ⎮  ⎮--- [runtime] i18n:0.7 → Ruby, MIT
-        ⎮  ⎮  ⎮--- [runtime] minitest:5.1 → MIT
+        ⎮  ⎮  ⎮--= [runtime] concurrent-ruby:1.0.2 → BSD
+        ⎮  ⎮  ⎮--= [runtime] i18n:0.7 → Ruby, MIT
+        ⎮  ⎮  ⎮--= [runtime] minitest:5.1 → MIT
         ⎮  ⎮--+ [runtime] activerecord:5.1.4 → MIT
         ⎮  ⎮  ⎮--+ [runtime] activemodel:5.1.4 → MIT
         ⎮  ⎮  ⎮  ⎮--• [runtime] activesupport:5.1.4 → MIT
         ⎮  ⎮  ⎮--• [development] activesupport:5.1.4 → MIT
-        ⎮  ⎮  ⎮--- [development] arel:8.0 → Apache
+        ⎮  ⎮  ⎮--= [development] arel:8.0 → Apache
         ⎮  ⎮--• [runtime] activemodel:5.1.4 → MIT
         ⎮--+ [development] rails:5.1.4 → MIT
         ⎮  ⎮--+ [runtime] activerecord:5.1.4 → MIT

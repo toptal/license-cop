@@ -127,7 +127,7 @@ def test_repr_runtime_dependency_without_children(rails):
     node = DependencyResolution.runtime(rails)
     assert repr(node) == dedent(
         '''\
-        - [runtime] rails:5.1.4 → MIT
+        = [runtime] rails:5.1.4 → MIT
         '''
     )
 
@@ -136,7 +136,7 @@ def test_repr_development_dependency_without_children(rails):
     node = DependencyResolution.development(rails)
     assert repr(node) == dedent(
         '''\
-        - [development] rails:5.1.4 → MIT
+        = [development] rails:5.1.4 → MIT
         '''
     )
 
@@ -145,7 +145,7 @@ def test_repr_dependency_with_unknown_kind_without_children(rails):
     node = DependencyResolution(rails, DependencyKind.UNKNOWN)
     assert repr(node) == dedent(
         '''\
-        - [unknown] rails:5.1.4 → MIT
+        = [unknown] rails:5.1.4 → MIT
         '''
     )
 
@@ -193,15 +193,15 @@ def test_repr_with_children(rails, version_not_found):
         '''\
         + [development] rails:5.1.4 → MIT
         ⎮--+ [runtime] activesupport:5.1.4 → MIT
-        ⎮  ⎮--- [runtime] concurrent-ruby:1.0.2 → BSD
-        ⎮  ⎮--- [runtime] i18n:0.7 → Ruby, MIT
-        ⎮  ⎮--- [runtime] minitest:5.1 → MIT
+        ⎮  ⎮--= [runtime] concurrent-ruby:1.0.2 → BSD
+        ⎮  ⎮--= [runtime] i18n:0.7 → Ruby, MIT
+        ⎮  ⎮--= [runtime] minitest:5.1 → MIT
         ⎮--! [runtime] foobar:latest → <version not found on registry>
         ⎮--+ [runtime] activerecord:5.1.4 → MIT
         ⎮  ⎮--+ [runtime] activemodel:5.1.4 → MIT
         ⎮  ⎮  ⎮--• [runtime] activesupport:5.1.4 → MIT
         ⎮  ⎮--• [development] activesupport:5.1.4 → MIT
-        ⎮  ⎮--- [development] arel:8.0 → Apache
+        ⎮  ⎮--= [development] arel:8.0 → Apache
         ⎮--• [runtime] activemodel:5.1.4 → MIT
         '''
     )
