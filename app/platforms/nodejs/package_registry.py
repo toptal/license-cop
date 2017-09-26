@@ -9,7 +9,7 @@ from app.platforms.nodejs.shared import parse_dependencies
 VERSION_URI = 'http://registry.npmjs.org/{0}/{1}'
 PACKAGE_URI = 'http://registry.npmjs.org/{0}'
 
-SCOPED_PACKAGE_REGEX = '@[\w\-\.]+/[\w\-\.]+'
+SCOPED_PACKAGE_REGEX = r'@[\w\-\.]+/[\w\-\.]+'
 
 
 class NodejsPackageRegistry(PackageRegistry):

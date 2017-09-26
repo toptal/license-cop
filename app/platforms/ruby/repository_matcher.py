@@ -30,7 +30,7 @@ class RubyRepositoryMatcher(RepositoryMatcher):
 
 
     def __parse_line(self, line):
-        m = re.match("^\s*gem\s+['\"]([\w\-]+)['\"]", line)
+        m = re.match(r"^\s*gem\s+['\"]([\w\-]+)['\"]", line)
         return m.group(1) if m else None
 
     def __build_dependency(self, name):
