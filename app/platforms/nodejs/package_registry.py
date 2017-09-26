@@ -89,14 +89,6 @@ class NodejsPackageRegistry(PackageRegistry):
             licenses.extend(map(lambda i: self.__try_extract_field(i, 'type'), data))
         return list(filter(None, licenses))
 
-    def __try_extract_field(self, data, key):
-        if isinstance(data, str):
-            return data
-        if isinstance(data, dict):
-            if key in data and isinstance(data[key], str):
-                return data[key]
-        return None
-
     def __extract_repository_urls(self, data):
         urls = []
         if 'repository' in data:
@@ -124,3 +116,11 @@ class NodejsPackageRegistry(PackageRegistry):
         elif isinstance(data, list):
             urls.extend(data)
         return list(filter(None, urls))
+
+    def __try_extract_field(self, data, key):
+        if isinstance(data, str):
+            return data
+        if isinstance(data, dict):
+            if key in data and isinstance(data[key], str):
+                return data[key]
+        return None
