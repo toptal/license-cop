@@ -11,7 +11,7 @@ interactions:
   response:
     body: {string: '{"name":"lodash","version":"0.3.2","description":"A drop-in replacement
         for Underscore.js that delivers performance improvements, bug fixes, and additional
-        features.","homepage":"http://lodash.com","main":"lodash","keywords":["browser","client","functional","performance","server","speed","util"],"licenses":[{"type":"MIT","url":"http://lodash.com/license"}],"author":{"name":"John-David
+        features.","homepage":"http://lodash.com","main":"lodash","keywords":["browser","client","functional","performance","server","speed","util"],"author":{"name":"John-David
         Dalton","email":"john@fusejs.com","url":"http://allyoucanleet.com/"},"bugs":{"url":"https://github.com/bestiejs/lodash/issues"},"repository":{"type":"git","url":"git://github.com/bestiejs/lodash.git"},"engines":["node","rhino"],"directories":{"doc":"./doc","test":"./test"},"_npmUser":{"name":"jdalton","email":"john@fusejs.com"},"_id":"lodash@0.3.2","dependencies":{},"devDependencies":{},"optionalDependencies":{},"_engineSupported":true,"_npmVersion":"1.1.22","_nodeVersion":"v0.6.18","_defaultsLoaded":true,"dist":{"shasum":"b28474cacc670134c856b24ad4183ff20dec7b8e","tarball":"http://registry.npmjs.org/lodash/-/lodash-0.3.2.tgz"},"maintainers":[{"name":"jdalton","email":"john@fusejs.com"}]}'}
     headers:
       Accept-Ranges: [bytes]

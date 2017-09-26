@@ -1,0 +1,35 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://registry.npmjs.org/jasmine-node/1.14.5
+  response:
+    body: {string: '{"name":"jasmine-node","version":"1.14.5","description":"DOM-less
+        simple JavaScript BDD testing framework for Node","contributors":[{"name":"Chris
+        Moultrie","email":"chris@moultrie.org"}],"homepage":"https://github.com/mhevery/jasmine-node","repository":{"type":"git","url":"https://github.com/mhevery/jasmine-node.git"},"keywords":["testing","bdd"],"author":{"name":"Misko
+        Hevery","email":"misko@hevery.com"},"maintainers":[{"name":"mhevery","email":"misko@hevery.com"},{"name":"tebriel","email":"chris@moultrie.org"}],"license":["MIT"],"dependencies":{"coffee-script":">=1.0.1","jasmine-reporters":"~1.0.0","jasmine-growl-reporter":"~0.0.2","requirejs":">=0.27.1","walkdir":">=
+        0.0.1","underscore":">= 1.3.1","gaze":"~0.3.2","mkdirp":"~0.3.5"},"bin":{"jasmine-node":"bin/jasmine-node"},"preferGlobal":true,"main":"lib/jasmine-node","scripts":{"test":"node
+        lib/jasmine-node/cli.js spec"},"devDependencies":{},"bugs":{"url":"https://github.com/mhevery/jasmine-node/issues"},"_id":"jasmine-node@1.14.5","_shasum":"18e8397b856924ee77003666c3731b5aea50c39d","_from":".","_npmVersion":"1.4.9","_npmUser":{"name":"tebriel","email":"tebriel@gmail.com"},"dist":{"shasum":"18e8397b856924ee77003666c3731b5aea50c39d","tarball":"http://registry.npmjs.org/jasmine-node/-/jasmine-node-1.14.5.tgz"},"directories":{}}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['0']
+      Cache-Control: [max-age=300]
+      Connection: [keep-alive]
+      Content-Length: ['1303']
+      Content-Type: [application/json]
+      Date: ['Tue, 26 Sep 2017 05:40:34 GMT']
+      Vary: ['Accept-Encoding, Accept']
+      Via: [1.1 varnish]
+      X-Cache: [MISS]
+      X-Cache-Hits: ['0']
+      X-Served-By: [cache-gru17125-GRU]
+      X-Timer: ['S1506404434.610186,VS0,VE813']
+      etag: ['"3O8PXHG6CPPSVK7Y6QAK4RWA6"']
+      server: [CouchDB/1.5.0 (Erlang OTP/R16B03)]
+    status: {code: 200, message: OK}
+version: 1

@@ -1,0 +1,33 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://registry.npmjs.org/cwise-parser/1.0.3
+  response:
+    body: {string: '{"name":"cwise-parser","version":"1.0.3","description":"Parser
+        for cwise","main":"index.js","directories":{"test":"test"},"dependencies":{"esprima":"^1.0.3","uniq":"^1.0.0"},"devDependencies":{"tape":"^4.0.0"},"scripts":{"test":"tape
+        test/*.js"},"repository":{"type":"git","url":"git://github.com/scijs/cwise-parser.git"},"keywords":["cwise","parser","ndarray","internals"],"author":{"name":"Mikola
+        Lysenko"},"license":"MIT","gitHead":"a57b0ecf9a304e991c9bca348b4aa99b5c2a7fc1","bugs":{"url":"https://github.com/scijs/cwise-parser/issues"},"homepage":"https://github.com/scijs/cwise-parser#readme","_id":"cwise-parser@1.0.3","_shasum":"8e493c17d54f97cb030a9e9854bc86c9dfb354fe","_from":".","_npmVersion":"3.8.6","_nodeVersion":"6.1.0","_npmUser":{"name":"mikolalysenko","email":"mikolalysenko@gmail.com"},"dist":{"shasum":"8e493c17d54f97cb030a9e9854bc86c9dfb354fe","tarball":"http://registry.npmjs.org/cwise-parser/-/cwise-parser-1.0.3.tgz"},"maintainers":[{"name":"mikolalysenko","email":"mikolalysenko@gmail.com"},{"name":"jaspervdg","email":"th.v.d.gronde@hccnet.nl"},{"name":"rreusser","email":"rsreusser@gmail.com"},{"name":"planeshifter","email":"pgb@andrew.cmu.edu"},{"name":"hughsk","email":"hughskennedy@gmail.com"},{"name":"substack","email":"substack@gmail.com"}],"_npmOperationalInternal":{"host":"packages-16-east.internal.npmjs.com","tmp":"tmp/cwise-parser-1.0.3.tgz_1467420188609_0.3553831153549254"}}'}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['0']
+      Cache-Control: [max-age=300]
+      Connection: [keep-alive]
+      Content-Length: ['1416']
+      Content-Type: [application/json]
+      Date: ['Tue, 26 Sep 2017 04:46:11 GMT']
+      Vary: ['Accept-Encoding, Accept']
+      Via: [1.1 varnish]
+      X-Cache: [MISS]
+      X-Cache-Hits: ['0']
+      X-Served-By: [cache-gru17122-GRU]
+      X-Timer: ['S1506401171.029962,VS0,VE817']
+      etag: ['"50FBWOTDBTMH1MVJSDWT369SZ"']
+      server: [CouchDB/1.5.0 (Erlang OTP/R16B03)]
+    status: {code: 200, message: OK}
+version: 1

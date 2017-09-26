@@ -62,18 +62,65 @@ class NodejsPackageRegistry(PackageRegistry):
         return PackageVersion(
             name=data['name'],
             number=data['version'],
-            licenses=self.__extract_licenses(data),
+            licenses=self.__determine_licenses(data),
             runtime_dependencies=parse_dependencies(data, DependencyKind.RUNTIME),
             development_dependencies=parse_dependencies(data, DependencyKind.DEVELOPMENT),
         )
 
+    def __determine_licenses(self, data):
+        licenses = self.__extract_licenses(data)
+        if not licenses:
+            urls = self.__extract_repository_urls(data)
+            return self._find_licenses_in_code_repository_urls(urls)
+        return licenses
+
     def __extract_licenses(self, data):
         if 'license' in data:
-            return [data['license']]
-        else:
-            urls = []
-            if 'repository' in data and 'url' in data['repository']:
-                urls.append(data['repository']['url'])
-            if 'homepage' in data:
-                urls.append(data['homepage'])
-            return self._find_licenses_in_code_repository_urls(urls)
+            return self.__parse_license_field(data['license'])
+        elif 'licenses' in data:
+            return self.__parse_license_field(data['licenses'])
+        return []
+
+    def __parse_license_field(self, data):
+        licenses = []
+        if isinstance(data, str):
+            licenses.append(data)
+        if isinstance(data, list):
+            licenses.extend(map(lambda i: self.__try_extract_field(i, 'type'), data))
+        return list(filter(None, licenses))
+
+    def __try_extract_field(self, data, key):
+        if isinstance(data, str):
+            return data
+        if isinstance(data, dict):
+            if key in data and isinstance(data[key], str):
+                return data[key]
+        return None
+
+    def __extract_repository_urls(self, data):
+        urls = []
+        if 'repository' in data:
+            urls.extend(self.__parse_repository_field(data['repository']))
+        if 'repositories' in data:
+            urls.extend(self.__parse_repository_field(data['repositories']))
+        if 'homepage' in data:
+            urls.extend(self.__parse_homepage_field(data['homepage']))
+        return urls
+
+    def __parse_repository_field(self, data):
+        urls = []
+        if isinstance(data, str):
+            urls.append(data)
+        if isinstance(data, dict) and 'url' in data:
+            urls.append(data['url'])
+        if isinstance(data, list):
+            urls.extend(map(lambda i: self.__try_extract_field(i, 'url'), data))
+        return list(filter(None, urls))
+
+    def __parse_homepage_field(self, data):
+        urls = []
+        if isinstance(data, str):
+            urls.append(data)
+        elif isinstance(data, list):
+            urls.extend(data)
+        return list(filter(None, urls))

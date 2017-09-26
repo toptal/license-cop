@@ -103,7 +103,7 @@ def test_fetch_latest_version(registry):
 
 
 @VCR.use_cassette('nodejs_package_registry_fetch_version_for_scoped_package.yaml')
-def test_fetch_version_with_at_and_slash_in_the_name(registry):
+def test_fetch_version_for_scoped_package(registry):
     version = registry.fetch_version('@types/chai', '4.0.4')
     assert version
     assert version.name == '@types/chai'
@@ -111,7 +111,7 @@ def test_fetch_version_with_at_and_slash_in_the_name(registry):
 
 
 @VCR.use_cassette('nodejs_package_registry_fetch_latest_version_for_scoped_package.yaml')
-def test_fetch_version_with_at_and_slash_in_the_name(registry):
+def test_fetch_latest_version_for_scoped_package(registry):
     version = registry.fetch_latest_version('@types/chai')
     assert version
     assert version.name == '@types/chai'
@@ -173,6 +173,48 @@ def test_fetch_latest_version_for_scoped_package_name_not_found(registry):
         '404 Client Error: Not Found for url: http://registry.npmjs.org/@foobar666%2Fbla'
 
 
+@VCR.use_cassette('nodejs_package_registry_fetch_version_with_license_on_license_scalar_field.yaml')
+def test_fetch_version_with_license_on_license_scalar_field(registry):
+    version = registry.fetch_version('cwise-parser', '1.0.3')
+    assert version.licenses == ['MIT']
+
+
+@VCR.use_cassette('nodejs_package_registry_fetch_version_with_wrongly_typed_licenses_list_field.yaml')
+def test_fetch_version_with_wrongly_typed_licences_list_field(registry):
+    version = registry.fetch_version('cwise-parser', '1.0.3')
+    assert version.licenses == ['MIT']
+
+
+@VCR.use_cassette('nodejs_package_registry_fetch_version_with_license_on_license_typed_list_field.yaml')
+def test_fetch_version_with_license_on_license_typed_list_field(registry):
+    version = registry.fetch_version('lodash', '0.3.2')
+    assert version.licenses == ['MIT']
+
+
+@VCR.use_cassette('nodejs_package_registry_fetch_version_with_license_on_license_flat_list_field.yaml')
+def test_fetch_version_with_license_on_license_flat_list_field(registry):
+    version = registry.fetch_version('jasmine-node', '1.14.5')
+    assert version.licenses == ['MIT']
+
+
+@VCR.use_cassette('nodejs_package_registry_fetch_version_with_license_on_licenses_typed_list_field.yaml')
+def test_fetch_version_with_license_on_licenses_typed_list_field(registry):
+    version = registry.fetch_version('lodash', '0.3.2')
+    assert version.licenses == ['MIT']
+
+
+@VCR.use_cassette('nodejs_package_registry_fetch_version_with_license_on_licenses_flat_list_field.yaml')
+def test_fetch_version_with_license_on_licenses_flat_list_field(registry):
+    version = registry.fetch_version('jasmine-node', '1.14.5')
+    assert version.licenses == ['MIT']
+
+
+@VCR.use_cassette('nodejs_package_registry_fetch_version_with_license_on_licenses_scalar_field.yaml')
+def test_fetch_version_with_license_on_licenses_scalar_field(registry):
+    version = registry.fetch_version('val-loader', '1.0.2')
+    assert version.licenses == ['MIT']
+
+
 @VCR.use_cassette('nodejs_package_registry_fetch_version_without_license_and_unlicensed_github_repository.yaml')
 def test_fetch_version_without_license_and_unlicensed_github_repository(registry):
     version = registry.fetch_version('lodash', '0.3.2')
@@ -182,6 +224,36 @@ def test_fetch_version_without_license_and_unlicensed_github_repository(registry
 @VCR.use_cassette('nodejs_package_registry_fetch_version_without_license_but_licensed_github_repository.yaml')
 def test_fetch_version_without_license(registry):
     version = registry.fetch_version('babel-core', '4.2.1')
+    assert version.licenses == ['MIT']
+
+
+@VCR.use_cassette('nodejs_package_registry_fetch_version_without_license_but_with_repositories_typed_list_field.yaml')
+def test_fetch_version_without_license_but_with_repositories_typed_list_field(registry):
+    version = registry.fetch_version('tbd', '0.6.4')
+    assert version.licenses == ['MIT']
+
+
+@VCR.use_cassette('nodejs_package_registry_fetch_version_without_license_but_with_repositories_flat_list_field.yaml')
+def test_fetch_version_without_license_but_with_repositories_flat_list_field(registry):
+    version = registry.fetch_version('tbd', '0.6.4')
+    assert version.licenses == ['MIT']
+
+
+@VCR.use_cassette('nodejs_package_registry_fetch_version_without_license_but_with_repositories_scalar_field.yaml')
+def test_fetch_version_without_license_but_with_repositories_scalar_field(registry):
+    version = registry.fetch_version('tbd', '0.6.4')
+    assert version.licenses == ['MIT']
+
+
+@VCR.use_cassette('nodejs_package_registry_fetch_version_without_license_but_with_homepage_flat_list_field.yaml')
+def test_fetch_version_without_license_but_with_homepage_flat_list_field(registry):
+    version = registry.fetch_version('tbd', '0.6.4')
+    assert version.licenses == ['MIT']
+
+
+@VCR.use_cassette('nodejs_package_registry_fetch_version_without_license_but_with_homepage_scalar_field.yaml')
+def test_fetch_version_without_license_but_with_homepage_list_field(registry):
+    version = registry.fetch_version('tbd', '0.6.4')
     assert version.licenses == ['MIT']
 
 
