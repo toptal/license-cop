@@ -3,7 +3,7 @@ import requests
 from abc import *
 
 from app.data_object import *
-from app.github_repository import *
+from app.github.repository import *
 
 
 class PackageVersionNotFoundError(Exception):

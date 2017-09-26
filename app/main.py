@@ -2,7 +2,7 @@ import sys
 from textwrap import dedent
 
 from app import *
-from app.github_repository import *
+from app.github.repository import *
 from app.platform import *
 
 

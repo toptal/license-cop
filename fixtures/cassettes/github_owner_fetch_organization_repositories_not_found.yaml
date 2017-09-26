@@ -1,0 +1,42 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/orgs/foobar-9872098098243234/repos
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAx3LMQ6DMAwAwK9U7lrw0I0HdOwXUEqsYCmJI9thKOLvIObT7VDILCSCCb7ij4/0
+        GuEFUZZeqHpwljp3zZev7s0mxEgbZWmkY2Jf+29cpOD2RqUmhs/M5oNoCpX/dx9uYBdlMjhOwTIG
+        TnMAAAA=
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Encoding: [gzip]
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Tue, 26 Sep 2017 23:05:47 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: [repo]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['0E8D:06C8:452FA72:BD7FFE2:59CADD4B']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4828']
+      X-RateLimit-Reset: ['1506470348']
+      X-Runtime-rack: ['0.019873']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+version: 1

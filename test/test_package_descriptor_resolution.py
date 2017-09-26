@@ -6,7 +6,7 @@ from app.dependency import *
 from app.dependency_resolution import *
 from app.package_descriptor import *
 from app.package_descriptor_resolution import *
-from app.github_repository import *
+from app.github.repository import *
 
 
 @pytest.fixture

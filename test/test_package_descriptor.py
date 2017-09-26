@@ -1,6 +1,6 @@
 import pytest
 
-from app.github_repository import *
+from app.github.repository import *
 from app.package_descriptor import *
 
 

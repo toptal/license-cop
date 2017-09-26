@@ -1,7 +1,7 @@
 import pytest
 
 from test import *
-from app.github_repository import *
+from app.github.repository import *
 from app.platforms.ruby.repository_matcher import *
 
 

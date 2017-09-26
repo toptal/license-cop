@@ -1,10 +1,7 @@
 import os
-import re
-import requests
 import base64
-from urllib.parse import urlparse, urljoin
 
-from app.require_environment import *
+from app.github.client import *
 
 
 USER_REPOSITORY_URI = 'https://github.com/{0}/{1}'
@@ -18,41 +15,27 @@ API_CONTENTS_URI = 'https://api.github.com/repos/{0}/{1}/contents/{2}'
 PREVIEW_MEDIA_TYPE = 'application/vnd.github.drax-preview+json'
 
 
-TOKEN = require_environment('GITHUB_TOKEN')
-URL_REGEX = r'^((git[+:@])?((http:|https:)?//)?)?(www\.)?github.com[:/](?P<owner>[\w\-\.]+)/(?P<name>[\w\-\.]+)'
+class GithubRepository(GithubClient):
 
-
-class GithubRepository:
-
-    def __init__(self, owner, name, token=TOKEN, http_compression=True):
-        self.__session = requests.Session()
-        self.__session.headers.update({'Authorization': 'token {0}'.format(token)})
-        if not http_compression:
-            self.__session.headers.update({'Accept-Encoding': 'identity'})
-
+    def __init__(self, owner, name, http_compression=True):
+        super().__init__(http_compression)
         self.owner = owner
         self.name = name
 
     @staticmethod
-    def from_url(url, token=TOKEN, http_compression=True):
-        url = url.lower()
-        path = re.match(URL_REGEX, url)
-        if path:
-            return GithubRepository(
-                path.group('owner'),
-                GithubRepository.__remove_dot_git_suffix(path.group('name')),
-                token,
-                http_compression
-            )
-
-    @staticmethod
-    def __remove_dot_git_suffix(name):
-        if name.endswith('.git'):
-            return name[:-len('.git')]
-        return name
+    def from_url(url, http_compression=True):
+        parsed = parse_github_url(url)
+        if parsed:
+            (owner, repo, _) = parsed
+            if owner and repo:
+                return GithubRepository(
+                    owner,
+                    repo,
+                    http_compression
+                )
 
     def path_exists(self, path):
-        response = self.__session.head(self.__contents_uri(path))
+        response = self._session.head(self.__contents_uri(path))
         if response.ok:
             return True
         elif response.status_code == 404:
@@ -60,7 +43,7 @@ class GithubRepository:
         response.raise_for_status()
 
     def read_text_file(self, path):
-        response = self.__session.get(self.__contents_uri(path))
+        response = self._session.get(self.__contents_uri(path))
         response.raise_for_status()
         data = response.json()
         if isinstance(data, list) or data['type'] != 'file':
@@ -68,7 +51,7 @@ class GithubRepository:
         return self.__decode_text_from_base64(data['content'])
 
     def license(self):
-        response = self.__session.get(
+        response = self._session.get(
             self.__repository_uri(),
             headers={'Accept': PREVIEW_MEDIA_TYPE}
         )
@@ -90,3 +73,7 @@ class GithubRepository:
 
     def __str__(self):
         return USER_REPOSITORY_URI.format(self.owner, self.name)
+
+    def __repr__(self):
+        return self.__str__()
+
