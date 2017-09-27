@@ -2,7 +2,8 @@ from app.github.client import *
 from app.github.repository import *
 
 
-ORGANIZATION_REPOS_URI = 'https://api.github.com/orgs/{0}/repos'
+ORGANIZATION_URI = 'https://github.com/{0}'
+API_ORGANIZATION_REPOSITORIES_URI = 'https://api.github.com/orgs/{0}/repos'
 
 
 class GithubOwner(GithubClient):
@@ -25,7 +26,7 @@ class GithubOwner(GithubClient):
         return self.__fetch_organization_repositories()
 
     def __fetch_organization_repositories(self):
-        link = ORGANIZATION_REPOS_URI.format(self.name)
+        link = API_ORGANIZATION_REPOSITORIES_URI.format(self.name)
         repos = []
         while True:
             response = self._session.get(link)
@@ -41,3 +42,9 @@ class GithubOwner(GithubClient):
             lambda i: GithubRepository(self.name, i['name']),
             data
         )
+
+    def __str__(self):
+        return ORGANIZATION_URI.format(self.name)
+
+    def __repr__(self):
+        return "GitHub organization {0}".format(str(self))

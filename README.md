@@ -39,20 +39,8 @@ This token needs to be exported to the `GITHUB_TOKEN` environment variable.
 
 ## Running License Cop
 
-Once everything is setup, just run:
-
-```
-./license-cop <github_repository>
-```
-
-where `<github_repository>` is the URL of the GitHub repository you want
-dependencies to be analyzed.
-
-For example:
-
-```
-./license-cop https://github.com/rails/rails
-```
+Once everything is set, run the `./license-cop` script. It will print
+its usage instructions.
 
 ## Running Tests
 

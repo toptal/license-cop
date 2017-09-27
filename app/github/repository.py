@@ -4,7 +4,7 @@ import base64
 from app.github.client import *
 
 
-USER_REPOSITORY_URI = 'https://github.com/{0}/{1}'
+REPOSITORY_URI = 'https://github.com/{0}/{1}'
 API_REPOSITORY_URI = 'https://api.github.com/repos/{0}/{1}'
 API_CONTENTS_URI = 'https://api.github.com/repos/{0}/{1}/contents/{2}'
 
@@ -72,8 +72,7 @@ class GithubRepository(GithubClient):
         return API_REPOSITORY_URI.format(self.owner, self.name)
 
     def __str__(self):
-        return USER_REPOSITORY_URI.format(self.owner, self.name)
+        return REPOSITORY_URI.format(self.owner, self.name)
 
     def __repr__(self):
-        return self.__str__()
-
+        return "GitHub repository {0}".format(str(self))

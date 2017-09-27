@@ -25,7 +25,7 @@ class Platform:
 
     def __report_resolution(self, resolution, report):
         print(repr(resolution), file=report)
-        print(file=report)
+        print('-' * 70, file=report)
         print(file=report)
 
     def __resolve_package_descriptor(self, descriptor):
@@ -41,7 +41,7 @@ class Platform:
     def __resolve_dependencies(self, resolver, dependencies):
         resolutions = []
         for dependency in dependencies:
-            print('>>>> Resolving {0}'.format(dependency))
+            print('  ▶︎ {0}'.format(dependency))
             resolution = resolver.resolve(dependency)
             resolutions.append(resolution)
         return resolutions
