@@ -6,9 +6,12 @@ from app.github.owner import *
 from app.github.repository import *
 
 
+def build_owner(name):
+    return GithubOwner(name, http_compression=False)
+
+
 @pytest.fixture
-def docker():
-    return GithubOwner.from_url('https://github.com/docker')
+def docker(): return build_owner('docker')
 
 
 def test_parse_valid_github_url():
@@ -156,4 +159,4 @@ def test_fetch_all_organization_repositories_using_pagination(docker):
 @VCR.use_cassette('github_owner_fetch_organization_repositories_not_found.yaml')
 def test_fetch_organization_repositories_not_found():
     with pytest.raises(requests.exceptions.HTTPError):
-        GithubOwner('foobar-9872098098243234').repositories()
+        build_owner('foobar-9872098098243234').repositories()

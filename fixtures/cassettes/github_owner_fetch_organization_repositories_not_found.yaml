@@ -3,27 +3,23 @@ interactions:
     body: null
     headers:
       Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
+      Accept-Encoding: [identity]
       Connection: [keep-alive]
       User-Agent: [python-requests/2.18.4]
       authorization: [token FOOBAR]
     method: GET
     uri: https://api.github.com/orgs/foobar-9872098098243234/repos
   response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAAAx3LMQ6DMAwAwK9U7lrw0I0HdOwXUEqsYCmJI9thKOLvIObT7VDILCSCCb7ij4/0
-        GuEFUZZeqHpwljp3zZev7s0mxEgbZWmkY2Jf+29cpOD2RqUmhs/M5oNoCpX/dx9uYBdlMjhOwTIG
-        TnMAAAA=
+    body: {string: '{"message":"Not Found","documentation_url":"https://developer.github.com/v3/repos/#list-organization-repositories"}'}
     headers:
       Access-Control-Allow-Origin: ['*']
       Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
           X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
           X-Poll-Interval']
-      Content-Encoding: [gzip]
+      Content-Length: ['115']
       Content-Security-Policy: [default-src 'none']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Tue, 26 Sep 2017 23:05:47 GMT']
+      Date: ['Wed, 27 Sep 2017 01:35:04 GMT']
       Server: [GitHub.com]
       Status: [404 Not Found]
       Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
@@ -31,12 +27,12 @@ interactions:
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [deny]
       X-GitHub-Media-Type: [github.v3; format=json]
-      X-GitHub-Request-Id: ['0E8D:06C8:452FA72:BD7FFE2:59CADD4B']
+      X-GitHub-Request-Id: ['F17F:06C8:47271C5:C308086:59CB0048']
       X-OAuth-Scopes: ['read:org, repo']
       X-RateLimit-Limit: ['5000']
-      X-RateLimit-Remaining: ['4828']
-      X-RateLimit-Reset: ['1506470348']
-      X-Runtime-rack: ['0.019873']
+      X-RateLimit-Remaining: ['4189']
+      X-RateLimit-Reset: ['1506477548']
+      X-Runtime-rack: ['0.020517']
       X-XSS-Protection: [1; mode=block]
     status: {code: 404, message: Not Found}
 version: 1
