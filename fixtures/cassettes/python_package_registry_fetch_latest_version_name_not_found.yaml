@@ -1,0 +1,36 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://pypi.python.org/pypi/foobar666/json
+  response:
+    body: {string: 'Not Found (no releases)
+
+
+'}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['25']
+      Content-Type: [text/plain; charset=utf-8]
+      Date: ['Thu, 28 Sep 2017 06:26:51 GMT']
+      Fastly-Debug-Digest: [ba941d159b2e6502800ac9390771492198037ef4d3df123503aa9b980e2e8031]
+      Server: [nginx/1.10.3]
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['MISS, MISS']
+      X-Cache-Hits: ['0, 0']
+      X-Clacks-Overhead: [GNU Terry Pratchett]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-Permitted-Cross-Domain-Policies: [none]
+      X-Served-By: ['cache-iad2144-IAD, cache-gru17134-GRU']
+      X-Timer: ['S1506580011.393281,VS0,VE169']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found (no releases)}
+version: 1

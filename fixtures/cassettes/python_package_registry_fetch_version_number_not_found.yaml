@@ -1,0 +1,36 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://pypi.python.org/pypi/requests/666/json
+  response:
+    body: {string: 'Not Found (invalid name/version)
+
+
+'}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['34']
+      Content-Type: [text/plain; charset=utf-8]
+      Date: ['Thu, 28 Sep 2017 06:25:45 GMT']
+      Fastly-Debug-Digest: [19624169208279d32a62c964808dcc78f2f8b938113d06781e03e5c9e1d98cdb]
+      Server: [nginx/1.10.3]
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['MISS, MISS']
+      X-Cache-Hits: ['0, 0']
+      X-Clacks-Overhead: [GNU Terry Pratchett]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-Permitted-Cross-Domain-Policies: [none]
+      X-Served-By: ['cache-iad2134-IAD, cache-gru17132-GRU']
+      X-Timer: ['S1506579946.623552,VS0,VE148']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found (invalid name/version)}
+version: 1
