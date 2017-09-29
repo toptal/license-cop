@@ -9,9 +9,14 @@ requests = "*"
 
 
 
+
+
+
 [dev-packages]
+
 pytest = "*"
 vcrpy = "*"
+pytest-mock = "*"
 
 
 

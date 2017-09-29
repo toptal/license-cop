@@ -8,13 +8,16 @@ from app.package_descriptor import *
 class RubyRepositoryMatcher(RepositoryMatcher):
 
     def __init__(self):
-        super().__init__(['Gemfile'])
+        super().__init__([PackageDescriptorPattern.one_file('gemfile', 'Gemfile')])
 
-    def _fetch_package_descriptor(self, repository, path):
-        gemfile = repository.read_text_file(path)
+    def _fetch_package_descriptor(self, repository, pattern_match):
+        assert len(pattern_match.paths) == 1
+        gemfile = pattern_match.paths[0]
+
+        data = repository.read_text_file(gemfile)
         dependencies = []
 
-        for line in gemfile.splitlines():
+        for line in data.splitlines():
             name = self.__parse_line(line)
             if name:
                 dependency = self.__build_dependency(name)
@@ -23,11 +26,10 @@ class RubyRepositoryMatcher(RepositoryMatcher):
         return PackageDescriptor(
             platform='Ruby',
             repository=repository,
-            path=path,
+            path=gemfile,
             runtime_dependencies=dependencies,
             development_dependencies=[]  # TODO
         )
-
 
     def __parse_line(self, line):
         m = re.match(r"^\s*gem\s+['\"]([\w\-]+)['\"]", line)
