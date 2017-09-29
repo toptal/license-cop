@@ -283,3 +283,27 @@ def test_fetch_version_without_runtime_dependencies(registry):
     version = registry.fetch_version('six', '1.11.0')
     assert version.runtime_dependencies == []
     assert version.development_dependencies == []
+
+
+@VCR.use_cassette('python_fetch_version_discarding_extra_lines_from_license.yaml')
+def test_fetch_version_discarding_extra_lines_from_license(registry):
+    version = registry.fetch_version('flaky', '3.4.0')
+    assert version.licenses == ['Apache License [...]']
+
+
+@VCR.use_cassette('python_fetch_version_discarding_blank_lines_from_license.yaml')
+def test_fetch_version_discarding_blank_lines_from_license(registry):
+    version = registry.fetch_version('flaky', '3.4.0')
+    assert version.licenses == ['Apache License [...]']
+
+
+@VCR.use_cassette('python_fetch_version_discarding_empty_licenses.yaml')
+def test_fetch_version_discarding_empty_licenses(registry):
+    version = registry.fetch_version('setuptools', '36.5.0')
+    assert version.licenses == []
+
+
+@VCR.use_cassette('python_fetch_version_discarding_unknown_licenses.yaml')
+def test_fetch_version_discarding_empty_licenses(registry):
+    version = registry.fetch_version('mock', '2.0.0')
+    assert version.licenses == []

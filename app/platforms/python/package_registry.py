@@ -75,7 +75,26 @@ class PythonPackageRegistry(PackageRegistry):
         return PackageVersion(
             name=info['name'],
             number=info['version'],
-            licenses=[info['license']],
+            licenses=self.__determine_licenses(info),
             runtime_dependencies=self.__filter_dependencies(deps, DependencyKind.RUNTIME),
             development_dependencies=self.__filter_dependencies(deps, DependencyKind.DEVELOPMENT)
         )
+
+    def __determine_licenses(self, data):
+        license = self.__clean_license(data['license'])
+        if license:
+            return [license]
+        return []
+
+    def __clean_license(self, string):
+        if string:
+            license = self.__trim_lines(string)
+            if license and license.lower() != 'unknown':
+                return license
+
+    def __trim_lines(self, string):
+        lines = map(lambda i: i.strip(), string.splitlines())
+        lines = [l for l in lines if l]
+        if lines:
+            line = lines[0]
+            return '{0} [...]'.format(line) if len(lines) > 1 else line
