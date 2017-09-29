@@ -1,0 +1,982 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/requirements.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:01 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D610:26B155A:59CDE995']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3563']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.039092']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/requirements.test.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:01 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D648:26B15B9:59CDE995']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3562']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.041312']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/requirements-test.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:02 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D678:26B1621:59CDE995']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3560']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.050748']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/requirements_test.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:02 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D6A6:26B1697:59CDE996']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3558']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.040888']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/test-requirements.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:02 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D6D4:26B16FC:59CDE996']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3555']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.058692']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/test.requirements.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:02 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D70A:26B175F:59CDE996']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3553']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.041227']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/test_requirements.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:02 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D734:26B17CD:59CDE996']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3551']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.049404']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/requirements.testing.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:03 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D772:26B183C:59CDE996']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3548']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.036324']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/requirements-testing.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:03 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D797:26B1898:59CDE997']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3545']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.045391']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/requirements_testing.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:03 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D7C6:26B18EF:59CDE997']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3543']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.038042']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/testing-requirements.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:03 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D7F4:26B194F:59CDE997']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3540']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.050125']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/testing.requirements.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:03 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D81A:26B19B6:59CDE997']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3537']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.035591']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/testing_requirements.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:04 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D83F:26B1A06:59CDE997']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3534']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.060516']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/dev-requirements.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:04 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D868:26B1A55:59CDE998']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3532']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.045257']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/dev.requirements.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:04 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D88D:26B1AA8:59CDE998']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3529']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.048442']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/dev_requirements.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:04 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D8B9:26B1AF7:59CDE998']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3528']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.049441']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/requirements-dev.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:04 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D8E3:26B1B43:59CDE998']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3527']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.038304']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/requirements.dev.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:05 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D908:26B1B91:59CDE998']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3525']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.035839']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/requirements_dev.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:05 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D92C:26B1BE8:59CDE999']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3523']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.127024']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/development-requirements.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:05 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D96C:26B1C64:59CDE999']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3522']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.035466']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/development.requirements.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:05 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D987:26B1CA8:59CDE999']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3521']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.037545']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/development_requirements.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:05 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D9AA:26B1CF3:59CDE999']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3518']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.046707']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/requirements-development.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:06 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D9CC:26B1D45:59CDE999']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3517']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.037942']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/requirements.development.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:06 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127D9F5:26B1D92:59CDE99A']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3515']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.044134']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/requirements_development.txt
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Content-Length: ['106']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:06 GMT']
+      Server: [GitHub.com]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127DA13:26B1DD5:59CDE99A']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3512']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.041145']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/toptal/license-cop/contents/Pipfile
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1046']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:06 GMT']
+      ETag: ['"b60c92d2f67702904f3b1b26781c11a8"']
+      Last-Modified: ['Fri, 29 Sep 2017 03:10:38 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127DA3C:26B1E23:59CDE99A']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3510']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.042385']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/toptal/license-cop/contents/Pipfile
+  response:
+    body: {string: '{"name":"Pipfile","path":"Pipfile","sha":"bfc703f4afc88b26dcfd8c9c6d66ca8d30be6e66","size":165,"url":"https://api.github.com/repos/toptal/license-cop/contents/Pipfile?ref=master","html_url":"https://github.com/toptal/license-cop/blob/master/Pipfile","git_url":"https://api.github.com/repos/toptal/license-cop/git/blobs/bfc703f4afc88b26dcfd8c9c6d66ca8d30be6e66","download_url":"https://raw.githubusercontent.com/toptal/license-cop/master/Pipfile?token=ADMStJfPtiZBe6VAhnSij873ZoYROmWOks5ZzenWwA%3D%3D","type":"file","content":"W1tzb3VyY2VdXQp1cmwgPSAiaHR0cHM6Ly9weXBpLnB5dGhvbi5vcmcvc2lt\ncGxlIgp2ZXJpZnlfc3NsID0gdHJ1ZQpbcGFja2FnZXNdCnJlcXVlc3RzID0g\nIioiCgoKCgoKCgoKCltkZXYtcGFja2FnZXNdCgpweXRlc3QgPSAiKiIKdmNy\ncHkgPSAiKiIKcHl0ZXN0LW1vY2sgPSAiKiIKCgoK\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/toptal/license-cop/contents/Pipfile?ref=master","git":"https://api.github.com/repos/toptal/license-cop/git/blobs/bfc703f4afc88b26dcfd8c9c6d66ca8d30be6e66","html":"https://github.com/toptal/license-cop/blob/master/Pipfile"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1046']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 29 Sep 2017 06:35:06 GMT']
+      ETag: ['"b60c92d2f67702904f3b1b26781c11a8"']
+      Last-Modified: ['Fri, 29 Sep 2017 03:10:38 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['88A2:30BC:127DA5C:26B1E74:59CDE99A']
+      X-OAuth-Scopes: ['read:org, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['3507']
+      X-RateLimit-Reset: ['1506668400']
+      X-Runtime-rack: ['0.029970']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1

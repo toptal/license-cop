@@ -41,9 +41,9 @@ def test_single_package_descriptor(matcher, nodejs_repository):
     assert len(descriptors) == 1
     descriptor = descriptors[0]
 
-    descriptor.platform = 'Node.js'
-    descriptor.repository = nodejs_repository
-    descriptor.path = 'package.json'
+    assert descriptor.platform == 'Node.js'
+    assert descriptor.repository == nodejs_repository
+    assert descriptor.paths == ['package.json']
     assert descriptor.runtime_dependencies == [
         Dependency.runtime('JSONStream'),
         Dependency.runtime('assert'),

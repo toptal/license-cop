@@ -20,7 +20,7 @@ class NodejsRepositoryMatcher(RepositoryMatcher):
         return PackageDescriptor(
             platform='Node.js',
             repository=repository,
-            path=package_json,
+            paths=[package_json],
             runtime_dependencies=parse_dependencies(data, DependencyKind.RUNTIME),
             development_dependencies=parse_dependencies(data, DependencyKind.DEVELOPMENT)
         )

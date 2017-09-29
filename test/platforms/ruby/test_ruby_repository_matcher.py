@@ -41,9 +41,9 @@ def test_single_package_descriptor(matcher, ruby_repository):
     assert len(descriptors) == 1
     descriptor = descriptors[0]
 
-    descriptor.platform = 'Ruby'
-    descriptor.repository = ruby_repository
-    descriptor.path = 'package.json'
+    assert descriptor.platform == 'Ruby'
+    assert descriptor.repository == ruby_repository
+    assert descriptor.paths == ['Gemfile']
 
     assert descriptor.runtime_dependencies == [
         Dependency.runtime('arel'),

@@ -9,7 +9,7 @@ PACKAGE_URI = 'https://pypi.python.org/pypi/{0}/json'
 VERSION_URI = 'https://pypi.python.org/pypi/{0}/{1}/json'
 
 DEPENDENCY_REGEX = re.compile(
-    r"^(?P<name>[\w\-]+)\s*"                                # name
+    r"^(?P<name>[\w\-\.]+)\s*"                              # name
     r"(\(.+\))?\s*"                                         # optional version
     r"(;\s*("                                               # optional semicolon
     r".*"                                                   # optional attributes

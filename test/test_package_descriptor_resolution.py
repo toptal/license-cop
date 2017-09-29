@@ -19,7 +19,7 @@ def descriptor(repository):
     return PackageDescriptor(
         'Ruby',
         repository,
-        'Gemfile',
+        ['Gemfile'],
         runtime_dependencies=[
             Dependency.runtime('activesupport'),
             Dependency.runtime('activemodel'),

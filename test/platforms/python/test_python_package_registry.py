@@ -172,6 +172,24 @@ def test_parse_dependency_with_other_checks_and_extra_in_middle():
     assert d.is_development
 
 
+def test_parse_dependency_with_underscores_in_the_name():
+    d = parse_dependency('py_Open_SSL; extra == "test"')
+    assert d.name == 'py_Open_SSL'
+    assert d.is_development
+
+
+def test_parse_dependency_with_dashes_in_the_name():
+    d = parse_dependency('py-Open-SSL; extra == "test"')
+    assert d.name == 'py-Open-SSL'
+    assert d.is_development
+
+
+def test_parse_dependency_with_dots_in_the_name():
+    d = parse_dependency('py.Open.SSL; extra == "test"')
+    assert d.name == 'py.Open.SSL'
+    assert d.is_development
+
+
 def test_raise_exception_if_dependency_could_not_be_parsed():
     string = '$%^&'
     with pytest.raises(Exception) as e:

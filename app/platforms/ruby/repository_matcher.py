@@ -26,7 +26,7 @@ class RubyRepositoryMatcher(RepositoryMatcher):
         return PackageDescriptor(
             platform='Ruby',
             repository=repository,
-            path=gemfile,
+            paths=[gemfile],
             runtime_dependencies=dependencies,
             development_dependencies=[]  # TODO
         )
