@@ -18,4 +18,3 @@ class PackageDescriptorResolution:
     def __print_resolutions(self, io, resolutions):
         for resolution in resolutions:
             io.write(resolution.__repr__(1))
-

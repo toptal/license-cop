@@ -303,7 +303,7 @@ def test_fetch_version_discarding_empty_licenses(registry):
     assert version.licenses == []
 
 
-@VCR.use_cassette('python_fetch_version_discarding_unknown_licenses.yaml')
-def test_fetch_version_discarding_empty_licenses(registry):
+@VCR.use_cassette('python_fetch_version_read_license_from_github_if_no_licenses.yaml')
+def test_fetch_version_read_license_from_github_if_no_licenses(registry):
     version = registry.fetch_version('mock', '2.0.0')
-    assert version.licenses == []
+    assert version.licenses == ['BSD-2-Clause']

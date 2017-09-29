@@ -81,15 +81,17 @@ class PythonPackageRegistry(PackageRegistry):
         )
 
     def __determine_licenses(self, data):
-        license = self.__clean_license(data['license'])
+        license = self.__clean_license(data.get('license'))
         if license:
             return [license]
-        return []
+        else:
+            urls = self.__extract_repository_urls(data)
+            return self._find_licenses_in_code_repository_urls(urls)
 
     def __clean_license(self, string):
         if string:
-            license = self.__trim_lines(string)
-            if license and license.lower() != 'unknown':
+            license = self.__remove_unknown_token(self.__trim_lines(string))
+            if license:
                 return license
 
     def __trim_lines(self, string):
@@ -98,3 +100,12 @@ class PythonPackageRegistry(PackageRegistry):
         if lines:
             line = lines[0]
             return '{0} [...]'.format(line) if len(lines) > 1 else line
+
+    def __remove_unknown_token(self, string):
+        if string and string != 'UNKNOWN':
+            return string
+
+    def __extract_repository_urls(self, data):
+        keys = ['home_page', 'docs_url', 'download_url', 'bugtrack_url']
+        urls = list(map(lambda i: self.__remove_unknown_token(data.get(i)), keys))
+        return list(filter(None, urls))

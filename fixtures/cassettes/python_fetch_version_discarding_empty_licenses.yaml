@@ -52,7 +52,7 @@ interactions:
         \n            \"Topic :: Utilities\"\n        ], \n        \"name\": \"setuptools\",
         \n        \"bugtrack_url\": \"\", \n        \"license\": \"\", \n        \"summary\":
         \"Easily download, build, install, upgrade, and uninstall Python packages\",
-        \n        \"home_page\": \"https://github.com/pypa/setuptools\", \n        \"cheesecake_installability_id\":
+        \n        \"home_page\": \"\", \n        \"cheesecake_installability_id\":
         null\n    }, \n    \"releases\": {\n        \"11.0\": [\n            {\n                \"has_sig\":
         false, \n                \"upload_time\": \"2015-01-03T03:28:13\", \n                \"comment_text\":
         \"\", \n                \"python_version\": \"3.4\", \n                \"url\":
