@@ -63,5 +63,5 @@ class RepositoryMatcher(ABC):
             return _PackageDescriptorPatternMatch(pattern.id, pattern_matches)
 
     @abstractmethod
-    def _fetch_package_descriptor(self, repository, path):
+    def _fetch_package_descriptor(self, repository, pattern_match):
         pass
