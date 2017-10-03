@@ -5,6 +5,11 @@ from app.repository_matcher import *
 from app.package_descriptor import *
 
 
+DEPS_BLOCK_REGEX = re.compile(r"defp?\s+deps(.+?)\bend\b", re.S)
+DEPENDENCY_REGEX = re.compile(r"{(.+?)}")
+DEV_ENVS = (':dev', ':test', ':docs')
+
+
 class ElixirRepositoryMatcher(RepositoryMatcher):
 
     def __init__(self):
@@ -18,11 +23,11 @@ class ElixirRepositoryMatcher(RepositoryMatcher):
         development_dependencies = []
 
         data = repository.read_text_file(mixfile)
-        for dep in self.__each_dep(data):
+        for dep in self.__each_dependency(data):
             name, version, *options = [s.strip() for s in dep.split(',', 2)]
             package_name = name[1:]
 
-            if options and ':dev' in options[0]:
+            if options and any(env in options[0] for env in DEV_ENVS):
                 development_dependencies.append(Dependency.development(package_name))
             else:
                 runtime_dependencies.append(Dependency.runtime(package_name))
@@ -35,6 +40,6 @@ class ElixirRepositoryMatcher(RepositoryMatcher):
             development_dependencies=development_dependencies
         )
 
-    def __each_dep(self, data):
-        deps_block = re.search(r"defp\s+deps(.+?)\bend\b", data, re.S)
-        yield from (dep.group(1) for dep in re.finditer(r"{(.+?)}", deps_block.group(1)))
+    def __each_dependency(self, data):
+        deps_block = DEPS_BLOCK_REGEX.search(data)
+        yield from (dep.group(1) for dep in DEPENDENCY_REGEX.finditer(deps_block.group(1)))

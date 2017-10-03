@@ -1,0 +1,27 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://hex.pm/api/packages/notexists
+  response:
+    body: {string: '{"status":404,"message":"Page not found"}'}
+    headers:
+      Cache-Control: ['max-age=0, private, must-revalidate']
+      Connection: [keep-alive]
+      Content-Length: ['41']
+      Content-Type: [application/vnd.hex+json; charset=utf-8]
+      Date: ['Tue, 03 Oct 2017 15:01:26 GMT']
+      Server: [Cowboy]
+      Strict-Transport-Security: [max-age=31536000]
+      Vary: [accept-encoding]
+      Via: [1.1 vegur]
+      X-Ratelimit-Limit: ['100']
+      X-Ratelimit-Remaining: ['99']
+      X-Ratelimit-Reset: ['1507042920']
+    status: {code: 404, message: Not Found}
+version: 1

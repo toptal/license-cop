@@ -1,0 +1,59 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://hex.pm/api/packages/rat_error
+  response:
+    body: {string: '{"url":"https://hex.pm/api/packages/rat_error","updated_at":"2017-09-30T08:58:34.338445Z","repository":"hexpm","releases":[{"version":"0.0.1","url":"https://hex.pm/api/packages/rat_error/releases/0.0.1"}],"owners":[{"username":"asongala","url":"https://hex.pm/api/users/asongala","email":"asongala@163.com"}],"name":"rat_error","meta":{"maintainers":["Steven
+        Gu"],"links":{},"licenses":[],"description":"Helper
+        functions for error handling"},"inserted_at":"2017-09-30T08:48:18.708681Z","html_url":"https://hex.pm/packages/rat_error","downloads":{"week":2,"recent":2,"day":1,"all":2}}'}
+    headers:
+      Cache-Control: ['public, max-age=60']
+      Connection: [keep-alive]
+      Content-Length: ['638']
+      Content-Type: [application/vnd.hex+json; charset=utf-8]
+      Date: ['Tue, 03 Oct 2017 16:53:22 GMT']
+      Etag: [866f14d7adc60e85ca6d815f886b59ec]
+      Last-Modified: ['Sat, 30 Sep 2017 08:58:34 GMT']
+      Server: [Cowboy]
+      Strict-Transport-Security: [max-age=31536000]
+      Vary: ['accept, accept-encoding, accept-encoding']
+      Via: [1.1 vegur]
+      X-Ratelimit-Limit: ['100']
+      X-Ratelimit-Remaining: ['99']
+      X-Ratelimit-Reset: ['1507049640']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://hex.pm/api/packages/rat_error/releases/0.0.1
+  response:
+    body: {string: '{"version":"0.0.1","url":"https://hex.pm/api/packages/rat_error/releases/0.0.1","updated_at":"2017-09-30T08:58:29.415895Z","retirement":null,"requirements":{},"package_url":"https://hex.pm/api/packages/rat_error","meta":{"elixir":"~>
+        1.5","build_tools":["mix"],"app":"rat_error"},"inserted_at":"2017-09-30T08:48:18.716243Z","html_url":"https://hex.pm/packages/rat_error/0.0.1","has_docs":true,"downloads":2}'}
+    headers:
+      Cache-Control: ['public, max-age=60']
+      Connection: [keep-alive]
+      Content-Length: ['407']
+      Content-Type: [application/vnd.hex+json; charset=utf-8]
+      Date: ['Tue, 03 Oct 2017 16:53:22 GMT']
+      Etag: [43ae9802035df24e3910f57a382040d6]
+      Last-Modified: ['Sat, 30 Sep 2017 08:58:29 GMT']
+      Server: [Cowboy]
+      Strict-Transport-Security: [max-age=31536000]
+      Vary: ['accept, accept-encoding, accept-encoding']
+      Via: [1.1 vegur]
+      X-Ratelimit-Limit: ['100']
+      X-Ratelimit-Remaining: ['98']
+      X-Ratelimit-Reset: ['1507049640']
+    status: {code: 200, message: OK}
+version: 1
