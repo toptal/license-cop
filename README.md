@@ -280,6 +280,7 @@ These patterns are represented by instances of class
   descriptor format (eg: Ruby's `Gemfile`), you can ignore this field.
 - The list of file names to match. For example, to support the Python
   requirements file format, the following file names should be matched:
+    - `requirements.txt`
     - `requirements.test.txt`
     - `requirements-test.txt`
     - `requirements_test.txt`
@@ -308,11 +309,11 @@ class FoobarRepositoryMatcher(RepositoryMatcher):
 ```
 
 `FoobarRepositoryMatcher` should also override the `_fetch_package_descriptor`
-method. This method receives an instance of a repository and the pattern
-that was matched:
+method. This method receives the repository and a pattern match object (
+[`PackageDescriptorPatternMatch`](app/repository_matcher.py)).
 
 ```python
-def _fetch_package_descriptor(self, repository, pattern_match)`
+def _fetch_package_descriptor(self, repository, pattern_match)
 ```
 
 You can then use the repository to fetch the contents of
@@ -327,7 +328,7 @@ be placed in `test/platforms/foobar/test_foobar_repository_matcher.py`.
 First, create a `app/platforms/foobar/__init__.py` file. Then build an instance
 of [`Platform`](app/platform.py) as follows:
 
-```
+```python
 from app.platforms.foobar.package_registry import *
 from app.platforms.foobar.repository_matcher import *
 from app.platform import *

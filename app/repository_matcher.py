@@ -17,13 +17,13 @@ class PackageDescriptorPattern(DataObject):
         return PackageDescriptorPattern(id, files)
 
 
-class _PackageDescriptorPatternMatch(DataObject):
+class PackageDescriptorPatternMatch(DataObject):
     def __init__(self, pattern_id, paths):
         self.pattern_id = pattern_id
         self.paths = paths
 
 
-class _Repository_Match(DataObject):
+class RepositoryMatch(DataObject):
     def __init__(self, matcher, repository, pattern_matches):
         self.__matcher = matcher
         self.repository = repository
@@ -48,7 +48,7 @@ class RepositoryMatcher(ABC):
             if m:
                 matches.append(m)
 
-        return _Repository_Match(self, repository, matches) if matches else None
+        return RepositoryMatch(self, repository, matches) if matches else None
 
     def __match_pattern(self, repository, pattern):
         # For now, this is a dumb filename match.
@@ -60,7 +60,7 @@ class RepositoryMatcher(ABC):
             if repository.path_exists(file):
                 pattern_matches.append(file)
         if pattern_matches:
-            return _PackageDescriptorPatternMatch(pattern.id, pattern_matches)
+            return PackageDescriptorPatternMatch(pattern.id, pattern_matches)
 
     @abstractmethod
     def _fetch_package_descriptor(self, repository, pattern_match):
