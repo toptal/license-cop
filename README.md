@@ -80,8 +80,8 @@ To run the entire test suite, just invoke the `./test.sh` script.
 Source code repositories, or simple, _repositories_, are file hierarchies that
 stores and versions source code.
 
-Currently, only [GitHub](https://github.org) repositories are supported, being
-represented by instances of the [GithubRepository](`app/github/repository.py`)
+Currently, only [GitHub](https://github.com) repositories are supported, being
+represented by instances of the [GithubRepository](app/github/repository.py)
 class. If necessary, support for different version control platforms can be
 easilly added.
 
