@@ -58,8 +58,18 @@ def parse_requirements_file(data, kind):
     return dependencies
 
 
+def __clean_pipfile_entry(e):
+    e = e.replace('"', '')
+    e = e.replace("'", '')
+    e = e.strip()
+    return e
+
+
 def __parse_pipfile_section(parser, section, kind):
-    return list(map(lambda i: Dependency(i, kind), parser[section].keys()))
+    return list(map(
+        lambda i: Dependency(i, kind),
+        map(lambda i: __clean_pipfile_entry(i), parser[section].keys())
+    ))
 
 
 def parse_pipfile(data):

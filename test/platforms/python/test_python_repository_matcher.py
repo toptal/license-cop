@@ -92,7 +92,21 @@ def test_parse_pipfile():
         django = { git = 'https://github.com/django/django.git', ref = '1.11.4', editable = true }
 
         [dev-packages]
-        nose = '*'
+        pytest = ">=2.8.0"
+        codecov = "*"
+        "pytest-httpbin" = "==0.0.7"
+        "pytest-mock" = "*"
+        "pytest-cov" = "*"
+        "pytest-xdist" = "*"
+        alabaster = "*"
+        "readme-renderer" = "*"
+        sphinx = "<=1.5.5"
+        pysocks = "*"
+        docutils = "*"
+        "flake8" = "*"
+        tox = "*"
+        detox = "*"
+        httpbin = "==0.5.0"
     ''')
 
     (runtime, development) = parse_pipfile(data)
@@ -102,7 +116,23 @@ def test_parse_pipfile():
         Dependency.runtime('records'),
         Dependency.runtime('django')
     ]
-    assert development == [Dependency.development('nose')]
+    assert development == [
+        Dependency.development('pytest'),
+        Dependency.development('codecov'),
+        Dependency.development('pytest-httpbin'),
+        Dependency.development('pytest-mock'),
+        Dependency.development('pytest-cov'),
+        Dependency.development('pytest-xdist'),
+        Dependency.development('alabaster'),
+        Dependency.development('readme-renderer'),
+        Dependency.development('sphinx'),
+        Dependency.development('pysocks'),
+        Dependency.development('docutils'),
+        Dependency.development('flake8'),
+        Dependency.development('tox'),
+        Dependency.development('detox'),
+        Dependency.development('httpbin')
+    ]
 
 
 @VCR.use_cassette('python_repository_matcher_match_repository_with_requirements.yaml')
