@@ -1,0 +1,364 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://cocoapods.org/pods/WebLinking
+  response:
+    body: {string: "<!DOCTYPE html><html lang=\"en-en\"><head><title>WebLinking on\
+        \ CocoaPods.org</title><meta charset=\"utf-8\" /><meta content=\"cocoapods\
+        \ objective-c objc swift package manager libraries documentation search pods\
+        \ podspec podfile cocoa apple ios library\" name=\"keywords\" /><meta content=\"\
+        IE=edge\" http-equiv=\"X-UA-Compatible\" /><meta content=\"width=device-width,\
+        \ initial-scale=1.0\" name=\"viewport\" /><meta content=\"Swift implementation\
+        \ of Web Linking and Link headers (RFC5988)\" name=\"description\" /><meta\
+        \ content=\"Kyle Fuller\" name=\"author\" /><meta content=\"summary_large_image\"\
+        \ name=\"twitter:card\" /><meta content=\"@CocoaPods\" name=\"twitter:site\"\
+        \ /><meta content=\"@kylefuller\" name=\"twitter:creator\" /><meta content=\"\
+        WebLinking\" name=\"twitter:title\" /><meta content=\"Swift implementation\
+        \ of Web Linking and Link headers (RFC5988)\" name=\"twitter:description\"\
+        \ /><meta content=\"https://cocoapods.org/pods/WebLinking\" name=\"twitter:url\"\
+        \ /><meta content=\"http://cocoadocs.org/docsets/WebLinking/2.0.0/preview.png\"\
+        \ name=\"twitter:image:src\" /><meta content=\"CocoaPods\" property=\"og:site_name\"\
+        \ /><meta content=\"WebLinking\" property=\"og:title\" /><meta content=\"\
+        https://cocoapods.org/pods/WebLinking\" property=\"og:url\" /><meta content=\"\
+        website\" property=\"og:type\" /><meta content=\"Swift implementation of Web\
+        \ Linking and Link headers (RFC5988)\" property=\"og:description\" /><meta\
+        \ content=\"http://cocoadocs.org/docsets/WebLinking/2.0.0/preview.png\" property=\"\
+        og:image\" /><link rel=\"shortcut icon\" href=\"https://cocoapods.org/favicons/favicon.ico\"\
+        \ type=\"image/x-icon\" /><link rel=\"apple-touch-icon\" href=\"https://cocoapods.org/favicons/apple-touch-icon.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"https://cocoapods.org/favicons/apple-touch-icon-57x57.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"https://cocoapods.org/favicons/apple-touch-icon-60x60.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"https://cocoapods.org/favicons/apple-touch-icon-72x72.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"https://cocoapods.org/favicons/apple-touch-icon-76x76.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"https://cocoapods.org/favicons/apple-touch-icon-114x114.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"https://cocoapods.org/favicons/apple-touch-icon-120x120.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"https://cocoapods.org/favicons/apple-touch-icon-144x144.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"https://cocoapods.org/favicons/apple-touch-icon-152x152.png\"\
+        \ /><script src=\"/javascripts/application-15598b1d95c0f883ea517c760352f0fe.js\"\
+        ></script><link href=\"/stylesheets/app-15598b1d95c0f883ea517c760352f0fe.css\"\
+        \ media=\"screen\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"https://cocoapods.org/opensearch.xml\"\
+        \ rel=\"search\" title=\"CocoaPods\" type=\"application/opensearchdescription+xml\"\
+        \ /></head><body><nav class=\"navbar navbar-static-top\" role=\"navigation\"\
+        ><section class=\"container\"><div class=\"navbar-header\"><button class=\"\
+        navbar-toggle\" data-target=\".navbar-header-collapse\" data-toggle=\"collapse\"\
+        \ type=\"button\"><span class=\"sr-only\">Toggle navigation</span><span class=\"\
+        glyphicon glyphicon-plus\"></span></button><a class=\"navbar-brand\" href=\"\
+        https://cocoapods.org\"></a></div><div class=\"collapse navbar-collapse navbar-header-collapse\"\
+        ><ul class=\"nav navbar-nav navbar-right\"><li><a href=\"https://cocoapods.org/app\"\
+        >App</a></li><li><a href=\"https://cocoapods.org/about\">About</a></li><li><a\
+        \ href=\"https://guides.cocoapods.org\">Guides</a></li><li><a href=\"https://blog.cocoapods.org\"\
+        >Blog</a></li></ul></div></section></nav><section class=\"container\"><article\
+        \ class=\"row\" id=\"headline\"><div class=\"col-lg-12 col-sm-12 col-xs-12\"\
+        ><h1>WebLinking <span>2.0.0</span></h1></div></article></section><div id=\"\
+        content-wrapper\"><section class=\"container\" id=\"pod-page\"><article class=\"\
+        row\"><div class=\"pod_result\"><div class=\"pod-metadata clearfix\"></div><div\
+        \ class=\"sideline col-sm-3 col-xs-12 col-sm-push-9\"><h1 class=\"visible-xs\
+        \ inline-headline\"><a href='/pods/WebLinking'>WebLinking</a> <span>2.0.0</span></h1><div\
+        \ class=\"close-expanded\"><a href=\"#\">&times;</a></div><h3></h3><table\
+        \ class='header'><tbody><tr><td> <span class='hidden-lg-span'>Tests</span><span\
+        \ class='visible-lg-span'>Tested</span>\n</td><td>\u2713</td></tr><tr><td>\
+        \ <span class='hidden-lg-span'>Lang</span><span class='visible-lg-span'>Language</span>\n\
+        </td><td> <span class='hidden-lg-span'>Swift</span><span class='visible-lg-span'>Swift</span>\n\
+        </td></tr><tr><td>License</td><td> <a href='http://opensource.org/licenses/MIT'>MIT</a>\n\
+        </td></tr><tr><td> <span class='hidden-lg-span'>Released</span><span class='visible-lg-span'>Last\
+        \ Release</span>\n</td><td>Jun 2017</td></tr><tr><td> <span class='hidden-lg-span'>Swift</span><span\
+        \ class='visible-lg-span'>Swift Version</span>\n</td><td>3.0</td></tr><tr><td>\
+        \ <span class='hidden-lg-span'>SPM</span><span class='visible-lg-span'>Supports\
+        \ SPM</span>\n</td><td>\u2713</td></tr></tbody></table><p>Maintained by <a\
+        \ href='/owners/5'>Kyle Fuller</a>.</p><hr /><h3>Downloads</h3><table class='inset'><tbody><tr><td>Total</td><td>27,963</td></tr><tr><td>Week</td><td>415</td></tr><tr><td>Month</td><td>2,235</td></tr></tbody></table><h3>Installs</h3><table\
+        \ class='inset'><tbody><tr><td>Apps</td><td>187</td></tr><tr><td> <span class='hidden-lg-span'>Apps\
+        \ Week</span><span class='visible-lg-span'>Apps This Week</span>\n</td><td>19</td></tr><tr><td>Test\
+        \ Targets</td><td>64</td></tr><tr><td> <span class='hidden-lg-span'>Test Week</span><span\
+        \ class='visible-lg-span'>Tests This week</span>\n</td><td>6</td></tr></tbody></table><sub>powered\
+        \ by <a href=\"https://segment.com\">Segment</a></sub><hr /><h3>GitHub</h3><table\
+        \ class='inset'><tbody><tr><td>Stars</td><td>136</td></tr><tr><td>Watchers</td><td>3</td></tr><tr><td>Forks</td><td>13</td></tr><tr><td>Issues</td><td>0</td></tr><tr><td>Contributors</td><td>4</td></tr><tr><td>Pull\
+        \ Requests</td><td>1</td></tr></tbody></table><hr /><h3>Code</h3><table class='inset'><tbody><tr><td>Files</td><td>1</td></tr><tr><td>\
+        \ <span class='hidden-lg-span'>LOC</span><span class='visible-lg-span'>Lines\
+        \ of Code</span>\n</td><td>130</td></tr></tbody></table><hr /><button class=\"\
+        btn\" data-target=\"#installation_guide\" data-toggle=\"modal\" type=\"button\"\
+        >Installation Guide</button><div aria-hidden=\"true\" aria-labelledby=\"installation_label\"\
+        \ class=\"modal fade\" id=\"installation_guide\" role=\"dialog\" tabindex=\"\
+        -1\"><div class=\"modal-dialog\"><div class=\"modal-content\"><div class=\"\
+        modal-header\"><button aria-label=\"Close\" class=\"close\" data-dismiss=\"\
+        modal\" type=\"button\"><span aria-hidden=\"true\">&times</span></button><h4\
+        \ class=\"modal-title\" id=\"installation_label\">Installation Guide for WebLinking</h4></div><div\
+        \ class=\"modal-body\"><p>You want to add <code>pod 'WebLinking', '~> 2.0'</code>\
+        \ similar to the following to your Podfile:</p><pre><code>target 'MyApp' do\n\
+        \  pod 'WebLinking', '~> 2.0'\nend</code></pre><p>Then run a <code>pod install</code>\
+        \ inside your terminal, or from CocoaPods.app.</p><hr /><p>Alternatively to\
+        \ give it a test run, run the command:</p><p><code>pod try WebLinking</code></p></div></div></div></div><hr\
+        \ /><div class=\"space_for_appsight WebLinking\"></div><div aria-hidden=\"\
+        true\" aria-labelledby=\"appsight_label\" class=\"modal fade\" id=\"app_sight_info\"\
+        \ role=\"dialog\" tabindex=\"-2\"><div class=\"modal-dialog\"><div class=\"\
+        modal-content\"><div class=\"modal-header\"><button aria-label=\"Close\" class=\"\
+        close\" data-dismiss=\"modal\" type=\"button\"><span aria-hidden=\"true\"\
+        >&times</span></button><h4 class=\"modal-title\" id=\"appsight_label\">AppSight.io\
+        \ Integration</h4></div><div class=\"modal-body\"><p>The CocoaPods Website\
+        \ has an optional integration with <a href='http://appsight.io'>AppSight.io</a>\
+        \ that checks every pod you look at for apps which consume it.</p><p><a href='http://appsight.io'>AppSight.io</a>\
+        \ is a third-party service which tracks SDKs usage in the top iOS + Android\
+        \ apps.</p><p></p><hr /><p>You can turn it off by clicking here: <button type=\"\
+        button\" class=\"btn btn-danger\" onclick=\"disableAppSight('WebLinking')\"\
+        >Disable</button></p></div></div></div></div><ul class=\"links\"><li><a href=\"\
+        https://github.com/CocoaPods/Specs/blob/master/Specs/6/9/9/WebLinking/2.0.0/WebLinking.podspec.json\"\
+        >See Podspec</a></li><li><a href=\"http://cocoadocs.org/docsets/WebLinking/2.0.0\"\
+        >Documentation</a></li><li><a href=\"https://github.com/kylef/WebLinking.swift\"\
+        >GitHub Repo</a></li><li><a href=\"https://cocoapods.org/pods/WebLinking\"\
+        >Page on CocoaPods.org</a></li></ul></div><div class=\"readme-content col-sm-9\
+        \ col-xs-12 col-sm-pull-3\"><div class=\"inline-headline\"><h1 class=\"hidden-xs\"\
+        ><a href='/pods/WebLinking'>WebLinking</a> <span>2.0.0</span></h1></div><ul\
+        \ class=\"attribution\"><li>By</li><li>Kyle Fuller</li><li class=\"twitter\"\
+        ><a href=\"https://twitter.com/kylefuller\">kylefuller</a></li></ul><nav><ul><li\
+        \ class=\"github-link\"><a class=\"hidden-xs\" href=\"https://github.com/kylef/WebLinking.swift\"\
+        >kylef/WebLinking.swift</a><a class=\"visible-xs\" href=\"https://github.com/kylef/WebLinking.swift\"\
+        >GitHub Repo</a></li><a href=\"/pods/WebLinking/quality\"><li class=\"metadata\
+        \ quality_indicator quality_5\">\n<svg width=\"30px\" height=\"29px\" viewBox=\"\
+        0 0 30 29\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"\
+        http://www.w3.org/1999/xlink\" xmlns:sketch=\"http://www.bohemiancoding.com/sketch/ns\"\
+        >\n<g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\"\
+        \ sketch:type=\"MSPage\">\n<g id=\"pod\" sketch:type=\"MSLayerGroup\">\n<rect\
+        \ id=\"bg\" fill-opacity=\"0.0341372283\" fill=\"#000000\" sketch:type=\"\
+        MSShapeGroup\" x=\"0\" y=\"0\" width=\"30\" height=\"29\" rx=\"8\"></rect>\n\
+        <path d=\"M14.8945416,1.48101993 C13.1855416,1.48101993 9.54654156,1.88101993\
+        \ 9.54654156,3.98801993 C9.54654156,6.32001993 13.0965416,11.2720199 14.8945416,11.2720199\
+        \ C16.6925416,11.2720199 20.2425416,6.32001993 20.2425416,3.98801993 C20.2425416,1.88101993\
+        \ 16.6035416,1.48101993 14.8945416,1.48101993\" id=\"top\" fill=\"#FFFFFF\"\
+        \ sketch:type=\"MSShapeGroup\"></path>\n<path d=\"M2.62992103,10.8751496 C2.10192103,12.5001496\
+        \ 1.35792103,16.0841496 3.36292103,16.7351496 C5.57992103,17.4561496 11.385921,15.6101496\
+        \ 11.941921,13.9001496 C12.496921,12.1901496 8.88492103,7.28414965 6.66792103,6.56414965\
+        \ C4.66192103,5.91314965 3.15792103,9.24914965 2.62992103,10.8751496\" id=\"\
+        left\" fill=\"#FFFFFF\" sketch:type=\"MSShapeGroup\"></path>\n<path d=\"M7.21553078,25.7032179\
+        \ C8.59853078,26.7082179 11.7765308,28.5232179 13.0155308,26.8172179 C14.3855308,24.9312179\
+        \ 14.4245308,18.8392179 12.9695308,17.7822179 C11.5155308,16.7252179 5.73353078,18.6442179\
+        \ 4.36353078,20.5312179 C3.12253078,22.2372179 5.83153078,24.6982179 7.21553078,25.7032179\"\
+        \ id=\"bottom-left\" fill=\"#FFFFFF\" sketch:type=\"MSShapeGroup\"></path>\n\
+        <path d=\"M22.8835437,25.7032256 C24.2665437,24.6982256 26.9745437,22.2372256\
+        \ 25.7355437,20.5302256 C24.3655437,18.6442256 18.5835437,16.7252256 17.1285437,17.7822256\
+        \ C15.6745437,18.8392256 15.7125437,24.9312256 17.0825437,26.8162256 C18.3225437,28.5232256\
+        \ 21.5005437,26.7082256 22.8835437,25.7032256\" id=\"bottom-right\" fill=\"\
+        #FFFFFF\" sketch:type=\"MSShapeGroup\"></path>\n<path d=\"M27.4157447,10.876149\
+        \ C26.8877447,9.24914899 25.3837447,5.91314899 23.3777447,6.56414899 C21.1607447,7.28414899\
+        \ 17.5487447,12.190149 18.1037447,13.900149 C18.6607447,15.610149 24.4657447,17.456149\
+        \ 26.6837447,16.735149 C28.6887447,16.084149 27.9447447,12.501149 27.4157447,10.876149\"\
+        \ id=\"right\" fill=\"#FFFFFF\" sketch:type=\"MSShapeGroup\"></path>\n</g>\n\
+        </g>\n</svg>\n</li></a></ul></nav><div class=\"clearfix\"></div><ul class=\"\
+        nav nav-tabs\" id=\"asset_switcher\" role=\"tablist\"><li class=\"active\"\
+        ><a aria-controls=\"README\" class=\"media_node span\" data-target=\"#readme\"\
+        \ data-toggle=\"tab\" href=\"#\" id=\"readme_tab\">OVERVIEW</a></li><li><a\
+        \ aria-controls=\"CHANGELOG\" class=\"media_node span media_node span\" data-target=\"\
+        #changelog_content\" data-toggle=\"tabajax\" href=\"/pods/WebLinking/changelog\"\
+        \ id=\"changelog_tab\">CHANGELOG</a></li></ul><div class=\"tab-content\"><div\
+        \ class=\"tab-pane active\" id=\"readme\"><section class=\"section\"> <p>#\_\
+        Web Linking</p> <p>Swift implementation of Web Linking (<a href=\"https://tools.ietf.org/html/rfc5988\"\
+        >RFC5988</a>).</p> <h2> <a id=\"user-content-installation\" class=\"anchor\"\
+        \ href=\"#installation\" aria-hidden=\"true\"><span aria-hidden=\"true\" class=\"\
+        octicon octicon-link\"></span></a>Installation</h2> <p>CocoaPods is the recommended\
+        \ installation method.</p> <div class=\"highlight highlight-source-ruby\"\
+        ><pre>pod <span class=\"pl-s\"><span class=\"pl-pds\">'</span>WebLinking<span\
+        \ class=\"pl-pds\">'</span></span></pre></div> <h2> <a id=\"user-content-example\"\
+        \ class=\"anchor\" href=\"#example\" aria-hidden=\"true\"><span aria-hidden=\"\
+        true\" class=\"octicon octicon-link\"></span></a>Example</h2> <p>Given the\
+        \ following <code>Link</code> header on an <code>NSHTTPURLResponse</code>.</p>\
+        \ <pre><code>Link: &lt;https://api.github.com/user/repos?page=3&amp;per_page=100&gt;;\
+        \ rel=\"next\",\n      &lt;https://api.github.com/user/repos?page=50&amp;per_page=100&gt;;\
+        \ rel=\"last\"\n</code></pre> <p>We can find the next link on a response:</p>\
+        \ <div class=\"highlight highlight-source-swift\"><pre><span class=\"pl-k\"\
+        >if</span> <span class=\"pl-k\">let</span> link <span class=\"pl-k\">=</span>\
+        \ response.<span class=\"pl-c1\">findLink</span>(<span class=\"pl-c1\">relation</span>:\
+        \ <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>next<span class=\"\
+        pl-pds\">\"</span></span>) {\n  <span class=\"pl-c1\">print</span>(<span class=\"\
+        pl-s\"><span class=\"pl-pds\">\"</span>We have a next link with the URI: <span\
+        \ class=\"pl-pse\">\\(</span><span class=\"pl-s1\">link.<span class=\"pl-smi\"\
+        >uri</span></span><span class=\"pl-pse\"><span class=\"pl-s1\">)</span></span>.<span\
+        \ class=\"pl-pds\">\"</span></span>)\n}</pre></div> <p>Or introspect all available\
+        \ links:</p> <div class=\"highlight highlight-source-swift\"><pre><span class=\"\
+        pl-k\">for</span> link <span class=\"pl-k\">in</span> response.<span class=\"\
+        pl-smi\">links</span> {\n  <span class=\"pl-c1\">print</span>(<span class=\"\
+        pl-s\"><span class=\"pl-pds\">\"</span>We have a link with the relation: <span\
+        \ class=\"pl-pse\">\\(</span><span class=\"pl-s1\">link.<span class=\"pl-smi\"\
+        >relationType</span></span><span class=\"pl-pse\"><span class=\"pl-s1\">)</span></span>\
+        \ to <span class=\"pl-pse\">\\(</span><span class=\"pl-s1\">link.<span class=\"\
+        pl-smi\">uri</span></span><span class=\"pl-pse\"><span class=\"pl-s1\">)</span></span>.<span\
+        \ class=\"pl-pds\">\"</span></span>)\n}</pre></div> <h2> <a id=\"user-content-license\"\
+        \ class=\"anchor\" href=\"#license\" aria-hidden=\"true\"><span aria-hidden=\"\
+        true\" class=\"octicon octicon-link\"></span></a>License</h2> <p>Web Linking\
+        \ is licensed under the MIT license. See <a href=\"https://raw.github.com/kylef/WebLinking.swift/2.0.0/LICENSE\"\
+        >LICENSE</a> for more info.</p> </section></div><div class=\"tab-pane\" id=\"\
+        changelog_content\"></div></div></div><div class=\"clearfix\"></div></div></article></section></div><script\
+        \ type=\"text/javascript\">$copy_to_clipboard = $('ol.results img.copy')\n\
+        \nvar clip = new ZeroClipboard(\n  $copy_to_clipboard, {\n    moviePath: \"\
+        /flashes/ZeroClipboard.swf\",\n    forceHandCursor: true\n  }\n);\n\nclip.on(\
+        \ 'noflash', function ( client, args ) {\n\n  // provide a recursive wait\
+        \ method\n  // that checks for the hover on the popover/clipboard\n  // before\
+        \ hiding so you can select text\n\n  function closePopoverForNode(node){\n\
+        \    setTimeout(function() {\n      if (!$(node).is(':hover') && !$(\".popover:hover\"\
+        ).length) {\n        $(node).popover(\"hide\")\n      } else {\n        closePopoverForNode(node)\n\
+        \      }\n    }, 500);\n  }\n\n  // With no flash you should be able to select\
+        \ the text\n  // in the popover\n\n  $copy_to_clipboard.popover({\n    trigger:\
+        \ \"manual\",\n    container: \"body\"\n\n  }).on(\"click\", function(e) {\n\
+        \    e.preventDefault();\n\n  }).on(\"mouseenter\", function() {\n    $(this).popover(\"\
+        show\");\n    $(\".popover input\").select()\n\n  }).on(\"mouseleave\", function()\
+        \ {\n    closePopoverForNode(this)\n  });\n});\n\n// When Flash works, jusst\
+        \ do a normal popover\nclip.on(\"load\", function(client) {\n\n  client.on(\
+        \ \"complete\", function(client, args) {\n    $(\"h4.has-flash\").text(\"\
+        Saved to clipboard\");\n    $(\".popover\").addClass(\"saved\")\n  });\n\n\
+        \  clip.on( 'mouseover', function ( client, args ) {\n    $(this).popover('show')\n\
+        \  });\n\n  clip.on( 'mouseout', function ( client, args ) {\n    $(this).popover('hide')\n\
+        \  });\n});\n\n// When the page loads up check for a #changelog and load the\
+        \ changelog instead of the README if possible\n$(document).ready(function()\
+        \ {\n  if ($(\"#asset_switcher\").length == 0) { return }\n  if (location.hash\
+        \ == \"#changelog\") {\n    $(\"#changelog_tab\").click()\n  }\n\n  // Make\
+        \ it easy to get a changelog URL for C+Ping\n  $('#asset_switcher a').on('shown.bs.tab',\
+        \ function (e) {\n    var is_changelog = $(e.target).data(\"target\") == \"\
+        #changelog_content\"\n    var new_hash = (is_changelog) ? \"#changelog\" :\
+        \ \"\"\n    var current_url = window.location.toString().split('#')[0]\n \
+        \   history.replaceState(null, null, current_url + new_hash)\n  })\n})\n\n\
+        \  $(document).ready(function() {\n    checkForAppSight(\"WebLinking\")\n\
+        \  })</script><div class=\"clearfix\"></div><footer class=\"page-footer\"\
+        ><section class=\"container\"><div class=\"row\"><article class=\"col-md-8\
+        \ col-lg-8 col-sm-12 col-md-offset-2 col-lg-offset-2 col-xs-12\"><h4>CocoaPods\
+        \ is a project from</h4><p class=\"contributors\"> <a href=\"https://twitter.com/benasher44\"\
+        >Ben Asher</a>, <a href=\"https://twitter.com/dnkoutso\">Dimitris Koutsogiorgas</a>,\
+        \ <a href=\"http://dantoml.com\">Danielle Tomlinson</a>, <a href=\"http://orta.io\"\
+        >Orta Therox</a>, and <a href=\"https://cocoapods.org/about#team\">The CocoaPods\
+        \ Dev Team</a> with contributions from <a href=\"https://github.com/CocoaPods/Specs/graphs/contributors\"\
+        >many, many others</a>.</p><h4>Lovingly sponsored by</h4><p class=\"sponsors\"\
+        ><a href=\"http://artsy.net\">Artsy</a>, <a href=\"http://www.usebutton.com\"\
+        >Button</a>, <a href=\"http://www.capitalone.io\">Capital One</a>, <a href=\"\
+        https://circleci.com\">CircleCI</a>, <a href=\"http://discontinuity.eu\">Discontinuity</a>,\
+        \ <a href=\"http://www.fngtps.com\">Fingertips</a>, <a href=\"https://www.heroku.com\"\
+        >Heroku</a>, <a href=\"https://realm.io\">Realm</a>, <a href=\"http://www.rubymotion.com\"\
+        >RubyMotion</a>, <a href=\"https://www.sauspiel.de\">Sauspiel</a>, <a href=\"\
+        https://www.slack.com\">Slack</a>, <a href=\"https://www.soundcloud.com\"\
+        >SoundCloud</a>, <a href=\"https://www.stripe.com\">Stripe</a>, <a href=\"\
+        https://www.squareup.com\">Square</a>, and <a href=\"http://www.technologyastronauts.ch\"\
+        >Technology&nbsp;Astronauts</a>.</p></article></div></section></footer><footer\
+        \ class=\"footer-links\"><section class=\"container\"><div class=\"row\"><article\
+        \ class=\"col-md-8 col-lg-8 col-sm-12 col-md-offset-2 col-lg-offset-2 col-xs-12\"\
+        ><a class=\"cocoapods-small-logo\" href=\"https://cocoapods.org\"></a><ul><li\
+        \ class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"https://guides.cocoapods.org/using/troubleshooting.html\"\
+        >Support</a></li><li class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"https://github.com/CocoaPods/CocoaPods\"\
+        >GitHub Repo</a></li><li class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"https://status.cocoapods.org\"\
+        >Web Properties Status</a></li><li class=\"col-md-3 col-sm-3 col-xs-6\"><a\
+        \ href=\"https://twitter.com/CocoaPods\">@CocoaPods</a></li><li class=\"col-md-3\
+        \ col-sm-3 col-xs-6\"><a href=\"http://groups.google.com/group/cocoapods\"\
+        >Mailing List</a></li><li class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"\
+        https://cocoapods.org/about\"><span class=\"visible-lg-span\">CocoaPods</span>\
+        \ Dev Team</a></li><li class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"https://guides.cocoapods.org/syntax/podfile.html\"\
+        >Podfile Doc<span class=\"hidden-lg-span\">s</span><span class=\"visible-lg-span\"\
+        >umentation</span></a></li><li class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"\
+        https://cocoapods.org/legal\">Legal / Conduct</a></li></ul></article></div></section></footer></body></html><script\
+        \ type=\"text/javascript\">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,\
+        \ 'script', 'twitter-wjs');\n\nvar _gaq = _gaq || [];\n_gaq.push(['_setAccount',\
+        \ 'UA-29866548-1']);\n_gaq.push(['_trackPageview']);\n(function() {\n  var\
+        \ ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async\
+        \ = true;\n  ga.src = ('https:' == document.location.protocol ? 'https://ssl'\
+        \ : 'http://www') + '.google-analytics.com/ga.js';\n  var s = document.getElementsByTagName('script')[0];\
+        \ s.parentNode.insertBefore(ga, s);\n})();</script>"}
+    headers:
+      CF-RAY: [3a8b9c064df6648d-FRA]
+      Connection: [keep-alive]
+      Content-Type: [text/html;charset=utf-8]
+      Date: ['Wed, 04 Oct 2017 22:34:36 GMT']
+      Server: [cloudflare-nginx]
+      Set-Cookie: ['__cfduid=d9f88633577d613d4e141bbcdd422d1fb1507156475; expires=Thu,
+          04-Oct-18 22:34:35 GMT; path=/; domain=.cocoapods.org; HttpOnly']
+      Vary: [Accept-Encoding]
+      Via: [1.1 vegur]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Xss-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://raw.githubusercontent.com/CocoaPods/Specs/master/Specs/6/9/9/WebLinking/2.0.0/WebLinking.podspec.json
+  response:
+    body: {string: "{\n  \"name\": \"WebLinking\",\n  \"version\": \"2.0.0\",\n  \"\
+        summary\": \"Swift implementation of Web Linking and Link headers (RFC5988)\"\
+        ,\n  \"homepage\": \"https://github.com/kylef/WebLinking.swift\",\n  \"authors\"\
+        : {\n    \"Kyle Fuller\": \"kyle@fuller.li\"\n  },\n  \"social_media_url\"\
+        : \"http://twitter.com/kylefuller\",\n  \"source\": {\n    \"git\": \"https://github.com/kylef/WebLinking.swift.git\"\
+        ,\n    \"tag\": \"2.0.0\"\n  },\n  \"source_files\": \"Sources/*.swift\",\n\
+        \  \"platforms\": {\n    \"ios\": \"8.0\",\n    \"osx\": \"10.9\",\n    \"\
+        watchos\": \"2.0\",\n    \"tvos\": \"9.0\"\n  },\n  \"requires_arc\": true,\n\
+        \  \"pushed_with_swift_version\": \"3.0\"\n}\n"}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [max-age=300]
+      Connection: [keep-alive]
+      Content-Length: ['655']
+      Content-Security-Policy: [default-src 'none'; style-src 'unsafe-inline']
+      Content-Type: [text/plain; charset=utf-8]
+      Date: ['Wed, 04 Oct 2017 22:34:37 GMT']
+      ETag: ['"1f481bef03532c668c75a9a92d2be01aa3367ec1"']
+      Expires: ['Wed, 04 Oct 2017 22:39:37 GMT']
+      Source-Age: ['0']
+      Strict-Transport-Security: [max-age=31536000]
+      Vary: ['Authorization,Accept-Encoding']
+      Via: [1.1 varnish]
+      X-Cache: [MISS]
+      X-Cache-Hits: ['0']
+      X-Content-Type-Options: [nosniff]
+      X-Fastly-Request-ID: [24faec55ef2e96ce1264eeadfbcb941638c3aad1]
+      X-Frame-Options: [deny]
+      X-Geo-Block-List: ['']
+      X-GitHub-Request-Id: ['80F8:1A1E:2A29EDC:2D16DBF:59D561FB']
+      X-Served-By: [cache-fra1224-FRA]
+      X-Timer: ['S1507156477.299612,VS0,VE145']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: [application/vnd.github.drax-preview+json]
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/kylef/weblinking.swift
+  response:
+    body: {string: '{"id":29524772,"name":"WebLinking.swift","full_name":"kylef/WebLinking.swift","owner":{"login":"kylef","id":44164,"avatar_url":"https://avatars1.githubusercontent.com/u/44164?v=4","gravatar_id":"","url":"https://api.github.com/users/kylef","html_url":"https://github.com/kylef","followers_url":"https://api.github.com/users/kylef/followers","following_url":"https://api.github.com/users/kylef/following{/other_user}","gists_url":"https://api.github.com/users/kylef/gists{/gist_id}","starred_url":"https://api.github.com/users/kylef/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/kylef/subscriptions","organizations_url":"https://api.github.com/users/kylef/orgs","repos_url":"https://api.github.com/users/kylef/repos","events_url":"https://api.github.com/users/kylef/events{/privacy}","received_events_url":"https://api.github.com/users/kylef/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/kylef/WebLinking.swift","description":"Swift
+        implementation of web linking (RFC5988)","fork":false,"url":"https://api.github.com/repos/kylef/WebLinking.swift","forks_url":"https://api.github.com/repos/kylef/WebLinking.swift/forks","keys_url":"https://api.github.com/repos/kylef/WebLinking.swift/keys{/key_id}","collaborators_url":"https://api.github.com/repos/kylef/WebLinking.swift/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/kylef/WebLinking.swift/teams","hooks_url":"https://api.github.com/repos/kylef/WebLinking.swift/hooks","issue_events_url":"https://api.github.com/repos/kylef/WebLinking.swift/issues/events{/number}","events_url":"https://api.github.com/repos/kylef/WebLinking.swift/events","assignees_url":"https://api.github.com/repos/kylef/WebLinking.swift/assignees{/user}","branches_url":"https://api.github.com/repos/kylef/WebLinking.swift/branches{/branch}","tags_url":"https://api.github.com/repos/kylef/WebLinking.swift/tags","blobs_url":"https://api.github.com/repos/kylef/WebLinking.swift/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/kylef/WebLinking.swift/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/kylef/WebLinking.swift/git/refs{/sha}","trees_url":"https://api.github.com/repos/kylef/WebLinking.swift/git/trees{/sha}","statuses_url":"https://api.github.com/repos/kylef/WebLinking.swift/statuses/{sha}","languages_url":"https://api.github.com/repos/kylef/WebLinking.swift/languages","stargazers_url":"https://api.github.com/repos/kylef/WebLinking.swift/stargazers","contributors_url":"https://api.github.com/repos/kylef/WebLinking.swift/contributors","subscribers_url":"https://api.github.com/repos/kylef/WebLinking.swift/subscribers","subscription_url":"https://api.github.com/repos/kylef/WebLinking.swift/subscription","commits_url":"https://api.github.com/repos/kylef/WebLinking.swift/commits{/sha}","git_commits_url":"https://api.github.com/repos/kylef/WebLinking.swift/git/commits{/sha}","comments_url":"https://api.github.com/repos/kylef/WebLinking.swift/comments{/number}","issue_comment_url":"https://api.github.com/repos/kylef/WebLinking.swift/issues/comments{/number}","contents_url":"https://api.github.com/repos/kylef/WebLinking.swift/contents/{+path}","compare_url":"https://api.github.com/repos/kylef/WebLinking.swift/compare/{base}...{head}","merges_url":"https://api.github.com/repos/kylef/WebLinking.swift/merges","archive_url":"https://api.github.com/repos/kylef/WebLinking.swift/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/kylef/WebLinking.swift/downloads","issues_url":"https://api.github.com/repos/kylef/WebLinking.swift/issues{/number}","pulls_url":"https://api.github.com/repos/kylef/WebLinking.swift/pulls{/number}","milestones_url":"https://api.github.com/repos/kylef/WebLinking.swift/milestones{/number}","notifications_url":"https://api.github.com/repos/kylef/WebLinking.swift/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/kylef/WebLinking.swift/labels{/name}","releases_url":"https://api.github.com/repos/kylef/WebLinking.swift/releases{/id}","deployments_url":"https://api.github.com/repos/kylef/WebLinking.swift/deployments","created_at":"2015-01-20T10:38:48Z","updated_at":"2017-09-27T21:57:58Z","pushed_at":"2017-09-28T18:31:52Z","git_url":"git://github.com/kylef/WebLinking.swift.git","ssh_url":"git@github.com:kylef/WebLinking.swift.git","clone_url":"https://github.com/kylef/WebLinking.swift.git","svn_url":"https://github.com/kylef/WebLinking.swift","homepage":"","size":38,"stargazers_count":136,"watchers_count":136,"language":"Swift","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":13,"mirror_url":null,"open_issues_count":1,"forks":13,"open_issues":1,"watchers":136,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true},"license":{"key":"mit","name":"MIT
+        License","spdx_id":"MIT","url":"https://api.github.com/licenses/mit","featured":true},"network_count":13,"subscribers_count":3}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['5023']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Wed, 04 Oct 2017 22:34:38 GMT']
+      ETag: ['"ec1fcd5c17cc91de392a6488030b4cb9"']
+      Last-Modified: ['Wed, 27 Sep 2017 21:57:58 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: [repo]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.drax-preview; format=json]
+      X-GitHub-Request-Id: ['E1FB:6E60:775E23:1249DF3:59D561FE']
+      X-OAuth-Scopes: [repo]
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4998']
+      X-RateLimit-Reset: ['1507158943']
+      X-Runtime-rack: ['0.059519']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1

@@ -1,0 +1,488 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://cocoapods.org/pods/GoogleMaps
+  response:
+    body: {string: "<!DOCTYPE html><html lang=\"en-en\"><head><title>GoogleMaps on\
+        \ CocoaPods.org</title><meta charset=\"utf-8\" /><meta content=\"cocoapods\
+        \ objective-c objc swift package manager libraries documentation search pods\
+        \ podspec podfile cocoa apple ios library\" name=\"keywords\" /><meta content=\"\
+        IE=edge\" http-equiv=\"X-UA-Compatible\" /><meta content=\"width=device-width,\
+        \ initial-scale=1.0\" name=\"viewport\" /><meta content=\"Google Maps SDK\
+        \ for iOS.\" name=\"description\" /><meta content=\"Google, Inc.\" name=\"\
+        author\" /><meta content=\"summary_large_image\" name=\"twitter:card\" /><meta\
+        \ content=\"@CocoaPods\" name=\"twitter:site\" /><meta content=\"@CocoaPods\"\
+        \ name=\"twitter:creator\" /><meta content=\"GoogleMaps\" name=\"twitter:title\"\
+        \ /><meta content=\"Google Maps SDK for iOS.\" name=\"twitter:description\"\
+        \ /><meta content=\"https://cocoapods.org/pods/GoogleMaps\" name=\"twitter:url\"\
+        \ /><meta content=\"http://cocoadocs.org/docsets/GoogleMaps/2.4.0/preview.png\"\
+        \ name=\"twitter:image:src\" /><meta content=\"CocoaPods\" property=\"og:site_name\"\
+        \ /><meta content=\"GoogleMaps\" property=\"og:title\" /><meta content=\"\
+        https://cocoapods.org/pods/GoogleMaps\" property=\"og:url\" /><meta content=\"\
+        website\" property=\"og:type\" /><meta content=\"Google Maps SDK for iOS.\"\
+        \ property=\"og:description\" /><meta content=\"http://cocoadocs.org/docsets/GoogleMaps/2.4.0/preview.png\"\
+        \ property=\"og:image\" /><link rel=\"shortcut icon\" href=\"https://cocoapods.org/favicons/favicon.ico\"\
+        \ type=\"image/x-icon\" /><link rel=\"apple-touch-icon\" href=\"https://cocoapods.org/favicons/apple-touch-icon.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"https://cocoapods.org/favicons/apple-touch-icon-57x57.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"https://cocoapods.org/favicons/apple-touch-icon-60x60.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"https://cocoapods.org/favicons/apple-touch-icon-72x72.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"https://cocoapods.org/favicons/apple-touch-icon-76x76.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"https://cocoapods.org/favicons/apple-touch-icon-114x114.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"https://cocoapods.org/favicons/apple-touch-icon-120x120.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"https://cocoapods.org/favicons/apple-touch-icon-144x144.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"https://cocoapods.org/favicons/apple-touch-icon-152x152.png\"\
+        \ /><script src=\"/javascripts/application-15598b1d95c0f883ea517c760352f0fe.js\"\
+        ></script><link href=\"/stylesheets/app-15598b1d95c0f883ea517c760352f0fe.css\"\
+        \ media=\"screen\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"https://cocoapods.org/opensearch.xml\"\
+        \ rel=\"search\" title=\"CocoaPods\" type=\"application/opensearchdescription+xml\"\
+        \ /></head><body><nav class=\"navbar navbar-static-top\" role=\"navigation\"\
+        ><section class=\"container\"><div class=\"navbar-header\"><button class=\"\
+        navbar-toggle\" data-target=\".navbar-header-collapse\" data-toggle=\"collapse\"\
+        \ type=\"button\"><span class=\"sr-only\">Toggle navigation</span><span class=\"\
+        glyphicon glyphicon-plus\"></span></button><a class=\"navbar-brand\" href=\"\
+        https://cocoapods.org\"></a></div><div class=\"collapse navbar-collapse navbar-header-collapse\"\
+        ><ul class=\"nav navbar-nav navbar-right\"><li><a href=\"https://cocoapods.org/app\"\
+        >App</a></li><li><a href=\"https://cocoapods.org/about\">About</a></li><li><a\
+        \ href=\"https://guides.cocoapods.org\">Guides</a></li><li><a href=\"https://blog.cocoapods.org\"\
+        >Blog</a></li></ul></div></section></nav><section class=\"container\"><article\
+        \ class=\"row\" id=\"headline\"><div class=\"col-lg-12 col-sm-12 col-xs-12\"\
+        ><h1>GoogleMaps <span>2.4.0</span></h1></div></article></section><div id=\"\
+        content-wrapper\"><section class=\"container\" id=\"pod-page\"><article class=\"\
+        row\"><div class=\"pod_result\"><div class=\"pod-metadata clearfix\"></div><div\
+        \ class=\"sideline col-sm-3 col-xs-12 col-sm-push-9\"><h1 class=\"visible-xs\
+        \ inline-headline\"><a href='/pods/GoogleMaps'>GoogleMaps</a> <span>2.4.0</span></h1><div\
+        \ class=\"close-expanded\"><a href=\"#\">&times;</a></div><h3></h3><table\
+        \ class='header'><tbody><tr><td>License</td><td> <a href='https://developers.google.com/maps/documentation/ios/'>Custom</a>\n\
+        </td></tr><tr><td> <span class='hidden-lg-span'>Released</span><span class='visible-lg-span'>Last\
+        \ Release</span>\n</td><td>Aug 2017</td></tr></tbody></table><p>Maintained\
+        \ by <a href='/owners/6563'>Google</a>.</p><hr /><h3>Downloads</h3><table\
+        \ class='inset'><tbody><tr><td>Total</td><td>7,789,080</td></tr><tr><td>Week</td><td>143,994</td></tr><tr><td>Month</td><td>654,509</td></tr></tbody></table><h3>Installs</h3><table\
+        \ class='inset'><tbody><tr><td>Apps</td><td>127,470</td></tr><tr><td> <span\
+        \ class='hidden-lg-span'>Apps Week</span><span class='visible-lg-span'>Apps\
+        \ This Week</span>\n</td><td>10,462</td></tr><tr><td>Pod Tries</td><td>11,255</td></tr><tr><td>\
+        \ <span class='hidden-lg-span'>Pod Tries Week</span><span class='visible-lg-span'>Pod\
+        \ Tries This Week</span>\n</td><td>128</td></tr><tr><td>Test Targets</td><td>8,218</td></tr><tr><td>\
+        \ <span class='hidden-lg-span'>Test Week</span><span class='visible-lg-span'>Tests\
+        \ This week</span>\n</td><td>786</td></tr><tr><td>Watch Apps</td><td>38</td></tr><tr><td>\
+        \ <span class='hidden-lg-span'>Watch Apps Week</span><span class='visible-lg-span'>Watch\
+        \ Apps This week</span>\n</td><td>1</td></tr></tbody></table><sub>powered\
+        \ by <a href=\"https://segment.com\">Segment</a></sub><hr /><button class=\"\
+        btn\" data-target=\"#installation_guide\" data-toggle=\"modal\" type=\"button\"\
+        >Installation Guide</button><div aria-hidden=\"true\" aria-labelledby=\"installation_label\"\
+        \ class=\"modal fade\" id=\"installation_guide\" role=\"dialog\" tabindex=\"\
+        -1\"><div class=\"modal-dialog\"><div class=\"modal-content\"><div class=\"\
+        modal-header\"><button aria-label=\"Close\" class=\"close\" data-dismiss=\"\
+        modal\" type=\"button\"><span aria-hidden=\"true\">&times</span></button><h4\
+        \ class=\"modal-title\" id=\"installation_label\">Installation Guide for GoogleMaps</h4></div><div\
+        \ class=\"modal-body\"><p>You want to add <code>pod 'GoogleMaps', '~> 2.4'</code>\
+        \ similar to the following to your Podfile:</p><pre><code>target 'MyApp' do\n\
+        \  pod 'GoogleMaps', '~> 2.4'\nend</code></pre><p>Then run a <code>pod install</code>\
+        \ inside your terminal, or from CocoaPods.app.</p><hr /><p>Alternatively to\
+        \ give it a test run, run the command:</p><p><code>pod try GoogleMaps</code></p></div></div></div></div><hr\
+        \ /><div class=\"space_for_appsight GoogleMaps\"></div><div aria-hidden=\"\
+        true\" aria-labelledby=\"appsight_label\" class=\"modal fade\" id=\"app_sight_info\"\
+        \ role=\"dialog\" tabindex=\"-2\"><div class=\"modal-dialog\"><div class=\"\
+        modal-content\"><div class=\"modal-header\"><button aria-label=\"Close\" class=\"\
+        close\" data-dismiss=\"modal\" type=\"button\"><span aria-hidden=\"true\"\
+        >&times</span></button><h4 class=\"modal-title\" id=\"appsight_label\">AppSight.io\
+        \ Integration</h4></div><div class=\"modal-body\"><p>The CocoaPods Website\
+        \ has an optional integration with <a href='http://appsight.io'>AppSight.io</a>\
+        \ that checks every pod you look at for apps which consume it.</p><p><a href='http://appsight.io'>AppSight.io</a>\
+        \ is a third-party service which tracks SDKs usage in the top iOS + Android\
+        \ apps.</p><p></p><hr /><p>You can turn it off by clicking here: <button type=\"\
+        button\" class=\"btn btn-danger\" onclick=\"disableAppSight('GoogleMaps')\"\
+        >Disable</button></p></div></div></div></div><ul class=\"links\"><li><a href=\"\
+        https://github.com/CocoaPods/Specs/blob/master/Specs/a/d/d/GoogleMaps/2.4.0/GoogleMaps.podspec.json\"\
+        >See Podspec</a></li><li><a href=\"http://cocoadocs.org/docsets/GoogleMaps/2.4.0\"\
+        >Documentation</a></li><li><a href=\"https://developers.google.com/maps/documentation/ios/\"\
+        >Homepage</a></li><li><a href=\"https://cocoapods.org/pods/GoogleMaps\">Page\
+        \ on CocoaPods.org</a></li></ul></div><div class=\"readme-content col-sm-9\
+        \ col-xs-12 col-sm-pull-3\"><div class=\"inline-headline\"><h1 class=\"hidden-xs\"\
+        ><a href='/pods/GoogleMaps'>GoogleMaps</a> <span>2.4.0</span></h1></div><ul\
+        \ class=\"attribution\"><li>By</li><li>Google, Inc.</li></ul><nav><ul><a href=\"\
+        /pods/GoogleMaps/quality\"><li class=\"metadata quality_indicator quality_5\"\
+        >\n<svg width=\"30px\" height=\"29px\" viewBox=\"0 0 30 29\" version=\"1.1\"\
+        \ xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"\
+        \ xmlns:sketch=\"http://www.bohemiancoding.com/sketch/ns\">\n<g stroke=\"\
+        none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\" sketch:type=\"\
+        MSPage\">\n<g id=\"pod\" sketch:type=\"MSLayerGroup\">\n<rect id=\"bg\" fill-opacity=\"\
+        0.0341372283\" fill=\"#000000\" sketch:type=\"MSShapeGroup\" x=\"0\" y=\"\
+        0\" width=\"30\" height=\"29\" rx=\"8\"></rect>\n<path d=\"M14.8945416,1.48101993\
+        \ C13.1855416,1.48101993 9.54654156,1.88101993 9.54654156,3.98801993 C9.54654156,6.32001993\
+        \ 13.0965416,11.2720199 14.8945416,11.2720199 C16.6925416,11.2720199 20.2425416,6.32001993\
+        \ 20.2425416,3.98801993 C20.2425416,1.88101993 16.6035416,1.48101993 14.8945416,1.48101993\"\
+        \ id=\"top\" fill=\"#FFFFFF\" sketch:type=\"MSShapeGroup\"></path>\n<path\
+        \ d=\"M2.62992103,10.8751496 C2.10192103,12.5001496 1.35792103,16.0841496\
+        \ 3.36292103,16.7351496 C5.57992103,17.4561496 11.385921,15.6101496 11.941921,13.9001496\
+        \ C12.496921,12.1901496 8.88492103,7.28414965 6.66792103,6.56414965 C4.66192103,5.91314965\
+        \ 3.15792103,9.24914965 2.62992103,10.8751496\" id=\"left\" fill=\"#FFFFFF\"\
+        \ sketch:type=\"MSShapeGroup\"></path>\n<path d=\"M7.21553078,25.7032179 C8.59853078,26.7082179\
+        \ 11.7765308,28.5232179 13.0155308,26.8172179 C14.3855308,24.9312179 14.4245308,18.8392179\
+        \ 12.9695308,17.7822179 C11.5155308,16.7252179 5.73353078,18.6442179 4.36353078,20.5312179\
+        \ C3.12253078,22.2372179 5.83153078,24.6982179 7.21553078,25.7032179\" id=\"\
+        bottom-left\" fill=\"#FFFFFF\" sketch:type=\"MSShapeGroup\"></path>\n<path\
+        \ d=\"M22.8835437,25.7032256 C24.2665437,24.6982256 26.9745437,22.2372256\
+        \ 25.7355437,20.5302256 C24.3655437,18.6442256 18.5835437,16.7252256 17.1285437,17.7822256\
+        \ C15.6745437,18.8392256 15.7125437,24.9312256 17.0825437,26.8162256 C18.3225437,28.5232256\
+        \ 21.5005437,26.7082256 22.8835437,25.7032256\" id=\"bottom-right\" fill=\"\
+        #FFFFFF\" sketch:type=\"MSShapeGroup\"></path>\n<path d=\"M27.4157447,10.876149\
+        \ C26.8877447,9.24914899 25.3837447,5.91314899 23.3777447,6.56414899 C21.1607447,7.28414899\
+        \ 17.5487447,12.190149 18.1037447,13.900149 C18.6607447,15.610149 24.4657447,17.456149\
+        \ 26.6837447,16.735149 C28.6887447,16.084149 27.9447447,12.501149 27.4157447,10.876149\"\
+        \ id=\"right\" fill=\"#FFFFFF\" sketch:type=\"MSShapeGroup\"></path>\n</g>\n\
+        </g>\n</svg>\n</li></a></ul></nav><div class=\"clearfix\"></div><ul class=\"\
+        nav nav-tabs\" id=\"asset_switcher\" role=\"tablist\"><li class=\"active\"\
+        ><a aria-controls=\"README\" class=\"media_node span\" data-target=\"#readme\"\
+        \ data-toggle=\"tab\" href=\"#\" id=\"readme_tab\">OVERVIEW</a></li><li><a\
+        \ aria-controls=\"CHANGELOG\" class=\"media_node span media_node span\" data-target=\"\
+        #changelog_content\" data-toggle=\"tabajax\" href=\"/pods/GoogleMaps/changelog\"\
+        \ id=\"changelog_tab\">CHANGELOG</a></li></ul><div class=\"tab-content\"><div\
+        \ class=\"tab-pane active\" id=\"readme\"><h1>\n<a id=\"user-content-google-maps-sdk-for-ios\"\
+        \ class=\"anchor\" href=\"#google-maps-sdk-for-ios\" aria-hidden=\"true\"\
+        ><span aria-hidden=\"true\" class=\"octicon octicon-link\"></span></a>Google\
+        \ Maps SDK for iOS</h1>\n<p>This pod contains the Google Maps SDK for iOS,\
+        \ supporting both Objective C and\nSwift.</p>\n<p>Use the [Google Maps SDK\
+        \ for iOS]\n(<a href=\"https://developers.google.com/maps/documentation/ios-sdk/\"\
+        >https://developers.google.com/maps/documentation/ios-sdk/</a>) to enrich\
+        \ your\napp with interactive maps and immersive street view panoramas, and\
+        \ add your\nown custom elements such as markers, windows and polylines.</p>\n\
+        <h1>\n<a id=\"user-content-getting-started\" class=\"anchor\" href=\"#getting-started\"\
+        \ aria-hidden=\"true\"><span aria-hidden=\"true\" class=\"octicon octicon-link\"\
+        ></span></a>Getting Started</h1>\n<ul>\n<li>\n<p><em>Guides</em>: Read our\
+        \ [Getting Started guides]\n(<a href=\"https://developers.google.com/maps/documentation/ios-sdk/intro\"\
+        >https://developers.google.com/maps/documentation/ios-sdk/intro</a>).</p>\n\
+        </li>\n<li>\n<p><em>Demo Videos</em>: View [pre-recorded online demos]\n(<a\
+        \ href=\"https://developers.google.com/maps/documentation/ios-sdk/#demos\"\
+        >https://developers.google.com/maps/documentation/ios-sdk/#demos</a>).</p>\n\
+        </li>\n<li>\n<p><em>Code samples</em>: In order to try out our demo app, use</p>\n\
+        <pre><code>$ pod try GoogleMaps\n</code></pre>\n<p>and follow the instructions\
+        \ on our [developer pages]\n(<a href=\"https://developers.google.com/maps/documentation/ios-sdk/code-samples\"\
+        >https://developers.google.com/maps/documentation/ios-sdk/code-samples</a>).</p>\n\
+        </li>\n<li>\n<p><em>Support</em>: Find support from various channels and communities.</p>\n\
+        <ul>\n<li>Support pages for [Google Maps SDK for iOS]\n(<a href=\"https://developers.google.com/maps/documentation/ios-sdk/support\"\
+        >https://developers.google.com/maps/documentation/ios-sdk/support</a>).</li>\n\
+        <li>Stack Overflow, using the [google-maps]\n(<a href=\"https://stackoverflow.com/questions/tagged/google-maps\"\
+        >https://stackoverflow.com/questions/tagged/google-maps</a>) tag.</li>\n<li>[Google\
+        \ Maps APIs Premium Plan]\n(<a href=\"https://developers.google.com/maps/premium/support\"\
+        >https://developers.google.com/maps/premium/support</a>) customers have\n\
+        access to business-level support through Google's <a href=\"https://google.secure.force.com/\"\
+        >Enterprise Support\nPortal</a>\n</li>\n</ul>\n</li>\n<li>\n<p><em>Report\
+        \ issues</em>: Use our issue tracker to [file a bug]\n(<a href=\"https://code.google.com/p/gmaps-api-issues/issues/entry?template=Maps%20SDK%20for%20iOS%20-%20Bug\"\
+        >https://code.google.com/p/gmaps-api-issues/issues/entry?template=Maps%20SDK%20for%20iOS%20-%20Bug</a>)\n\
+        or a [feature request]\n(<a href=\"https://code.google.com/p/gmaps-api-issues/issues/entry?template=Maps%20SDK%20for%20iOS%20-%20Feature%20Request\"\
+        >https://code.google.com/p/gmaps-api-issues/issues/entry?template=Maps%20SDK%20for%20iOS%20-%20Feature%20Request</a>)</p>\n\
+        </li>\n</ul>\n<h1>\n<a id=\"user-content-installation\" class=\"anchor\" href=\"\
+        #installation\" aria-hidden=\"true\"><span aria-hidden=\"true\" class=\"octicon\
+        \ octicon-link\"></span></a>Installation</h1>\n<p>To integrate Google Maps\
+        \ SDK for iOS into your Xcode project using CocoaPods,\nspecify it in your\
+        \ <code>Podfile</code>:</p>\n<pre><code>source 'https://github.com/CocoaPods/Specs.git'\n\
+        platform :ios, '8.0'\ntarget 'YOUR_APPLICATION_TARGET_NAME_HERE' do\n  pod\
+        \ 'GoogleMaps'\nend\n</code></pre>\n<p>Then, run the following command:</p>\n\
+        <pre><code>$ pod install\n</code></pre>\n<p>Before you can start using the\
+        \ API, you have to activate it in the <a href=\"https://console.developers.google.com/\"\
+        >Google\nDeveloper Console</a> and integrate the\nrespective API key in your\
+        \ project. For detailed installation instructions,\nvisit Google's Getting\
+        \ Started Guides for the [Google Maps SDK for iOS]\n(<a href=\"https://developers.google.com/maps/documentation/ios-sdk/start\"\
+        >https://developers.google.com/maps/documentation/ios-sdk/start</a>).</p>\n\
+        <h1>\n<a id=\"user-content-migration-from-version-1\" class=\"anchor\" href=\"\
+        #migration-from-version-1\" aria-hidden=\"true\"><span aria-hidden=\"true\"\
+        \ class=\"octicon octicon-link\"></span></a>Migration from version 1</h1>\n\
+        <p>If you are using the Google Places API for iOS as part of the Google Maps\
+        \ SDK\nfor iOS version 1 please check the <a href=\"https://developers.google.com/places/migrate-to-v2\"\
+        >migration guide</a>\nfor more information on upgrading your project.</p>\n\
+        <h1>\n<a id=\"user-content-license-and-terms-of-service\" class=\"anchor\"\
+        \ href=\"#license-and-terms-of-service\" aria-hidden=\"true\"><span aria-hidden=\"\
+        true\" class=\"octicon octicon-link\"></span></a>License and Terms of Service</h1>\n\
+        <p>By using the Google Maps SDK for iOS you accept Google's Terms of Service\
+        \ and\nPolicies. Pay attention particularly to the following aspects:</p>\n\
+        <ul>\n<li>Depending on your app and use case, you may be required to display\n\
+        attribution. Read more about [attribution requirements]\n(<a href=\"https://developers.google.com/maps/documentation/ios-sdk/intro#attribution_requirements\"\
+        >https://developers.google.com/maps/documentation/ios-sdk/intro#attribution_requirements</a>).</li>\n\
+        <li>Your API usage is subject to quota limitations. Read more about <a href=\"\
+        https://developers.google.com/maps/pricing-and-plans/\">usage\nlimits</a>.</li>\n\
+        <li>The <a href=\"https://developers.google.com/maps/terms\">Terms of Service</a>\
+        \ are a\ncomprehensive description of the legal contract that you enter with\
+        \ Google\nby using the Google Maps SDK for iOS. You may want to pay special\
+        \ attention\nto [section 10]\n(<a href=\"https://developers.google.com/maps/terms#10-license-restrictions\"\
+        >https://developers.google.com/maps/terms#10-license-restrictions</a>), as\
+        \ it\ntalks in detail about what you can do with the API, and what you can't.</li>\n\
+        </ul>\n</div><div class=\"tab-pane\" id=\"changelog_content\"></div></div></div><div\
+        \ class=\"clearfix\"></div></div></article></section></div><script type=\"\
+        text/javascript\">$copy_to_clipboard = $('ol.results img.copy')\n\nvar clip\
+        \ = new ZeroClipboard(\n  $copy_to_clipboard, {\n    moviePath: \"/flashes/ZeroClipboard.swf\"\
+        ,\n    forceHandCursor: true\n  }\n);\n\nclip.on( 'noflash', function ( client,\
+        \ args ) {\n\n  // provide a recursive wait method\n  // that checks for the\
+        \ hover on the popover/clipboard\n  // before hiding so you can select text\n\
+        \n  function closePopoverForNode(node){\n    setTimeout(function() {\n   \
+        \   if (!$(node).is(':hover') && !$(\".popover:hover\").length) {\n      \
+        \  $(node).popover(\"hide\")\n      } else {\n        closePopoverForNode(node)\n\
+        \      }\n    }, 500);\n  }\n\n  // With no flash you should be able to select\
+        \ the text\n  // in the popover\n\n  $copy_to_clipboard.popover({\n    trigger:\
+        \ \"manual\",\n    container: \"body\"\n\n  }).on(\"click\", function(e) {\n\
+        \    e.preventDefault();\n\n  }).on(\"mouseenter\", function() {\n    $(this).popover(\"\
+        show\");\n    $(\".popover input\").select()\n\n  }).on(\"mouseleave\", function()\
+        \ {\n    closePopoverForNode(this)\n  });\n});\n\n// When Flash works, jusst\
+        \ do a normal popover\nclip.on(\"load\", function(client) {\n\n  client.on(\
+        \ \"complete\", function(client, args) {\n    $(\"h4.has-flash\").text(\"\
+        Saved to clipboard\");\n    $(\".popover\").addClass(\"saved\")\n  });\n\n\
+        \  clip.on( 'mouseover', function ( client, args ) {\n    $(this).popover('show')\n\
+        \  });\n\n  clip.on( 'mouseout', function ( client, args ) {\n    $(this).popover('hide')\n\
+        \  });\n});\n\n// When the page loads up check for a #changelog and load the\
+        \ changelog instead of the README if possible\n$(document).ready(function()\
+        \ {\n  if ($(\"#asset_switcher\").length == 0) { return }\n  if (location.hash\
+        \ == \"#changelog\") {\n    $(\"#changelog_tab\").click()\n  }\n\n  // Make\
+        \ it easy to get a changelog URL for C+Ping\n  $('#asset_switcher a').on('shown.bs.tab',\
+        \ function (e) {\n    var is_changelog = $(e.target).data(\"target\") == \"\
+        #changelog_content\"\n    var new_hash = (is_changelog) ? \"#changelog\" :\
+        \ \"\"\n    var current_url = window.location.toString().split('#')[0]\n \
+        \   history.replaceState(null, null, current_url + new_hash)\n  })\n})\n\n\
+        \  $(document).ready(function() {\n    checkForAppSight(\"GoogleMaps\")\n\
+        \  })</script><div class=\"clearfix\"></div><footer class=\"page-footer\"\
+        ><section class=\"container\"><div class=\"row\"><article class=\"col-md-8\
+        \ col-lg-8 col-sm-12 col-md-offset-2 col-lg-offset-2 col-xs-12\"><h4>CocoaPods\
+        \ is a project from</h4><p class=\"contributors\"> <a href=\"https://twitter.com/benasher44\"\
+        >Ben Asher</a>, <a href=\"https://twitter.com/dnkoutso\">Dimitris Koutsogiorgas</a>,\
+        \ <a href=\"http://dantoml.com\">Danielle Tomlinson</a>, <a href=\"http://orta.io\"\
+        >Orta Therox</a>, and <a href=\"https://cocoapods.org/about#team\">The CocoaPods\
+        \ Dev Team</a> with contributions from <a href=\"https://github.com/CocoaPods/Specs/graphs/contributors\"\
+        >many, many others</a>.</p><h4>Lovingly sponsored by</h4><p class=\"sponsors\"\
+        ><a href=\"http://artsy.net\">Artsy</a>, <a href=\"http://www.usebutton.com\"\
+        >Button</a>, <a href=\"http://www.capitalone.io\">Capital One</a>, <a href=\"\
+        https://circleci.com\">CircleCI</a>, <a href=\"http://discontinuity.eu\">Discontinuity</a>,\
+        \ <a href=\"http://www.fngtps.com\">Fingertips</a>, <a href=\"https://www.heroku.com\"\
+        >Heroku</a>, <a href=\"https://realm.io\">Realm</a>, <a href=\"http://www.rubymotion.com\"\
+        >RubyMotion</a>, <a href=\"https://www.sauspiel.de\">Sauspiel</a>, <a href=\"\
+        https://www.slack.com\">Slack</a>, <a href=\"https://www.soundcloud.com\"\
+        >SoundCloud</a>, <a href=\"https://www.stripe.com\">Stripe</a>, <a href=\"\
+        https://www.squareup.com\">Square</a>, and <a href=\"http://www.technologyastronauts.ch\"\
+        >Technology&nbsp;Astronauts</a>.</p></article></div></section></footer><footer\
+        \ class=\"footer-links\"><section class=\"container\"><div class=\"row\"><article\
+        \ class=\"col-md-8 col-lg-8 col-sm-12 col-md-offset-2 col-lg-offset-2 col-xs-12\"\
+        ><a class=\"cocoapods-small-logo\" href=\"https://cocoapods.org\"></a><ul><li\
+        \ class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"https://guides.cocoapods.org/using/troubleshooting.html\"\
+        >Support</a></li><li class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"https://github.com/CocoaPods/CocoaPods\"\
+        >GitHub Repo</a></li><li class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"https://status.cocoapods.org\"\
+        >Web Properties Status</a></li><li class=\"col-md-3 col-sm-3 col-xs-6\"><a\
+        \ href=\"https://twitter.com/CocoaPods\">@CocoaPods</a></li><li class=\"col-md-3\
+        \ col-sm-3 col-xs-6\"><a href=\"http://groups.google.com/group/cocoapods\"\
+        >Mailing List</a></li><li class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"\
+        https://cocoapods.org/about\"><span class=\"visible-lg-span\">CocoaPods</span>\
+        \ Dev Team</a></li><li class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"https://guides.cocoapods.org/syntax/podfile.html\"\
+        >Podfile Doc<span class=\"hidden-lg-span\">s</span><span class=\"visible-lg-span\"\
+        >umentation</span></a></li><li class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"\
+        https://cocoapods.org/legal\">Legal / Conduct</a></li></ul></article></div></section></footer></body></html><script\
+        \ type=\"text/javascript\">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,\
+        \ 'script', 'twitter-wjs');\n\nvar _gaq = _gaq || [];\n_gaq.push(['_setAccount',\
+        \ 'UA-29866548-1']);\n_gaq.push(['_trackPageview']);\n(function() {\n  var\
+        \ ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async\
+        \ = true;\n  ga.src = ('https:' == document.location.protocol ? 'https://ssl'\
+        \ : 'http://www') + '.google-analytics.com/ga.js';\n  var s = document.getElementsByTagName('script')[0];\
+        \ s.parentNode.insertBefore(ga, s);\n})();</script>"}
+    headers:
+      CF-RAY: [3a8b99b2890908bd-FRA]
+      Connection: [keep-alive]
+      Content-Type: [text/html;charset=utf-8]
+      Date: ['Wed, 04 Oct 2017 22:33:01 GMT']
+      Server: [cloudflare-nginx]
+      Set-Cookie: ['__cfduid=d6e51ca6ff332102e085f107ec24b72191507156380; expires=Thu,
+          04-Oct-18 22:33:00 GMT; path=/; domain=.cocoapods.org; HttpOnly']
+      Vary: [Accept-Encoding]
+      Via: [1.1 vegur]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Xss-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://raw.githubusercontent.com/CocoaPods/Specs/master/Specs/a/d/d/GoogleMaps/2.4.0/GoogleMaps.podspec.json
+  response:
+    body: {string: "{\n  \"authors\": \"Google, Inc.\",\n  \"default_subspecs\": [\n\
+        \    \"Maps\"\n  ],\n  \"description\": \"Use the Google Maps SDK for iOS\
+        \ to enrich your app with interactive maps, immersive Street View panoramas,\
+        \ and detailed information from Google's Places database.\",\n  \"homepage\"\
+        : \"https://developers.google.com/maps/documentation/ios/\",\n  \"license\"\
+        : {\n    \"text\": \"Copyright 2017 Google\",\n    \"type\": \"Copyright\"\
+        \n  },\n  \"name\": \"GoogleMaps\",\n  \"platforms\": {\n    \"ios\": \"8.0\"\
+        \n  },\n  \"preserve_paths\": [\n    \"Example/GoogleMapsDemos.xcodeproj/project.pbxproj\"\
+        ,\n    \"Example/GoogleMapsDemos/DemoAppDelegate.h\",\n    \"Example/GoogleMapsDemos/DemoAppDelegate.m\"\
+        ,\n    \"Example/GoogleMapsDemos/Info.plist\",\n    \"Example/GoogleMapsDemos/MapsDemoAssets.xcassets/AppIcon.appiconset/Contents.json\"\
+        ,\n    \"Example/GoogleMapsDemos/MapsDemoAssets.xcassets/AppIcon.appiconset/Maps-SDK-Demo-App_120.png\"\
+        ,\n    \"Example/GoogleMapsDemos/MapsDemoAssets.xcassets/AppIcon.appiconset/Maps-SDK-Demo-App_152.png\"\
+        ,\n    \"Example/GoogleMapsDemos/MapsDemoAssets.xcassets/AppIcon.appiconset/Maps-SDK-Demo-App_167.png\"\
+        ,\n    \"Example/GoogleMapsDemos/MapsDemoAssets.xcassets/AppIcon.appiconset/Maps-SDK-Demo-App_180.png\"\
+        ,\n    \"Example/GoogleMapsDemos/MapsDemoAssets.xcassets/AppIcon.appiconset/Maps-SDK-Demo-App_76.png\"\
+        ,\n    \"Example/GoogleMapsDemos/MapsDemoAssets.xcassets/Contents.json\",\n\
+        \    \"Example/GoogleMapsDemos/MasterViewController.h\",\n    \"Example/GoogleMapsDemos/MasterViewController.m\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/LaunchScreen.storyboard\",\n  \
+        \  \"Example/GoogleMapsDemos/Resources/Museum-Icons/h1.png\",\n    \"Example/GoogleMapsDemos/Resources/Museum-Icons/h1@2x.png\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/Museum-Icons/spitfire.png\",\n\
+        \    \"Example/GoogleMapsDemos/Resources/Museum-Icons/spitfire@2x.png\",\n\
+        \    \"Example/GoogleMapsDemos/Resources/Museum-Icons/voyager.png\",\n   \
+        \ \"Example/GoogleMapsDemos/Resources/Museum-Icons/voyager@2x.png\",\n   \
+        \ \"Example/GoogleMapsDemos/Resources/Museum-Icons/x29.png\",\n    \"Example/GoogleMapsDemos/Resources/Museum-Icons/x29@2x.png\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/aeroplane.png\",\n    \"Example/GoogleMapsDemos/Resources/aeroplane@2x.png\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/ar.lproj/InfoPlist.strings\",\n\
+        \    \"Example/GoogleMapsDemos/Resources/argentina-large.png\",\n    \"Example/GoogleMapsDemos/Resources/argentina.png\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/arrow.png\",\n    \"Example/GoogleMapsDemos/Resources/arrow@2x.png\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/australia-large.png\",\n    \"\
+        Example/GoogleMapsDemos/Resources/australia-large@2x.png\",\n    \"Example/GoogleMapsDemos/Resources/australia.png\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/boat.png\",\n    \"Example/GoogleMapsDemos/Resources/boat@2x.png\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/botswana-large.png\",\n    \"Example/GoogleMapsDemos/Resources/botswana.png\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/bulgaria-large.png\",\n    \"Example/GoogleMapsDemos/Resources/bulgaria.png\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/ca.lproj/InfoPlist.strings\",\n\
+        \    \"Example/GoogleMapsDemos/Resources/cs.lproj/InfoPlist.strings\",\n \
+        \   \"Example/GoogleMapsDemos/Resources/da.lproj/InfoPlist.strings\",\n  \
+        \  \"Example/GoogleMapsDemos/Resources/de.lproj/InfoPlist.strings\",\n   \
+        \ \"Example/GoogleMapsDemos/Resources/el.lproj/InfoPlist.strings\",\n    \"\
+        Example/GoogleMapsDemos/Resources/en.lproj/InfoPlist.strings\",\n    \"Example/GoogleMapsDemos/Resources/en_GB.lproj/InfoPlist.strings\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/es.lproj/InfoPlist.strings\",\n\
+        \    \"Example/GoogleMapsDemos/Resources/fi.lproj/InfoPlist.strings\",\n \
+        \   \"Example/GoogleMapsDemos/Resources/fr.lproj/InfoPlist.strings\",\n  \
+        \  \"Example/GoogleMapsDemos/Resources/glow-marker.png\",\n    \"Example/GoogleMapsDemos/Resources/glow-marker@2x.png\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/he.lproj/InfoPlist.strings\",\n\
+        \    \"Example/GoogleMapsDemos/Resources/hr.lproj/InfoPlist.strings\",\n \
+        \   \"Example/GoogleMapsDemos/Resources/hu.lproj/InfoPlist.strings\",\n  \
+        \  \"Example/GoogleMapsDemos/Resources/id.lproj/InfoPlist.strings\",\n   \
+        \ \"Example/GoogleMapsDemos/Resources/it.lproj/InfoPlist.strings\",\n    \"\
+        Example/GoogleMapsDemos/Resources/ja.lproj/InfoPlist.strings\",\n    \"Example/GoogleMapsDemos/Resources/ko.lproj/InfoPlist.strings\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/mapstyle-night.json\",\n    \"\
+        Example/GoogleMapsDemos/Resources/mapstyle-retro.json\",\n    \"Example/GoogleMapsDemos/Resources/mapstyle-silver.json\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/ms.lproj/InfoPlist.strings\",\n\
+        \    \"Example/GoogleMapsDemos/Resources/museum-exhibits.json\",\n    \"Example/GoogleMapsDemos/Resources/nb.lproj/InfoPlist.strings\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/newark_nj_1922.jpg\",\n    \"Example/GoogleMapsDemos/Resources/nl.lproj/InfoPlist.strings\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/pl.lproj/InfoPlist.strings\",\n\
+        \    \"Example/GoogleMapsDemos/Resources/popup_santa.png\",\n    \"Example/GoogleMapsDemos/Resources/popup_santa@2x.png\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/pt.lproj/InfoPlist.strings\",\n\
+        \    \"Example/GoogleMapsDemos/Resources/pt_PT.lproj/InfoPlist.strings\",\n\
+        \    \"Example/GoogleMapsDemos/Resources/ro.lproj/InfoPlist.strings\",\n \
+        \   \"Example/GoogleMapsDemos/Resources/ru.lproj/InfoPlist.strings\",\n  \
+        \  \"Example/GoogleMapsDemos/Resources/sk.lproj/InfoPlist.strings\",\n   \
+        \ \"Example/GoogleMapsDemos/Resources/step1.png\",\n    \"Example/GoogleMapsDemos/Resources/step1@2x.png\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/step2.png\",\n    \"Example/GoogleMapsDemos/Resources/step2@2x.png\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/step3.png\",\n    \"Example/GoogleMapsDemos/Resources/step3@2x.png\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/step4.png\",\n    \"Example/GoogleMapsDemos/Resources/step4@2x.png\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/step5.png\",\n    \"Example/GoogleMapsDemos/Resources/step5@2x.png\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/step6.png\",\n    \"Example/GoogleMapsDemos/Resources/step6@2x.png\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/step7.png\",\n    \"Example/GoogleMapsDemos/Resources/step7@2x.png\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/step8.png\",\n    \"Example/GoogleMapsDemos/Resources/step8@2x.png\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/sv.lproj/InfoPlist.strings\",\n\
+        \    \"Example/GoogleMapsDemos/Resources/th.lproj/InfoPlist.strings\",\n \
+        \   \"Example/GoogleMapsDemos/Resources/tr.lproj/InfoPlist.strings\",\n  \
+        \  \"Example/GoogleMapsDemos/Resources/track.json\",\n    \"Example/GoogleMapsDemos/Resources/uk.lproj/InfoPlist.strings\"\
+        ,\n    \"Example/GoogleMapsDemos/Resources/vi.lproj/InfoPlist.strings\",\n\
+        \    \"Example/GoogleMapsDemos/Resources/zh_CN.lproj/InfoPlist.strings\",\n\
+        \    \"Example/GoogleMapsDemos/Resources/zh_TW.lproj/InfoPlist.strings\",\n\
+        \    \"Example/GoogleMapsDemos/SDKDemoAPIKey.h\",\n    \"Example/GoogleMapsDemos/Samples/AnimatedCurrentLocationViewController.h\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/AnimatedCurrentLocationViewController.m\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/AnimatedUIViewMarkerViewController.h\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/AnimatedUIViewMarkerViewController.m\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/BasicMapViewController.h\",\n   \
+        \ \"Example/GoogleMapsDemos/Samples/BasicMapViewController.m\",\n    \"Example/GoogleMapsDemos/Samples/CameraViewController.h\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/CameraViewController.m\",\n    \"\
+        Example/GoogleMapsDemos/Samples/CustomIndoorViewController.h\",\n    \"Example/GoogleMapsDemos/Samples/CustomIndoorViewController.m\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/CustomMarkersViewController.h\",\n\
+        \    \"Example/GoogleMapsDemos/Samples/CustomMarkersViewController.m\",\n\
+        \    \"Example/GoogleMapsDemos/Samples/DoubleMapViewController.h\",\n    \"\
+        Example/GoogleMapsDemos/Samples/DoubleMapViewController.m\",\n    \"Example/GoogleMapsDemos/Samples/FitBoundsViewController.h\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/FitBoundsViewController.m\",\n  \
+        \  \"Example/GoogleMapsDemos/Samples/FixedPanoramaViewController.h\",\n  \
+        \  \"Example/GoogleMapsDemos/Samples/FixedPanoramaViewController.m\",\n  \
+        \  \"Example/GoogleMapsDemos/Samples/FrameRateViewController.h\",\n    \"\
+        Example/GoogleMapsDemos/Samples/FrameRateViewController.m\",\n    \"Example/GoogleMapsDemos/Samples/GeocoderViewController.h\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/GeocoderViewController.m\",\n   \
+        \ \"Example/GoogleMapsDemos/Samples/GestureControlViewController.h\",\n  \
+        \  \"Example/GoogleMapsDemos/Samples/GestureControlViewController.m\",\n \
+        \   \"Example/GoogleMapsDemos/Samples/GradientPolylinesViewController.h\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/GradientPolylinesViewController.m\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/GroundOverlayViewController.h\",\n\
+        \    \"Example/GoogleMapsDemos/Samples/GroundOverlayViewController.m\",\n\
+        \    \"Example/GoogleMapsDemos/Samples/IndoorMuseumNavigationViewController.h\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/IndoorMuseumNavigationViewController.m\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/IndoorViewController.h\",\n    \"\
+        Example/GoogleMapsDemos/Samples/IndoorViewController.m\",\n    \"Example/GoogleMapsDemos/Samples/MapLayerViewController.h\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/MapLayerViewController.m\",\n   \
+        \ \"Example/GoogleMapsDemos/Samples/MapTypesViewController.h\",\n    \"Example/GoogleMapsDemos/Samples/MapTypesViewController.m\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/MapZoomViewController.h\",\n    \"\
+        Example/GoogleMapsDemos/Samples/MapZoomViewController.m\",\n    \"Example/GoogleMapsDemos/Samples/MarkerEventsViewController.h\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/MarkerEventsViewController.m\",\n\
+        \    \"Example/GoogleMapsDemos/Samples/MarkerInfoWindowViewController.h\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/MarkerInfoWindowViewController.m\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/MarkerLayerViewController.h\",\n\
+        \    \"Example/GoogleMapsDemos/Samples/MarkerLayerViewController.m\",\n  \
+        \  \"Example/GoogleMapsDemos/Samples/MarkersViewController.h\",\n    \"Example/GoogleMapsDemos/Samples/MarkersViewController.m\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/MyLocationViewController.h\",\n \
+        \   \"Example/GoogleMapsDemos/Samples/MyLocationViewController.m\",\n    \"\
+        Example/GoogleMapsDemos/Samples/PanoramaViewController.h\",\n    \"Example/GoogleMapsDemos/Samples/PanoramaViewController.m\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/PolygonsViewController.h\",\n   \
+        \ \"Example/GoogleMapsDemos/Samples/PolygonsViewController.m\",\n    \"Example/GoogleMapsDemos/Samples/PolylinesViewController.h\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/PolylinesViewController.m\",\n  \
+        \  \"Example/GoogleMapsDemos/Samples/Samples.h\",\n    \"Example/GoogleMapsDemos/Samples/Samples.m\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/SnapshotReadyViewController.h\",\n\
+        \    \"Example/GoogleMapsDemos/Samples/SnapshotReadyViewController.m\",\n\
+        \    \"Example/GoogleMapsDemos/Samples/StructuredGeocoderViewController.h\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/StructuredGeocoderViewController.m\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/StyledMapViewController.h\",\n  \
+        \  \"Example/GoogleMapsDemos/Samples/StyledMapViewController.m\",\n    \"\
+        Example/GoogleMapsDemos/Samples/TileLayerViewController.h\",\n    \"Example/GoogleMapsDemos/Samples/TileLayerViewController.m\"\
+        ,\n    \"Example/GoogleMapsDemos/Samples/TrafficMapViewController.h\",\n \
+        \   \"Example/GoogleMapsDemos/Samples/TrafficMapViewController.m\",\n    \"\
+        Example/GoogleMapsDemos/Samples/VisibleRegionViewController.h\",\n    \"Example/GoogleMapsDemos/Samples/VisibleRegionViewController.m\"\
+        ,\n    \"Example/GoogleMapsDemos/main.m\",\n    \"Example/Podfile\",\n   \
+        \ \"Example/README.GoogleMapsDemos\",\n    \"CHANGELOG\",\n    \"README.md\"\
+        \n  ],\n  \"source\": {\n    \"http\": \"https://dl.google.com/dl/cpdc/ca91069241a099f1/GoogleMaps-2.4.0.tar.gz\"\
+        \n  },\n  \"summary\": \"Google Maps SDK for iOS.\",\n  \"version\": \"2.4.0\"\
+        ,\n  \"subspecs\": [\n    {\n      \"frameworks\": [\n        \"CoreData\"\
+        ,\n        \"CoreGraphics\",\n        \"CoreLocation\",\n        \"QuartzCore\"\
+        ,\n        \"SystemConfiguration\",\n        \"UIKit\"\n      ],\n      \"\
+        libraries\": [\n        \"c++\",\n        \"z\"\n      ],\n      \"name\"\
+        : \"Base\",\n      \"vendored_frameworks\": [\n        \"Base/Frameworks/GoogleMapsBase.framework\"\
+        \n      ]\n    },\n    {\n      \"dependencies\": {\n        \"GoogleMaps/Base\"\
+        : [\n\n        ]\n      },\n      \"frameworks\": [\n        \"Accelerate\"\
+        ,\n        \"CoreTelephony\",\n        \"CoreText\",\n        \"GLKit\",\n\
+        \        \"ImageIO\",\n        \"OpenGLES\",\n        \"QuartzCore\"\n   \
+        \   ],\n      \"name\": \"Maps\",\n      \"resources\": [\n        \"Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle\"\
+        \n      ],\n      \"vendored_frameworks\": [\n        \"Maps/Frameworks/GoogleMaps.framework\"\
+        ,\n        \"Maps/Frameworks/GoogleMapsCore.framework\"\n      ]\n    },\n\
+        \    {\n      \"dependencies\": {\n        \"GoogleMaps/Maps\": [\n\n    \
+        \    ]\n      },\n      \"name\": \"M4B\",\n      \"vendored_frameworks\"\
+        : [\n        \"M4B/Frameworks/GoogleMapsM4B.framework\"\n      ]\n    }\n\
+        \  ]\n}\n"}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [max-age=300]
+      Connection: [keep-alive]
+      Content-Length: ['12635']
+      Content-Security-Policy: [default-src 'none'; style-src 'unsafe-inline']
+      Content-Type: [text/plain; charset=utf-8]
+      Date: ['Wed, 04 Oct 2017 22:33:01 GMT']
+      ETag: ['"5a138484a050ea9875b979250c25bca77d2f2378"']
+      Expires: ['Wed, 04 Oct 2017 22:38:01 GMT']
+      Source-Age: ['0']
+      Strict-Transport-Security: [max-age=31536000]
+      Vary: ['Authorization,Accept-Encoding']
+      Via: [1.1 varnish]
+      X-Cache: [MISS]
+      X-Cache-Hits: ['0']
+      X-Content-Type-Options: [nosniff]
+      X-Fastly-Request-ID: [e1b4cb695ee21b6dab457ae1cd4b6ad82e00e4ac]
+      X-Frame-Options: [deny]
+      X-Geo-Block-List: ['']
+      X-GitHub-Request-Id: ['7034:08EF:13FC52D:15A8945:59D5619D']
+      X-Served-By: [cache-fra1249-FRA]
+      X-Timer: ['S1507156382.788433,VS0,VE119']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1
