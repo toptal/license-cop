@@ -82,7 +82,7 @@ def test_with_license():
 
 @VCR.use_cassette('github_repository_without_license.yaml')
 def test_without_license():
-    license = build_repository('toptal', 'license-cop-test-fixture').license()
+    license = build_repository('flavorjones', 'hoe-gemspec').license()
     assert license is None
 
 
