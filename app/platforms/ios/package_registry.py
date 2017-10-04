@@ -7,6 +7,7 @@ from app.dependency import *
 
 POD_URI = 'https://cocoapods.org/pods/{0}'
 VERSIONS_URI = 'https://rubygems.org/api/v1/versions/{0}.json'
+PODSPEC_URL_REGEX = re.compile(r"<a\s+href=\"([^\"]+?)\"\s*>\s*See Podspec\s*<\/a>", re.S)
 
 
 class IosPackageRegistry(PackageRegistry):
@@ -17,7 +18,6 @@ class IosPackageRegistry(PackageRegistry):
     def _fetch_latest_version(self, name):
         raw_github_path = self.__determine_podspec_url(name)
         podspec = self.__get_podspec(raw_github_path)
-
         return self.__build_version(name, podspec)
 
     def __get_cocoapod_page(self, name):
@@ -32,7 +32,7 @@ class IosPackageRegistry(PackageRegistry):
 
     def __determine_podspec_url(self, name):
         page = self.__get_cocoapod_page(name)
-        github_path = re.search(r"<a\s+href=\"([^\"]+?)\"\s*>\s*See Podspec\s*<\/a>", page, re.S).group(1)
+        github_path = PODSPEC_URL_REGEX.search(page).group(1)
         return github_path.replace('github.com', 'raw.githubusercontent.com').replace('blob/', '')
 
     def __parse_dependencies(self, package_data, kind):

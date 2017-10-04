@@ -3,6 +3,7 @@ import re
 from app.dependency import *
 from app.repository_matcher import *
 from app.package_descriptor import *
+from app.platforms.ios.podfile_parser import PodfileParser
 
 
 class IosRepositoryMatcher(RepositoryMatcher):
@@ -17,12 +18,9 @@ class IosRepositoryMatcher(RepositoryMatcher):
         data = repository.read_text_file(podfile)
 
         dependencies = []
-
-        for line in data.splitlines():
-            name = self.__parse_line(line)
-            if name:
-                dependency = self.__build_dependency(name)
-                dependencies.append(dependency)
+        for name in PodfileParser().get_pod_names(data):
+            dependency = self.__build_dependency(name)
+            dependencies.append(dependency)
 
         return PackageDescriptor(
             platform='iOS',
@@ -31,10 +29,6 @@ class IosRepositoryMatcher(RepositoryMatcher):
             runtime_dependencies=dependencies,
             development_dependencies=[]  # TODO
         )
-
-    def __parse_line(self, line):
-        m = re.match(r"^\s*pod\s+['\"]([\w\-]+)[\/'\"]", line)
-        return m.group(1) if m else None
 
     def __build_dependency(self, name):
         return Dependency.runtime(name)
