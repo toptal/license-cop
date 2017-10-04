@@ -5,6 +5,7 @@ verify_ssl = true
 
 requests = "*"
 xmltodict = "*"
+pyparsing = "*"
 
 
 
