@@ -26,7 +26,7 @@ The following platforms are supported:
 - iOS (Swift, Objective-C) — [CocoaPods](https://cocoapods.org):
   - [ ] [`Podfile`](https://guides.cocoapods.org/using/the-podfile.html)
 - Elixir — [Hex](https://hex.pm):
-  - [ ] [`mix.exs`](https://hex.pm/docs/usage)
+  - [x] [`mix.exs`](https://hex.pm/docs/usage)
 
 ## System Requirements
 
