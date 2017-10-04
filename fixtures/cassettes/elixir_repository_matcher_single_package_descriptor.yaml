@@ -1,0 +1,82 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/bitwalker/timex/contents/mix.exs
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['3207']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Wed, 04 Oct 2017 17:42:59 GMT']
+      ETag: ['"c6670092e93f7dabf461b3ea65b04094"']
+      Last-Modified: ['Tue, 26 Sep 2017 20:12:56 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['C9B8:6E61:6363D4:C9C356:59D51DA3']
+      X-OAuth-Scopes: [repo]
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4997']
+      X-RateLimit-Reset: ['1507140643']
+      X-Runtime-rack: ['0.051479']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/bitwalker/timex/contents/mix.exs
+  response:
+    body: {string: '{"name":"mix.exs","path":"mix.exs","sha":"6b372b9311c0649d55533bad03dc0f659f89cae9","size":1788,"url":"https://api.github.com/repos/bitwalker/timex/contents/mix.exs?ref=master","html_url":"https://github.com/bitwalker/timex/blob/master/mix.exs","git_url":"https://api.github.com/repos/bitwalker/timex/git/blobs/6b372b9311c0649d55533bad03dc0f659f89cae9","download_url":"https://raw.githubusercontent.com/bitwalker/timex/master/mix.exs","type":"file","content":"ZGVmbW9kdWxlIFRpbWV4Lk1peGZpbGUgZG8KICB1c2UgTWl4LlByb2plY3QK\nCiAgQHZlcnNpb24gIjMuMS4yNCIKCiAgZGVmIHByb2plY3QgZG8KICAgIFsg\nYXBwOiA6dGltZXgsCiAgICAgIHZlcnNpb246IEB2ZXJzaW9uLAogICAgICBl\nbGl4aXI6ICJ+PiAxLjMiLAogICAgICBkZXNjcmlwdGlvbjogZGVzY3JpcHRp\nb24oKSwKICAgICAgcGFja2FnZTogcGFja2FnZSgpLAogICAgICBkZXBzOiBk\nZXBzKCksCiAgICAgIGRvY3M6IGRvY3MoKSwKICAgICAgY29tcGlsZXJzOiBb\nOmdldHRleHRdICsrIE1peC5jb21waWxlcnMsCiAgICAgIHRlc3RfY292ZXJh\nZ2U6IFt0b29sOiBFeENvdmVyYWxsc10gXQoKICBlbmQKCiAgZGVmIGFwcGxp\nY2F0aW9uIGRvCiAgICBbYXBwbGljYXRpb25zOiBbOmxvZ2dlciwgOnR6ZGF0\nYSwgOmdldHRleHQsIDpjb21iaW5lXSwKICAgICBlbnY6IFtsb2NhbF90aW1l\nem9uZTogbmlsLCBkZWZhdWx0X2xvY2FsZTogImVuIl0sCiAgICAgbW9kOiB7\nVGltZXgsIFtdfV0KICBlbmQKCiAgZGVmcCBkZXNjcmlwdGlvbiBkbwogICAg\nIiIiCiAgICBUaW1leCBpcyBhIHJpY2gsIGNvbXByZWhlbnNpdmUgRGF0ZS9U\naW1lIGxpYnJhcnkgZm9yIEVsaXhpciBwcm9qZWN0cywgd2l0aCBmdWxsIHRp\nbWV6b25lIHN1cHBvcnQgdmlhIHRoZSA6dHpkYXRhIHBhY2thZ2UuCiAgICBJ\nZiB5b3UgbmVlZCB0byBtYW5pcHVsYXRlIGRhdGVzLCB0aW1lcywgZGF0ZXRp\nbWVzLCB0aW1lc3RhbXBzLCBldGMuLCB0aGVuIFRpbWV4IGlzIGZvciB5b3Uh\nCiAgICAiIiIKICBlbmQKCiAgZGVmcCBwYWNrYWdlIGRvCiAgICBbIGZpbGVz\nOiBbImxpYiIsICJwcml2IiwgIm1peC5leHMiLCAiUkVBRE1FLm1kIiwgIkxJ\nQ0VOU0UubWQiXSwKICAgICAgbWFpbnRhaW5lcnM6IFsiUGF1bCBTY2hvZW5m\nZWxkZXIiXSwKICAgICAgbGljZW5zZXM6IFsiTUlUIl0sCiAgICAgIGxpbmtz\nOiAleyAiR2l0SHViIjogImh0dHBzOi8vZ2l0aHViLmNvbS9iaXR3YWxrZXIv\ndGltZXgiIH0gXQogIGVuZAoKICBkZWYgZGVwcyBkbwogICAgW3s6dHpkYXRh\nLCAifj4gMC4xLjggb3Igfj4gMC41In0sCiAgICAgezpjb21iaW5lLCAifj4g\nMC4xMCJ9LAogICAgIHs6Z2V0dGV4dCwgIn4+IDAuMTAifSwKICAgICB7OmV4\nX2RvYywgIn4+IDAuMTMiLCBvbmx5OiA6ZGV2fSwKICAgICB7OmJlbmNoZmVs\nbGEsICJ+PiAwLjMiLCBvbmx5OiA6ZGV2fSwKICAgICB7OmRpYWx5emUsICJ+\nPiAwLjIiLCBvbmx5OiA6ZGV2fSwKICAgICB7OmV4Y292ZXJhbGxzLCAifj4g\nMC40Iiwgb25seTogWzpkZXYsIDp0ZXN0XX1dCiAgZW5kCgogIGRlZnAgZG9j\ncyBkbwogICAgW21haW46ICJnZXR0aW5nLXN0YXJ0ZWQiLAogICAgIGZvcm1h\ndHRlcl9vcHRzOiBbZ2ZtOiB0cnVlXSwKICAgICBzb3VyY2VfcmVmOiBAdmVy\nc2lvbiwKICAgICBzb3VyY2VfdXJsOiAiaHR0cHM6Ly9naXRodWIuY29tL2Jp\ndHdhbGtlci90aW1leCIsCiAgICAgZXh0cmFzOiBbCiAgICAgICAiZG9jcy9H\nZXR0aW5nIFN0YXJ0ZWQubWQiLAogICAgICAgIkNIQU5HRUxPRy5tZCIsCiAg\nICAgICAiZG9jcy9CYXNpYyBVc2FnZS5tZCIsCiAgICAgICAiZG9jcy9Fcmxh\nbmcgSW50ZXJvcC5tZCIsCiAgICAgICAiZG9jcy9Gb3JtYXR0aW5nLm1kIiwK\nICAgICAgICJkb2NzL1BhcnNpbmcubWQiLAogICAgICAgImRvY3MvRkFRLm1k\nIiwKICAgICAgICJkb2NzL1VzaW5nIHdpdGggRWN0by5tZCIsCiAgICAgICAi\nZG9jcy9DdXN0b20gUGFyc2Vycy5tZCIsCiAgICAgICAiZG9jcy9DdXN0b20g\nRm9ybWF0dGVycy5tZCIKICAgIF1dCiAgZW5kCgplbmQK\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/bitwalker/timex/contents/mix.exs?ref=master","git":"https://api.github.com/repos/bitwalker/timex/git/blobs/6b372b9311c0649d55533bad03dc0f659f89cae9","html":"https://github.com/bitwalker/timex/blob/master/mix.exs"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['3207']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Wed, 04 Oct 2017 17:43:00 GMT']
+      ETag: ['"c6670092e93f7dabf461b3ea65b04094"']
+      Last-Modified: ['Tue, 26 Sep 2017 20:12:56 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['C9B8:6E61:6363F0:C9C392:59D51DA3']
+      X-OAuth-Scopes: [repo]
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4996']
+      X-RateLimit-Reset: ['1507140643']
+      X-Runtime-rack: ['0.063690']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1
