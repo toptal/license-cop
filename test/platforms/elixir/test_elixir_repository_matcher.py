@@ -24,12 +24,12 @@ def matcher():
 
 
 @VCR.use_cassette('elixir_repository_matcher_match_repository_with_mixfile.yaml')
-def test_match_repository_with_gemfile(matcher, elixir_repository):
+def test_match_repository_with_mixfile(matcher, elixir_repository):
     assert matcher.match(elixir_repository) is not None
 
 
 @VCR.use_cassette('elixir_repository_matcher_mismatch_repository_without_mixfile.yaml')
-def test_mismatch_repository_without_gemfile(matcher, python_repository):
+def test_mismatch_repository_without_mixfile(matcher, python_repository):
     assert matcher.match(python_repository) is None
 
 
