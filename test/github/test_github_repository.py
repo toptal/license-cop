@@ -90,3 +90,9 @@ def test_str():
     url = 'https://github.com/toptal/license-cop'
     repo = GithubRepository.from_url(url)
     assert str(repo) == url
+
+
+def test_repr():
+    url = 'https://github.com/toptal/license-cop'
+    repo = GithubRepository.from_url(url)
+    assert repr(repo) == 'GitHub repository https://github.com/toptal/license-cop'
