@@ -1,0 +1,82 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: HEAD
+    uri: https://api.github.com/repos/lhc70000/iina/contents/Podfile
+  response:
+    body: {string: ''}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1429']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Wed, 04 Oct 2017 22:47:17 GMT']
+      ETag: ['"5a3181bca2a5b911a67cbaa1387a5a51"']
+      Last-Modified: ['Wed, 04 Oct 2017 18:58:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['E2CE:6E61:802D9F:105E9C8:59D564F5']
+      X-OAuth-Scopes: [repo]
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4996']
+      X-RateLimit-Reset: ['1507158943']
+      X-Runtime-rack: ['0.046260']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/lhc70000/iina/contents/Podfile
+  response:
+    body: {string: '{"name":"Podfile","path":"Podfile","sha":"734d50e45ce9363cf7a123bc167db78502109355","size":502,"url":"https://api.github.com/repos/lhc70000/iina/contents/Podfile?ref=develop","html_url":"https://github.com/lhc70000/iina/blob/develop/Podfile","git_url":"https://api.github.com/repos/lhc70000/iina/git/blobs/734d50e45ce9363cf7a123bc167db78502109355","download_url":"https://raw.githubusercontent.com/lhc70000/iina/develop/Podfile","type":"file","content":"cGxhdGZvcm0gOm9zeCwgJzEwLjExJwoKdGFyZ2V0ICdpaW5hJyBkbwogIAog\nIHVzZV9mcmFtZXdvcmtzIQoKICAjIFBvZHMgZm9yIGlpbmEKICBwb2QgJ01B\nU1ByZWZlcmVuY2VzJwogIHBvZCAnSnVzdCcsIDpnaXQgPT4gJ2h0dHBzOi8v\nZ2l0aHViLmNvbS9KdXN0SFRUUC9KdXN0LmdpdCcsIDpicmFuY2ggPT4gJ3N3\naWZ0LTQnCiAgcG9kICdBRVhNTCcKICBwb2QgJ1Byb21pc2VLaXQnCiAgcG9k\nICdHemlwU3dpZnQnLCA6Z2l0ID0+ICdodHRwczovL2dpdGh1Yi5jb20vMTAy\nNGpwL0d6aXBTd2lmdC5naXQnLCA6YnJhbmNoID0+ICdzd2lmdDQnCiAgcG9k\nICdHUk11c3RhY2hlLnN3aWZ0JywgOmdpdCA9PiAnaHR0cHM6Ly9naXRodWIu\nY29tL3NhYWdhcmpoYS9HUk11c3RhY2hlLnN3aWZ0LmdpdCcKICBwb2QgJ1Nw\nYXJrbGUnCgojICB0YXJnZXQgJ2lpbmFUZXN0cycgZG8KIyAgICBpbmhlcml0\nISA6c2VhcmNoX3BhdGhzCiMgICAgIyBQb2RzIGZvciB0ZXN0aW5nCiMgIGVu\nZAoKZW5kCg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/lhc70000/iina/contents/Podfile?ref=develop","git":"https://api.github.com/repos/lhc70000/iina/git/blobs/734d50e45ce9363cf7a123bc167db78502109355","html":"https://github.com/lhc70000/iina/blob/develop/Podfile"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1429']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Wed, 04 Oct 2017 22:47:17 GMT']
+      ETag: ['"5a3181bca2a5b911a67cbaa1387a5a51"']
+      Last-Modified: ['Wed, 04 Oct 2017 18:58:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['E2CE:6E61:802DAF:105E9E5:59D564F5']
+      X-OAuth-Scopes: [repo]
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4995']
+      X-RateLimit-Reset: ['1507158943']
+      X-Runtime-rack: ['0.039560']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1
