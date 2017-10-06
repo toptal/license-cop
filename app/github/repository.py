@@ -48,7 +48,7 @@ class GithubRepository(GithubClient):
         response.raise_for_status()
         data = response.json()
         if isinstance(data, list) or data['type'] != 'file':
-            raise Exception('Path "{0}" is not a file.'.format(path))
+            raise ValueError(f'Path "{path}" is not a file.')
         return self.__decode_text_from_base64(data['content'])
 
     def fetch_tree(self, sha='master'):
@@ -68,7 +68,7 @@ class GithubRepository(GithubClient):
                 tree.add_blob(path)
             else:
                 raise NotImplementedError(
-                    'GitHub path {0} has an unsupported type: {1}'.format(path, type))
+                    f'GitHub path {path} has an unsupported type: {type}')
         return tree
 
     def license(self):
@@ -99,4 +99,4 @@ class GithubRepository(GithubClient):
         return REPOSITORY_URI.format(self.owner, self.name)
 
     def __repr__(self):
-        return "GitHub repository {0}".format(str(self))
+        return f"GitHub repository {str(self)}"

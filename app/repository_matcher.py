@@ -1,67 +1,55 @@
 from abc import *
+from itertools import groupby
 
 from app.data_object import DataObject
 
 
-class PackageDescriptorPattern(DataObject):
-    def __init__(self, id, files):
-        self.id = id
-        self.files = files
+class PackageDescriptorMatch(DataObject):
+    def __init__(self, nodes):
+        self.nodes = nodes
 
-    @staticmethod
-    def one_file(id, file):
-        return PackageDescriptorPattern(id, [file])
-
-    @staticmethod
-    def multiple_files(id, files):
-        return PackageDescriptorPattern(id, files)
-
-
-class PackageDescriptorPatternMatch(DataObject):
-    def __init__(self, pattern_id, paths):
-        self.pattern_id = pattern_id
-        self.paths = paths
+    @property
+    def paths(self):
+        return [i.path for i in self.nodes]
 
 
 class RepositoryMatch(DataObject):
-    def __init__(self, matcher, repository, pattern_matches):
+    def __init__(self, matcher, repository, package_descriptor_matches):
         self.__matcher = matcher
         self.repository = repository
-        self.pattern_matches = pattern_matches
+        self.package_descriptor_matches = package_descriptor_matches
 
     def package_descriptors(self):
         return list(map(
             lambda i:
                 self.__matcher._fetch_package_descriptor(self.repository, i),
-            self.pattern_matches
+            self.package_descriptor_matches
         ))
 
 
 class RepositoryMatcher(ABC):
     def __init__(self, patterns):
-        self._patterns = patterns
-
-    def match(self, repository):
-        matches = []
-        for pattern in self._patterns:
-            m = self.__match_pattern(repository, pattern)
-            if m:
-                matches.append(m)
-
-        return RepositoryMatch(self, repository, matches) if matches else None
-
-    def __match_pattern(self, repository, pattern):
-        # For now, this is a dumb filename match.
-        # However, we will be using the GitHub search API
-        # in the future.
-        # https://stackoverflow.com/questions/25564760/how-can-i-search-file-name-in-specific-github-repository
-        pattern_matches = []
-        for file in pattern.files:
-            if repository.path_exists(file):
-                pattern_matches.append(file)
-        if pattern_matches:
-            return PackageDescriptorPatternMatch(pattern.id, pattern_matches)
+        self.__patterns = patterns
 
     @abstractmethod
-    def _fetch_package_descriptor(self, repository, pattern_match):
+    def _fetch_package_descriptor(self, repository, match):
         pass
+
+    def match(self, repository):
+        tree = repository.fetch_tree()
+        matches = self.__match_patterns(tree)
+        return RepositoryMatch(self, repository, matches) if matches else None
+
+    def __match_patterns(self, tree):
+        sort_key = (lambda i: i.parent.path)
+        nodes = sorted(self.__search_patterns(tree), key=sort_key)
+        return list(map(
+            lambda i: PackageDescriptorMatch(list(i[1])),
+            groupby(nodes, key=sort_key)
+        ))
+
+    def __search_patterns(self, tree):
+        results = []
+        for i in self.__patterns:
+            results.extend(tree.deep_search(i))
+        return results

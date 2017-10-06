@@ -123,4 +123,3 @@ class NodejsPackageRegistry(PackageRegistry):
         if isinstance(data, dict):
             if key in data and isinstance(data[key], str):
                 return data[key]
-        return None

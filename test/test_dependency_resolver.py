@@ -18,7 +18,6 @@ def find_child(node, name):
     for child in node.children:
         if child.name == name:
             return child
-    return None
 
 
 def assert_leaf(root, expected_path, expected_number):

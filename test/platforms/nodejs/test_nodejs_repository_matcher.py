@@ -33,12 +33,11 @@ def test_mismatch_repository_without_pacakge_json(matcher, python_repository):
     assert matcher.match(python_repository) is None
 
 
-@VCR.use_cassette('nodejs_repository_matcher_single_package_descriptor.yaml')
-def test_single_package_descriptor(matcher, nodejs_repository):
+@VCR.use_cassette('nodejs_repository_matcher_package_descriptor.yaml')
+def test_package_descriptor(matcher, nodejs_repository):
     match = matcher.match(nodejs_repository)
 
     descriptors = match.package_descriptors()
-    assert len(descriptors) == 1
     descriptor = descriptors[0]
 
     assert descriptor.platform == 'Node.js'

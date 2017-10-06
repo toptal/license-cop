@@ -31,9 +31,9 @@ class GitNode:
         parts.reverse()
         return str(PurePosixPath('').joinpath(*parts))
 
-    @staticmethod
-    def root(name=''):
-        return GitNode(name, None, True)
+    @classmethod
+    def root(cls, name=''):
+        return cls(name, None, True)
 
     def add_tree(self, path):
         return self._add_path(path, True)
@@ -56,10 +56,7 @@ class GitNode:
         return fnmatchcase(self.name, wildcard_pattern)
 
     def match_any(self, wildcard_patterns):
-        for i in wildcard_patterns:
-            if self.match(i):
-                return True
-        return False
+        return any(self.match(i) for i in wildcard_patterns)
 
     def deep_search(self, wildcard_pattern):
         node = self
@@ -71,17 +68,13 @@ class GitNode:
         return results
 
     def shallow_search(self, wildcard_pattern):
-        results = []
-        for child in self.children:
-            if child.match(wildcard_pattern):
-                results.append(child)
-        return results
+        return [i for i in self.children if i.match(wildcard_pattern)]
 
     def search_siblings(self, wildcard_pattern):
         if not self.parent:
             return []
         results = self.parent.shallow_search(wildcard_pattern)
-        return list(filter(lambda r: r is not self, results))
+        return [i for i in results if i is not self]
 
     def _add_path(self, path, is_tree):
         parts = self.__split_path(path)
@@ -92,7 +85,7 @@ class GitNode:
 
     def _add_child(self, name, is_tree):
         if not self.is_tree:
-            raise Exception('Path "{0}" is not a tree.'.format(self.path))
+            raise ValueError(f'Path "{self.path}" is not a tree.')
         existing = self.__get_child(name)
         if not existing:
             child = GitNode(name, self, is_tree)
@@ -104,7 +97,6 @@ class GitNode:
         for child in self.children:
             if child.name == name:
                 return child
-        return None
 
     def __split_path(self, path):
         return PurePosixPath(path).parts

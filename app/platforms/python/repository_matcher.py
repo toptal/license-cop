@@ -1,49 +1,32 @@
 import json
 import re
-from pathlib import PurePosixPath
 from configparser import ConfigParser
 
 from app.dependency import *
 from app.repository_matcher import *
 from app.package_descriptor import *
 
-RUNTIME_REQUIREMENT_FILES = ['requirements.txt']
-DEVELOPMENT_REQUIREMENT_FILES = [
-    'requirements.test.txt',
-    'requirements-test.txt',
-    'requirements_test.txt',
-    'test-requirements.txt',
-    'test.requirements.txt',
-    'test_requirements.txt',
-    'requirements.testing.txt',
-    'requirements-testing.txt',
-    'requirements_testing.txt',
-    'testing-requirements.txt',
-    'testing.requirements.txt',
-    'testing_requirements.txt',
-    'dev-requirements.txt',
-    'dev.requirements.txt',
-    'dev_requirements.txt',
-    'requirements-dev.txt',
-    'requirements.dev.txt',
-    'requirements_dev.txt',
-    'development-requirements.txt',
-    'development.requirements.txt',
-    'development_requirements.txt',
-    'requirements-development.txt',
-    'requirements.development.txt',
-    'requirements_development.txt'
-]
 
+PIPFILE_PATTERN = 'Pipfile'
+RUNTIME_REQUIREMENTS_PATTERN = 'requirements.txt'
+DEVELOPMENT_REQUIREMENTS_PATTERNS = [
+    'requirements?test.txt',
+    'requirements?testing.txt',
+    'requirements?dev.txt',
+    'requirements?development.txt',
+    'requirements?docs.txt',
+    'test?requirements.txt',
+    'testing?requirements.txt',
+    'dev?requirements.txt',
+    'development?requirements.txt',
+    'docs?requirements.txt'
+]
 
 PATTERNS = [
-    PackageDescriptorPattern.multiple_files(
-        'requirements',
-        RUNTIME_REQUIREMENT_FILES + DEVELOPMENT_REQUIREMENT_FILES
-    ),
-    PackageDescriptorPattern.one_file('pipfile', 'Pipfile')
+    PIPFILE_PATTERN,
+    RUNTIME_REQUIREMENTS_PATTERN,
+    *DEVELOPMENT_REQUIREMENTS_PATTERNS
 ]
-
 
 REQUIREMENT_REGEX = re.compile(r'^\s*(\w[\w\-\.]+)\s*')
 
@@ -85,39 +68,41 @@ class PythonRepositoryMatcher(RepositoryMatcher):
     def __init__(self):
         super().__init__(PATTERNS)
 
-    def _fetch_package_descriptor(self, repository, pattern_match):
-        id = pattern_match.pattern_id
-        if id == 'requirements':
-            runtime, development = self.__from_requirements(repository, pattern_match)
-        elif id == 'pipfile':
-            runtime, development = self.__from_pipfile(repository, pattern_match)
-        else:
-            assert False, 'Unrecognized pattern ID: {0}'.format(id)
+    def _fetch_package_descriptor(self, repository, match):
+        runtime = []
+        development = []
+
+        for node in match.nodes:
+            data = repository.read_text_file(node.path)
+            self.__collect_dependencies(node, data, runtime, development)
 
         return PackageDescriptor(
             platform='Python',
             repository=repository,
-            paths=pattern_match.paths,
+            paths=match.paths,
             runtime_dependencies=runtime,
             development_dependencies=development
         )
 
-    def __from_requirements(self, repository, pattern_match):
-        runtime = []
-        development = []
-        for path in pattern_match.paths:
-            name = self.__filename(path)
-            data = repository.read_text_file(path)
-            if name in RUNTIME_REQUIREMENT_FILES:
-                runtime.extend(parse_requirements_file(data, DependencyKind.RUNTIME))
-            elif name in DEVELOPMENT_REQUIREMENT_FILES:
-                development.extend(parse_requirements_file(data, DependencyKind.DEVELOPMENT))
-        return (runtime, development)
+    def __collect_dependencies(self, node, data, runtime, development):
+        if self.__pipfile(node):
+            r, d = parse_pipfile(data)
+            runtime.extend(r)
+            development.extend(d)
+        elif self.__runtime_requirements_file(node):
+            runtime.extend(
+                parse_requirements_file(data, DependencyKind.RUNTIME))
+        elif self.__development_requirements_file(node):
+            development.extend(
+                parse_requirements_file(data, DependencyKind.DEVELOPMENT))
+        else:
+            assert False, 'Unrecognized node: {0}'.format(node)
 
-    def __from_pipfile(self, repository, pattern_match):
-        assert len(pattern_match.paths) == 1
-        data = repository.read_text_file(pattern_match.paths[0])
-        return parse_pipfile(data)
+    def __pipfile(self, node):
+        return node.match(PIPFILE_PATTERN)
 
-    def __filename(self, path):
-        return PurePosixPath(path).name.lower()
+    def __development_requirements_file(self, node):
+        return node.match_any(DEVELOPMENT_REQUIREMENTS_PATTERNS)
+
+    def __runtime_requirements_file(self, node):
+        return node.match(RUNTIME_REQUIREMENTS_PATTERN)

@@ -49,7 +49,7 @@ def test_add_one_level_path_that_already_exists_in_tree():
 def test_add_path_to_node_that_is_not_tree():
     root = GitNode('foobar', None, False)
 
-    with pytest.raises(Exception) as e:
+    with pytest.raises(ValueError) as e:
         root.add_blob('foo/bar/ber')
 
     assert str(e.value) == 'Path "foobar" is not a tree.'

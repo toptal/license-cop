@@ -7,17 +7,16 @@ from app.package_descriptor import *
 
 DEPS_BLOCK_REGEX = re.compile(r"defp?\s+deps(.+?)\bend\b", re.S)
 DEPENDENCY_REGEX = re.compile(r"{(.+?)}")
-DEV_ENVS = (':dev', ':test', ':docs')
+DEVELOPMENT_ENVIRONMENTS = (':dev', ':test', ':docs')
 
 
 class ElixirRepositoryMatcher(RepositoryMatcher):
 
     def __init__(self):
-        super().__init__([PackageDescriptorPattern.one_file('mix', 'mix.exs')])
+        super().__init__(['mix.exs'])
 
-    def _fetch_package_descriptor(self, repository, pattern_match):
-        assert len(pattern_match.paths) == 1
-        mixfile = pattern_match.paths[0]
+    def _fetch_package_descriptor(self, repository, match):
+        mixfile = match.paths[0]
 
         runtime_dependencies = []
         development_dependencies = []
@@ -27,7 +26,7 @@ class ElixirRepositoryMatcher(RepositoryMatcher):
             name, version, *options = [s.strip() for s in dep.split(',', 2)]
             package_name = name[1:]
 
-            if options and any(env in options[0] for env in DEV_ENVS):
+            if options and any(env in options[0] for env in DEVELOPMENT_ENVIRONMENTS):
                 development_dependencies.append(Dependency.development(package_name))
             else:
                 runtime_dependencies.append(Dependency.runtime(package_name))
@@ -35,7 +34,7 @@ class ElixirRepositoryMatcher(RepositoryMatcher):
         return PackageDescriptor(
             platform='Elixir',
             repository=repository,
-            paths=[mixfile],
+            paths=match.paths,
             runtime_dependencies=runtime_dependencies,
             development_dependencies=development_dependencies
         )

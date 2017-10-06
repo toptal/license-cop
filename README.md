@@ -268,53 +268,27 @@ Likewise, you should create a `FoobarRepositoryMatcher` class inside
 
 This class should extend [`RepositoryMatcher`](app/repository_matcher.py) and
 implement all of its abstract methods. It should be initialized with a list
-of file patterns to be match in the repository's file tree.
-
-These patterns are represented by instances of class
-[`PackageDescriptorPattern`](app/repository_matcher.py), which specifies:
-
-- The pattern id (ex: `requirements`). If a platform has
-  multiple package descriptor formats, this is useful to distinguish which one
-  was matched. For example, Python has both the requirements file format and
-  the new `Pipfile` format. However, if the platform has only one package
-  descriptor format (eg: Ruby's `Gemfile`), you can ignore this field.
-- The list of file names to match. For example, to support the Python
-  requirements file format, the following file names should be matched:
-    - `requirements.txt`
-    - `requirements.test.txt`
-    - `requirements-test.txt`
-    - `requirements_test.txt`
-    - `test-requirements.txt`
-    - `test.requirements.txt`
-    - `test_requirements.txt`
-    - `dev-requirements.txt`
-    - `dev.requirements.txt`
-    - `dev_requirements.txt`
-    - `requirements-dev.txt`
-    - `requirements.dev.txt`
-    - `requirements_dev.txt`
+of unix shell-style wildcard patterns to be match in the repository's file tree.
 
 Subclasses of `RepositoryMatcher` should pass to the super's `__init__`
-block a list of package descriptor patterns that will be matched against
-a repository. For example:
+block a list of patterns that will be matched against a repository. For example:
 
 ```python
 class FoobarRepositoryMatcher(RepositoryMatcher):
     def __init__(self):
-        super().__init__([
-            PackageDescriptorPattern.multiple_files('foofile', ['Foofile', 'foofile.txt']),
-            PackageDescriptorPattern.one_file('json', 'foo.json'),
-            PackageDescriptorPattern.multiple_files('spec', ['foo.spec'])
-        ])
+        super().__init__(['Foofile', '*.foospec'])
 ```
 
 `FoobarRepositoryMatcher` should also override the `_fetch_package_descriptor`
-method. This method receives the repository and a pattern match object (
-[`PackageDescriptorPatternMatch`](app/repository_matcher.py)).
+method. This method receives the repository and a match object (
+[`PackageDescriptorMatch`](app/repository_matcher.py)).
 
 ```python
-def _fetch_package_descriptor(self, repository, pattern_match)
+def _fetch_package_descriptor(self, repository, match)
 ```
+
+The match object will have a list of [`GitNode`](app/github/git_node.py)
+instances that match one of the specified patterns.
 
 You can then use the repository to fetch the contents of
 the files you need. This method should return an instance of

@@ -69,7 +69,7 @@ def test_read_empty_file(repository):
 
 @VCR.use_cassette('github_repository_read_directory.yaml')
 def test_read_directory(repository):
-    with pytest.raises(Exception) as e:
+    with pytest.raises(ValueError) as e:
         repository.read_text_file('fixtures')
     assert str(e.value) == 'Path "fixtures" is not a file.'
 
@@ -102,14 +102,12 @@ def has_blob(tree, path):
     node = tree.navigate(path)
     if node:
         return not node.is_tree
-    return None
 
 
 def has_tree(tree, path):
     node = tree.navigate(path)
     if node:
         return node.is_tree
-    return None
 
 
 def test_fetch_master_tree():

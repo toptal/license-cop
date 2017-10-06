@@ -33,12 +33,11 @@ def test_mismatch_repository_without_gemfile(matcher, python_repository):
     assert matcher.match(python_repository) is None
 
 
-@VCR.use_cassette('ruby_repository_matcher_single_package_descriptor.yaml')
-def test_single_package_descriptor(matcher, ruby_repository):
+@VCR.use_cassette('ruby_repository_matcher_gemfile_package_descriptor.yaml')
+def test_gemfile_package_descriptor(matcher, ruby_repository):
     match = matcher.match(ruby_repository)
 
     descriptors = match.package_descriptors()
-    assert len(descriptors) == 1
     descriptor = descriptors[0]
 
     assert descriptor.platform == 'Ruby'

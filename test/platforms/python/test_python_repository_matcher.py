@@ -150,12 +150,11 @@ def test_mismatch_repository_without_requirements_nor_pipfile(matcher, nodejs_re
     assert matcher.match(nodejs_repository) is None
 
 
-@VCR.use_cassette('python_repository_matcher_extract_single_package_descriptor_from_requirements_file.yaml')
-def test_extract_single_package_descriptor_from_requirements_file(matcher, requirements_repository):
+@VCR.use_cassette('python_repository_matcher_extract_package_descriptor_from_requirements_files.yaml')
+def test_extract_package_descriptor_from_requirements_files(matcher, requirements_repository):
     match = matcher.match(requirements_repository)
 
     descriptors = match.package_descriptors()
-    assert len(descriptors) == 1
     descriptor = descriptors[0]
 
     assert descriptor.platform == 'Python'
@@ -173,12 +172,11 @@ def test_extract_single_package_descriptor_from_requirements_file(matcher, requi
     ]
 
 
-@VCR.use_cassette('python_repository_matcher_extract_single_package_descriptor_from_pipfile.yaml')
-def test_extract_single_package_descriptor_from_pipfile(matcher, pipfile_repository):
+@VCR.use_cassette('python_repository_matcher_extract_package_descriptor_from_pipfile.yaml')
+def test_extract_package_descriptor_from_pipfile(matcher, pipfile_repository):
     match = matcher.match(pipfile_repository)
 
     descriptors = match.package_descriptors()
-    assert len(descriptors) == 1
     descriptor = descriptors[0]
 
     assert descriptor.platform == 'Python'
