@@ -26,6 +26,12 @@ class RepositoryMatch(DataObject):
             self.package_descriptor_matches
         ))
 
+    def package_descriptor_at(self, path):
+        for d in self.package_descriptors():
+            if path in d.paths:
+                return d
+        return None
+
 
 class RepositoryMatcher(ABC):
     def __init__(self, patterns):
