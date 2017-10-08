@@ -280,3 +280,36 @@ def test_parse_xml_with_scm_block_without_url():
 
     pom = MavenPom.parse(xml)
     assert pom.urls == set()
+
+
+def test_parse_xml_with_whitespace_at_beginning():
+    xml = '''
+        <?xml version='1.0' encoding='UTF-8'?>
+        <project
+            xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://maven.apache.org/POM/4.0.0">
+            <groupId>org.spire-math</groupId>
+            <artifactId>kind-projector_2.10</artifactId>
+        </project>
+    '''
+
+    pom = MavenPom.parse(xml)
+    assert pom.group_id == 'org.spire-math'
+    assert pom.artifact_id == 'kind-projector_2.10'
+
+
+def test_parse_xml_with_invalid_bytes_at_beginning():
+    xml = '''ï»¿<?xml version='1.0' encoding='UTF-8'?>
+        <project
+            xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://maven.apache.org/POM/4.0.0">
+            <groupId>org.spire-math</groupId>
+            <artifactId>kind-projector_2.10</artifactId>
+        </project>
+    '''
+
+    pom = MavenPom.parse(xml)
+    assert pom.group_id == 'org.spire-math'
+    assert pom.artifact_id == 'kind-projector_2.10'

@@ -23,3 +23,13 @@ def test_artifact_id(name):
 
 def test_group_path(name):
     assert name.group_path == 'org/spire-math'
+
+
+def test_artifact_id_has_scala_version():
+    name = JvmPackageName('org.spire-math', 'kind-projector_2.10')
+    assert name.artifact_id_with_default_scala_version('2.11') == 'kind-projector_2.10'
+
+
+def test_artifact_id_does_not_have_scala_version():
+    name = JvmPackageName('org.spire-math', 'kind-projector')
+    assert name.artifact_id_with_default_scala_version('2.11') == 'kind-projector_2.11'

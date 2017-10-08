@@ -3,6 +3,7 @@ import re
 from app.dependency import *
 from app.repository_matcher import *
 from app.package_descriptor import *
+from app.platforms.jvm.package_name import *
 
 
 DEPENDENCY_REGEX = re.compile(
@@ -12,24 +13,11 @@ DEPENDENCY_REGEX = re.compile(
     r'(\s*%\s*(?P<test>"?([Ttest])"?))?'  # optional test tag
 )
 
-SCALA_VERSION_REGEX = re.compile(
-    r'(_[A-Za-z0-9\.\-]+\.[A-Za-z0-9\.\-]+)$'
-)
-
-
-def __build_name(group_id, artifact_id):
-    return '{0}:{1}'.format(group_id, artifact_id)
-
-
-def __remove_scala_version(name):
-    return SCALA_VERSION_REGEX.sub('', name)
-
 
 def parse_scala_dependency(line):
     m = DEPENDENCY_REGEX.search(line)
     if m:
-        artifact = __remove_scala_version(m.group('artifact'))
-        name = __build_name(m.group('group'), artifact)
+        name = JvmPackageName(m.group('group'), m.group('artifact'))
         kind = DependencyKind.DEVELOPMENT if m.group('test') else DependencyKind.RUNTIME
         return Dependency(name, kind)
 

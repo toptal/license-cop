@@ -23,6 +23,7 @@ class MavenPom:
 
     @classmethod
     def parse(cls, xml):
+        xml = cls.__trim_invalid_characters(xml)
         data = xmltodict.parse(xml)
         project = data['project']
         dependencies = cls.__extract_dependencies(project)
@@ -52,14 +53,14 @@ class MavenPom:
             cls.__dependency_kind_from(data.get('scope'))
         )
 
-    @classmethod
-    def __dependency_kind_from(cls, data):
+    @staticmethod
+    def __dependency_kind_from(data):
         if data and data.strip() == 'test':
             return DependencyKind.DEVELOPMENT
         return DependencyKind.RUNTIME
 
-    @classmethod
-    def __extract_licenses(cls, data):
+    @staticmethod
+    def __extract_licenses(data):
         if not data.get('licenses'):
             return []
         block = data['licenses']['license']
@@ -68,11 +69,19 @@ class MavenPom:
         else:
             return [block['name']]
 
-
-    @classmethod
-    def __extract_urls(cls, data):
+    @staticmethod
+    def __extract_urls(data):
         urls = list()
         urls.append(data.get('url'))
         if data.get('scm') and 'url' in data['scm']:
             urls.append(data['scm'].get('url'))
         return set(filter(None, urls))
+
+    @staticmethod
+    def __trim_invalid_characters(xml):
+        trim_index = 0
+        for i, char in enumerate(xml):
+            if char == '<':
+                trim_index = i
+                break
+        return xml[trim_index:]
