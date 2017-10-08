@@ -1,0 +1,48 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://repo.maven.apache.org/maven2/org/spire-math/kind-projector_2.10/0.8.2/kind-projector_2.10-0.8.2.pom
+  response:
+    body: {string: "<?xml version='1.0' encoding='UTF-8'?>\n<project xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0
+        http://maven.apache.org/xsd/maven-4.0.0.xsd\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns=\"http://maven.apache.org/POM/4.0.0\">\n    <modelVersion>4.0.0</modelVersion>\n
+        \   <groupId>org.spire-math</groupId>\n    <artifactId>kind-projector_2.10</artifactId>\n
+        \   <packaging>jar</packaging>\n    <description>kind-projector</description>\n
+        \   <url>http://github.com/non/kind-projector</url>\n    <version>0.8.2</version>\n
+        \   <licenses>\n        <license>\n            <name>MIT</name>\n            <url>http://opensource.org/licenses/MIT</url>\n
+        \           <distribution>repo</distribution>\n        </license>\n    </licenses>\n
+        \   <name>kind-projector</name>\n    <organization>\n        <name>org.spire-math</name>\n
+        \       <url>http://github.com/non/kind-projector</url>\n    </organization>\n
+        \   <scm>\n        <url>git@github.com:non/kind-projector.git</url>\n        <connection>scm:git:git@github.com:non/kind-projector.git</connection>\n
+        \   </scm>\n    <developers>\n        <developer>\n            <id>d_m</id>\n
+        \           <name>Erik Osheim</name>\n            <url>http://github.com/non/</url>\n
+        \       </developer>\n    </developers>\n    <dependencies>\n        <dependency>\n
+        \           <groupId>org.scala-lang</groupId>\n            <artifactId>scala-compiler</artifactId>\n
+        \           <version>2.10.6</version>\n        </dependency>\n        <dependency>\n
+        \           <groupId>org.scala-lang</groupId>\n            <artifactId>scala-library</artifactId>\n
+        \           <version>2.10.6</version>\n        </dependency>\n    </dependencies>\n</project>"}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['155']
+      Connection: [keep-alive]
+      Content-Length: ['1639']
+      Content-Type: [text/xml]
+      Date: ['Sun, 08 Oct 2017 22:10:36 GMT']
+      ETag: ['"aa17de8005d37535d5751cc8154691a2"']
+      Fastly-Debug-Digest: [b4ddb329748f42bfc079c3738614d7d77e30ccc09321818173a585a883a14dd2]
+      Last-Modified: ['Wed, 07 Sep 2016  4:08:53 GMT']
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['HIT, HIT']
+      X-Cache-Hits: ['1, 1']
+      X-Checksum-MD5: [aa17de8005d37535d5751cc8154691a2]
+      X-Checksum-SHA1: [4c9dda0adf5b12a7297e4678e2016a344e948f19]
+      X-Served-By: ['cache-iad2127-IAD, cache-atl6229-ATL']
+      X-Timer: ['S1507500637.867245,VS0,VE1']
+    status: {code: 200, message: OK}
+version: 1

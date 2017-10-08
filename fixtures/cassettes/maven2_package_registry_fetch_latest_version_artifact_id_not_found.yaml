@@ -1,0 +1,61 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://repo.maven.apache.org/maven2/org/scala-lang/foobar/maven-metadata.xml
+  response:
+    body: {string: '<html>
+
+        <head><title>404 Not Found</title></head>
+
+        <body bgcolor="white">
+
+        <center><h1>404 Not Found</h1></center>
+
+        <hr><center>nginx</center>
+
+        </body>
+
+        </html>
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+
+
+
+'}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['554']
+      Content-Type: [text/html]
+      Date: ['Sun, 08 Oct 2017 22:19:05 GMT']
+      ETag: ['"1fb066da6a67c7c02962f59b4b8cd1ee"']
+      Fastly-Debug-Digest: [a6af5d52d4addbbcc41f75f10b8f1fe794ceac7e73ac990fed6367a00fd54314]
+      Last-Modified: ['Wed, 10 Aug 2016 15:08:35 GMT']
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['MISS, MISS']
+      X-Cache-Hits: ['0, 0']
+      X-Served-By: ['cache-iad2150-IAD, cache-atl6230-ATL']
+      X-Timer: ['S1507501145.309834,VS0,VE39']
+      x-amz-error-code: [NoSuchKey]
+      x-amz-error-detail-Key: [maven2/org/scala-lang/foobar/maven-metadata.xml]
+      x-amz-error-message: [The specified key does not exist.]
+    status: {code: 404, message: Not Found}
+version: 1
