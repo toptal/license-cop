@@ -59,15 +59,22 @@ class MavenPom:
             return DependencyKind.DEVELOPMENT
         return DependencyKind.RUNTIME
 
-    @staticmethod
-    def __extract_licenses(data):
+    @classmethod
+    def __extract_licenses(cls, data):
         if not data.get('licenses'):
             return []
         block = data['licenses']['license']
         if isinstance(block, list):
-            return [i['name'] for i in block]
+            return list(filter(None, [cls.__extract_license(i) for i in block]))
         else:
-            return [block['name']]
+            return list(filter(None, [cls.__extract_license(block)]))
+
+    @staticmethod
+    def __extract_license(data):
+        if data:
+            if isinstance(data, str):
+                return data
+            return data.get('name')
 
     @staticmethod
     def __extract_urls(data):

@@ -26,6 +26,20 @@ def test_fetch_version(registry):
     assert version.development_dependencies == []
 
 
+@VCR.use_cassette('maven2_package_registry_fetch_version_appending_scala_version.yaml')
+def test_fetch_version_appending_scala_version(registry):
+    name = JvmPackageName('org.spire-math', 'kind-projector')
+    version = registry.fetch_version(name, '0.8.2')
+    assert version.name == name
+    assert version.number == '0.8.2'
+    assert version.licenses == ['MIT']
+    assert set(version.runtime_dependencies) == set([
+        Dependency.runtime(JvmPackageName('org.scala-lang', 'scala-compiler')),
+        Dependency.runtime(JvmPackageName('org.scala-lang', 'scala-library'))
+    ])
+    assert version.development_dependencies == []
+
+
 @VCR.use_cassette('maven2_package_registry_fetch_latest_version.yaml')
 def test_fetch_latest_version(registry):
     name = JvmPackageName('org.spire-math', 'kind-projector_2.10')
@@ -44,6 +58,21 @@ def test_fetch_latest_version(registry):
     ])
 
 
+@VCR.use_cassette('maven2_package_registry_fetch_latest_version_appending_scala_version.yaml')
+def test_fetch_latest_version_appending_scala_version(registry):
+    name = JvmPackageName('org.spire-math', 'kind-projector')
+    version = registry.fetch_version(name, '0.8.2')
+    assert version.name == name
+    assert version.number == '0.8.2'
+    assert version.licenses == ['MIT']
+    assert set(version.runtime_dependencies) == set([
+        Dependency.runtime(JvmPackageName('org.scala-lang', 'scala-compiler')),
+        Dependency.runtime(JvmPackageName('org.scala-lang', 'scala-library'))
+    ])
+    assert version.development_dependencies == []
+
+
+@pytest.mark.skip
 @VCR.use_cassette('maven2_package_registry_fetch_version_group_id_not_found.yaml')
 def test_fetch_version_group_id_not_found(registry):
     name = JvmPackageName('com.example.foobar', 'foobar')
@@ -56,6 +85,7 @@ def test_fetch_version_group_id_not_found(registry):
     )
 
 
+@pytest.mark.skip
 @VCR.use_cassette('maven2_package_registry_fetch_version_artifact_id_not_found.yaml')
 def test_fetch_version_artifact_id_not_found(registry):
     name = JvmPackageName('org.scala-lang', 'foobar')
@@ -68,6 +98,7 @@ def test_fetch_version_artifact_id_not_found(registry):
     )
 
 
+@pytest.mark.skip
 @VCR.use_cassette('maven2_package_registry_fetch_version_number_not_found.yaml')
 def test_fetch_version_number_not_found(registry):
     name = JvmPackageName('org.scala-lang', 'scala-compiler')
@@ -80,6 +111,7 @@ def test_fetch_version_number_not_found(registry):
     )
 
 
+@pytest.mark.skip
 @VCR.use_cassette('maven2_package_registry_fetch_latest_version_group_id_not_found.yaml')
 def test_fetch_latest_version_group_id_not_found(registry):
     name = JvmPackageName('com.example.foobar', 'foobar')
@@ -92,6 +124,7 @@ def test_fetch_latest_version_group_id_not_found(registry):
     )
 
 
+@pytest.mark.skip
 @VCR.use_cassette('maven2_package_registry_fetch_latest_version_artifact_id_not_found.yaml')
 def test_fetch_latest_version_artifact_id_not_found(registry):
     name = JvmPackageName('org.scala-lang', 'foobar')

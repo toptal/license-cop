@@ -151,6 +151,40 @@ def test_parse_xml_with_empty_licenses_block():
     assert pom.licenses == []
 
 
+def test_parse_xml_with_scalar_license_block():
+    xml = dedent('''\
+        <?xml version='1.0' encoding='UTF-8'?>
+        <project
+            xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://maven.apache.org/POM/4.0.0">
+            <licenses>
+                <license>MIT</license>
+            </licenses>
+        </project>
+    ''')
+
+    pom = MavenPom.parse(xml)
+    assert pom.licenses == ['MIT']
+
+
+def test_parse_xml_with_empty_license_block():
+    xml = dedent('''\
+        <?xml version='1.0' encoding='UTF-8'?>
+        <project
+            xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://maven.apache.org/POM/4.0.0">
+            <licenses>
+                <license></license>
+            </licenses>
+        </project>
+    ''')
+
+    pom = MavenPom.parse(xml)
+    assert pom.licenses == []
+
+
 def test_parse_xml_with_only_one_dependency():
     xml = dedent('''\
         <?xml version='1.0' encoding='UTF-8'?>
