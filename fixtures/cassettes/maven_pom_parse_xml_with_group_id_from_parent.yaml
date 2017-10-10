@@ -1,0 +1,986 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://repo.maven.apache.org/maven2/org/apache/cxf/cxf-parent/2.2.5/cxf-parent-2.2.5.pom
+  response:
+    body: {string: "<!--\n  Licensed to the Apache Software Foundation (ASF) under
+        one\n  or more contributor license agreements. See the NOTICE file\n  distributed
+        with this work for additional information\n  regarding copyright ownership.
+        The ASF licenses this file\n  to you under the Apache License, Version 2.0
+        (the\n  \"License\"); you may not use this file except in compliance\n  with
+        the License. You may obtain a copy of the License at\n \n  http://www.apache.org/licenses/LICENSE-2.0\n
+        \n  Unless required by applicable law or agreed to in writing,\n  software
+        distributed under the License is distributed on an\n  \"AS IS\" BASIS, WITHOUT
+        WARRANTIES OR CONDITIONS OF ANY\n  KIND, either express or implied. See the
+        License for the\n  specific language governing permissions and limitations\n
+        \ under the License.\n-->\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0
+        http://maven.apache.org/maven-v4_0_0.xsd\">\n    <parent>\n        <groupId>org.apache.cxf</groupId>\n
+        \       <artifactId>cxf</artifactId>\n        <version>2.2.5</version>\n    </parent>\n\n
+        \   <modelVersion>4.0.0</modelVersion>\n    <groupId>org.apache.cxf</groupId>\n
+        \   <artifactId>cxf-parent</artifactId>\n    <version>2.2.5</version>\n    <name>Apache
+        CXF Parent</name>\n    <url>http://cxf.apache.org</url>\n\n    <packaging>pom</packaging>\n\n
+        \   <properties>\n        <surefire.fork.mode>once</surefire.fork.mode>\n
+        \       <surefire.format>brief</surefire.format>\n        <surefire.usefile>false</surefire.usefile>\n
+        \       <surefire.fork.vmargs>-ea</surefire.fork.vmargs>\n        <surefire.extra.sysprop.name1>None</surefire.extra.sysprop.name1>\n
+        \       <surefire.extra.sysprop.value1>None</surefire.extra.sysprop.value1>\n
+        \       <compile.flags>-Xlint:unchecked,deprecation,fallthrough,finally</compile.flags>\n
+        \       <eclipse.outputDirectory>${basedir}/target/classes</eclipse.outputDirectory>\n
+        \       <saaj.impl.groupId>com.sun.xml.messaging.saaj</saaj.impl.groupId>\n
+        \       <saaj.impl.artifactId>saaj-impl</saaj.impl.artifactId>\n        <saaj.impl.version>1.3.2</saaj.impl.version>\n\n
+        \       <!-- please maintain alphabetical order here -->\n        <abdera.version>0.4.0-incubating</abdera.version>\n
+        \       <activemq.version>5.3.0</activemq.version>\n        <derby.version>10.2.2.0</derby.version>\n
+        \       <jaxb.version>2.1</jaxb.version>\n        <jaxb.impl.version>2.1.12</jaxb.impl.version>\n
+        \       <jaxb.xjc.version>2.1.12</jaxb.xjc.version>\n        <jdom.version>1.0</jdom.version>\n
+        \       <jetty.version>6.1.21</jetty.version>\n        <msv.version>2009.1</msv.version>\n
+        \       <rhino.version>1.7R1</rhino.version>\n        <saaj.version>1.3</saaj.version>\n
+        \       <spring.version>2.5.5</spring.version>\n        <spring.mock>spring-test</spring.mock>\n
+        \       <stax.impl.groupId>org.codehaus.woodstox</stax.impl.groupId>\n        <stax.impl.artifactId>wstx-asl</stax.impl.artifactId>\n
+        \       <stax.impl.version>3.2.9</stax.impl.version>\n        <wsdl4j.version>1.6.2</wsdl4j.version>\n
+        \       <xmlbeans.version>2.4.0</xmlbeans.version>\n        <xmlschema.version>1.4.5</xmlschema.version>\n
+        \       <checkstyle.extension />\n\n        <spring.validation.mode>VALIDATION_AUTO</spring.validation.mode>\n\n
+        \       <downloadSources>true</downloadSources>\n\n        <extra.surefire.syspropery.name>None</extra.surefire.syspropery.name>\n
+        \       <extra.surefire.syspropery.value>None</extra.surefire.syspropery.value>\n\n
+        \       <resources.base.path />\n\n    </properties>\n\n\n    <build>\n        <resources>\n
+        \           <resource>\n                <directory>src/main/java</directory>\n
+        \               <excludes>\n                    <exclude>**/*.java</exclude>\n
+        \               </excludes>\n            </resource>\n            <resource>\n
+        \               <directory>src/main/resources</directory>\n                <includes>\n
+        \                   <include>**/*</include>\n                </includes>\n
+        \           </resource>\n            <resource>\n                <directory>src/main/resources-filtered</directory>\n
+        \               <includes>\n                    <include>**</include>\n                </includes>\n
+        \               <filtering>true</filtering>\n            </resource>\n            <resource>\n
+        \               <directory>target/generated/src/main/resources</directory>\n
+        \               <includes>\n                    <include>**</include>\n                </includes>\n
+        \           </resource>\n        </resources>\n        <testResources>\n            <testResource>\n
+        \               <directory>src/test/java</directory>\n                <excludes>\n
+        \                   <exclude>**/*.java</exclude>\n                </excludes>\n
+        \           </testResource>\n            <testResource>\n                <directory>src/test/resources</directory>\n
+        \               <includes>\n                    <include>**</include>\n                </includes>\n
+        \           </testResource>\n            <testResource>\n                <directory>target/generated/src/test/resources</directory>\n
+        \               <includes>\n                    <include>**</include>\n                </includes>\n
+        \           </testResource>\n        </testResources>\n        <pluginManagement>\n
+        \           <plugins>\n                <plugin>\n                    <groupId>org.apache.maven.plugins</groupId>\n
+        \                   <artifactId>maven-eclipse-plugin</artifactId>\n                    <configuration>\n
+        \                       <outputDirectory>${eclipse.outputDirectory}</outputDirectory>\n
+        \                       <buildcommands>\n                            <java.lang.String>org.eclipse.jdt.core.javabuilder</java.lang.String>\n
+        \                           <java.lang.String>com.atlassw.tools.eclipse.checkstyle.CheckstyleBuilder</java.lang.String>\n
+        \                           <java.lang.String>net.sourceforge.pmd.eclipse.plugin.pmdBuilder</java.lang.String>\n
+        \                       </buildcommands>\n                        <projectnatures>\n
+        \                           <nature>org.eclipse.jdt.core.javanature</nature>\n
+        \                           <nature>com.atlassw.tools.eclipse.checkstyle.CheckstyleNature</nature>\n
+        \                           <nature>net.sourceforge.pmd.eclipse.plugin.pmdNature</nature>\n
+        \                       </projectnatures>\n                        <ajdtVersion>none</ajdtVersion>\n
+        \                       <additionalConfig>\n                            <file>\n
+        \                               <name>.checkstyle</name>\n                                <location>/cxf-eclipse-checkstyle${checkstyle.extension}</location>\n
+        \                           </file>\n                            <file>\n
+        \                               <name>.pmd</name>\n                                <location>/cxf-eclipse-pmd</location>\n
+        \                           </file>\n                            <file>\n
+        \                               <name>.ruleset</name>\n                                <location>/cxf-pmd-ruleset.xml</location>\n
+        \                           </file>\n                        </additionalConfig>\n
+        \                   </configuration>\n                </plugin>\n                <plugin>\n
+        \                   <groupId>org.apache.maven.plugins</groupId>\n                    <artifactId>maven-checkstyle-plugin</artifactId>\n
+        \                   <version>2.3</version>\n                    <dependencies>\n
+        \                       <dependency>\n                            <groupId>org.apache.cxf</groupId>\n
+        \                           <artifactId>cxf-buildtools</artifactId>\n                            <version>${project.version}</version>\n
+        \                       </dependency>\n                        <dependency>\n
+        \                           <groupId>org.codehaus.plexus</groupId>\n                            <artifactId>plexus-velocity</artifactId>\n
+        \                           <version>1.1.3</version>\n                            <exclusions>\n
+        \                               <exclusion>\n                                    <!--
+        Use the version specified by checkstyle:checkstyle instead -->\n                                    <artifactId>commons-collections</artifactId>\n
+        \                                   <groupId>commons-collections</groupId>\n
+        \                               </exclusion>\n                                <exclusion>\n
+        \                                   <artifactId>plexus-utils</artifactId>\n
+        \                                   <groupId>plexus</groupId>\n                                </exclusion>\n
+        \                           </exclusions>\n                        </dependency>\n
+        \                   </dependencies>\n                    <configuration>\n
+        \                       <encoding>UTF-8</encoding>\n                    </configuration>\n
+        \                   <executions>\n                        <execution>\n                            <id>validate</id>\n
+        \                           <phase>validate</phase>\n                            <configuration>\n
+        \                               <configLocation>${resources.base.path}cxf-checkstyle${checkstyle.extension}.xml</configLocation>\n
+        \                               <consoleOutput>true</consoleOutput>\n                                <failsOnError>true</failsOnError>\n
+        \                               <linkXRef>false</linkXRef>\n                                <suppressionsLocation>${resources.base.path}cxf-checkstyle-suppressions.xml</suppressionsLocation>\n
+        \                               <sourceDirectory>${basedir}/src</sourceDirectory>\n
+        \                               <excludes>**/archetype-resources/**/*.java</excludes>\n
+        \                           </configuration>\n                            <goals>\n
+        \                               <goal>checkstyle</goal>\n                            </goals>\n
+        \                       </execution>\n                    </executions>\n
+        \               </plugin>\n                <plugin>\n                    <groupId>org.apache.maven.plugins</groupId>\n
+        \                   <artifactId>maven-pmd-plugin</artifactId>\n                    <version>2.4</version>\n
+        \                   <dependencies>\n                        <dependency>\n
+        \                           <groupId>org.apache.cxf</groupId>\n                            <artifactId>cxf-buildtools</artifactId>\n
+        \                           <version>${project.version}</version>\n                        </dependency>\n
+        \                   </dependencies>\n                    <configuration>\n
+        \                       <rulesets>\n                            <ruleset>${resources.base.path}cxf-pmd-ruleset.xml</ruleset>\n
+        \                           <ruleset>${resources.base.path}cxf-pmd-custom.xml</ruleset>\n
+        \                       </rulesets>\n                        <sourceEncoding>UTF-8</sourceEncoding>\n
+        \                       <targetJdk>1.5</targetJdk>\n                        <linkXRef>false</linkXRef>\n
+        \                       <includeTests>true</includeTests>\n                        <verbose>true</verbose>\n
+        \                       <excludeRoots>\n                            <excludeRoot>${basedir}/src/main/generated</excludeRoot>\n
+        \                       </excludeRoots>\n                    </configuration>\n
+        \                   <executions>\n                        <execution>\n                            <id>validate</id>\n
+        \                           <phase>validate</phase>\n                            <goals>\n
+        \                               <goal>check</goal>\n                            </goals>\n
+        \                       </execution>\n                    </executions>\n
+        \               </plugin>\n\n                <plugin>\n                    <groupId>org.apache.maven.plugins</groupId>\n
+        \                   <artifactId>maven-surefire-plugin</artifactId>\n                    <configuration>\n
+        \                       <includes>\n                            <include>**/*Test.java</include>\n
+        \                           <include>**/*TestCase.java</include>\n                            <include>**/*TestCases.java</include>\n
+        \                       </includes>\n                        <!-- do not exclude
+        **/Abstract*Test.java **/Abstract*TestCase.java -->\n                        <excludes>\n
+        \                           <exclude>**/*$*</exclude>\n                        </excludes>\n
+        \                       <reportFormat>${surefire.format}</reportFormat>\n
+        \                       <useFile>${surefire.usefile}</useFile>\n                        <forkMode>${surefire.fork.mode}</forkMode>\n
+        \                       <childDelegation>false</childDelegation>\n                        <argLine>${surefire.fork.vmargs}</argLine>\n
+        \                       <systemProperties>\n                            <property>\n
+        \                               <name>${surefire.extra.sysprop.name1}</name>\n
+        \                               <name>${surefire.extra.sysprop.value1}</name>\n
+        \                           </property>\n                            <property>\n
+        \                               <name>cxf.validateServiceSchemas</name>\n
+        \                               <value>${cxf.validateServices}</value>\n                            </property>\n
+        \                           <property>\n                                <name>java.awt.headless</name>\n
+        \                               <value>${java.awt.headless}</value>\n                            </property>\n
+        \                           <property>\n                                <name>java.util.logging.config.file</name>\n
+        \                               <value>${basedir}/target/test-classes/logging.properties</value>\n
+        \                           </property>\n                            <property>\n
+        \                               <name>activemq.store.dir</name>\n                                <value>${basedir}/target/ActiveMQ</value>\n
+        \                           </property>\n                            <property>\n
+        \                               <name>derby.system.home</name>\n                                <value>${basedir}/target/derby</value>\n
+        \                           </property>\n                            <property>\n
+        \                               <name>spring.validation.mode</name>\n                                <value>${spring.validation.mode}</value>\n
+        \                           </property>\n                            <property>\n
+        \                               <name>surefire.fork.vmargs</name>\n                                <value>${surefire.fork.vmargs}</value>\n
+        \                           </property>\n                            <property>\n
+        \                               <name>${extra.surefire.syspropery.name}</name>\n
+        \                               <value>${extra.surefire.syspropery.value}</value>\n
+        \                           </property>\n    \n                            <property>\n
+        \                               <!-- If we close the port after a client in
+        the same JVM has opened a keep-alive\n                                connection,
+        on some Linux's, the socket remains consumed until\n                                some
+        timeout occurs.   That may cause some tests to timeout/hang. -->\n                                <name>org.apache.cxf.transports.http_jetty.DontClosePort</name>\n
+        \                               <value>false</value>\n                            </property>\n
+        \                       </systemProperties>\n                    </configuration>\n
+        \               </plugin>\n            </plugins>\n        </pluginManagement>\n
+        \       <plugins>\n            <plugin>\n                <groupId>org.apache.cxf</groupId>\n
+        \               <artifactId>cxf-xml2fastinfoset-plugin</artifactId>\n                <version>${project.version}</version>\n
+        \               <configuration>\n                    <includes>\n                        <include>META-INF/cxf/cxf*.xml</include>\n
+        \                   </includes>\n                    <outputDirectory>target/generated/src/main/resources</outputDirectory>\n
+        \               </configuration>\n                <executions>\n                    <execution>\n
+        \                       <id>xml2fastinfoset</id>\n                        <phase>generate-sources</phase>\n
+        \                       <goals>\n                            <goal>xml2fastinfoset</goal>\n
+        \                       </goals>\n                    </execution>\n                </executions>\n
+        \           </plugin>\n            <plugin>\n                <artifactId>maven-remote-resources-plugin</artifactId>\n
+        \               <version>1.0</version>\n                <dependencies>\n                    <dependency>\n
+        \                       <groupId>org.apache.cxf</groupId>\n                        <artifactId>cxf-buildtools</artifactId>\n
+        \                       <version>${project.version}</version>\n                    </dependency>\n
+        \               </dependencies>\n                <executions>\n                    <execution>\n
+        \                       <goals>\n                            <goal>process</goal>\n
+        \                       </goals>\n                        <configuration>\n
+        \                           <resourceBundles>\n                                <resourceBundle>org.apache:apache-jar-resource-bundle:1.4</resourceBundle>\n
+        \                           </resourceBundles>\n                            <supplementalModels>\n
+        \                               <supplementalModel>notice-supplements.xml</supplementalModel>\n
+        \                           </supplementalModels>\n                            <properties>\n
+        \                               <projectName>Apache CXF</projectName>\n                            </properties>\n
+        \                       </configuration>\n                    </execution>\n
+        \               </executions>\n            </plugin>\n        </plugins>\n\n
+        \       <defaultGoal>install</defaultGoal>\n    </build>\n\n    <dependencyManagement>\n
+        \       <dependencies>\n            <dependency>\n                <groupId>cglib</groupId>\n
+        \               <artifactId>cglib-nodep</artifactId>\n                <version>2.1_3</version>\n
+        \           </dependency>\n            <dependency>\n                <groupId>com.sun.xml.fastinfoset</groupId>\n
+        \               <artifactId>FastInfoset</artifactId>\n                <version>1.2.7</version>\n
+        \           </dependency>\n\n\n            <dependency>\n                <groupId>junit</groupId>\n
+        \               <artifactId>junit</artifactId>\n                <version>4.4</version>\n
+        \               <scope>test</scope>\n            </dependency>\n\n            <dependency>\n
+        \               <groupId>org.apache.maven</groupId>\n                <artifactId>maven-plugin-api</artifactId>\n
+        \               <version>2.0.4</version>\n                <scope>provided</scope>\n
+        \               <exclusions>\n                    <exclusion>\n                        <groupId>junit</groupId>\n
+        \                       <artifactId>junit</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n\n            <dependency>\n
+        \               <groupId>org.apache.maven</groupId>\n                <artifactId>maven-project</artifactId>\n
+        \               <version>2.0.4</version>\n                <scope>provided</scope>\n
+        \               <exclusions>\n                    <exclusion>\n                        <groupId>junit</groupId>\n
+        \                       <artifactId>junit</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.apache.maven</groupId>\n                <artifactId>maven-artifact</artifactId>\n
+        \               <scope>provided</scope>\n                <version>2.0.4</version>\n
+        \           </dependency>\n            <dependency>\n                <groupId>org.apache.maven</groupId>\n
+        \               <artifactId>maven-core</artifactId>\n                <scope>provided</scope>\n
+        \               <version>2.0.4</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>httpunit</groupId>\n                <artifactId>httpunit</artifactId>\n
+        \               <version>1.6.2</version>\n                <exclusions>\n                    <exclusion>\n
+        \                       <groupId>javax.servlet</groupId>\n                        <artifactId>servlet-api</artifactId>\n
+        \                   </exclusion>\n                    <exclusion>\n                        <groupId>xerces</groupId>\n
+        \                       <artifactId>xercesImpl</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>xerces</groupId>\n
+        \                       <artifactId>xmlParserAPIs</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>jtidy</groupId>\n
+        \                       <artifactId>jtidy</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.codehaus.jra</groupId>\n                <artifactId>jra</artifactId>\n
+        \               <version>1.0-alpha-4</version>\n            </dependency>\n
+        \           <dependency>\n                <groupId>jtidy</groupId>\n                <artifactId>jtidy</artifactId>\n
+        \               <version>4aug2000r7-dev</version>\n            </dependency>\n
+        \           <dependency>\n                <groupId>ant</groupId>\n                <artifactId>ant</artifactId>\n
+        \               <version>1.6.5</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>ant</groupId>\n                <artifactId>ant-nodeps</artifactId>\n
+        \               <version>1.6.5</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>com.sun.xml.parsers</groupId>\n                <artifactId>jaxp-ri</artifactId>\n
+        \               <version>1.4.2</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.apache.servicemix.specs</groupId>\n                <artifactId>org.apache.servicemix.specs.jbi-api-1.0</artifactId>\n
+        \               <version>1.3.0</version>\n                <scope>provided</scope>\n
+        \           </dependency>\n\n            <dependency>\n                <groupId>org.apache.neethi</groupId>\n
+        \               <artifactId>neethi</artifactId>\n                <version>2.0.4</version>\n
+        \               <exclusions>\n                    <exclusion>\n                        <groupId>log4j</groupId>\n
+        \                       <artifactId>log4j</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>javax.servlet</groupId>\n
+        \                       <artifactId>servlet-api</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>org.apache.ws.commons.axiom</groupId>\n
+        \                       <artifactId>axiom-impl</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>org.apache.ws.commons.axiom</groupId>\n
+        \                       <artifactId>axiom-parent</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>org.apache.ws.commons.axiom</groupId>\n
+        \                       <artifactId>axiom-api</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>woodstox</groupId>\n
+        \                       <artifactId>wstx-asl</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>org.codehaus.woodstox</groupId>\n
+        \                       <artifactId>wstx-asl</artifactId>\n                    </exclusion>\n
+        \n\n                </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.apache.geronimo.specs</groupId>\n                <artifactId>geronimo-stax-api_1.0_spec</artifactId>\n
+        \               <version>1.0.1</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.codehaus.jettison</groupId>\n                <artifactId>jettison</artifactId>\n
+        \               <version>1.1</version>\n                <exclusions>\n                    <exclusion>\n
+        \                       <groupId>stax</groupId>\n                        <artifactId>stax-api</artifactId>\n
+        \                   </exclusion>\n                </exclusions>\n            </dependency>\n
+        \           <dependency>\n                <groupId>${stax.impl.groupId}</groupId>\n
+        \               <artifactId>${stax.impl.artifactId}</artifactId>\n                <version>${stax.impl.version}</version>\n
+        \               <!-- these are motivated by Woodstox, but they can't hurt
+        with others. -->\n                <exclusions>\n                    <exclusion>\n
+        \                       <groupId>stax</groupId>\n                        <artifactId>stax-api</artifactId>\n
+        \                   </exclusion>\n                    <!-- this one comes
+        from sjsxp -->\n                    <exclusion>\n                        <groupId>javax.xml.stream</groupId>\n
+        \                       <artifactId>stax-api</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n\n            <dependency>\n
+        \               <groupId>org.slf4j</groupId>\n                <artifactId>slf4j-jdk14</artifactId>\n
+        \               <version>1.5.8</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.slf4j</groupId>\n                <artifactId>slf4j-api</artifactId>\n
+        \               <version>1.5.8</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.mortbay.jetty</groupId>\n                <artifactId>jetty</artifactId>\n
+        \               <version>${jetty.version}</version>\n                <exclusions>\n
+        \                   <exclusion>\n                        <groupId>org.mortbay.jetty</groupId>\n
+        \                       <artifactId>servlet-api-2.5</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>org.mortbay.jetty</groupId>\n
+        \                       <artifactId>servlet-api</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>xalan</groupId>\n                <artifactId>xalan</artifactId>\n
+        \               <version>2.7.1</version>\n                <exclusions>\n                    <exclusion>\n
+        \                       <groupId>xml-apis</groupId>\n                        <artifactId>xml-apis</artifactId>\n
+        \                   </exclusion>\n                </exclusions>\n            </dependency>\n
+        \           <dependency>\n                <groupId>org.apache.ws.commons.schema</groupId>\n
+        \               <artifactId>XmlSchema</artifactId>\n                <version>${xmlschema.version}</version>\n
+        \               <exclusions>\n                    <!-- on IBM jdk, XmlSchema
+        pulls these in -->\n                    <exclusion>\n                        <groupId>org.apache.bcel</groupId>\n
+        \                       <artifactId>bcel</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>xalan</groupId>\n
+        \                       <artifactId>xalan</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>javax.xml.soap</groupId>\n                <artifactId>saaj-api</artifactId>\n
+        \               <version>${saaj.version}</version>\n                <exclusions>\n
+        \                   <exclusion>\n                        <groupId>javax.activation</groupId>\n
+        \                       <artifactId>activation</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>activation</groupId>\n
+        \                       <artifactId>activation</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>javax.xml.bind</groupId>\n                <artifactId>jaxb-api</artifactId>\n
+        \               <version>${jaxb.version}</version>\n                <exclusions>\n
+        \                   <exclusion>\n                        <groupId>javax.xml.bind</groupId>\n
+        \                       <artifactId>jsr173_api</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>javax.xml</groupId>\n
+        \                       <artifactId>jsr173</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>javax.xml.stream</groupId>\n
+        \                       <artifactId>stax-api</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>javax.activation</groupId>\n
+        \                       <artifactId>activation</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>${saaj.impl.groupId}</groupId>\n                <artifactId>${saaj.impl.artifactId}</artifactId>\n
+        \               <version>${saaj.impl.version}</version>\n                <exclusions>\n
+        \                   <exclusion>\n                        <groupId>javax.activation</groupId>\n
+        \                       <artifactId>activation</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>activation</groupId>\n
+        \                       <artifactId>activation</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n\n            <dependency>\n
+        \               <groupId>com.sun.xml.bind</groupId>\n                <artifactId>jaxb-impl</artifactId>\n
+        \               <version>${jaxb.impl.version}</version>\n                <exclusions>\n
+        \                   <exclusion>\n                        <groupId>javax.xml.bind</groupId>\n
+        \                       <artifactId>jsr173_api</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>javax.xml</groupId>\n
+        \                       <artifactId>jsr173</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>javax.activation</groupId>\n
+        \                       <artifactId>activation</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>javax.xml.bind</groupId>\n
+        \                       <artifactId>activation</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.springframework</groupId>\n                <artifactId>spring-core</artifactId>\n
+        \               <version>${spring.version}</version>\n                <exclusions>\n
+        \                   <exclusion>\n                        <groupId>log4j</groupId>\n
+        \                       <artifactId>log4j</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>javax.servlet</groupId>\n
+        \                       <artifactId>servlet-api</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>logkit</groupId>\n
+        \                       <artifactId>logkit</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>avalon-framework</groupId>\n
+        \                       <artifactId>avalon-framework</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.springframework</groupId>\n                <artifactId>spring-beans</artifactId>\n
+        \               <version>${spring.version}</version>\n                <exclusions>\n
+        \                   <exclusion>\n                        <groupId>log4j</groupId>\n
+        \                       <artifactId>log4j</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>javax.servlet</groupId>\n
+        \                       <artifactId>servlet-api</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>logkit</groupId>\n
+        \                       <artifactId>logkit</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>avalon-framework</groupId>\n
+        \                       <artifactId>avalon-framework</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.springframework</groupId>\n                <artifactId>spring-context</artifactId>\n
+        \               <version>${spring.version}</version>\n                <exclusions>\n
+        \                   <exclusion>\n                        <groupId>log4j</groupId>\n
+        \                       <artifactId>log4j</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>javax.servlet</groupId>\n
+        \                       <artifactId>servlet-api</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>logkit</groupId>\n
+        \                       <artifactId>logkit</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>avalon-framework</groupId>\n
+        \                       <artifactId>avalon-framework</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.springframework</groupId>\n                <artifactId>spring-web</artifactId>\n
+        \               <version>${spring.version}</version>\n                <exclusions>\n
+        \                   <exclusion>\n                        <groupId>log4j</groupId>\n
+        \                       <artifactId>log4j</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>javax.servlet</groupId>\n
+        \                       <artifactId>servlet-api</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>logkit</groupId>\n
+        \                       <artifactId>logkit</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>avalon-framework</groupId>\n
+        \                       <artifactId>avalon-framework</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>commons-httpclient</groupId>\n                <artifactId>commons-httpclient</artifactId>\n
+        \               <version>3.1</version>\n                <exclusions>\n                    <exclusion>\n
+        \                       <groupId>commons-codec</groupId>\n                        <artifactId>commons-codec</artifactId>\n
+        \                   </exclusion>\n                </exclusions>\n            </dependency>\n
+        \           <dependency>\n              <groupId>commons-codec</groupId>\n
+        \             <artifactId>commons-codec</artifactId>\n              <version>1.3</version>\n
+        \           </dependency>\n            <dependency>\n                <groupId>commons-logging</groupId>\n
+        \               <artifactId>commons-logging</artifactId>\n                <version>1.1.1</version>\n
+        \               <exclusions>\n                    <exclusion>\n                        <groupId>log4j</groupId>\n
+        \                       <artifactId>log4j</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>logkit</groupId>\n
+        \                       <artifactId>logkit</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>avalon-framework</groupId>\n
+        \                       <artifactId>avalon-framework</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>javax.servlet</groupId>\n
+        \                       <artifactId>servlet-api</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.easymock</groupId>\n                <artifactId>easymockclassextension</artifactId>\n
+        \               <version>2.4</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>asm</groupId>\n                <artifactId>asm</artifactId>\n
+        \               <version>2.2.3</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.apache.velocity</groupId>\n                <artifactId>velocity</artifactId>\n
+        \               <version>1.6.2</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>wsdl4j</groupId>\n                <artifactId>wsdl4j</artifactId>\n
+        \               <version>${wsdl4j.version}</version>\n            </dependency>\n
+        \           <dependency>\n                <groupId>com.sun.xml.bind</groupId>\n
+        \               <artifactId>jaxb-xjc</artifactId>\n                <version>${jaxb.xjc.version}</version>\n
+        \               <exclusions>\n                    <exclusion>\n                        <groupId>javax.xml.bind</groupId>\n
+        \                       <artifactId>jsr173_api</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>com.sun.xml.bind</groupId>\n
+        \                       <artifactId>jaxb-impl</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>jaxme</groupId>\n                <artifactId>jaxme2</artifactId>\n
+        \               <version>0.5.1</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.apache.geronimo.specs</groupId>\n                <artifactId>geronimo-annotation_1.0_spec</artifactId>\n
+        \               <version>1.1.1</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.apache.geronimo.specs</groupId>\n                <artifactId>geronimo-servlet_2.5_spec</artifactId>\n
+        \               <version>1.2</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.apache.geronimo.specs</groupId>\n                <artifactId>geronimo-javamail_1.4_spec</artifactId>\n
+        \               <version>1.6</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.apache.geronimo.specs</groupId>\n                <artifactId>geronimo-activation_1.1_spec</artifactId>\n
+        \               <version>1.0.2</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.apache.geronimo.specs</groupId>\n                <artifactId>geronimo-j2ee-management_1.1_spec</artifactId>\n
+        \               <version>1.0.1</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.apache.geronimo.specs</groupId>\n                <artifactId>geronimo-jms_1.1_spec</artifactId>\n
+        \               <version>1.1.1</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.apache.geronimo.specs</groupId>\n                <artifactId>geronimo-j2ee-connector_1.5_spec</artifactId>\n
+        \               <version>2.0.0</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.apache.geronimo.specs</groupId>\n                <artifactId>geronimo-ejb_3.0_spec</artifactId>\n
+        \               <version>1.0.1</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.apache.geronimo.specs</groupId>\n                <artifactId>geronimo-ws-metadata_2.0_spec</artifactId>\n
+        \               <version>1.1.2</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.apache.geronimo.specs</groupId>\n                <artifactId>geronimo-jaxws_2.1_spec</artifactId>\n
+        \               <version>1.0</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.apache.activemq</groupId>\n                <artifactId>activemq-core</artifactId>\n
+        \               <version>${activemq.version}</version>\n                <exclusions>\n
+        \                   <exclusion>\n                        <groupId>org.apache.geronimo.specs</groupId>\n
+        \                       <artifactId>geronimo-jms_1.1_spec</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>rhino</groupId>\n                <artifactId>js</artifactId>\n
+        \               <version>${rhino.version}</version>\n            </dependency>\n
+        \           <dependency>\n                <groupId>org.apache.xmlbeans</groupId>\n
+        \               <artifactId>xmlbeans</artifactId>\n                <version>${xmlbeans.version}</version>\n
+        \               <exclusions>\n                    <exclusion>\n                        <groupId>stax</groupId>\n
+        \                       <artifactId>stax-api</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>xml-resolver</groupId>\n                <artifactId>xml-resolver</artifactId>\n
+        \               <version>1.2</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>commons-lang</groupId>\n                <artifactId>commons-lang</artifactId>\n
+        \               <version>2.4</version>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.bouncycastle</groupId>\n                <artifactId>bcprov-jdk15</artifactId>\n
+        \               <version>1.43</version>\n            </dependency>\n\n            <dependency>\n
+        \               <groupId>org.apache.abdera</groupId>\n                <artifactId>abdera-core</artifactId>\n
+        \               <version>${abdera.version}</version>\n                <exclusions>\n
+        \                   <exclusion>\n                        <groupId>org.apache.geronimo.specs</groupId>\n
+        \                       <artifactId>geronimo-activation_1.0.2_spec</artifactId>\n
+        \                   </exclusion>\n                </exclusions>\n            </dependency>\n
+        \           <dependency>\n                <groupId>org.apache.abdera</groupId>\n
+        \               <artifactId>abdera-extensions-json</artifactId>\n                <version>${abdera.version}</version>\n
+        \               <exclusions>\n                    <exclusion>\n                        <groupId>javax.servlet</groupId>\n
+        \                       <artifactId>servlet-api</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.apache.abdera</groupId>\n                <artifactId>abdera-parser</artifactId>\n
+        \               <version>${abdera.version}</version>\n                <exclusions>\n
+        \                   <exclusion>\n                        <groupId>javax.mail</groupId>\n
+        \                       <artifactId>mail</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>xml-apis</groupId>\n
+        \                       <artifactId>xml-apis</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>stax</groupId>\n
+        \                       <artifactId>stax-api</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <artifactId>xmlParserAPIs</artifactId>\n
+        \                       <groupId>xerces</groupId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <artifactId>xercesImpl</artifactId>\n
+        \                       <groupId>xerces</groupId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <artifactId>xom</artifactId>\n
+        \                       <groupId>xom</groupId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <artifactId>xalan</artifactId>\n
+        \                       <groupId>xalan</groupId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <artifactId>xml-apis</artifactId>\n
+        \                       <groupId>xml-apis</groupId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>org.codehaus.woodstox</groupId>\n
+        \                       <artifactId>wstx-asl</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.apache.ws.commons.axiom</groupId>\n                <artifactId>axiom-api</artifactId>\n
+        \               <version>1.2.7</version>\n                <exclusions>\n                    <exclusion>\n
+        \                       <groupId>javax.mail</groupId>\n                        <artifactId>mail</artifactId>\n
+        \                   </exclusion>\n                    <exclusion>\n                        <groupId>xml-apis</groupId>\n
+        \                       <artifactId>xml-apis</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>stax</groupId>\n
+        \                       <artifactId>stax-api</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <artifactId>xmlParserAPIs</artifactId>\n
+        \                       <groupId>xerces</groupId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <artifactId>xercesImpl</artifactId>\n
+        \                       <groupId>xerces</groupId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <artifactId>xom</artifactId>\n
+        \                       <groupId>xom</groupId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <artifactId>xalan</artifactId>\n
+        \                       <groupId>xalan</groupId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <artifactId>xml-apis</artifactId>\n
+        \                       <groupId>xml-apis</groupId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>org.codehaus.woodstox</groupId>\n
+        \                       <artifactId>wstx-asl</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>org.apache.ws.commons.axiom</groupId>\n                <artifactId>axiom-impl</artifactId>\n
+        \               <version>1.2.7</version>\n                <exclusions>\n                    <exclusion>\n
+        \                       <groupId>javax.mail</groupId>\n                        <artifactId>mail</artifactId>\n
+        \                   </exclusion>\n                    <exclusion>\n                        <groupId>xml-apis</groupId>\n
+        \                       <artifactId>xml-apis</artifactId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <groupId>stax</groupId>\n
+        \                       <artifactId>stax-api</artifactId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n\n            <dependency>\n
+        \               <groupId>jaxen</groupId>\n                <artifactId>jaxen</artifactId>\n
+        \               <version>1.1</version>\n                <exclusions>\n                    <exclusion>\n
+        \                       <artifactId>dom4j</artifactId>\n                        <groupId>dom4j</groupId>\n
+        \                   </exclusion>\n                    <exclusion>\n                        <artifactId>xmlParserAPIs</artifactId>\n
+        \                       <groupId>xerces</groupId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <artifactId>xercesImpl</artifactId>\n
+        \                       <groupId>xerces</groupId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <artifactId>xom</artifactId>\n
+        \                       <groupId>xom</groupId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <artifactId>xalan</artifactId>\n
+        \                       <groupId>xalan</groupId>\n                    </exclusion>\n
+        \                   <exclusion>\n                        <artifactId>xml-apis</artifactId>\n
+        \                       <groupId>xml-apis</groupId>\n                    </exclusion>\n
+        \               </exclusions>\n            </dependency>\n            <dependency>\n
+        \               <groupId>xerces</groupId>\n                <artifactId>xercesImpl</artifactId>\n
+        \               <version>2.9.1</version>\n                <exclusions>\n                    <exclusion>\n
+        \                       <artifactId>xml-apis</artifactId>\n                        <groupId>xml-apis</groupId>\n
+        \                   </exclusion>\n                </exclusions>\n            </dependency>\n
+        \           <!-- if we use the new woodstox artifact, we're using the new
+        version -->\n            <dependency>\n                <groupId>org.codehaus.woodstox</groupId>\n
+        \               <artifactId>woodstox-core-asl</artifactId>\n                <version>4.0.3</version>\n
+        \           </dependency>\n            <dependency>\n                <groupId>net.java.dev.msv</groupId>\n
+        \               <artifactId>msv-core</artifactId>\n                <version>${msv.version}</version>\n
+        \           </dependency>\n        </dependencies>\n    </dependencyManagement>\n\n
+        \   <reporting>\n        <plugins>\n            <plugin>\n                <groupId>org.apache.maven.plugins</groupId>\n
+        \               <artifactId>maven-project-info-reports-plugin</artifactId>\n
+        \               <version>2.1.1</version>\n            </plugin>\n            <plugin>\n
+        \               <groupId>org.apache.maven.plugins</groupId>\n                <artifactId>maven-surefire-report-plugin</artifactId>\n
+        \               <version>2.4.3</version>\n            </plugin>\n            <plugin>\n
+        \               <groupId>org.apache.maven.plugins</groupId>\n                <artifactId>maven-javadoc-plugin</artifactId>\n
+        \               <version>2.5</version>\n            </plugin>\n            <plugin>\n
+        \               <groupId>org.apache.maven.plugins</groupId>\n                <artifactId>maven-checkstyle-plugin</artifactId>\n
+        \               <version>2.3</version>\n                <configuration>\n
+        \                   <encoding>UTF-8</encoding>\n                    <configLocation>cxf-checkstyle${checkstyle.extension}.xml</configLocation>\n
+        \                   <consoleOutput>true</consoleOutput>\n                    <failsOnError>true</failsOnError>\n
+        \                   <linkXRef>false</linkXRef>\n                    <suppressionsLocation>cxf-checkstyle-suppressions.xml</suppressionsLocation>\n
+        \                   <sourceDirectory>${basedir}/src</sourceDirectory>\n                    <excludes>**/archetype-resources/**/*.java</excludes>\n
+        \               </configuration>\n            </plugin>\n        </plugins>\n
+        \   </reporting>\n\n    <profiles>\n        <profile>\n            <id>validateServices</id>\n
+        \           <properties>\n                <cxf.validateServices>true</cxf.validateServices>\n
+        \           </properties>\n        </profile>\n        <profile>\n            <!--
+        sjsxp is really the precursor to the jaxp-ri jars.   However, getting the
+        jaxp-ri  jar to work on \n            Java 5 requires endorsing it which is
+        non-trivial in maven  :-(.\n            -->\n            <id>sjsxp</id>\n
+        \           <properties>\n                <stax.impl.groupId>com.sun.xml.stream</stax.impl.groupId>\n
+        \               <stax.impl.artifactId>sjsxp</stax.impl.artifactId>\n                <stax.impl.version>1.0.1</stax.impl.version>\n
+        \           </properties>\n        </profile>\n        <profile>\n            <!--
+        This really only works with Java 6 as the classes are identically named with
+        the same classes in the Java 5 JDK\n            and the Java 5 versions get
+        picked up instead -->\n            <id>jaxpri</id>\n            <properties>\n
+        \               <stax.impl.groupId>com.sun.xml.parsers</stax.impl.groupId>\n
+        \               <stax.impl.artifactId>jaxp-ri</stax.impl.artifactId>\n                <stax.impl.version>1.4.2</stax.impl.version>\n
+        \           </properties>\n        </profile>\n        <profile>\n            <id>woodstox4</id>\n
+        \           <properties>\n                <stax.impl.groupId>org.codehaus.woodstox</stax.impl.groupId>\n
+        \               <stax.impl.artifactId>woodstox-core-asl</stax.impl.artifactId>\n
+        \               <stax.impl.version>4.0.3</stax.impl.version>\n            </properties>\n
+        \       </profile>\n        <profile>\n            <id>axis2-saaj</id>\n            <properties>\n
+        \               <saaj.impl.groupId>org.apache.axis2</saaj.impl.groupId>\n
+        \               <saaj.impl.artifactId>axis2-saaj</saaj.impl.artifactId>\n
+        \               <saaj.impl.version>1.4.1</saaj.impl.version>\n            </properties>\n
+        \       </profile>\n\n        <profile>\n            <id>fastinstall</id>\n
+        \           <properties>\n                <maven.test.skip>true</maven.test.skip>\n
+        \               <pmd.skip>true</pmd.skip>\n                <checkstyle.skip>true</checkstyle.skip>\n
+        \           </properties>\n        </profile>\n\n        <profile>\n            <id>nospringvalidation</id>\n
+        \           <properties>\n                <spring.validation.mode>VALIDATION_NONE</spring.validation.mode>\n
+        \           </properties>\n        </profile>\n\n        <profile>\n            <id>nochecks</id>\n
+        \           <properties>\n                <pmd.skip>true</pmd.skip>\n                <checkstyle.skip>true</checkstyle.skip>\n
+        \           </properties>\n        </profile>\n\n        <profile>\n            <!--
+        default profile enables checkstyle and Xlint stuff -->\n            <id>sourcecheck</id>\n
+        \           <activation>\n                <activeByDefault>true</activeByDefault>\n
+        \           </activation>\n            <build>\n                <plugins>\n
+        \                   <plugin>\n                        <groupId>org.apache.maven.plugins</groupId>\n
+        \                       <artifactId>maven-checkstyle-plugin</artifactId>\n
+        \                   </plugin>\n                    <plugin>\n                        <groupId>org.apache.maven.plugins</groupId>\n
+        \                       <artifactId>maven-compiler-plugin</artifactId>\n                        <configuration>\n
+        \                           <showDeprecation>true</showDeprecation>\n                            <showWarnings>true</showWarnings>\n
+        \                           <compilerArgument>${compile.flags}</compilerArgument>\n
+        \                       </configuration>\n                    </plugin>\n
+        \                   <plugin>\n                        <groupId>org.apache.maven.plugins</groupId>\n
+        \                       <artifactId>maven-pmd-plugin</artifactId>\n                    </plugin>\n
+        \               </plugins>\n            </build>\n        </profile>\n        <profile>\n
+        \           <id>set.eclipse.output</id>\n            <properties>\n                <eclipse.outputDirectory>${basedir}/eclipse-classes</eclipse.outputDirectory>\n
+        \           </properties>\n        </profile>\n\n        <profile>\n            <!--
+        pmd and checkstyle, no tests. -->\n            <id>justsourcecheck</id>\n
+        \           <properties>\n                <maven.test.skip.exec>true</maven.test.skip.exec>\n
+        \           </properties>\n            <build>\n                <plugins>\n
+        \                   <plugin>\n                        <groupId>org.apache.maven.plugins</groupId>\n
+        \                       <artifactId>maven-checkstyle-plugin</artifactId>\n
+        \                   </plugin>\n                    <plugin>\n                        <groupId>org.apache.maven.plugins</groupId>\n
+        \                       <artifactId>maven-compiler-plugin</artifactId>\n                        <configuration>\n
+        \                           <showDeprecation>true</showDeprecation>\n                            <showWarnings>true</showWarnings>\n
+        \                           <compilerArgument>${compile.flags}</compilerArgument>\n
+        \                       </configuration>\n                    </plugin>\n
+        \                   <plugin>\n                        <groupId>org.apache.maven.plugins</groupId>\n
+        \                       <artifactId>maven-pmd-plugin</artifactId>\n                    </plugin>\n
+        \               </plugins>\n            </build>\n        </profile>\n        <profile>\n
+        \           <id>setup.eclipse</id>\n            <build>\n                <defaultGoal>process-test-sources</defaultGoal>\n
+        \               <plugins>\n                    <plugin>\n                        <groupId>org.apache.maven.plugins</groupId>\n
+        \                       <artifactId>maven-eclipse-plugin</artifactId>\n                        <executions>\n
+        \                           <execution>\n                                <id>setup.eclipse.project</id>\n
+        \                               <phase>process-test-sources</phase>\n                                <goals>\n
+        \                                   <goal>eclipse</goal>\n                                </goals>\n
+        \                           </execution>\n                        </executions>\n
+        \                   </plugin>\n                </plugins>\n            </build>\n
+        \       </profile>\n\n        <profile>\n            <id>ibmjdk</id>\n            <activation>\n
+        \               <property>\n                    <name>java.vendor</name>\n
+        \                   <value>IBM Corporation</value>\n                </property>\n
+        \           </activation>\n            <dependencies>\n                <dependency>\n
+        \                   <groupId>xalan</groupId>\n                    <artifactId>xalan</artifactId>\n
+        \               </dependency>\n            </dependencies>\n            <properties>\n
+        \               <!--\n                The default xalan TransformerFactory
+        on the\n                ibm jdk seems to be \n                org.apache.xalan.processor.TransformerFactoryImpl\n
+        \               which seems to have an issue causing it to\n                add
+        things like duplicate default namespace\n                declarations.  woodstox
+        doesn't like that.\n                So set this property to use the xsltc\n
+        \               TransformerFactory which behaves better with\n                woodstox
+        (and which the sun jdk seems to\n                default to).\n                -->\n
+        \               <surefire.extra.sysprop.name1>javax.xml.transform.TransformerFactory</surefire.extra.sysprop.name1>\n
+        \               <surefire.extra.sysprop.value1>org.apache.xalan.xsltc.trax.TransformerFactoryImpl</surefire.extra.sysprop.value1>\n
+        \           </properties>\n            <build>\n                <plugins>\n
+        \                   <plugin>\n                        <groupId>org.apache.maven.plugins</groupId>\n
+        \                       <artifactId>maven-checkstyle-plugin</artifactId>\n
+        \                   </plugin>\n                    <plugin>\n                        <groupId>org.apache.maven.plugins</groupId>\n
+        \                       <artifactId>maven-compiler-plugin</artifactId>\n                        <configuration>\n
+        \                           <showDeprecation>true</showDeprecation>\n                            <showWarnings>true</showWarnings>\n
+        \                           <compilerArgument>${compile.flags}</compilerArgument>\n
+        \                           <fork>true</fork>\n                            <maxmem>512M</maxmem>\n
+        \                       </configuration>\n                    </plugin>\n
+        \                   <plugin>\n                        <groupId>org.apache.maven.plugins</groupId>\n
+        \                       <artifactId>maven-pmd-plugin</artifactId>\n                    </plugin>\n
+        \               </plugins>\n            </build>\n        </profile>\n        <profile>\n
+        \           <id>spring2.0</id>\n            <properties>\n                <spring.version>2.0.8</spring.version>\n
+        \               <spring.mock>spring-mock</spring.mock>\n            </properties>\n
+        \       </profile> \n        <profile>\n            <!-- Profile to clean
+        even if you do not have the cxf plugins in\n             your local mavven
+        repo -->\n            <id>clean</id>\n            <pluginRepositories>\n                <pluginRepository>\n
+        \                   <id>apache.snapshots</id>\n                    <url>http://repository.apache.org/snapshots/</url>\n
+        \               </pluginRepository>\n            </pluginRepositories>\n            <build>\n
+        \               <defaultGoal>clean</defaultGoal>\n            </build>\n        </profile>\n
+        \   </profiles>\n\n</project>\n\n\n\n"}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['5861']
+      Connection: [keep-alive]
+      Content-Length: ['59632']
+      Content-Type: [text/xml]
+      Date: ['Tue, 10 Oct 2017 07:15:17 GMT']
+      ETag: ['"285165901af11f32f1a4049cda7f3e74"']
+      Fastly-Debug-Digest: [1477901dfe26af6e31bad96df77acfb724b66d0d44961cc4cb2d65336f53c410]
+      Last-Modified: ['Sat, 14 Nov 2009 19:43:17 GMT']
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['MISS, HIT']
+      X-Cache-Hits: ['0, 1']
+      X-Checksum-MD5: [285165901af11f32f1a4049cda7f3e74]
+      X-Checksum-SHA1: [8e3b239516391b876126f0623af1a9406fd32133]
+      X-Served-By: ['cache-iad2151-IAD, cache-atl6246-ATL']
+      X-Timer: ['S1507619717.211501,VS0,VE2']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://repo.maven.apache.org/maven2/org/apache/cxf/cxf/2.2.5/cxf-2.2.5.pom
+  response:
+    body: {string: "<!--\n  Licensed to the Apache Software Foundation (ASF) under
+        one\n  or more contributor license agreements. See the NOTICE file\n  distributed
+        with this work for additional information\n  regarding copyright ownership.
+        The ASF licenses this file\n  to you under the Apache License, Version 2.0
+        (the\n  \"License\"); you may not use this file except in compliance\n  with
+        the License. You may obtain a copy of the License at\n\n  http://www.apache.org/licenses/LICENSE-2.0\n\n
+        \ Unless required by applicable law or agreed to in writing,\n  software distributed
+        under the License is distributed on an\n  \"AS IS\" BASIS, WITHOUT WARRANTIES
+        OR CONDITIONS OF ANY\n  KIND, either express or implied. See the License for
+        the\n  specific language governing permissions and limitations\n  under the
+        License.\n-->\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd\">\n\n
+        \   <modelVersion>4.0.0</modelVersion>\n    <groupId>org.apache.cxf</groupId>\n
+        \   <artifactId>cxf</artifactId>\n    <version>2.2.5</version>\n    <name>Apache
+        CXF</name>\n    <url>http://cxf.apache.org</url>\n\n    <packaging>pom</packaging>\n\n
+        \   <scm>\n        <connection>scm:svn:http://svn.apache.org/repos/asf/cxf/tags/cxf-2.2.5</connection>\n
+        \       <developerConnection>scm:svn:https://svn.apache.org/repos/asf/cxf/tags/cxf-2.2.5</developerConnection>\n
+        \   </scm>\n    <issueManagement>\n        <system>jira</system>\n        <url>https://issues.apache.org/jira/browse/CXF</url>\n
+        \   </issueManagement>\n\n    <prerequisites>\n        <maven>2.0.9</maven>\n
+        \   </prerequisites>\n\n    <properties>\n        <compiler.fork>false</compiler.fork>\n
+        \   </properties>\n\n    <!-- java.net for msv snapshots -->\n    <repositories>\n
+        \       <!-- java.net for msv, codehaus for woodstox, but we don't need either
+        at the moment. -->\n        <!--\n              <repository>\n            <id>maven2-repository.dev.java.net</id>\n
+        \           <releases>\n              <enabled>false</enabled>\n            </releases>\n
+        \           <snapshots>\n              <enabled>true</enabled>\n              </snapshots>\n
+        \           <name>Java.net Repository for Maven</name>\n            <url>http://download.java.net/maven/2/</url>\n
+        \             </repository>\n              <repository>\n                <id>codehaus
+        snapshots</id>\n            <releases>\n              <enabled>false</enabled>\n
+        \           </releases>\n            <snapshots>\n              <enabled>true</enabled>\n
+        \             </snapshots>\n            <name>Java.net Repository for Maven</name>\n
+        \           <url>http://snapshots.repository.codehaus.org</url>\n              </repository>\n
+        \       -->\n    </repositories>\n\n    <distributionManagement>\n        <repository>\n
+        \           <id>apache.releases.https</id>\n            <name>Apache Release
+        Distribution Repository</name>\n            <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>\n
+        \       </repository>\n        <snapshotRepository>\n            <id>apache.snapshots.https</id>\n
+        \           <name>Apache Development Snapshot Repository</name>\n            <url>https://repository.apache.org/content/repositories/snapshots</url>\n
+        \           <uniqueVersion>false</uniqueVersion>\n        </snapshotRepository>\n
+        \       <site>\n            <id>apache.cxf.site</id>\n            <url>scpexe://people.apache.org/www/cxf.apache.org/cxf/mvn_site</url>\n
+        \       </site>\n    </distributionManagement>\n\n    <inceptionYear>2006</inceptionYear>\n
+        \   <mailingLists>\n        <mailingList>\n            <name>Apache CXF User
+        List</name>\n            <subscribe>users-subscribe@cxf.apache.org</subscribe>\n
+        \           <unsubscribe>users-unsubscribe@cxf.apache.org</unsubscribe>\n
+        \           <post>users@cxf.apache.org</post>\n            <archive>http://mail-archives.apache.org/mod_mbox/cxf-users</archive>\n
+        \       </mailingList>\n        <mailingList>\n            <name>Apache CXF
+        Developer List</name>\n            <subscribe>dev-subscribe@cxf.apache.org</subscribe>\n
+        \           <unsubscribe>dev-unsubscribe@cxf.apache.org</unsubscribe>\n            <post>dev@cxf.apache.org</post>\n
+        \           <archive>http://mail-archives.apache.org/mod_mbox/cxf-dev</archive>\n
+        \       </mailingList>\n        <mailingList>\n            <name>Apache CXF
+        Commits List</name>\n            <subscribe>commits-subscribe@cxf.apache.org</subscribe>\n
+        \           <unsubscribe>commits-unsubscribe@cxf.apache.org</unsubscribe>\n
+        \           <post>commits@cxf.apache.org</post>\n            <archive>http://mail-archives.apache.org/mod_mbox/cxf-commits</archive>\n
+        \       </mailingList>\n        <mailingList>\n            <name>Apache CXF
+        Issues List</name>\n            <subscribe>issues-subscribe@cxf.apache.org</subscribe>\n
+        \           <unsubscribe>issues-unsubscribe@cxf.apache.org</unsubscribe>\n
+        \           <post>issues@cxf.apache.org</post>\n            <archive>http://mail-archives.apache.org/mod_mbox/cxf-issues</archive>\n
+        \       </mailingList>\n        <mailingList>\n            <name>Apache CXF
+        Build Notifications List</name>\n            <subscribe>notifications-subscribe@cxf.apache.org</subscribe>\n
+        \           <unsubscribe>notifications-unsubscribe@cxf.apache.org</unsubscribe>\n
+        \           <post>notifications@cxf.apache.org</post>\n            <archive>http://mail-archives.apache.org/mod_mbox/cxf-notifications</archive>\n
+        \       </mailingList>\n    </mailingLists>\n    <ciManagement>\n        <system>Hudson</system>\n
+        \       <url>http://hudson.zones.apache.org/hudson/view/CXF/</url>\n        <notifiers>\n
+        \           <notifier>\n                <type>mail</type>\n                <configuration>\n
+        \                   <address>notifications@cxf.apache.org</address>\n                </configuration>\n
+        \           </notifier>\n        </notifiers>\n    </ciManagement>\n    <licenses>\n
+        \       <license>\n            <name>The Apache Software License, Version
+        2.0</name>\n            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>\n
+        \           <distribution>repo</distribution>\n        </license>\n    </licenses>\n
+        \   <organization>\n        <name>The Apache Software Foundation</name>\n
+        \       <url>http://www.apache.org/</url>\n    </organization>\n\n    <modules>\n
+        \       <module>buildtools</module>\n        <module>maven-plugins/xml2fastinfoset-plugin</module>\n
+        \       <module>parent</module>\n        <module>common</module>\n        <module>api</module>\n
+        \       <module>tools</module>\n        <module>testutils</module>\n        <module>rt</module>\n
+        \       <module>integration</module>\n        <module>maven-plugins</module>\n
+        \       <module>systests</module>\n    </modules>\n\n\n    <profiles>\n        <profile>\n
+        \           <!-- default profile enables checkstyle and Xlint stuff -->\n
+        \           <id>everything</id>\n            <modules>\n                <module>distribution</module>\n
+        \           </modules>\n        </profile>\n        <profile>\n            <id>setup.eclipse</id>\n
+        \           <properties>\n                <eclipse.workspace.dir>${basedir}/../workspace</eclipse.workspace.dir>\n
+        \           </properties>\n            <build>\n                <defaultGoal>process-test-sources</defaultGoal>\n
+        \               <plugins>\n                    <plugin>\n                        <groupId>org.apache.maven.plugins</groupId>\n
+        \                       <artifactId>maven-eclipse-plugin</artifactId>\n                        <inherited>false</inherited>\n
+        \                       <executions>\n                            <execution>\n
+        \                               <id>setup.eclipse.workspace</id>\n                                <phase>process-test-sources</phase>\n
+        \                               <goals>\n                                    <goal>configure-workspace</goal>\n
+        \                               </goals>\n                            </execution>\n
+        \                       </executions>\n                        <configuration>\n
+        \                           <workspace>${eclipse.workspace.dir}</workspace>\n
+        \                           <workspaceCodeStylesURL>file:etc/eclipse/CXFCodeFormatter.xml</workspaceCodeStylesURL>\n
+        \                       </configuration>\n                    </plugin>\n
+        \                   <plugin>\n                        <groupId>org.apache.maven.plugins</groupId>\n
+        \                       <artifactId>maven-antrun-plugin</artifactId>\n                        <inherited>false</inherited>\n
+        \                       <dependencies>\n                            <dependency>\n
+        \                               <groupId>ant</groupId>\n                                <artifactId>ant-nodeps</artifactId>\n
+        \                               <version>1.6.5</version>\n                            </dependency>\n
+        \                           <dependency>\n                                <groupId>ant</groupId>\n
+        \                               <artifactId>ant-trax</artifactId>\n                                <version>1.6.5</version>\n
+        \                           </dependency>\n                            <dependency>\n
+        \                               <groupId>org.apache.cxf</groupId>\n                                <artifactId>cxf-buildtools</artifactId>\n
+        \                               <version>${project.version}</version>\n                            </dependency>\n
+        \                       </dependencies>\n                        <executions>\n
+        \                           <execution>\n                                <id>setup.workspace</id>\n
+        \                               <phase>validate</phase>\n                                <configuration>\n
+        \                                   <tasks>\n                                        <path
+        id=\"ecp.ws.path\" location=\"${eclipse.workspace.dir}\" />\n                                        <property
+        name=\"full.eclipse.workspace\" refid=\"ecp.ws.path\" />\n\n                                        <whichresource
+        resource=\"/cxf-eclipse-pmd\" property=\"pmd.url\" />\n                                        <whichresource
+        resource=\"/cxf-pmd-ruleset.xml\" property=\"pmdruleset.url\" />\n                                        <whichresource
+        resource=\"/cxf-eclipse-checkstyle\" property=\"eclipse.checkstyle.url\" />\n
+        \                                       <whichresource resource=\"/cxf-checkstyle.xml\"
+        property=\"checkstyle.url\" />\n                                        <whichresource
+        resource=\"/cxf-checkstyle-corba.xml\" property=\"corba.checkstyle.url\" />\n\n
+        \                                       <mkdir dir=\"${full.eclipse.workspace}/.metadata/.plugins/org.eclipse.core.runtime/.settings\"
+        />\n                                        <mkdir dir=\"${full.eclipse.workspace}/.metadata/.plugins/com.atlassw.tools.eclipse.checkstyle\"
+        />\n                                        <mkdir dir=\"${full.eclipse.workspace}/.metadata/.plugins/net.sourceforge.pmd.eclipse\"
+        />\n\n                                        <get src=\"${checkstyle.url}\"
+        dest=\"${full.eclipse.workspace}/cxf-checkstyle.xml\" />\n                                        <get
+        src=\"${corba.checkstyle.url}\" dest=\"${full.eclipse.workspace}/cxf-checkstyle-corba.xml\"
+        />\n\n                                        <!-- Add checkstyle config -->\n
+        \                                       <copy file=\"${basedir}/etc/eclipse/template.checkstyle-config.xml\"
+        tofile=\"${full.eclipse.workspace}/.metadata/.plugins/com.atlassw.tools.eclipse.checkstyle/checkstyle-config.xml\"
+        overwrite=\"no\">\n                                            <filterset>\n
+        \                                               <filter token=\"CHECKSTYLE_CONFIG_FILE\"
+        value=\"${full.eclipse.workspace}/cxf-checkstyle.xml\" />\n                                                <filter
+        token=\"CHECKSTYLE_CORBA_CONFIG_FILE\" value=\"${full.eclipse.workspace}/cxf-checkstyle-corba.xml\"
+        />\n                                                <filter token=\"APACHE_HEADER_FILE\"
+        value=\"${full.eclipse.workspace}/apache-header.txt\" />\n                                            </filterset>\n
+        \                                       </copy>\n\n                                        <xslt
+        style=\"${basedir}/etc/eclipse/addcheckstyle.xsl\" in=\"${full.eclipse.workspace}/.metadata/.plugins/com.atlassw.tools.eclipse.checkstyle/checkstyle-config.xml\"
+        out=\"${full.eclipse.workspace}/.metadata/.plugins/com.atlassw.tools.eclipse.checkstyle/checkstyle-config.xml.new\">\n
+        \                                           <param name=\"checkstyleconfig\"
+        expression=\"${full.eclipse.workspace}/cxf-checkstyle.xml\" />\n                                            <param
+        name=\"checkstyleconfigcorba\" expression=\"${full.eclipse.workspace}/cxf-checkstyle-corba.xml\"
+        />\n                                        </xslt>\n                                        <copy
+        file=\"${full.eclipse.workspace}/.metadata/.plugins/com.atlassw.tools.eclipse.checkstyle/checkstyle-config.xml.new\"
+        tofile=\"${full.eclipse.workspace}/.metadata/.plugins/com.atlassw.tools.eclipse.checkstyle/checkstyle-config.xml\"
+        overwrite=\"yes\" />\n\n                                        <!-- Add checkstyle
+        config for 5.0 plugin -->\n                                        <copy file=\"${basedir}/etc/eclipse/template.checkstyle-config.xml\"
+        tofile=\"${full.eclipse.workspace}/.metadata/.plugins/net.sf.eclipsecs.core/checkstyle-config.xml\"
+        overwrite=\"no\">\n                                            <filterset>\n
+        \                                               <filter token=\"CHECKSTYLE_CONFIG_FILE\"
+        value=\"${full.eclipse.workspace}/cxf-checkstyle.xml\" />\n                                                <filter
+        token=\"CHECKSTYLE_CORBA_CONFIG_FILE\" value=\"${full.eclipse.workspace}/cxf-checkstyle-corba.xml\"
+        />\n                                                <filter token=\"APACHE_HEADER_FILE\"
+        value=\"${full.eclipse.workspace}/apache-header.txt\" />\n                                            </filterset>\n
+        \                                       </copy>\n\n                                        <xslt
+        style=\"${basedir}/etc/eclipse/addcheckstyle.xsl\" in=\"${full.eclipse.workspace}/.metadata/.plugins/net.sf.eclipsecs.core/checkstyle-config.xml\"
+        out=\"${full.eclipse.workspace}/.metadata/.plugins/net.sf.eclipsecs.core/checkstyle-config.xml.new\">\n
+        \                                           <param name=\"checkstyleconfig\"
+        expression=\"${full.eclipse.workspace}/cxf-checkstyle.xml\" />\n                                            <param
+        name=\"checkstyleconfigcorba\" expression=\"${full.eclipse.workspace}/cxf-checkstyle-corba.xml\"
+        />\n                                        </xslt>\n                                        <copy
+        file=\"${full.eclipse.workspace}/.metadata/.plugins/net.sf.eclipsecs.core/checkstyle-config.xml.new\"
+        tofile=\"${full.eclipse.workspace}/.metadata/.plugins/net.sf.eclipsecs.core/checkstyle-config.xml\"
+        overwrite=\"yes\" />\n\n\n\n\n                                        <!--
+        Add warning flags that we want -->\n                                        <propertyfile
+        file=\"${full.eclipse.workspace}/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs\">\n
+        \                                           <entry key=\"org.eclipse.jdt.core.compiler.problem.missingSerialVersion\"
+        value=\"ignore\" />\n                                            <entry key=\"org.eclipse.jdt.core.compiler.problem.unusedImport\"
+        value=\"ignore\" />\n                                            <entry key=\"org.eclipse.jdt.core.compiler.problem.annotationSuperInterface\"
+        value=\"ignore\" />\n                                            <entry key=\"org.eclipse.jdt.core.compiler.problem.rawTypeReference\"
+        value=\"ignore\" />\n                                        </propertyfile>\n\n\n
+        \                                       <!-- Add code format rules -->\n                                        <loadfile
+        property=\"eclipse.code.cleanup\" srcFile=\"${basedir}/etc/eclipse/CXFCleanUp.xml\"
+        />\n                                        <loadfile property=\"eclipse.code.templates\"
+        srcFile=\"${basedir}/etc/eclipse/codetemplates.xml\" />\n                                        <loadfile
+        property=\"eclipse.xml.templates\" srcFile=\"${basedir}/etc/eclipse/xmltemplates.xml\"
+        />\n                                        <propertyfile file=\"${full.eclipse.workspace}/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs\">\n
+        \                                           <entry key=\"cleanup_profile\"
+        value=\"_CXF\" />\n                                            <entry key=\"org.eclipse.jdt.ui.cleanupprofiles\"
+        value=\"${eclipse.code.cleanup}\" />\n                                            <entry
+        key=\"org.eclipse.jdt.ui.text.custom_code_templates\" value=\"${eclipse.code.templates}\"
+        />\n\n                                            <!-- Add import order -->\n
+        \                                           <entry key=\"org.eclipse.jdt.ui.importorder\"
+        value=\"java;javax;org.w3c;org.xml;junit;antlr;com;net;org;org.junit;#org.junit\"
+        />\n                                            <!-- Sort order -->\n                                            <entry
+        key=\"org.eclipse.jdt.ui.visibility.order\" value=\"B,R,D,V,\" />\n                                            <entry
+        key=\"outlinesortoption\" value=\"T,SF,F,SI,I,C,SM,M,\" />\n                                            <entry
+        key=\"org.eclipse.jdt.ui.enable.visibility.order\" value=\"true\" />\n                                        </propertyfile>\n
+        \                                       <propertyfile file=\"${full.eclipse.workspace}/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.xml.ui.prefs\">\n
+        \                                           <entry key=\"eclipse.preferences.version\"
+        value=\"1\" />\n                                            <entry key=\"org.eclipse.wst.sse.ui.custom_templates\"
+        value=\"${eclipse.xml.templates}\" />\n                                        </propertyfile>\n
+        \                                   </tasks>\n                                </configuration>\n
+        \                               <goals>\n                                    <goal>run</goal>\n
+        \                               </goals>\n                            </execution>\n
+        \                       </executions>\n                    </plugin>\n                </plugins>\n
+        \           </build>\n        </profile>\n        <profile>\n            <id>release</id>\n
+        \           <build>\n                <plugins>\n                    <!-- We
+        want to deploy the artifact to a staging location for perusal -->\n                    <plugin>\n
+        \                       <inherited>true</inherited>\n                        <artifactId>maven-deploy-plugin</artifactId>\n
+        \                       <version>2.4</version>\n                        <configuration>\n
+        \                           <altDeploymentRepository>${deploy.altRepository}</altDeploymentRepository>\n
+        \                           <updateReleaseInfo>true</updateReleaseInfo>\n
+        \                       </configuration>\n                    </plugin>\n
+        \                   <!-- We want to sign the artifact, the POM, and all attached
+        artifacts -->\n                    <plugin>\n                        <artifactId>maven-gpg-plugin</artifactId>\n
+        \                       <version>1.0-alpha-4</version>\n                        <executions>\n
+        \                           <execution>\n                                <goals>\n
+        \                                   <goal>sign</goal>\n                                </goals>\n
+        \                           </execution>\n                        </executions>\n
+        \                   </plugin>\n                </plugins>\n            </build>\n
+        \       </profile>\n        <profile>\n            <id>deploy</id>\n            <modules>\n
+        \               <module>distribution</module>\n            </modules>\n            <build>\n
+        \               <defaultGoal>deploy</defaultGoal>\n                <plugins>\n
+        \                   <plugin>\n                        <groupId>org.apache.maven.plugins</groupId>\n
+        \                       <artifactId>maven-source-plugin</artifactId>\n                        <version>2.1</version>\n
+        \                       <executions>\n                            <execution>\n
+        \                               <id>attach-sources</id>\n                                <goals>\n
+        \                                   <goal>jar</goal>\n                                </goals>\n
+        \                           </execution>\n                        </executions>\n
+        \                   </plugin>\n                    <plugin>\n                        <groupId>org.apache.maven.plugins</groupId>\n
+        \                       <artifactId>maven-javadoc-plugin</artifactId>\n                        <executions>\n
+        \                           <execution>\n                                <id>attach-javadocs</id>\n
+        \                               <goals>\n                                    <goal>jar</goal>\n
+        \                               </goals>\n                            </execution>\n
+        \                       </executions>\n                    </plugin>\n                </plugins>\n
+        \           </build>\n        </profile>\n    </profiles>\n\n\n    <build>\n
+        \       <defaultGoal>install</defaultGoal>\n\n        <pluginManagement>\n
+        \           <plugins>\n                <plugin>\n                    <groupId>org.codehaus.mojo</groupId>\n
+        \                   <artifactId>build-helper-maven-plugin</artifactId>\n                    <version>1.4</version>\n
+        \               </plugin>\n                <plugin>\n                    <groupId>org.codehaus.mojo</groupId>\n
+        \                   <artifactId>xmlbeans-maven-plugin</artifactId>\n                    <version>2.3.2</version>\n
+        \               </plugin>\n                <plugin>\n                    <groupId>org.apache.felix</groupId>\n
+        \                   <artifactId>maven-bundle-plugin</artifactId>\n                    <version>2.0.0</version>\n
+        \               </plugin>\n                <plugin>\n                    <groupId>org.apache.maven.plugins</groupId>\n
+        \                   <artifactId>maven-clean-plugin</artifactId>\n                    <version>2.3</version>\n
+        \               </plugin>\n                <plugin>\n                    <groupId>org.apache.maven.plugins</groupId>\n
+        \                   <artifactId>maven-install-plugin</artifactId>\n                    <version>2.3</version>\n
+        \               </plugin>\n                <plugin>\n                    <groupId>org.apache.maven.plugins</groupId>\n
+        \                   <artifactId>maven-release-plugin</artifactId>\n                    <version>2.0-beta-9</version>\n
+        \                   <configuration>\n                        <tagBase>https://svn.apache.org/repos/asf/cxf/tags</tagBase>\n
+        \                       <useReleaseProfile>false</useReleaseProfile>\n                        <preparationGoals>clean
+        install</preparationGoals>\n                        <goals>deploy</goals>\n
+        \                       <arguments>-Prelease,deploy</arguments>\n                        <autoVersionSubmodules>true</autoVersionSubmodules>\n
+        \                   </configuration>\n                </plugin>\n                <plugin>\n
+        \                   <groupId>org.apache.maven.plugins</groupId>\n                    <artifactId>maven-javadoc-plugin</artifactId>\n
+        \                   <version>2.5</version>\n                    <configuration>\n
+        \                       <attach>true</attach>\n                        <source>1.5</source>\n
+        \                       <quiet>true</quiet>\n                        <bottom>Apache
+        CXF</bottom>\n                        <javadocVersion>1.5</javadocVersion>\n
+        \                       <encoding>UTF-8</encoding>\n                        <!--subpackages>org.apache.cxf</subpackages-->\n
+        \                   </configuration>\n                </plugin>\n                <plugin>\n
+        \                   <groupId>org.apache.maven.plugins</groupId>\n                    <artifactId>maven-surefire-plugin</artifactId>\n
+        \                   <version>2.4.3</version>\n                </plugin>\n
+        \               <plugin>\n                    <groupId>org.apache.maven.plugins</groupId>\n
+        \                   <artifactId>maven-compiler-plugin</artifactId>\n                    <version>2.0.2</version>\n
+        \                   <configuration>\n                        <source>1.5</source>\n
+        \                       <target>1.5</target>\n                        <maxmem>256M</maxmem>\n
+        \                       <fork>${compiler.fork}</fork>\n                    </configuration>\n
+        \               </plugin>\n                <plugin>\n                    <groupId>org.apache.maven.plugins</groupId>\n
+        \                   <artifactId>maven-antrun-plugin</artifactId>\n                    <version>1.3</version>\n
+        \               </plugin>\n                <plugin>\n                    <groupId>org.apache.maven.plugins</groupId>\n
+        \                   <artifactId>maven-jar-plugin</artifactId>\n                    <version>2.2</version>\n
+        \                   <configuration>\n                        <archive>\n                            <manifestEntries>\n
+        \                               <Specification-Title>${name}</Specification-Title>\n
+        \                               <Specification-Vendor>The Apache Software
+        Foundation</Specification-Vendor>\n                                <Specification-Version>${version}</Specification-Version>\n
+        \                               <Implementation-Title>${name}</Implementation-Title>\n
+        \                               <Implementation-Vendor-Id>org.apache</Implementation-Vendor-Id>\n
+        \                               <Implementation-Vendor>The Apache Software
+        Foundation</Implementation-Vendor>\n                                <Implementation-Version>${version}</Implementation-Version>\n
+        \                           </manifestEntries>\n                        </archive>\n
+        \                   </configuration>\n                </plugin>\n                <plugin>\n
+        \                   <groupId>org.apache.maven.plugins</groupId>\n                    <artifactId>maven-resources-plugin</artifactId>\n
+        \                   <version>2.3</version>\n                    <configuration>\n
+        \                       <encoding>UTF-8</encoding>\n                    </configuration>\n
+        \               </plugin>\n                <plugin>\n                    <groupId>org.apache.maven.plugins</groupId>\n
+        \                   <artifactId>maven-assembly-plugin</artifactId>\n                    <version>2.2-beta-4</version>\n
+        \               </plugin>\n\n                <plugin>\n                    <groupId>org.apache.maven.plugins</groupId>\n
+        \                   <artifactId>maven-dependency-plugin</artifactId>\n                    <version>2.1</version>\n
+        \               </plugin>\n                <plugin>\n                    <groupId>org.apache.maven.plugins</groupId>\n
+        \                   <artifactId>maven-shade-plugin</artifactId>\n                    <version>1.2.1</version>\n
+        \               </plugin>\n                <plugin>\n                    <groupId>org.apache.maven.plugins</groupId>\n
+        \                   <artifactId>maven-site-plugin</artifactId>\n                    <version>2.0.1</version>\n
+        \               </plugin>\n                <plugin>\n                    <groupId>org.apache.maven.plugins</groupId>\n
+        \                   <artifactId>maven-deploy-plugin</artifactId>\n                    <version>2.4</version>\n
+        \               </plugin>\n                <plugin>\n                    <groupId>org.apache.maven.plugins</groupId>\n
+        \                   <artifactId>maven-surefire-report-plugin</artifactId>\n
+        \                   <version>2.4.3</version>\n                </plugin>\n
+        \               <plugin>\n                    <groupId>org.apache.maven.plugins</groupId>\n
+        \                   <artifactId>maven-project-info-reports-plugin</artifactId>\n
+        \                   <version>2.1.1</version>\n                </plugin>\n
+        \               <plugin>\n                    <groupId>org.apache.maven.plugins</groupId>\n
+        \                   <artifactId>maven-plugin-plugin</artifactId>\n                    <version>2.5</version>\n
+        \               </plugin>\n                <plugin>\n                    <groupId>org.apache.maven.plugins</groupId>\n
+        \                   <artifactId>maven-eclipse-plugin</artifactId>\n                    <version>2.7</version>\n
+        \                   <dependencies>\n                        <dependency>\n
+        \                           <groupId>org.apache.cxf</groupId>\n                            <artifactId>cxf-buildtools</artifactId>\n
+        \                           <version>${project.version}</version>\n                        </dependency>\n
+        \                   </dependencies>\n                </plugin>\n            </plugins>\n
+        \       </pluginManagement>\n    </build>\n\n    <reporting>\n        <plugins>\n
+        \           <plugin>\n                <groupId>org.apache.maven.plugins</groupId>\n
+        \               <artifactId>maven-project-info-reports-plugin</artifactId>\n
+        \               <version>2.1.1</version>\n            </plugin>\n            <plugin>\n
+        \               <groupId>org.apache.maven.plugins</groupId>\n                <artifactId>maven-javadoc-plugin</artifactId>\n
+        \               <version>2.6</version>\n            </plugin>\n        </plugins>\n
+        \   </reporting>\n\n</project>\n"}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['5861']
+      Connection: [keep-alive]
+      Content-Length: ['28729']
+      Content-Type: [text/xml]
+      Date: ['Tue, 10 Oct 2017 07:15:17 GMT']
+      ETag: ['"afa1f94cd18f2373a5bcedc6d37cef10"']
+      Fastly-Debug-Digest: [75b99d1521d9079b20e89a0f396530f3e5b2307be27c6845259ca4794097ba88]
+      Last-Modified: ['Sat, 14 Nov 2009 19:42:42 GMT']
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['HIT, HIT']
+      X-Cache-Hits: ['1, 1']
+      X-Checksum-MD5: [afa1f94cd18f2373a5bcedc6d37cef10]
+      X-Checksum-SHA1: [b5012d191ce5c12cf34d40443afeffceb9e8a539]
+      X-Served-By: ['cache-iad2140-IAD, cache-atl6246-ATL']
+      X-Timer: ['S1507619718.685765,VS0,VE1']
+    status: {code: 200, message: OK}
+version: 1

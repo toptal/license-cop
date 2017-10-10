@@ -1,4 +1,5 @@
 import re
+from itertools import chain
 
 from app.dependency import *
 from app.repository_matcher import *
@@ -40,32 +41,26 @@ class ScalaRepositoryMatcher(RepositoryMatcher):
             platform='Scala',
             repository=repository,
             paths=match.paths,
-            runtime_dependencies=list(filter(lambda i: i.is_runtime, dependencies)),
-            development_dependencies=list(filter(lambda i: i.is_development, dependencies))
+            runtime_dependencies=[i for i in dependencies if i.is_runtime],
+            development_dependencies=[i for i in dependencies if i.is_development]
         )
 
     def __paths_from_project_folder(self, build_sbt):
-        results = build_sbt.search_siblings('project')
-        if results and results[0].is_tree:
-            project_folder = results[0]
-            scala_files = []
+        scala_files = []
+        project_folder = build_sbt.parent.navigate('project')
+        if project_folder and project_folder.is_tree:
             scala_files.extend(project_folder.deep_search('*.sbt'))
             scala_files.extend(project_folder.deep_search('*.scala'))
-            return map(lambda i: i.path, scala_files)
-        return []
+        return [i.path for i in scala_files]
 
     def __extract_dependencies(self, repository, paths):
         dependencies = set()
-        for line in self.__all_non_blank_lines(repository, paths):
+        for line in self.__all_lines(repository, paths):
             d = parse_scala_dependency(line)
             if d:
                 dependencies.add(d)
         return dependencies
 
-    def __all_non_blank_lines(self, repository, paths):
-        for path in paths:
-            data = repository.read_text_file(path)
-            for line in data.splitlines():
-                line = line.strip()
-                if line:
-                    yield line
+    def __all_lines(self, repository, paths):
+        text_files = (repository.read_text_file(i) for i in paths)
+        return chain.from_iterable(i.splitlines() for i in text_files)

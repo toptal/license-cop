@@ -72,7 +72,6 @@ def test_fetch_latest_version_appending_scala_version(registry):
     assert version.development_dependencies == []
 
 
-@pytest.mark.skip
 @VCR.use_cassette('maven2_package_registry_fetch_version_group_id_not_found.yaml')
 def test_fetch_version_group_id_not_found(registry):
     name = JvmPackageName('com.example.foobar', 'foobar')
@@ -81,11 +80,10 @@ def test_fetch_version_group_id_not_found(registry):
     assert str(e.value) == (
         'Could not find package version com.example.foobar:foobar:3.2.1. '
         '404 Client Error: Not Found for url: '
-        'https://repo.maven.apache.org/maven2/com/example/foobar/foobar/3.2.1/foobar-3.2.1.pom'
+        'https://repo.maven.apache.org/maven2/com/example/foobar/foobar_2.11/3.2.1/foobar_2.11-3.2.1.pom'
     )
 
 
-@pytest.mark.skip
 @VCR.use_cassette('maven2_package_registry_fetch_version_artifact_id_not_found.yaml')
 def test_fetch_version_artifact_id_not_found(registry):
     name = JvmPackageName('org.scala-lang', 'foobar')
@@ -94,11 +92,10 @@ def test_fetch_version_artifact_id_not_found(registry):
     assert str(e.value) == (
         'Could not find package version org.scala-lang:foobar:3.2.1. '
         '404 Client Error: Not Found for url: '
-        'https://repo.maven.apache.org/maven2/org/scala-lang/foobar/3.2.1/foobar-3.2.1.pom'
+        'https://repo.maven.apache.org/maven2/org/scala-lang/foobar_2.11/3.2.1/foobar_2.11-3.2.1.pom'
     )
 
 
-@pytest.mark.skip
 @VCR.use_cassette('maven2_package_registry_fetch_version_number_not_found.yaml')
 def test_fetch_version_number_not_found(registry):
     name = JvmPackageName('org.scala-lang', 'scala-compiler')
@@ -107,11 +104,10 @@ def test_fetch_version_number_not_found(registry):
     assert str(e.value) == (
         'Could not find package version org.scala-lang:scala-compiler:666. '
         '404 Client Error: Not Found for url: '
-        'https://repo.maven.apache.org/maven2/org/scala-lang/scala-compiler/666/scala-compiler-666.pom'
+        'https://repo.maven.apache.org/maven2/org/scala-lang/scala-compiler_2.11/666/scala-compiler_2.11-666.pom'
     )
 
 
-@pytest.mark.skip
 @VCR.use_cassette('maven2_package_registry_fetch_latest_version_group_id_not_found.yaml')
 def test_fetch_latest_version_group_id_not_found(registry):
     name = JvmPackageName('com.example.foobar', 'foobar')
@@ -120,11 +116,10 @@ def test_fetch_latest_version_group_id_not_found(registry):
     assert str(e.value) == (
         'Could not find package version com.example.foobar:foobar:latest. '
         '404 Client Error: Not Found for url: '
-        'https://repo.maven.apache.org/maven2/com/example/foobar/foobar/maven-metadata.xml'
+        'https://repo.maven.apache.org/maven2/com/example/foobar/foobar_2.11/maven-metadata.xml'
     )
 
 
-@pytest.mark.skip
 @VCR.use_cassette('maven2_package_registry_fetch_latest_version_artifact_id_not_found.yaml')
 def test_fetch_latest_version_artifact_id_not_found(registry):
     name = JvmPackageName('org.scala-lang', 'foobar')
@@ -133,5 +128,5 @@ def test_fetch_latest_version_artifact_id_not_found(registry):
     assert str(e.value) == (
         'Could not find package version org.scala-lang:foobar:latest. '
         '404 Client Error: Not Found for url: '
-        'https://repo.maven.apache.org/maven2/org/scala-lang/foobar/maven-metadata.xml'
+        'https://repo.maven.apache.org/maven2/org/scala-lang/foobar_2.11/maven-metadata.xml'
     )
