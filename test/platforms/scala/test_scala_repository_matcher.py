@@ -7,7 +7,7 @@ from app.github.repository import *
 
 
 def build_line(expression):
-    return 'libraryDependencies ++={0}, // this is a "comment"'.format(expression)
+    return f'libraryDependencies ++={expression}, // this is a "comment"'
 
 
 def test_does_not_parse_malformed_scala_dependency_without_scala_version():
@@ -43,6 +43,13 @@ def test_parse_development_scala_dependency_without_scala_version_with_capitaliz
     assert dependency.is_development
 
 
+def test_parse_development_scala_dependency_without_scala_version_with_any_test_configuration():
+    line = build_line('"org.scala-tools" % "scala-stm" % "0.3" % "test->compile"')
+    dependency = parse_scala_dependency(line)
+    assert str(dependency.name) == 'org.scala-tools:scala-stm'
+    assert dependency.is_development
+
+
 def test_parse_runtime_scala_dependency_with_scala_version():
     line = build_line('"org.scala-tools" % "scala-stm_2.11.1" % "0.3"')
     dependency = parse_scala_dependency(line)
@@ -66,6 +73,13 @@ def test_parse_development_scala_dependency_with_scala_version_with_lowercase_te
 
 def test_parse_development_scala_dependency_with_scala_version_with_capitalized_test_string():
     line = build_line('"org.scala-tools" % "scala-stm_2.11.1" % "0.3" % "Test"')
+    dependency = parse_scala_dependency(line)
+    assert str(dependency.name) == 'org.scala-tools:scala-stm_2.11.1'
+    assert dependency.is_development
+
+
+def test_parse_development_scala_dependency_with_scala_version_with_any_test_configuration():
+    line = build_line('"org.scala-tools" % "scala-stm_2.11.1" % "0.3" % "test->compile"')
     dependency = parse_scala_dependency(line)
     assert str(dependency.name) == 'org.scala-tools:scala-stm_2.11.1'
     assert dependency.is_development

@@ -8,18 +8,27 @@ from app.platforms.jvm.package_name import *
 
 
 DEPENDENCY_REGEX = re.compile(
-    r'"(?P<group>[\w\.\-]+)"\s*%%?\s*'    # group id
-    r'"(?P<artifact>[\w\.\-]+)"\s*%\s*'   # artifact id
-    r'"(?P<number>[\w\.\-]+)"'            # version number
-    r'(\s*%\s*(?P<test>"?([Ttest])"?))?'  # optional test tag
+    r'"(?P<group>[\w\.\-]+)"\s*%%?\s*'
+    r'"(?P<artifact>[\w\.\-]+)"\s*%\s*'
+    r'"(?P<number>[\w\.\-]+)"'
+    r'(\s*%\s*(?P<configuration>\S+))?'
 )
+
+TEST_CONFIGURATION_REGEX = re.compile(r'[Tt]est')
+
+
+def __dependency_kind_from(configuration):
+    if configuration:
+        if TEST_CONFIGURATION_REGEX.search(configuration):
+            return DependencyKind.DEVELOPMENT
+    return DependencyKind.RUNTIME
 
 
 def parse_scala_dependency(line):
     m = DEPENDENCY_REGEX.search(line)
     if m:
         name = JvmPackageName(m.group('group'), m.group('artifact'))
-        kind = DependencyKind.DEVELOPMENT if m.group('test') else DependencyKind.RUNTIME
+        kind = __dependency_kind_from(m.group('configuration'))
         return Dependency(name, kind)
 
 
