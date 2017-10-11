@@ -7,11 +7,52 @@ from app.package_descriptor import *
 from app.platforms.jvm.package_name import *
 
 
+# We only support dependencies declared using the % operator tuple. Examples:
+#
+#    "org.hibernate" % "hibernate-validator" % "5.4.1.Final"
+#    "org.hibernate" % "hibernate-entitymanager" % "5.2.11.Final" % "test"
+#
+# We do not support complex constructs, such as:
+#
+#    val slf4jVersion = "1.7.25"
+#    val slf4j = Seq("slf4j-api", "jul-to-slf4j", "jcl-over-slf4j")
+#                  .map("org.slf4j" % _ % slf4jVersion)
+#
+# To interpret that it would be necessary to build a Scala-like compiler.
+#
+# We're not concerned about version numbers for now. However, in case
+# we want to extract them, we must parse them in the format:
+#
+#     "org.codehaus.jackson" % "jackson-core-asl" % "1.9.13"
+#
+# It's also very common to declare a shared version number in a
+# variable, like this:
+#
+#    val http4sVersion = "0.14.2"
+#
+#    val http4s = Seq(
+#      "org.http4s" %% "http4s-dsl" % http4sVersion,
+#      "org.http4s" %% "http4s-jetty" % http4sVersion,
+#      "org.http4s" %% "http4s-argonaut" % http4sVersion,
+#      "org.http4s" %% "http4s-blaze-client" % http4sVersion
+#    )
+#
+# So we would have to implement a two-way parse that first would parse
+# variable assignments, like this:
+#
+#   val fooBar = "0.14.2"
+#   val fooBar := "0.14.2"
+#   var fooBar = "0.14.2"
+#   var fooBar := "0.14.2"
+#
+# We would store these variables inside a dictionary. Then, whenever a
+# variable reference was found inside a dependency declaration, we
+# would substitute it with values from the dictionary.
 DEPENDENCY_REGEX = re.compile(
-    r'"(?P<group>[\w\.\-]+)"\s*%%?\s*'
-    r'"(?P<artifact>[\w\.\-]+)"\s*%\s*'
-    r'"(?P<number>[\w\.\-]+)"'
-    r'(\s*%\s*(?P<configuration>\S+))?'
+    r'"(?P<group>[\w\.\-]+)"\s*%%?'
+    r'\s*"(?P<artifact>[\w\.\-]+)"\s*%'
+    r'\s*"?(?P<number>\S+)"?\s*'
+    r'(%\s*(?P<configuration>\S+))?'
 )
 
 TEST_CONFIGURATION_REGEX = re.compile(r'[Tt]est')
