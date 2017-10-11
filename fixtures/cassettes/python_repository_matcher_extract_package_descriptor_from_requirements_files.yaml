@@ -20,7 +20,7 @@ interactions:
       Content-Length: ['91989']
       Content-Security-Policy: [default-src 'none']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 06 Oct 2017 03:51:04 GMT']
+      Date: ['Fri, 06 Oct 2017 06:18:26 GMT']
       ETag: ['"36e71794619fba83df3d92d502f20dd3"']
       Last-Modified: ['Mon, 02 Oct 2017 14:13:55 GMT']
       Server: [GitHub.com]
@@ -31,12 +31,132 @@ interactions:
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [deny]
       X-GitHub-Media-Type: [github.v3; format=json]
-      X-GitHub-Request-Id: ['B5A0:61EE:296221B:6E8584B:59D6FDA8']
+      X-GitHub-Request-Id: ['A42A:61ED:2AFF120:54A0D18:59D72031']
       X-OAuth-Scopes: ['read:org, read:user, repo']
       X-RateLimit-Limit: ['5000']
-      X-RateLimit-Remaining: ['4812']
-      X-RateLimit-Reset: ['1507263119']
-      X-Runtime-rack: ['0.064079']
+      X-RateLimit-Remaining: ['4945']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.054025']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/alanhamlett/pip-update-requirements/contents/requirements.txt
+  response:
+    body: {string: '{"name":"requirements.txt","path":"requirements.txt","sha":"3af12f5c89c416fd8c1820c52d7f870c42414e50","size":11,"url":"https://api.github.com/repos/alanhamlett/pip-update-requirements/contents/requirements.txt?ref=master","html_url":"https://github.com/alanhamlett/pip-update-requirements/blob/master/requirements.txt","git_url":"https://api.github.com/repos/alanhamlett/pip-update-requirements/git/blobs/3af12f5c89c416fd8c1820c52d7f870c42414e50","download_url":"https://raw.githubusercontent.com/alanhamlett/pip-update-requirements/master/requirements.txt","type":"file","content":"Y2xpY2s9PTYuNwo=\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/alanhamlett/pip-update-requirements/contents/requirements.txt?ref=master","git":"https://api.github.com/repos/alanhamlett/pip-update-requirements/git/blobs/3af12f5c89c416fd8c1820c52d7f870c42414e50","html":"https://github.com/alanhamlett/pip-update-requirements/blob/master/requirements.txt"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['962']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:18:26 GMT']
+      ETag: ['"7107d3387a05a11925d69cdbb3a7bf41"']
+      Last-Modified: ['Mon, 15 May 2017 08:15:32 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A42A:61ED:2AFF18F:54A0D65:59D72032']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4944']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.037948']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/alanhamlett/pip-update-requirements/contents/dev-requirements.txt
+  response:
+    body: {string: '{"name":"dev-requirements.txt","path":"dev-requirements.txt","sha":"c069e5af87080385d2e6bf9e3bc0653b5790c42b","size":105,"url":"https://api.github.com/repos/alanhamlett/pip-update-requirements/contents/dev-requirements.txt?ref=master","html_url":"https://github.com/alanhamlett/pip-update-requirements/blob/master/dev-requirements.txt","git_url":"https://api.github.com/repos/alanhamlett/pip-update-requirements/git/blobs/c069e5af87080385d2e6bf9e3bc0653b5790c42b","download_url":"https://raw.githubusercontent.com/alanhamlett/pip-update-requirements/master/dev-requirements.txt","type":"file","content":"LXIgcmVxdWlyZW1lbnRzLnR4dAoKY292ZXJhZ2U9PTQuNC4xCm1vY2s9PTIu\nMC4wCm5vc2U9PTEuMy43Cm5vc2UtY2FwdHVyZXN0ZGVycj09MS4yCm5vc2Ut\nZXhjbHVkZT09MC41LjAK\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/alanhamlett/pip-update-requirements/contents/dev-requirements.txt?ref=master","git":"https://api.github.com/repos/alanhamlett/pip-update-requirements/git/blobs/c069e5af87080385d2e6bf9e3bc0653b5790c42b","html":"https://github.com/alanhamlett/pip-update-requirements/blob/master/dev-requirements.txt"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1119']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:18:26 GMT']
+      ETag: ['"80a50cd6142fb1d56aa6f4549fdfd212"']
+      Last-Modified: ['Mon, 15 May 2017 08:15:32 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A42A:61ED:2AFF1B2:54A0E25:59D72032']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4943']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.039909']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/alanhamlett/pip-update-requirements/contents/tests/samples/requirements.txt
+  response:
+    body: {string: '{"name":"requirements.txt","path":"tests/samples/requirements.txt","sha":"a9cae88a6fc8746073610fa712b67eda1e63f119","size":149,"url":"https://api.github.com/repos/alanhamlett/pip-update-requirements/contents/tests/samples/requirements.txt?ref=master","html_url":"https://github.com/alanhamlett/pip-update-requirements/blob/master/tests/samples/requirements.txt","git_url":"https://api.github.com/repos/alanhamlett/pip-update-requirements/git/blobs/a9cae88a6fc8746073610fa712b67eda1e63f119","download_url":"https://raw.githubusercontent.com/alanhamlett/pip-update-requirements/master/tests/samples/requirements.txt","type":"file","content":"Zmxhc2s9PTAuOQpmbGFzaz09MTIuMAojIGFuIGVtcHR5IGxpbmUgYmVsb3cK\nCi1lIGdpdDovL2dpdGh1Yi5jb20va2VubmV0aHJlaXR6L2luYm94LnB5Lmdp\ndEA1NTFiNGY0NGIxNDQ1NjQ1MDRjNjg3Y2ViZGI0YzU0M2NiOGU5YWRmI2Vn\nZz1pbmJveApmbGFzawo=\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/alanhamlett/pip-update-requirements/contents/tests/samples/requirements.txt?ref=master","git":"https://api.github.com/repos/alanhamlett/pip-update-requirements/git/blobs/a9cae88a6fc8746073610fa712b67eda1e63f119","html":"https://github.com/alanhamlett/pip-update-requirements/blob/master/tests/samples/requirements.txt"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1237']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:18:27 GMT']
+      ETag: ['"e394433cd295fbae4eb8fc486747a484"']
+      Last-Modified: ['Mon, 15 May 2017 08:15:32 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A42A:61ED:2AFF1DC:54A0E73:59D72032']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4942']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.043715']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
 version: 1

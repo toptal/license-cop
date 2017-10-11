@@ -20,7 +20,7 @@ interactions:
       Content-Length: ['158586']
       Content-Security-Policy: [default-src 'none']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 06 Oct 2017 03:50:52 GMT']
+      Date: ['Fri, 06 Oct 2017 06:16:31 GMT']
       ETag: ['"9893a8683014a37ee1dea22c2e18f92e"']
       Last-Modified: ['Fri, 06 Oct 2017 02:09:45 GMT']
       Server: [GitHub.com]
@@ -31,12 +31,1532 @@ interactions:
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [deny]
       X-GitHub-Media-Type: [github.v3; format=json]
-      X-GitHub-Request-Id: ['BE2F:61ED:28F6097:50D6705:59D6FD9B']
+      X-GitHub-Request-Id: ['A583:61EE:2B0F1A8:73A71BF:59D71FBF']
       X-OAuth-Scopes: ['read:org, read:user, repo']
       X-RateLimit-Limit: ['5000']
-      X-RateLimit-Remaining: ['4853']
-      X-RateLimit-Reset: ['1507263119']
-      X-Runtime-rack: ['0.061873']
+      X-RateLimit-Remaining: ['4991']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.059374']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"package.json","sha":"a0161de89e423fba9be790ccd7ea79763d06a09e","size":2283,"url":"https://api.github.com/repos/browserify/browserify/contents/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/a0161de89e423fba9be790ccd7ea79763d06a09e","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/package.json","type":"file","content":"ewogICJuYW1lIjogImJyb3dzZXJpZnkiLAogICJ2ZXJzaW9uIjogIjE0LjQu\nMCIsCiAgImRlc2NyaXB0aW9uIjogImJyb3dzZXItc2lkZSByZXF1aXJlKCkg\ndGhlIG5vZGUgd2F5IiwKICAibWFpbiI6ICJpbmRleC5qcyIsCiAgImJpbiI6\nIHsKICAgICJicm93c2VyaWZ5IjogImJpbi9jbWQuanMiCiAgfSwKICAicmVw\nb3NpdG9yeSI6IHsKICAgICJ0eXBlIjogImdpdCIsCiAgICAidXJsIjogImh0\ndHA6Ly9naXRodWIuY29tL3N1YnN0YWNrL25vZGUtYnJvd3NlcmlmeS5naXQi\nCiAgfSwKICAia2V5d29yZHMiOiBbCiAgICAiYnJvd3NlciIsCiAgICAicmVx\ndWlyZSIsCiAgICAiY29tbW9uanMiLAogICAgImNvbW1vbmotZXNxdWUiLAog\nICAgImJ1bmRsZSIsCiAgICAibnBtIiwKICAgICJqYXZhc2NyaXB0IgogIF0s\nCiAgImRlcGVuZGVuY2llcyI6IHsKICAgICJKU09OU3RyZWFtIjogIl4xLjAu\nMyIsCiAgICAiYXNzZXJ0IjogIl4xLjQuMCIsCiAgICAiYnJvd3Nlci1wYWNr\nIjogIl42LjAuMSIsCiAgICAiYnJvd3Nlci1yZXNvbHZlIjogIl4xLjExLjAi\nLAogICAgImJyb3dzZXJpZnktemxpYiI6ICJ+MC4xLjIiLAogICAgImJ1ZmZl\nciI6ICJeNS4wLjIiLAogICAgImNhY2hlZC1wYXRoLXJlbGF0aXZlIjogIl4x\nLjAuMCIsCiAgICAiY29uY2F0LXN0cmVhbSI6ICJ+MS41LjEiLAogICAgImNv\nbnNvbGUtYnJvd3NlcmlmeSI6ICJeMS4xLjAiLAogICAgImNvbnN0YW50cy1i\ncm93c2VyaWZ5IjogIn4xLjAuMCIsCiAgICAiY3J5cHRvLWJyb3dzZXJpZnki\nOiAiXjMuMC4wIiwKICAgICJkZWZpbmVkIjogIl4xLjAuMCIsCiAgICAiZGVw\ncy1zb3J0IjogIl4yLjAuMCIsCiAgICAiZG9tYWluLWJyb3dzZXIiOiAifjEu\nMS4wIiwKICAgICJkdXBsZXhlcjIiOiAifjAuMS4yIiwKICAgICJldmVudHMi\nOiAifjEuMS4wIiwKICAgICJnbG9iIjogIl43LjEuMCIsCiAgICAiaGFzIjog\nIl4xLjAuMCIsCiAgICAiaHRtbGVzY2FwZSI6ICJeMS4xLjAiLAogICAgImh0\ndHBzLWJyb3dzZXJpZnkiOiAiXjEuMC4wIiwKICAgICJpbmhlcml0cyI6ICJ+\nMi4wLjEiLAogICAgImluc2VydC1tb2R1bGUtZ2xvYmFscyI6ICJeNy4wLjAi\nLAogICAgImxhYmVsZWQtc3RyZWFtLXNwbGljZXIiOiAiXjIuMC4wIiwKICAg\nICJtb2R1bGUtZGVwcyI6ICJeNC4wLjgiLAogICAgIm9zLWJyb3dzZXJpZnki\nOiAifjAuMS4xIiwKICAgICJwYXJlbnRzIjogIl4xLjAuMSIsCiAgICAicGF0\naC1icm93c2VyaWZ5IjogIn4wLjAuMCIsCiAgICAicHJvY2VzcyI6ICJ+MC4x\nMS4wIiwKICAgICJwdW55Y29kZSI6ICJeMS4zLjIiLAogICAgInF1ZXJ5c3Ry\naW5nLWVzMyI6ICJ+MC4yLjAiLAogICAgInJlYWQtb25seS1zdHJlYW0iOiAi\nXjIuMC4wIiwKICAgICJyZWFkYWJsZS1zdHJlYW0iOiAiXjIuMC4yIiwKICAg\nICJyZXNvbHZlIjogIl4xLjEuNCIsCiAgICAic2hhc3VtIjogIl4xLjAuMCIs\nCiAgICAic2hlbGwtcXVvdGUiOiAiXjEuNi4xIiwKICAgICJzdHJlYW0tYnJv\nd3NlcmlmeSI6ICJeMi4wLjAiLAogICAgInN0cmVhbS1odHRwIjogIl4yLjAu\nMCIsCiAgICAic3RyaW5nX2RlY29kZXIiOiAifjEuMC4wIiwKICAgICJzdWJh\ncmciOiAiXjEuMC4wIiwKICAgICJzeW50YXgtZXJyb3IiOiAiXjEuMS4xIiwK\nICAgICJ0aHJvdWdoMiI6ICJeMi4wLjAiLAogICAgInRpbWVycy1icm93c2Vy\naWZ5IjogIl4xLjAuMSIsCiAgICAidHR5LWJyb3dzZXJpZnkiOiAifjAuMC4w\nIiwKICAgICJ1cmwiOiAifjAuMTEuMCIsCiAgICAidXRpbCI6ICJ+MC4xMC4x\nIiwKICAgICJ2bS1icm93c2VyaWZ5IjogIn4wLjAuMSIsCiAgICAieHRlbmQi\nOiAiXjQuMC4wIgogIH0sCiAgImRldkRlcGVuZGVuY2llcyI6IHsKICAgICJi\nYWNrYm9uZSI6ICJ+MC45LjIiLAogICAgImJyb3dzZXItdW5wYWNrIjogIl4x\nLjEuMSIsCiAgICAiY29mZmVlLXNjcmlwdCI6ICJ+MS4xMC4wIiwKICAgICJj\nb2ZmZWVpZnkiOiAifjEuMS4wIiwKICAgICJlczZpZnkiOiAifjAuNC44IiwK\nICAgICJpc3N0cmVhbSI6ICJeMC4xLjIiLAogICAgInNlcSI6ICIwLjMuNSIs\nCiAgICAidGFwIjogIl4yLjIuMCIsCiAgICAidGVtcCI6ICJeMC44LjEiLAog\nICAgInRocm91Z2giOiAiXjIuMy40IgogIH0sCiAgImF1dGhvciI6IHsKICAg\nICJuYW1lIjogIkphbWVzIEhhbGxpZGF5IiwKICAgICJlbWFpbCI6ICJtYWls\nQHN1YnN0YWNrLm5ldCIsCiAgICAidXJsIjogImh0dHA6Ly9zdWJzdGFjay5u\nZXQiCiAgfSwKICAic2NyaXB0cyI6IHsKICAgICJ0ZXN0IjogInRhcCB0ZXN0\nLyouanMiCiAgfSwKICAibGljZW5zZSI6ICJNSVQiCn0K\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/a0161de89e423fba9be790ccd7ea79763d06a09e","html":"https://github.com/browserify/browserify/blob/master/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['3966']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:32 GMT']
+      ETag: ['"28ad0d5267f1e6afcefb202863c69d77"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F24C:73A72F6:59D71FBF']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4990']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.042382']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/browser_field_file/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/browser_field_file/package.json","sha":"f146bccdb5486274f637b2183f1523e9ad7d238c","size":45,"url":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_file/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/browser_field_file/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/f146bccdb5486274f637b2183f1523e9ad7d238c","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/browser_field_file/package.json","type":"file","content":"ewogICJicm93c2VyIjogewogICAgIi4veHl6IjogIndvdy5qcyIKICB9Cn0K\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_file/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/f146bccdb5486274f637b2183f1523e9ad7d238c","html":"https://github.com/browserify/browserify/blob/master/test/browser_field_file/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1024']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:32 GMT']
+      ETag: ['"d0618c883185fc060eabcb2658061c82"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F280:73A73F1:59D71FC0']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4989']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.041771']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/a/node_modules/aaa/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/browser_field_resolve/a/node_modules/aaa/package.json","sha":"c13b8cf6acfd3344bc2c7969a31d930d933fdf22","size":24,"url":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/a/node_modules/aaa/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/a/node_modules/aaa/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/c13b8cf6acfd3344bc2c7969a31d930d933fdf22","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/browser_field_resolve/a/node_modules/aaa/package.json","type":"file","content":"ewogICJtYWluIjogIm1haW4uanMiCn0K\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/a/node_modules/aaa/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/c13b8cf6acfd3344bc2c7969a31d930d933fdf22","html":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/a/node_modules/aaa/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1128']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:32 GMT']
+      ETag: ['"4a436e66eed0b69704cc99ec8d1a6717"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F2B0:73A747C:59D71FC0']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4988']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.035871']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/a/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/browser_field_resolve/a/package.json","sha":"36ad48686e1c38b622dbf0c8a89719dcb9c0f402","size":40,"url":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/a/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/a/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/36ad48686e1c38b622dbf0c8a89719dcb9c0f402","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/browser_field_resolve/a/package.json","type":"file","content":"ewogICJicm93c2VyIjogewogICAgInp6eiI6ICJhYWEiCiAgfQp9Cg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/a/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/36ad48686e1c38b622dbf0c8a89719dcb9c0f402","html":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/a/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1050']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:32 GMT']
+      ETag: ['"7c595772cd3ae2bff9a18d458a9bfb53"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F2DC:73A74FA:59D71FC0']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4987']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.039136']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/b/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/browser_field_resolve/b/package.json","sha":"ed91400b59fad40c0d7a55268f675f5a76ec18ef","size":40,"url":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/b/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/b/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/ed91400b59fad40c0d7a55268f675f5a76ec18ef","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/browser_field_resolve/b/package.json","type":"file","content":"ewogICJicm93c2VyIjogewogICAgInp6eiI6ICIuL3giCiAgfQp9Cg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/b/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/ed91400b59fad40c0d7a55268f675f5a76ec18ef","html":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/b/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1050']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:33 GMT']
+      ETag: ['"ab11bc185055a7a8f7257e4516cb9be7"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F30A:73A7579:59D71FC0']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4986']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.039302']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/c/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/browser_field_resolve/c/package.json","sha":"2bd5e9ded0cf3f5df39b16f23338a21af25ae834","size":40,"url":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/c/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/c/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/2bd5e9ded0cf3f5df39b16f23338a21af25ae834","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/browser_field_resolve/c/package.json","type":"file","content":"ewogICJicm93c2VyIjogewogICAgIi4veiI6ICIuL3giCiAgfQp9Cg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/c/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/2bd5e9ded0cf3f5df39b16f23338a21af25ae834","html":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/c/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1050']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:33 GMT']
+      ETag: ['"9b3911aed375b3e68910767ce2ba52ad"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F338:73A7604:59D71FC1']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4985']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.036026']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/d/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/browser_field_resolve/d/package.json","sha":"deeed5621c093ac87ee06fc9c2a696368ad82aa9","size":46,"url":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/d/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/d/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/deeed5621c093ac87ee06fc9c2a696368ad82aa9","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/browser_field_resolve/d/package.json","type":"file","content":"ewogICJicm93c2VyIjogewogICAgIi4vei5qcyI6ICIuL3guanMiCiAgfQp9\nCg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/d/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/deeed5621c093ac87ee06fc9c2a696368ad82aa9","html":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/d/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1060']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:33 GMT']
+      ETag: ['"24969af2bf6306606f4bbe2da04b844a"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F363:73A7678:59D71FC1']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4984']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.045852']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/e/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/browser_field_resolve/e/package.json","sha":"8538725e486866c98cd0cdcd2f10f04b119604e2","size":43,"url":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/e/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/e/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/8538725e486866c98cd0cdcd2f10f04b119604e2","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/browser_field_resolve/e/package.json","type":"file","content":"ewogICJicm93c2VyIjogewogICAgIi4veiI6ICIuL3guanMiCiAgfQp9Cg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/e/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/8538725e486866c98cd0cdcd2f10f04b119604e2","html":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/e/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1054']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:33 GMT']
+      ETag: ['"3514012156f531f9d32a932eada1012b"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F38B:73A76FC:59D71FC1']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4983']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.041179']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/f/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/browser_field_resolve/f/package.json","sha":"3390040963e20abe405c6b94435f92efe0028775","size":48,"url":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/f/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/f/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/3390040963e20abe405c6b94435f92efe0028775","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/browser_field_resolve/f/package.json","type":"file","content":"ewogICJicm93c2VyIjogewogICAgImFhYS93aGF0IjogIi4veC5qcyIKICB9\nCn0K\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/f/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/3390040963e20abe405c6b94435f92efe0028775","html":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/f/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1060']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:33 GMT']
+      ETag: ['"87135327c1c1535d489ea1cba8314fd0"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F3B5:73A7776:59D71FC1']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4982']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.037954']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/g/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/browser_field_resolve/g/package.json","sha":"3d0142ce6328e03d25fc53692f875b9e5a3c4311","size":43,"url":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/g/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/g/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/3d0142ce6328e03d25fc53692f875b9e5a3c4311","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/browser_field_resolve/g/package.json","type":"file","content":"ewogICJicm93c2VyIjogewogICAgIi4veC5qcyI6IGZhbHNlCiAgfQp9Cg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/g/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/3d0142ce6328e03d25fc53692f875b9e5a3c4311","html":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/g/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1054']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:34 GMT']
+      ETag: ['"d33717fc0f9bc6762991240913c13758"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F3E1:73A77F6:59D71FC1']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4981']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.040234']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/h/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/browser_field_resolve/h/package.json","sha":"d8bf9d12e913faf576f093dc31ef3cc2640ffaf1","size":40,"url":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/h/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/h/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/d8bf9d12e913faf576f093dc31ef3cc2640ffaf1","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/browser_field_resolve/h/package.json","type":"file","content":"ewogICJicm93c2VyIjogewogICAgIi4veCI6IGZhbHNlCiAgfQp9Cg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/h/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/d8bf9d12e913faf576f093dc31ef3cc2640ffaf1","html":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/h/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1050']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:34 GMT']
+      ETag: ['"136119dca626d2f60da430d0abe0a22f"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F411:73A787A:59D71FC2']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4980']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.044069']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/i/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/browser_field_resolve/i/package.json","sha":"aac08b068528fadef564457acc73ccf4a4b83f9d","size":46,"url":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/i/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/i/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/aac08b068528fadef564457acc73ccf4a4b83f9d","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/browser_field_resolve/i/package.json","type":"file","content":"ewogICJicm93c2VyIjogewogICAgIi4veCI6ICIuL2Jyb3dzZXIiCiAgfQp9\nCg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/i/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/aac08b068528fadef564457acc73ccf4a4b83f9d","html":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/i/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1060']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:34 GMT']
+      ETag: ['"d7e87e8a61019c29b92370e0f8df3c36"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F443:73A7907:59D71FC2']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4979']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.043272']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/j/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/browser_field_resolve/j/package.json","sha":"8f617288f1f7f808c2f387acb694c7251b96b14f","size":52,"url":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/j/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/j/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/8f617288f1f7f808c2f387acb694c7251b96b14f","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/browser_field_resolve/j/package.json","type":"file","content":"ewogICJicm93c2VyIjogewogICAgIi4veC5qcyI6ICIuL2Jyb3dzZXIuanMi\nCiAgfQp9Cg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/j/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/8f617288f1f7f808c2f387acb694c7251b96b14f","html":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/j/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1068']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:34 GMT']
+      ETag: ['"d4033223794f6ed788ca711b7a96d775"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F46C:73A797D:59D71FC2']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4978']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.049067']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/k/node_modules/x/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/browser_field_resolve/k/node_modules/x/package.json","sha":"cf1ec93f4a7b8fa86c746c4c94d7e983b222b1fd","size":44,"url":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/k/node_modules/x/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/k/node_modules/x/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/cf1ec93f4a7b8fa86c746c4c94d7e983b222b1fd","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/browser_field_resolve/k/node_modules/x/package.json","type":"file","content":"ewogICJicm93c2VyIjogewogICAgIi4venp6IjogIi4vaGV5IgogIH0KfQo=\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/k/node_modules/x/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/cf1ec93f4a7b8fa86c746c4c94d7e983b222b1fd","html":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/k/node_modules/x/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1144']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:34 GMT']
+      ETag: ['"e65e7586ec58dfa1548e66f389f32d94"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F493:73A79FF:59D71FC2']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4977']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.035976']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/l/node_modules/x/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/browser_field_resolve/l/node_modules/x/package.json","sha":"aa9ac588b254dea042eda9b2a49fbc3ac9d892c7","size":47,"url":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/l/node_modules/x/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/l/node_modules/x/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/aa9ac588b254dea042eda9b2a49fbc3ac9d892c7","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/browser_field_resolve/l/node_modules/x/package.json","type":"file","content":"ewogICJicm93c2VyIjogewogICAgIi4venp6LmpzIjogIi4vaGV5IgogIH0K\nfQo=\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/browser_field_resolve/l/node_modules/x/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/aa9ac588b254dea042eda9b2a49fbc3ac9d892c7","html":"https://github.com/browserify/browserify/blob/master/test/browser_field_resolve/l/node_modules/x/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1150']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:35 GMT']
+      ETag: ['"8a68a689db9e396557f317a027c8569c"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F4C3:73A7A78:59D71FC2']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4976']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.045549']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/double_bundle_error/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/double_bundle_error/package.json","sha":"ad2f40384d7c63fe66baa19b438d850908d26fde","size":49,"url":"https://api.github.com/repos/browserify/browserify/contents/test/double_bundle_error/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/double_bundle_error/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/ad2f40384d7c63fe66baa19b438d850908d26fde","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/double_bundle_error/package.json","type":"file","content":"ewogICJicm93c2VyIjogewogICAgInRocmVlIjogIi4vdGhyZWUuanMiCiAg\nfQp9Cg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/double_bundle_error/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/ad2f40384d7c63fe66baa19b438d850908d26fde","html":"https://github.com/browserify/browserify/blob/master/test/double_bundle_error/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1040']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:35 GMT']
+      ETag: ['"368dc0122099ba8df15d79e9e0412e72"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F4E7:73A7B05:59D71FC3']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4975']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.046006']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/entry/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/entry/package.json","sha":"ad2f40384d7c63fe66baa19b438d850908d26fde","size":49,"url":"https://api.github.com/repos/browserify/browserify/contents/test/entry/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/entry/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/ad2f40384d7c63fe66baa19b438d850908d26fde","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/entry/package.json","type":"file","content":"ewogICJicm93c2VyIjogewogICAgInRocmVlIjogIi4vdGhyZWUuanMiCiAg\nfQp9Cg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/entry/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/ad2f40384d7c63fe66baa19b438d850908d26fde","html":"https://github.com/browserify/browserify/blob/master/test/entry/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['956']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:35 GMT']
+      ETag: ['"55308dbb1f183a9f822d4186842a995b"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F511:73A7B8B:59D71FC3']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4974']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.042939']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/external_shim/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/external_shim/package.json","sha":"2047ac69932d4242dae235d4602e142b03b2c7e6","size":54,"url":"https://api.github.com/repos/browserify/browserify/contents/test/external_shim/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/external_shim/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/2047ac69932d4242dae235d4602e142b03b2c7e6","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/external_shim/package.json","type":"file","content":"ewogICAgImJyb3dzZXIiOiB7CiAgICAgICAgInNoaW0iOiAiLi9zaGltLmpz\nIgogICAgfQp9\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/external_shim/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/2047ac69932d4242dae235d4602e142b03b2c7e6","html":"https://github.com/browserify/browserify/blob/master/test/external_shim/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1008']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:35 GMT']
+      ETag: ['"9fbb62345b190f74256063d70a50ea48"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F52E:73A7C14:59D71FC3']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4973']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.042396']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/field/node_modules/z-miss/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/field/node_modules/z-miss/package.json","sha":"c1b67aedd55f7eaebd9d9250598e71f68e042cf4","size":50,"url":"https://api.github.com/repos/browserify/browserify/contents/test/field/node_modules/z-miss/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/field/node_modules/z-miss/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/c1b67aedd55f7eaebd9d9250598e71f68e042cf4","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/field/node_modules/z-miss/package.json","type":"file","content":"ewogICAgIm1haW4iIDogIm1haW4uanMiLAogICAgImJyb3dzZXJpZnkiIDog\ne30KfQo=\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/field/node_modules/z-miss/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/c1b67aedd55f7eaebd9d9250598e71f68e042cf4","html":"https://github.com/browserify/browserify/blob/master/test/field/node_modules/z-miss/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1076']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:35 GMT']
+      ETag: ['"47dc7ae62236d0fc11fe60c17b9f03fb"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F553:73A7C86:59D71FC3']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4972']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.043550']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/field/node_modules/z-object/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/field/node_modules/z-object/package.json","sha":"dee081b316f1aea2c6a8d21213137d3131b31b38","size":76,"url":"https://api.github.com/repos/browserify/browserify/contents/test/field/node_modules/z-object/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/field/node_modules/z-object/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/dee081b316f1aea2c6a8d21213137d3131b31b38","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/field/node_modules/z-object/package.json","type":"file","content":"ewogICAgIm1haW4iIDogIm1haW4uanMiLAogICAgImJyb3dzZXJpZnkiIDog\neyAibWFpbi5qcyIgOiAiYnJvd3Nlci5qcyIgfQp9Cg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/field/node_modules/z-object/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/dee081b316f1aea2c6a8d21213137d3131b31b38","html":"https://github.com/browserify/browserify/blob/master/test/field/node_modules/z-object/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1124']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:36 GMT']
+      ETag: ['"a71faf0adc60e5648166587de33e88b8"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F57B:73A7D0B:59D71FC3']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4971']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.039747']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/field/node_modules/z-string/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/field/node_modules/z-string/package.json","sha":"8647c0fb05719293a62b29327159d8cccbbf80e7","size":60,"url":"https://api.github.com/repos/browserify/browserify/contents/test/field/node_modules/z-string/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/field/node_modules/z-string/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/8647c0fb05719293a62b29327159d8cccbbf80e7","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/field/node_modules/z-string/package.json","type":"file","content":"ewogICAgIm1haW4iIDogIm1haW4uanMiLAogICAgImJyb3dzZXJpZnkiIDog\nImJyb3dzZXIuanMiCn0K\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/field/node_modules/z-string/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/8647c0fb05719293a62b29327159d8cccbbf80e7","html":"https://github.com/browserify/browserify/blob/master/test/field/node_modules/z-string/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1100']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:36 GMT']
+      ETag: ['"b86900b0dc8aa7151414469d063ae4d0"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F5AD:73A7D7A:59D71FC4']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4970']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.044167']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/field/node_modules/z-sub/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/field/node_modules/z-sub/package.json","sha":"4f4ed629183570d64b40a0623b05e40fefbf1444","size":62,"url":"https://api.github.com/repos/browserify/browserify/contents/test/field/node_modules/z-sub/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/field/node_modules/z-sub/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/4f4ed629183570d64b40a0623b05e40fefbf1444","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/field/node_modules/z-sub/package.json","type":"file","content":"ewogICAgIm1haW4iIDogIm1haW4uanMiLAogICAgImJyb3dzZXJpZnkiIDog\nImJyb3dzZXIvYS5qcyIKfQo=\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/field/node_modules/z-sub/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/4f4ed629183570d64b40a0623b05e40fefbf1444","html":"https://github.com/browserify/browserify/blob/master/test/field/node_modules/z-sub/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1086']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:36 GMT']
+      ETag: ['"3b08e71086b747cb057bf07c89b75cf5"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F5D3:73A7DF0:59D71FC4']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4969']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.048018']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/ignore_browser_field/node_modules/a/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/ignore_browser_field/node_modules/a/package.json","sha":"d7572b6f98f287423ab6ec0cc9e64c7a553571da","size":88,"url":"https://api.github.com/repos/browserify/browserify/contents/test/ignore_browser_field/node_modules/a/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/ignore_browser_field/node_modules/a/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/d7572b6f98f287423ab6ec0cc9e64c7a553571da","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/ignore_browser_field/node_modules/a/package.json","type":"file","content":"ewogICJuYW1lIjogImEiLAogICJ2ZXJzaW9uIjogIjEuMC4wIiwKICAibWFp\nbiI6ICJtYWluLmpzIiwKICAiYnJvd3NlciI6ICJicm93c2VyLmpzIgp9Cg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/ignore_browser_field/node_modules/a/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/d7572b6f98f287423ab6ec0cc9e64c7a553571da","html":"https://github.com/browserify/browserify/blob/master/test/ignore_browser_field/node_modules/a/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1188']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:36 GMT']
+      ETag: ['"d65cc3d7a99aaab07fce47310c4eecf4"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F5FB:73A7E80:59D71FC4']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4968']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.049142']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/ignore_browser_field/node_modules/b/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/ignore_browser_field/node_modules/b/package.json","sha":"021d8bb38599d02fa21c507e82f844a44d7f4220","size":112,"url":"https://api.github.com/repos/browserify/browserify/contents/test/ignore_browser_field/node_modules/b/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/ignore_browser_field/node_modules/b/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/021d8bb38599d02fa21c507e82f844a44d7f4220","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/ignore_browser_field/node_modules/b/package.json","type":"file","content":"ewogICJuYW1lIjogImIiLAogICJ2ZXJzaW9uIjogIjEuMC4wIiwKICAibWFp\nbiI6ICJtYWluLmpzIiwKICAiYnJvd3NlciI6IHsKICAgICIuL3guanMiOiAi\nLi9icm93c2VyLXguanMiCiAgfQp9Cg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/ignore_browser_field/node_modules/b/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/021d8bb38599d02fa21c507e82f844a44d7f4220","html":"https://github.com/browserify/browserify/blob/master/test/ignore_browser_field/node_modules/b/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1223']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:36 GMT']
+      ETag: ['"25458fd9fafc5ed9a76a03fc36f2f962"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F624:73A7EEE:59D71FC4']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4967']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.043577']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/ignore_transform_key/node_modules/a/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/ignore_transform_key/node_modules/a/package.json","sha":"7d9c4b3d5b2f0218882aa985979b475019027401","size":130,"url":"https://api.github.com/repos/browserify/browserify/contents/test/ignore_transform_key/node_modules/a/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/ignore_transform_key/node_modules/a/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/7d9c4b3d5b2f0218882aa985979b475019027401","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/ignore_transform_key/node_modules/a/package.json","type":"file","content":"ewogICJuYW1lIjogImEiLAogICJ2ZXJzaW9uIjogIjEuMC4wIiwKICAicHJp\ndmF0ZSI6IHRydWUsCiAgImJyb3dzZXJpZnkiOiB7CiAgICAidHJhbnNmb3Jt\nIjogWwogICAgICAiZXZpbC10cmFuc2Zvcm0iCiAgICBdCiAgfQp9Cg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/ignore_transform_key/node_modules/a/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/7d9c4b3d5b2f0218882aa985979b475019027401","html":"https://github.com/browserify/browserify/blob/master/test/ignore_transform_key/node_modules/a/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1247']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:37 GMT']
+      ETag: ['"470e08240fc8a2619ee308de2b6736d2"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F64F:73A7F77:59D71FC4']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4966']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.052499']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/ignore_transform_key/node_modules/evil-transform/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/ignore_transform_key/node_modules/evil-transform/package.json","sha":"81ca8df1a1acada4872a56a4595d1c3f825a3c23","size":72,"url":"https://api.github.com/repos/browserify/browserify/contents/test/ignore_transform_key/node_modules/evil-transform/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/ignore_transform_key/node_modules/evil-transform/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/81ca8df1a1acada4872a56a4595d1c3f825a3c23","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/ignore_transform_key/node_modules/evil-transform/package.json","type":"file","content":"ewogICJuYW1lIjogImV2aWwtdHJhbnNmb3JtIiwKICAidmVyc2lvbiI6ICIx\nLjAuMCIsCiAgInByaXZhdGUiOiB0cnVlCn0K\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/ignore_transform_key/node_modules/evil-transform/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/81ca8df1a1acada4872a56a4595d1c3f825a3c23","html":"https://github.com/browserify/browserify/blob/master/test/ignore_transform_key/node_modules/evil-transform/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1242']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:37 GMT']
+      ETag: ['"8943f02d4f3ec71cfa842f6d9335cbce"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F67C:73A7FFB:59D71FC5']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4965']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.041623']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/noparse/node_modules/robot/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/noparse/node_modules/robot/package.json","sha":"c13b8cf6acfd3344bc2c7969a31d930d933fdf22","size":24,"url":"https://api.github.com/repos/browserify/browserify/contents/test/noparse/node_modules/robot/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/noparse/node_modules/robot/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/c13b8cf6acfd3344bc2c7969a31d930d933fdf22","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/noparse/node_modules/robot/package.json","type":"file","content":"ewogICJtYWluIjogIm1haW4uanMiCn0K\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/noparse/node_modules/robot/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/c13b8cf6acfd3344bc2c7969a31d930d933fdf22","html":"https://github.com/browserify/browserify/blob/master/test/noparse/node_modules/robot/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1044']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:37 GMT']
+      ETag: ['"e78c9cea890a443471e038ca24f267f5"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F6AD:73A8077:59D71FC5']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4964']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.041589']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/pkg/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/pkg/package.json","sha":"cc806a70abdf2ddeba5f7c513d03860cab94f14e","size":19,"url":"https://api.github.com/repos/browserify/browserify/contents/test/pkg/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/pkg/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/cc806a70abdf2ddeba5f7c513d03860cab94f14e","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/pkg/package.json","type":"file","content":"eyAiYmVlcCI6ICJib29wIiB9Cg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/pkg/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/cc806a70abdf2ddeba5f7c513d03860cab94f14e","html":"https://github.com/browserify/browserify/blob/master/test/pkg/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['902']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:37 GMT']
+      ETag: ['"4d2aeb59fcba360d6f64693e6aa188d3"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F6DA:73A8102:59D71FC5']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4963']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.050013']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/pkg_event/node_modules/aaa/lib/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/pkg_event/node_modules/aaa/lib/package.json","sha":"b47402f550102a52c452605a8e36ab835b37fc50","size":44,"url":"https://api.github.com/repos/browserify/browserify/contents/test/pkg_event/node_modules/aaa/lib/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/pkg_event/node_modules/aaa/lib/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/b47402f550102a52c452605a8e36ab835b37fc50","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/pkg_event/node_modules/aaa/lib/package.json","type":"file","content":"ewogICJuYW1lIjogImFhYS1saWIiLAogICJtYWluIjogIndvby5qcyIKfQo=\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/pkg_event/node_modules/aaa/lib/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/b47402f550102a52c452605a8e36ab835b37fc50","html":"https://github.com/browserify/browserify/blob/master/test/pkg_event/node_modules/aaa/lib/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1096']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:37 GMT']
+      ETag: ['"f2eee9a12793aa02d295b394e72c2aec"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F709:73A8180:59D71FC5']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4962']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.040922']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/pkg_event/node_modules/aaa/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/pkg_event/node_modules/aaa/package.json","sha":"e9f2198f4b63a041ba9d22ec82c16a6321d21012","size":41,"url":"https://api.github.com/repos/browserify/browserify/contents/test/pkg_event/node_modules/aaa/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/pkg_event/node_modules/aaa/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/e9f2198f4b63a041ba9d22ec82c16a6321d21012","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/pkg_event/node_modules/aaa/package.json","type":"file","content":"ewogICJuYW1lIjogImFhYSIsCiAgIm1haW4iOiAibWFpbi5qcyIKfQo=\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/pkg_event/node_modules/aaa/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/e9f2198f4b63a041ba9d22ec82c16a6321d21012","html":"https://github.com/browserify/browserify/blob/master/test/pkg_event/node_modules/aaa/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1068']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:38 GMT']
+      ETag: ['"5a491aaf00b849ee1f6f06e9fb555b79"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F73B:73A81F2:59D71FC5']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4961']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.039793']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/pkg_event/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/pkg_event/package.json","sha":"21d82d8e6a61faa15b3b51d439f5f45082c444af","size":26,"url":"https://api.github.com/repos/browserify/browserify/contents/test/pkg_event/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/pkg_event/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/21d82d8e6a61faa15b3b51d439f5f45082c444af","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/pkg_event/package.json","type":"file","content":"ewogICJuYW1lIjogInBrZ19ldmVudCIKfQo=\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/pkg_event/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/21d82d8e6a61faa15b3b51d439f5f45082c444af","html":"https://github.com/browserify/browserify/blob/master/test/pkg_event/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['946']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:38 GMT']
+      ETag: ['"383d2c019c7d7b2f98d0fa08a7d32e97"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F769:73A826F:59D71FC6']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4960']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.040297']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/subdep/node_modules/qq/node_modules/a/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/subdep/node_modules/qq/node_modules/a/package.json","sha":"ea2ec7205994f5af16dd16a1ca6b75630258c2f8","size":51,"url":"https://api.github.com/repos/browserify/browserify/contents/test/subdep/node_modules/qq/node_modules/a/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/subdep/node_modules/qq/node_modules/a/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/ea2ec7205994f5af16dd16a1ca6b75630258c2f8","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/subdep/node_modules/qq/node_modules/a/package.json","type":"file","content":"ewogICAgImRlcGVuZGVuY2llcyIgOiB7CiAgICAgICAgInoiIDogIioiCiAg\nICB9Cn0K\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/subdep/node_modules/qq/node_modules/a/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/ea2ec7205994f5af16dd16a1ca6b75630258c2f8","html":"https://github.com/browserify/browserify/blob/master/test/subdep/node_modules/qq/node_modules/a/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1148']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:38 GMT']
+      ETag: ['"4ce51c87e5c0bee2a348b2c1a8d2f703"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F78F:73A82FA:59D71FC6']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4959']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.037128']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/subdep/node_modules/qq/node_modules/c/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/subdep/node_modules/qq/node_modules/c/package.json","sha":"0d0cfd59dd50325c8784a167db84c0bb44989652","size":51,"url":"https://api.github.com/repos/browserify/browserify/contents/test/subdep/node_modules/qq/node_modules/c/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/subdep/node_modules/qq/node_modules/c/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/0d0cfd59dd50325c8784a167db84c0bb44989652","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/subdep/node_modules/qq/node_modules/c/package.json","type":"file","content":"ewogICAgImRlcGVuZGVuY2llcyIgOiB7CiAgICAgICAgImYiIDogIioiCiAg\nICB9Cn0K\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/subdep/node_modules/qq/node_modules/c/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/0d0cfd59dd50325c8784a167db84c0bb44989652","html":"https://github.com/browserify/browserify/blob/master/test/subdep/node_modules/qq/node_modules/c/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1148']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:38 GMT']
+      ETag: ['"e304fc9200e582c65b010c5578ebfffd"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F7B5:73A836F:59D71FC6']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4958']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.047083']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/subdep/node_modules/qq/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/subdep/node_modules/qq/package.json","sha":"d693ab5988653ac953e7394982d6fc0c957f2385","size":26,"url":"https://api.github.com/repos/browserify/browserify/contents/test/subdep/node_modules/qq/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/subdep/node_modules/qq/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/d693ab5988653ac953e7394982d6fc0c957f2385","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/subdep/node_modules/qq/package.json","type":"file","content":"ewogICAgIm1haW4iIDogIi4vYi5qcyIKfQo=\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/subdep/node_modules/qq/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/d693ab5988653ac953e7394982d6fc0c957f2385","html":"https://github.com/browserify/browserify/blob/master/test/subdep/node_modules/qq/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1024']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:38 GMT']
+      ETag: ['"f036fde7417637a51c992ccf1d554a79"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F7E0:73A83F5:59D71FC6']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4957']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.039306']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/subdep/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/subdep/package.json","sha":"518d22aa96aaa11732d424b2bd86e91beaff98bc","size":77,"url":"https://api.github.com/repos/browserify/browserify/contents/test/subdep/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/subdep/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/518d22aa96aaa11732d424b2bd86e91beaff98bc","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/subdep/package.json","type":"file","content":"ewogICAgImRlcGVuZGVuY2llcyIgOiB7CiAgICAgICAgInFxIiA6ICIqIgog\nICAgfSwKICAgICJtYWluIiA6ICJpbmRleC5qcyIKfQo=\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/subdep/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/518d22aa96aaa11732d424b2bd86e91beaff98bc","html":"https://github.com/browserify/browserify/blob/master/test/subdep/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['998']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:38 GMT']
+      ETag: ['"3d53e821a98b17c4c04ae75d100c31f7"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F808:73A8469:59D71FC6']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4956']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.047078']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/tr/node_modules/g/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/tr/node_modules/g/package.json","sha":"3a16bd4588db28b6d1a6ac81184ab7bff0a3ad54","size":78,"url":"https://api.github.com/repos/browserify/browserify/contents/test/tr/node_modules/g/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/tr/node_modules/g/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/3a16bd4588db28b6d1a6ac81184ab7bff0a3ad54","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/tr/node_modules/g/package.json","type":"file","content":"ewogICJtYWluIjogImluZGV4LmpzIiwKICAiYnJvd3NlcmlmeSI6IHsKICAg\nICJ0cmFuc2Zvcm0iOiAiaW5zZXJ0LWdnZyIKICB9Cn0K\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/tr/node_modules/g/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/3a16bd4588db28b6d1a6ac81184ab7bff0a3ad54","html":"https://github.com/browserify/browserify/blob/master/test/tr/node_modules/g/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1064']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:39 GMT']
+      ETag: ['"8dba5e34e63b0ab457f5a88471ac68fd"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F837:73A84E4:59D71FC6']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4955']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.042807']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/tr/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/tr/package.json","sha":"6687fa119792827f09c6c9fc330b72931810788e","size":53,"url":"https://api.github.com/repos/browserify/browserify/contents/test/tr/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/tr/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/6687fa119792827f09c6c9fc330b72931810788e","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/tr/package.json","type":"file","content":"ewogICJicm93c2VyaWZ5IjogewogICAgInRyYW5zZm9ybSI6IFsgInh5eiIg\nXQogIH0KfQo=\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/tr/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/6687fa119792827f09c6c9fc330b72931810788e","html":"https://github.com/browserify/browserify/blob/master/test/tr/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['942']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:39 GMT']
+      ETag: ['"38cd113efed3a0076ae19b3fb757b93f"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F85E:73A8557:59D71FC7']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4954']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.037895']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/browserify/browserify/contents/test/tr_symlink/app/package.json
+  response:
+    body: {string: '{"name":"package.json","path":"test/tr_symlink/app/package.json","sha":"2f2bbfff8c2041167651c1a0ff74a67432bba2bb","size":52,"url":"https://api.github.com/repos/browserify/browserify/contents/test/tr_symlink/app/package.json?ref=master","html_url":"https://github.com/browserify/browserify/blob/master/test/tr_symlink/app/package.json","git_url":"https://api.github.com/repos/browserify/browserify/git/blobs/2f2bbfff8c2041167651c1a0ff74a67432bba2bb","download_url":"https://raw.githubusercontent.com/browserify/browserify/master/test/tr_symlink/app/package.json","type":"file","content":"ewogICJicm93c2VyaWZ5IjogewogICAgInRyYW5zZm9ybSI6IFsgInRyIiBd\nCiAgfQp9Cg==\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/browserify/browserify/contents/test/tr_symlink/app/package.json?ref=master","git":"https://api.github.com/repos/browserify/browserify/git/blobs/2f2bbfff8c2041167651c1a0ff74a67432bba2bb","html":"https://github.com/browserify/browserify/blob/master/test/tr_symlink/app/package.json"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1014']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:16:39 GMT']
+      ETag: ['"b1345b8a84b00e48724eb24a030fe7be"']
+      Last-Modified: ['Thu, 31 Aug 2017 21:06:29 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['A583:61EE:2B0F88D:73A85E0:59D71FC7']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4953']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.038416']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
 version: 1

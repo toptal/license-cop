@@ -69,7 +69,7 @@ def test_read_empty_file(repository):
 
 @VCR.use_cassette('github_repository_read_directory.yaml')
 def test_read_directory(repository):
-    with pytest.raises(Exception) as e:
+    with pytest.raises(ValueError) as e:
         repository.read_text_file('fixtures')
     assert str(e.value) == 'Path "fixtures" is not a file.'
 
@@ -90,3 +90,125 @@ def test_str():
     url = 'https://github.com/toptal/license-cop'
     repo = GithubRepository.from_url(url)
     assert str(repo) == url
+
+
+def test_repr():
+    url = 'https://github.com/toptal/license-cop'
+    repo = GithubRepository.from_url(url)
+    assert repr(repo) == 'GitHub repository https://github.com/toptal/license-cop'
+
+
+def has_blob(tree, path):
+    node = tree.navigate(path)
+    if node:
+        return not node.is_tree
+
+
+def has_tree(tree, path):
+    node = tree.navigate(path)
+    if node:
+        return node.is_tree
+
+
+def test_fetch_master_tree():
+    repo = GithubRepository.from_url('https://github.com/requests/requests')
+    tree = repo.fetch_tree()
+
+    assert has_blob(tree, '.coveragerc')
+    assert has_tree(tree, '.github')
+    assert has_blob(tree, '.github/ISSUE_TEMPLATE.md')
+    assert has_blob(tree, '.gitignore')
+    assert has_blob(tree, '.travis.yml')
+    assert has_blob(tree, 'AUTHORS.rst')
+    assert has_blob(tree, 'CODE_OF_CONDUCT.md')
+    assert has_blob(tree, 'CONTRIBUTING.md')
+    assert has_blob(tree, 'HISTORY.rst')
+    assert has_blob(tree, 'LICENSE')
+    assert has_blob(tree, 'MANIFEST.in')
+    assert has_blob(tree, 'Makefile')
+    assert has_blob(tree, 'Pipfile')
+    assert has_blob(tree, 'Pipfile.lock')
+    assert has_blob(tree, 'README.rst')
+    assert has_tree(tree, '_appveyor')
+    assert has_blob(tree, '_appveyor/install.ps1')
+    assert has_blob(tree, 'appveyor.yml')
+    assert has_tree(tree, 'docs')
+    assert has_blob(tree, 'docs/Makefile')
+    assert has_tree(tree, 'docs/_static')
+    assert has_blob(tree, 'docs/_static/custom.css')
+    assert has_blob(tree, 'docs/_static/konami.js')
+    assert has_blob(tree, 'docs/_static/requests-logo-small.png')
+    assert has_blob(tree, 'docs/_static/requests-sidebar.png')
+    assert has_tree(tree, 'docs/_templates')
+    assert has_blob(tree, 'docs/_templates/hacks.html')
+    assert has_blob(tree, 'docs/_templates/sidebarintro.html')
+    assert has_blob(tree, 'docs/_templates/sidebarlogo.html')
+    assert has_tree(tree, 'docs/_themes')
+    assert has_blob(tree, 'docs/_themes/.gitignore')
+    assert has_blob(tree, 'docs/_themes/LICENSE')
+    assert has_blob(tree, 'docs/_themes/flask_theme_support.py')
+    assert has_blob(tree, 'docs/api.rst')
+    assert has_tree(tree, 'docs/community')
+    assert has_blob(tree, 'docs/community/faq.rst')
+    assert has_blob(tree, 'docs/community/out-there.rst')
+    assert has_blob(tree, 'docs/community/recommended.rst')
+    assert has_blob(tree, 'docs/community/release-process.rst')
+    assert has_blob(tree, 'docs/community/support.rst')
+    assert has_blob(tree, 'docs/community/updates.rst')
+    assert has_blob(tree, 'docs/community/vulnerabilities.rst')
+    assert has_blob(tree, 'docs/conf.py')
+    assert has_tree(tree, 'docs/dev')
+    assert has_blob(tree, 'docs/dev/authors.rst')
+    assert has_blob(tree, 'docs/dev/contributing.rst')
+    assert has_blob(tree, 'docs/dev/philosophy.rst')
+    assert has_blob(tree, 'docs/dev/todo.rst')
+    assert has_blob(tree, 'docs/index.rst')
+    assert has_blob(tree, 'docs/make.bat')
+    assert has_tree(tree, 'docs/user')
+    assert has_blob(tree, 'docs/user/advanced.rst')
+    assert has_blob(tree, 'docs/user/authentication.rst')
+    assert has_blob(tree, 'docs/user/install.rst')
+    assert has_blob(tree, 'docs/user/intro.rst')
+    assert has_blob(tree, 'docs/user/quickstart.rst')
+    assert has_tree(tree, 'ext')
+    assert has_blob(tree, 'ext/requests-logo.ai')
+    assert has_blob(tree, 'ext/requests-logo.svg')
+    assert has_blob(tree, 'pytest.ini')
+    assert has_tree(tree, 'requests')
+    assert has_blob(tree, 'requests/__init__.py')
+    assert has_blob(tree, 'requests/__version__.py')
+    assert has_blob(tree, 'requests/_internal_utils.py')
+    assert has_blob(tree, 'requests/adapters.py')
+    assert has_blob(tree, 'requests/api.py')
+    assert has_blob(tree, 'requests/auth.py')
+    assert has_blob(tree, 'requests/certs.py')
+    assert has_blob(tree, 'requests/compat.py')
+    assert has_blob(tree, 'requests/cookies.py')
+    assert has_blob(tree, 'requests/exceptions.py')
+    assert has_blob(tree, 'requests/help.py')
+    assert has_blob(tree, 'requests/hooks.py')
+    assert has_blob(tree, 'requests/models.py')
+    assert has_blob(tree, 'requests/packages.py')
+    assert has_blob(tree, 'requests/sessions.py')
+    assert has_blob(tree, 'requests/status_codes.py')
+    assert has_blob(tree, 'requests/structures.py')
+    assert has_blob(tree, 'requests/utils.py')
+    assert has_blob(tree, 'setup.cfg')
+    assert has_blob(tree, 'setup.py')
+    assert has_tree(tree, 'tests')
+    assert has_blob(tree, 'tests/__init__.py')
+    assert has_blob(tree, 'tests/compat.py')
+    assert has_blob(tree, 'tests/conftest.py')
+    assert has_blob(tree, 'tests/test_help.py')
+    assert has_blob(tree, 'tests/test_hooks.py')
+    assert has_blob(tree, 'tests/test_lowlevel.py')
+    assert has_blob(tree, 'tests/test_packages.py')
+    assert has_blob(tree, 'tests/test_requests.py')
+    assert has_blob(tree, 'tests/test_structures.py')
+    assert has_blob(tree, 'tests/test_testserver.py')
+    assert has_blob(tree, 'tests/test_utils.py')
+    assert has_tree(tree, 'tests/testserver')
+    assert has_blob(tree, 'tests/testserver/__init__.py')
+    assert has_blob(tree, 'tests/testserver/server.py')
+    assert has_blob(tree, 'tests/utils.py')
+    assert has_blob(tree, 'tox.ini')

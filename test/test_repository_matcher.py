@@ -1,8 +1,9 @@
 import pytest
 from test import *
 
-from app.github.repository import *
-from app.repository_matcher import *
+from app.github.git_node import GitNode
+from app.github.repository import GithubRepository
+from app.repository_matcher import RepositoryMatcher
 
 
 class FakeRepositoryMatcher(RepositoryMatcher):
@@ -14,143 +15,95 @@ class FakeRepositoryMatcher(RepositoryMatcher):
 
 
 @pytest.fixture
-def repository(mocker):
-    repo = GithubRepository.from_url('https://github.com/toptal/toptal-bot')
-    mocker.patch.object(repo, 'path_exists')
+def repository(mocker, tree):
+    repo = GithubRepository.from_url('https://github.com/toptal/license-cop')
+    mocker.patch.object(repo, 'fetch_tree')
+    repo.fetch_tree.return_value = tree
     return repo
 
 
-def test_match_one_pattern_with_one_file(repository):
-    repository.path_exists.return_value = True
+@pytest.fixture
+def tree():
+    root = GitNode.root()
+    root.add_blob('requirements.txt')
+    root.add_blob('requirements-test.txt')
+    root.add_blob('foo/Pipfile')
+    root.add_blob('foo/bar/requirements-dev.txt')
+    root.add_blob('foo/bar/requirements-docs.txt')
+    root.add_blob('foo/bar/foobar.py')
+    root.add_blob('foo/bar/Pipfile')
+    root.add_blob('foo/bar/beer/Pipfile')
+    root.add_blob('Foo.gemspec')
+    root.add_blob('Bar.gemspec')
+    root.add_blob('README.md')
+    root.add_blob('Gemfile')
+    root.add_blob('Gemfile.lock')
+    root.add_blob('LICENSE')
+    return root
 
-    pattern = PackageDescriptorPattern.one_file('pipfile', 'Pipfile')
-    matcher = FakeRepositoryMatcher([pattern])
 
+def test_one_pattern_mismatch(tree, repository):
+    matcher = FakeRepositoryMatcher(['FOOBAR'])
     match = matcher.match(repository)
-    assert match is not None
-    assert len(match.pattern_matches) == 1
-
-    pattern_match = match.pattern_matches[0]
-    assert pattern_match.paths == ['Pipfile']
-    assert pattern_match.pattern_id == pattern.id
+    assert match is None
 
 
-def test_mismatch_one_pattern_with_one_file(repository):
-    repository.path_exists.return_value = False
-
-    pattern = PackageDescriptorPattern.one_file('pipfile', 'Pipfile')
-    matcher = FakeRepositoryMatcher([pattern])
-
-    assert matcher.match(repository) is None
-
-
-def test_match_one_pattern_with_multiple_files_where_one_match(repository):
-    repository.path_exists.side_effect = [False, True, False]
-
-    pattern = PackageDescriptorPattern.multiple_files('pipfile', ['foo', 'Pipfile', 'bar'])
-    matcher = FakeRepositoryMatcher([pattern])
-
+def test_multiple_patterns_mismatch(tree, repository):
+    matcher = FakeRepositoryMatcher(['FOOBAR', 'hello.py'])
     match = matcher.match(repository)
-    assert match is not None
-    assert len(match.pattern_matches) == 1
-
-    pattern_match = match.pattern_matches[0]
-    assert pattern_match.paths == ['Pipfile']
-    assert pattern_match.pattern_id == pattern.id
+    assert match is None
 
 
-def test_match_one_pattern_with_multiple_files_where_all_match(repository):
-    repository.path_exists.return_value = True
-
-    pattern = PackageDescriptorPattern.multiple_files('pipfile', ['foo', 'Pipfile', 'bar'])
-    matcher = FakeRepositoryMatcher([pattern])
-
+def test_one_pattern_match_one_path(tree, repository):
+    matcher = FakeRepositoryMatcher(['Gemfile'])
     match = matcher.match(repository)
+
     assert match is not None
-    assert len(match.pattern_matches) == 1
-
-    pattern_match = match.pattern_matches[0]
-    assert pattern_match.paths == ['foo', 'Pipfile', 'bar']
-    assert pattern_match.pattern_id == pattern.id
+    assert len(match.package_descriptor_matches) == 1
+    assert match.package_descriptor_matches[0].nodes == [tree.navigate('Gemfile')]
 
 
-def test_mismatch_one_pattern_with_multiple_files_where_none_match(repository):
-    repository.path_exists.return_value = False
+def test_one_pattern_match_multiple_paths_in_same_directory(tree, repository):
+    matcher = FakeRepositoryMatcher(['*.gemspec'])
+    match = matcher.match(repository)
 
-    pattern = PackageDescriptorPattern.multiple_files('pipfile', ['foo', 'Pipfile', 'bar'])
-    matcher = FakeRepositoryMatcher([pattern])
-
-    assert matcher.match(repository) is None
-
-
-def test_match_multiple_patterns_where_one_match(repository):
-    repository.path_exists.side_effect = [False, False, False, False, True, False]
-
-    matching_pattern = PackageDescriptorPattern.multiple_files('c', ['package.json', 'foo'])
-    matcher = FakeRepositoryMatcher([
-        PackageDescriptorPattern.multiple_files('a', ['foo', 'Pipfile', 'bar']),
-        PackageDescriptorPattern.one_file('b', 'Gemfile'),
-        matching_pattern
+    assert match is not None
+    assert len(match.package_descriptor_matches) == 1
+    assert set(match.package_descriptor_matches[0].nodes) == set([
+        tree.navigate('Foo.gemspec'),
+        tree.navigate('Bar.gemspec')
     ])
 
+
+def test_one_pattern_match_multiple_paths_in_multiple_directories(tree, repository):
+    matcher = FakeRepositoryMatcher(['Pipfile'])
     match = matcher.match(repository)
+
     assert match is not None
+    assert len(match.package_descriptor_matches) == 3
+    assert match.package_descriptor_matches[0].nodes == [tree.navigate('foo/Pipfile')]
+    assert match.package_descriptor_matches[1].nodes == [tree.navigate('foo/bar/Pipfile')]
+    assert match.package_descriptor_matches[2].nodes == [tree.navigate('foo/bar/beer/Pipfile')]
 
-    assert len(match.pattern_matches) == 1
-    pattern_match = match.pattern_matches[0]
-    assert pattern_match.pattern == matching_pattern
-    assert pattern_match.paths == ['package.json']
 
-
-def test_match_multiple_patterns_where_one_match(repository):
-    repository.path_exists.side_effect = [False, False, False, False, True, False]
-
-    matching_pattern = PackageDescriptorPattern.multiple_files('c', ['package.json', 'foo'])
+def test_multiple_patterns_match_multiple_paths_in_multiple_directories(tree, repository):
     matcher = FakeRepositoryMatcher([
-        PackageDescriptorPattern.multiple_files('a', ['foo', 'Pipfile', 'bar']),
-        PackageDescriptorPattern.one_file('b', 'Gemfile'),
-        matching_pattern
+        'Pipfile',
+        'FOOBAR',
+        'requirements*.txt'
     ])
-
     match = matcher.match(repository)
+
     assert match is not None
-
-    assert len(match.pattern_matches) == 1
-    pattern_match = match.pattern_matches[0]
-    assert pattern_match.pattern_id == matching_pattern.id
-    assert pattern_match.paths == ['package.json']
-
-
-def test_match_multiple_patterns_where_all_match(repository):
-    repository.path_exists.side_effect = [False, True, False, True, True, False]
-
-    patterns = [
-        PackageDescriptorPattern.multiple_files('a', ['foo', 'Pipfile', 'bar']),
-        PackageDescriptorPattern.one_file('b', 'Gemfile'),
-        PackageDescriptorPattern.multiple_files('c', ['package.json', 'foo'])
+    assert len(match.package_descriptor_matches) == 4
+    assert set(match.package_descriptor_matches[0].nodes) == set([
+        tree.navigate('requirements.txt'),
+        tree.navigate('requirements-test.txt')
+    ])
+    assert match.package_descriptor_matches[1].nodes == [tree.navigate('foo/Pipfile')]
+    assert match.package_descriptor_matches[2].nodes == [
+        tree.navigate('foo/bar/Pipfile'),
+        tree.navigate('foo/bar/requirements-dev.txt'),
+        tree.navigate('foo/bar/requirements-docs.txt')
     ]
-    matcher = FakeRepositoryMatcher(patterns)
-
-    match = matcher.match(repository)
-    assert match is not None
-
-    assert len(match.pattern_matches) == 3
-    assert match.pattern_matches[0].pattern_id == 'a'
-    assert match.pattern_matches[0].paths == ['Pipfile']
-    assert match.pattern_matches[1].pattern_id == 'b'
-    assert match.pattern_matches[1].paths == ['Gemfile']
-    assert match.pattern_matches[2].pattern_id == 'c'
-    assert match.pattern_matches[2].paths == ['package.json']
-
-
-def test_mismatch_multiple_patterns(repository):
-    repository.path_exists.return_value = False
-
-    patterns = [
-        PackageDescriptorPattern.multiple_files('a', ['foo', 'Pipfile', 'bar']),
-        PackageDescriptorPattern.one_file('b', 'Gemfile'),
-        PackageDescriptorPattern.multiple_files('c', ['package.json', 'foo'])
-    ]
-    matcher = FakeRepositoryMatcher(patterns)
-
-    assert matcher.match(repository) is None
+    assert match.package_descriptor_matches[3].nodes == [tree.navigate('foo/bar/beer/Pipfile')]

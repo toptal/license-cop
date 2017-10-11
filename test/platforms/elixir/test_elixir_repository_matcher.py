@@ -33,12 +33,11 @@ def test_mismatch_repository_without_mixfile(matcher, python_repository):
     assert matcher.match(python_repository) is None
 
 
-@VCR.use_cassette('elixir_repository_matcher_single_package_descriptor.yaml')
-def test_single_package_descriptor(matcher, elixir_repository):
+@VCR.use_cassette('elixir_repository_matcher_mixfile_package_descriptor.yaml')
+def test_mixfile_package_descriptor(matcher, elixir_repository):
     match = matcher.match(elixir_repository)
 
     descriptors = match.package_descriptors()
-    assert len(descriptors) == 1
     descriptor = descriptors[0]
 
     assert descriptor.platform == 'Elixir'
