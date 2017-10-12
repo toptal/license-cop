@@ -41,19 +41,19 @@ interactions:
 '}
     headers:
       Accept-Ranges: [bytes]
-      Age: ['0']
+      Age: ['16082']
       Connection: [keep-alive]
       Content-Length: ['554']
       Content-Type: [text/html]
-      Date: ['Wed, 11 Oct 2017 22:55:07 GMT']
+      Date: ['Thu, 12 Oct 2017 03:23:09 GMT']
       ETag: ['"1fb066da6a67c7c02962f59b4b8cd1ee"']
       Fastly-Debug-Digest: [581e4908c5ece42a076b1bf1f418e1fae89f9fa036fc51a367c6ad21e901f215]
       Last-Modified: ['Wed, 10 Aug 2016 15:08:35 GMT']
       Via: [1.1 varnish, 1.1 varnish]
-      X-Cache: ['HIT, MISS']
-      X-Cache-Hits: ['1, 0']
-      X-Served-By: ['cache-iad2151-IAD, cache-mia17629-MIA']
-      X-Timer: ['S1507762507.351912,VS0,VE28']
+      X-Cache: ['HIT, HIT']
+      X-Cache-Hits: ['1, 1']
+      X-Served-By: ['cache-iad2151-IAD, cache-mia17621-MIA']
+      X-Timer: ['S1507778589.483839,VS0,VE1']
       x-amz-error-code: [NoSuchKey]
       x-amz-error-detail-Key: [maven2/com/example/foobar/foobar/maven-metadata.xml]
       x-amz-error-message: [The specified key does not exist.]
@@ -66,7 +66,7 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.18.4]
     method: GET
-    uri: https://repo.maven.apache.org/maven2/com/example/foobar/foobar_2.11/maven-metadata.xml
+    uri: https://repo.maven.apache.org/maven2/com/example/foobar/foobar/maven-metadata.xml
   response:
     body: {string: '<html>
 
@@ -100,21 +100,21 @@ interactions:
 '}
     headers:
       Accept-Ranges: [bytes]
-      Age: ['0']
+      Age: ['16082']
       Connection: [keep-alive]
       Content-Length: ['554']
       Content-Type: [text/html]
-      Date: ['Wed, 11 Oct 2017 22:55:07 GMT']
+      Date: ['Thu, 12 Oct 2017 03:23:09 GMT']
       ETag: ['"1fb066da6a67c7c02962f59b4b8cd1ee"']
-      Fastly-Debug-Digest: [32697a33dafae35cbb514784aafb02d251f6e926515eb2daeb50f28bc86264b9]
+      Fastly-Debug-Digest: [581e4908c5ece42a076b1bf1f418e1fae89f9fa036fc51a367c6ad21e901f215]
       Last-Modified: ['Wed, 10 Aug 2016 15:08:35 GMT']
       Via: [1.1 varnish, 1.1 varnish]
-      X-Cache: ['HIT, MISS']
-      X-Cache-Hits: ['1, 0']
-      X-Served-By: ['cache-iad2132-IAD, cache-mia17629-MIA']
-      X-Timer: ['S1507762508.500950,VS0,VE25']
+      X-Cache: ['HIT, HIT']
+      X-Cache-Hits: ['1, 2']
+      X-Served-By: ['cache-iad2151-IAD, cache-mia17621-MIA']
+      X-Timer: ['S1507778590.605696,VS0,VE0']
       x-amz-error-code: [NoSuchKey]
-      x-amz-error-detail-Key: [maven2/com/example/foobar/foobar_2.11/maven-metadata.xml]
+      x-amz-error-detail-Key: [maven2/com/example/foobar/foobar/maven-metadata.xml]
       x-amz-error-message: [The specified key does not exist.]
     status: {code: 404, message: Not Found}
 version: 1

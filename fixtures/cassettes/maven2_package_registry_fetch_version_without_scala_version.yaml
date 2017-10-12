@@ -1,0 +1,34 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://repo.maven.apache.org/maven2/org/scala-lang/scala-compiler/2.9.0/scala-compiler-2.9.0.pom
+  response:
+    body: {string: "<project\n        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        \n\txsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd\">\n\t<modelVersion>4.0.0</modelVersion>\n\t<groupId>org.scala-lang</groupId>\n\t<artifactId>scala-compiler</artifactId>\n\t<packaging>jar</packaging>\n\t<version>2.9.0</version>\n\t<url>http://www.scala-lang.org/</url>\n\t<inceptionYear>2002</inceptionYear>\n\t<organization>\n\t\t<name>LAMP/EPFL</name>\n\t\t<url>http://lamp.epfl.ch/</url>\n\t</organization>\n\t<licenses>\n\t\t<license>\n\t\t\t<name>BSD-like</name>\n\t\t\t<url>http://www.scala-lang.org/downloads/license.html\n\t\t\t</url>\n\t\t\t<distribution>repo</distribution>\n\t\t</license>\n\t</licenses>\n\t<scm>\n\t\t<connection>scm:svn:http://lampsvn.epfl.ch/svn-repos/scala/scala/trunk</connection>\n\t\t<url>https://lampsvn.epfl.ch/trac/scala/browser/scala/trunk</url>\n\t</scm>\n\t<issueManagement>\n\t\t<system>trac</system>\n\t\t<url>http://lampsvn.epfl.ch/trac/scala\n\t\t</url>\n\t</issueManagement>\n\n\t<dependencies>\n\t\t<dependency>\n\t\t\t<groupId>org.scala-lang</groupId>\n\t\t\t<artifactId>scala-library</artifactId>\n\t\t\t<version>2.9.0</version>\n\t\t</dependency>\n
+        \   <dependency>\n      <groupId>org.scala-lang</groupId>\n      <artifactId>jline</artifactId>\n
+        \     <version>2.9.0</version>\n      <optional>true</optional>\n    </dependency>\n\t</dependencies>\n\t<distributionManagement>\n\t\t<repository>\n\t\t\t<id>scala-tools.org</id>\n\t\t\t<url>http://nexus.scala-tools.org/content/repositories/releases</url>\n\t\t</repository>\n\t\t<snapshotRepository>\n\t\t\t<id>scala-tools.org</id>\n\t\t\t<url>http://nexus.scala-tools.org/content/repositories/snapshots</url>\n\t\t\t<uniqueVersion>false</uniqueVersion>\n\t\t</snapshotRepository>\n\t</distributionManagement>\n</project>\n"}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['161']
+      Connection: [keep-alive]
+      Content-Length: ['1697']
+      Content-Type: [text/xml]
+      Date: ['Thu, 12 Oct 2017 03:14:57 GMT']
+      ETag: ['"4bcfb0dbbe3c88cc8eab17c31d1c4f9e"']
+      Fastly-Debug-Digest: [7ff03e812d23ad5acac227b429c6855595fa3d25cf9286450140bee79d77f013]
+      Last-Modified: ['Wed, 11 May 2011 16:52:25 GMT']
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['HIT, HIT']
+      X-Cache-Hits: ['1, 1']
+      X-Checksum-MD5: [4bcfb0dbbe3c88cc8eab17c31d1c4f9e]
+      X-Checksum-SHA1: [3204cfd14c16cf1084cce70feb3aa2486fd9db97]
+      X-Served-By: ['cache-iad2122-IAD, cache-mia17631-MIA']
+      X-Timer: ['S1507778097.430262,VS0,VE0']
+    status: {code: 200, message: OK}
+version: 1

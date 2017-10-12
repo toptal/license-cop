@@ -10,24 +10,14 @@ METADATA_URL = 'https://repo.maven.apache.org/maven2/{group}/{artifact}/maven-me
 POM_URL = 'https://repo.maven.apache.org/maven2/{group}/{artifact}/{number}/{artifact}-{number}.pom'
 
 
-# TODO: temporarily hard-coding the Scala version here. It should be parsed from SBT.
-SCALA_VERSION = '2.11'
-
-
 class Maven2PackageRegistry(PackageRegistry):
-
-    class __PomId(DataObject):
-        def __init__(self, name, number):
-            self.group_id = name.group_id
-            self.artifact_id = name.artifact_id
-            self.version = number
 
     def __init__(self, http_compression=True):
         super().__init__(http_compression)
         self.__pom_cache = {}
 
     def get_pom(self, name, number):
-        id = self.__PomId(name, number)
+        id = (name, number)
         if id in self.__pom_cache:
             return self.__pom_cache[id]
         pom = self.__fetch_pom(name, number)
@@ -53,18 +43,16 @@ class Maven2PackageRegistry(PackageRegistry):
         return self._fetch_version(name, metadata.latest_version)
 
     def __fetch_pom(self, name, number):
-        response = self.__http_get_pom(name.group_path, name.artifact_id, number)
+        response = self.__http_get_pom(name.group_path, name.artifact_id_with_scala_version, number)
         if response.status_code == 404:
-            artifact_id = name.artifact_id_with_default_scala_version(SCALA_VERSION)
-            response = self.__http_get_pom(name.group_path, artifact_id, number)
+            response = self.__http_get_pom(name.group_path, name.artifact_id_without_scala_version, number)
             response.raise_for_status()
         return MavenPom.parse(response.text, self)
 
     def __fetch_metadata(self, name):
-        response = self.__http_get_metadata(name.group_path, name.artifact_id)
+        response = self.__http_get_metadata(name.group_path, name.artifact_id_with_scala_version)
         if response.status_code == 404:
-            artifact_id = name.artifact_id_with_default_scala_version(SCALA_VERSION)
-            response = self.__http_get_metadata(name.group_path, artifact_id)
+            response = self.__http_get_metadata(name.group_path, name.artifact_id_without_scala_version)
             response.raise_for_status()
         return MavenMetadata.parse(response.text)
 

@@ -29,11 +29,11 @@ interactions:
         \           <version>2.10.6</version>\n        </dependency>\n    </dependencies>\n</project>"}
     headers:
       Accept-Ranges: [bytes]
-      Age: ['155']
+      Age: ['594']
       Connection: [keep-alive]
       Content-Length: ['1639']
       Content-Type: [text/xml]
-      Date: ['Sun, 08 Oct 2017 22:10:36 GMT']
+      Date: ['Thu, 12 Oct 2017 03:14:56 GMT']
       ETag: ['"aa17de8005d37535d5751cc8154691a2"']
       Fastly-Debug-Digest: [b4ddb329748f42bfc079c3738614d7d77e30ccc09321818173a585a883a14dd2]
       Last-Modified: ['Wed, 07 Sep 2016  4:08:53 GMT']
@@ -42,7 +42,7 @@ interactions:
       X-Cache-Hits: ['1, 1']
       X-Checksum-MD5: [aa17de8005d37535d5751cc8154691a2]
       X-Checksum-SHA1: [4c9dda0adf5b12a7297e4678e2016a344e948f19]
-      X-Served-By: ['cache-iad2127-IAD, cache-atl6229-ATL']
-      X-Timer: ['S1507500637.867245,VS0,VE1']
+      X-Served-By: ['cache-iad2143-IAD, cache-mia17624-MIA']
+      X-Timer: ['S1507778097.951278,VS0,VE0']
     status: {code: 200, message: OK}
 version: 1

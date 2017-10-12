@@ -12,8 +12,8 @@ def registry():
     return Maven2PackageRegistry(http_compression=False)
 
 
-@VCR.use_cassette('maven2_package_registry_fetch_version.yaml')
-def test_fetch_version(registry):
+@VCR.use_cassette('maven2_package_registry_fetch_version_with_scala_version.yaml')
+def test_fetch_version_with_scala_version(registry):
     name = JvmPackageName('org.spire-math', 'kind-projector_2.10')
     version = registry.fetch_version(name, '0.8.2')
     assert version.name == name
@@ -26,22 +26,22 @@ def test_fetch_version(registry):
     assert version.development_dependencies == []
 
 
-@VCR.use_cassette('maven2_package_registry_fetch_version_appending_scala_version.yaml')
-def test_fetch_version_appending_scala_version(registry):
-    name = JvmPackageName('org.spire-math', 'kind-projector')
-    version = registry.fetch_version(name, '0.8.2')
+@VCR.use_cassette('maven2_package_registry_fetch_version_without_scala_version.yaml')
+def test_fetch_version_without_scala_version(registry):
+    name = JvmPackageName('org.scala-lang', 'scala-compiler')
+    version = registry.fetch_version(name, '2.9.0')
     assert version.name == name
-    assert version.number == '0.8.2'
-    assert version.licenses == ['MIT']
+    assert version.number == '2.9.0'
+    assert version.licenses == ['BSD-like']
     assert set(version.runtime_dependencies) == set([
-        Dependency.runtime(JvmPackageName('org.scala-lang', 'scala-compiler')),
-        Dependency.runtime(JvmPackageName('org.scala-lang', 'scala-library'))
+        Dependency.runtime(JvmPackageName('org.scala-lang', 'scala-library')),
+        Dependency.runtime(JvmPackageName('org.scala-lang', 'jline'))
     ])
     assert version.development_dependencies == []
 
 
-@VCR.use_cassette('maven2_package_registry_fetch_latest_version.yaml')
-def test_fetch_latest_version(registry):
+@VCR.use_cassette('maven2_package_registry_fetch_latest_version_with_scala_version.yaml')
+def test_fetch_latest_version_with_scala_version(registry):
     name = JvmPackageName('org.spire-math', 'kind-projector_2.10')
     version = registry.fetch_latest_version(name)
     assert version.name == name
@@ -58,16 +58,18 @@ def test_fetch_latest_version(registry):
     ])
 
 
-@VCR.use_cassette('maven2_package_registry_fetch_latest_version_appending_scala_version.yaml')
-def test_fetch_latest_version_appending_scala_version(registry):
-    name = JvmPackageName('org.spire-math', 'kind-projector')
-    version = registry.fetch_version(name, '0.8.2')
+@VCR.use_cassette('maven2_package_registry_fetch_latest_version_without_scala_version.yaml')
+def test_fetch_latest_version_without_scala_version(registry):
+    name = JvmPackageName('org.scala-lang', 'scala-compiler')
+    version = registry.fetch_latest_version(name)
     assert version.name == name
-    assert version.number == '0.8.2'
-    assert version.licenses == ['MIT']
+    assert version.number == '2.13.0-M2'
+    assert version.licenses == ['BSD 3-Clause']
     assert set(version.runtime_dependencies) == set([
-        Dependency.runtime(JvmPackageName('org.scala-lang', 'scala-compiler')),
-        Dependency.runtime(JvmPackageName('org.scala-lang', 'scala-library'))
+        Dependency.runtime(JvmPackageName('jline', 'jline')),
+        Dependency.runtime(JvmPackageName('org.scala-lang', 'scala-library')),
+        Dependency.runtime(JvmPackageName('org.scala-lang', 'scala-reflect')),
+        Dependency.runtime(JvmPackageName('org.scala-lang.modules', 'scala-xml_2.13.0-M2'))
     ])
     assert version.development_dependencies == []
 
@@ -80,7 +82,7 @@ def test_fetch_version_group_id_not_found(registry):
     assert str(e.value) == (
         'Could not find package version com.example.foobar:foobar:3.2.1. '
         '404 Client Error: Not Found for url: '
-        'https://repo.maven.apache.org/maven2/com/example/foobar/foobar_2.11/3.2.1/foobar_2.11-3.2.1.pom'
+        'https://repo.maven.apache.org/maven2/com/example/foobar/foobar/3.2.1/foobar-3.2.1.pom'
     )
 
 
@@ -92,7 +94,7 @@ def test_fetch_version_artifact_id_not_found(registry):
     assert str(e.value) == (
         'Could not find package version org.scala-lang:foobar:3.2.1. '
         '404 Client Error: Not Found for url: '
-        'https://repo.maven.apache.org/maven2/org/scala-lang/foobar_2.11/3.2.1/foobar_2.11-3.2.1.pom'
+        'https://repo.maven.apache.org/maven2/org/scala-lang/foobar/3.2.1/foobar-3.2.1.pom'
     )
 
 
@@ -104,7 +106,7 @@ def test_fetch_version_number_not_found(registry):
     assert str(e.value) == (
         'Could not find package version org.scala-lang:scala-compiler:666. '
         '404 Client Error: Not Found for url: '
-        'https://repo.maven.apache.org/maven2/org/scala-lang/scala-compiler_2.11/666/scala-compiler_2.11-666.pom'
+        'https://repo.maven.apache.org/maven2/org/scala-lang/scala-compiler/666/scala-compiler-666.pom'
     )
 
 
@@ -116,7 +118,7 @@ def test_fetch_latest_version_group_id_not_found(registry):
     assert str(e.value) == (
         'Could not find package version com.example.foobar:foobar:latest. '
         '404 Client Error: Not Found for url: '
-        'https://repo.maven.apache.org/maven2/com/example/foobar/foobar_2.11/maven-metadata.xml'
+        'https://repo.maven.apache.org/maven2/com/example/foobar/foobar/maven-metadata.xml'
     )
 
 
@@ -128,5 +130,5 @@ def test_fetch_latest_version_artifact_id_not_found(registry):
     assert str(e.value) == (
         'Could not find package version org.scala-lang:foobar:latest. '
         '404 Client Error: Not Found for url: '
-        'https://repo.maven.apache.org/maven2/org/scala-lang/foobar_2.11/maven-metadata.xml'
+        'https://repo.maven.apache.org/maven2/org/scala-lang/foobar/maven-metadata.xml'
     )

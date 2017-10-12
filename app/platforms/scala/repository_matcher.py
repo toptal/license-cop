@@ -57,6 +57,8 @@ DEPENDENCY_REGEX = re.compile(
 
 TEST_CONFIGURATION_REGEX = re.compile(r'[Tt]est')
 
+SCALA_VERSION_REGEX = re.compile(r'scalaVersion\s:?=\s*"(\S+)"')
+
 
 def __dependency_kind_from(configuration):
     if configuration:
@@ -65,12 +67,18 @@ def __dependency_kind_from(configuration):
     return DependencyKind.RUNTIME
 
 
-def parse_scala_dependency(line):
+def parse_scala_dependency(line, scala_version=None):
     m = DEPENDENCY_REGEX.search(line)
     if m:
-        name = JvmPackageName(m.group('group'), m.group('artifact'))
+        name = JvmPackageName(m.group('group'), m.group('artifact'), scala_version)
         kind = __dependency_kind_from(m.group('configuration'))
         return Dependency(name, kind)
+
+
+def parse_scala_version(line):
+    m = SCALA_VERSION_REGEX.search(line)
+    if m:
+        return m.group(1)
 
 
 class ScalaRepositoryMatcher(RepositoryMatcher):
@@ -82,10 +90,8 @@ class ScalaRepositoryMatcher(RepositoryMatcher):
         assert len(match.nodes) == 1
         build_sbt = match.nodes[0]
 
-        paths = []
-        paths.append(build_sbt.path)
-        paths.extend(self.__paths_from_project_folder(build_sbt))
-        dependencies = self.__extract_dependencies(repository, paths)
+        paths = [build_sbt.path] + self.__paths_from_project_folder(build_sbt)
+        dependencies = self.__parse_scala_files(repository, paths)
 
         return PackageDescriptor(
             platform='Scala',
@@ -103,14 +109,25 @@ class ScalaRepositoryMatcher(RepositoryMatcher):
             scala_files.extend(project_folder.deep_search('*.scala'))
         return [i.path for i in scala_files]
 
-    def __extract_dependencies(self, repository, paths):
+    def __parse_scala_files(self, repository, paths):
+        lines = self.__all_lines(repository, paths)
+        scala_version = self.__find_scala_version(lines)
+        return self.__extract_dependencies(lines, scala_version)
+
+    def __find_scala_version(self, lines):
+        for line in lines:
+            s = parse_scala_version(line)
+            if s:
+                return s
+
+    def __extract_dependencies(self, lines, scala_version):
         dependencies = set()
-        for line in self.__all_lines(repository, paths):
-            d = parse_scala_dependency(line)
+        for line in lines:
+            d = parse_scala_dependency(line, scala_version)
             if d:
                 dependencies.add(d)
         return dependencies
 
     def __all_lines(self, repository, paths):
         text_files = (repository.read_text_file(i) for i in paths)
-        return chain.from_iterable(i.splitlines() for i in text_files)
+        return list(chain.from_iterable(i.splitlines() for i in text_files))

@@ -41,19 +41,19 @@ interactions:
 '}
     headers:
       Accept-Ranges: [bytes]
-      Age: ['0']
+      Age: ['16148']
       Connection: [keep-alive]
       Content-Length: ['554']
       Content-Type: [text/html]
-      Date: ['Wed, 11 Oct 2017 22:54:00 GMT']
+      Date: ['Thu, 12 Oct 2017 03:23:08 GMT']
       ETag: ['"1fb066da6a67c7c02962f59b4b8cd1ee"']
       Fastly-Debug-Digest: [72cd1acdd99b95d0cea6b744f5515a851ea94af2fb8cf47d95d1cc4586046628]
       Last-Modified: ['Wed, 10 Aug 2016 15:08:35 GMT']
       Via: [1.1 varnish, 1.1 varnish]
-      X-Cache: ['HIT, MISS']
-      X-Cache-Hits: ['1, 0']
-      X-Served-By: ['cache-iad2130-IAD, cache-mia17625-MIA']
-      X-Timer: ['S1507762440.487651,VS0,VE26']
+      X-Cache: ['HIT, HIT']
+      X-Cache-Hits: ['1, 1']
+      X-Served-By: ['cache-iad2130-IAD, cache-mia17628-MIA']
+      X-Timer: ['S1507778589.886194,VS0,VE1']
       x-amz-error-code: [NoSuchKey]
       x-amz-error-detail-Key: [maven2/org/scala-lang/scala-compiler/666/scala-compiler-666.pom]
       x-amz-error-message: [The specified key does not exist.]
@@ -66,7 +66,7 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.18.4]
     method: GET
-    uri: https://repo.maven.apache.org/maven2/org/scala-lang/scala-compiler_2.11/666/scala-compiler_2.11-666.pom
+    uri: https://repo.maven.apache.org/maven2/org/scala-lang/scala-compiler/666/scala-compiler-666.pom
   response:
     body: {string: '<html>
 
@@ -100,21 +100,21 @@ interactions:
 '}
     headers:
       Accept-Ranges: [bytes]
-      Age: ['0']
+      Age: ['16148']
       Connection: [keep-alive]
       Content-Length: ['554']
       Content-Type: [text/html]
-      Date: ['Wed, 11 Oct 2017 22:54:00 GMT']
+      Date: ['Thu, 12 Oct 2017 03:23:09 GMT']
       ETag: ['"1fb066da6a67c7c02962f59b4b8cd1ee"']
-      Fastly-Debug-Digest: [a1f6b1c8bbf85f4962b9e03196d0d9e5acafb054f57fa08b4bc47fefcc81bea7]
+      Fastly-Debug-Digest: [72cd1acdd99b95d0cea6b744f5515a851ea94af2fb8cf47d95d1cc4586046628]
       Last-Modified: ['Wed, 10 Aug 2016 15:08:35 GMT']
       Via: [1.1 varnish, 1.1 varnish]
-      X-Cache: ['HIT, MISS']
-      X-Cache-Hits: ['1, 0']
-      X-Served-By: ['cache-iad2139-IAD, cache-mia17625-MIA']
-      X-Timer: ['S1507762441.634819,VS0,VE28']
+      X-Cache: ['HIT, HIT']
+      X-Cache-Hits: ['1, 2']
+      X-Served-By: ['cache-iad2130-IAD, cache-mia17628-MIA']
+      X-Timer: ['S1507778589.007750,VS0,VE0']
       x-amz-error-code: [NoSuchKey]
-      x-amz-error-detail-Key: [maven2/org/scala-lang/scala-compiler_2.11/666/scala-compiler_2.11-666.pom]
+      x-amz-error-detail-Key: [maven2/org/scala-lang/scala-compiler/666/scala-compiler-666.pom]
       x-amz-error-message: [The specified key does not exist.]
     status: {code: 404, message: Not Found}
 version: 1

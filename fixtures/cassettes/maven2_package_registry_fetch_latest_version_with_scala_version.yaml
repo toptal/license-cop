@@ -18,21 +18,21 @@ interactions:
         \   </versions>\n    <lastUpdated>20170530144248</lastUpdated>\n  </versioning>\n</metadata>\n"}
     headers:
       Accept-Ranges: [bytes]
-      Age: ['11321']
+      Age: ['0']
       Connection: [keep-alive]
       Content-Length: ['619']
       Content-Type: [text/xml]
-      Date: ['Sun, 08 Oct 2017 22:10:37 GMT']
+      Date: ['Thu, 12 Oct 2017 03:16:28 GMT']
       ETag: ['"d93171316984b3cf2c31cd47a403d48e"']
       Fastly-Debug-Digest: [ad17a96fb2ca0e5a83f14338bc51a8c50359024f52c596f239621472551e456f]
       Last-Modified: ['Tue, 30 May 2017 14:42:48 GMT']
       Via: [1.1 varnish, 1.1 varnish]
-      X-Cache: ['HIT, HIT']
-      X-Cache-Hits: ['1, 1']
+      X-Cache: ['HIT, MISS']
+      X-Cache-Hits: ['1, 0']
       X-Checksum-MD5: [d93171316984b3cf2c31cd47a403d48e]
       X-Checksum-SHA1: [1fc22c9de4c497ad4ace576a05e45a269ed07449]
-      X-Served-By: ['cache-iad2150-IAD, cache-atl6235-ATL']
-      X-Timer: ['S1507500637.468618,VS0,VE0']
+      X-Served-By: ['cache-iad2138-IAD, cache-mia17621-MIA']
+      X-Timer: ['S1507778188.134469,VS0,VE25']
     status: {code: 200, message: OK}
 - request:
     body: null
@@ -71,20 +71,20 @@ interactions:
         \   </dependencies>\n</project>"}
     headers:
       Accept-Ranges: [bytes]
-      Age: ['11300']
+      Age: ['0']
       Connection: [keep-alive]
       Content-Length: ['2231']
       Content-Type: [text/xml]
-      Date: ['Sun, 08 Oct 2017 22:10:37 GMT']
+      Date: ['Thu, 12 Oct 2017 03:16:28 GMT']
       ETag: ['"b746663f9961ce4828bd5151074ac0ec"']
       Fastly-Debug-Digest: [650663de7cf92c2ae3aa8085098d132981b87bcbe1b25e5cdccba8e5b44f96ef]
       Last-Modified: ['Tue, 30 May 2017 14:41:22 GMT']
       Via: [1.1 varnish, 1.1 varnish]
-      X-Cache: ['HIT, HIT']
-      X-Cache-Hits: ['1, 1']
+      X-Cache: ['HIT, MISS']
+      X-Cache-Hits: ['1, 0']
       X-Checksum-MD5: [b746663f9961ce4828bd5151074ac0ec]
       X-Checksum-SHA1: [517f67924700ecdea8f71ae8114a156611ccf0d8]
-      X-Served-By: ['cache-iad2139-IAD, cache-atl6235-ATL']
-      X-Timer: ['S1507500638.619257,VS0,VE1']
+      X-Served-By: ['cache-iad2130-IAD, cache-mia17621-MIA']
+      X-Timer: ['S1507778188.281643,VS0,VE25']
     status: {code: 200, message: OK}
 version: 1
