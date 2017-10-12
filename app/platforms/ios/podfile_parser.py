@@ -8,5 +8,5 @@ grammar = pod_definition
 
 
 class PodfileParser:
-  def get_pod_names(self, content):
+  def parse(self, content):
       return (match[1] for match in grammar.searchString(content))

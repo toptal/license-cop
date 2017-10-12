@@ -6,7 +6,6 @@ from app.dependency import *
 
 
 POD_URI = 'https://cocoapods.org/pods/{0}'
-VERSIONS_URI = 'https://rubygems.org/api/v1/versions/{0}.json'
 PODSPEC_URL_REGEX = re.compile(r"<a\s+href=\"([^\"]+?)\"\s*>\s*See Podspec\s*<\/a>", re.S)
 
 

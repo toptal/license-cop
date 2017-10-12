@@ -4,31 +4,48 @@ from app.dependency import *
 from app.repository_matcher import *
 from app.package_descriptor import *
 from app.platforms.ios.podfile_parser import PodfileParser
+from app.platforms.ios.podspec_parser import PodspecParser
 
+
+PODFILE_PATTERN = 'Podfile'
+PODSPEC_PATTERN = '*.podspec'
+PATTERNS = [PODFILE_PATTERN, PODSPEC_PATTERN]
 
 class IosRepositoryMatcher(RepositoryMatcher):
 
     def __init__(self):
-        super().__init__([PackageDescriptorPattern.one_file('podfile', 'Podfile')])
+        super().__init__(PATTERNS)
 
-    def _fetch_package_descriptor(self, repository, pattern_match):
-        assert len(pattern_match.paths) == 1
-        podfile = pattern_match.paths[0]
-
-        data = repository.read_text_file(podfile)
-
+    def _fetch_package_descriptor(self, repository, match):
         dependencies = []
-        for name in PodfileParser().get_pod_names(data):
-            dependency = self.__build_dependency(name)
-            dependencies.append(dependency)
+        for node in match.nodes:
+            data = repository.read_text_file(node.path)
+            parser = self.__get_parser(node)
+            for name in parser.parse(data):
+                dependency = self.__build_dependency(name)
+                dependencies.append(dependency)
 
         return PackageDescriptor(
             platform='iOS',
             repository=repository,
-            paths=[podfile],
+            paths=match.paths,
             runtime_dependencies=dependencies,
-            development_dependencies=[]  # TODO
+            development_dependencies=[]
         )
 
     def __build_dependency(self, name):
         return Dependency.runtime(name)
+
+    def __get_parser(self, node):
+        if self.__podfile(node):
+            return PodfileParser()
+        elif self.__podspec(node):
+            return PodspecParser()
+        else:
+            raise RuntimeError(f'Unrecognized node: {node}')
+
+    def __podfile(self, node):
+        return node.match(PODFILE_PATTERN)
+
+    def __podspec(self, node):
+        return node.match(PODSPEC_PATTERN)

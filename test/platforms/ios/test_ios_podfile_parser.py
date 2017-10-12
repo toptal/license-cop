@@ -10,7 +10,7 @@ def parser():
 
 
 def test_parse_empty_file(parser):
-    assert list(parser.get_pod_names('')) == []
+    assert list(parser.parse('')) == []
 
 
 def test_file_without_pods(parser):
@@ -19,7 +19,7 @@ def test_file_without_pods(parser):
         target :hello do
         end
     """
-    assert list(parser.get_pod_names(content)) == []
+    assert list(parser.parse(content)) == []
 
 
 def test_file_with_pods(parser):
@@ -32,7 +32,7 @@ def test_file_with_pods(parser):
             pod 'Pod4'
         end
     """
-    assert list(parser.get_pod_names(content)) == [
+    assert list(parser.parse(content)) == [
         'Pod1',
         'Pod2',
         'Pod3',
