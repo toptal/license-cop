@@ -128,8 +128,7 @@ class MavenPom:
 
     @staticmethod
     def __extract_urls(data):
-        urls = list()
-        urls.append(data.get('url'))
+        urls = [data.get('url')]
         if data.get('scm') and 'url' in data['scm']:
             urls.append(data['scm'].get('url'))
         return set(filter(None, urls))
@@ -141,9 +140,5 @@ class MavenPom:
 
     @staticmethod
     def __trim_invalid_characters(xml):
-        trim_index = 0
-        for i, char in enumerate(xml):
-            if char == '<':
-                trim_index = i
-                break
-        return xml[trim_index:]
+        pos = xml.find('<')
+        return xml[max(0, pos):]

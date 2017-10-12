@@ -46,14 +46,14 @@ class Maven2PackageRegistry(PackageRegistry):
         response = self.__http_get_pom(name.group_path, name.artifact_id_with_scala_version, number)
         if response.status_code == 404:
             response = self.__http_get_pom(name.group_path, name.artifact_id_without_scala_version, number)
-            response.raise_for_status()
+        response.raise_for_status()
         return MavenPom.parse(response.text, self)
 
     def __fetch_metadata(self, name):
         response = self.__http_get_metadata(name.group_path, name.artifact_id_with_scala_version)
         if response.status_code == 404:
             response = self.__http_get_metadata(name.group_path, name.artifact_id_without_scala_version)
-            response.raise_for_status()
+        response.raise_for_status()
         return MavenMetadata.parse(response.text)
 
     def __http_get_metadata(self, group_path, artifact_id):
