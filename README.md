@@ -18,8 +18,8 @@ The following platforms are supported:
 - Node.js — [NPM](https://www.npmjs.com):
   - [x] `package.json`
 - Scala:
-  - [ ] [`build.sbt`](http://www.scala-sbt.org/1.x/docs/Library-Dependencies.html)
-  - [ ] [`project` folder](http://www.scala-sbt.org/1.0/docs/Directories.html) with `*.scala` or `*.sbt` files
+  - [x] [`build.sbt`](http://www.scala-sbt.org/1.x/docs/Library-Dependencies.html)
+  - [x] [`project` folder](http://www.scala-sbt.org/1.0/docs/Directories.html) with `*.scala` or `*.sbt` files
 - JVM (Java, Scala...):
   - [ ] [Ivy](http://ant.apache.org/ivy/history/2.0.0/ivyfile.html) (`*.ivy` files)
   - [ ] [Maven](https://maven.apache.org/pom.html) (`*.pom` files)

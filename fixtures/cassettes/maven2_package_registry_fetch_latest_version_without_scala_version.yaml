@@ -1,0 +1,146 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://repo.maven.apache.org/maven2/org/scala-lang/scala-compiler/maven-metadata.xml
+  response:
+    body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<metadata>\n  <groupId>org.scala-lang</groupId>\n
+        \ <artifactId>scala-compiler</artifactId>\n  <versioning>\n    <latest>2.13.0-M2</latest>\n
+        \   <release>2.13.0-M2</release>\n    <versions>\n      <version>2.3.1</version>\n
+        \     <version>2.3.3</version>\n      <version>2.4.0-RC1</version>\n      <version>2.4.0-RC2</version>\n
+        \     <version>2.4.0</version>\n      <version>2.5.0-RC1</version>\n      <version>2.5.0-RC2</version>\n
+        \     <version>2.5.0</version>\n      <version>2.5.1</version>\n      <version>2.6.0-RC2</version>\n
+        \     <version>2.6.0-RC3</version>\n      <version>2.6.0</version>\n      <version>2.6.1-rc1</version>\n
+        \     <version>2.6.1-rc2</version>\n      <version>2.6.1</version>\n      <version>2.7.0-rc1</version>\n
+        \     <version>2.7.0-rc2</version>\n      <version>2.7.0-rc3</version>\n      <version>2.7.0</version>\n
+        \     <version>2.7.1-rc1</version>\n      <version>2.7.1-rc2</version>\n      <version>2.7.1</version>\n
+        \     <version>2.7.2-rc1</version>\n      <version>2.7.2-rc2</version>\n      <version>2.7.2-rc3</version>\n
+        \     <version>2.7.2-rc6</version>\n      <version>2.7.2</version>\n      <version>2.7.3.RC1</version>\n
+        \     <version>2.7.3.RC2</version>\n      <version>2.7.3</version>\n      <version>2.7.4.RC1</version>\n
+        \     <version>2.7.4</version>\n      <version>2.7.4.final</version>\n      <version>2.7.5</version>\n
+        \     <version>2.7.6</version>\n      <version>2.7.7.RC1</version>\n      <version>2.7.7.RC2</version>\n
+        \     <version>2.7.7</version>\n      <version>2.8.0.Beta1-RC1</version>\n
+        \     <version>2.8.0.Beta1-RC2</version>\n      <version>2.8.0.Beta1-RC3</version>\n
+        \     <version>2.8.0.Beta1-RC4</version>\n      <version>2.8.0.Beta1-RC5</version>\n
+        \     <version>2.8.0.Beta1-RC6</version>\n      <version>2.8.0.Beta1-RC7</version>\n
+        \     <version>2.8.0.Beta1-RC8</version>\n      <version>2.8.0.Beta1</version>\n
+        \     <version>2.8.0.RC1</version>\n      <version>2.8.0.RC2</version>\n      <version>2.8.0.RC3</version>\n
+        \     <version>2.8.0.RC4</version>\n      <version>2.8.0.RC5</version>\n      <version>2.8.0.RC6</version>\n
+        \     <version>2.8.0.RC7</version>\n      <version>2.8.0</version>\n      <version>2.8.0.r18462-b20090811081019</version>\n
+        \     <version>2.8.1.RC1</version>\n      <version>2.8.1.RC2</version>\n      <version>2.8.1.RC3</version>\n
+        \     <version>2.8.1.RC4</version>\n      <version>2.8.1</version>\n      <version>2.8.2.RC1</version>\n
+        \     <version>2.8.2.RC2</version>\n      <version>2.8.2.RC3</version>\n      <version>2.8.2</version>\n
+        \     <version>2.9.0.RC1</version>\n      <version>2.9.0.RC2</version>\n      <version>2.9.0.RC3</version>\n
+        \     <version>2.9.0.RC4</version>\n      <version>2.9.0.RC5</version>\n      <version>2.9.0</version>\n
+        \     <version>2.9.0-1</version>\n      <version>2.9.1.RC1</version>\n      <version>2.9.1.RC2</version>\n
+        \     <version>2.9.1.RC3</version>\n      <version>2.9.1.RC4</version>\n      <version>2.9.1</version>\n
+        \     <version>2.9.1-1-RC1</version>\n      <version>2.9.1-1</version>\n      <version>2.9.2-RC1</version>\n
+        \     <version>2.9.2-RC2</version>\n      <version>2.9.2-RC3</version>\n      <version>2.9.2</version>\n
+        \     <version>2.9.3-RC1</version>\n      <version>2.9.3-RC2</version>\n      <version>2.9.3</version>\n
+        \     <version>2.10.0-M1</version>\n      <version>2.10.0-M1-virtualized</version>\n
+        \     <version>2.10.0-M1-virtualized.rdev-4217-2012-01-24-g9118644</version>\n
+        \     <version>2.10.0-M2</version>\n      <version>2.10.0-M3</version>\n      <version>2.10.0-M4</version>\n
+        \     <version>2.10.0-M5</version>\n      <version>2.10.0-M6</version>\n      <version>2.10.0-M7</version>\n
+        \     <version>2.10.0-RC1</version>\n      <version>2.10.0-RC2</version>\n
+        \     <version>2.10.0-RC3</version>\n      <version>2.10.0-RC4</version>\n
+        \     <version>2.10.0-RC5</version>\n      <version>2.10.0</version>\n      <version>2.10.1-RC1</version>\n
+        \     <version>2.10.1-RC2</version>\n      <version>2.10.1-RC3</version>\n
+        \     <version>2.10.1</version>\n      <version>2.10.2-RC1</version>\n      <version>2.10.2-RC2</version>\n
+        \     <version>2.10.2</version>\n      <version>2.10.3-RC1</version>\n      <version>2.10.3-RC2</version>\n
+        \     <version>2.10.3-RC3</version>\n      <version>2.10.3</version>\n      <version>2.10.4-RC1</version>\n
+        \     <version>2.10.4-RC2</version>\n      <version>2.10.4-RC3</version>\n
+        \     <version>2.10.4</version>\n      <version>2.10.5</version>\n      <version>2.10.6</version>\n
+        \     <version>2.11.0-M1</version>\n      <version>2.11.0-M2</version>\n      <version>2.11.0-M3</version>\n
+        \     <version>2.11.0-M4</version>\n      <version>2.11.0-M5</version>\n      <version>2.11.0-M6</version>\n
+        \     <version>2.11.0-M7</version>\n      <version>2.11.0-M8</version>\n      <version>2.11.0-RC1</version>\n
+        \     <version>2.11.0-RC3</version>\n      <version>2.11.0-RC4</version>\n
+        \     <version>2.11.0</version>\n      <version>2.11.1</version>\n      <version>2.11.2</version>\n
+        \     <version>2.11.3</version>\n      <version>2.11.4</version>\n      <version>2.11.5</version>\n
+        \     <version>2.11.6</version>\n      <version>2.11.7</version>\n      <version>2.11.8</version>\n
+        \     <version>2.11.8-18269ea</version>\n      <version>2.11.9</version>\n
+        \     <version>2.11.10</version>\n      <version>2.11.11</version>\n      <version>2.12.0-M1</version>\n
+        \     <version>2.12.0-M2</version>\n      <version>2.12.0-M3</version>\n      <version>2.12.0-M3-dc9effe</version>\n
+        \     <version>2.12.0-M4</version>\n      <version>2.12.0-M4-9901daf</version>\n
+        \     <version>2.12.0-M5</version>\n      <version>2.12.0-RC1</version>\n
+        \     <version>2.12.0-RC1-be43eb5</version>\n      <version>2.12.0-RC1-ceaf419</version>\n
+        \     <version>2.12.0-RC1-1e81a09</version>\n      <version>2.12.0-RC2</version>\n
+        \     <version>2.12.0</version>\n      <version>2.12.1</version>\n      <version>2.12.2</version>\n
+        \     <version>2.12.3</version>\n      <version>2.13.0-M1</version>\n      <version>2.13.0-M2</version>\n
+        \   </versions>\n    <lastUpdated>20170727232306</lastUpdated>\n  </versioning>\n</metadata>\n"}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['5949']
+      Content-Type: [text/xml]
+      Date: ['Thu, 12 Oct 2017 03:17:48 GMT']
+      ETag: ['"2940bcd20d4f32d591917d55aafbce7f"']
+      Fastly-Debug-Digest: [ac6f197570a69a72f18b705300a6c84c9a68a1c13e23a4008b54be1727c28f28]
+      Last-Modified: ['Thu, 27 Jul 2017 23:23:07 GMT']
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['HIT, MISS']
+      X-Cache-Hits: ['1, 0']
+      X-Checksum-MD5: [2940bcd20d4f32d591917d55aafbce7f]
+      X-Checksum-SHA1: [bab428e4713b5e6cf8854d9805ef4b742a23f58d]
+      X-Served-By: ['cache-iad2142-IAD, cache-mia17632-MIA']
+      X-Timer: ['S1507778268.479542,VS0,VE28']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://repo.maven.apache.org/maven2/org/scala-lang/scala-compiler/2.13.0-M2/scala-compiler-2.13.0-M2.pom
+  response:
+    body: {string: "<?xml version='1.0' encoding='UTF-8'?>\n<project xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0
+        http://maven.apache.org/xsd/maven-4.0.0.xsd\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns=\"http://maven.apache.org/POM/4.0.0\">\n    <modelVersion>4.0.0</modelVersion>\n
+        \   <groupId>org.scala-lang</groupId>\n    <artifactId>scala-compiler</artifactId>\n
+        \   <packaging>jar</packaging>\n    <description>Compiler for the Scala Programming
+        Language</description>\n    <url>http://www.scala-lang.org/</url>\n    <version>2.13.0-M2</version>\n
+        \   <licenses>\n        <license>\n            <name>BSD 3-Clause</name>\n
+        \           <url>http://www.scala-lang.org/license.html</url>\n            <distribution>repo</distribution>\n
+        \       </license>\n    </licenses>\n    <name>Scala Compiler</name>\n    <inceptionYear>2002</inceptionYear>\n
+        \   <organization>\n        <name>LAMP/EPFL</name>\n        <url>http://lamp.epfl.ch/</url>\n
+        \   </organization>\n    <scm>\n        <connection>scm:git:git://github.com/scala/scala.git</connection>\n
+        \       <url>https://github.com/scala/scala.git</url>\n    </scm>\n    <issueManagement>\n
+        \       <system>GitHub</system>\n        <url>https://github.com/scala/bug/issues</url>\n
+        \   </issueManagement>\n    <developers>\n        <developer>\n            <id>lamp</id>\n
+        \           <name>LAMP/EPFL</name>\n        </developer>\n        <developer>\n
+        \           <id>Lightbend</id>\n            <name>Lightbend, Inc.</name>\n
+        \       </developer>\n    </developers>\n    <dependencies>\n        <dependency>\n
+        \           <groupId>org.scala-lang</groupId>\n            <artifactId>scala-library</artifactId>\n
+        \           <version>2.13.0-M2</version>\n        </dependency>\n        <dependency>\n
+        \           <groupId>org.scala-lang</groupId>\n            <artifactId>scala-reflect</artifactId>\n
+        \           <version>2.13.0-M2</version>\n        </dependency>\n        <dependency>\n
+        \           <groupId>org.scala-lang.modules</groupId>\n            <artifactId>scala-xml_2.13.0-M2</artifactId>\n
+        \           <version>1.0.6</version>\n        </dependency>\n        <dependency>\n
+        \           <groupId>jline</groupId>\n            <artifactId>jline</artifactId>\n
+        \           <version>2.14.4</version>\n        </dependency>\n    </dependencies>\n</project>"}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['638337']
+      Connection: [keep-alive]
+      Content-Length: ['2236']
+      Content-Type: [text/xml]
+      Date: ['Thu, 12 Oct 2017 03:17:48 GMT']
+      ETag: ['"48a2e429d9ed0acd11189a253fa9a2f5"']
+      Fastly-Debug-Digest: [ede2219c72bac8c970c4232d2fe5ebb5dad01813139b5eee0d0853fac7b3885b]
+      Last-Modified: ['Fri, 21 Jul 2017 12:50:49 GMT']
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['HIT, HIT']
+      X-Cache-Hits: ['1, 1']
+      X-Checksum-MD5: [48a2e429d9ed0acd11189a253fa9a2f5]
+      X-Checksum-SHA1: [fbf725a20ef95b104a54129575cbcb6a003e2549]
+      X-Served-By: ['cache-iad2142-IAD, cache-mia17632-MIA']
+      X-Timer: ['S1507778269.630420,VS0,VE1']
+    status: {code: 200, message: OK}
+version: 1

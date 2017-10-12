@@ -1,0 +1,197 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://repo.maven.apache.org/maven2/org/apache/apache/7/apache-7.pom
+  response:
+    body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<!--\r\nLicensed
+        to the Apache Software Foundation (ASF) under one\r\nor more contributor license
+        agreements.  See the NOTICE file\r\ndistributed with this work for additional
+        information\r\nregarding copyright ownership.  The ASF licenses this file\r\nto
+        you under the Apache License, Version 2.0 (the\r\n\"License\"); you may not
+        use this file except in compliance\r\nwith the License.  You may obtain a
+        copy of the License at\r\n\r\n  http://www.apache.org/licenses/LICENSE-2.0\r\n\r\nUnless
+        required by applicable law or agreed to in writing,\r\nsoftware distributed
+        under the License is distributed on an\r\n\"AS IS\" BASIS, WITHOUT WARRANTIES
+        OR CONDITIONS OF ANY\r\nKIND, either express or implied.  See the License
+        for the\r\nspecific language governing permissions and limitations\r\nunder
+        the License.\r\n-->\r\n\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0
+        http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n  <modelVersion>4.0.0</modelVersion>\r\n\r\n
+        \ <!-- Shared parent. Doesn't define a lot of things about Apache like general
+        mailing lists, but does\r\n       define the settings common to all projects
+        at Apache \r\n       \r\n       As of Version 6, this includes a standard
+        release profile that all projects can use. If the profile is not appropriate
+        for your project, define your own release profile and change the release plugin
+        configuration parameter <arguments> </arguments> to activate your profile
+        instead of the apache-release profile.\r\n       \r\n      Standard versions
+        of plugins are also defined, these may be overridden by individual projects
+        as well.\r\n       -->\r\n  <groupId>org.apache</groupId>\r\n  <artifactId>apache</artifactId>\r\n
+        \ <version>7</version>\r\n  <packaging>pom</packaging>\r\n  <name>The Apache
+        Software Foundation</name>\r\n  <description>\r\n    The Apache Software Foundation
+        provides support for the Apache community of open-source software projects.\r\n
+        \   The Apache projects are characterized by a collaborative, consensus based
+        development process, an open and\r\n    pragmatic software license, and a
+        desire to create high quality software that leads the way in its field.\r\n
+        \   We consider ourselves not simply a group of projects sharing a server,
+        but rather a community of developers\r\n    and users.\r\n  </description>\r\n
+        \ <licenses>\r\n    <license>\r\n      <name>The Apache Software License,
+        Version 2.0</name>\r\n      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>\r\n
+        \     <distribution>repo</distribution>\r\n    </license>\r\n  </licenses>\r\n
+        \ <organization>\r\n    <name>The Apache Software Foundation</name>\r\n    <url>http://www.apache.org/</url>\r\n
+        \ </organization>\r\n  <url>http://www.apache.org/</url>\r\n  <repositories>\r\n
+        \   <repository>\r\n      <id>apache.snapshots</id>\r\n      <name>Apache
+        Snapshot Repository</name>\r\n      <url>http://repository.apache.org/snapshots</url>\r\n
+        \     <releases>\r\n        <enabled>false</enabled>\r\n      </releases>\r\n
+        \   </repository>\r\n  </repositories>\r\n\r\n  <distributionManagement>\r\n
+        \   <!-- Site omitted - each project must provide their own -->\r\n    <repository>\r\n
+        \     <id>apache.releases.https</id>\r\n      <name>Apache Release Distribution
+        Repository</name>\r\n      <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>\r\n
+        \   </repository>\r\n    <snapshotRepository>\r\n      <id>apache.snapshots.https</id>\r\n
+        \     <name>${distMgmtSnapshotsName}</name>\r\n      <url>${distMgmtSnapshotsUrl}</url>\r\n
+        \   </snapshotRepository>\r\n  </distributionManagement>\r\n  <mailingLists>\r\n
+        \   <mailingList>\r\n      <name>Apache Announce List</name>\r\n      <subscribe>announce-subscribe@apache.org</subscribe>\r\n
+        \     <unsubscribe>announce-unsubscribe@apache.org</unsubscribe>\r\n      <post>announce@apache.org</post>\r\n
+        \     <archive>http://mail-archives.apache.org/mod_mbox/www-announce/</archive>\r\n
+        \   </mailingList>\r\n  </mailingLists>\r\n  <properties>\r\n    <distMgmtSnapshotsName>Apache
+        Development Snapshot Repository</distMgmtSnapshotsName>\r\n    <distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</distMgmtSnapshotsUrl>\r\n
+        \   <organization.logo>http://www.apache.org/images/asf_logo_wide.gif</organization.logo>\r\n
+        \   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n
+        \   <sourceReleaseAssemblyDescriptor>source-release</sourceReleaseAssemblyDescriptor>\r\n
+        \ </properties>\r\n  <scm>\r\n    <connection>scm:svn:http://svn.apache.org/repos/asf/maven/pom/tags/apache-7</connection>\r\n
+        \   <developerConnection>scm:svn:https://svn.apache.org/repos/asf/maven/pom/tags/apache-7</developerConnection>\r\n
+        \   <url>http://svn.apache.org/viewvc/maven/pom/tags/apache-7</url>\r\n  </scm>\r\n\r\n
+        \ <build>\r\n     <pluginManagement>\r\n      <plugins>\r\n        <!-- set
+        versions of common plugins for reproducibility, ordered alphabetically -->\r\n
+        \       <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-antrun-plugin</artifactId>\r\n          <version>1.3</version>\r\n
+        \       </plugin>\r\n        <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-assembly-plugin</artifactId>\r\n          <version>2.2-beta-5</version>\r\n
+        \       </plugin>\r\n        <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-clean-plugin</artifactId>\r\n          <version>2.3</version>\r\n
+        \       </plugin>\r\n        <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-compiler-plugin</artifactId>\r\n          <version>2.0.2</version>\r\n
+        \         <configuration>\r\n            <source>1.4</source>\r\n            <target>1.4</target>\r\n
+        \           <encoding>${project.build.sourceEncoding}</encoding>\r\n          </configuration>\r\n
+        \       </plugin>\r\n        <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-deploy-plugin</artifactId>\r\n          <version>2.5</version>\r\n
+        \       </plugin>\r\n        <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-docck-plugin</artifactId>\r\n          <version>1.0</version>\r\n
+        \       </plugin>\r\n        <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-enforcer-plugin</artifactId>\r\n          <version>1.0-beta-1</version>\r\n
+        \       </plugin>\r\n        <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-gpg-plugin</artifactId>\r\n          <version>1.0-alpha-4</version>\r\n
+        \       </plugin>\r\n        <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-install-plugin</artifactId>\r\n          <version>2.3</version>\r\n
+        \       </plugin>\r\n        <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-invoker-plugin</artifactId>\r\n          <version>1.5</version>\r\n
+        \       </plugin>\r\n        <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-jar-plugin</artifactId>\r\n          <version>2.3</version>\r\n
+        \         <configuration>\r\n            <archive>\r\n              <manifest>\r\n
+        \               <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>\r\n
+        \               <addDefaultImplementationEntries>true</addDefaultImplementationEntries>\r\n
+        \             </manifest>\r\n            </archive>\r\n          </configuration>\r\n
+        \       </plugin>\r\n        <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-javadoc-plugin</artifactId>\r\n          <!--
+        NOTE: 2.6.x is generally unusuable due to MJAVADOC-275 -->\r\n          <version>2.5</version>\r\n
+        \       </plugin>\r\n        <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-plugin-plugin</artifactId>\r\n          <version>2.5.1</version>\r\n
+        \       </plugin>\r\n        <!-- START SNIPPET: release-plugin-configuration
+        -->\r\n        <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-release-plugin</artifactId>\r\n          <version>2.0-beta-9</version>\r\n
+        \         <configuration>\r\n            <useReleaseProfile>false</useReleaseProfile>\r\n
+        \           <goals>deploy</goals>\r\n            <arguments>-Papache-release</arguments>\r\n
+        \         </configuration>\r\n        </plugin>\r\n        <!-- END SNIPPET:
+        release-plugin-configuration -->\r\n        <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-remote-resources-plugin</artifactId>\r\n          <version>1.1</version>\r\n
+        \       </plugin>\r\n        <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-resources-plugin</artifactId>\r\n          <version>2.4</version>\r\n
+        \         <configuration>\r\n            <encoding>${project.build.sourceEncoding}</encoding>\r\n
+        \         </configuration>\r\n        </plugin>\r\n        <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-scm-plugin</artifactId>\r\n          <version>1.2</version>\r\n
+        \       </plugin>\r\n        <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-site-plugin</artifactId>\r\n          <version>2.0.1</version>\r\n
+        \       </plugin>\r\n        <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-source-plugin</artifactId>\r\n          <version>2.1.1</version>\r\n
+        \       </plugin>\r\n        <plugin>\r\n          <groupId>org.apache.maven.plugins</groupId>\r\n
+        \         <artifactId>maven-surefire-plugin</artifactId>\r\n          <version>2.4.3</version>\r\n
+        \       </plugin>\r\n        <plugin>\r\n          <groupId>org.codehaus.mojo</groupId>\r\n
+        \         <artifactId>clirr-maven-plugin</artifactId>\r\n          <version>2.2.2</version>\r\n
+        \       </plugin>\r\n        <plugin>\r\n          <groupId>org.codehaus.plexus</groupId>\r\n
+        \         <artifactId>plexus-maven-plugin</artifactId>\r\n          <version>1.3.8</version>\r\n
+        \       </plugin>\r\n        <plugin>\r\n          <groupId>org.codehaus.modello</groupId>\r\n
+        \         <artifactId>modello-maven-plugin</artifactId>\r\n          <version>1.1</version>\r\n
+        \       </plugin>\r\n      </plugins>\r\n    </pluginManagement>\r\n    <plugins>\r\n
+        \     <!-- We want to package up license resources in the JARs produced -->\r\n
+        \     <plugin>\r\n        <groupId>org.apache.maven.plugins</groupId>\r\n
+        \       <artifactId>maven-remote-resources-plugin</artifactId>\r\n        <executions>\r\n
+        \         <execution>\r\n            <goals>\r\n              <goal>process</goal>\r\n
+        \           </goals>\r\n            <configuration>\r\n              <resourceBundles>\r\n
+        \               <resourceBundle>org.apache:apache-jar-resource-bundle:1.4</resourceBundle>\r\n
+        \             </resourceBundles>\r\n            </configuration>\r\n          </execution>\r\n
+        \       </executions>\r\n      </plugin>\r\n    </plugins> \r\n </build>\r\n\r\n
+        <reporting>\r\n    <plugins>\r\n      <plugin>\r\n        <artifactId>maven-project-info-reports-plugin</artifactId>\r\n
+        \       <version>2.1.2</version>\r\n      </plugin>\r\n    </plugins>\r\n
+        \ </reporting>\r\n\r\n  <profiles>\r\n      <!-- START SNIPPET: release-profile
+        -->\r\n    <profile>\r\n      <id>apache-release</id>\r\n      <build>\r\n
+        \       <plugins>\r\n          <!-- Create a source-release artifact that
+        contains the fully buildable \r\n               project directory source structure.
+        This is the artifact which is \r\n               the official subject of any
+        release vote. -->\r\n          <plugin>\r\n            <artifactId>maven-assembly-plugin</artifactId>\r\n
+        \           <dependencies>\r\n              <dependency>\r\n                <groupId>org.apache.apache.resources</groupId>\r\n
+        \               <artifactId>apache-source-release-assembly-descriptor</artifactId>\r\n
+        \               <version>1.0.2</version>\r\n              </dependency>\r\n
+        \           </dependencies>\r\n            <executions>\r\n              <execution>\r\n
+        \               <id>source-release-assembly</id>\r\n                <phase>package</phase>\r\n
+        \               <goals>\r\n                  <goal>single</goal>\r\n                </goals>\r\n
+        \               <configuration>\r\n                  <runOnlyAtExecutionRoot>true</runOnlyAtExecutionRoot>\r\n
+        \                 <descriptorRefs>\r\n                    <descriptorRef>${sourceReleaseAssemblyDescriptor}</descriptorRef>\r\n
+        \                 </descriptorRefs>\r\n                  <tarLongFileFormat>gnu</tarLongFileFormat>\r\n
+        \               </configuration>\r\n              </execution>\r\n            </executions>\r\n
+        \         </plugin>\r\n          <!-- We want to sign the artifact, the POM,
+        and all attached artifacts -->\r\n          <plugin>\r\n            <groupId>org.apache.maven.plugins</groupId>\r\n
+        \           <artifactId>maven-gpg-plugin</artifactId>\r\n            <configuration>\r\n
+        \             <passphrase>${gpg.passphrase}</passphrase>\r\n            </configuration>\r\n
+        \           <executions>\r\n              <execution>\r\n                <goals>\r\n
+        \                 <goal>sign</goal>\r\n                </goals>\r\n              </execution>\r\n
+        \           </executions>\r\n          </plugin>\r\n          <!-- We want
+        to deploy the artifact to a staging location for perusal -->\r\n          <plugin>\r\n
+        \           <inherited>true</inherited>\r\n            <groupId>org.apache.maven.plugins</groupId>\r\n
+        \           <artifactId>maven-deploy-plugin</artifactId>\r\n            <configuration>\r\n
+        \             <updateReleaseInfo>true</updateReleaseInfo>\r\n            </configuration>\r\n
+        \         </plugin>\r\n          <plugin>\r\n            <groupId>org.apache.maven.plugins</groupId>\r\n
+        \           <artifactId>maven-source-plugin</artifactId>\r\n            <executions>\r\n
+        \             <execution>\r\n                <id>attach-sources</id>\r\n                <goals>\r\n
+        \                 <goal>jar</goal>\r\n                </goals>\r\n              </execution>\r\n
+        \           </executions>\r\n          </plugin>\r\n          <plugin>\r\n
+        \           <groupId>org.apache.maven.plugins</groupId>\r\n            <artifactId>maven-javadoc-plugin</artifactId>\r\n
+        \           <configuration>\r\n              <encoding>${project.build.sourceEncoding}</encoding>\r\n
+        \           </configuration>\r\n            <executions>\r\n              <execution>\r\n
+        \               <id>attach-javadocs</id>\r\n                <goals>\r\n                  <goal>jar</goal>\r\n
+        \               </goals>\r\n              </execution>\r\n            </executions>\r\n
+        \         </plugin>\r\n        </plugins>\r\n      </build>\r\n    </profile>\r\n
+        \   <!-- END SNIPPET: release-profile -->\r\n  </profiles>\r\n</project>\r\n\r\n"}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['5262083']
+      Connection: [keep-alive]
+      Content-Length: ['14430']
+      Content-Type: [text/xml]
+      Date: ['Tue, 10 Oct 2017 05:27:51 GMT']
+      ETag: ['"0b59b8840bbda3984e6b1596794e9eff"']
+      Fastly-Debug-Digest: [1e4566477fe43112949adceeaf39300b1788d5f7f4134d3c18ca893376a92d88]
+      Last-Modified: ['Sat, 26 Dec 2009 12:23:18 GMT']
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['HIT, HIT']
+      X-Cache-Hits: ['42, 1']
+      X-Checksum-MD5: [0b59b8840bbda3984e6b1596794e9eff]
+      X-Checksum-SHA1: [a5f679b14bb06a3cb3769eb04e228c8b9e12908f]
+      X-Served-By: ['cache-iad2149-IAD, cache-atl6240-ATL']
+      X-Timer: ['S1507613272.571240,VS0,VE1']
+    status: {code: 200, message: OK}
+version: 1

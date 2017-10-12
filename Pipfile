@@ -3,6 +3,8 @@ url = "https://pypi.python.org/simple"
 verify_ssl = true
 [packages]
 requests = "*"
+xmltodict = "*"
+
 
 
 
@@ -16,7 +18,4 @@ requests = "*"
 
 pytest = "*"
 vcrpy = "*"
-pytest-mock = "*"
-
-
-
+"pytest-mock" = "*"

@@ -1,0 +1,90 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://repo.maven.apache.org/maven2/org/spire-math/kind-projector_2.10/maven-metadata.xml
+  response:
+    body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<metadata>\n  <groupId>org.spire-math</groupId>\n
+        \ <artifactId>kind-projector_2.10</artifactId>\n  <versioning>\n    <latest>0.9.4</latest>\n
+        \   <release>0.9.4</release>\n    <versions>\n      <version>0.6.3</version>\n
+        \     <version>0.7.0</version>\n      <version>0.7.1</version>\n      <version>0.8.0</version>\n
+        \     <version>0.8.1</version>\n      <version>0.8.2</version>\n      <version>0.9.0</version>\n
+        \     <version>0.9.2</version>\n      <version>0.9.3</version>\n      <version>0.9.4</version>\n
+        \   </versions>\n    <lastUpdated>20170530144248</lastUpdated>\n  </versioning>\n</metadata>\n"}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['619']
+      Content-Type: [text/xml]
+      Date: ['Thu, 12 Oct 2017 03:16:28 GMT']
+      ETag: ['"d93171316984b3cf2c31cd47a403d48e"']
+      Fastly-Debug-Digest: [ad17a96fb2ca0e5a83f14338bc51a8c50359024f52c596f239621472551e456f]
+      Last-Modified: ['Tue, 30 May 2017 14:42:48 GMT']
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['HIT, MISS']
+      X-Cache-Hits: ['1, 0']
+      X-Checksum-MD5: [d93171316984b3cf2c31cd47a403d48e]
+      X-Checksum-SHA1: [1fc22c9de4c497ad4ace576a05e45a269ed07449]
+      X-Served-By: ['cache-iad2138-IAD, cache-mia17621-MIA']
+      X-Timer: ['S1507778188.134469,VS0,VE25']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://repo.maven.apache.org/maven2/org/spire-math/kind-projector_2.10/0.9.4/kind-projector_2.10-0.9.4.pom
+  response:
+    body: {string: "<?xml version='1.0' encoding='UTF-8'?>\n<project xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0
+        http://maven.apache.org/xsd/maven-4.0.0.xsd\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns=\"http://maven.apache.org/POM/4.0.0\">\n    <modelVersion>4.0.0</modelVersion>\n
+        \   <groupId>org.spire-math</groupId>\n    <artifactId>kind-projector_2.10</artifactId>\n
+        \   <packaging>jar</packaging>\n    <description>kind-projector</description>\n
+        \   <url>http://github.com/non/kind-projector</url>\n    <version>0.9.4</version>\n
+        \   <licenses>\n        <license>\n            <name>MIT</name>\n            <url>http://opensource.org/licenses/MIT</url>\n
+        \           <distribution>repo</distribution>\n        </license>\n    </licenses>\n
+        \   <name>kind-projector</name>\n    <organization>\n        <name>org.spire-math</name>\n
+        \       <url>http://github.com/non/kind-projector</url>\n    </organization>\n
+        \   <scm>\n        <url>git@github.com:non/kind-projector.git</url>\n        <connection>scm:git:git@github.com:non/kind-projector.git</connection>\n
+        \   </scm>\n    <developers>\n        <developer>\n            <id>d_m</id>\n
+        \           <name>Erik Osheim</name>\n            <url>http://github.com/non/</url>\n
+        \       </developer>\n    </developers>\n    <dependencies>\n        <dependency>\n
+        \           <groupId>org.scala-lang</groupId>\n            <artifactId>scala-compiler</artifactId>\n
+        \           <version>2.10.6</version>\n        </dependency>\n        <dependency>\n
+        \           <groupId>org.scala-lang</groupId>\n            <artifactId>scala-library</artifactId>\n
+        \           <version>2.10.6</version>\n        </dependency>\n        <dependency>\n
+        \           <groupId>org.scalamacros</groupId>\n            <artifactId>quasiquotes_2.10</artifactId>\n
+        \           <version>2.1.0</version>\n        </dependency>\n        <dependency>\n
+        \           <groupId>com.novocode</groupId>\n            <artifactId>junit-interface</artifactId>\n
+        \           <version>0.11</version>\n            <scope>test</scope>\n        </dependency>\n
+        \       <dependency>\n            <groupId>org.ensime</groupId>\n            <artifactId>pcplod_2.10</artifactId>\n
+        \           <version>1.2.1</version>\n            <scope>test</scope>\n        </dependency>\n
+        \   </dependencies>\n</project>"}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['0']
+      Connection: [keep-alive]
+      Content-Length: ['2231']
+      Content-Type: [text/xml]
+      Date: ['Thu, 12 Oct 2017 03:16:28 GMT']
+      ETag: ['"b746663f9961ce4828bd5151074ac0ec"']
+      Fastly-Debug-Digest: [650663de7cf92c2ae3aa8085098d132981b87bcbe1b25e5cdccba8e5b44f96ef]
+      Last-Modified: ['Tue, 30 May 2017 14:41:22 GMT']
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['HIT, MISS']
+      X-Cache-Hits: ['1, 0']
+      X-Checksum-MD5: [b746663f9961ce4828bd5151074ac0ec]
+      X-Checksum-SHA1: [517f67924700ecdea8f71ae8114a156611ccf0d8]
+      X-Served-By: ['cache-iad2130-IAD, cache-mia17621-MIA']
+      X-Timer: ['S1507778188.281643,VS0,VE25']
+    status: {code: 200, message: OK}
+version: 1
