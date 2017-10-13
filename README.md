@@ -1,5 +1,7 @@
 # License Cop
 
+[![Build Status](https://travis-ci.com/toptal/license-cop.svg?token=KZzZ9kSFesRfQ58xUpUp&branch=master)](https://travis-ci.com/toptal/license-cop)
+
 A nifty script that fetches the licenses for all your third-party libraries.
 
 ![Dog cop meme](meme.jpg)
@@ -32,8 +34,8 @@ The following platforms are supported:
 
 You will need:
 
-- Python 3.6 or better
-- Pipenv (The official Python dependency manager, similar to npm or Bundler)
+- Python 3.6+
+- [Pipenv](https://pypi.python.org/pypi/pipenv)
 
 ### Installing Pipenv
 
@@ -60,6 +62,20 @@ You need to have a valid
 with enough permissions to read the repositories you want.
 
 This token needs to be exported to the `GITHUB_TOKEN` environment variable.
+
+### Installing Dependencies
+
+This will install runtime dependencies only:
+
+```sh
+$ pipenv install
+```
+
+To install development dependencies (eg: test frameworks), you should also run:
+
+```sh
+$ pipenv install -d
+```
 
 ## Running License Cop
 
