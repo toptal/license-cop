@@ -66,12 +66,27 @@ This token needs to be exported to the `GITHUB_TOKEN` environment variable.
 Once everything is set, run the `./license-cop` script. It will print
 its usage instructions.
 
-## Running Tests
+## Development
+
+### Running Tests
 
 We use [pytest](https://docs.pytest.org/en/latest/) to execute our automated
 test suite, which is installed by Pipenv.
 
 To run the entire test suite, just invoke the `./test.sh` script.
+
+### PEP-8
+
+This project must adhere to the [PEP-8](https://www.python.org/dev/peps/pep-0008/)
+style guide.
+
+You can check if your changes adhere to this style by invoking the
+`./lint.sh` script.
+
+### Before Commiting Your Changes
+
+Please use the `./pre-commit.sh` script before checking-in your code in order
+to run the checks above and ensure nothing breaks in master.
 
 ## Architecture and Domain
 
