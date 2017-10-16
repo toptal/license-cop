@@ -8,5 +8,5 @@ grammar = dependency_definition
 
 
 class PodspecParser:
-  def parse(self, content):
-      return (match[1] for match in grammar.searchString(content))
+    def parse(self, content):
+        return (match[1] for match in grammar.searchString(content))
