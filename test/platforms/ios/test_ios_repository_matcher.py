@@ -12,12 +12,14 @@ def podfile_repository():
         http_compression=False
     )
 
+
 @pytest.fixture
 def podspec_repository():
     return GithubRepository.from_url(
         'https://github.com/ReactiveX/RxSwift',
         http_compression=False
     )
+
 
 @pytest.fixture
 def python_repository():
@@ -51,7 +53,7 @@ def test_extract_from_podfile(matcher, podfile_repository):
     assert descriptor.repository == podfile_repository
     assert descriptor.paths == ['Podfile']
 
-    assert descriptor.runtime_dependencies == [
+    assert descriptor.runtime_dependencies == set([
         Dependency.runtime('MASPreferences'),
         Dependency.runtime('Just'),
         Dependency.runtime('AEXML'),
@@ -59,7 +61,7 @@ def test_extract_from_podfile(matcher, podfile_repository):
         Dependency.runtime('GzipSwift'),
         Dependency.runtime('GRMustache.swift'),
         Dependency.runtime('Sparkle')
-    ]
+    ])
 
     assert descriptor.development_dependencies == []
 
@@ -76,10 +78,8 @@ def test_extract_from_podspec(matcher, podspec_repository):
     assert descriptor.repository == podspec_repository
     assert descriptor.paths == ['RxBlocking.podspec', 'RxCocoa.podspec', 'RxSwift.podspec', 'RxTest.podspec']
     print(descriptor.runtime_dependencies)
-    assert descriptor.runtime_dependencies == [
-        Dependency.runtime('RxSwift'),
-        Dependency.runtime('RxSwift'),
+    assert set(descriptor.runtime_dependencies) == set([
         Dependency.runtime('RxSwift')
-    ]
+    ])
 
     assert descriptor.development_dependencies == []

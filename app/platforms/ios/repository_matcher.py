@@ -9,22 +9,21 @@ from app.platforms.ios.podspec_parser import PodspecParser
 
 PODFILE_PATTERN = 'Podfile'
 PODSPEC_PATTERN = '*.podspec'
-PATTERNS = [PODFILE_PATTERN, PODSPEC_PATTERN]
 
 
 class IosRepositoryMatcher(RepositoryMatcher):
 
     def __init__(self):
-        super().__init__(PATTERNS)
+        super().__init__([PODFILE_PATTERN, PODSPEC_PATTERN])
 
     def _fetch_package_descriptor(self, repository, match):
-        dependencies = []
+        dependencies = set()
         for node in match.nodes:
             data = repository.read_text_file(node.path)
             parser = self.__get_parser(node)
             for name in parser.parse(data):
                 dependency = self.__build_dependency(name)
-                dependencies.append(dependency)
+                dependencies.add(dependency)
 
         return PackageDescriptor(
             platform='iOS',
