@@ -22,6 +22,7 @@ class GithubRepository(GithubClient):
         super().__init__(http_compression)
         self.owner = owner
         self.name = name
+        self.__master_tree = None
 
     @staticmethod
     def from_url(url, http_compression=True):
@@ -51,6 +52,12 @@ class GithubRepository(GithubClient):
             raise ValueError(f'Path "{path}" is not a file.')
         return self.__decode_text_from_base64(data['content'])
 
+    @property
+    def master_tree(self):
+        if not self.__master_tree:
+            self.__master_tree = self.fetch_tree()
+        return self.__master_tree
+
     def fetch_tree(self, sha='master'):
         response = self._session.get(self.__recursive_tree_uri(sha))
         response.raise_for_status()
@@ -66,10 +73,23 @@ class GithubRepository(GithubClient):
                 tree.add_tree(path)
             elif type == 'blob':
                 tree.add_blob(path)
-            else:
-                raise NotImplementedError(
-                    f'GitHub path {path} has an unsupported type: {type}')
         return tree
+
+    @property
+    def urn(self):
+        return f'github:{self.owner}:{self.name}'
+
+    @property
+    def url(self):
+        return REPOSITORY_URI.format(self.owner, self.name)
+
+    def master_url(self, path, type='blob'):
+        if path[0] == '/':
+            path = path[1:]
+        return f'{self.url}/{type}/master/{path}'
+
+    def __paths_without_leading_slash(self):
+        return [i[1:] if i[0] == '/' else i for i in self.paths]
 
     def license(self):
         response = self._session.get(
@@ -96,7 +116,7 @@ class GithubRepository(GithubClient):
         return RECURSIVE_TREE_URI.format(self.owner, self.name, sha)
 
     def __str__(self):
-        return REPOSITORY_URI.format(self.owner, self.name)
+        return self.url
 
     def __repr__(self):
-        return f"GitHub repository {str(self)}"
+        return f'GitHub repository {str(self)}'

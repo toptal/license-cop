@@ -42,8 +42,7 @@ class RepositoryMatcher(ABC):
         pass
 
     def match(self, repository):
-        tree = repository.fetch_tree()
-        matches = self.__match_patterns(tree)
+        matches = self.__match_patterns(repository.master_tree)
         return RepositoryMatch(self, repository, matches) if matches else None
 
     def __match_patterns(self, tree):

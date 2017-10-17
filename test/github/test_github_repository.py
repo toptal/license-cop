@@ -28,6 +28,29 @@ def test_does_not_parse_github_url_without_repository():
     assert GithubRepository.from_url('https://github.com/acme') is None
 
 
+def test_url(repository):
+    assert repository.url == 'https://github.com/toptal/license-cop'
+
+
+def test_urn(repository):
+    assert repository.urn == 'github:toptal:license-cop'
+
+
+def test_master_url_for_blob_path_with_leading_slash(repository):
+    url = repository.master_url('/foo/bar.txt')
+    assert url == 'https://github.com/toptal/license-cop/blob/master/foo/bar.txt'
+
+
+def test_master_url_for_blob_path_without_leading_slash(repository):
+    url = repository.master_url('foo/bar.txt')
+    assert url == 'https://github.com/toptal/license-cop/blob/master/foo/bar.txt'
+
+
+def test_master_url_for_tree_path(repository):
+    url = repository.master_url('foo/bar.txt', type='tree')
+    assert url == 'https://github.com/toptal/license-cop/tree/master/foo/bar.txt'
+
+
 @VCR.use_cassette('github_repository_check_path_that_exists.yaml')
 def test_check_path_that_exists(repository):
     assert repository.path_exists('fixtures/what_does_the_fox_say.txt')
@@ -110,9 +133,10 @@ def has_tree(tree, path):
         return node.is_tree
 
 
+@VCR.use_cassette('github_repository_fetch_master_tree.yaml')
 def test_fetch_master_tree():
     repo = GithubRepository.from_url('https://github.com/requests/requests')
-    tree = repo.fetch_tree()
+    tree = repo.master_tree
 
     assert has_blob(tree, '.coveragerc')
     assert has_tree(tree, '.github')
