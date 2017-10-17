@@ -1,0 +1,548 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://cocoapods.org/pods/AWSFacebookSignIn
+  response:
+    body: {string: "<!DOCTYPE html><html lang=\"en-en\"><head><title>AWSFacebookSignIn\
+        \ on CocoaPods.org</title><meta charset=\"utf-8\" /><meta content=\"cocoapods\
+        \ objective-c objc swift package manager libraries documentation search pods\
+        \ podspec podfile cocoa apple ios library\" name=\"keywords\" /><meta content=\"\
+        IE=edge\" http-equiv=\"X-UA-Compatible\" /><meta content=\"width=device-width,\
+        \ initial-scale=1.0\" name=\"viewport\" /><meta content=\"Amazon Web Services\
+        \ SDK for iOS.\" name=\"description\" /><meta content=\"Amazon Web Services\"\
+        \ name=\"author\" /><meta content=\"summary_large_image\" name=\"twitter:card\"\
+        \ /><meta content=\"@CocoaPods\" name=\"twitter:site\" /><meta content=\"\
+        @CocoaPods\" name=\"twitter:creator\" /><meta content=\"AWSFacebookSignIn\"\
+        \ name=\"twitter:title\" /><meta content=\"Amazon Web Services SDK for iOS.\"\
+        \ name=\"twitter:description\" /><meta content=\"https://cocoapods.org/pods/AWSFacebookSignIn\"\
+        \ name=\"twitter:url\" /><meta content=\"http://cocoadocs.org/docsets/AWSFacebookSignIn/2.6.2/preview.png\"\
+        \ name=\"twitter:image:src\" /><meta content=\"CocoaPods\" property=\"og:site_name\"\
+        \ /><meta content=\"AWSFacebookSignIn\" property=\"og:title\" /><meta content=\"\
+        https://cocoapods.org/pods/AWSFacebookSignIn\" property=\"og:url\" /><meta\
+        \ content=\"website\" property=\"og:type\" /><meta content=\"Amazon Web Services\
+        \ SDK for iOS.\" property=\"og:description\" /><meta content=\"http://cocoadocs.org/docsets/AWSFacebookSignIn/2.6.2/preview.png\"\
+        \ property=\"og:image\" /><link rel=\"shortcut icon\" href=\"https://cocoapods.org/favicons/favicon.ico\"\
+        \ type=\"image/x-icon\" /><link rel=\"apple-touch-icon\" href=\"https://cocoapods.org/favicons/apple-touch-icon.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"https://cocoapods.org/favicons/apple-touch-icon-57x57.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"https://cocoapods.org/favicons/apple-touch-icon-60x60.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"https://cocoapods.org/favicons/apple-touch-icon-72x72.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"https://cocoapods.org/favicons/apple-touch-icon-76x76.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"https://cocoapods.org/favicons/apple-touch-icon-114x114.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"https://cocoapods.org/favicons/apple-touch-icon-120x120.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"https://cocoapods.org/favicons/apple-touch-icon-144x144.png\"\
+        \ /><link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"https://cocoapods.org/favicons/apple-touch-icon-152x152.png\"\
+        \ /><script src=\"/javascripts/application-15598b1d95c0f883ea517c760352f0fe.js\"\
+        ></script><link href=\"/stylesheets/app-15598b1d95c0f883ea517c760352f0fe.css\"\
+        \ media=\"screen\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"https://cocoapods.org/opensearch.xml\"\
+        \ rel=\"search\" title=\"CocoaPods\" type=\"application/opensearchdescription+xml\"\
+        \ /></head><body><nav class=\"navbar navbar-static-top\" role=\"navigation\"\
+        ><section class=\"container\"><div class=\"navbar-header\"><button class=\"\
+        navbar-toggle\" data-target=\".navbar-header-collapse\" data-toggle=\"collapse\"\
+        \ type=\"button\"><span class=\"sr-only\">Toggle navigation</span><span class=\"\
+        glyphicon glyphicon-plus\"></span></button><a class=\"navbar-brand\" href=\"\
+        https://cocoapods.org\"></a></div><div class=\"collapse navbar-collapse navbar-header-collapse\"\
+        ><ul class=\"nav navbar-nav navbar-right\"><li><a href=\"https://cocoapods.org/app\"\
+        >App</a></li><li><a href=\"https://cocoapods.org/about\">About</a></li><li><a\
+        \ href=\"https://guides.cocoapods.org\">Guides</a></li><li><a href=\"https://blog.cocoapods.org\"\
+        >Blog</a></li></ul></div></section></nav><section class=\"container\"><article\
+        \ class=\"row\" id=\"headline\"><div class=\"col-lg-12 col-sm-12 col-xs-12\"\
+        ><h1>AWSFacebookSignIn <span>2.6.2</span></h1></div></article></section><div\
+        \ id=\"content-wrapper\"><section class=\"container\" id=\"pod-page\"><article\
+        \ class=\"row\"><div class=\"pod_result\"><div class=\"pod-metadata clearfix\"\
+        ></div><div class=\"sideline col-sm-3 col-xs-12 col-sm-push-9\"><h1 class=\"\
+        visible-xs inline-headline\"><a href='/pods/AWSFacebookSignIn'>AWSFacebookSignIn</a>\
+        \ <span>2.6.2</span></h1><div class=\"close-expanded\"><a href=\"#\">&times;</a></div><h3></h3><table\
+        \ class='header'><tbody><tr><td> <span class='hidden-lg-span'>Tests</span><span\
+        \ class='visible-lg-span'>Tested</span>\n</td><td>\u2713</td></tr><tr><td>\
+        \ <span class='hidden-lg-span'>Lang</span><span class='visible-lg-span'>Language</span>\n\
+        </td><td> <span class='hidden-lg-span'>Obj-C</span><span class='visible-lg-span'>Objective\
+        \ C</span>\n</td></tr><tr><td>License</td><td> <a href='https://www.apache.org/licenses/LICENSE-2.0.html'>Apache\
+        \ 2</a>\n</td></tr><tr><td> <span class='hidden-lg-span'>Released</span><span\
+        \ class='visible-lg-span'>Last Release</span>\n</td><td>Sep 2017</td></tr></tbody></table><p>Maintained\
+        \ by <a href='/owners/23418'>Karthikeyan</a>.</p><hr /><h3>Downloads</h3><table\
+        \ class='inset'><tbody><tr><td>Total</td><td>895</td></tr><tr><td>Week</td><td>168</td></tr><tr><td>Month</td><td>873</td></tr></tbody></table><h3>Installs</h3><table\
+        \ class='inset'><tbody><tr><td>Apps</td><td>72</td></tr><tr><td> <span class='hidden-lg-span'>Apps\
+        \ Week</span><span class='visible-lg-span'>Apps This Week</span>\n</td><td>29</td></tr><tr><td>Test\
+        \ Targets</td><td>1</td></tr><tr><td> <span class='hidden-lg-span'>Test Week</span><span\
+        \ class='visible-lg-span'>Tests This week</span>\n</td><td>1</td></tr></tbody></table><sub>powered\
+        \ by <a href=\"https://segment.com\">Segment</a></sub><hr /><h3>GitHub</h3><table\
+        \ class='inset'><tbody><tr><td>Stars</td><td>891</td></tr><tr><td>Watchers</td><td>113</td></tr><tr><td>Forks</td><td>439</td></tr><tr><td>Issues</td><td>85</td></tr><tr><td>Contributors</td><td>35</td></tr><tr><td>Pull\
+        \ Requests</td><td>12</td></tr></tbody></table><hr /><h3>Code</h3><table class='inset'><tbody><tr><td>Files</td><td>5</td></tr><tr><td>\
+        \ <span class='hidden-lg-span'>LOC</span><span class='visible-lg-span'>Lines\
+        \ of Code</span>\n</td><td>340</td></tr></tbody></table><hr /><button class=\"\
+        btn\" data-target=\"#installation_guide\" data-toggle=\"modal\" type=\"button\"\
+        >Installation Guide</button><div aria-hidden=\"true\" aria-labelledby=\"installation_label\"\
+        \ class=\"modal fade\" id=\"installation_guide\" role=\"dialog\" tabindex=\"\
+        -1\"><div class=\"modal-dialog\"><div class=\"modal-content\"><div class=\"\
+        modal-header\"><button aria-label=\"Close\" class=\"close\" data-dismiss=\"\
+        modal\" type=\"button\"><span aria-hidden=\"true\">&times</span></button><h4\
+        \ class=\"modal-title\" id=\"installation_label\">Installation Guide for AWSFacebookSignIn</h4></div><div\
+        \ class=\"modal-body\"><p>You want to add <code>pod 'AWSFacebookSignIn', '~>\
+        \ 2.6'</code> similar to the following to your Podfile:</p><pre><code>target\
+        \ 'MyApp' do\n  pod 'AWSFacebookSignIn', '~> 2.6'\nend</code></pre><p>Then\
+        \ run a <code>pod install</code> inside your terminal, or from CocoaPods.app.</p><hr\
+        \ /><p>Alternatively to give it a test run, run the command:</p><p><code>pod\
+        \ try AWSFacebookSignIn</code></p></div></div></div></div><hr /><div class=\"\
+        space_for_appsight AWSFacebookSignIn\"></div><div aria-hidden=\"true\" aria-labelledby=\"\
+        appsight_label\" class=\"modal fade\" id=\"app_sight_info\" role=\"dialog\"\
+        \ tabindex=\"-2\"><div class=\"modal-dialog\"><div class=\"modal-content\"\
+        ><div class=\"modal-header\"><button aria-label=\"Close\" class=\"close\"\
+        \ data-dismiss=\"modal\" type=\"button\"><span aria-hidden=\"true\">&times</span></button><h4\
+        \ class=\"modal-title\" id=\"appsight_label\">AppSight.io Integration</h4></div><div\
+        \ class=\"modal-body\"><p>The CocoaPods Website has an optional integration\
+        \ with <a href='http://appsight.io'>AppSight.io</a> that checks every pod\
+        \ you look at for apps which consume it.</p><p><a href='http://appsight.io'>AppSight.io</a>\
+        \ is a third-party service which tracks SDKs usage in the top iOS + Android\
+        \ apps.</p><p></p><hr /><p>You can turn it off by clicking here: <button type=\"\
+        button\" class=\"btn btn-danger\" onclick=\"disableAppSight('AWSFacebookSignIn')\"\
+        >Disable</button></p></div></div></div></div><table><tbody><tr><td>&nbsp;</td><td></td></tr><tr><td>Depends\
+        \ on:</td><td></td></tr><tr><td><a href=\"/pods/AWSAuthCore\">AWSAuthCore</a></td><td>=\
+        \ 2.6.2</td></tr><tr><td><a href=\"/pods/FBSDKLoginKit\">FBSDKLoginKit</a></td><td>~&gt;\
+        \ 4.0</td></tr><tr><td><a href=\"/pods/FBSDKCoreKit\">FBSDKCoreKit</a></td><td>~&gt;\
+        \ 4.0</td></tr><tr><td>&nbsp;</td><td></td></tr></tbody></table><hr /><ul\
+        \ class=\"links\"><li><a href=\"https://github.com/CocoaPods/Specs/blob/master/Specs/9/e/c/AWSFacebookSignIn/2.6.2/AWSFacebookSignIn.podspec.json\"\
+        >See Podspec</a></li><li><a href=\"http://cocoadocs.org/docsets/AWSFacebookSignIn/2.6.2\"\
+        >Documentation</a></li><li><a href=\"https://github.com/aws/aws-sdk-ios.git\"\
+        >GitHub Repo</a></li><li><a href=\"http://aws.amazon.com/mobile/sdk\">Homepage</a></li><li><a\
+        \ href=\"https://cocoapods.org/pods/AWSFacebookSignIn\">Page on CocoaPods.org</a></li></ul></div><div\
+        \ class=\"readme-content col-sm-9 col-xs-12 col-sm-pull-3\"><div class=\"\
+        inline-headline\"><h1 class=\"hidden-xs\"><a href='/pods/AWSFacebookSignIn'>AWSFacebookSignIn</a>\
+        \ <span>2.6.2</span></h1></div><ul class=\"attribution\"><li>By</li><li>Amazon\
+        \ Web Services</li></ul><nav><ul><li class=\"github-link\"><a class=\"hidden-xs\"\
+        \ href=\"https://github.com/aws/aws-sdk-ios.git\">aws/aws-sdk-ios</a><a class=\"\
+        visible-xs\" href=\"https://github.com/aws/aws-sdk-ios.git\">GitHub Repo</a></li><a\
+        \ href=\"/pods/AWSFacebookSignIn/quality\"><li class=\"metadata quality_indicator\
+        \ quality_5\">\n<svg width=\"30px\" height=\"29px\" viewBox=\"0 0 30 29\"\
+        \ version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"\
+        \ xmlns:sketch=\"http://www.bohemiancoding.com/sketch/ns\">\n<g stroke=\"\
+        none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\" sketch:type=\"\
+        MSPage\">\n<g id=\"pod\" sketch:type=\"MSLayerGroup\">\n<rect id=\"bg\" fill-opacity=\"\
+        0.0341372283\" fill=\"#000000\" sketch:type=\"MSShapeGroup\" x=\"0\" y=\"\
+        0\" width=\"30\" height=\"29\" rx=\"8\"></rect>\n<path d=\"M14.8945416,1.48101993\
+        \ C13.1855416,1.48101993 9.54654156,1.88101993 9.54654156,3.98801993 C9.54654156,6.32001993\
+        \ 13.0965416,11.2720199 14.8945416,11.2720199 C16.6925416,11.2720199 20.2425416,6.32001993\
+        \ 20.2425416,3.98801993 C20.2425416,1.88101993 16.6035416,1.48101993 14.8945416,1.48101993\"\
+        \ id=\"top\" fill=\"#FFFFFF\" sketch:type=\"MSShapeGroup\"></path>\n<path\
+        \ d=\"M2.62992103,10.8751496 C2.10192103,12.5001496 1.35792103,16.0841496\
+        \ 3.36292103,16.7351496 C5.57992103,17.4561496 11.385921,15.6101496 11.941921,13.9001496\
+        \ C12.496921,12.1901496 8.88492103,7.28414965 6.66792103,6.56414965 C4.66192103,5.91314965\
+        \ 3.15792103,9.24914965 2.62992103,10.8751496\" id=\"left\" fill=\"#FFFFFF\"\
+        \ sketch:type=\"MSShapeGroup\"></path>\n<path d=\"M7.21553078,25.7032179 C8.59853078,26.7082179\
+        \ 11.7765308,28.5232179 13.0155308,26.8172179 C14.3855308,24.9312179 14.4245308,18.8392179\
+        \ 12.9695308,17.7822179 C11.5155308,16.7252179 5.73353078,18.6442179 4.36353078,20.5312179\
+        \ C3.12253078,22.2372179 5.83153078,24.6982179 7.21553078,25.7032179\" id=\"\
+        bottom-left\" fill=\"#FFFFFF\" sketch:type=\"MSShapeGroup\"></path>\n<path\
+        \ d=\"M22.8835437,25.7032256 C24.2665437,24.6982256 26.9745437,22.2372256\
+        \ 25.7355437,20.5302256 C24.3655437,18.6442256 18.5835437,16.7252256 17.1285437,17.7822256\
+        \ C15.6745437,18.8392256 15.7125437,24.9312256 17.0825437,26.8162256 C18.3225437,28.5232256\
+        \ 21.5005437,26.7082256 22.8835437,25.7032256\" id=\"bottom-right\" fill=\"\
+        #FFFFFF\" sketch:type=\"MSShapeGroup\"></path>\n<path d=\"M27.4157447,10.876149\
+        \ C26.8877447,9.24914899 25.3837447,5.91314899 23.3777447,6.56414899 C21.1607447,7.28414899\
+        \ 17.5487447,12.190149 18.1037447,13.900149 C18.6607447,15.610149 24.4657447,17.456149\
+        \ 26.6837447,16.735149 C28.6887447,16.084149 27.9447447,12.501149 27.4157447,10.876149\"\
+        \ id=\"right\" fill=\"#FFFFFF\" sketch:type=\"MSShapeGroup\"></path>\n</g>\n\
+        </g>\n</svg>\n</li></a></ul></nav><div class=\"clearfix\"></div><ul class=\"\
+        nav nav-tabs\" id=\"asset_switcher\" role=\"tablist\"><li class=\"active\"\
+        ><a aria-controls=\"README\" class=\"media_node span\" data-target=\"#readme\"\
+        \ data-toggle=\"tab\" href=\"#\" id=\"readme_tab\">OVERVIEW</a></li><li><a\
+        \ aria-controls=\"CHANGELOG\" class=\"media_node span media_node span\" data-target=\"\
+        #changelog_content\" data-toggle=\"tabajax\" href=\"/pods/AWSFacebookSignIn/changelog\"\
+        \ id=\"changelog_tab\">CHANGELOG</a></li></ul><div class=\"tab-content\"><div\
+        \ class=\"tab-pane active\" id=\"readme\"><!DOCTYPE html PUBLIC \"-//W3C//DTD\
+        \ HTML 4.0 Transitional//EN\" \"http://www.w3.org/TR/REC-html40/loose.dtd\"\
+        >\n<html><body>\n<h1>AWS Mobile SDK for iOS</h1>\n<p><br>\n<br>\n<br>\n</p>\n\
+        <h2>Setting Up</h2>\n<p>To get started with the AWS SDK for iOS, you can set\
+        \ up the SDK and start building a new project, or you integrate the SDK in\
+        \ an existing project. You can also run the samples to get a sense of how\
+        \ the SDK works.</p>\n<p>To use the AWS SDK for iOS, you will need the following\
+        \ installed on your development machine:</p>\n<ul>\n<li>Xcode 7 or later</li>\n\
+        <li>iOS 8 or later</li>\n</ul>\n<p>At the AWS GitHub repo, you can check out\
+        \ the <a href=\"https://github.com/aws/aws-sdk-ios\">SDK source code</a>.</p>\n\
+        <p>For more information, see <a href=\"http://docs.aws.amazon.com/mobile/sdkforios/developerguide/\"\
+        >AWS Mobile SDK for iOS Developer Guide</a>.</p>\n<h2>Include the SDK for\
+        \ iOS in an Existing Application</h2>\n<p>The <a href=\"https://github.com/awslabs/aws-sdk-ios-samples\"\
+        >samples</a> included with the SDK for iOS are standalone projects that are\
+        \ already set up for you. You can also integrate the SDK for iOS with your\
+        \ own existing project. There are three ways to import the AWS Mobile SDK\
+        \ for iOS into your project:</p>\n<ul>\n<li>CocoaPods</li>\n<li>Carthage</li>\n\
+        <li><a href=\"https://aws.amazon.com/mobile/sdk/\">Dynamic Frameworks</a></li>\n\
+        </ul>\n<p>You should use one of these three ways to import the AWS Mobile\
+        \ SDK but not multiple. Importing the SDK in multiple ways loads duplicate\
+        \ copies of the SDK into the project and causes compiler errors.</p>\n<h3>Frameworks</h3>\n\
+        <ol>\n<li>\n<p>Download the SDK from our <a href=\"http://aws.amazon.com/mobile/sdk\"\
+        >AWS Mobile SDK</a> page. The SDK is stored in a compressed file archive named\
+        \ <code>aws-ios-sdk-#.#.#</code> (where <code>#.#.#</code> represents the\
+        \ version number, so for version 2.5.0, the filename is <code>aws-ios-sdk-2.5.0</code>).</p>\n\
+        </li>\n<li>\n<p>With your project open in Xcode, select your <strong>Target</strong>.\
+        \ Under <strong>General</strong> tab, find <strong>Embedded Binaries</strong>\
+        \ and then click the <strong>+</strong> button.</p>\n</li>\n<li>\n<p>Click\
+        \ the <strong>Add Other...</strong> button, navigate to the <code>AWS&lt;#ServiceName#&gt;.framework</code>\
+        \ files and select them. Check the <strong>Destination: Copy items if needed</strong>\
+        \ checkbox when prompted.</p>\n<ul>\n<li><code>AWSCore.framework</code></li>\n\
+        <li><code>AWSAutoScaling.framework</code></li>\n<li><code>AWSCloudWatch.framework</code></li>\n\
+        <li><code>AWSCognito.framework</code></li>\n<li><code>AWSCognitoIdentityProvider.framework</code></li>\n\
+        <li><code>AWSDynamoDB.framework</code></li>\n<li><code>AWSEC2.framework</code></li>\n\
+        <li><code>AWSElasticLoadBalancing.framework</code></li>\n<li><code>AWSIoT.framework</code></li>\n\
+        <li><code>AWSKinesis.framework</code></li>\n<li><code>AWSLambda.framework</code></li>\n\
+        <li><code>AWSMachineLearning.framework</code></li>\n<li><code>AWSMobileAnalytics.framework</code></li>\n\
+        <li><code>AWSS3.framework</code></li>\n<li><code>AWSSES.framework</code></li>\n\
+        <li><code>AWSSimpleDB.framework</code></li>\n<li><code>AWSSNS.framework</code></li>\n\
+        <li><code>AWSSQS.framework</code></li>\n</ul>\n</li>\n<li>\n<p>Under the <strong>Buid\
+        \ Phases</strong> tab in your <strong>Target</strong>, click the <strong>+</strong>\
+        \ button on the top left and then select <strong>New Run Script Phase</strong>.\
+        \ Then setup the build phase as follows. Make sure this phase is below the\
+        \ <code>Embed Frameworks</code> phase.</p>\n<pre><code> Shell /bin/sh\n \n\
+        \ bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework/strip-frameworks.sh\"\
+        \n \n Show environment variables in build log: Checked\n Run script only when\
+        \ installing: Not checked\n \n Input Files: Empty\n Output Files: Empty\n\
+        </code></pre>\n</li>\n</ol>\n<h2>Update the SDK to a Newer Version</h2>\n\
+        <p>When we release a new version of the SDK, you can pick up the changes as\
+        \ described below.</p>\n<h3>Frameworks</h3>\n<ol>\n<li>\n<p>In Xcode select\
+        \ the following frameworks in <strong>Project Navigator</strong> and hit <strong>delete</strong>\
+        \ on your keyboard. Then select <strong>Move to Trash</strong>:</p>\n<ul>\n\
+        <li><code>AWSCore.framework</code></li>\n<li><code>AWSAutoScaling.framework</code></li>\n\
+        <li><code>AWSCloudWatch.framework</code></li>\n<li><code>AWSCognito.framework</code></li>\n\
+        <li><code>AWSCognitoIdentityProvider.framework</code></li>\n<li><code>AWSDynamoDB.framework</code></li>\n\
+        <li><code>AWSEC2.framework</code></li>\n<li><code>AWSElasticLoadBalancing.framework</code></li>\n\
+        <li><code>AWSIoT.framework</code></li>\n<li><code>AWSKinesis.framework</code></li>\n\
+        <li><code>AWSLambda.framework</code></li>\n<li><code>AWSMachineLearning.framework</code></li>\n\
+        <li><code>AWSMobileAnalytics.framework</code></li>\n<li><code>AWSS3.framework</code></li>\n\
+        <li><code>AWSSES.framework</code></li>\n<li><code>AWSSimpleDB.framework</code></li>\n\
+        <li><code>AWSSNS.framework</code></li>\n<li><code>AWSSQS.framework</code></li>\n\
+        </ul>\n</li>\n<li>\n<p>Follow the installation process above to include the\
+        \ new version of the SDK.</p>\n</li>\n</ol>\n<h2>Preparing your apps for iOS\
+        \ 9</h2>\n<p>The release of iOS 9 includes changes that might impact how your\
+        \ apps interact with some AWS services. If you compile your apps with Apple\u2019\
+        s iOS 9 SDK (or Xcode 7), Apple\u2019s <a href=\"https://developer.apple.com/library/prerelease/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html\"\
+        >App Transport Security (ATS)</a> feature may affect the ability of apps to\
+        \ connect to certain AWS service endpoints. In order to ensure affected apps\
+        \ continue to successfully connect to AWS endpoints, you\u2019ll need to configure\
+        \ them to interact properly with Apple\u2019s ATS by adding these properties\
+        \ to your <code>Info.plist</code> file:</p>\n<pre><code>    &lt;key&gt;NSAppTransportSecurity&lt;/key&gt;\n\
+        \    &lt;dict&gt;\n            &lt;key&gt;NSExceptionDomains&lt;/key&gt;\n\
+        \            &lt;dict&gt;\n            &lt;key&gt;amazonaws.com&lt;/key&gt;\n\
+        \            &lt;dict&gt;\n                    &lt;key&gt;NSThirdPartyExceptionMinimumTLSVersion&lt;/key&gt;\n\
+        \                    &lt;string&gt;TLSv1.0&lt;/string&gt;\n              \
+        \      &lt;key&gt;NSThirdPartyExceptionRequiresForwardSecrecy&lt;/key&gt;\n\
+        \                    &lt;false/&gt;\n                    &lt;key&gt;NSIncludesSubdomains&lt;/key&gt;\n\
+        \                    &lt;true/&gt;\n            &lt;/dict&gt;\n          \
+        \  &lt;key&gt;amazonaws.com.cn&lt;/key&gt;\n            &lt;dict&gt;\n   \
+        \                 &lt;key&gt;NSThirdPartyExceptionMinimumTLSVersion&lt;/key&gt;\n\
+        \                    &lt;string&gt;TLSv1.0&lt;/string&gt;\n              \
+        \      &lt;key&gt;NSThirdPartyExceptionRequiresForwardSecrecy&lt;/key&gt;\n\
+        \                    &lt;false/&gt;\n                    &lt;key&gt;NSIncludesSubdomains&lt;/key&gt;\n\
+        \                    &lt;true/&gt;\n            &lt;/dict&gt;\n          \
+        \  &lt;/dict&gt;\n    &lt;/dict&gt;\n</code></pre>\n<p>For more information,\
+        \ see <a href=\"http://docs.aws.amazon.com/mobile/sdkforios/developerguide/ats.html\"\
+        >Preparing Your Apps for iOS 9</a>.</p>\n<h2>Getting Started with Swift</h2>\n\
+        <ol>\n<li>\n<p>Import the AWSCore header in the application delegate.</p>\n\
+        <pre><code> import AWSCore\n</code></pre>\n</li>\n<li>\n<p>Create a default\
+        \ service configuration by adding the following code snippet in the <code>application:didFinishLaunchingWithOptions:</code>\
+        \ application delegate method.</p>\n<pre><code> let credentialsProvider =\
+        \ AWSCognitoCredentialsProvider(\n     regionType: CognitoRegionType,\n  \
+        \   identityPoolId: CognitoIdentityPoolId)\n let configuration = AWSServiceConfiguration(\n\
+        \     region: DefaultServiceRegionType,\n     credentialsProvider: credentialsProvider)\n\
+        \ AWSServiceManager.default().defaultServiceConfiguration = configuration\n\
+        </code></pre>\n</li>\n<li>\n<p>In Swift file you want to use the SDK, import\
+        \ the appropriate headers for the services you are using. The header file\
+        \ import convention is <code>import AWSServiceName</code>, as in the following\
+        \ examples:</p>\n<pre><code> import AWSS3\n import AWSDynamoDB\n import AWSSQS\n\
+        \ import AWSSNS\n import AWSCognito\n</code></pre>\n</li>\n<li>\n<p>Make a\
+        \ call to the AWS services.</p>\n<pre><code> let dynamoDB = AWSDynamoDB.default()\n\
+        \ let listTableInput = AWSDynamoDBListTablesInput()\n dynamoDB.listTables(listTableInput!).continueWith\
+        \ { (task:AWSTask&lt;AWSDynamoDBListTablesOutput&gt;) -&gt; Any? in\n    \
+        \ if let error = task.error as? NSError {\n         print(\"Error occurred:\
+        \ \\(error)\")\n         return nil\n     }\n     \n     let listTablesOutput\
+        \ = task.result\n     \n     for tableName in listTablesOutput!.tableNames!\
+        \ {\n         print(\"\\(tableName)\")\n     }\n     \n     return nil\n }\n\
+        </code></pre>\n<p><strong>Note</strong>: Most of the service client classes\
+        \ have a singleton method to get a default client. The naming convention is\
+        \ <code>+ defaultSERVICENAME</code> (e.g. <code>+ defaultDynamoDB</code> in\
+        \ the above code snippet). This singleton method creates a service client\
+        \ with <code>defaultServiceConfiguration</code>, which you set up in step\
+        \ 5, and maintains a strong reference to the client.</p>\n</li>\n</ol>\n<h2>Getting\
+        \ Started with Objective-C</h2>\n<ol>\n<li>\n<p>Import the AWSCore header\
+        \ in the application delegate.</p>\n<pre><code> @import AWSCore;\n</code></pre>\n\
+        </li>\n<li>\n<p>Create a default service configuration by adding the following\
+        \ code snippet in the <code>application:didFinishLaunchingWithOptions:</code>\
+        \ application delegate method.</p>\n<pre><code> AWSCognitoCredentialsProvider\
+        \ *credentialsProvider = [[AWSCognitoCredentialsProvider alloc] initWithRegionType:CognitoRegionType\n\
+        \                                                                        \
+        \                         identityPoolId:CognitoIdentityPoolId];\n AWSServiceConfiguration\
+        \ *configuration = [[AWSServiceConfiguration alloc] initWithRegion:DefaultServiceRegionType\n\
+        \                                                                      credentialsProvider:credentialsProvider];\n\
+        \ AWSServiceManager.defaultServiceManager.defaultServiceConfiguration = configuration;\n\
+        </code></pre>\n</li>\n<li>\n<p>Import the appropriate headers for the services\
+        \ you are using. The header file import convention is <code>@import AWSServiceName;</code>,\
+        \ as in the following examples:</p>\n<pre><code> @import AWSS3;\n @import\
+        \ AWSDynamoDB;\n @import AWSSQS;\n @import AWSSNS;\n @import AWSCognito;\n\
+        </code></pre>\n</li>\n<li>\n<p>Make a call to the AWS services.</p>\n<pre><code>\
+        \ AWSS3TransferManager *transferManager = [AWSS3TransferManager defaultS3TransferManager];\n\
+        \ AWSS3TransferManagerUploadRequest *uploadRequest = [AWSS3TransferManagerUploadRequest\
+        \ new];\n uploadRequest.bucket = yourBucket;\n uploadRequest.key = yourKey;\n\
+        \ uploadRequest.body = yourDataURL;\n uploadRequest.contentLength = [NSNumber\
+        \ numberWithUnsignedLongLong:fileSize];\n\n [[transferManager upload:uploadRequest]\
+        \ continueWithBlock:^id(AWSTask *task) {\n     // Do something with the response\n\
+        \     return nil;\n }];\n</code></pre>\n<p><strong>Note</strong>: Most of\
+        \ the service client classes have a singleton method to get a default client.\
+        \ The naming convention is <code>+ defaultSERVICENAME</code> (e.g. <code>+\
+        \ defaultS3TransferManager</code> in the above code snippet). This singleton\
+        \ method creates a service client with <code>defaultServiceConfiguration</code>,\
+        \ which you set up in step 5, and maintains a strong reference to the client.</p>\n\
+        </li>\n</ol>\n<h2>AWSTask</h2>\n<p>With native AWSTask support in the SDK\
+        \ for iOS, you can chain async requests instead of nesting them. It makes\
+        \ the logic cleaner, while keeping the code more readable. Read <a href=\"\
+        http://docs.aws.amazon.com/mobile/sdkforios/developerguide/awstask.html\"\
+        >Working with AWSTask</a> to learn how to use AWSTask.</p>\n<h2>Logging</h2>\n\
+        <p>As of version 2.5.4 of this SDK, logging utilizes <a href=\"https://github.com/CocoaLumberjack/CocoaLumberjack\"\
+        >CocoaLumberjack</a>, a flexible, fast, open source logging framework. It\
+        \ supports many capabilities including the ability to set logging level per\
+        \ output target, for instance, concise messages logged to the console and\
+        \ verbose messages to a log file.</p>\n<p>CocoaLumberjack logging levels are\
+        \ additive such that when the level is set to verbose, all messages from the\
+        \ levels below verbose are logged. It is also possible to set custom logging\
+        \ to meet your needs. For more information, see <a href=\"https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/Documentation/CustomLogLevels.md\"\
+        >CocoaLumberjack</a></p>\n<h3>Changing Log Levels</h3>\n<p><strong>Swift</strong></p>\n\
+        <pre><code>AWSDDLog.sharedInstance().logLevel = .verbose\n</code></pre>\n\
+        <p>The following logging level options are available:</p>\n<ul>\n<li><code>.off</code></li>\n\
+        <li><code>.error</code></li>\n<li><code>.warning</code></li>\n<li><code>.info</code></li>\n\
+        <li><code>.debug</code></li>\n<li><code>.verbose</code></li>\n</ul>\n<p><strong>Objective-C</strong></p>\n\
+        <pre><code>[AWSDDLog sharedInstance].logLevel = AWSDDLogLevelVerbose;\n</code></pre>\n\
+        <p>The following logging level options are available:</p>\n<ul>\n<li><code>AWSDDLogLevelOff</code></li>\n\
+        <li><code>AWSDDLogLevelError</code></li>\n<li><code>AWSDDLogLevelWarning</code></li>\n\
+        <li><code>AWSDDLogLevelInfo</code></li>\n<li><code>AWSDDLogLevelDebug</code></li>\n\
+        <li><code>AWSDDLogLevelVerbose</code></li>\n</ul>\n<p>We recommend setting\
+        \ the log level to <code>Off</code> before publishing to the Apple App Store.</p>\n\
+        <h3>Targeting Log Output</h3>\n<p>CocoaLumberjack can direct logs to file\
+        \ or used as a framework that integrates with the Xcode console.</p>\n<p>To\
+        \ initialize logging to files, use the following code:</p>\n<p><strong>Swift</strong></p>\n\
+        <pre><code>    let fileLogger: AWSDDFileLogger = AWSDDFileLogger() // File\
+        \ Logger\n    fileLogger.rollingFrequency = TimeInterval(60*60*24)  // 24\
+        \ hours\n    fileLogger.logFileManager.maximumNumberOfLogFiles = 7\n    AWSDDLog.add(fileLogger)\n\
+        </code></pre>\n<p><strong>Objective-C</strong></p>\n<pre><code>    AWSDDFileLogger\
+        \ *fileLogger = [[AWSDDFileLogger alloc] init]; // File Logger\n    fileLogger.rollingFrequency\
+        \ = 60 * 60 * 24; // 24 hour rolling\n    fileLogger.logFileManager.maximumNumberOfLogFiles\
+        \ = 7;\n    [AWSDDLog addLogger:fileLogger];\n</code></pre>\n<p>To initialize\
+        \ logging to your Xcode console, use the following code:</p>\n<p><strong>Swift</strong></p>\n\
+        <pre><code>    AWSDDLog.add(AWSDDTTYLogger.sharedInstance()) // TTY = Xcode\
+        \ console\n</code></pre>\n<p><strong>Objective-C</strong></p>\n<pre><code>\
+        \    [AWSDDLog addLogger:[AWSDDTTYLogger sharedInstance]]; // TTY = Xcode\
+        \ console\n</code></pre>\n<h2>Sample Apps</h2>\n<p>The AWS SDK for iOS includes\
+        \ sample apps that demonstrate common use cases.</p>\n<h3>Cognito Your User\
+        \ Pools Sample (<a href=\"https://github.com/awslabs/aws-sdk-ios-samples/tree/master/CognitoYourUserPools-Sample/Swift/\"\
+        >Swift</a>, <a href=\"https://github.com/awslabs/aws-sdk-ios-samples/tree/master/CognitoYourUserPools-Sample/Objective-C/\"\
+        >Objective-C</a>)</h3>\n<p>This sample demonstrates how sign up and sign in\
+        \ a user to display an authenticated portion of your app.</p>\n<h3>Cognito\
+        \ Sync Sample (<a href=\"https://github.com/awslabs/aws-sdk-ios-samples/tree/master/CognitoSync-Sample/Swift/\"\
+        >Swift</a>, <a href=\"https://github.com/awslabs/aws-sdk-ios-samples/tree/master/CognitoSync-Sample/Objective-C/\"\
+        >Objective-C</a>)</h3>\n<p>This sample demonstrates how to securely manage\
+        \ and sync your mobile app data and create unique identities via login providers\
+        \ including Facebook, Google, and Login with Amazon.</p>\n<h4>AWS Services\
+        \ Demonstrated:</h4>\n<ul>\n<li><a href=\"http://aws.amazon.com/cognito/\"\
+        >Amazon Cognito Sync</a></li>\n<li><a href=\"http://aws.amazon.com/cognito/\"\
+        >Amazon Cognito Identity</a></li>\n</ul>\n<h3>DynamoDB Object Mapper Sample\
+        \ (<a href=\"https://github.com/awslabs/aws-sdk-ios-samples/tree/master/DynamoDBObjectMapper-Sample/Swift/\"\
+        >Swift</a>, <a href=\"https://github.com/awslabs/aws-sdk-ios-samples/tree/master/DynamoDBObjectMapper-Sample/Objective-C/\"\
+        >Objective-C</a>)</h3>\n<p>This sample demonstrates how to insert / update\
+        \ / delete / query items using DynamoDB Object Mapper.</p>\n<h4>AWS Services\
+        \ Demonstrated:</h4>\n<ul>\n<li><a href=\"http://aws.amazon.com/dynamodb/\"\
+        >Amazon DynamoDB</a></li>\n<li><a href=\"http://aws.amazon.com/cognito/\"\
+        >Amazon Cognito Identity</a></li>\n</ul>\n<h3>S3 Transfer Manager Sample (<a\
+        \ href=\"https://github.com/awslabs/aws-sdk-ios-samples/tree/master/S3TransferManager-Sample/Swift/\"\
+        >Swift</a>, <a href=\"https://github.com/awslabs/aws-sdk-ios-samples/tree/master/S3TransferManager-Sample/Objective-C/\"\
+        >Objective-C</a>)</h3>\n<p>This sample demonstrates how to upload / download\
+        \ multiple files simultaneously using S3 Transfer Manager. It also shows how\
+        \ to pause, resume, and cancel file upload / download.</p>\n<h4>AWS Services\
+        \ Demonstrated:</h4>\n<ul>\n<li><a href=\"http://aws.amazon.com/s3/\">Amazon\
+        \ S3</a></li>\n<li><a href=\"http://aws.amazon.com/cognito/\">Amazon Cognito\
+        \ Identity</a></li>\n</ul>\n<h3>S3 Transfer Utility Sample (<a href=\"https://github.com/awslabs/aws-sdk-ios-samples/tree/master/S3BackgroundTransfer-Sample/Swift/\"\
+        >Swift</a>, <a href=\"https://github.com/awslabs/aws-sdk-ios-samples/tree/master/S3BackgroundTransfer-Sample/Objective-C/\"\
+        >Objective-C</a>)</h3>\n<p>This sample demonstrates how to use the Amazon\
+        \ S3 PreSigned URL Builder to download / upload files in background.</p>\n\
+        <h4>AWS Services Demonstrated:</h4>\n<ul>\n<li><a href=\"http://aws.amazon.com/s3/\"\
+        >Amazon S3</a></li>\n<li><a href=\"http://aws.amazon.com/cognito/\">Amazon\
+        \ Cognito Identity</a></li>\n</ul>\n<h3>SNS Mobile Push and Mobile Analytics\
+        \ Sample (<a href=\"https://github.com/awslabs/aws-sdk-ios-samples/tree/master/SNS-MobileAnalytics-Sample/Swift/\"\
+        >Swift</a>, <a href=\"https://github.com/awslabs/aws-sdk-ios-samples/tree/master/SNS-MobileAnalytics-Sample/Objective-C/\"\
+        >Objective-C</a>)</h3>\n<p>This sample demonstrates how to set up Amazon SNS\
+        \ Mobile Push and record events using Amazon Mobile Analytics.</p>\n<h4>AWS\
+        \ Services Demonstrated:</h4>\n<ul>\n<li><a href=\"http://aws.amazon.com/sns/\"\
+        >Amazon SNS Mobile Push</a></li>\n<li><a href=\"http://aws.amazon.com/mobileanalytics/\"\
+        >Amazon Mobile Analytics</a></li>\n<li><a href=\"http://aws.amazon.com/cognito/\"\
+        >Amazon Cognito Identity</a></li>\n</ul>\n<h3>IoT Sample (<a href=\"https://github.com/awslabs/aws-sdk-ios-samples/tree/master/IoT-Sample/Swift/\"\
+        >Swift</a>)</h3>\n<p>This sample demonstrates how to publish and subscribe\
+        \ to data using AWS IoT.</p>\n<h4>AWS Services Demonstrated:</h4>\n<ul>\n\
+        <li><a href=\"http://aws.amazon.com/iot/\">Amazon AWS IoT</a></li>\n<li><a\
+        \ href=\"http://aws.amazon.com/cognito/\">Amazon Cognito Identity</a></li>\n\
+        </ul>\n<h3>IoT Temperature Control Sample (<a href=\"https://github.com/awslabs/aws-sdk-ios-samples/tree/master/IoTTemperatureControl-Sample/Swift/\"\
+        >Swift</a>)</h3>\n<p>This sample demonstrates accessing device shadows using\
+        \ Cognito authentication; it works in conjunction with the Temperature Control\
+        \ Example Program in the <a href=\"https://github.com/aws/aws-iot-device-sdk-js\"\
+        >AWS IoT JavaScript SDK for Embedded Devices</a>.</p>\n<h4>AWS Services Demonstrated:</h4>\n\
+        <ul>\n<li><a href=\"http://aws.amazon.com/iot/\">Amazon AWS IoT</a></li>\n\
+        <li><a href=\"http://aws.amazon.com/cognito/\">Amazon Cognito Identity</a></li>\n\
+        </ul>\n<h2>Install the Reference Documentation in Xcode</h2>\n<p>The AWS Mobile\
+        \ SDK for iOS zip file includes documentation in the DocSets format that you\
+        \ can view within Xcode. The easiest way to install the documentation is to\
+        \ use the Mac OS X terminal.</p>\n<ol>\n<li>\n<p>Open the Mac OS X terminal\
+        \ and go to the directory containing the expanded archive. For example:</p>\n\
+        <pre><code> $ cd ~/Downloads/aws-ios-sdk-2.5.0\n</code></pre>\n<p><strong>Note</strong>:\
+        \ Remember to replace 2.5.0 in the example above with the actual version number\
+        \ of the AWS SDK for iOS that you downloaded.</p>\n</li>\n<li>\n<p>Create\
+        \ a directory called <code>~/Library/Developer/Shared/Documentation/DocSets</code>:</p>\n\
+        <pre><code> $ mkdir -p ~/Library/Developer/Shared/Documentation/DocSets\n\
+        </code></pre>\n</li>\n<li>\n<p>Copy (or move) <code>Documentation/com.amazon.aws.ios.docset</code>\
+        \ from the SDK installation files to the directory you created in the previous\
+        \ step:</p>\n<pre><code> $ mv Documentation/com.amazon.aws.ios.docset ~/Library/Developer/Shared/Documentation/DocSets/\n\
+        </code></pre>\n</li>\n<li>\n<p>If Xcode was running during this procedure,\
+        \ restart Xcode. To browse the documentation, go to <strong>Help</strong>,\
+        \ click <strong>Documentation and API Reference</strong>, and select <strong>AWS\
+        \ Mobile SDK for iOS v2.5.0 Documentation</strong> (where '2.5.0' is the appropriate\
+        \ version number).</p>\n</li>\n</ol>\n<h2>Talk to Us</h2>\n<p>Visit our GitHub\
+        \ <a href=\"https://github.com/aws/aws-sdk-ios/issues\">Issues</a> to leave\
+        \ feedback and to connect with other users of the SDK.</p>\n<h2>Author</h2>\n\
+        <p>Amazon Web Services</p>\n<h2>License</h2>\n<p>See the <strong>LICENSE</strong>\
+        \ file for more info.</p>\n</body></html>\n</div><div class=\"tab-pane\" id=\"\
+        changelog_content\"></div></div></div><div class=\"clearfix\"></div></div></article></section></div><script\
+        \ type=\"text/javascript\">$copy_to_clipboard = $('ol.results img.copy')\n\
+        \nvar clip = new ZeroClipboard(\n  $copy_to_clipboard, {\n    moviePath: \"\
+        /flashes/ZeroClipboard.swf\",\n    forceHandCursor: true\n  }\n);\n\nclip.on(\
+        \ 'noflash', function ( client, args ) {\n\n  // provide a recursive wait\
+        \ method\n  // that checks for the hover on the popover/clipboard\n  // before\
+        \ hiding so you can select text\n\n  function closePopoverForNode(node){\n\
+        \    setTimeout(function() {\n      if (!$(node).is(':hover') && !$(\".popover:hover\"\
+        ).length) {\n        $(node).popover(\"hide\")\n      } else {\n        closePopoverForNode(node)\n\
+        \      }\n    }, 500);\n  }\n\n  // With no flash you should be able to select\
+        \ the text\n  // in the popover\n\n  $copy_to_clipboard.popover({\n    trigger:\
+        \ \"manual\",\n    container: \"body\"\n\n  }).on(\"click\", function(e) {\n\
+        \    e.preventDefault();\n\n  }).on(\"mouseenter\", function() {\n    $(this).popover(\"\
+        show\");\n    $(\".popover input\").select()\n\n  }).on(\"mouseleave\", function()\
+        \ {\n    closePopoverForNode(this)\n  });\n});\n\n// When Flash works, jusst\
+        \ do a normal popover\nclip.on(\"load\", function(client) {\n\n  client.on(\
+        \ \"complete\", function(client, args) {\n    $(\"h4.has-flash\").text(\"\
+        Saved to clipboard\");\n    $(\".popover\").addClass(\"saved\")\n  });\n\n\
+        \  clip.on( 'mouseover', function ( client, args ) {\n    $(this).popover('show')\n\
+        \  });\n\n  clip.on( 'mouseout', function ( client, args ) {\n    $(this).popover('hide')\n\
+        \  });\n});\n\n// When the page loads up check for a #changelog and load the\
+        \ changelog instead of the README if possible\n$(document).ready(function()\
+        \ {\n  if ($(\"#asset_switcher\").length == 0) { return }\n  if (location.hash\
+        \ == \"#changelog\") {\n    $(\"#changelog_tab\").click()\n  }\n\n  // Make\
+        \ it easy to get a changelog URL for C+Ping\n  $('#asset_switcher a').on('shown.bs.tab',\
+        \ function (e) {\n    var is_changelog = $(e.target).data(\"target\") == \"\
+        #changelog_content\"\n    var new_hash = (is_changelog) ? \"#changelog\" :\
+        \ \"\"\n    var current_url = window.location.toString().split('#')[0]\n \
+        \   history.replaceState(null, null, current_url + new_hash)\n  })\n})\n\n\
+        \  $(document).ready(function() {\n    checkForAppSight(\"AWSFacebookSignIn\"\
+        )\n  })</script><div class=\"clearfix\"></div><footer class=\"page-footer\"\
+        ><section class=\"container\"><div class=\"row\"><article class=\"col-md-8\
+        \ col-lg-8 col-sm-12 col-md-offset-2 col-lg-offset-2 col-xs-12\"><h4>CocoaPods\
+        \ is a project from</h4><p class=\"contributors\"> <a href=\"https://twitter.com/benasher44\"\
+        >Ben Asher</a>, <a href=\"https://twitter.com/dnkoutso\">Dimitris Koutsogiorgas</a>,\
+        \ <a href=\"http://dantoml.com\">Danielle Tomlinson</a>, <a href=\"http://orta.io\"\
+        >Orta Therox</a>, and <a href=\"https://cocoapods.org/about#team\">The CocoaPods\
+        \ Dev Team</a> with contributions from <a href=\"https://github.com/CocoaPods/Specs/graphs/contributors\"\
+        >many, many others</a>.</p><h4>Lovingly sponsored by</h4><p class=\"sponsors\"\
+        ><a href=\"http://artsy.net\">Artsy</a>, <a href=\"http://www.usebutton.com\"\
+        >Button</a>, <a href=\"http://www.capitalone.io\">Capital One</a>, <a href=\"\
+        https://circleci.com\">CircleCI</a>, <a href=\"http://discontinuity.eu\">Discontinuity</a>,\
+        \ <a href=\"http://www.fngtps.com\">Fingertips</a>, <a href=\"https://www.heroku.com\"\
+        >Heroku</a>, <a href=\"https://realm.io\">Realm</a>, <a href=\"http://www.rubymotion.com\"\
+        >RubyMotion</a>, <a href=\"https://www.sauspiel.de\">Sauspiel</a>, <a href=\"\
+        https://www.slack.com\">Slack</a>, <a href=\"https://www.soundcloud.com\"\
+        >SoundCloud</a>, <a href=\"https://www.stripe.com\">Stripe</a>, <a href=\"\
+        https://www.squareup.com\">Square</a>, and <a href=\"http://www.technologyastronauts.ch\"\
+        >Technology&nbsp;Astronauts</a>.</p></article></div></section></footer><footer\
+        \ class=\"footer-links\"><section class=\"container\"><div class=\"row\"><article\
+        \ class=\"col-md-8 col-lg-8 col-sm-12 col-md-offset-2 col-lg-offset-2 col-xs-12\"\
+        ><a class=\"cocoapods-small-logo\" href=\"https://cocoapods.org\"></a><ul><li\
+        \ class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"https://guides.cocoapods.org/using/troubleshooting.html\"\
+        >Support</a></li><li class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"https://github.com/CocoaPods/CocoaPods\"\
+        >GitHub Repo</a></li><li class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"https://status.cocoapods.org\"\
+        >Web Properties Status</a></li><li class=\"col-md-3 col-sm-3 col-xs-6\"><a\
+        \ href=\"https://twitter.com/CocoaPods\">@CocoaPods</a></li><li class=\"col-md-3\
+        \ col-sm-3 col-xs-6\"><a href=\"http://groups.google.com/group/cocoapods\"\
+        >Mailing List</a></li><li class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"\
+        https://cocoapods.org/about\"><span class=\"visible-lg-span\">CocoaPods</span>\
+        \ Dev Team</a></li><li class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"https://guides.cocoapods.org/syntax/podfile.html\"\
+        >Podfile Doc<span class=\"hidden-lg-span\">s</span><span class=\"visible-lg-span\"\
+        >umentation</span></a></li><li class=\"col-md-3 col-sm-3 col-xs-6\"><a href=\"\
+        https://cocoapods.org/legal\">Legal / Conduct</a></li></ul></article></div></section></footer></body></html><script\
+        \ type=\"text/javascript\">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,\
+        \ 'script', 'twitter-wjs');\n\nvar _gaq = _gaq || [];\n_gaq.push(['_setAccount',\
+        \ 'UA-29866548-1']);\n_gaq.push(['_trackPageview']);\n(function() {\n  var\
+        \ ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async\
+        \ = true;\n  ga.src = ('https:' == document.location.protocol ? 'https://ssl'\
+        \ : 'http://www') + '.google-analytics.com/ga.js';\n  var s = document.getElementsByTagName('script')[0];\
+        \ s.parentNode.insertBefore(ga, s);\n})();</script>"}
+    headers:
+      CF-RAY: [3a8b93f2bdfa270e-FRA]
+      Connection: [keep-alive]
+      Content-Type: [text/html;charset=utf-8]
+      Date: ['Wed, 04 Oct 2017 22:29:05 GMT']
+      Server: [cloudflare-nginx]
+      Set-Cookie: ['__cfduid=dabaab6bdbf3d0183ecac7db33f4327971507156145; expires=Thu,
+          04-Oct-18 22:29:05 GMT; path=/; domain=.cocoapods.org; HttpOnly']
+      Vary: [Accept-Encoding]
+      Via: [1.1 vegur]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Xss-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://raw.githubusercontent.com/CocoaPods/Specs/master/Specs/9/e/c/AWSFacebookSignIn/2.6.2/AWSFacebookSignIn.podspec.json
+  response:
+    body: {string: "{\n  \"name\": \"AWSFacebookSignIn\",\n  \"version\": \"2.6.2\"\
+        ,\n  \"summary\": \"Amazon Web Services SDK for iOS.\",\n  \"description\"\
+        : \"The AWS SDK for iOS provides a library, code samples, and documentation\
+        \ for developers to build connected mobile applications using AWS.\",\n  \"\
+        homepage\": \"http://aws.amazon.com/mobile/sdk\",\n  \"license\": \"Apache\
+        \ License, Version 2.0\",\n  \"authors\": {\n    \"Amazon Web Services\":\
+        \ \"amazonwebservices\"\n  },\n  \"platforms\": {\n    \"ios\": \"9.0\"\n\
+        \  },\n  \"source\": {\n    \"git\": \"https://github.com/aws/aws-sdk-ios.git\"\
+        ,\n    \"tag\": \"2.6.2\"\n  },\n  \"requires_arc\": true,\n  \"dependencies\"\
+        : {\n    \"AWSAuthCore\": [\n      \"2.6.2\"\n    ],\n    \"FBSDKLoginKit\"\
+        : [\n      \"~> 4.0\"\n    ],\n    \"FBSDKCoreKit\": [\n      \"~> 4.0\"\n\
+        \    ]\n  },\n  \"source_files\": \"AWSAuthSDK/Sources/AWSFacebookSignIn/*.{h,m}\"\
+        ,\n  \"public_header_files\": \"AWSAuthSDK/Sources/AWSFacebookSignIn/*.h\"\
+        ,\n  \"resource_bundles\": {\n    \"AWSFacebookSignIn\": \"AWSAuthSDK/Sources/AWSFacebookSignIn/Images.xcassets\"\
+        \n  }\n}\n"}
+    headers:
+      Accept-Ranges: [bytes]
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [max-age=300]
+      Connection: [keep-alive]
+      Content-Length: ['976']
+      Content-Security-Policy: [default-src 'none'; style-src 'unsafe-inline']
+      Content-Type: [text/plain; charset=utf-8]
+      Date: ['Wed, 04 Oct 2017 22:29:06 GMT']
+      ETag: ['"57c77b28e5dc04f9acfaf9667e24e97e0987f668"']
+      Expires: ['Wed, 04 Oct 2017 22:34:06 GMT']
+      Source-Age: ['0']
+      Strict-Transport-Security: [max-age=31536000]
+      Vary: ['Authorization,Accept-Encoding']
+      Via: [1.1 varnish]
+      X-Cache: [MISS]
+      X-Cache-Hits: ['0']
+      X-Content-Type-Options: [nosniff]
+      X-Fastly-Request-ID: [502fb01395fa1e1e60798adbba0050d4dcdd9f6d]
+      X-Frame-Options: [deny]
+      X-Geo-Block-List: ['']
+      X-GitHub-Request-Id: ['F7CC:50AA:29D0563:2D82A7D:59D560B1']
+      X-Served-By: [cache-fra1221-FRA]
+      X-Timer: ['S1507156146.477749,VS0,VE131']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1
