@@ -3,7 +3,7 @@ import re
 from app.data_object import DataObject
 
 
-SCALA_VERSION_REGEX = re.compile(r'(_[A-Za-z0-9\.\-]+\.[A-Za-z0-9\.\-]+)$')
+SCALA_VERSION_REGEX = re.compile(r'_([A-Za-z0-9\.\-]+\.[A-Za-z0-9\.\-]+)$')
 
 
 class JvmPackageName(DataObject):
@@ -35,7 +35,7 @@ class JvmPackageName(DataObject):
     def __extract_scala_version(self, artifact_id):
         m = SCALA_VERSION_REGEX.search(artifact_id)
         if m:
-            return m.group(1)[1:]
+            return m.group(1)
 
     @property
     def group_path(self):

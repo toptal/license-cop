@@ -19,8 +19,7 @@ class MavenMetadata:
         block = data['versioning']
         if block.get('latest'):
             return block['latest']
-        versions = cls.__extract_versions(block)
-        return cls.__highest_version(versions)
+        return max(cls.__extract_versions(block))
 
     @staticmethod
     def __extract_versions(data):
@@ -28,8 +27,3 @@ class MavenMetadata:
         if isinstance(value, list):
             return value
         return [value]
-
-    @staticmethod
-    def __highest_version(versions):
-        versions.sort()
-        return versions[-1]

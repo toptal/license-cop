@@ -61,7 +61,7 @@ class MavenPom:
             return pom.version
 
     def filter_dependencies(self, kind):
-        return filter(lambda i: i.kind == kind, self.dependencies)
+        return (i for i in self.dependencies if i.kind == kind)
 
     @classmethod
     def parse(cls, xml, registry):
