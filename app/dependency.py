@@ -6,15 +6,12 @@ from app.data_object import *
 class DependencyKind(Enum):
     RUNTIME = 1
     DEVELOPMENT = 2
-    UNKNOWN = 3
 
     def __str__(self):
         if self == DependencyKind.RUNTIME:
             return 'runtime'
         elif self == DependencyKind.DEVELOPMENT:
             return 'development'
-        else:
-            return 'unknown'
 
 
 class Dependency(DataObject):

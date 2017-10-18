@@ -172,15 +172,6 @@ def test_repr_development_dependency_without_children(rails):
     )
 
 
-def test_repr_dependency_with_unknown_kind_without_children(rails):
-    node = DependencyResolution(rails, DependencyKind.UNKNOWN)
-    assert repr(node) == dedent(
-        '''\
-        = [unknown] rails:5.1.4 → MIT
-        '''
-    )
-
-
 def test_repr_hidden_dependency_branch(rails):
     node = DependencyResolution.runtime(rails, hidden=True)
     assert repr(node) == dedent(
