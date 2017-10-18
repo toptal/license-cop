@@ -44,7 +44,7 @@ class NodejsPackageRegistry(PackageRegistry):
         if number in package_data['versions']:
             return package_data['versions'][number]
         raise PackageVersionNotFoundError(
-            'Could not find package version {0}:{1}.'.format(name, number))
+            f'Could not find package version {name}:{number}.')
 
     def __fetch_package_data(self, name):
         name = self.__normalize_scoped_package_name(name)

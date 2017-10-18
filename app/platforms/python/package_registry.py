@@ -45,7 +45,7 @@ def parse_dependency(string):
             name=m.group('name'),
             kind=__dependency_kind(m.group('extra'))
         )
-    raise Exception('Could not parse dependency: {0}'.format(string))
+    raise Exception(f'Could not parse dependency: {string}')
 
 
 class PythonPackageRegistry(PackageRegistry):
@@ -99,7 +99,7 @@ class PythonPackageRegistry(PackageRegistry):
         lines = [l for l in lines if l]
         if lines:
             line = lines[0]
-            return '{0} [...]'.format(line) if len(lines) > 1 else line
+            return f'{line} [...]' if len(lines) > 1 else line
 
     def __remove_unknown_token(self, string):
         if string and string != 'UNKNOWN':

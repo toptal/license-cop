@@ -36,6 +36,6 @@ def parse_github_url(url):
 class GithubClient:
     def __init__(self, http_compression=True):
         self._session = requests.Session()
-        self._session.headers.update({'Authorization': 'token {0}'.format(TOKEN)})
+        self._session.headers.update({'Authorization': f'token {TOKEN}'})
         if not http_compression:
             self._session.headers.update({'Accept-Encoding': 'identity'})

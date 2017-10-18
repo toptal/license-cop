@@ -194,7 +194,7 @@ def test_raise_exception_if_dependency_could_not_be_parsed():
     string = '$%^&'
     with pytest.raises(Exception) as e:
         parse_dependency(string)
-    assert str(e.value) == 'Could not parse dependency: {0}'.format(string)
+    assert str(e.value) == f'Could not parse dependency: {string}'
 
 
 @VCR.use_cassette('python_package_registry_fetch_version.yaml')

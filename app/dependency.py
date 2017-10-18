@@ -39,7 +39,7 @@ class Dependency(DataObject):
 
     def __str__(self):
         number = 'latest' if self.number is None else self.number
-        return '[{0}] {1}:{2}'.format(self.kind, self.name, number)
+        return f'[{self.kind}] {self.name}:{number}'
 
     def __repr__(self):
         return str(self)

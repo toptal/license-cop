@@ -96,7 +96,7 @@ class PythonRepositoryMatcher(RepositoryMatcher):
             development.extend(
                 parse_requirements_file(data, DependencyKind.DEVELOPMENT))
         else:
-            assert False, 'Unrecognized node: {0}'.format(node)
+            assert False, f'Unrecognized node: {node}'
 
     def __pipfile(self, node):
         return node.match(PIPFILE_PATTERN)

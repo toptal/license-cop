@@ -31,7 +31,7 @@ class RubyPackageRegistry(PackageRegistry):
         for data in response.json():
             if data['number'] == number:
                 return data
-        raise PackageVersionNotFoundError('Could not find package version {0}:{1}.'.format(name, number))
+        raise PackageVersionNotFoundError(f'Could not find package version {name}:{number}.')
 
     def __parse_dependencies(self, data, kind):
         return list(map(

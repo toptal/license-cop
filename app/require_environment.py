@@ -6,4 +6,4 @@ def require_environment(name):
         value = os.environ[name].strip()
         if value:
             return value
-    raise Exception('Required environment value {0} is not defined'.format(name))
+    raise Exception(f'Required environment value {name} is not defined')

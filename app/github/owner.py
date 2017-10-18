@@ -47,4 +47,4 @@ class GithubOwner(GithubClient):
         return ORGANIZATION_URI.format(self.name)
 
     def __repr__(self):
-        return "GitHub organization {0}".format(str(self))
+        return f'GitHub organization {str(self)}'

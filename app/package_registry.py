@@ -58,12 +58,12 @@ class PackageRegistry(ABC):
 
     def __cache_miss(self, id, fetch_function):
         try:
-            self.__report_progress('  → {0}'.format(id))
+            self.__report_progress(f'  → {id}')
             version = fetch_function(*id)
             self.__cache[id] = version
             return version
         except requests.exceptions.HTTPError as e:
-            raise PackageVersionNotFoundError('Could not find package version {0}. {1}'.format(id, e))
+            raise PackageVersionNotFoundError(f'Could not find package version {id}. {e}')
 
     def __report_progress(self, message):
         sys.stdout.write('\033[K')
