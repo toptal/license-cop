@@ -1,4 +1,5 @@
 import collections
+import pickle
 
 
 class DataObject:
@@ -14,10 +15,8 @@ class DataObject:
     def __hash__(self):
         hashes = []
         for value in self.__dict__.values():
-            if isinstance(value, collections.Mapping):
-                hashes.append(hash(tuple(value.values())))
-            elif isinstance(value, collections.Iterable):
-                hashes.append(hash(tuple(value)))
+            if isinstance(value, collections.Iterable):
+                hashes.append(hash(pickle.dumps(value, -1)))
             else:
                 hashes.append(hash(value))
 
