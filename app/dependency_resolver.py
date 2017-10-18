@@ -8,25 +8,42 @@ class DependencyResolver:
         self.__registry = registry
         self.__visited_dependencies = set()
 
-    def resolve(self, dependency, runtime_only=False):
+    def resolve(self, dependency, runtime_only=False, max_depth=None):
         root = self.__build_node(dependency)
-
         nodes_to_expand = deque([root])
 
         while nodes_to_expand:
             current_node = nodes_to_expand.popleft()
-            for dependency in current_node.dependencies(runtime_only):
-                child = self.__build_node(dependency)
-                current_node.add_child(child)
-
-                if child.has_dependencies(runtime_only):
-                    if dependency not in self.__visited_dependencies:
-                        self.__visited_dependencies.add(dependency)
-                        nodes_to_expand.append(child)
-                    else:
-                        child.hide()
+            if self.__exceeds_max_depth(current_node, max_depth):
+                break
+            nodes_to_expand.extend(self.__expand_node(current_node, runtime_only))
 
         return root
+
+    def __expand_node(self, current_node, runtime_only):
+        for dependency in current_node.dependencies(runtime_only):
+            child = self.__build_node(dependency)
+            current_node.add_child(child)
+
+            if child.has_dependencies(runtime_only):
+                if dependency not in self.__visited_dependencies:
+                    self.__visited_dependencies.add(dependency)
+                    yield child
+                else:
+                    child.hide()
+
+    def __exceeds_max_depth(self, node, max_depth):
+        if max_depth is not None and self.__depth(node) >= max_depth:
+            return True
+        return False
+
+    @staticmethod
+    def __depth(node):
+        depth = 0
+        while not node.is_root:
+            node = node.parent
+            depth += 1
+        return depth
 
     def __build_node(self, dependency):
         try:
