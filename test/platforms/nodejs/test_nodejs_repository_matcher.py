@@ -37,7 +37,7 @@ def test_mismatch_repository_without_pacakge_json(matcher, python_repository):
 def test_package_descriptor(matcher, nodejs_repository):
     match = matcher.match(nodejs_repository)
 
-    descriptors = match.package_descriptors()
+    descriptors = match.package_descriptors
     descriptor = descriptors[0]
 
     assert descriptor.platform == 'Node.js'

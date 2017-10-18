@@ -45,7 +45,7 @@ def test_mismatch_repository_without_podfile(matcher, python_repository):
 def test_extract_from_podfile(matcher, podfile_repository):
     match = matcher.match(podfile_repository)
 
-    descriptors = match.package_descriptors()
+    descriptors = match.package_descriptors
     assert len(descriptors) == 1
     descriptor = descriptors[0]
 
@@ -70,7 +70,7 @@ def test_extract_from_podfile(matcher, podfile_repository):
 def test_extract_from_podspec(matcher, podspec_repository):
     match = matcher.match(podspec_repository)
 
-    descriptors = match.package_descriptors()
+    descriptors = match.package_descriptors
     assert len(descriptors) == 1
     descriptor = descriptors[0]
 

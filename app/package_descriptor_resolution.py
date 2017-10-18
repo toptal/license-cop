@@ -1,20 +1,28 @@
 from io import StringIO
 
+from app.dependency_resolution import DependencyResolution
+from app.dependency import DependencyKind
 
-class PackageDescriptorResolution:
 
-    def __init__(self, descriptor, runtime_resolutions, development_resolutions):
-        self.descriptor = descriptor
-        self.runtime_resolutions = runtime_resolutions
-        self.development_resolutions = development_resolutions
+class PackageDescriptorResolution(DependencyResolution):
+
+    def __init__(self, package_descriptor):
+        super().__init__(package_descriptor.version, DependencyKind.RUNTIME)
+        self.package_descriptor = package_descriptor
+
+    def __str__(self):
+        return str(self.package_descriptor)
 
     def __repr__(self):
         io = StringIO()
-        print('+ {0}'.format(self.descriptor), file=io)
-        self.__print_resolutions(io, self.runtime_resolutions)
-        self.__print_resolutions(io, self.development_resolutions)
+        self.print(io)
         return io.getvalue()
 
-    def __print_resolutions(self, io, resolutions):
-        for resolution in resolutions:
-            io.write(resolution.__repr__(1))
+    def print(self, file):
+        print(f'+ {repr(self.package_descriptor)}', file=file)
+        self.__print_children(file, DependencyKind.RUNTIME)
+        self.__print_children(file, DependencyKind.DEVELOPMENT)
+
+    def __print_children(self, file, kind):
+        for child in filter(lambda i: i.kind == kind, self.children):
+            file.write(child.__repr__(1))

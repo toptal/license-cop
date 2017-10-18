@@ -154,7 +154,7 @@ def test_mismatch_repository_without_requirements_nor_pipfile(matcher, nodejs_re
 def test_extract_package_descriptor_from_requirements_files(matcher, requirements_repository):
     match = matcher.match(requirements_repository)
 
-    descriptors = match.package_descriptors()
+    descriptors = match.package_descriptors
     descriptor = descriptors[0]
 
     assert descriptor.platform == 'Python'
@@ -176,7 +176,7 @@ def test_extract_package_descriptor_from_requirements_files(matcher, requirement
 def test_extract_package_descriptor_from_pipfile(matcher, pipfile_repository):
     match = matcher.match(pipfile_repository)
 
-    descriptors = match.package_descriptors()
+    descriptors = match.package_descriptors
     descriptor = descriptors[0]
 
     assert descriptor.platform == 'Python'

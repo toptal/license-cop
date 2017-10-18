@@ -37,7 +37,7 @@ def test_mismatch_repository_without_mixfile(matcher, python_repository):
 def test_mixfile_package_descriptor(matcher, elixir_repository):
     match = matcher.match(elixir_repository)
 
-    descriptors = match.package_descriptors()
+    descriptors = match.package_descriptors
     descriptor = descriptors[0]
 
     assert descriptor.platform == 'Elixir'

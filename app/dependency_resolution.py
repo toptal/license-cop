@@ -25,10 +25,19 @@ class DependencyResolution:
         return cls(version, DependencyKind.DEVELOPMENT, hidden)
 
     @property
+    def is_runtime(self): return self.kind == DependencyKind.RUNTIME
+
+    @property
+    def is_development(self): return self.kind == DependencyKind.DEVELOPMENT
+
+    @property
     def is_root(self): return self.parent is None
 
     @property
     def is_leaf(self): return self.children == []
+
+    @property
+    def is_tree(self): return not self.is_leaf
 
     @property
     def found(self):

@@ -1,47 +1,54 @@
-import sys
-import requests
+from app.dependency_resolver import DependencyResolver
+from app.package_descriptor_resolution import PackageDescriptorResolution
 
-from app.dependency_resolver import *
-from app.package_registry import *
-from app.package_descriptor_resolution import *
+
+class PlatformRepositoryMatch:
+
+    def __init__(self, platform, repository, match):
+        self.platform = platform
+        self.repository = repository
+        self.__match = match
+        self.__cache = {}
+
+    @property
+    def package_descriptors(self):
+        return self.__match.package_descriptors
+
+    def resolve(self, max_depth=None):
+        if max_depth not in self.__cache:
+            self.__cache[max_depth] = self.platform.resolve(self, max_depth)
+        return self.__cache[max_depth]
 
 
 class Platform:
+
     def __init__(self, name, matcher, registry):
         self.name = name
         self.__matcher = matcher
         self.__registry = registry
 
+    def __str__(self):
+        return self.name
+
+    def __repr__(self):
+        return str(self)
+
     def match(self, repository):
-        return self.__matcher.match(repository)
+        m = self.__matcher.match(repository)
+        if m:
+            return PlatformRepositoryMatch(self, repository, m)
 
-    def resolve(self, match, report):
-        resolutions = []
-        for i in match.package_descriptors():
-            r = self.__resolve_package_descriptor(i)
-            resolutions.append(r)
-            self.__report_resolution(r, report)
-        return resolutions
+    def resolve(self, match, max_depth):
+        return [self.__resolve_descriptor(i, max_depth) for i in match.package_descriptors]
 
-    def __report_resolution(self, resolution, report):
-        print(repr(resolution), file=report)
-        print('-' * 70, file=report)
-        print(file=report)
-
-    def __resolve_package_descriptor(self, descriptor):
+    def __resolve_descriptor(self, descriptor, max_depth):
         resolver = DependencyResolver(self.__registry)
-        return PackageDescriptorResolution(
-            descriptor,
-            runtime_resolutions=self.__resolve_dependencies(
-                resolver, descriptor.runtime_dependencies),
-            development_resolutions=self.__resolve_dependencies(
-                resolver, descriptor.development_dependencies)
-        )
+        root = PackageDescriptorResolution(descriptor)
+        if max_depth is None or max_depth > 0:
+            root.add_children(self.__resolve_dependencies(resolver, max_depth, descriptor.runtime_dependencies))
+            root.add_children(self.__resolve_dependencies(resolver, max_depth, descriptor.development_dependencies))
+        return root
 
-    def __resolve_dependencies(self, resolver, dependencies):
-        resolutions = []
-        for dependency in dependencies:
-            print('  ▶︎ {0}'.format(dependency))
-            resolution = resolver.resolve(dependency)
-            resolutions.append(resolution)
-        return resolutions
+    def __resolve_dependencies(self, resolver, max_depth, dependencies):
+        max_depth = None if max_depth is None else max_depth - 1
+        return (resolver.resolve(i, max_depth) for i in dependencies)

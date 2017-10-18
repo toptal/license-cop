@@ -18,16 +18,19 @@ class RepositoryMatch(DataObject):
         self.__matcher = matcher
         self.repository = repository
         self.package_descriptor_matches = package_descriptor_matches
+        self.__package_descriptors = None
 
+    @property
     def package_descriptors(self):
-        return list(map(
-            lambda i:
-                self.__matcher._fetch_package_descriptor(self.repository, i),
-            self.package_descriptor_matches
-        ))
+        if not self.__package_descriptors:
+            self.__package_descriptors = list(
+                self.__matcher._fetch_package_descriptor(self.repository, i)
+                for i in self.package_descriptor_matches
+            )
+        return self.__package_descriptors
 
     def package_descriptor_at(self, path):
-        for d in self.package_descriptors():
+        for d in self.package_descriptors:
             if path in d.paths:
                 return d
         return None

@@ -8,7 +8,7 @@ class DependencyResolver:
         self.__registry = registry
         self.__visited_dependencies = set()
 
-    def resolve(self, dependency, runtime_only=False, max_depth=None):
+    def resolve(self, dependency, max_depth=None, runtime_only=False):
         root = self.__build_node(dependency)
         nodes_to_expand = deque([root])
 

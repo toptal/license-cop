@@ -37,7 +37,7 @@ def test_mismatch_repository_without_gemfile(matcher, python_repository):
 def test_gemfile_package_descriptor(matcher, ruby_repository):
     match = matcher.match(ruby_repository)
 
-    descriptors = match.package_descriptors()
+    descriptors = match.package_descriptors
     descriptor = descriptors[0]
 
     assert descriptor.platform == 'Ruby'
