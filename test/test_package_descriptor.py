@@ -39,6 +39,14 @@ def test_formatted_path_with_multiple_paths(platform, repository):
     assert d.formatted_paths == 'src/app/requirements.txt|src/app/requirements.dev.txt'
 
 
+def test_urls(platform, repository):
+    d = PackageDescriptor(platform, repository, ['src/app/requirements.txt', 'src/app/requirements.dev.txt'], [], [])
+    assert d.urls == [
+        'https://github.com/requests/requests/blob/master/src/app/requirements.txt',
+        'https://github.com/requests/requests/blob/master/src/app/requirements.dev.txt'
+    ]
+
+
 def test_version(platform, repository):
     runtime = [
         Dependency.runtime('activesupport'),

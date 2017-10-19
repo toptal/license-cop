@@ -31,8 +31,8 @@ class ExcelReport(Report):
         self.__worksheet.write_string(self.__row, 4, version.formatted_number)
         self.__worksheet.write_string(self.__row, 5, version.formatted_licenses, (
             None if version.licenses else self.__empty_licenses_format))
-        self.__worksheet.write_string(self.__row, 6, dependency.formatted_runtime_references)
-        self.__worksheet.write_string(self.__row, 7, dependency.formatted_development_references)
+        self.__worksheet.write_string(self.__row, 6, self.__formatted_references(dependency.runtime_references))
+        self.__worksheet.write_string(self.__row, 7, self.__formatted_references(dependency.development_references))
         self.__row += 1
 
     def __write_headers(self):
@@ -44,3 +44,7 @@ class ExcelReport(Report):
         self.__worksheet.write_string(0, 5, 'Package Licenses', self.__header_format)
         self.__worksheet.write_string(0, 6, 'Runtime References', self.__header_format)
         self.__worksheet.write_string(0, 7, 'Development References', self.__header_format)
+
+    @staticmethod
+    def __formatted_references(references):
+        return ', '.join(str(i.version.id) for i in references)

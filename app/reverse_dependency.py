@@ -15,18 +15,6 @@ class ReverseDependency(DataObject):
     @property
     def number(self): return self.version.number
 
-    @property
-    def formatted_runtime_references(self):
-        return self.__formatted_references(self.runtime_references)
-
-    @property
-    def formatted_development_references(self):
-        return self.__formatted_references(self.development_references)
-
-    @staticmethod
-    def __formatted_references(references):
-        return ', '.join(str(i.version.id) for i in references)
-
     def add_reference(self, reference, kind):
         if reference:
             if kind == DependencyKind.DEVELOPMENT:
