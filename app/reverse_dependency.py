@@ -10,14 +10,15 @@ class ReverseDependency(DataObject):
         self.development_references = []
 
     @property
-    def name(self): return self.version.name
+    def name(self):
+        return self.version.name
 
     @property
-    def number(self): return self.version.number
+    def number(self):
+        return self.version.number
 
     def add_reference(self, reference, kind):
-        if reference:
-            if kind == DependencyKind.DEVELOPMENT:
-                self.development_references.append(reference)
-            else:
-                self.runtime_references.append(reference)
+        if kind == DependencyKind.DEVELOPMENT:
+            self.development_references.append(reference)
+        else:
+            self.runtime_references.append(reference)

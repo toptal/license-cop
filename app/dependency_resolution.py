@@ -25,29 +25,36 @@ class DependencyResolution:
         return cls(version, DependencyKind.DEVELOPMENT, hidden)
 
     @property
-    def is_runtime(self): return self.kind == DependencyKind.RUNTIME
+    def is_runtime(self):
+        return self.kind == DependencyKind.RUNTIME
 
     @property
-    def is_development(self): return self.kind == DependencyKind.DEVELOPMENT
+    def is_development(self):
+        return self.kind == DependencyKind.DEVELOPMENT
 
     @property
-    def is_root(self): return self.parent is None
+    def is_root(self):
+        return self.parent is None
 
     @property
-    def is_leaf(self): return self.children == []
+    def is_leaf(self):
+        return self.children == []
 
     @property
-    def is_tree(self): return not self.is_leaf
+    def is_tree(self):
+        return not self.is_leaf
 
     @property
     def found(self):
         return not isinstance(self.version, PackageVersionNotFound)
 
     @property
-    def name(self): return self.version.name
+    def name(self):
+        return self.version.name
 
     @property
-    def number(self): return self.version.number
+    def number(self):
+        return self.version.number
 
     def dependencies(self, runtime_only=False):
         if runtime_only:
@@ -86,7 +93,8 @@ class DependencyResolution:
             v = child.version
             if v not in collected:
                 collected[v] = ReverseDependency(v)
-            collected[v].add_reference(child.parent, child.kind)
+            if child.parent:
+                collected[v].add_reference(child.parent, child.kind)
             child.__reverse_dependencies(collected)
 
     def __repr__(self, level=0):

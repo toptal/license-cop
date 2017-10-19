@@ -105,5 +105,4 @@ class PythonPackageRegistry(PackageRegistry):
 
     def __extract_repository_urls(self, data):
         keys = ['home_page', 'docs_url', 'download_url', 'bugtrack_url']
-        urls = (self.__remove_unknown_token(data.get(i)) for i in keys)
-        return filter(None, urls)
+        return (self.__remove_unknown_token(data.get(i)) for i in keys if i)
