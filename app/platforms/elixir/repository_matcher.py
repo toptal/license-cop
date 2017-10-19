@@ -5,8 +5,8 @@ from app.repository_matcher import *
 from app.package_descriptor import *
 
 
-DEPS_BLOCK_REGEX = re.compile(r"defp?\s+deps(.+?)\bend\b", re.S)
-DEPENDENCY_REGEX = re.compile(r"{(.+?)}")
+DEPS_BLOCK_REGEX = re.compile(r'defp?\s+deps(.+?)\bend\b', re.S)
+DEPENDENCY_REGEX = re.compile(r'{(.+?)}')
 DEVELOPMENT_ENVIRONMENTS = (':dev', ':test', ':docs')
 
 

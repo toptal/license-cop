@@ -14,17 +14,17 @@ def test_parse_empty_file(parser):
 
 
 def test_file_without_pods(parser):
-    content = """
+    content = '''
         Pod::Spec.new do |s|
             s.name = "Name"
             s.version = "1.0.1"
         end
-    """
+    '''
     assert list(parser.parse(content)) == []
 
 
 def test_file_with_pods(parser):
-    content = """
+    content = '''
         Pod::Spec.new do |s|
             s.name = "Name"
             s.version = "1.0.1"
@@ -32,7 +32,7 @@ def test_file_with_pods(parser):
             s.ios.dependency 'Dep2', '~> 0.9'
             s.dependency 'Dep3'
         end
-    """
+    '''
     assert list(parser.parse(content)) == [
         'Dep1',
         'Dep2',

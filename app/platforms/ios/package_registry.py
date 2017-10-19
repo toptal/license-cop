@@ -6,7 +6,7 @@ from app.dependency import *
 
 
 POD_URI = 'https://cocoapods.org/pods/{0}'
-PODSPEC_URL_REGEX = re.compile(r"<a\s+href=\"([^\"]+?)\"\s*>\s*See Podspec\s*<\/a>", re.S)
+PODSPEC_URL_REGEX = re.compile(r'<a\s+href="([^"]+?)"\s*>\s*See Podspec\s*<\/a>', re.S)
 
 
 class IosPackageRegistry(PackageRegistry):

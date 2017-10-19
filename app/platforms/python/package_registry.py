@@ -9,13 +9,13 @@ PACKAGE_URI = 'https://pypi.python.org/pypi/{0}/json'
 VERSION_URI = 'https://pypi.python.org/pypi/{0}/{1}/json'
 
 DEPENDENCY_REGEX = re.compile(
-    r"^(?P<name>[\w\-\.]+)\s*"                              # name
-    r"(\(.+\))?\s*"                                         # optional version
-    r"(;\s*("                                               # optional semicolon
-    r".*"                                                   # optional attributes
-    r"extra\s*==\s*(['\"]|\\\")(?P<extra>\w+)(['\"]|\\\")"  # optional extra attribute
-    r".*"                                                   # optional attributes
-    r")?)?"
+    r'^(?P<name>[\w\-\.]+)\s*'                              # name
+    r'(\(.+\))?\s*'                                         # optional version
+    r'(;\s*('                                               # optional semicolon
+    r'.*'                                                   # optional attributes
+    r'extra\s*==\s*([\'"]|\\")(?P<extra>\w+)([\'"]|\\")'    # optional extra attribute
+    r'.*'                                                   # optional attributes
+    r')?)?'
 )
 
 DEVELOPMENT_DEPENDENCY_KEYWORDS = (
