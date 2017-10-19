@@ -51,10 +51,7 @@ class RepositoryMatcher(ABC):
     def __match_patterns(self, tree):
         sort_key = (lambda i: i.parent.path)
         nodes = sorted(self.__search_patterns(tree), key=sort_key)
-        return list(map(
-            lambda i: PackageDescriptorMatch(list(i[1])),
-            groupby(nodes, key=sort_key)
-        ))
+        return [PackageDescriptorMatch(list(i[1])) for i in groupby(nodes, key=sort_key)]
 
     def __search_patterns(self, tree):
         results = []

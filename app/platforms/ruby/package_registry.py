@@ -34,12 +34,8 @@ class RubyPackageRegistry(PackageRegistry):
         raise PackageVersionNotFoundError(f'Could not find package version {name}:{number}.')
 
     def __parse_dependencies(self, data, kind):
-        return list(map(
-            lambda i: Dependency(i['name'], kind),
-            data['dependencies'][
-                'runtime' if kind == DependencyKind.RUNTIME else 'development'
-            ]
-        ))
+        index = 'runtime' if kind == DependencyKind.RUNTIME else 'development'
+        return [Dependency(i['name'], kind) for i in data['dependencies'][index]]
 
     def __determine_licenses(self, package_data, version_data):
         licenses = self.__extract_licenses(version_data)

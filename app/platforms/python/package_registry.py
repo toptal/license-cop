@@ -61,13 +61,11 @@ class PythonPackageRegistry(PackageRegistry):
         return self.__build_package(response.json())
 
     def __extract_dependencies(self, data):
-        return list(map(
-            lambda i: parse_dependency(i),
-            data['requires_dist'] if 'requires_dist' in data else []
-        ))
+        requires_dist = data['requires_dist'] if 'requires_dist' in data else []
+        return [parse_dependency(i) for i in requires_dist]
 
     def __filter_dependencies(self, dependencies, kind):
-        return list(filter(lambda i: i.kind == kind, dependencies))
+        return [i for i in dependencies if i.kind == kind]
 
     def __build_package(self, data):
         info = data['info']
@@ -95,7 +93,7 @@ class PythonPackageRegistry(PackageRegistry):
                 return license
 
     def __trim_lines(self, string):
-        lines = map(lambda i: i.strip(), string.splitlines())
+        lines = (i.strip() for i in string.splitlines())
         lines = [l for l in lines if l]
         if lines:
             line = lines[0]
@@ -107,5 +105,5 @@ class PythonPackageRegistry(PackageRegistry):
 
     def __extract_repository_urls(self, data):
         keys = ['home_page', 'docs_url', 'download_url', 'bugtrack_url']
-        urls = list(map(lambda i: self.__remove_unknown_token(data.get(i)), keys))
-        return list(filter(None, urls))
+        urls = (self.__remove_unknown_token(data.get(i)) for i in keys)
+        return filter(None, urls)

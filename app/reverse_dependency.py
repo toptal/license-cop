@@ -25,7 +25,7 @@ class ReverseDependency(DataObject):
 
     @staticmethod
     def __formatted_references(references):
-        return ', '.join(map(lambda i: str(i.version.id), references))
+        return ', '.join(str(i.version.id) for i in references)
 
     def add_reference(self, reference, kind):
         if reference:

@@ -35,7 +35,7 @@ def test_fetch_all_organization_repositories_using_pagination(docker):
     for repo in repos:
         assert repo.owner == docker.name
 
-    assert set(map(lambda i: i.name, repos)) == set([
+    assert set(i.name for i in repos) == set([
         'bender',
         'docker-registry',
         'dockerlite',
