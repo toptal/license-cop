@@ -28,9 +28,9 @@ def test_match_repository(python_platform, python_repository):
     assert match.platform == python_platform
     assert match.repository == python_repository
 
-    assert len(match.package_descriptors) == 1
-    assert match.package_descriptors[0].platform == 'Python'
-    assert match.package_descriptors[0].repository == python_repository
+    assert len(match.manifests) == 1
+    assert match.manifests[0].platform == 'Python'
+    assert match.manifests[0].repository == python_repository
 
 
 @VCR.use_cassette('platform_mismatch_repository.yaml')

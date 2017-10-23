@@ -33,17 +33,17 @@ def test_mismatch_repository_without_pacakge_json(matcher, python_repository):
     assert matcher.match(python_repository) is None
 
 
-@VCR.use_cassette('nodejs_repository_matcher_package_descriptor.yaml')
-def test_package_descriptor(matcher, nodejs_repository):
+@VCR.use_cassette('nodejs_repository_matcher_manifest.yaml')
+def test_manifest(matcher, nodejs_repository):
     match = matcher.match(nodejs_repository)
 
-    descriptors = match.package_descriptors
-    descriptor = descriptors[0]
+    manifests = match.manifests
+    manifest = manifests[0]
 
-    assert descriptor.platform == 'Node.js'
-    assert descriptor.repository == nodejs_repository
-    assert descriptor.paths == ['package.json']
-    assert descriptor.runtime_dependencies == [
+    assert manifest.platform == 'Node.js'
+    assert manifest.repository == nodejs_repository
+    assert manifest.paths == ['package.json']
+    assert manifest.runtime_dependencies == [
         Dependency.runtime('JSONStream'),
         Dependency.runtime('assert'),
         Dependency.runtime('browser-pack'),
@@ -93,7 +93,7 @@ def test_package_descriptor(matcher, nodejs_repository):
         Dependency.runtime('xtend')
     ]
 
-    assert descriptor.development_dependencies == [
+    assert manifest.development_dependencies == [
         Dependency.development('backbone'),
         Dependency.development('browser-unpack'),
         Dependency.development('coffee-script'),

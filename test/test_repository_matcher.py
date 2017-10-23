@@ -10,7 +10,7 @@ class FakeRepositoryMatcher(RepositoryMatcher):
     def __init__(self, patterns):
         super().__init__(patterns)
 
-    def _fetch_package_descriptor(self, repository, match):
+    def _fetch_manifest(self, repository, match):
         pass
 
 
@@ -59,8 +59,8 @@ def test_one_pattern_match_one_path(tree, repository):
     match = matcher.match(repository)
 
     assert match is not None
-    assert len(match.package_descriptor_matches) == 1
-    assert match.package_descriptor_matches[0].nodes == [tree.navigate('Gemfile')]
+    assert len(match.manifest_matches) == 1
+    assert match.manifest_matches[0].nodes == [tree.navigate('Gemfile')]
 
 
 def test_one_pattern_match_multiple_paths_in_same_directory(tree, repository):
@@ -68,8 +68,8 @@ def test_one_pattern_match_multiple_paths_in_same_directory(tree, repository):
     match = matcher.match(repository)
 
     assert match is not None
-    assert len(match.package_descriptor_matches) == 1
-    assert set(match.package_descriptor_matches[0].nodes) == set([
+    assert len(match.manifest_matches) == 1
+    assert set(match.manifest_matches[0].nodes) == set([
         tree.navigate('Foo.gemspec'),
         tree.navigate('Bar.gemspec')
     ])
@@ -80,10 +80,10 @@ def test_one_pattern_match_multiple_paths_in_multiple_directories(tree, reposito
     match = matcher.match(repository)
 
     assert match is not None
-    assert len(match.package_descriptor_matches) == 3
-    assert match.package_descriptor_matches[0].nodes == [tree.navigate('foo/Pipfile')]
-    assert match.package_descriptor_matches[1].nodes == [tree.navigate('foo/bar/Pipfile')]
-    assert match.package_descriptor_matches[2].nodes == [tree.navigate('foo/bar/beer/Pipfile')]
+    assert len(match.manifest_matches) == 3
+    assert match.manifest_matches[0].nodes == [tree.navigate('foo/Pipfile')]
+    assert match.manifest_matches[1].nodes == [tree.navigate('foo/bar/Pipfile')]
+    assert match.manifest_matches[2].nodes == [tree.navigate('foo/bar/beer/Pipfile')]
 
 
 def test_multiple_patterns_match_multiple_paths_in_multiple_directories(tree, repository):
@@ -95,15 +95,15 @@ def test_multiple_patterns_match_multiple_paths_in_multiple_directories(tree, re
     match = matcher.match(repository)
 
     assert match is not None
-    assert len(match.package_descriptor_matches) == 4
-    assert set(match.package_descriptor_matches[0].nodes) == set([
+    assert len(match.manifest_matches) == 4
+    assert set(match.manifest_matches[0].nodes) == set([
         tree.navigate('requirements.txt'),
         tree.navigate('requirements-test.txt')
     ])
-    assert match.package_descriptor_matches[1].nodes == [tree.navigate('foo/Pipfile')]
-    assert match.package_descriptor_matches[2].nodes == [
+    assert match.manifest_matches[1].nodes == [tree.navigate('foo/Pipfile')]
+    assert match.manifest_matches[2].nodes == [
         tree.navigate('foo/bar/Pipfile'),
         tree.navigate('foo/bar/requirements-dev.txt'),
         tree.navigate('foo/bar/requirements-docs.txt')
     ]
-    assert match.package_descriptor_matches[3].nodes == [tree.navigate('foo/bar/beer/Pipfile')]
+    assert match.manifest_matches[3].nodes == [tree.navigate('foo/bar/beer/Pipfile')]

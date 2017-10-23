@@ -167,25 +167,25 @@ def development_dependency(group_id, artifact_id, scala_version):
     return Dependency.development(JvmPackageName(group_id, artifact_id, scala_version))
 
 
-@VCR.use_cassette('scala_repository_matcher_package_descriptor_from_build_sbt_with_project_folder.yaml')
-def test_package_descriptor_from_build_sbt_with_project_folder(matcher, scala_repository):
+@VCR.use_cassette('scala_repository_matcher_manifest_from_build_sbt_with_project_folder.yaml')
+def test_manifest_from_build_sbt_with_project_folder(matcher, scala_repository):
     match = matcher.match(scala_repository)
-    descriptor = match.package_descriptor_at('framework/build.sbt')
+    manifest = match.manifest_at('framework/build.sbt')
 
-    assert descriptor.platform == 'Scala'
-    assert descriptor.repository == scala_repository
-    assert descriptor.paths == ['framework/build.sbt']
+    assert manifest.platform == 'Scala'
+    assert manifest.repository == scala_repository
+    assert manifest.paths == ['framework/build.sbt']
 
     scala_version = '2.12.3'
 
-    assert set(descriptor.development_dependencies) == set([
+    assert set(manifest.development_dependencies) == set([
         development_dependency('com.github.ben-manes.caffeine', 'jcache', scala_version),
         development_dependency('org.hibernate', 'hibernate-entitymanager', scala_version),
         development_dependency('org.scalacheck', 'scalacheck', scala_version),
         development_dependency('org.specs2', 'specs2-scalacheck', scala_version)
     ])
 
-    assert set(descriptor.runtime_dependencies) == set([
+    assert set(manifest.runtime_dependencies) == set([
         runtime_dependency('ch.qos.logback', 'logback-classic', scala_version),
         runtime_dependency('com.eed3si9n', 'sbt-buildinfo', scala_version),
         runtime_dependency('com.eed3si9n', 'sbt-doge', scala_version),

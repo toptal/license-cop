@@ -4,7 +4,7 @@ from configparser import ConfigParser
 
 from app.dependency import *
 from app.repository_matcher import *
-from app.package_descriptor import *
+from app.manifest import *
 
 
 PIPFILE_PATTERN = 'Pipfile'
@@ -68,7 +68,7 @@ class PythonRepositoryMatcher(RepositoryMatcher):
     def __init__(self):
         super().__init__(PATTERNS)
 
-    def _fetch_package_descriptor(self, repository, match):
+    def _fetch_manifest(self, repository, match):
         runtime = []
         development = []
 
@@ -76,7 +76,7 @@ class PythonRepositoryMatcher(RepositoryMatcher):
             data = repository.read_text_file(node.path)
             self.__collect_dependencies(node, data, runtime, development)
 
-        return PackageDescriptor(
+        return Manifest(
             platform='Python',
             repository=repository,
             paths=match.paths,

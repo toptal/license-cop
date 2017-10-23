@@ -20,7 +20,7 @@ interactions:
       Content-Length: ['42340']
       Content-Security-Policy: [default-src 'none']
       Content-Type: [application/json; charset=utf-8]
-      Date: ['Fri, 06 Oct 2017 03:51:05 GMT']
+      Date: ['Fri, 06 Oct 2017 06:18:28 GMT']
       ETag: ['"18a402a49b831a54abd22f2f4cfafbed"']
       Last-Modified: ['Fri, 15 Sep 2017 07:40:29 GMT']
       Server: [GitHub.com]
@@ -31,12 +31,52 @@ interactions:
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [deny]
       X-GitHub-Media-Type: [github.v3; format=json]
-      X-GitHub-Request-Id: ['B5AE:61EF:375FE1D:688B5DD:59D6FDA9']
+      X-GitHub-Request-Id: ['B0BD:61EE:2B1563A:73B918A:59D72034']
       X-OAuth-Scopes: ['read:org, read:user, repo']
       X-RateLimit-Limit: ['5000']
-      X-RateLimit-Remaining: ['4811']
-      X-RateLimit-Reset: ['1507263119']
-      X-Runtime-rack: ['0.048857']
+      X-RateLimit-Remaining: ['4941']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.051568']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+      authorization: [token FOOBAR]
+    method: GET
+    uri: https://api.github.com/repos/toptal/license-cop/contents/Pipfile
+  response:
+    body: {string: '{"name":"Pipfile","path":"Pipfile","sha":"bfc703f4afc88b26dcfd8c9c6d66ca8d30be6e66","size":165,"url":"https://api.github.com/repos/toptal/license-cop/contents/Pipfile?ref=master","html_url":"https://github.com/toptal/license-cop/blob/master/Pipfile","git_url":"https://api.github.com/repos/toptal/license-cop/git/blobs/bfc703f4afc88b26dcfd8c9c6d66ca8d30be6e66","download_url":"https://raw.githubusercontent.com/toptal/license-cop/master/Pipfile?token=ADMStG2RyOkqm4OkOdNgCbs2KIn6NXhSks5Z1yBxwA%3D%3D","type":"file","content":"W1tzb3VyY2VdXQp1cmwgPSAiaHR0cHM6Ly9weXBpLnB5dGhvbi5vcmcvc2lt\ncGxlIgp2ZXJpZnlfc3NsID0gdHJ1ZQpbcGFja2FnZXNdCnJlcXVlc3RzID0g\nIioiCgoKCgoKCgoKCltkZXYtcGFja2FnZXNdCgpweXRlc3QgPSAiKiIKdmNy\ncHkgPSAiKiIKcHl0ZXN0LW1vY2sgPSAiKiIKCgoK\n","encoding":"base64","_links":{"self":"https://api.github.com/repos/toptal/license-cop/contents/Pipfile?ref=master","git":"https://api.github.com/repos/toptal/license-cop/git/blobs/bfc703f4afc88b26dcfd8c9c6d66ca8d30be6e66","html":"https://github.com/toptal/license-cop/blob/master/Pipfile"}}'}
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: ['ETag, Link, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      Cache-Control: ['private, max-age=60, s-maxage=60']
+      Content-Length: ['1046']
+      Content-Security-Policy: [default-src 'none']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 06 Oct 2017 06:18:29 GMT']
+      ETag: ['"ec2dad41d12e56fcd7d9b420ffb8f82a"']
+      Last-Modified: ['Wed, 04 Oct 2017 22:49:06 GMT']
+      Server: [GitHub.com]
+      Status: [200 OK]
+      Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+      Vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      X-Accepted-OAuth-Scopes: ['']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [deny]
+      X-GitHub-Media-Type: [github.v3; format=json]
+      X-GitHub-Request-Id: ['B0BD:61EE:2B15695:73B91F0:59D72034']
+      X-OAuth-Scopes: ['read:org, read:user, repo']
+      X-RateLimit-Limit: ['5000']
+      X-RateLimit-Remaining: ['4940']
+      X-RateLimit-Reset: ['1507273919']
+      X-Runtime-rack: ['0.039920']
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
 version: 1

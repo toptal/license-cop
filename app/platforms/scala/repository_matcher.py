@@ -3,7 +3,7 @@ from itertools import chain
 
 from app.dependency import *
 from app.repository_matcher import *
-from app.package_descriptor import *
+from app.manifest import *
 from app.platforms.jvm.package_name import *
 
 
@@ -86,14 +86,14 @@ class ScalaRepositoryMatcher(RepositoryMatcher):
     def __init__(self):
         super().__init__(['build.sbt'])
 
-    def _fetch_package_descriptor(self, repository, match):
+    def _fetch_manifest(self, repository, match):
         assert len(match.nodes) == 1
         build_sbt = match.nodes[0]
 
         paths = [build_sbt.path] + self.__paths_from_project_folder(build_sbt)
         dependencies = self.__parse_scala_files(repository, paths)
 
-        return PackageDescriptor(
+        return Manifest(
             platform='Scala',
             repository=repository,
             paths=match.paths,

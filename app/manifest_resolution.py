@@ -4,14 +4,14 @@ from app.dependency_resolution import DependencyResolution
 from app.dependency import DependencyKind
 
 
-class PackageDescriptorResolution(DependencyResolution):
+class ManifestResolution(DependencyResolution):
 
-    def __init__(self, package_descriptor):
-        super().__init__(package_descriptor.version, DependencyKind.RUNTIME)
-        self.package_descriptor = package_descriptor
+    def __init__(self, manifest):
+        super().__init__(manifest.version, DependencyKind.RUNTIME)
+        self.manifest = manifest
 
     def __str__(self):
-        return str(self.package_descriptor)
+        return str(self.manifest)
 
     def __repr__(self):
         io = StringIO()
@@ -19,7 +19,7 @@ class PackageDescriptorResolution(DependencyResolution):
         return io.getvalue()
 
     def print(self, file):
-        print(f'+ {repr(self.package_descriptor)}', file=file)
+        print(f'+ {repr(self.manifest)}', file=file)
         self.__print_children(file, DependencyKind.RUNTIME)
         self.__print_children(file, DependencyKind.DEVELOPMENT)
 

@@ -1,5 +1,5 @@
 from app.dependency_resolver import DependencyResolver
-from app.package_descriptor_resolution import PackageDescriptorResolution
+from app.manifest_resolution import ManifestResolution
 
 
 class PlatformRepositoryMatch:
@@ -11,8 +11,8 @@ class PlatformRepositoryMatch:
         self.__cache = {}
 
     @property
-    def package_descriptors(self):
-        return self.__match.package_descriptors
+    def manifests(self):
+        return self.__match.manifests
 
     def resolve(self, max_depth=None):
         if max_depth not in self.__cache:
@@ -39,14 +39,14 @@ class Platform:
             return PlatformRepositoryMatch(self, repository, m)
 
     def resolve(self, match, max_depth):
-        return [self.__resolve_descriptor(i, max_depth) for i in match.package_descriptors]
+        return [self.__resolve_manifest(i, max_depth) for i in match.manifests]
 
-    def __resolve_descriptor(self, descriptor, max_depth):
+    def __resolve_manifest(self, manifest, max_depth):
         resolver = DependencyResolver(self.__registry)
-        root = PackageDescriptorResolution(descriptor)
+        root = ManifestResolution(manifest)
         if max_depth is None or max_depth > 0:
-            root.add_children(self.__resolve_dependencies(resolver, max_depth, descriptor.runtime_dependencies))
-            root.add_children(self.__resolve_dependencies(resolver, max_depth, descriptor.development_dependencies))
+            root.add_children(self.__resolve_dependencies(resolver, max_depth, manifest.runtime_dependencies))
+            root.add_children(self.__resolve_dependencies(resolver, max_depth, manifest.development_dependencies))
         return root
 
     def __resolve_dependencies(self, resolver, max_depth, dependencies):

@@ -2,7 +2,7 @@ import re
 
 from app.dependency import *
 from app.repository_matcher import *
-from app.package_descriptor import *
+from app.manifest import *
 
 
 DEPS_BLOCK_REGEX = re.compile(r'defp?\s+deps(.+?)\bend\b', re.S)
@@ -15,7 +15,7 @@ class ElixirRepositoryMatcher(RepositoryMatcher):
     def __init__(self):
         super().__init__(['mix.exs'])
 
-    def _fetch_package_descriptor(self, repository, match):
+    def _fetch_manifest(self, repository, match):
         mixfile = match.paths[0]
 
         runtime_dependencies = []
@@ -31,7 +31,7 @@ class ElixirRepositoryMatcher(RepositoryMatcher):
             else:
                 runtime_dependencies.append(Dependency.runtime(package_name))
 
-        return PackageDescriptor(
+        return Manifest(
             platform='Elixir',
             repository=repository,
             paths=match.paths,

@@ -4,8 +4,8 @@ from textwrap import dedent
 from app.package_version import *
 from app.dependency import *
 from app.dependency_resolution import *
-from app.package_descriptor import *
-from app.package_descriptor_resolution import *
+from app.manifest import *
+from app.manifest_resolution import *
 from app.github.repository import *
 
 
@@ -15,8 +15,8 @@ def repository():
 
 
 @pytest.fixture
-def descriptor(repository):
-    return PackageDescriptor(
+def manifest(repository):
+    return Manifest(
         'Ruby',
         repository,
         ['Gemfile'],
@@ -96,8 +96,8 @@ def development_resolution():
     )
 
 
-def test_repr(descriptor):
-    resolution = PackageDescriptorResolution(descriptor)
+def test_repr(manifest):
+    resolution = ManifestResolution(manifest)
     resolution.add_children([
         runtime_resolution(),
         runtime_resolution(),

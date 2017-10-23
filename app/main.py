@@ -42,7 +42,7 @@ def print_usage():
 
 def process_repository(repository, report):
     for platform in PLATFORMS:
-        print(f'--> Looking for {platform} package descriptors...')
+        print(f'--> Looking for {platform} manifest files...')
         match = platform.match(repository)
         if match:
             sys.stdout.write('\033[F')
@@ -53,7 +53,7 @@ def process_repository(repository, report):
         else:
             sys.stdout.write('\033[F')
             sys.stdout.write('\033[K')
-            print(f'--> Did not find any {platform} package descriptors.')
+            print(f'--> Did not find any {platform} manifest files.')
 
 
 def get_github(url):

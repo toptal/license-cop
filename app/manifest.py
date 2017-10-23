@@ -2,13 +2,13 @@ from app.data_object import *
 from app.package_version import PackageVersion
 
 
-class PackageDescriptorVersion(PackageVersion):
-    def __init__(self, descriptor):
+class ManifestVersion(PackageVersion):
+    def __init__(self, manifest):
         super().__init__(
-            name=f'{{{descriptor.formatted_paths}}}',
+            name=f'{{{manifest.formatted_paths}}}',
             number=None,
-            runtime_dependencies=descriptor.runtime_dependencies,
-            development_dependencies=descriptor.development_dependencies,
+            runtime_dependencies=manifest.runtime_dependencies,
+            development_dependencies=manifest.development_dependencies,
             licenses=[]
         )
 
@@ -17,7 +17,7 @@ class PackageDescriptorVersion(PackageVersion):
         return self.name
 
 
-class PackageDescriptor(DataObject):
+class Manifest(DataObject):
 
     def __init__(self, platform, repository, paths, runtime_dependencies, development_dependencies):
         self.platform = platform
@@ -25,7 +25,7 @@ class PackageDescriptor(DataObject):
         self.paths = paths
         self.runtime_dependencies = runtime_dependencies
         self.development_dependencies = development_dependencies
-        self.version = PackageDescriptorVersion(self)
+        self.version = ManifestVersion(self)
 
     @property
     def formatted_paths(self):

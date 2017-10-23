@@ -155,13 +155,13 @@ interacting with the package registry API of the given platform, fetching
 information about package versions, dependencies and licenses. For instance,
 RubyGems provides a nice [REST API](http://guides.rubygems.org/rubygems-org-api/).
 
-### Package Descriptor
+### Manifest
 
-A package descriptor is a set of one or several files that describe the
+A manifest is a set of one or several files that describe the
 dependencies a project relies on. They are processed by the
 package manager of a given platform.
 
-For example, the Ruby platform has the `Gemfile` package descriptor, which
+For example, the Ruby platform has the `Gemfile` manifest, which
 usually sits at the root of the project and is processed by the
 [`bundler`](http://bundler.io) tool. This file
 has a structure like this:
@@ -192,7 +192,7 @@ version should be higher or equal than `2.0.3` but less than `2.1`. Likewise,
 `rspec`, `rake` and `rubocop` are all development dependencies, and any version
 can be used, preferably the latest.
 
-The [`PackageDescriptor`](app/package_descriptor.py) class has the following
+The [`Manifest`](app/manifest.py) class has the following
 data:
 
 - _platform_ (eg: Python).
@@ -204,7 +204,7 @@ data:
 ### Repository Matcher
 
 The [`RepositoryMatcher`](app/repository_matcher.py) module is responsible for
-browsing a repository's file structure, detecting package descriptor files for
+browsing a repository's file structure, detecting manifest files for
 a given platform and parsing them. The result is a list of dependencies.
 
 It works as follows:
@@ -220,11 +220,11 @@ for each file <i>F</i> from <i>T</i>:
 
 ### Dependency Resolver and Resolution
 
-Each package descriptor is fed to a
+Each manifest is fed to a
 [`DependencyResolver`](app/dependency_resolver.py) instance, which will
 query the package registry of the given platform in order to obtain
 information about pacakge versions. It will then find a set of package versions
-that match all dependency requirements specified in the package descriptor.
+that match all dependency requirements specified in the manifest.
 
 The result of this step is a tree, represented by the
 [`DependencyResolution`](app/dependency_resolution.py) class.
@@ -310,12 +310,12 @@ class FoobarRepositoryMatcher(RepositoryMatcher):
         super().__init__(['Foofile', '*.foospec'])
 ```
 
-`FoobarRepositoryMatcher` should also override the `_fetch_package_descriptor`
+`FoobarRepositoryMatcher` should also override the `_fetch_manifest`
 method. This method receives the repository and a match object (
-[`PackageDescriptorMatch`](app/repository_matcher.py)).
+[`ManifestMatch`](app/repository_matcher.py)).
 
 ```python
-def _fetch_package_descriptor(self, repository, match)
+def _fetch_manifest(self, repository, match)
 ```
 
 The match object will have a list of [`GitNode`](app/github/git_node.py)
@@ -323,7 +323,7 @@ instances that match one of the specified patterns.
 
 You can then use the repository to fetch the contents of
 the files you need. This method should return an instance of
-[`PackageDescriptor`](app/package_descriptor.py).
+[`Manifest`](app/manifest.py).
 
 Don't forget to cover your `FoobarRepositoryMatcher` with tests. They should
 be placed in `test/platforms/foobar/test_foobar_repository_matcher.py`.

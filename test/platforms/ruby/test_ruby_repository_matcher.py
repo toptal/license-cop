@@ -33,18 +33,18 @@ def test_mismatch_repository_without_gemfile(matcher, python_repository):
     assert matcher.match(python_repository) is None
 
 
-@VCR.use_cassette('ruby_repository_matcher_gemfile_package_descriptor.yaml')
-def test_gemfile_package_descriptor(matcher, ruby_repository):
+@VCR.use_cassette('ruby_repository_matcher_gemfile_manifest.yaml')
+def test_gemfile_manifest(matcher, ruby_repository):
     match = matcher.match(ruby_repository)
 
-    descriptors = match.package_descriptors
-    descriptor = descriptors[0]
+    manifests = match.manifests
+    manifest = manifests[0]
 
-    assert descriptor.platform == 'Ruby'
-    assert descriptor.repository == ruby_repository
-    assert descriptor.paths == ['Gemfile']
+    assert manifest.platform == 'Ruby'
+    assert manifest.repository == ruby_repository
+    assert manifest.paths == ['Gemfile']
 
-    assert descriptor.runtime_dependencies == [
+    assert manifest.runtime_dependencies == [
         Dependency.runtime('arel'),
         Dependency.runtime('rake'),
         Dependency.runtime('mocha'),

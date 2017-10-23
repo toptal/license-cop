@@ -144,14 +144,14 @@ interactions:
         This is the artifact which is \r\n               the official subject of any
         release vote. -->\r\n          <plugin>\r\n            <artifactId>maven-assembly-plugin</artifactId>\r\n
         \           <dependencies>\r\n              <dependency>\r\n                <groupId>org.apache.apache.resources</groupId>\r\n
-        \               <artifactId>apache-source-release-assembly-descriptor</artifactId>\r\n
+        \               <artifactId>apache-source-release-assembly-manifest</artifactId>\r\n
         \               <version>1.0.2</version>\r\n              </dependency>\r\n
         \           </dependencies>\r\n            <executions>\r\n              <execution>\r\n
         \               <id>source-release-assembly</id>\r\n                <phase>package</phase>\r\n
         \               <goals>\r\n                  <goal>single</goal>\r\n                </goals>\r\n
         \               <configuration>\r\n                  <runOnlyAtExecutionRoot>true</runOnlyAtExecutionRoot>\r\n
-        \                 <descriptorRefs>\r\n                    <descriptorRef>${sourceReleaseAssemblyDescriptor}</descriptorRef>\r\n
-        \                 </descriptorRefs>\r\n                  <tarLongFileFormat>gnu</tarLongFileFormat>\r\n
+        \                 <manifestRefs>\r\n                    <manifestRef>${sourceReleaseAssemblyDescriptor}</manifestRef>\r\n
+        \                 </manifestRefs>\r\n                  <tarLongFileFormat>gnu</tarLongFileFormat>\r\n
         \               </configuration>\r\n              </execution>\r\n            </executions>\r\n
         \         </plugin>\r\n          <!-- We want to sign the artifact, the POM,
         and all attached artifacts -->\r\n          <plugin>\r\n            <groupId>org.apache.maven.plugins</groupId>\r\n

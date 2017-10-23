@@ -11885,7 +11885,7 @@ interactions:
         PyOpenSSL.\\n  (Issue #585)\\n\\n* Work on platforms without `ssl` module
         for plain HTTP requests.\\n  (Issue #587)\\n\\n* Stop relying on the stdlib's
         default cipher list. (Issue #588)\\n\\n\\n1.10.2 (2015-02-25)\\n-------------------\\n\\n*
-        Fix file descriptor leakage on retries. (Issue #548)\\n\\n* Removed RC4 from
+        Fix file manifest leakage on retries. (Issue #548)\\n\\n* Removed RC4 from
         default cipher list. (Issue #551)\\n\\n* Header performance improvements.
         (Issue #544)\\n\\n* Fix PoolManager not obeying redirect retry settings. (Issue
         #553)\\n\\n\\n1.10.1 (2015-02-10)\\n-------------------\\n\\n* Pools can be

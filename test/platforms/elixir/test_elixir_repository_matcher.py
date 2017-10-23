@@ -33,24 +33,24 @@ def test_mismatch_repository_without_mixfile(matcher, python_repository):
     assert matcher.match(python_repository) is None
 
 
-@VCR.use_cassette('elixir_repository_matcher_mixfile_package_descriptor.yaml')
-def test_mixfile_package_descriptor(matcher, elixir_repository):
+@VCR.use_cassette('elixir_repository_matcher_mixfile_manifest.yaml')
+def test_mixfile_manifest(matcher, elixir_repository):
     match = matcher.match(elixir_repository)
 
-    descriptors = match.package_descriptors
-    descriptor = descriptors[0]
+    manifests = match.manifests
+    manifest = manifests[0]
 
-    assert descriptor.platform == 'Elixir'
-    assert descriptor.repository == elixir_repository
-    assert descriptor.paths == ['mix.exs']
+    assert manifest.platform == 'Elixir'
+    assert manifest.repository == elixir_repository
+    assert manifest.paths == ['mix.exs']
 
-    assert descriptor.runtime_dependencies == [
+    assert manifest.runtime_dependencies == [
         Dependency.runtime('tzdata'),
         Dependency.runtime('combine'),
         Dependency.runtime('gettext')
     ]
 
-    assert descriptor.development_dependencies == [
+    assert manifest.development_dependencies == [
         Dependency.development('ex_doc'),
         Dependency.development('benchfella'),
         Dependency.development('dialyze'),
