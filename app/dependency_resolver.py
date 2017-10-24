@@ -33,9 +33,7 @@ class DependencyResolver:
                     child.hide()
 
     def __exceeds_max_depth(self, node, max_depth):
-        if max_depth is not None and self.__depth(node) >= max_depth:
-            return True
-        return False
+        return max_depth is not None and self.__depth(node) >= max_depth
 
     @staticmethod
     def __depth(node):

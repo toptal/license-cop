@@ -36,7 +36,7 @@ class Manifest(DataObject):
         return [self.repository.master_url(i) for i in self.paths]
 
     def __str__(self):
-        return f'{str(self.repository)} {{{self.formatted_paths}}} [{self.platform}]'
+        return f'{self.repository} {{{self.formatted_paths}}} [{self.platform}]'
 
     def __repr__(self):
         return str(self)

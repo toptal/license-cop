@@ -23,10 +23,10 @@ class RepositoryMatch(DataObject):
     @property
     def manifests(self):
         if not self.__manifests:
-            self.__manifests = list(
+            self.__manifests = [
                 self.__matcher._fetch_manifest(self.repository, i)
                 for i in self.manifest_matches
-            )
+            ]
         return self.__manifests
 
     def manifest_at(self, path):

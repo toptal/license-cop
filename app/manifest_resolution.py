@@ -24,5 +24,5 @@ class ManifestResolution(DependencyResolution):
         self.__print_children(file, DependencyKind.DEVELOPMENT)
 
     def __print_children(self, file, kind):
-        for child in filter(lambda i: i.kind == kind, self.children):
+        for child in (i for i in self.children if i.kind == kind):
             file.write(child.__repr__(1))
