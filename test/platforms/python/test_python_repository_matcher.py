@@ -150,20 +150,20 @@ def test_mismatch_repository_without_requirements_nor_pipfile(matcher, nodejs_re
     assert matcher.match(nodejs_repository) is None
 
 
-@VCR.use_cassette('python_repository_matcher_extract_package_descriptor_from_requirements_files.yaml')
-def test_extract_package_descriptor_from_requirements_files(matcher, requirements_repository):
+@VCR.use_cassette('python_repository_matcher_extract_manifest_from_requirements_files.yaml')
+def test_extract_manifest_from_requirements_files(matcher, requirements_repository):
     match = matcher.match(requirements_repository)
 
-    descriptors = match.package_descriptors()
-    descriptor = descriptors[0]
+    manifests = match.manifests
+    manifest = manifests[0]
 
-    assert descriptor.platform == 'Python'
-    assert descriptor.repository == requirements_repository
-    assert descriptor.paths == ['requirements.txt', 'dev-requirements.txt']
-    assert descriptor.runtime_dependencies == [
+    assert manifest.platform == 'Python'
+    assert manifest.repository == requirements_repository
+    assert manifest.paths == ['requirements.txt', 'dev-requirements.txt']
+    assert manifest.runtime_dependencies == [
         Dependency.runtime('click')
     ]
-    assert descriptor.development_dependencies == [
+    assert manifest.development_dependencies == [
         Dependency.development('coverage'),
         Dependency.development('mock'),
         Dependency.development('nose'),
@@ -172,20 +172,20 @@ def test_extract_package_descriptor_from_requirements_files(matcher, requirement
     ]
 
 
-@VCR.use_cassette('python_repository_matcher_extract_package_descriptor_from_pipfile.yaml')
-def test_extract_package_descriptor_from_pipfile(matcher, pipfile_repository):
+@VCR.use_cassette('python_repository_matcher_extract_manifest_from_pipfile.yaml')
+def test_extract_manifest_from_pipfile(matcher, pipfile_repository):
     match = matcher.match(pipfile_repository)
 
-    descriptors = match.package_descriptors()
-    descriptor = descriptors[0]
+    manifests = match.manifests
+    manifest = manifests[0]
 
-    assert descriptor.platform == 'Python'
-    assert descriptor.repository == pipfile_repository
-    assert descriptor.paths == ['Pipfile']
-    assert descriptor.runtime_dependencies == [
+    assert manifest.platform == 'Python'
+    assert manifest.repository == pipfile_repository
+    assert manifest.paths == ['Pipfile']
+    assert manifest.runtime_dependencies == [
         Dependency.runtime('requests')
     ]
-    assert descriptor.development_dependencies == [
+    assert manifest.development_dependencies == [
         Dependency.development('pytest'),
         Dependency.development('vcrpy'),
         Dependency.development('pytest-mock')

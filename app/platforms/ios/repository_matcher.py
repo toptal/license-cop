@@ -2,7 +2,7 @@ import re
 
 from app.dependency import *
 from app.repository_matcher import *
-from app.package_descriptor import *
+from app.manifest import *
 from app.platforms.ios.podfile_parser import PodfileParser
 from app.platforms.ios.podspec_parser import PodspecParser
 
@@ -16,7 +16,7 @@ class IosRepositoryMatcher(RepositoryMatcher):
     def __init__(self):
         super().__init__([PODFILE_PATTERN, PODSPEC_PATTERN])
 
-    def _fetch_package_descriptor(self, repository, match):
+    def _fetch_manifest(self, repository, match):
         dependencies = set()
         for node in match.nodes:
             data = repository.read_text_file(node.path)
@@ -25,7 +25,7 @@ class IosRepositoryMatcher(RepositoryMatcher):
                 dependency = self.__build_dependency(name)
                 dependencies.add(dependency)
 
-        return PackageDescriptor(
+        return Manifest(
             platform='iOS',
             repository=repository,
             paths=match.paths,

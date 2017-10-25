@@ -3,41 +3,58 @@ from io import StringIO
 
 from app.package_version import *
 from app.dependency import *
+from app.reverse_dependency import *
 from app.package_registry import *
 
 
 class DependencyResolution:
 
-    def __init__(self, version, kind, is_hidden=False):
+    def __init__(self, version, kind, hidden=False):
         self.version = version
         self.kind = kind
         self.parent = None
-        self.is_hidden = is_hidden
+        self.hidden = hidden
         self.children = []
 
-    @staticmethod
-    def runtime(version, is_hidden=False):
-        return DependencyResolution(version, DependencyKind.RUNTIME, is_hidden)
+    @classmethod
+    def runtime(cls, version, hidden=False):
+        return cls(version, DependencyKind.RUNTIME, hidden)
 
-    @staticmethod
-    def development(version, is_hidden=False):
-        return DependencyResolution(version, DependencyKind.DEVELOPMENT, is_hidden)
-
-    @property
-    def is_root(self): return self.parent is None
+    @classmethod
+    def development(cls, version, hidden=False):
+        return cls(version, DependencyKind.DEVELOPMENT, hidden)
 
     @property
-    def is_leaf(self): return self.children == []
+    def is_runtime(self):
+        return self.kind == DependencyKind.RUNTIME
 
     @property
-    def is_found(self):
+    def is_development(self):
+        return self.kind == DependencyKind.DEVELOPMENT
+
+    @property
+    def is_root(self):
+        return self.parent is None
+
+    @property
+    def is_leaf(self):
+        return self.children == []
+
+    @property
+    def is_tree(self):
+        return not self.is_leaf
+
+    @property
+    def found(self):
         return not isinstance(self.version, PackageVersionNotFound)
 
     @property
-    def name(self): return self.version.name
+    def name(self):
+        return self.version.name
 
     @property
-    def number(self): return self.version.number
+    def number(self):
+        return self.version.number
 
     def dependencies(self, runtime_only=False):
         if runtime_only:
@@ -58,39 +75,59 @@ class DependencyResolution:
         self.children.append(child)
         return self
 
+    def add_children(self, children):
+        for i in children:
+            self.add_child(i)
+        return self
+
     def hide(self):
-        self.is_hidden = True
+        self.hidden = True
+
+    def reverse_dependencies(self):
+        collected = {}
+        self.__reverse_dependencies(collected)
+        return collected.values()
+
+    def __reverse_dependencies(self, collected):
+        for child in self.children:
+            v = child.version
+            if v not in collected:
+                collected[v] = ReverseDependency(v)
+            if child.parent:
+                collected[v].add_reference(child.parent, child.kind)
+            child.__reverse_dependencies(collected)
 
     def __repr__(self, level=0):
         io = StringIO()
-        self.__print_node(io, self, level)
+        self.__print(io, level)
         return io.getvalue()
 
-    def __print_node(self, io, node, level):
-        self.__print_node_header(io, node, level)
-        for child in node.children:
-            self.__print_node(io, child, level + 1)
+    def __print(self, io, level):
+        self.__print_header(io, level)
+        for child in self.children:
+            child.__print(io, level + 1)
 
-    def __print_node_header(self, io, node, level):
+    def __print_header(self, io, level):
         header = '{0}{1} [{2}] {3}'.format(
             self.__indentation(level),
-            self.__format_bullet(node),
-            str(node.kind),
-            str(node.version)
+            self.__bullet(),
+            str(self.kind),
+            repr(self.version)
         )
         print(header, file=io)
 
-    def __format_bullet(self, node):
-        if node.is_hidden:
+    def __bullet(self):
+        if self.hidden:
             return '•'
-        elif not node.is_found:
+        elif not self.found:
             return '!'
-        elif node.is_leaf:
+        elif self.is_leaf:
             return '='
         else:
             return '+'
 
-    def __indentation(self, level):
+    @staticmethod
+    def __indentation(level):
         if level == 0:
             return ''
         return ('⎮  ' * (level - 1)) + '⎮--'

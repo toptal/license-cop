@@ -1,10 +1,13 @@
 import sys
+import traceback
 from textwrap import dedent
 
 from app import *
 from app.github.owner import *
 from app.github.repository import *
 from app.platform import *
+from app.reporting.excel import ExcelReport
+from app.reporting.plain_text import PlainTextReport
 
 
 def print_usage():
@@ -37,20 +40,20 @@ def print_usage():
     )
 
 
-def process_repository(repo, report):
+def process_repository(repository, report):
     for platform in PLATFORMS:
-        print('--> Looking for {0} package descriptors...'.format(platform.name))
-        match = platform.match(repo)
+        print(f'--> Looking for {platform} manifest files...')
+        match = platform.match(repository)
         if match:
             sys.stdout.write('\033[F')
             sys.stdout.write('\033[K')
-            print('--> Resolving {0} dependencies. This will take a while...'.format(platform.name))
-            platform.resolve(match, report)
+            print(f'--> Resolving {platform} dependencies (will take a while...)')
+            report.process(match)
             sys.stdout.write('\033[K')
         else:
             sys.stdout.write('\033[F')
             sys.stdout.write('\033[K')
-            print('--> Did not find any {0} package descriptors.'.format(platform.name))
+            print(f'--> Did not find any {platform} manifest files.')
 
 
 def get_github(url):
@@ -62,7 +65,7 @@ def get_github(url):
     if github:
         return github
 
-    print('Invalid GitHub URL, or missing read permissions: {0}'.format(url), file=sys.stderr)
+    print(f'Invalid GitHub URL, or missing read permissions: {url}', file=sys.stderr)
     sys.exit(1)
 
 
@@ -83,18 +86,29 @@ def get_repositories(github):
 def process_repositories(github, report):
     repos = get_repositories(github)
     for i, repo in enumerate(repos):
-        print('==> Checking repository {0} of {1} [{2}]'.format(i+1, len(repos), repo))
-        process_repository(repo, report)
+        print(f'==> Processing repository {i+1} of {len(repos)} [{repo.url}]')
+        try:
+            process_repository(repo, report)
+        except KeyboardInterrupt:
+            raise
+        except:
+            traceback.print_exc()
 
 
 def main():
     (url, filename) = parse_arguments()
     github = get_github(url)
-    print('• Checking {0}'.format(repr(github)))
-    print('• Report will be saved in "{0}"'.format(filename))
-    with open(filename, 'w') as report:
+    print(f'• Checking {repr(github)}')
+    print(f'• Report will be saved in "{filename}"')
+    try:
+        report = ExcelReport(filename, max_depth=None)
+        # report = PlainTextReport(filename)
         process_repositories(github, report)
+    except KeyboardInterrupt:
+        print('Aborting...')
+    finally:
+        report.close()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

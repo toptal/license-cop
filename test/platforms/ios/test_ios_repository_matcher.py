@@ -45,15 +45,15 @@ def test_mismatch_repository_without_podfile(matcher, python_repository):
 def test_extract_from_podfile(matcher, podfile_repository):
     match = matcher.match(podfile_repository)
 
-    descriptors = match.package_descriptors()
-    assert len(descriptors) == 1
-    descriptor = descriptors[0]
+    manifests = match.manifests
+    assert len(manifests) == 1
+    manifest = manifests[0]
 
-    assert descriptor.platform == 'iOS'
-    assert descriptor.repository == podfile_repository
-    assert descriptor.paths == ['Podfile']
+    assert manifest.platform == 'iOS'
+    assert manifest.repository == podfile_repository
+    assert manifest.paths == ['Podfile']
 
-    assert descriptor.runtime_dependencies == set([
+    assert manifest.runtime_dependencies == set([
         Dependency.runtime('MASPreferences'),
         Dependency.runtime('Just'),
         Dependency.runtime('AEXML'),
@@ -63,23 +63,23 @@ def test_extract_from_podfile(matcher, podfile_repository):
         Dependency.runtime('Sparkle')
     ])
 
-    assert descriptor.development_dependencies == []
+    assert manifest.development_dependencies == []
 
 
 @VCR.use_cassette('ios_repository_matcher_extract_from_podspec.yaml')
 def test_extract_from_podspec(matcher, podspec_repository):
     match = matcher.match(podspec_repository)
 
-    descriptors = match.package_descriptors()
-    assert len(descriptors) == 1
-    descriptor = descriptors[0]
+    manifests = match.manifests
+    assert len(manifests) == 1
+    manifest = manifests[0]
 
-    assert descriptor.platform == 'iOS'
-    assert descriptor.repository == podspec_repository
-    assert descriptor.paths == ['RxBlocking.podspec', 'RxCocoa.podspec', 'RxSwift.podspec', 'RxTest.podspec']
-    print(descriptor.runtime_dependencies)
-    assert set(descriptor.runtime_dependencies) == set([
+    assert manifest.platform == 'iOS'
+    assert manifest.repository == podspec_repository
+    assert manifest.paths == ['RxBlocking.podspec', 'RxCocoa.podspec', 'RxSwift.podspec', 'RxTest.podspec']
+    print(manifest.runtime_dependencies)
+    assert set(manifest.runtime_dependencies) == set([
         Dependency.runtime('RxSwift')
     ])
 
-    assert descriptor.development_dependencies == []
+    assert manifest.development_dependencies == []

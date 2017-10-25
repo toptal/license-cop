@@ -9,13 +9,13 @@ PACKAGE_URI = 'https://pypi.python.org/pypi/{0}/json'
 VERSION_URI = 'https://pypi.python.org/pypi/{0}/{1}/json'
 
 DEPENDENCY_REGEX = re.compile(
-    r"^(?P<name>[\w\-\.]+)\s*"                              # name
-    r"(\(.+\))?\s*"                                         # optional version
-    r"(;\s*("                                               # optional semicolon
-    r".*"                                                   # optional attributes
-    r"extra\s*==\s*(['\"]|\\\")(?P<extra>\w+)(['\"]|\\\")"  # optional extra attribute
-    r".*"                                                   # optional attributes
-    r")?)?"
+    r'^(?P<name>[\w\-\.]+)\s*'                              # name
+    r'(\(.+\))?\s*'                                         # optional version
+    r'(;\s*('                                               # optional semicolon
+    r'.*'                                                   # optional attributes
+    r'extra\s*==\s*([\'"]|\\")(?P<extra>\w+)([\'"]|\\")'    # optional extra attribute
+    r'.*'                                                   # optional attributes
+    r')?)?'
 )
 
 DEVELOPMENT_DEPENDENCY_KEYWORDS = (
@@ -45,7 +45,7 @@ def parse_dependency(string):
             name=m.group('name'),
             kind=__dependency_kind(m.group('extra'))
         )
-    raise Exception('Could not parse dependency: {0}'.format(string))
+    raise Exception(f'Could not parse dependency: {string}')
 
 
 class PythonPackageRegistry(PackageRegistry):
@@ -61,13 +61,11 @@ class PythonPackageRegistry(PackageRegistry):
         return self.__build_package(response.json())
 
     def __extract_dependencies(self, data):
-        return list(map(
-            lambda i: parse_dependency(i),
-            data['requires_dist'] if 'requires_dist' in data else []
-        ))
+        requires_dist = data['requires_dist'] if 'requires_dist' in data else []
+        return [parse_dependency(i) for i in requires_dist]
 
     def __filter_dependencies(self, dependencies, kind):
-        return list(filter(lambda i: i.kind == kind, dependencies))
+        return [i for i in dependencies if i.kind == kind]
 
     def __build_package(self, data):
         info = data['info']
@@ -95,11 +93,11 @@ class PythonPackageRegistry(PackageRegistry):
                 return license
 
     def __trim_lines(self, string):
-        lines = map(lambda i: i.strip(), string.splitlines())
+        lines = (i.strip() for i in string.splitlines())
         lines = [l for l in lines if l]
         if lines:
             line = lines[0]
-            return '{0} [...]'.format(line) if len(lines) > 1 else line
+            return f'{line} [...]' if len(lines) > 1 else line
 
     def __remove_unknown_token(self, string):
         if string and string != 'UNKNOWN':
@@ -107,5 +105,4 @@ class PythonPackageRegistry(PackageRegistry):
 
     def __extract_repository_urls(self, data):
         keys = ['home_page', 'docs_url', 'download_url', 'bugtrack_url']
-        urls = list(map(lambda i: self.__remove_unknown_token(data.get(i)), keys))
-        return list(filter(None, urls))
+        return (self.__remove_unknown_token(data.get(i)) for i in keys if i)

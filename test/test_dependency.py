@@ -11,10 +11,6 @@ def test_development_kind_str():
     assert str(DependencyKind.DEVELOPMENT) == 'development'
 
 
-def test_unknown_kind_str():
-    assert str(DependencyKind.UNKNOWN) == 'unknown'
-
-
 def test_dependency_with_number_str():
     dependency = Dependency.runtime('pytest', '3.5.0')
     assert str(dependency) == '[runtime] pytest:3.5.0'

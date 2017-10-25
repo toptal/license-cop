@@ -2,7 +2,7 @@ import re
 
 from app.dependency import *
 from app.repository_matcher import *
-from app.package_descriptor import *
+from app.manifest import *
 
 
 class RubyRepositoryMatcher(RepositoryMatcher):
@@ -10,7 +10,7 @@ class RubyRepositoryMatcher(RepositoryMatcher):
     def __init__(self):
         super().__init__(['Gemfile'])
 
-    def _fetch_package_descriptor(self, repository, match):
+    def _fetch_manifest(self, repository, match):
         gemfile = match.paths[0]
 
         data = repository.read_text_file(gemfile)
@@ -22,7 +22,7 @@ class RubyRepositoryMatcher(RepositoryMatcher):
                 dependency = self.__build_dependency(name)
                 dependencies.append(dependency)
 
-        return PackageDescriptor(
+        return Manifest(
             platform='Ruby',
             repository=repository,
             paths=match.paths,
@@ -31,7 +31,7 @@ class RubyRepositoryMatcher(RepositoryMatcher):
         )
 
     def __parse_line(self, line):
-        m = re.match(r"^\s*gem\s+['\"]([\w\-]+)['\"]", line)
+        m = re.match(r'^\s*gem\s+[\'"]([\w\-]+)[\'"]', line)
         return m.group(1) if m else None
 
     def __build_dependency(self, name):

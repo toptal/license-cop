@@ -44,7 +44,7 @@ class NodejsPackageRegistry(PackageRegistry):
         if number in package_data['versions']:
             return package_data['versions'][number]
         raise PackageVersionNotFoundError(
-            'Could not find package version {0}:{1}.'.format(name, number))
+            f'Could not find package version {name}:{number}.')
 
     def __fetch_package_data(self, name):
         name = self.__normalize_scoped_package_name(name)
@@ -86,7 +86,7 @@ class NodejsPackageRegistry(PackageRegistry):
         if isinstance(data, str):
             licenses.append(data)
         if isinstance(data, list):
-            licenses.extend(map(lambda i: self.__try_extract_field(i, 'type'), data))
+            licenses.extend(self.__try_extract_field(i, 'type') for i in data)
         return list(filter(None, licenses))
 
     def __extract_repository_urls(self, data):
@@ -106,7 +106,7 @@ class NodejsPackageRegistry(PackageRegistry):
         if isinstance(data, dict) and 'url' in data:
             urls.append(data['url'])
         if isinstance(data, list):
-            urls.extend(map(lambda i: self.__try_extract_field(i, 'url'), data))
+            urls.extend(self.__try_extract_field(i, 'url') for i in data)
         return list(filter(None, urls))
 
     def __parse_homepage_field(self, data):

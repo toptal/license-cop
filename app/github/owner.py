@@ -38,13 +38,10 @@ class GithubOwner(GithubClient):
         return repos
 
     def __build_repositories(self, data):
-        return map(
-            lambda i: GithubRepository(self.name, i['name']),
-            data
-        )
+        return (GithubRepository(self.name, i['name']) for i in data)
 
     def __str__(self):
         return ORGANIZATION_URI.format(self.name)
 
     def __repr__(self):
-        return "GitHub organization {0}".format(str(self))
+        return f'GitHub organization {str(self)}'

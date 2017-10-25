@@ -65,7 +65,7 @@ def test_check_path_that_does_not_exist(repository):
 def test_read_text_file(repository):
     text = repository.read_text_file('fixtures/what_does_the_fox_say.txt')
     assert text == dedent(
-        """\
+        '''\
         Dog goes "woof"
         Cat goes "meow"
         Bird goes "tweet"
@@ -80,7 +80,7 @@ def test_read_text_file(repository):
         But there's one sound
         That no one knows
         What does the fox say?
-        """
+        '''
     )
 
 

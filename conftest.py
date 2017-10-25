@@ -1,3 +1,3 @@
 # py.test configuration file.
 
-collect_ignore = ["app", "env"]
+collect_ignore = ['app', 'env']
