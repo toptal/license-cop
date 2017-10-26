@@ -7,6 +7,65 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.18.4]
     method: GET
+    uri: https://repo.maven.apache.org/maven2/org/spire-math/kind-projector_2.10.7-RC2/maven-metadata.xml
+  response:
+    body: {string: '<html>
+
+        <head><title>404 Not Found</title></head>
+
+        <body bgcolor="white">
+
+        <center><h1>404 Not Found</h1></center>
+
+        <hr><center>nginx</center>
+
+        </body>
+
+        </html>
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+
+
+
+'}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['937']
+      Connection: [keep-alive]
+      Content-Length: ['554']
+      Content-Type: [text/html]
+      Date: ['Fri, 27 Oct 2017 19:11:48 GMT']
+      ETag: ['"1fb066da6a67c7c02962f59b4b8cd1ee"']
+      Fastly-Debug-Digest: [d182cbb5c1190a255e5878c18808b0edabe2ce12516077eb3f776a1ed26800ab]
+      Last-Modified: ['Wed, 10 Aug 2016 15:08:35 GMT']
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['MISS, HIT']
+      X-Cache-Hits: ['0, 1']
+      X-Served-By: ['cache-iad2122-IAD, cache-atl6234-ATL']
+      X-Timer: ['S1509131508.104716,VS0,VE1']
+      x-amz-error-code: [NoSuchKey]
+      x-amz-error-detail-Key: [maven2/org/spire-math/kind-projector_2.10.7-RC2/maven-metadata.xml]
+      x-amz-error-message: [The specified key does not exist.]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
     uri: https://repo.maven.apache.org/maven2/org/spire-math/kind-projector_2.10/maven-metadata.xml
   response:
     body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<metadata>\n  <groupId>org.spire-math</groupId>\n
@@ -18,22 +77,81 @@ interactions:
         \   </versions>\n    <lastUpdated>20170530144248</lastUpdated>\n  </versioning>\n</metadata>\n"}
     headers:
       Accept-Ranges: [bytes]
-      Age: ['0']
+      Age: ['153516']
       Connection: [keep-alive]
       Content-Length: ['619']
       Content-Type: [text/xml]
-      Date: ['Thu, 12 Oct 2017 03:16:28 GMT']
+      Date: ['Fri, 27 Oct 2017 19:11:48 GMT']
       ETag: ['"d93171316984b3cf2c31cd47a403d48e"']
       Fastly-Debug-Digest: [ad17a96fb2ca0e5a83f14338bc51a8c50359024f52c596f239621472551e456f]
       Last-Modified: ['Tue, 30 May 2017 14:42:48 GMT']
       Via: [1.1 varnish, 1.1 varnish]
-      X-Cache: ['HIT, MISS']
-      X-Cache-Hits: ['1, 0']
+      X-Cache: ['HIT, HIT']
+      X-Cache-Hits: ['1, 1']
       X-Checksum-MD5: [d93171316984b3cf2c31cd47a403d48e]
       X-Checksum-SHA1: [1fc22c9de4c497ad4ace576a05e45a269ed07449]
-      X-Served-By: ['cache-iad2138-IAD, cache-mia17621-MIA']
-      X-Timer: ['S1507778188.134469,VS0,VE25']
+      X-Served-By: ['cache-iad2123-IAD, cache-atl6234-ATL']
+      X-Timer: ['S1509131508.267701,VS0,VE1']
     status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://repo.maven.apache.org/maven2/org/spire-math/kind-projector_2.10.7-RC2/0.9.4/kind-projector_2.10.7-RC2-0.9.4.pom
+  response:
+    body: {string: '<html>
+
+        <head><title>404 Not Found</title></head>
+
+        <body bgcolor="white">
+
+        <center><h1>404 Not Found</h1></center>
+
+        <hr><center>nginx</center>
+
+        </body>
+
+        </html>
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+
+
+
+'}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['937']
+      Connection: [keep-alive]
+      Content-Length: ['554']
+      Content-Type: [text/html]
+      Date: ['Fri, 27 Oct 2017 19:11:48 GMT']
+      ETag: ['"1fb066da6a67c7c02962f59b4b8cd1ee"']
+      Fastly-Debug-Digest: [3f21734e0a1e6b1dbd31f5fc270cb14fd89ce87071356ee8b275cd31b1d25cf6]
+      Last-Modified: ['Wed, 10 Aug 2016 15:08:35 GMT']
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['MISS, HIT']
+      X-Cache-Hits: ['0, 1']
+      X-Served-By: ['cache-iad2143-IAD, cache-atl6234-ATL']
+      X-Timer: ['S1509131508.430555,VS0,VE1']
+      x-amz-error-code: [NoSuchKey]
+      x-amz-error-detail-Key: [maven2/org/spire-math/kind-projector_2.10.7-RC2/0.9.4/kind-projector_2.10.7-RC2-0.9.4.pom]
+      x-amz-error-message: [The specified key does not exist.]
+    status: {code: 404, message: Not Found}
 - request:
     body: null
     headers:
@@ -71,20 +189,20 @@ interactions:
         \   </dependencies>\n</project>"}
     headers:
       Accept-Ranges: [bytes]
-      Age: ['0']
+      Age: ['153517']
       Connection: [keep-alive]
       Content-Length: ['2231']
       Content-Type: [text/xml]
-      Date: ['Thu, 12 Oct 2017 03:16:28 GMT']
+      Date: ['Fri, 27 Oct 2017 19:11:48 GMT']
       ETag: ['"b746663f9961ce4828bd5151074ac0ec"']
       Fastly-Debug-Digest: [650663de7cf92c2ae3aa8085098d132981b87bcbe1b25e5cdccba8e5b44f96ef]
       Last-Modified: ['Tue, 30 May 2017 14:41:22 GMT']
       Via: [1.1 varnish, 1.1 varnish]
-      X-Cache: ['HIT, MISS']
-      X-Cache-Hits: ['1, 0']
+      X-Cache: ['HIT, HIT']
+      X-Cache-Hits: ['1, 1']
       X-Checksum-MD5: [b746663f9961ce4828bd5151074ac0ec]
       X-Checksum-SHA1: [517f67924700ecdea8f71ae8114a156611ccf0d8]
-      X-Served-By: ['cache-iad2130-IAD, cache-mia17621-MIA']
-      X-Timer: ['S1507778188.281643,VS0,VE25']
+      X-Served-By: ['cache-iad2136-IAD, cache-atl6234-ATL']
+      X-Timer: ['S1509131509.592622,VS0,VE0']
     status: {code: 200, message: OK}
 version: 1

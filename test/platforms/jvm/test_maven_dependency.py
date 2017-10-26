@@ -88,7 +88,7 @@ def test_to_dependency_with_interpolation_from_immediate_properties(complex_pom)
     artifact_id = '${Hello-World}_2.11'
     dependency = MavenDependency(group_id, artifact_id).to_dependency(complex_pom)
     assert dependency.name.group_id == 'com.FooBar'
-    assert dependency.name.artifact_id == 'hello-world_2.11'
+    assert dependency.name.artifact_id == 'hello-world'
 
 
 def test_to_dependency_with_interpolation_from_nested_properties(complex_pom):

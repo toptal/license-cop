@@ -43,18 +43,30 @@ class Maven2PackageRegistry(PackageRegistry):
         return self._fetch_version(name, metadata.latest_version)
 
     def __fetch_pom(self, name, number):
-        response = self.__http_get_pom(name.group_path, name.artifact_id_with_scala_version, number)
-        if response.status_code == 404:
-            response = self.__http_get_pom(name.group_path, name.artifact_id_without_scala_version, number)
+        for artifact_id in self.__artifact_id_variations(name):
+            response = self.__http_get_pom(name.group_path, artifact_id, number)
+            if response.status_code != 404:
+                break
         response.raise_for_status()
         return MavenPom.parse(response.text, self)
 
     def __fetch_metadata(self, name):
-        response = self.__http_get_metadata(name.group_path, name.artifact_id_with_scala_version)
-        if response.status_code == 404:
-            response = self.__http_get_metadata(name.group_path, name.artifact_id_without_scala_version)
+        for artifact_id in self.__artifact_id_variations(name):
+            response = self.__http_get_metadata(name.group_path, artifact_id)
+            if response.status_code != 404:
+                break
         response.raise_for_status()
         return MavenMetadata.parse(response.text)
+
+    @staticmethod
+    def __artifact_id_variations(name):
+        if name.scala_version is None:
+            return (name.artifact_id,)
+        return (
+            f'{name.artifact_id}_{name.scala_version}',
+            f'{name.artifact_id}_{name.scala_version_without_patch}',
+            name.artifact_id
+        )
 
     def __http_get_metadata(self, group_path, artifact_id):
         url = METADATA_URL.format_map({

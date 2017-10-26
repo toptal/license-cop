@@ -1,0 +1,50 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://repo.maven.apache.org/maven2/com/typesafe/scalalogging-slf4j_2.10.0-M6/0.2.0/scalalogging-slf4j_2.10.0-M6-0.2.0.pom
+  response:
+    body: {string: "<?xml version='1.0' encoding='UTF-8'?>\n<project xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0
+        http://maven.apache.org/xsd/maven-4.0.0.xsd\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns=\"http://maven.apache.org/POM/4.0.0\">\n    <modelVersion>4.0.0</modelVersion>\n
+        \   <groupId>com.typesafe</groupId>\n    <artifactId>scalalogging-slf4j_2.10.0-M6</artifactId>\n
+        \   <packaging>jar</packaging>\n    <description>scalalogging-slf4j</description>\n
+        \   <url>https://github.com/typesafehub/scalalogging</url>\n    <version>0.2.0</version>\n
+        \   <licenses>\n        <license>\n            <name>Apache 2.0 License</name>\n
+        \           <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>\n            <distribution>repo</distribution>\n
+        \       </license>\n    </licenses>\n    <name>scalalogging-slf4j</name>\n
+        \   <organization>\n        <name>com.typesafe</name>\n        <url>https://github.com/typesafehub/scalalogging</url>\n
+        \   </organization>\n    <scm>\n        <url>https://github.com/typesafehub/scalalogging</url>\n
+        \       <connection>scm:git:git://github.com/typesafehub/scalalogging.git</connection>\n
+        \   </scm>\n    <developers>\n        <developer>\n            <id>hseeberger</id>\n
+        \           <name>Heiko Seeberger</name>\n            <url>http://heikoseeberger.name</url>\n
+        \       </developer>\n    </developers>\n    <dependencies>\n        <dependency>\n
+        \           <groupId>org.scala-lang</groupId>\n            <artifactId>scala-reflect</artifactId>\n
+        \           <version>2.10.0-M6</version>\n            <scope>compile</scope>\n
+        \       </dependency>\n        <dependency>\n            <groupId>org.slf4j</groupId>\n
+        \           <artifactId>slf4j-api</artifactId>\n            <version>1.6.6</version>\n
+        \           <scope>compile</scope>\n        </dependency>\n    </dependencies>\n</project>"}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['32']
+      Connection: [keep-alive]
+      Content-Length: ['1785']
+      Content-Type: [text/xml]
+      Date: ['Fri, 27 Oct 2017 19:26:56 GMT']
+      ETag: ['"51b31dbb03117b20bdd0ac86fb5f9ec1"']
+      Fastly-Debug-Digest: [2ee3f447bfd586ff0acc1d931840a0aab13f5a4f651f0ffedb5a0370c1a53e41]
+      Last-Modified: ['Fri, 03 Aug 2012  9:47:21 GMT']
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['HIT, HIT']
+      X-Cache-Hits: ['1, 1']
+      X-Checksum-MD5: [51b31dbb03117b20bdd0ac86fb5f9ec1]
+      X-Checksum-SHA1: [597edca653fee68465a67a585dce108be8fe02b8]
+      X-Served-By: ['cache-iad2134-IAD, cache-atl6247-ATL']
+      X-Timer: ['S1509132417.651777,VS0,VE0']
+    status: {code: 200, message: OK}
+version: 1

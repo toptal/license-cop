@@ -12,8 +12,39 @@ def registry():
     return Maven2PackageRegistry(http_compression=False)
 
 
-@VCR.use_cassette('maven2_package_registry_fetch_version_with_scala_version.yaml')
-def test_fetch_version_with_scala_version(registry):
+@VCR.use_cassette('maven2_package_registry_fetch_version_with_full_scala_version.yaml')
+def test_fetch_version_with_full_scala_version(registry):
+    name = JvmPackageName('com.typesafe', 'scalalogging-slf4j_2.10.0-M6')
+    version = registry.fetch_version(name, '0.2.0')
+    assert version.name == name
+    assert version.number == '0.2.0'
+    assert version.licenses == ['Apache 2.0 License']
+    assert set(version.runtime_dependencies) == set([
+        Dependency.runtime(JvmPackageName('org.slf4j', 'slf4j-api')),
+        Dependency.runtime(JvmPackageName('org.scala-lang', 'scala-reflect'))
+    ])
+    assert version.development_dependencies == []
+
+
+@VCR.use_cassette(
+    'maven2_package_registry_fetch_version_with_full_scala_version'
+    '_but_falling_back_to_scala_version_without_patch.yaml'
+)
+def test_fetch_version_with_full_scala_version_but_falling_back_to_scala_version_without_patch(registry):
+    name = JvmPackageName('org.spire-math', 'kind-projector_2.10.7-RC2')
+    version = registry.fetch_version(name, '0.8.2')
+    assert version.name == name
+    assert version.number == '0.8.2'
+    assert version.licenses == ['MIT']
+    assert set(version.runtime_dependencies) == set([
+        Dependency.runtime(JvmPackageName('org.scala-lang', 'scala-compiler')),
+        Dependency.runtime(JvmPackageName('org.scala-lang', 'scala-library'))
+    ])
+    assert version.development_dependencies == []
+
+
+@VCR.use_cassette('maven2_package_registry_fetch_version_with_scala_version_without_patch.yaml')
+def test_fetch_version_with_scala_version_without_patch(registry):
     name = JvmPackageName('org.spire-math', 'kind-projector_2.10')
     version = registry.fetch_version(name, '0.8.2')
     assert version.name == name
@@ -40,8 +71,43 @@ def test_fetch_version_without_scala_version(registry):
     assert version.development_dependencies == []
 
 
-@VCR.use_cassette('maven2_package_registry_fetch_latest_version_with_scala_version.yaml')
-def test_fetch_latest_version_with_scala_version(registry):
+@VCR.use_cassette('maven2_package_registry_fetch_latest_version_with_full_scala_version.yaml')
+def test_fetch_latest_version_with_full_scala_version(registry):
+    name = JvmPackageName('com.typesafe', 'scalalogging-slf4j_2.10.0-M6')
+    version = registry.fetch_latest_version(name)
+    assert version.name == name
+    assert version.number == '0.2.0'
+    assert version.licenses == ['Apache 2.0 License']
+    assert set(version.runtime_dependencies) == set([
+        Dependency.runtime(JvmPackageName('org.slf4j', 'slf4j-api')),
+        Dependency.runtime(JvmPackageName('org.scala-lang', 'scala-reflect'))
+    ])
+    assert version.development_dependencies == []
+
+
+@VCR.use_cassette(
+    'maven2_package_registry_fetch_latest_version_with_full_scala_version'
+    '_but_falling_back_to_scala_version_without_patch.yaml'
+)
+def test_fetch_latest_version_with_full_scala_version_but_falling_back_to_scala_version_without_patch(registry):
+    name = JvmPackageName('org.spire-math', 'kind-projector_2.10.7-RC2')
+    version = registry.fetch_latest_version(name)
+    assert version.name == name
+    assert version.number == '0.9.4'
+    assert version.licenses == ['MIT']
+    assert set(version.runtime_dependencies) == set([
+        Dependency.runtime(JvmPackageName('org.scala-lang', 'scala-compiler')),
+        Dependency.runtime(JvmPackageName('org.scala-lang', 'scala-library')),
+        Dependency.runtime(JvmPackageName('org.scalamacros', 'quasiquotes_2.10'))
+    ])
+    assert set(version.development_dependencies) == set([
+        Dependency.development(JvmPackageName('com.novocode', 'junit-interface')),
+        Dependency.development(JvmPackageName('org.ensime', 'pcplod_2.10'))
+    ])
+
+
+@VCR.use_cassette('maven2_package_registry_fetch_latest_version_with_scala_version_without_patch.yaml')
+def test_fetch_latest_version_with_scala_version_without_patch(registry):
     name = JvmPackageName('org.spire-math', 'kind-projector_2.10')
     version = registry.fetch_latest_version(name)
     assert version.name == name
