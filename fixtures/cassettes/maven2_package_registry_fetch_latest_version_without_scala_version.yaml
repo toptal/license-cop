@@ -70,25 +70,26 @@ interactions:
         \     <version>2.12.0-RC1-be43eb5</version>\n      <version>2.12.0-RC1-ceaf419</version>\n
         \     <version>2.12.0-RC1-1e81a09</version>\n      <version>2.12.0-RC2</version>\n
         \     <version>2.12.0</version>\n      <version>2.12.1</version>\n      <version>2.12.2</version>\n
-        \     <version>2.12.3</version>\n      <version>2.13.0-M1</version>\n      <version>2.13.0-M2</version>\n
-        \   </versions>\n    <lastUpdated>20170727232306</lastUpdated>\n  </versioning>\n</metadata>\n"}
+        \     <version>2.12.3</version>\n      <version>2.12.4</version>\n      <version>2.13.0-M1</version>\n
+        \     <version>2.13.0-M2</version>\n    </versions>\n    <lastUpdated>20171017220847</lastUpdated>\n
+        \ </versioning>\n</metadata>\n"}
     headers:
       Accept-Ranges: [bytes]
-      Age: ['0']
+      Age: ['786878']
       Connection: [keep-alive]
-      Content-Length: ['5949']
+      Content-Length: ['5981']
       Content-Type: [text/xml]
-      Date: ['Thu, 12 Oct 2017 03:17:48 GMT']
-      ETag: ['"2940bcd20d4f32d591917d55aafbce7f"']
+      Date: ['Fri, 27 Oct 2017 19:11:50 GMT']
+      ETag: ['"420312672858a05dce4343dd3efb25b7"']
       Fastly-Debug-Digest: [ac6f197570a69a72f18b705300a6c84c9a68a1c13e23a4008b54be1727c28f28]
-      Last-Modified: ['Thu, 27 Jul 2017 23:23:07 GMT']
+      Last-Modified: ['Tue, 17 Oct 2017 22:08:47 GMT']
       Via: [1.1 varnish, 1.1 varnish]
-      X-Cache: ['HIT, MISS']
-      X-Cache-Hits: ['1, 0']
-      X-Checksum-MD5: [2940bcd20d4f32d591917d55aafbce7f]
-      X-Checksum-SHA1: [bab428e4713b5e6cf8854d9805ef4b742a23f58d]
-      X-Served-By: ['cache-iad2142-IAD, cache-mia17632-MIA']
-      X-Timer: ['S1507778268.479542,VS0,VE28']
+      X-Cache: ['HIT, HIT']
+      X-Cache-Hits: ['1, 1']
+      X-Checksum-MD5: [420312672858a05dce4343dd3efb25b7]
+      X-Checksum-SHA1: [b3ed3e20d9904fef31b38c439f5f29e769a11814]
+      X-Served-By: ['cache-iad2127-IAD, cache-atl6230-ATL']
+      X-Timer: ['S1509131510.012347,VS0,VE1']
     status: {code: 200, message: OK}
 - request:
     body: null
@@ -127,11 +128,11 @@ interactions:
         \           <version>2.14.4</version>\n        </dependency>\n    </dependencies>\n</project>"}
     headers:
       Accept-Ranges: [bytes]
-      Age: ['638337']
+      Age: ['402145']
       Connection: [keep-alive]
       Content-Length: ['2236']
       Content-Type: [text/xml]
-      Date: ['Thu, 12 Oct 2017 03:17:48 GMT']
+      Date: ['Fri, 27 Oct 2017 19:11:50 GMT']
       ETag: ['"48a2e429d9ed0acd11189a253fa9a2f5"']
       Fastly-Debug-Digest: [ede2219c72bac8c970c4232d2fe5ebb5dad01813139b5eee0d0853fac7b3885b]
       Last-Modified: ['Fri, 21 Jul 2017 12:50:49 GMT']
@@ -140,7 +141,7 @@ interactions:
       X-Cache-Hits: ['1, 1']
       X-Checksum-MD5: [48a2e429d9ed0acd11189a253fa9a2f5]
       X-Checksum-SHA1: [fbf725a20ef95b104a54129575cbcb6a003e2549]
-      X-Served-By: ['cache-iad2142-IAD, cache-mia17632-MIA']
-      X-Timer: ['S1507778269.630420,VS0,VE1']
+      X-Served-By: ['cache-iad2126-IAD, cache-atl6230-ATL']
+      X-Timer: ['S1509131510.168900,VS0,VE2']
     status: {code: 200, message: OK}
 version: 1

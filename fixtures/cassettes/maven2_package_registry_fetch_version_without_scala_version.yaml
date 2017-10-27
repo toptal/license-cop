@@ -15,11 +15,11 @@ interactions:
         \     <version>2.9.0</version>\n      <optional>true</optional>\n    </dependency>\n\t</dependencies>\n\t<distributionManagement>\n\t\t<repository>\n\t\t\t<id>scala-tools.org</id>\n\t\t\t<url>http://nexus.scala-tools.org/content/repositories/releases</url>\n\t\t</repository>\n\t\t<snapshotRepository>\n\t\t\t<id>scala-tools.org</id>\n\t\t\t<url>http://nexus.scala-tools.org/content/repositories/snapshots</url>\n\t\t\t<uniqueVersion>false</uniqueVersion>\n\t\t</snapshotRepository>\n\t</distributionManagement>\n</project>\n"}
     headers:
       Accept-Ranges: [bytes]
-      Age: ['161']
+      Age: ['402157']
       Connection: [keep-alive]
       Content-Length: ['1697']
       Content-Type: [text/xml]
-      Date: ['Thu, 12 Oct 2017 03:14:57 GMT']
+      Date: ['Fri, 27 Oct 2017 19:11:47 GMT']
       ETag: ['"4bcfb0dbbe3c88cc8eab17c31d1c4f9e"']
       Fastly-Debug-Digest: [7ff03e812d23ad5acac227b429c6855595fa3d25cf9286450140bee79d77f013]
       Last-Modified: ['Wed, 11 May 2011 16:52:25 GMT']
@@ -28,7 +28,7 @@ interactions:
       X-Cache-Hits: ['1, 1']
       X-Checksum-MD5: [4bcfb0dbbe3c88cc8eab17c31d1c4f9e]
       X-Checksum-SHA1: [3204cfd14c16cf1084cce70feb3aa2486fd9db97]
-      X-Served-By: ['cache-iad2122-IAD, cache-mia17631-MIA']
-      X-Timer: ['S1507778097.430262,VS0,VE0']
+      X-Served-By: ['cache-iad2134-IAD, cache-atl6221-ATL']
+      X-Timer: ['S1509131507.460261,VS0,VE1']
     status: {code: 200, message: OK}
 version: 1

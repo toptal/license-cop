@@ -41,78 +41,19 @@ interactions:
 '}
     headers:
       Accept-Ranges: [bytes]
-      Age: ['16170']
+      Age: ['153517']
       Connection: [keep-alive]
       Content-Length: ['554']
       Content-Type: [text/html]
-      Date: ['Thu, 12 Oct 2017 03:22:33 GMT']
+      Date: ['Fri, 27 Oct 2017 19:11:51 GMT']
       ETag: ['"1fb066da6a67c7c02962f59b4b8cd1ee"']
       Fastly-Debug-Digest: [4d96bc87024afb8487dd8bdb5a4e0802a2d583159c0752789eff09de1d9fb81a]
       Last-Modified: ['Wed, 10 Aug 2016 15:08:35 GMT']
       Via: [1.1 varnish, 1.1 varnish]
-      X-Cache: ['HIT, HIT']
-      X-Cache-Hits: ['1, 1']
-      X-Served-By: ['cache-iad2142-IAD, cache-mia17635-MIA']
-      X-Timer: ['S1507778553.179314,VS0,VE1']
-      x-amz-error-code: [NoSuchKey]
-      x-amz-error-detail-Key: [maven2/org/scala-lang/foobar/3.2.1/foobar-3.2.1.pom]
-      x-amz-error-message: [The specified key does not exist.]
-    status: {code: 404, message: Not Found}
-- request:
-    body: null
-    headers:
-      Accept: ['*/*']
-      Accept-Encoding: [identity]
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4]
-    method: GET
-    uri: https://repo.maven.apache.org/maven2/org/scala-lang/foobar/3.2.1/foobar-3.2.1.pom
-  response:
-    body: {string: '<html>
-
-        <head><title>404 Not Found</title></head>
-
-        <body bgcolor="white">
-
-        <center><h1>404 Not Found</h1></center>
-
-        <hr><center>nginx</center>
-
-        </body>
-
-        </html>
-
-        <!-- a padding to disable MSIE and Chrome friendly error page -->
-
-        <!-- a padding to disable MSIE and Chrome friendly error page -->
-
-        <!-- a padding to disable MSIE and Chrome friendly error page -->
-
-        <!-- a padding to disable MSIE and Chrome friendly error page -->
-
-        <!-- a padding to disable MSIE and Chrome friendly error page -->
-
-        <!-- a padding to disable MSIE and Chrome friendly error page -->
-
-
-
-
-'}
-    headers:
-      Accept-Ranges: [bytes]
-      Age: ['16170']
-      Connection: [keep-alive]
-      Content-Length: ['554']
-      Content-Type: [text/html]
-      Date: ['Thu, 12 Oct 2017 03:22:33 GMT']
-      ETag: ['"1fb066da6a67c7c02962f59b4b8cd1ee"']
-      Fastly-Debug-Digest: [4d96bc87024afb8487dd8bdb5a4e0802a2d583159c0752789eff09de1d9fb81a]
-      Last-Modified: ['Wed, 10 Aug 2016 15:08:35 GMT']
-      Via: [1.1 varnish, 1.1 varnish]
-      X-Cache: ['HIT, HIT']
-      X-Cache-Hits: ['1, 2']
-      X-Served-By: ['cache-iad2142-IAD, cache-mia17635-MIA']
-      X-Timer: ['S1507778553.301904,VS0,VE0']
+      X-Cache: ['MISS, HIT']
+      X-Cache-Hits: ['0, 1']
+      X-Served-By: ['cache-iad2122-IAD, cache-atl6233-ATL']
+      X-Timer: ['S1509131511.462478,VS0,VE1']
       x-amz-error-code: [NoSuchKey]
       x-amz-error-detail-Key: [maven2/org/scala-lang/foobar/3.2.1/foobar-3.2.1.pom]
       x-amz-error-message: [The specified key does not exist.]

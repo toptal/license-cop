@@ -41,78 +41,19 @@ interactions:
 '}
     headers:
       Accept-Ranges: [bytes]
-      Age: ['16082']
+      Age: ['153517']
       Connection: [keep-alive]
       Content-Length: ['554']
       Content-Type: [text/html]
-      Date: ['Thu, 12 Oct 2017 03:23:09 GMT']
+      Date: ['Fri, 27 Oct 2017 19:11:52 GMT']
       ETag: ['"1fb066da6a67c7c02962f59b4b8cd1ee"']
       Fastly-Debug-Digest: [581e4908c5ece42a076b1bf1f418e1fae89f9fa036fc51a367c6ad21e901f215]
       Last-Modified: ['Wed, 10 Aug 2016 15:08:35 GMT']
       Via: [1.1 varnish, 1.1 varnish]
-      X-Cache: ['HIT, HIT']
-      X-Cache-Hits: ['1, 1']
-      X-Served-By: ['cache-iad2151-IAD, cache-mia17621-MIA']
-      X-Timer: ['S1507778589.483839,VS0,VE1']
-      x-amz-error-code: [NoSuchKey]
-      x-amz-error-detail-Key: [maven2/com/example/foobar/foobar/maven-metadata.xml]
-      x-amz-error-message: [The specified key does not exist.]
-    status: {code: 404, message: Not Found}
-- request:
-    body: null
-    headers:
-      Accept: ['*/*']
-      Accept-Encoding: [identity]
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4]
-    method: GET
-    uri: https://repo.maven.apache.org/maven2/com/example/foobar/foobar/maven-metadata.xml
-  response:
-    body: {string: '<html>
-
-        <head><title>404 Not Found</title></head>
-
-        <body bgcolor="white">
-
-        <center><h1>404 Not Found</h1></center>
-
-        <hr><center>nginx</center>
-
-        </body>
-
-        </html>
-
-        <!-- a padding to disable MSIE and Chrome friendly error page -->
-
-        <!-- a padding to disable MSIE and Chrome friendly error page -->
-
-        <!-- a padding to disable MSIE and Chrome friendly error page -->
-
-        <!-- a padding to disable MSIE and Chrome friendly error page -->
-
-        <!-- a padding to disable MSIE and Chrome friendly error page -->
-
-        <!-- a padding to disable MSIE and Chrome friendly error page -->
-
-
-
-
-'}
-    headers:
-      Accept-Ranges: [bytes]
-      Age: ['16082']
-      Connection: [keep-alive]
-      Content-Length: ['554']
-      Content-Type: [text/html]
-      Date: ['Thu, 12 Oct 2017 03:23:09 GMT']
-      ETag: ['"1fb066da6a67c7c02962f59b4b8cd1ee"']
-      Fastly-Debug-Digest: [581e4908c5ece42a076b1bf1f418e1fae89f9fa036fc51a367c6ad21e901f215]
-      Last-Modified: ['Wed, 10 Aug 2016 15:08:35 GMT']
-      Via: [1.1 varnish, 1.1 varnish]
-      X-Cache: ['HIT, HIT']
-      X-Cache-Hits: ['1, 2']
-      X-Served-By: ['cache-iad2151-IAD, cache-mia17621-MIA']
-      X-Timer: ['S1507778590.605696,VS0,VE0']
+      X-Cache: ['MISS, HIT']
+      X-Cache-Hits: ['0, 1']
+      X-Served-By: ['cache-iad2148-IAD, cache-atl6236-ATL']
+      X-Timer: ['S1509131513.693762,VS0,VE1']
       x-amz-error-code: [NoSuchKey]
       x-amz-error-detail-Key: [maven2/com/example/foobar/foobar/maven-metadata.xml]
       x-amz-error-message: [The specified key does not exist.]
