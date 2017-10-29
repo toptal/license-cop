@@ -10,7 +10,7 @@ METADATA_URL = 'https://repo.maven.apache.org/maven2/{group}/{artifact}/maven-me
 POM_URL = 'https://repo.maven.apache.org/maven2/{group}/{artifact}/{number}/{artifact}-{number}.pom'
 
 
-class Maven2PackageRegistry(PackageRegistry):
+class MavenPackageRegistry(PackageRegistry):
 
     def __init__(self, http_compression=True):
         super().__init__(http_compression)

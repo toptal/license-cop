@@ -2,17 +2,17 @@ import pytest
 
 from test import *
 from app.platforms.jvm.package_name import JvmPackageName
-from app.platforms.jvm.maven2_package_registry import Maven2PackageRegistry
+from app.platforms.jvm.maven_package_registry import MavenPackageRegistry
 from app.dependency import Dependency
 from app.package_registry import PackageVersionNotFoundError
 
 
 @pytest.fixture
 def registry():
-    return Maven2PackageRegistry(http_compression=False)
+    return MavenPackageRegistry(http_compression=False)
 
 
-@VCR.use_cassette('maven2_package_registry_fetch_version_with_full_scala_version.yaml')
+@VCR.use_cassette('maven_package_registry_fetch_version_with_full_scala_version.yaml')
 def test_fetch_version_with_full_scala_version(registry):
     name = JvmPackageName('com.typesafe', 'scalalogging-slf4j_2.10.0-M6')
     version = registry.fetch_version(name, '0.2.0')
@@ -27,7 +27,7 @@ def test_fetch_version_with_full_scala_version(registry):
 
 
 @VCR.use_cassette(
-    'maven2_package_registry_fetch_version_with_full_scala_version'
+    'maven_package_registry_fetch_version_with_full_scala_version'
     '_but_falling_back_to_scala_version_without_patch.yaml'
 )
 def test_fetch_version_with_full_scala_version_but_falling_back_to_scala_version_without_patch(registry):
@@ -43,7 +43,7 @@ def test_fetch_version_with_full_scala_version_but_falling_back_to_scala_version
     assert version.development_dependencies == []
 
 
-@VCR.use_cassette('maven2_package_registry_fetch_version_with_scala_version_without_patch.yaml')
+@VCR.use_cassette('maven_package_registry_fetch_version_with_scala_version_without_patch.yaml')
 def test_fetch_version_with_scala_version_without_patch(registry):
     name = JvmPackageName('org.spire-math', 'kind-projector_2.10')
     version = registry.fetch_version(name, '0.8.2')
@@ -57,7 +57,7 @@ def test_fetch_version_with_scala_version_without_patch(registry):
     assert version.development_dependencies == []
 
 
-@VCR.use_cassette('maven2_package_registry_fetch_version_without_scala_version.yaml')
+@VCR.use_cassette('maven_package_registry_fetch_version_without_scala_version.yaml')
 def test_fetch_version_without_scala_version(registry):
     name = JvmPackageName('org.scala-lang', 'scala-compiler')
     version = registry.fetch_version(name, '2.9.0')
@@ -71,7 +71,7 @@ def test_fetch_version_without_scala_version(registry):
     assert version.development_dependencies == []
 
 
-@VCR.use_cassette('maven2_package_registry_fetch_latest_version_with_full_scala_version.yaml')
+@VCR.use_cassette('maven_package_registry_fetch_latest_version_with_full_scala_version.yaml')
 def test_fetch_latest_version_with_full_scala_version(registry):
     name = JvmPackageName('com.typesafe', 'scalalogging-slf4j_2.10.0-M6')
     version = registry.fetch_latest_version(name)
@@ -86,7 +86,7 @@ def test_fetch_latest_version_with_full_scala_version(registry):
 
 
 @VCR.use_cassette(
-    'maven2_package_registry_fetch_latest_version_with_full_scala_version'
+    'maven_package_registry_fetch_latest_version_with_full_scala_version'
     '_but_falling_back_to_scala_version_without_patch.yaml'
 )
 def test_fetch_latest_version_with_full_scala_version_but_falling_back_to_scala_version_without_patch(registry):
@@ -106,7 +106,7 @@ def test_fetch_latest_version_with_full_scala_version_but_falling_back_to_scala_
     ])
 
 
-@VCR.use_cassette('maven2_package_registry_fetch_latest_version_with_scala_version_without_patch.yaml')
+@VCR.use_cassette('maven_package_registry_fetch_latest_version_with_scala_version_without_patch.yaml')
 def test_fetch_latest_version_with_scala_version_without_patch(registry):
     name = JvmPackageName('org.spire-math', 'kind-projector_2.10')
     version = registry.fetch_latest_version(name)
@@ -124,7 +124,7 @@ def test_fetch_latest_version_with_scala_version_without_patch(registry):
     ])
 
 
-@VCR.use_cassette('maven2_package_registry_fetch_latest_version_without_scala_version.yaml')
+@VCR.use_cassette('maven_package_registry_fetch_latest_version_without_scala_version.yaml')
 def test_fetch_latest_version_without_scala_version(registry):
     name = JvmPackageName('org.scala-lang', 'scala-compiler')
     version = registry.fetch_latest_version(name)
@@ -140,7 +140,7 @@ def test_fetch_latest_version_without_scala_version(registry):
     assert version.development_dependencies == []
 
 
-@VCR.use_cassette('maven2_package_registry_fetch_version_group_id_not_found.yaml')
+@VCR.use_cassette('maven_package_registry_fetch_version_group_id_not_found.yaml')
 def test_fetch_version_group_id_not_found(registry):
     name = JvmPackageName('com.example.foobar', 'foobar')
     with pytest.raises(PackageVersionNotFoundError) as e:
@@ -152,7 +152,7 @@ def test_fetch_version_group_id_not_found(registry):
     )
 
 
-@VCR.use_cassette('maven2_package_registry_fetch_version_artifact_id_not_found.yaml')
+@VCR.use_cassette('maven_package_registry_fetch_version_artifact_id_not_found.yaml')
 def test_fetch_version_artifact_id_not_found(registry):
     name = JvmPackageName('org.scala-lang', 'foobar')
     with pytest.raises(PackageVersionNotFoundError) as e:
@@ -164,7 +164,7 @@ def test_fetch_version_artifact_id_not_found(registry):
     )
 
 
-@VCR.use_cassette('maven2_package_registry_fetch_version_number_not_found.yaml')
+@VCR.use_cassette('maven_package_registry_fetch_version_number_not_found.yaml')
 def test_fetch_version_number_not_found(registry):
     name = JvmPackageName('org.scala-lang', 'scala-compiler')
     with pytest.raises(PackageVersionNotFoundError) as e:
@@ -176,7 +176,7 @@ def test_fetch_version_number_not_found(registry):
     )
 
 
-@VCR.use_cassette('maven2_package_registry_fetch_latest_version_group_id_not_found.yaml')
+@VCR.use_cassette('maven_package_registry_fetch_latest_version_group_id_not_found.yaml')
 def test_fetch_latest_version_group_id_not_found(registry):
     name = JvmPackageName('com.example.foobar', 'foobar')
     with pytest.raises(PackageVersionNotFoundError) as e:
@@ -188,7 +188,7 @@ def test_fetch_latest_version_group_id_not_found(registry):
     )
 
 
-@VCR.use_cassette('maven2_package_registry_fetch_latest_version_artifact_id_not_found.yaml')
+@VCR.use_cassette('maven_package_registry_fetch_latest_version_artifact_id_not_found.yaml')
 def test_fetch_latest_version_artifact_id_not_found(registry):
     name = JvmPackageName('org.scala-lang', 'foobar')
     with pytest.raises(PackageVersionNotFoundError) as e:

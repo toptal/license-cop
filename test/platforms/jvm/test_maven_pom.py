@@ -6,13 +6,13 @@ from test import *
 from app.platforms.jvm.maven_pom import MavenPom
 from app.platforms.jvm.maven_dependency import MavenDependency
 from app.platforms.jvm.package_name import JvmPackageName
-from app.platforms.jvm.maven2_package_registry import Maven2PackageRegistry
+from app.platforms.jvm.maven_package_registry import MavenPackageRegistry
 from app.dependency import DependencyKind
 
 
 @pytest.fixture
 def registry():
-    return Maven2PackageRegistry(http_compression=False)
+    return MavenPackageRegistry(http_compression=False)
 
 
 def test_parse_scalar_xml(registry):
