@@ -58,7 +58,7 @@ def test_get_artifact_id_variations_when_there_is_no_scala_version():
     assert name.artifact_id_variations == ('kind-projector',)
 
 
-def test_get_artifact_id_variations_when_there_is_no_scala_version():
+def test_get_artifact_id_variations_when_there_is_scala_version():
     name = JvmPackageName('org.spire-math', 'kind-projector', '2.10.5-RC2')
     assert name.artifact_id_variations == (
         'kind-projector_2.10.5-RC2',
