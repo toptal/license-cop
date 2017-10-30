@@ -17,7 +17,7 @@ def test_parse_dependency_with_version_without_extra_with_semicolon_as_runtime()
     assert d.is_runtime
 
 
-def test_parse_dependency_with_version_without_extra_with_semicolon_as_runtime():
+def test_parse_dependency_with_version_with_extra_with_semicolon_as_runtime():
     d = parse_dependency('pyOpenSSL (>=1.5.2);')
     assert d.name == 'pyOpenSSL'
     assert d.is_runtime

@@ -53,6 +53,20 @@ def test_get_scala_version_without_patch_given_major_minor_patch_and_pre_release
     assert name.scala_version_without_patch == '2.10'
 
 
+def test_get_artifact_id_variations_when_there_is_no_scala_version():
+    name = JvmPackageName('org.spire-math', 'kind-projector')
+    assert name.artifact_id_variations == ('kind-projector',)
+
+
+def test_get_artifact_id_variations_when_there_is_scala_version():
+    name = JvmPackageName('org.spire-math', 'kind-projector', '2.10.5-RC2')
+    assert name.artifact_id_variations == (
+        'kind-projector_2.10.5-RC2',
+        'kind-projector_2.10',
+        'kind-projector'
+    )
+
+
 def test_equality_when_both_instances_have_scala_versions_implicit_in_artifact_id():
     a = JvmPackageName('org.spire-math', 'kind-projector_2.10.6')
     b = JvmPackageName('org.spire-math', 'kind-projector_2.10.6')

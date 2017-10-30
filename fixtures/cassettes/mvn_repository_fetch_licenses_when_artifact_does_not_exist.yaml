@@ -1,0 +1,79 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://mvnrepository.com/artifact/org.example/foobar_2.11.7-RC1/1.0.3
+  response:
+    body: {string: '<html><head><title>Maven Repository: 404 - Not Found</title></head><body><div
+        style="text-align: center; color: red"><h1>[404]</h1><h1>Not Found: /artifact/org.example/foobar_2.11.7-RC1/1.0.3</h1><div><div><a
+        href="/search?q=+artifact+org.example+foobar_2.11.7-RC1+1.0.3">Try Search</a></div><div><a
+        href="/">Home</a></div></div></div></body></html>'}
+    headers:
+      Cache-Control: ['public, max-age=60']
+      Connection: [keep-alive]
+      Content-Length: ['349']
+      Content-Type: [text/html; charset=utf-8]
+      Date: ['Mon, 30 Oct 2017 14:01:30 GMT']
+      ETag: ['"c57aa96d7fea96d8337320292b5745f3"']
+      Server: [nginx/1.10.1]
+      Set-Cookie: ['MVN_SESSION=1da8c6c8d8dac316e3cf920acbc1489238cba0d3-uid=d4940660-bd7a-11e7-adfa-ffdee4937db5;
+          Max-Age=31536000; Expires=Tue, 30 Oct 2018 14:01:30 GMT; Path=/; HTTPOnly']
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      Cookie: [MVN_SESSION=1da8c6c8d8dac316e3cf920acbc1489238cba0d3-uid=d4940660-bd7a-11e7-adfa-ffdee4937db5]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://mvnrepository.com/artifact/org.example/foobar_2.11/1.0.3
+  response:
+    body: {string: '<html><head><title>Maven Repository: 404 - Not Found</title></head><body><div
+        style="text-align: center; color: red"><h1>[404]</h1><h1>Not Found: /artifact/org.example/foobar_2.11/1.0.3</h1><div><div><a
+        href="/search?q=+artifact+org.example+foobar_2.11+1.0.3">Try Search</a></div><div><a
+        href="/">Home</a></div></div></div></body></html>'}
+    headers:
+      Cache-Control: ['public, max-age=60']
+      Connection: [keep-alive]
+      Content-Length: ['337']
+      Content-Type: [text/html; charset=utf-8]
+      Date: ['Mon, 30 Oct 2017 14:01:30 GMT']
+      ETag: ['"83efb2d853bffff4d52832d9e9f56e41"']
+      Server: [nginx/1.10.1]
+      Set-Cookie: ['MVN_SESSION=1da8c6c8d8dac316e3cf920acbc1489238cba0d3-uid=d4940660-bd7a-11e7-adfa-ffdee4937db5;
+          Max-Age=31536000; Expires=Tue, 30 Oct 2018 14:01:30 GMT; Path=/; HTTPOnly']
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      Cookie: [MVN_SESSION=1da8c6c8d8dac316e3cf920acbc1489238cba0d3-uid=d4940660-bd7a-11e7-adfa-ffdee4937db5]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://mvnrepository.com/artifact/org.example/foobar/1.0.3
+  response:
+    body: {string: '<html><head><title>Maven Repository: 404 - Not Found</title></head><body><div
+        style="text-align: center; color: red"><h1>[404]</h1><h1>Not Found: /artifact/org.example/foobar/1.0.3</h1><div><div><a
+        href="/search?q=+artifact+org.example+foobar+1.0.3">Try Search</a></div><div><a
+        href="/">Home</a></div></div></div></body></html>'}
+    headers:
+      Cache-Control: ['public, max-age=60']
+      Connection: [keep-alive]
+      Content-Length: ['327']
+      Content-Type: [text/html; charset=utf-8]
+      Date: ['Mon, 30 Oct 2017 14:01:31 GMT']
+      ETag: ['"f9386d2bbedd2d0d49224c68ad6b5cf5"']
+      Server: [nginx/1.10.1]
+      Set-Cookie: ['MVN_SESSION=1da8c6c8d8dac316e3cf920acbc1489238cba0d3-uid=d4940660-bd7a-11e7-adfa-ffdee4937db5;
+          Max-Age=31536000; Expires=Tue, 30 Oct 2018 14:01:31 GMT; Path=/; HTTPOnly']
+    status: {code: 404, message: Not Found}
+version: 1

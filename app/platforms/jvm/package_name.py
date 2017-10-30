@@ -23,6 +23,16 @@ class JvmPackageName(DataObject):
             parts = self.scala_version.split('.')
             return f'{parts[0]}.{parts[1]}'
 
+    @property
+    def artifact_id_variations(self):
+        if self.scala_version is None:
+            return (self.artifact_id,)
+        return (
+            f'{self.artifact_id}_{self.scala_version}',
+            f'{self.artifact_id}_{self.scala_version_without_patch}',
+            self.artifact_id
+        )
+
     @staticmethod
     def __extract_scala_version(artifact_id, default):
         m = SCALA_VERSION_REGEX.search(artifact_id)
