@@ -7,6 +7,7 @@ requests = "*"
 xmltodict = "*"
 pyparsing = "*"
 xlsxwriter = "*"
+"beautifulsoup4" = "*"
 
 
 

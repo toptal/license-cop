@@ -1,0 +1,310 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://mvnrepository.com/artifact/org.scala-sbt/zinc_2.11.7-RC1/1.0.3
+  response:
+    body: {string: '<html><head><title>Maven Repository: 404 - Not Found</title></head><body><div
+        style="text-align: center; color: red"><h1>[404]</h1><h1>Not Found: /artifact/org.scala-sbt/zinc_2.11.7-RC1/1.0.3</h1><div><div><a
+        href="/search?q=+artifact+org.scala-sbt+zinc_2.11.7-RC1+1.0.3">Try Search</a></div><div><a
+        href="/">Home</a></div></div></div></body></html>'}
+    headers:
+      Cache-Control: ['public, max-age=60']
+      Connection: [keep-alive]
+      Content-Length: ['349']
+      Content-Type: [text/html; charset=utf-8]
+      Date: ['Mon, 30 Oct 2017 14:01:31 GMT']
+      ETag: ['"1b662d497d4f4ce517b1885795c3684f"']
+      Server: [nginx/1.10.1]
+      Set-Cookie: ['MVN_SESSION=5e764b89a6892f6c568517cb5d1a3ada8b6b0c28-uid=d52e98b0-bd7a-11e7-adfa-ffdee4937db5;
+          Max-Age=31536000; Expires=Tue, 30 Oct 2018 14:01:31 GMT; Path=/; HTTPOnly']
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      Cookie: [MVN_SESSION=5e764b89a6892f6c568517cb5d1a3ada8b6b0c28-uid=d52e98b0-bd7a-11e7-adfa-ffdee4937db5]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://mvnrepository.com/artifact/org.scala-sbt/zinc_2.11/1.0.3
+  response:
+    body: {string: "<!DOCTYPE html><html><head><meta charset=\"UTF-8\"><title>Maven
+        Repository: org.scala-sbt \xBB zinc_2.11 \xBB 1.0.3</title><link rel=\"canonical\"
+        href=\"https://mvnrepository.com/artifact/org.scala-sbt/zinc_2.11/1.0.3\"/><link
+        rel=\"shortcut icon\" type=\"image/x-icon\" href=\"/assets/images/7080b8b0f6f48e6fbaffd5f9d85fcc7f-favicon.ico\"><link
+        rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"/opensearch.xml\"
+        title=\"MvnRepository\"><script>\n(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+        Date();a=s.createElement(o),\nm=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');\nga('create',
+        'UA-76305-3', 'auto'); ga('send', 'pageview');\n</script><script type=\"text/javascript\">\nvar
+        enc=encodeURIComponent;window.onerror=function(dsc,p,l,c,e){(new Image()).src=\"/assets/images/e.gif?v=2&p=\"+\nenc(p)+\"&l=\"+l+\"&c=\"+c+\"&d=\"+
+        enc(dsc)+\"&e=\"+enc(e);if(console){console.error(dsc+\"(p: \"+p+\" l: \"+l+\"c:\"+c+\")\");}\nreturn
+        true;};\n</script></head><body><style>\nhtml,body{margin:0;padding:0;height:100%;font-size:12px;font-family:Verdana,Arial,Helvetica,sans-serif;}h1{border-bottom:1px
+        solid lightgray;padding-bottom:0.7em;margin-top:0.2em;font-size:18px;}h2{color:black;font-size:14px;}h3,#tabs{color:#222222;padding:2px
+        10px;margin-top:10px;font-size:12px;border:1px solid #aaa;}#left h3{border:1px
+        solid #aaa;font-size:12px;margin-top:4px;background:#efefef;color:#175bb0;}#left
+        ul{list-style-type:none;padding:0;margin:0 0 10px 0;}#left li{padding-left:7px;padding-top:4px;padding-bottom:0;border-left:4px
+        solid #bbb;font-size:12px;margin:1px;vertical-align:text-bottom;min-height:20px;height:0.8em;}#left
+        li.selected{background:#d7e6f6;}ul.repositories{list-style-type:none;padding:0;margin:0
+        0 10px 0;text-align:left;}ul.repositories li{padding-left:7px;padding-top:4px;padding-bottom:0;font-size:12px;margin:1px;vertical-align:text-bottom;min-height:20px;height:0.8em;}#header{height:48px;border-top:2px
+        solid #ddd;border-bottom:1px solid #bbb;background:#eee;background:linear-gradient(to
+        bottom,#fff,#eee);}#logo{float:left;padding:3px 13px;}#logo .sub{font-size:10px;color:#222;}#left{position:absolute;left:0;padding-left:10px;top:65px;width:200px;}#right{padding-left:10px;padding-right:20px;padding-top:5px;position:absolute;right:0;top:55px;width:290px;}#maincontent{margin-left:221px;margin-right:321px;padding:9px
+        10px 10px;min-height:1600px;border-left:1px solid #dfdfdf;border-right:1px
+        solid #dfdfdf;}#footer{text-align:center;clear:both;background-color:#F5F5F5;padding:10px;}a{text-decoration:none;color:#175bb0;}a:hover{text-decoration:underline;}#logo
+        a:hover{text-decoration:none;}#navigation{position:absolute;top:22px;right:45px;font-weight:bold;font-size:13px;color:gray;}#search{padding:9px
+        7px 8px 15px;position:relative;margin-left:221px;margin-right:321px;}#search
+        input{background:#fff;border:1px solid darkgray;border-radius:4px;font-size:14px;height:28px;padding-right:6px;padding-left:6px;}#search
+        .textfield{width:60%;color:#666;outline:0;border:1px solid #999;text-shadow:none;}#search
+        .button{margin-left:10px;padding:0 15px;height:28px;}ul.search-nav{margin:25px
+        0 20px 0;padding:0;list-style-type:none;text-align:center;}ul.search-nav li{display:inline;background-color:#1857ad;color:#fff;padding:.2em
+        0;margin:.2em;}.search-nav a{text-decoration:none;color:#fff;padding:.2em
+        0.8em;}.search-nav span{padding:.2em 0.8em;}.search-nav li.current{background-color:#a9a9a9;}.adbox{margin-top:10px;}.snippet{font-size:12px;}.vbtn{background:#FAFAFF;border:1px
+        solid #ddd;border-radius:4px;border-spacing:0;box-shadow:1px 1px 1px #eee;padding:1px
+        4px;white-space:nowrap;vertical-align:baseline;}hr{border-top:1px solid #a9a9a9;}.rb{display:block;background:orange;height:5px;box-shadow:1px
+        1px 1px #999;}.pb{width:100%;}.pbv{background:#dadada;color:#356cb0;height:5px;}.beta{background:#FAEAEF;}.alpha{background:#FFCCDD;}.candidate{background:#FAEAEF;}.sidebar{background-color:#f5f5f5;}.t1{font-size:12px;color:#7b94b0;}.t2{font-size:13px;color:#6a89b0;}.t3{font-size:14px;color:#5880b0;}.t4{font-size:16px;color:#4676b0;}.t5{font-size:18px;color:#356cb0;}.t6{font-size:19px;color:#2363b0;}.t7{font-size:24px;color:#1259b0;}.b{display:inline-block;font-style:normal;font-size:11px;padding:2px
+        4px;margin:1px;background-color:#d3d3d3;color:white;}.tag{border-left:4px
+        solid #478be0;background-color:#175bb0;}.c{text-align:center;background-color:#df2d4f;}.lic{text-align:center;background-color:#5285c5;}.bookimg{box-shadow:4px
+        4px 2px #888888;}.breadcrumb{padding:6px 0 10px 0;font-size:13px;}table.grid{border-spacing:1px;font-family:Verdana,Arial,Helvetica,sans-serif;font-size:12px;background-color:#e1e1e1;color:#222;}table.grid
+        td,th{padding:4px;}table.grid tbody th{font-weight:bold;}table.grid tbody
+        tr{background-color:#FFF;text-align:left;}table.grid tbody tr td{background:#FFF;border:1px
+        solid #FFF;}.im{border-bottom:1px solid #ddd;padding-bottom:1.5em;font-size:13px;}.im-category{color:#555;margin:10px
+        0;}.im-usage{color:#444;background:#eeeeee;padding:1px 5px;border-radius:2px;float:right;font-weight:normal;font-size:12px;}.im-lic{padding:1px
+        5px;float:right;font-weight:normal;font-size:12px;}a:hover.im-usage{text-decoration:none;}.im-title{font-size:13px;margin-bottom:0.8em}.im-title
+        a{color:black;}h2.im-title{margin-top:0.6em;margin-bottom:0.5em;}.im-subtitle{color:#999;font-size:95%;margin:0;}.im-header{margin-top:1.5em;margin-left:65px;}.im-description{margin-top:1em;margin-left:65px;}.im-logo{float:left;margin-right:1em;border-radius:4px;padding:2px;box-shadow:1px
+        1px 1px 1px #ccc;}.im-link{color:#006a00;}.im-n{color:#777777;font-weight:normal}.version-section{padding-bottom:1.5em;}\n</style><div
+        id=\"page\"><div id=\"header\" style=\"text-align:center\"><div id=\"logo\"><a
+        href=\"/\"><img src=\"/assets/images/392dffac024b9632664e6f2c0cac6fe5-logo.png\"
+        border=\"0\" width=\"195\" height=\"39\" alt=\"MavenRepository\"/></a></div><div
+        id=\"search\"><form action=\"/search\"><input class=\"textfield\" placeholder=\"Search
+        for groups, artifacts, categories\" type=\"text\" id=\"query\" size=\"45\"
+        maxlength=\"100\" name=\"q\" value=\"\" onfocus=\"var cur=this.value; this.value='';
+        this.value=cur\" autofocus/><input class=\"button\" type=\"submit\" value=\"Search\"/></form></div><div
+        id=\"navigation\"><a href=\"/open-source\"><b>Categories</b></a> |\n<a href=\"/popular\">Popular</a>
+        |\n<a href=\"mailto:info@mvnrepository.com\">Contact Us</a></div><div style
+        =\"clear: both;\"></div></div><div id=\"left\"><div><h3><a href=\"/repos\">Indexed
+        Artifacts (8.07M)</a></h3><div style=\"text-align: center\"><a href=\"/repos\"><img
+        src=\"/growth/d558b4473af75c62c50025c82b22bd16\" width=\"170\" height=\"120\"/></a></div></div><div><h3><a
+        href=\"/open-source\">Popular Categories</a></h3><ul class=\"categories\"><li
+        ><a href=\"/open-source/aop-programming\">Aspect Oriented</a></li><li ><a
+        href=\"/open-source/actor-frameworks\">Actor Frameworks</a></li><li ><a href=\"/open-source/application-metrics\">Application
+        Metrics</a></li><li ><a href=\"/open-source/build-tools\">Build Tools</a></li><li
+        ><a href=\"/open-source/bytecode-libraries\">Bytecode Libraries</a></li><li
+        ><a href=\"/open-source/command-line-parsers\">Command Line Parsers</a></li><li
+        ><a href=\"/open-source/cache-implementations\">Cache Implementations</a></li><li
+        ><a href=\"/open-source/cloud-computing-integration\">Cloud Computing</a></li><li
+        ><a href=\"/open-source/code-analyzers\">Code Analyzers</a></li><li ><a href=\"/open-source/collections\">Collections</a></li><li
+        ><a href=\"/open-source/config-libraries\">Configuration Libraries</a></li><li
+        ><a href=\"/open-source/core-utilities\">Core Utilities</a></li><li ><a href=\"/open-source/date-time-utilities\">Date
+        and Time Utilities</a></li><li ><a href=\"/open-source/dependency-injection\">Dependency
+        Injection</a></li><li ><a href=\"/open-source/embedded-sql-databases\">Embedded
+        SQL Databases</a></li><li ><a href=\"/open-source/html-parsers\">HTML Parsers</a></li><li
+        ><a href=\"/open-source/http-clients\">HTTP Clients</a></li><li ><a href=\"/open-source/io-utilities\">I/O
+        Utilities</a></li><li ><a href=\"/open-source/jdbc-extensions\">JDBC Extensions</a></li><li
+        ><a href=\"/open-source/jdbc-pools\">JDBC Pools</a></li><li ><a href=\"/open-source/jpa-implementations\">JPA
+        Implementations</a></li><li ><a href=\"/open-source/json-libraries\">JSON
+        Libraries</a></li><li ><a href=\"/open-source/jvm-languages\">JVM Languages</a></li><li
+        ><a href=\"/open-source/logging-frameworks\">Logging Frameworks</a></li><li
+        ><a href=\"/open-source/logging-bridges\">Logging Bridges</a></li><li ><a
+        href=\"/open-source/mail-clients\">Mail Clients</a></li><li ><a href=\"/open-source/maven-plugins\">Maven
+        Plugins</a></li><li ><a href=\"/open-source/mocking\">Mocking</a></li><li
+        ><a href=\"/open-source/orm\">Object/Relational Mapping</a></li><li ><a href=\"/open-source/pdf-libraries\">PDF
+        Libraries</a></li><li><a href=\"/open-source\"><b>Top Categories</b></a></li></ul></div></div><div
+        id=\"maincontent\"><div class=\"breadcrumb\"><a href=\"/\">Home</a> \xBB <a
+        href=\"/artifact/org.scala-sbt\">org.scala-sbt</a> \xBB <a href=\"/artifact/org.scala-sbt/zinc_2.11\">zinc_2.11</a>
+        \xBB\n<span class=\"vbtn release\">1.0.3</span></div><div class=\"im\" style=\"border-bottom:
+        none; padding-bottom: 0.5em\"><a href=\"/artifact/org.scala-sbt/zinc_2.11\"><picture><source
+        type=\"image/webp\" srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/99d6c5f89d362829f028ec8dffe726cb\"><img
+        class=\"im-logo\" width=\"48\" height=\"48\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/fc7db2aa8ffc5f9919019343b2565ced\"/></picture></a><div
+        class=\"im-header\" style=\"margin-top: 0\"><h2 class=\"im-title\" style=\"font-size:
+        130%\"><a href=\"/artifact/org.scala-sbt/zinc_2.11\">Zinc</a> \xBB <a href=\"/artifact/org.scala-sbt/zinc_2.11/1.0.3\">1.0.3</a></h2><p
+        class=\"im-subtitle\"></p></div><div class=\"im-description\">\nIncremental
+        compiler of Scala\n</div></div><br/><table class=\"grid\" width=\"100%\"><tr><th>License</th><td><span
+        class=\"b lic\">BSD</span></td></tr><tr><th>Organization</th><td><a href=\"https://github.com/sbt/zinc\"
+        rel=\"nofollow\"> org.scala-sbt </a></td></tr><tr><th>HomePage</th><td><a
+        href=\"https://github.com/sbt/zinc\" rel=\"nofollow\"> https://github.com/sbt/zinc
+        </a></td></tr><tr><th>Date</th><td>(Oct 26, 2017) </td></tr><tr><th style=\"width:
+        12em;\">Files</th><td><a class=\"vbtn\" href=\"http://central.maven.org/maven2/org/scala-sbt/zinc_2.11/1.0.3/zinc_2.11-1.0.3.jar\">Download
+        (JAR)</a><span style=\"color: black; font-weight: bold;\"> (106 KB) </span></td></tr><tr><th
+        style=\"width: 12em;\">Repositories</th><td><a class=\"b lic\" href=\"/repos/central\">Central</a><a
+        class=\"b lic\" href=\"/repos/scalasbt-maven-releases\">Scala-SBT</a></td></tr><tr><th>Used
+        By</th><td><a href=\"/artifact/org.scala-sbt/zinc_2.11/usages\"><b>9 artifacts</b></a></td></tr></table><br/><style>\n.tabs,.tab_container{padding:0}.tabs
+        li{position:relative;float:left;list-style:none;}.tabs li a{padding:5px 10px
+        0 10px;margin-right:2px;border-radius:4px 4px 0 0;border:1px solid gray;border-bottom-color:transparent;}.tabs
+        .active a,.tabs .active a:hover{background-color:#fafafa;border:1px solid
+        gray;border-bottom-color:transparent;cursor:default;text-decoration:none;}.tab_container{clear:both;background-color:#fafafa;}.tab_content{display:none;padding:10px;border:1px
+        solid gray;list-style:none;}.tab_container .active{display:block;}.msg{text-align:center;font-weight:bold;border:2px
+        solid #fff0f0;padding:5px;margin-top:5px;color:red;background-color:#fff8f8;}\n</style><div
+        id=\"snippets\"><ul class=\"tabs\"><li id=\"maven-li\" class=\"active\"><a
+        href=\"#maven\">Maven</a></li><li id=\"gradle-li\" ><a href=\"#gradle\">Gradle</a></li><li
+        id=\"sbt-li\" ><a href=\"#sbt\">SBT</a></li><li id=\"ivy-li\" ><a href=\"#ivy\">Ivy</a></li><li
+        id=\"grape-li\" ><a href=\"#grape\">Grape</a></li><li id=\"leiningen-li\"
+        ><a href=\"#leiningen\">Leiningen</a></li><li id=\"buildr-li\" ><a href=\"#buildr\">Buildr</a></li></ul><div
+        class=\"tab_container\"><div id=\"maven-div\" class=\"tab_content active\"><textarea
+        id=\"maven-a\" readonly=\"true\" rows=\"7\" cols=\"40\" style=\"width: 100%\"
+        class=\"snippet\">\n&lt;!-- https://mvnrepository.com/artifact/org.scala-sbt/zinc_2.11
+        --&gt;\n&lt;dependency&gt;\n&#32;&#32;&#32;&#32;&lt;groupId&gt;org.scala-sbt&lt;/groupId&gt;\n&#32;&#32;&#32;&#32;&lt;artifactId&gt;zinc_2.11&lt;/artifactId&gt;\n&#32;&#32;&#32;&#32;&lt;version&gt;1.0.3&lt;/version&gt;\n&lt;/dependency&gt;\n</textarea></div><div
+        id=\"gradle-div\" class=\"tab_content \"><textarea id=\"gradle-a\" readonly=\"true\"
+        rows=\"7\" cols=\"40\" style=\"width: 100%\" class=\"snippet\">\n// https://mvnrepository.com/artifact/org.scala-sbt/zinc_2.11\ncompile
+        group: 'org.scala-sbt', name: 'zinc_2.11', version: '1.0.3'\n</textarea></div><div
+        id=\"sbt-div\" class=\"tab_content \"><textarea id=\"sbt-a\" readonly=\"true\"
+        rows=\"7\" cols=\"40\" style=\"width: 100%\" class=\"snippet\">\n// https://mvnrepository.com/artifact/org.scala-sbt/zinc_2.11\nlibraryDependencies
+        += &quot;org.scala-sbt&quot; % &quot;zinc_2.11&quot; % &quot;1.0.3&quot;\n</textarea></div><div
+        id=\"ivy-div\" class=\"tab_content \"><textarea id=\"ivy-a\" readonly=\"true\"
+        rows=\"7\" cols=\"40\" style=\"width: 100%\" class=\"snippet\">\n&lt;!-- https://mvnrepository.com/artifact/org.scala-sbt/zinc_2.11
+        --&gt;\n&lt;dependency org=&quot;org.scala-sbt&quot; name=&quot;zinc_2.11&quot;
+        rev=&quot;1.0.3&quot;/&gt;\n</textarea></div><div id=\"grape-div\" class=\"tab_content
+        \"><textarea id=\"grape-a\" readonly=\"true\" rows=\"7\" cols=\"40\" style=\"width:
+        100%\" class=\"snippet\">\n// https://mvnrepository.com/artifact/org.scala-sbt/zinc_2.11\n@Grapes(\n&#32;&#32;&#32;&#32;@Grab(group='org.scala-sbt',
+        module='zinc_2.11', version='1.0.3')\n)\n</textarea></div><div id=\"leiningen-div\"
+        class=\"tab_content \"><textarea id=\"leiningen-a\" readonly=\"true\" rows=\"7\"
+        cols=\"40\" style=\"width: 100%\" class=\"snippet\">\n;; https://mvnrepository.com/artifact/org.scala-sbt/zinc_2.11\n[org.scala-sbt/zinc_2.11
+        &quot;1.0.3&quot;]\n</textarea></div><div id=\"buildr-div\" class=\"tab_content
+        \"><textarea id=\"buildr-a\" readonly=\"true\" rows=\"7\" cols=\"40\" style=\"width:
+        100%\" class=\"snippet\">\n# https://mvnrepository.com/artifact/org.scala-sbt/zinc_2.11\n'org.scala-sbt:zinc_2.11:jar:1.0.3'\n</textarea></div><label><input
+        name=\"includelink\" id=\"includelink\" type=\"checkbox\" checked=\"checked\">\nInclude
+        comment with link to declaration\n</label><div id=\"clipboardmsg\"></div></div></div><script
+        src=\"/assets/javascripts/8882454824536e15a805d4d263e05aa7-snippets.js\" type=\"text/javascript\"></script><script
+        type=\"text/javascript\">initSnippets();</script><br/><div style=\"min-height:
+        120px\"><script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins
+        class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-1185571689816607\"
+        data-ad-slot=\"6295186330\" data-ad-format=\"auto\"></ins><script> (adsbygoogle
+        = window.adsbygoogle || []).push({}); </script><br/><br/></div><div class=\"version-section\"><h2>Compile
+        Dependencies (6)</h2><style>\n.im-logo { margin-right: 0}\n</style><table
+        class=\"grid\" style=\"vertical-align: middle\" width=\"100%\"><thead><tr><th
+        style=\"width: 12em; text-align: center\">Category/License</th><th style=\"width:
+        28px\"></th><th>\nGroup / Artifact</th><th style=\"text-align: center\">Version</th><th
+        style=\"text-align: center\">Updates</th></tr></thead><tbody><tr><td style=\"text-align:
+        right\"><a href=\"/open-source/language-runtime\" class=\"b c\">Lang Runtime</a><br/><span
+        class=\"b lic\">BSD 3-clause</span></td><td><picture><source type=\"image/webp\"
+        srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/3bb5bcdea54fad3c261687d8b5fc411d\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/2c884ab9e717c94fcece07ad5677d3e7\"/></picture></td><td><a
+        href=\"/artifact/org.scala-lang\">org.scala-lang</a>\n\xBB\n<a href=\"/artifact/org.scala-lang/scala-library\">scala-library</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.scala-lang/scala-library/2.11.11\">\n2.11.11</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.scala-lang/scala-library/2.12.4\">2.12.4</a></td></tr><tr><td
+        style=\"text-align: right\"><br/><span class=\"b lic\">BSD</span></td><td><picture><source
+        type=\"image/webp\" srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/99d6c5f89d362829f028ec8dffe726cb\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/fc7db2aa8ffc5f9919019343b2565ced\"/></picture></td><td><a
+        href=\"/artifact/org.scala-sbt\">org.scala-sbt</a>\n\xBB\n<a href=\"/artifact/org.scala-sbt/zinc-core_2.11\">zinc-core_2.11</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.scala-sbt/zinc-core_2.11/1.0.3\">\n1.0.3</a></td><td
+        style=\"text-align: center\">\n&#10004\n</td></tr><tr><td style=\"text-align:
+        right\"><br/><span class=\"b lic\">BSD</span></td><td><picture><source type=\"image/webp\"
+        srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/99d6c5f89d362829f028ec8dffe726cb\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/fc7db2aa8ffc5f9919019343b2565ced\"/></picture></td><td><a
+        href=\"/artifact/org.scala-sbt\">org.scala-sbt</a>\n\xBB\n<a href=\"/artifact/org.scala-sbt/zinc-persist_2.11\">zinc-persist_2.11</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.scala-sbt/zinc-persist_2.11/1.0.3\">\n1.0.3</a></td><td
+        style=\"text-align: center\">\n&#10004\n</td></tr><tr><td style=\"text-align:
+        right\"><br/><span class=\"b lic\">BSD</span></td><td><picture><source type=\"image/webp\"
+        srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/99d6c5f89d362829f028ec8dffe726cb\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/fc7db2aa8ffc5f9919019343b2565ced\"/></picture></td><td><a
+        href=\"/artifact/org.scala-sbt\">org.scala-sbt</a>\n\xBB\n<a href=\"/artifact/org.scala-sbt/zinc-compile-core_2.11\">zinc-compile-core_2.11</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.scala-sbt/zinc-compile-core_2.11/1.0.3\">\n1.0.3</a></td><td
+        style=\"text-align: center\">\n&#10004\n</td></tr><tr><td style=\"text-align:
+        right\"><br/><span class=\"b lic\">BSD</span></td><td><picture><source type=\"image/webp\"
+        srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/99d6c5f89d362829f028ec8dffe726cb\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/fc7db2aa8ffc5f9919019343b2565ced\"/></picture></td><td><a
+        href=\"/artifact/org.scala-sbt\">org.scala-sbt</a>\n\xBB\n<a href=\"/artifact/org.scala-sbt/zinc-classfile_2.11\">zinc-classfile_2.11</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.scala-sbt/zinc-classfile_2.11/1.0.3\">\n1.0.3</a></td><td
+        style=\"text-align: center\">\n&#10004\n</td></tr><tr><td style=\"text-align:
+        right\"><br/><span class=\"b lic\">BSD</span></td><td><picture><source type=\"image/webp\"
+        srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/99d6c5f89d362829f028ec8dffe726cb\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/fc7db2aa8ffc5f9919019343b2565ced\"/></picture></td><td><a
+        href=\"/artifact/org.scala-sbt\">org.scala-sbt</a>\n\xBB\n<a href=\"/artifact/org.scala-sbt/zinc-ivy-integration_2.11\">zinc-ivy-integration_2.11</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.scala-sbt/zinc-ivy-integration_2.11/1.0.3\">\n1.0.3</a></td><td
+        style=\"text-align: center\">\n&#10004\n</td></tr></tbody></table></div><div
+        class=\"version-section\"><h2>Test Dependencies (4)</h2><style>\n.im-logo
+        { margin-right: 0}\n</style><table class=\"grid\" style=\"vertical-align:
+        middle\" width=\"100%\"><thead><tr><th style=\"width: 12em; text-align: center\">Category/License</th><th
+        style=\"width: 28px\"></th><th>\nGroup / Artifact</th><th style=\"text-align:
+        center\">Version</th><th style=\"text-align: center\">Updates</th></tr></thead><tbody><tr><td
+        style=\"text-align: right\"><a href=\"/open-source/testing-frameworks\" class=\"b
+        c\">Testing</a><br/><span class=\"b lic\">EPL 1.0</span></td><td><picture><source
+        type=\"image/webp\" srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/d0f73ecf7a2ecdc8f1082e67dbb5617d\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/7cb2d4617d97415f562bd5711c429a95\"/></picture></td><td><a
+        href=\"/artifact/junit\">junit</a>\n\xBB\n<a href=\"/artifact/junit/junit\">junit</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/junit/junit/4.11\">\n4.11</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/junit/junit/4.12\">4.12</a></td></tr><tr><td
+        style=\"text-align: right\"><br/></td><td><picture><source type=\"image/webp\"
+        srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/99d6c5f89d362829f028ec8dffe726cb\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/fc7db2aa8ffc5f9919019343b2565ced\"/></picture></td><td><a
+        href=\"/artifact/org.scala-sbt\">org.scala-sbt</a>\n\xBB zinc-testing_2.11\n</td><td
+        style=\"text-align: center\"><span class=\"vbtn release\">1.0.3</span></td><td
+        style=\"text-align: center\"></td></tr><tr><td style=\"text-align: right\"><a
+        href=\"/open-source/testing-frameworks\" class=\"b c\">Testing</a><br/><span
+        class=\"b lic\">BSD 2-clause</span></td><td><picture><source type=\"image/webp\"
+        srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/68ad00d0f70902d41e8ea2a473785f63\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/bd3c4dacf9531cf95d9c1f77b737eaf1\"/></picture></td><td><a
+        href=\"/artifact/org.scalacheck\">org.scalacheck</a>\n\xBB\n<a href=\"/artifact/org.scalacheck/scalacheck_2.11\">scalacheck_2.11</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.scalacheck/scalacheck_2.11/1.13.4\">\n1.13.4</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.scalacheck/scalacheck_2.11/1.13.5\">1.13.5</a></td></tr><tr><td
+        style=\"text-align: right\"><a href=\"/open-source/testing-frameworks\" class=\"b
+        c\">Testing</a><br/><span class=\"b lic\">Apache 2.0</span></td><td><picture><source
+        type=\"image/webp\" srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/631886495fb5116fc2a2f35bdfa138b5\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/7a661545feb3d061428b106572b5eba0\"/></picture></td><td><a
+        href=\"/artifact/org.scalatest\">org.scalatest</a>\n\xBB\n<a href=\"/artifact/org.scalatest/scalatest_2.11\">scalatest_2.11</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.scalatest/scalatest_2.11/3.0.1\">\n3.0.1</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.scalatest/scalatest_2.11/3.0.4\">3.0.4</a></td></tr></tbody></table></div><div
+        class=\"version-section\"><h2>Licenses</h2><table class=\"grid\" width=\"100%\"><thead><tr><th
+        style=\"width: 16em;\">License</th><th>URL</th></tr></thead><tbody><tr><td>BSD
+        New</td><td><a href=\"https://github.com/sbt/sbt/blob/0.13/LICENSE\" rel=\"nofollow\">
+        https://github.com/sbt/sbt/blob/0.13/LICENSE </a></td></tr></tbody></table></div><div
+        class=\"version-section\"><h2>Developers</h2><table class=\"grid\" width=\"100%\"><thead><tr><th
+        style=\"width: 16em;\">Name</th><th>Email</th><th>Dev Id</th><th>Roles</th><th>Organization</th></tr></thead><tbody><tr><td>Mark
+        Harrah</td><td>\n&lt;at&gt;harrah</td><td>harrah</td><td></td><td></td></tr><tr><td>Eugene
+        Yokota</td><td>\n&lt;at&gt;eed3si9n</td><td>eed3si9n</td><td></td><td></td></tr><tr><td>Josh
+        Suereth</td><td>\n&lt;at&gt;jsuereth</td><td>jsuereth</td><td></td><td></td></tr><tr><td>Dale
+        Wijnand</td><td>\n&lt;at&gt;dwijnand</td><td>dwijnand</td><td></td><td></td></tr><tr><td>Grzegorz
+        Kossakowski</td><td>\n&lt;at&gt;gkossakowski</td><td>gkossakowski</td><td></td><td></td></tr><tr><td>Martin
+        Duhem</td><td>\n&lt;at&gt;Duhemm</td><td>Duhemm</td><td></td><td></td></tr><tr><td>Jorge
+        Vicente Cantero</td><td>\n&lt;at&gt;jvican</td><td>jvican</td><td></td><td></td></tr></tbody></table></div><div
+        class=\"version-section\"><h3>Related Books</h3><style>\n.bt { font-size:
+        125%; }\n.ba { font-size: 115%; }\n</style><div><table class=\"grid\" width=\"100%\"><tr><td
+        style=\"padding: 15px\" align=\"center\"><a href=\"https://www.amazon.com/sbt-Action-simple-Scala-build/dp/1617291277?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1617291277\"
+        rel=\"nofollow\"><img alt=\"sbt in Action: The simple Scala build tool\" width=\"52\"
+        height=\"64\" class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/a885414989052239be27a017bd34097d\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/sbt-Action-simple-Scala-build/dp/1617291277?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1617291277\"
+        rel=\"nofollow\">sbt in Action: The simple Scala build tool</a><b class=\"bt\">
+        (2015)</b><br/><span class=\"ba\">by Josh Suereth, Matthew Farwell</span></td></tr><tr><td
+        style=\"padding: 15px\" align=\"center\"><a href=\"https://www.amazon.com/Getting-Started-Scala-Shiti-Saxena/dp/1783282673?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1783282673\"
+        rel=\"nofollow\"><img alt=\"Getting Started with SBT for Scala\" width=\"52\"
+        height=\"64\" class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/6855fe942b50caf60f948d242cd4abe3\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Getting-Started-Scala-Shiti-Saxena/dp/1783282673?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1783282673\"
+        rel=\"nofollow\">Getting Started with SBT for Scala</a><b class=\"bt\"> (2013)</b><br/><span
+        class=\"ba\">by Shiti Saxena</span></td></tr></table></div></div></div><div
+        id=\"right\"><div id=\"ad1\" class=\"adbox\"><script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins
+        class=\"adsbygoogle\" style=\"display:inline-block;width:300px;height:250px\"
+        data-ad-client=\"ca-pub-1185571689816607\" data-ad-slot=\"2936886459\"></ins><script>
+        (adsbygoogle = window.adsbygoogle || []).push ({}); </script></div><div class=\"adbox\"><script
+        type=\"text/javascript\" src=\"https://ap.lijit.com/www/delivery/fpi.js?z=236049&u=frodriguez&width=300&height=250\"></script></div><div
+        class=\"adbox\"><script type=\"text/javascript\" src=\"https://ap.lijit.com/www/delivery/fpi.js?z=234067&u=frodriguez&width=300&height=250\"></script></div><div
+        style=\"text-align:center\"><h3><a href=\"/tags\">Popular Tags</a></h3><script
+        type=\"text/javascript\">\nvar tags = ['android','apache','api','application','archetype','assets','build','build-system','client','clojure','cloud','codehaus','config','database','eclipse','example','extension','github','groovy','gwt','http','ide','io','jboss','json','library','logging','maven','module','netbeans','osgi','persistence','platform','plugin','rest','scala','sdk','security','server','service','spring','streaming','testing','tools','ui','web','web-framework','webapp','webserver','xml'];\nvar
+        sizes = [4,5,4,3,1,5,5,4,4,5,3,2,1,3,4,5,1,5,2,1,2,2,5,3,1,2,2,4,3,1,3,2,3,5,2,4,2,1,4,3,4,1,5,3,3,5,2,4,1,1];\nfor
+        (var i in tags) {\ndocument.write(\"<a href='/tags/\" + tags[i] + \"' class='t\"
+        + sizes[i] + \"'>\" + tags[i] + \"</a>\\n\");\n}\n</script><br/><br/></div><br/><div
+        style=\"font-size: 13px; border-top: 1px solid gray; text-align: center; padding-top:
+        1em\">\nWeb site developed by <a href=\"https://twitter.com/frodriguez\">@frodriguez</a><br/><br/>\nPowered
+        by:\n<a href=\"/artifact/org.scala-lang\">Scala</a>,\n<a href=\"/artifact/com.typesafe.play\">Play</a>,\n<a
+        href=\"/artifact/org.apache.spark\">Spark</a>,\n<a href=\"/artifact/com.typesafe.akka\">Akka</a>
+        and\n<a href=\"/artifact/org.apache.cassandra\">Cassandra</a></div></div></div><div
+        id=\"footer\">\nCopyright &copy; 2006-2017 MvnRepository. All rights reserved.<br/><span
+        style=\"text-align: center\">Web site developed by <a href=\"https://twitter.com/frodriguez\">@frodriguez</a></span><br/><a
+        href=\"mailto:info@mvnrepository.com\">Contact Us</a></div><script src=\"/assets/javascripts/d41af0256b967c47b1d19aae48699662-perf.js\"
+        type=\"text/javascript\" async></script></body></html>"}
+    headers:
+      Cache-Control: ['public, max-age=60']
+      Connection: [keep-alive]
+      Content-Length: ['28135']
+      Content-Type: [text/html; charset=utf-8]
+      Date: ['Mon, 30 Oct 2017 14:01:32 GMT']
+      ETag: ['"74b4857311dfd3bdd1f606e1850f6b4e"']
+      Server: [nginx/1.10.1]
+      Set-Cookie: ['MVN_SESSION=5e764b89a6892f6c568517cb5d1a3ada8b6b0c28-uid=d52e98b0-bd7a-11e7-adfa-ffdee4937db5;
+          Max-Age=31536000; Expires=Tue, 30 Oct 2018 14:01:32 GMT; Path=/; HTTPOnly']
+    status: {code: 200, message: OK}
+version: 1

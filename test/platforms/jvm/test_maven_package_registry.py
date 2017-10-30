@@ -198,3 +198,10 @@ def test_fetch_latest_version_artifact_id_not_found(registry):
         '404 Client Error: Not Found for url: '
         'https://repo.maven.apache.org/maven2/org/scala-lang/foobar/maven-metadata.xml'
     )
+
+
+@VCR.use_cassette('maven_package_registry_fetch_licenses_from_mvn_repository_when_pom_does_not_have_licenses.yaml')
+def test_fetch_licenses_from_mvn_repository_when_pom_does_not_have_licenses(registry):
+    name = JvmPackageName('org.apache.avro', 'avro-ipc', '2.10.6')
+    version = registry.fetch_version(name, '1.8.2')
+    assert version.licenses == ['Apache 2.0']

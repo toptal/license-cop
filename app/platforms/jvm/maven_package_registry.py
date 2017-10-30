@@ -1,5 +1,6 @@
 from app.platforms.jvm.maven_metadata import MavenMetadata
 from app.platforms.jvm.maven_pom import MavenPom
+from app.platforms.jvm.mvn_repository import MvnRepository
 from app.package_registry import PackageRegistry
 from app.package_version import PackageVersion
 from app.dependency import DependencyKind
@@ -15,6 +16,7 @@ class MavenPackageRegistry(PackageRegistry):
     def __init__(self, http_compression=True):
         super().__init__(http_compression)
         self.__pom_cache = {}
+        self.__mvn_repository = MvnRepository(http_compression)
 
     def get_pom(self, name, number):
         id = (name, number)
@@ -29,7 +31,7 @@ class MavenPackageRegistry(PackageRegistry):
         return PackageVersion(
             name=name,
             number=number,
-            licenses=self.__determine_licenses(pom),
+            licenses=self.__determine_licenses(pom, name, number),
             runtime_dependencies=[
                 i.to_dependency(pom) for i in pom.filter_dependencies(DependencyKind.RUNTIME)
             ],
@@ -73,7 +75,10 @@ class MavenPackageRegistry(PackageRegistry):
         })
         return self._session.get(url)
 
-    def __determine_licenses(self, pom):
+    def __determine_licenses(self, pom, name, number):
         if pom.licenses:
             return pom.licenses
+        mvn_licenses = self.__mvn_repository.fetch_licenses(name, number)
+        if mvn_licenses:
+            return mvn_licenses
         return self._find_licenses_in_code_repository_urls(pom.urls)

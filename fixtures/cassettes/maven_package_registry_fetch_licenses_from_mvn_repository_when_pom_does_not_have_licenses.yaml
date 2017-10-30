@@ -1,0 +1,1358 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://repo.maven.apache.org/maven2/org/apache/avro/avro-ipc_2.10.6/1.8.2/avro-ipc_2.10.6-1.8.2.pom
+  response:
+    body: {string: '<html>
+
+        <head><title>404 Not Found</title></head>
+
+        <body bgcolor="white">
+
+        <center><h1>404 Not Found</h1></center>
+
+        <hr><center>nginx</center>
+
+        </body>
+
+        </html>
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+
+
+
+'}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['33']
+      Connection: [keep-alive]
+      Content-Length: ['554']
+      Content-Type: [text/html]
+      Date: ['Mon, 30 Oct 2017 14:26:10 GMT']
+      ETag: ['"1fb066da6a67c7c02962f59b4b8cd1ee"']
+      Fastly-Debug-Digest: [0b9f83b3137ac9704419a89fc620cc32bc24b7dfb116901777d7dd3f373b0c5f]
+      Last-Modified: ['Wed, 10 Aug 2016 15:08:35 GMT']
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['MISS, HIT']
+      X-Cache-Hits: ['0, 2']
+      X-Served-By: ['cache-iad2132-IAD, cache-atl6232-ATL']
+      X-Timer: ['S1509373570.463557,VS0,VE0']
+      x-amz-error-code: [NoSuchKey]
+      x-amz-error-detail-Key: [maven2/org/apache/avro/avro-ipc_2.10.6/1.8.2/avro-ipc_2.10.6-1.8.2.pom]
+      x-amz-error-message: [The specified key does not exist.]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://repo.maven.apache.org/maven2/org/apache/avro/avro-ipc_2.10/1.8.2/avro-ipc_2.10-1.8.2.pom
+  response:
+    body: {string: '<html>
+
+        <head><title>404 Not Found</title></head>
+
+        <body bgcolor="white">
+
+        <center><h1>404 Not Found</h1></center>
+
+        <hr><center>nginx</center>
+
+        </body>
+
+        </html>
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+        <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+
+
+
+'}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['33']
+      Connection: [keep-alive]
+      Content-Length: ['554']
+      Content-Type: [text/html]
+      Date: ['Mon, 30 Oct 2017 14:26:10 GMT']
+      ETag: ['"1fb066da6a67c7c02962f59b4b8cd1ee"']
+      Fastly-Debug-Digest: [e5fcc3dd1e6b98f0184952e7444dc2fbc472300ec41cb803810031c75021966f]
+      Last-Modified: ['Wed, 10 Aug 2016 15:08:35 GMT']
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['MISS, HIT']
+      X-Cache-Hits: ['0, 2']
+      X-Served-By: ['cache-iad2122-IAD, cache-atl6232-ATL']
+      X-Timer: ['S1509373571.624089,VS0,VE0']
+      x-amz-error-code: [NoSuchKey]
+      x-amz-error-detail-Key: [maven2/org/apache/avro/avro-ipc_2.10/1.8.2/avro-ipc_2.10-1.8.2.pom]
+      x-amz-error-message: [The specified key does not exist.]
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://repo.maven.apache.org/maven2/org/apache/avro/avro-ipc/1.8.2/avro-ipc-1.8.2.pom
+  response:
+    body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!--\n   Licensed
+        to the Apache Software Foundation (ASF) under one or more\n   contributor
+        license agreements.  See the NOTICE file distributed with\n   this work for
+        additional information regarding copyright ownership.\n   The ASF licenses
+        this file to You under the Apache License, Version 2.0\n   (the \"License\");
+        you may not use this file except in compliance with\n   the License.  You
+        may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n
+        \  Unless required by applicable law or agreed to in writing, software\n   distributed
+        under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES
+        OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License
+        for the specific language governing permissions and\n   limitations under
+        the License.\n-->\n<project\n  xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0
+        http://maven.apache.org/xsd/maven-4.0.0.xsd\"\n  xmlns=\"http://maven.apache.org/POM/4.0.0\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n  <modelVersion>4.0.0</modelVersion>\n\n
+        \ <parent>\n    <artifactId>avro-parent</artifactId>\n    <groupId>org.apache.avro</groupId>\n
+        \   <version>1.8.2</version>\n    <relativePath>../</relativePath>\n  </parent>\n\n
+        \ <artifactId>avro-ipc</artifactId>\n\n  <name>Apache Avro IPC</name>\n  <url>http://avro.apache.org</url>\n
+        \ <description>Avro inter-process communication components</description>\n
+        \ <packaging>bundle</packaging>\n\n  <properties>\n    <osgi.import>\n      !org.apache.avro.ipc*,\n
+        \     org.apache.avro*;version=\"${project.version}\",\n      org.jboss.netty*,\n
+        \     javax.servlet*;resolution:=optional,\n      org.mortbay*;resolution:=optional,\n
+        \     org.apache.velocity*;resolution:=optional,\n      *\n    </osgi.import>\n
+        \   <osgi.export>org.apache.avro.ipc*;version=\"${project.version}\"</osgi.export>\n
+        \ </properties>\n\n  <build>\n    <resources>\n      <resource>\n        <directory>src/main/velocity</directory>\n
+        \     </resource>\n    </resources>\n    <plugins>\n      <plugin>\n        <groupId>${project.groupId}</groupId>\n
+        \       <artifactId>avro-maven-plugin</artifactId>\n        <version>${project.version}</version>\n
+        \       <executions>\n          <execution>\n            <id>schemas</id>\n
+        \           <phase>generate-sources</phase>\n            <goals>\n              <goal>schema</goal>\n
+        \             <goal>protocol</goal>\n              <goal>idl-protocol</goal>\n
+        \           </goals>\n            <configuration>\n              <excludes>\n
+        \               <exclude>**/mapred/tether/**</exclude>\n                <exclude>org/apache/avro/data/Json.avsc</exclude>\n
+        \             </excludes>\n              <stringType>String</stringType>\n
+        \             <sourceDirectory>${parent.project.basedir}/../../../../share/schemas/</sourceDirectory>\n
+        \             <outputDirectory>${project.build.directory}/generated-sources/java</outputDirectory>\n
+        \             <testSourceDirectory>${parent.project.basedir}/../../../../share/test/schemas/</testSourceDirectory>\n
+        \             <testOutputDirectory>${project.build.directory}/generated-test-sources/java</testOutputDirectory>\n
+        \           </configuration>\n          </execution>\n        </executions>\n
+        \     </plugin>\n      <plugin>\n        <groupId>org.apache.maven.plugins</groupId>\n
+        \       <artifactId>maven-jar-plugin</artifactId>\n        <executions>\n
+        \         <execution>\n            <goals>\n              <goal>test-jar</goal>\n
+        \           </goals>\n          </execution>\n        </executions>\n      </plugin>\n
+        \   </plugins>\n  </build>\n\n  <dependencies>\n    <dependency>\n      <groupId>${project.groupId}</groupId>\n
+        \     <artifactId>avro</artifactId>\n      <version>${project.version}</version>\n
+        \   </dependency>\n    <dependency>\n      <groupId>${project.groupId}</groupId>\n
+        \     <artifactId>avro</artifactId>\n      <version>${project.version}</version>\n
+        \     <type>test-jar</type>\n      <scope>test</scope>\n    </dependency>\n
+        \   <dependency>\n      <groupId>${project.groupId}</groupId>\n      <artifactId>avro-compiler</artifactId>\n
+        \     <version>${project.version}</version>\n      <scope>test</scope>\n    </dependency>\n
+        \   <dependency>\n      <groupId>org.codehaus.jackson</groupId>\n      <artifactId>jackson-core-asl</artifactId>\n
+        \     <version>${jackson.version}</version>\n    </dependency>\n    <dependency>\n
+        \     <groupId>org.codehaus.jackson</groupId>\n      <artifactId>jackson-mapper-asl</artifactId>\n
+        \     <version>${jackson.version}</version>\n    </dependency>\n    <dependency>\n
+        \     <groupId>org.mortbay.jetty</groupId>\n      <artifactId>jetty</artifactId>\n
+        \   </dependency>\n    <dependency>\n      <groupId>org.mortbay.jetty</groupId>\n
+        \     <artifactId>jetty-util</artifactId>\n      <version>${jetty.version}</version>\n
+        \   </dependency>\n    <dependency>\n      <groupId>io.netty</groupId>\n      <artifactId>netty</artifactId>\n
+        \   </dependency>\n    <dependency>\n      <groupId>org.apache.velocity</groupId>\n
+        \     <artifactId>velocity</artifactId>\n    </dependency>\n    <dependency>\n
+        \     <groupId>org.mortbay.jetty</groupId>\n      <artifactId>servlet-api</artifactId>\n
+        \     <version>${jetty-servlet-api.version}</version>\n    </dependency>\n\n
+        \ </dependencies>\n\n</project>\n\n"}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['970566']
+      Connection: [keep-alive]
+      Content-Length: ['5159']
+      Content-Type: [text/xml]
+      Date: ['Mon, 30 Oct 2017 14:26:10 GMT']
+      ETag: ['"1890c2b9a39b7bc9d351fb97f2bd1c1d"']
+      Fastly-Debug-Digest: [a0ae3b19f23852455883ee079916067ae0128d74b2020ac117f75532f4884632]
+      Last-Modified: ['Sun, 07 May 2017 18:53:24 GMT']
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['HIT, HIT']
+      X-Cache-Hits: ['1, 2']
+      X-Checksum-MD5: [1890c2b9a39b7bc9d351fb97f2bd1c1d]
+      X-Checksum-SHA1: [2cee57befdb16929eb134f38897a518c9a2288c6]
+      X-Served-By: ['cache-iad2136-IAD, cache-atl6232-ATL']
+      X-Timer: ['S1509373571.783328,VS0,VE0']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://repo.maven.apache.org/maven2/org/apache/avro/avro-parent/1.8.2/avro-parent-1.8.2.pom
+  response:
+    body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!--\n   Licensed
+        to the Apache Software Foundation (ASF) under one or more\n   contributor
+        license agreements.  See the NOTICE file distributed with\n   this work for
+        additional information regarding copyright ownership.\n   The ASF licenses
+        this file to You under the Apache License, Version 2.0\n   (the \"License\");
+        you may not use this file except in compliance with\n   the License.  You
+        may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n
+        \  Unless required by applicable law or agreed to in writing, software\n   distributed
+        under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES
+        OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License
+        for the specific language governing permissions and\n   limitations under
+        the License.\n-->\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n
+        \        xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\n
+        \ <modelVersion>4.0.0</modelVersion>\n\n  <parent>\n    <groupId>org.apache.avro</groupId>\n
+        \   <artifactId>avro-toplevel</artifactId>\n    <version>1.8.2</version>\n
+        \   <relativePath>../../</relativePath>\n  </parent>\n\n  <artifactId>avro-parent</artifactId>\n
+        \ <packaging>pom</packaging>\n\n  <name>Apache Avro Java</name>\n  <url>http://avro.apache.org</url>\n
+        \ <description>Avro parent Java project</description>\n\n  <properties>\n
+        \   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\n\n
+        \   <!-- version properties for dependencies -->\n\n    <!--\n      To build
+        the avro-mapred module against Hadoop 1 specify\n      -Dhadoop.version=1
+        or leave unspecified to build against Hadoop 2\n    -->\n    <hadoop1.version>1.2.1</hadoop1.version>\n
+        \   <hadoop2.version>2.5.1</hadoop2.version>\n    <jackson.version>1.9.13</jackson.version>\n
+        \   <jetty.version>6.1.26</jetty.version>\n    <jetty-servlet-api.version>2.5-20081211</jetty-servlet-api.version>\n
+        \   <jopt-simple.version>4.7</jopt-simple.version>\n    <junit.version>4.11</junit.version>\n
+        \   <netty.version>3.5.13.Final</netty.version>\n    <paranamer.version>2.7</paranamer.version>\n
+        \   <protobuf.version>2.5.0</protobuf.version>\n    <thrift.version>0.9.1</thrift.version>\n
+        \   <slf4j.version>1.7.7</slf4j.version>\n    <snappy.version>1.1.1.3</snappy.version>\n
+        \   <velocity.version>1.7</velocity.version>\n    <maven.version>2.0.10</maven.version>\n
+        \   <ant.version>1.9.0</ant.version>\n    <commons-cli.version>1.2</commons-cli.version>\n
+        \   <commons-codec.version>1.9</commons-codec.version>\n    <commons-compress.version>1.8.1</commons-compress.version>\n
+        \   <commons-httpclient.version>3.1</commons-httpclient.version>\n    <commons-lang.version>2.6</commons-lang.version>\n
+        \   <commons-logging.version>1.1.1</commons-logging.version>\n    <tukaani.version>1.5</tukaani.version>\n
+        \   <easymock.version>3.2</easymock.version>\n    <hamcrest.version>1.3</hamcrest.version>\n
+        \   <commons-httpclient.version>3.1</commons-httpclient.version>\n    <joda.version>2.7</joda.version>\n
+        \   <!-- This Guava version should match Hadoop's Guava version. See AVRO-1781.
+        -->\n    <guava.version>11.0.2</guava.version>\n    <findbugs-annotations.version>1.3.9-1</findbugs-annotations.version>\n\n
+        \   <!-- version properties for plugins -->\n    <checkstyle-plugin.version>2.12.1</checkstyle-plugin.version>\n
+        \   <bundle-plugin-version>2.5.3</bundle-plugin-version>\n    <compiler-plugin.version>3.1</compiler-plugin.version>\n
+        \   <exec-plugin.version>1.3.2</exec-plugin.version>\n    <jar-plugin.version>2.5</jar-plugin.version>\n
+        \   <javacc-plugin.version>2.6</javacc-plugin.version>\n    <javadoc-plugin.version>2.9.1</javadoc-plugin.version>\n
+        \   <plugin-tools-javadoc.version>3.2</plugin-tools-javadoc.version>\n    <maven-site-plugin.version>3.3</maven-site-plugin.version>\n
+        \   <plugin-plugin.version>3.3</plugin-plugin.version>\n    <source-plugin.version>2.3</source-plugin.version>\n
+        \   <surefire-plugin.version>2.17</surefire-plugin.version>\n    <file-management.version>1.2.1</file-management.version>\n
+        \   <shade-plugin.version>1.7.1</shade-plugin.version>\n    <archetype-plugin.version>2.2</archetype-plugin.version>\n
+        \ </properties>\n\n  <modules>\n    <module>guava</module>\n    <module>avro</module>\n
+        \   <module>compiler</module>\n    <module>maven-plugin</module>\n    <module>ipc</module>\n
+        \   <module>trevni</module>\n    <module>tools</module>\n    <module>mapred</module>\n
+        \   <module>protobuf</module>\n    <module>thrift</module>\n    <module>archetypes</module>\n
+        \ </modules>\n\n  <build>\n    <!-- defines the default plugin configuration
+        that all child projects inherit from.\n      Like dependencyManagement, this
+        provides configuration, version, and other\n      parameters if the plugins
+        are used by child projects -->\n    <pluginManagement>\n      <plugins>\n
+        \       <plugin>\n          <groupId>org.eclipse.m2e</groupId>\n          <artifactId>lifecycle-mapping</artifactId>\n
+        \         <version>1.0.0</version>\n          <configuration>\n            <lifecycleMappingMetadata>\n
+        \             <pluginExecutions>\n                <pluginExecution>\n                  <pluginExecutionFilter>\n
+        \                   <groupId>org.codehaus.mojo</groupId>\n                    <artifactId>javacc-maven-plugin</artifactId>\n
+        \                   <versionRange>[${javacc-plugin.version},)</versionRange>\n
+        \                   <goals>\n                      <goal>javacc</goal>\n                    </goals>\n
+        \                 </pluginExecutionFilter>\n                  <action>\n                    <ignore
+        />\n                  </action>\n                </pluginExecution>\n                <pluginExecution>\n
+        \                 <pluginExecutionFilter>\n                    <groupId>com.thoughtworks.paranamer</groupId>\n
+        \                   <artifactId>paranamer-maven-plugin</artifactId>\n                    <versionRange>[${paranamer.version},)</versionRange>\n
+        \                   <goals>\n                      <goal>generate</goal>\n
+        \                   </goals>\n                  </pluginExecutionFilter>\n
+        \                 <action>\n                    <ignore />\n                  </action>\n
+        \               </pluginExecution>\n                <pluginExecution>\n                  <pluginExecutionFilter>\n
+        \                   <groupId>org.apache.avro</groupId>\n                    <artifactId>avro-maven-plugin</artifactId>\n
+        \                   <versionRange>[${project.version},)</versionRange>\n                    <goals>\n
+        \                     <goal>protocol</goal>\n                      <goal>idl-protocol</goal>\n
+        \                     <goal>schema</goal>\n                    </goals>\n
+        \                 </pluginExecutionFilter>\n                  <action>\n                    <ignore
+        />\n                  </action>\n                </pluginExecution>\n              </pluginExecutions>\n
+        \           </lifecycleMappingMetadata>\n          </configuration>\n        </plugin>\n
+        \       <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-compiler-plugin</artifactId>\n          <version>${compiler-plugin.version}</version>\n
+        \         <configuration>\n            <source>1.6</source>\n            <target>1.6</target>\n
+        \         </configuration>\n        </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-jar-plugin</artifactId>\n          <version>${jar-plugin.version}</version>\n\n
+        \         <!--We want to be able to resuse the test-jars for mapred\n              to
+        test avro-tool\n              see http://maven.apache.org/guides/mini/guide-attached-tests.html\n
+        \         -->\n          <executions>\n            <execution>\n              <goals>\n
+        \               <goal>test-jar</goal>\n              </goals>\n            </execution>\n
+        \         </executions>\n          <configuration>\n            <archive>\n
+        \             <manifest>\n                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>\n
+        \               <addDefaultImplementationEntries>true</addDefaultImplementationEntries>\n
+        \             </manifest>\n            </archive>\n          </configuration>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-surefire-plugin</artifactId>\n          <version>${surefire-plugin.version}</version>\n
+        \         <configuration>\n            <includes>\n              <!-- Avro
+        naming convention for JUnit tests -->\n              <include>**/Test**</include>\n
+        \           </includes>\n            <excludes>\n              <!-- A few
+        innner classes are not to be tested -->\n              <exclude>**/*$*</exclude>\n
+        \             <!-- exclude the generated classes under apache.avro.test, some
+        of\n                these match **/Test** and are not JUnit tests -->\n              <exclude>**/apache/avro/test/**</exclude>\n
+        \           </excludes>\n            <enableAssertions>false</enableAssertions>\n
+        \           <!-- some IPC tests hang if not run in a separate JVM -->\n            <forkCount>1</forkCount>\n
+        \           <reuseForks>false</reuseForks>\n            <!-- TestSpecificCompiler
+        instantiates a Java compiler to test output results,\n                 this
+        does not work with a manifest-only-jar to set the classpath for the javac.\n
+        \                This may cause problems on some platforms.\n                 See
+        http://maven.apache.org/plugins/maven-surefire-plugin/examples/class-loading.html\n
+        \                for more information. -->\n            <useManifestOnlyJar>false</useManifestOnlyJar>\n
+        \           <!-- configures unit test standard error and standard out to go
+        to a file per test\n                 rather than the console. -->\n            <redirectTestOutputToFile>true</redirectTestOutputToFile>\n
+        \           <failIfNoTests>false</failIfNoTests>\n            <!-- The correct
+        argLine value depends on the JDK version -->\n            <argLine>${surefire.argline}</argLine>\n
+        \           <systemPropertyVariables>\n              <test.dir>${project.basedir}/target/</test.dir>\n
+        \           </systemPropertyVariables>\n          </configuration>\n        </plugin>\n
+        \       <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-checkstyle-plugin</artifactId>\n          <version>${checkstyle-plugin.version}</version>\n
+        \         <configuration>\n            <consoleOutput>true</consoleOutput>\n
+        \           <configLocation>checkstyle.xml</configLocation>\n          </configuration>\n
+        \         <!-- Runs by default in the verify phase  (mvn verify or later in
+        the build cycle)\n               the 'check' goal will fail the build if it
+        does not pass.  \"mvn checkstyle:check\"\n               will do this alone,
+        or \"mvn checkstyle:checkstyle\" will report but not break  -->\n          <executions>\n
+        \           <execution>\n              <id>checkstyle-check</id>\n              <phase>test</phase>\n
+        \             <goals>\n                <goal>check</goal>\n              </goals>\n
+        \           </execution>\n          </executions>\n        </plugin>\n        <plugin>\n
+        \         <groupId>org.apache.maven.plugins</groupId>\n          <artifactId>maven-javadoc-plugin</artifactId>\n
+        \         <version>${javadoc-plugin.version}</version>\n          <configuration>\n
+        \           <links>\n              <link>http://java.sun.com/products/servlet/2.3/javadoc/</link>\n
+        \             <link>http://hadoop.apache.org/common/docs/current/api/</link>\n
+        \           </links>\n            <tagletArtifacts>\n              <tagletArtifact>\n
+        \               <groupId>org.apache.maven.plugin-tools</groupId>\n                <artifactId>maven-plugin-tools-javadoc</artifactId>\n
+        \               <version>${plugin-tools-javadoc.version}</version>\n              </tagletArtifact>\n
+        \           </tagletArtifacts>\n            <excludePackageNames>org.apache.avro.compiler.idl,*.internal</excludePackageNames>\n
+        \         </configuration>\n        </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-source-plugin</artifactId>\n          <version>${source-plugin.version}</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.codehaus.mojo</groupId>\n
+        \         <artifactId>javacc-maven-plugin</artifactId>\n          <version>${javacc-plugin.version}</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.codehaus.mojo</groupId>\n
+        \         <artifactId>exec-maven-plugin</artifactId>\n          <version>${exec-plugin.version}</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-plugin-plugin</artifactId>\n          <version>${plugin-plugin.version}</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-shade-plugin</artifactId>\n          <version>${shade-plugin.version}</version>\n
+        \       </plugin>\n        <plugin>\n          <artifactId>maven-antrun-plugin</artifactId>\n
+        \         <version>${antrun-plugin.version}</version>\n        </plugin>\n
+        \     </plugins>\n    </pluginManagement>\n    <plugins>\n      <plugin>\n
+        \       <groupId>org.apache.maven.plugins</groupId>\n        <artifactId>maven-checkstyle-plugin</artifactId>\n
+        \     </plugin>\n      <plugin>\n        <groupId>org.apache.felix</groupId>\n
+        \       <artifactId>maven-bundle-plugin</artifactId>\n        <version>${bundle-plugin-version}</version>\n
+        \       <extensions>true</extensions>\n        <inherited>true</inherited>\n
+        \       <configuration>\n          <instructions>\n            <Bundle-Name>${project.name}</Bundle-Name>\n
+        \           <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>\n
+        \           <Export-Package>${osgi.export}</Export-Package>\n            <Import-Package>${osgi.import}</Import-Package>\n
+        \           <DynamicImport-Package>${osgi.dynamic.import}</DynamicImport-Package>\n
+        \           <Private-Package>${osgi.private}</Private-Package>\n            <Require-Bundle>${osgi.bundles}</Require-Bundle>\n
+        \           <Bundle-Activator>${osgi.activator}</Bundle-Activator>\n          </instructions>\n
+        \         <supportedProjectTypes>\n            <supportedProjectType>bundle</supportedProjectType>\n
+        \         </supportedProjectTypes>\n          <unpackBundle>true</unpackBundle>\n
+        \       </configuration>\n        <executions>\n          <execution>\n            <id>bundle-manifest</id>\n
+        \           <phase>process-classes</phase>\n            <goals>\n              <goal>manifest</goal>\n
+        \           </goals>\n          </execution>\n        </executions>\n      </plugin>\n
+        \     <plugin>\n        <groupId>org.apache.maven.plugins</groupId>\n        <artifactId>maven-checkstyle-plugin</artifactId>\n
+        \       <version>${checkstyle-plugin.version}</version>\n        <configuration>\n
+        \         <consoleOutput>true</consoleOutput>\n          <configLocation>checkstyle.xml</configLocation>\n
+        \         <suppressionsLocation>suppressions.xml</suppressionsLocation>\n
+        \       </configuration>\n        <!-- Runs by default in the verify phase
+        \ (mvn verify or later in the build cycle)\n             the 'check' goal
+        will fail the build if it does not pass.  \"mvn checkstyle:check\"\n             will
+        do this alone, or \"mvn checkstyle:checkstyle\" will report but not break
+        \ -->\n        <executions>\n          <execution>\n            <id>checkstyle-check</id>\n
+        \           <phase>test</phase>\n            <goals>\n              <goal>check</goal>\n
+        \           </goals>\n          </execution>\n        </executions>\n      </plugin>\n
+        \   </plugins>\n  </build>\n\n  <reporting>\n  </reporting>\n\n  <profiles>\n
+        \   <profile>\n      <id>interop-data-test</id>\n      <build>\n        <plugins>\n
+        \         <plugin>\n            <groupId>org.apache.maven.plugins</groupId>\n
+        \           <artifactId>maven-surefire-plugin</artifactId>\n            <version>${surefire-plugin.version}</version>\n
+        \           <configuration>\n              <includes>\n                <include>**/DataFileInteropTest*</include>\n
+        \             </includes>\n              <excludes>\n              </excludes>\n
+        \             <enableAssertions>false</enableAssertions>\n              <forkCount>1</forkCount>\n
+        \             <reuseForks>true</reuseForks>\n              <redirectTestOutputToFile>false</redirectTestOutputToFile>\n
+        \             <systemPropertyVariables>\n                <test.dir>../../../build/interop/data/</test.dir>\n
+        \             </systemPropertyVariables>\n            </configuration>\n          </plugin>\n
+        \       </plugins>\n      </build>\n    </profile>\n    <profile>\n      <id>mac</id>\n
+        \     <activation>\n        <os>\n        <family>mac</family>\n        </os>\n
+        \     </activation>\n      <build>\n        <plugins>\n          <plugin>\n
+        \           <groupId>org.apache.maven.plugins</groupId>\n            <artifactId>maven-surefire-plugin</artifactId>\n
+        \           <configuration>\n              <systemPropertyVariables>\n                <test.dir>${project.basedir}/target/</test.dir>\n
+        \               <!-- avro-mapred will fail in tests on mac without this -->\n
+        \               <java.security.krb5.realm>OX.AC.UK</java.security.krb5.realm>\n
+        \               <java.security.krb5.kdc>kdc0.ox.ac.uk:kdc1.ox.ac.uk</java.security.krb5.kdc>\n
+        \             </systemPropertyVariables>\n            </configuration>\n          </plugin>\n
+        \       </plugins>\n      </build>\n    </profile>\n\n    <!--In JDK 1.8 and
+        newer the PermGem has been removed. -->\n    <!--These two profiles are to
+        handle the differences between the before and after 1.8 -->\n    <profile>\n
+        \     <id>old-jdk</id>\n      <activation>\n        <jdk>(,1.8)</jdk>\n      </activation>\n
+        \     <properties>\n        <surefire.argline>-Xmx1000m -XX:MaxPermSize=200m</surefire.argline>\n
+        \     </properties>\n    </profile>\n    <profile>\n      <id>new-jdk</id>\n
+        \     <activation>\n        <jdk>[1.8,)</jdk>\n      </activation>\n      <properties>\n
+        \       <surefire.argline>-Xmx1000m</surefire.argline>\n      </properties>\n
+        \   </profile>\n\n  </profiles>\n\n  <!-- dependencyManagement can be used
+        to define dependency versions, scopes, and\n    excludes to be shared by child
+        projects. Child projects will not inherit these dependencies,\n    rather
+        they inherit the properties of the below dependencies (such as version) if\n
+        \   the dependency is specified in the child. -->\n  <dependencyManagement>\n
+        \   <dependencies>\n      <dependency>\n        <groupId>org.codehaus.jackson</groupId>\n
+        \       <artifactId>jackson-core-asl</artifactId>\n        <version>${jackson.version}</version>\n
+        \     </dependency>\n      <dependency>\n        <groupId>org.codehaus.jackson</groupId>\n
+        \       <artifactId>jackson-mapper-asl</artifactId>\n        <version>${jackson.version}</version>\n
+        \     </dependency>\n      <dependency>\n        <groupId>com.thoughtworks.paranamer</groupId>\n
+        \       <artifactId>paranamer</artifactId>\n        <version>${paranamer.version}</version>\n
+        \     </dependency>\n      <dependency>\n        <groupId>org.apache.velocity</groupId>\n
+        \       <artifactId>velocity</artifactId>\n        <version>${velocity.version}</version>\n
+        \     </dependency>\n      <dependency>\n        <groupId>org.mortbay.jetty</groupId>\n
+        \       <artifactId>jetty</artifactId>\n        <version>${jetty.version}</version>\n
+        \     </dependency>\n      <dependency>\n        <groupId>io.netty</groupId>\n
+        \       <artifactId>netty</artifactId>\n        <version>${netty.version}</version>\n
+        \     </dependency>\n      <dependency>\n        <groupId>net.sf.jopt-simple</groupId>\n
+        \       <artifactId>jopt-simple</artifactId>\n        <version>${jopt-simple.version}</version>\n
+        \     </dependency>\n      <dependency>\n        <groupId>org.apache.hadoop</groupId>\n
+        \       <artifactId>hadoop-core</artifactId>\n        <version>${hadoop1.version}</version>\n
+        \     </dependency>\n      <dependency>\n        <groupId>org.apache.hadoop</groupId>\n
+        \       <artifactId>hadoop-client</artifactId>\n        <version>${hadoop2.version}</version>\n
+        \     </dependency>\n      <dependency>\n        <groupId>org.easymock</groupId>\n
+        \       <artifactId>easymock</artifactId>\n        <version>${easymock.version}</version>\n
+        \     </dependency>\n      <dependency>\n        <groupId>org.hamcrest</groupId>\n
+        \       <artifactId>hamcrest-all</artifactId>\n        <version>${hamcrest.version}</version>\n
+        \     </dependency>\n      <dependency>\n        <groupId>org.xerial.snappy</groupId>\n
+        \       <artifactId>snappy-java</artifactId>\n        <version>${snappy.version}</version>\n
+        \     </dependency>\n      <dependency>\n        <groupId>org.apache.commons</groupId>\n
+        \       <artifactId>commons-compress</artifactId>\n        <version>${commons-compress.version}</version>\n
+        \     </dependency>\n      <dependency>\n        <groupId>joda-time</groupId>\n
+        \       <artifactId>joda-time</artifactId>\n        <version>${joda.version}</version>\n
+        \     </dependency>\n    </dependencies>\n  </dependencyManagement>\n\n  <!--
+        dependencies defines dependencies that all child projects share. Child projects\n
+        \   will inherit these dependencies directly, and can opt out if necessary
+        with <excludes> -->\n  <dependencies>\n    <dependency>\n      <groupId>junit</groupId>\n
+        \     <artifactId>junit</artifactId>\n      <version>${junit.version}</version>\n
+        \     <scope>test</scope>\n    </dependency>\n    <dependency>\n      <groupId>org.slf4j</groupId>\n
+        \     <artifactId>slf4j-api</artifactId>\n      <version>${slf4j.version}</version>\n
+        \   </dependency>\n    <dependency>\n      <groupId>org.slf4j</groupId>\n
+        \     <artifactId>slf4j-simple</artifactId>\n      <version>${slf4j.version}</version>\n
+        \     <scope>runtime</scope>\n      <optional>true</optional>\n    </dependency>\n
+        \ </dependencies>\n\n</project>\n"}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['1477274']
+      Connection: [keep-alive]
+      Content-Length: ['21412']
+      Content-Type: [text/xml]
+      Date: ['Mon, 30 Oct 2017 14:26:10 GMT']
+      ETag: ['"604909f339511c62f7540eed777d30fd"']
+      Fastly-Debug-Digest: [d0a21c432c975c3eae3a6c266d7b7ee22b17a6af5dd62c172b0f5f058d8772ec]
+      Last-Modified: ['Sun, 07 May 2017 18:52:13 GMT']
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['HIT, HIT']
+      X-Cache-Hits: ['66, 2']
+      X-Checksum-MD5: [604909f339511c62f7540eed777d30fd]
+      X-Checksum-SHA1: [4819e550101b113a8f1af08bd114c68402cbbdd7]
+      X-Served-By: ['cache-iad2141-IAD, cache-atl6232-ATL']
+      X-Timer: ['S1509373571.948235,VS0,VE0']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://repo.maven.apache.org/maven2/org/apache/avro/avro-toplevel/1.8.2/avro-toplevel-1.8.2.pom
+  response:
+    body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!--\n   Licensed
+        to the Apache Software Foundation (ASF) under one or more\n   contributor
+        license agreements.  See the NOTICE file distributed with\n   this work for
+        additional information regarding copyright ownership.\n   The ASF licenses
+        this file to You under the Apache License, Version 2.0\n   (the \"License\");
+        you may not use this file except in compliance with\n   the License.  You
+        may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n
+        \  Unless required by applicable law or agreed to in writing, software\n   distributed
+        under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES
+        OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License
+        for the specific language governing permissions and\n   limitations under
+        the License.\n-->\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n
+        \        xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\n
+        \ <modelVersion>4.0.0</modelVersion>\n\n  <prerequisites>\n    <maven>2.2.1</maven>\n
+        \ </prerequisites>\n\n  <parent>\n    <groupId>org.apache</groupId>\n    <artifactId>apache</artifactId>\n
+        \   <version>10</version>\n  </parent>\n\n  <groupId>org.apache.avro</groupId>\n
+        \ <artifactId>avro-toplevel</artifactId>\n  <version>1.8.2</version>\n  <packaging>pom</packaging>\n\n
+        \ <name>Apache Avro Toplevel</name>\n  <url>http://avro.apache.org</url>\n
+        \ <description>Avro toplevel pom</description>\n\n  <!-- This project is used
+        for top level build tasks and artifact copying.\n       The RAT task is run
+        to validate licenses.  The Enforcer plugin is used\n       to validate that
+        java projects are the correct version.\n       Java artifacts are copied to
+        the final build destination with a custom profile.\n       -->\n  <properties>\n
+        \   <avro.distDir>dist</avro.distDir>\n    <avro.docDir>build/avro-doc-${project.version}/api</avro.docDir>\n
+        \   <!-- dependency plugin versions -->\n    <apache-rat-tasks.version>0.7</apache-rat-tasks.version>\n\n
+        \   <!-- plugin versions -->\n    <antrun-plugin.version>1.7</antrun-plugin.version>\n
+        \   <enforcer-plugin.version>1.3.1</enforcer-plugin.version>\n    <rat.version>0.9</rat.version>\n
+        \ </properties>\n\n  <modules>\n    <module>lang/java</module>\n  </modules>\n\n
+        \ <scm>\n    <connection>scm:svn:http://svn.apache.org/repos/asf/avro/trunk</connection>\n
+        \   <developerConnection>scm:svn:https://svn.apache.org/repos/asf/avro/trunk</developerConnection>\n
+        \   <url>http://svn.apache.org/viewvc/avro/trunk</url>\n  </scm>\n\n  <issueManagement>\n
+        \   <system>jira</system>\n    <url>http://issues.apache.org/jira/browse/AVRO</url>\n
+        \ </issueManagement>\n\n  <inceptionYear>2009</inceptionYear>\n\n  <mailingLists>\n
+        \   <mailingList>\n      <name>Avro Developer List</name>\n      <subscribe>dev-subscribe@avro.apache.org</subscribe>\n
+        \     <unsubscribe>dev-unsubscribe@avro.apache.org</unsubscribe>\n      <post>dev@avro.apache.org</post>\n
+        \     <archive>http://mail-archives.apache.org/mod_mbox/avro-dev/</archive>\n
+        \   </mailingList>\n    <mailingList>\n      <name>Avro Users List</name>\n
+        \     <subscribe>users-subscribe@avro.apache.org</subscribe>\n      <unsubscribe>users-unsubscribe@avro.apache.org</unsubscribe>\n
+        \     <post>users@avro.apache.org</post>\n      <archive>http://mail-archives.apache.org/mod_mbox/avro-users/</archive>\n
+        \   </mailingList>\n    <mailingList>\n      <name>Avro Commits List</name>\n
+        \     <subscribe>commits-subscribe@avro.apache.org</subscribe>\n      <unsubscribe>commits-unsubscribe@avro.apache.org</unsubscribe>\n
+        \     <post>commits@avro.apache.org</post>\n      <archive>http://mail-archives.apache.org/mod_mbox/avro-commits/</archive>\n
+        \   </mailingList>\n  </mailingLists>\n\n  <build>\n    <plugins>\n      <plugin>\n
+        \       <groupId>org.apache.maven.plugins</groupId>\n        <artifactId>maven-enforcer-plugin</artifactId>\n
+        \       <version>${enforcer-plugin.version}</version>\n        <inherited>false</inherited>\n
+        \       <configuration>\n          <rules>\n            <requireProperty>\n
+        \             <property>avro.version</property>\n              <message>*****!!!!!!
+        Must have property avro.version set to enforce version. !!!!!!*****</message>\n
+        \           </requireProperty>\n            <requireProperty>\n              <property>project.version</property>\n
+        \             <regex>${avro.version}</regex>\n              <regexMessage>*****!!!!!
+        Version of project must be ${avro.version} !!!!!*****</regexMessage>\n            </requireProperty>\n
+        \         </rules>\n          <fail>true</fail>\n        </configuration>\n
+        \     </plugin>\n    </plugins>\n  </build>\n\n  <profiles>\n    <profile>\n
+        \     <id>dist</id>\n      <!-- Profile for generating all maven artifacts
+        and documentation. -->\n      <build>\n        <plugins>\n          <plugin>\n
+        \           <groupId>org.apache.maven.plugins</groupId>\n            <artifactId>maven-javadoc-plugin</artifactId>\n
+        \           <executions>\n              <execution>\n                <!--
+        build javadoc jars per jar for publishing to maven -->\n                <id>module-javadocs</id>\n
+        \               <phase>package</phase>\n                <goals>\n                  <goal>jar</goal>\n
+        \               </goals>\n              </execution>\n              <execution>\n
+        \               <!-- build aggregate javadoc in parent only -->\n                <id>default-cli</id>\n
+        \               <goals>\n                  <goal>aggregate</goal>\n                </goals>\n
+        \               <inherited>false</inherited>\n                <configuration>\n
+        \                 <overview>avro/src/main/java/overview.html</overview>\n
+        \               </configuration>\n              </execution>\n            </executions>\n
+        \         </plugin>\n          <plugin>\n            <groupId>org.apache.maven.plugins</groupId>\n
+        \           <artifactId>maven-source-plugin</artifactId>\n            <executions>\n
+        \             <execution>\n                <!-- builds source jars and attaches
+        them to the project for publishing -->\n                <id>avro-java-sources</id>\n
+        \               <phase>package</phase>\n                <goals>\n                  <goal>jar-no-fork</goal>\n
+        \               </goals>\n              </execution>\n            </executions>\n
+        \         </plugin>\n          <plugin>\n            <groupId>org.apache.maven.plugins</groupId>\n
+        \           <artifactId>maven-enforcer-plugin</artifactId>\n            <executions>\n
+        \             <execution>\n                <phase>package</phase>\n                <goals>\n
+        \                 <goal>enforce</goal>\n                </goals>\n              </execution>\n
+        \           </executions>\n          </plugin>\n        </plugins>\n      </build>\n
+        \   </profile>\n    <profile>\n      <id>sign</id>\n      <build>\n        <plugins>\n
+        \         <plugin>\n            <groupId>org.apache.maven.plugins</groupId>\n
+        \           <artifactId>maven-gpg-plugin</artifactId>\n            <executions>\n
+        \             <execution>\n                <id>sign-artifacts</id>\n                <phase>verify</phase>\n
+        \               <goals>\n                  <goal>sign</goal>\n                </goals>\n
+        \             </execution>\n            </executions>\n          </plugin>\n
+        \       </plugins>\n      </build>\n    </profile>\n    <profile>\n      <id>rat</id>\n
+        \     <build>\n        <plugins>\n          <plugin>\n            <groupId>org.apache.rat</groupId>\n
+        \           <artifactId>apache-rat-plugin</artifactId>\n            <version>${rat.version}</version>\n
+        \           <executions>\n              <execution>\n                <phase>test</phase>\n
+        \               <goals>\n                  <goal>check</goal>\n                </goals>\n
+        \             </execution>\n            </executions>\n            <configuration>\n
+        \             <excludeSubProjects>false</excludeSubProjects>\n              <excludes>\n
+        \               <!-- version control files -->\n                <!-- may not
+        be in the root folder if using git-svn -->\n                <exclude>**/.git/**</exclude>\n
+        \               <exclude>**/.gitignore</exclude>\n                <!-- build
+        or test files (some are generated files that we commit as-is for testing purposes)
+        -->\n                <exclude>**/*.log</exclude>\n                <exclude>build/**</exclude>\n
+        \               <exclude>doc/build/**</exclude>\n                <exclude>lang/java/archetypes/**</exclude>\n
+        \               <exclude>lang/java/**/target/**</exclude>\n                <exclude>lang/js/node_modules/**</exclude>\n
+        \               <exclude>lang/csharp/build/doc/html/**</exclude>\n                <exclude>lang/c++/doc/html/**</exclude>\n
+        \               <exclude>lang/c++/build/**</exclude>\n                <exclude>lang/perl/pm_to_blib</exclude>\n
+        \               <exclude>lang/perl/blib/**/.exists</exclude>\n                <exclude>lang/py/build/**</exclude>\n
+        \               <exclude>lang/py3/avro_python3.egg-info/**</exclude>\n                <exclude>lang/ruby/Gemfile.lock</exclude>\n
+        \               <exclude>lang/ruby/avro.gemspec</exclude>\n                <exclude>lang/ruby/.gem/**</exclude>\n
+        \               <exclude>lang/ruby/pkg/**</exclude>\n                <exclude>lang/ruby/.bundle/**</exclude>\n
+        \               <exclude>lang/java/avro/src/test/java/org/apache/avro/specific/TestRecordWithLogicalTypes.java</exclude>\n
+        \               <exclude>lang/java/avro/src/test/java/org/apache/avro/specific/TestRecordWithoutLogicalTypes.java</exclude>\n
+        \               <exclude>lang/java/tools/src/test/compiler/output-string/avro/examples/baseball/Player.java</exclude>\n
+        \               <exclude>lang/java/tools/src/test/compiler/output-string/avro/examples/baseball/Position.java</exclude>\n
+        \               <exclude>lang/java/tools/src/test/compiler/output/Player.java</exclude>\n
+        \               <exclude>lang/java/tools/src/test/compiler/output/Position.java</exclude>\n
+        \               <exclude>lang/csharp/src/apache/test/Ipc/GeneratedFiles/**/*.cs</exclude>\n
+        \               <exclude>lang/csharp/src/apache/perf/com/foo/*.cs</exclude>\n
+        \               <exclude>lang/csharp/src/apache/ipc/org/apache/avro/ipc/*.cs</exclude>\n
+        \               <exclude>lang/java/mapred/src/test/resources/org/apache/avro/mapreduce/mapreduce-test-input.txt</exclude>\n
+        \               <exclude>lang/java/mapred/src/test/resources/org/apache/avro/mapreduce/mapreduce-test-input.avro/_SUCCESS</exclude>\n
+        \               <exclude>lang/java/protobuf/src/test/java/org/apache/avro/protobuf/Test.java</exclude>\n
+        \               <!-- data and schema files -->\n                <exclude>**/*.avro</exclude>
+        <!-- binary format -->\n                <exclude>**/*.avsc</exclude> <!--
+        does not allow comments -->\n                <exclude>**/*.avpr</exclude>
+        <!-- does not allow comments -->\n                <exclude>**/*.json</exclude>
+        <!-- does not allow comments -->\n                <exclude>lang/c/tests/schema_tests/fail/*</exclude>
+        <!-- C test cases -->\n                <exclude>lang/c/tests/schema_tests/pass/*</exclude>
+        <!-- C test cases -->\n                <exclude>lang/c++/jsonschemas/*</exclude>
+        <!-- C++ test cases -->\n                <!-- IDE settings and files -->\n
+        \               <exclude>**/.classpath</exclude>\n                <exclude>**/.project</exclude>\n
+        \               <exclude>**/.settings/**</exclude>\n                <exclude>**/.idea/**</exclude>\n
+        \               <exclude>**/*.iml</exclude>\n                <exclude>lang/csharp/Avro.sln</exclude>
+        <!-- visual studio -->\n                <!-- build-related files -->\n                <exclude>BUILD.txt</exclude>\n
+        \               <exclude>**/VERSION.txt</exclude>\n                <exclude>**/dependency-reduced-pom.xml</exclude>\n
+        \               <exclude>lang/perl/.shipit</exclude>\n                <exclude>lang/perl/inc/Module/Install/*.pm</exclude>\n
+        \               <exclude>lang/perl/inc/Module/Install.pm</exclude>\n                <exclude>lang/perl/Makefile*</exclude>\n
+        \               <exclude>lang/perl/META.yml</exclude>\n                <exclude>lang/perl/MYMETA.yml</exclude>\n
+        \               <exclude>lang/py/userlogs/**</exclude>\n                <exclude>lang/c/src/avro-c.pc.in</exclude>\n
+        \               <exclude>lang/ruby/Manifest</exclude>\n                <exclude>lang/java/tools/userlogs/**</exclude>\n
+        \               <exclude>lang/java/mapred/userlogs/**</exclude>\n                <exclude>lang/java/archetypes/avro-service-archetype/src/test/integration/projects/basic/goal.txt</exclude>\n
+        \               <exclude>lang/js/test/mocha.opts</exclude>\n                <exclude>lang/csharp/TestResult.xml</exclude>\n
+        \               <exclude>lang/csharp/src/apache/*/obj/**/*.csproj.FilesWrittenAbsolute.txt</exclude>\n
+        \               <exclude>lang/js/coverage/**</exclude>\n                <!--
+        text documentation files -->\n                <exclude>CHANGES.txt</exclude>\n
+        \               <exclude>DIST_README.txt</exclude>\n                <exclude>lang/perl/Changes</exclude>\n
+        \               <exclude>lang/c/README.maintaining_win32.txt</exclude>\n                <exclude>lang/c/docs/index.txt</exclude>\n
+        \               <exclude>lang/csharp/README</exclude>\n                <exclude>lang/java/archetypes/avro-service-archetype/src/test/integration/projects/basic/archetype.properties</exclude>
+        <!-- used to generate user projects -->\n                <!-- files and directories
+        covered by LICENSE.txt -->\n                <exclude>lang/py/lib/simplejson/**</exclude>\n
+        \               <exclude>lang/c/jansson/**</exclude>\n                <exclude>lang/c/src/avro/msinttypes.h</exclude>\n
+        \               <exclude>lang/c/src/avro/msstdint.h</exclude>\n                <exclude>lang/c/src/st.c</exclude>\n
+        \               <exclude>lang/c/src/st.h</exclude>\n                <exclude>lang/c/tests/msdirent.h</exclude>\n
+        \               <exclude>lang/c++/m4/*.m4</exclude>\n                <exclude>lang/java/ipc/src/main/java/org/apache/avro/ipc/stats/static/protovis-r3.2.js</exclude>\n
+        \               <exclude>lang/java/ipc/src/main/java/org/apache/avro/ipc/stats/static/g.bar.js</exclude>\n
+        \               <exclude>lang/java/ipc/src/main/java/org/apache/avro/ipc/stats/static/jquery-1.4.2.min.js</exclude>\n
+        \               <!-- License files -->\n                <exclude>lang/java/tools/src/main/resources/META-INF/cddl-1.0.text</exclude>\n
+        \               <exclude>lang/java/tools/src/main/resources/META-INF/cddl-1.1.text</exclude>\n
+        \               <exclude>lang/java/tools/src/main/resources/META-INF/mpl-2.0.text</exclude>\n
+        \             </excludes>\n            </configuration>\n          </plugin>\n
+        \       </plugins>\n      </build>\n    </profile>\n    <profile>\n      <id>copy-artifacts</id>\n
+        \     <build>\n        <plugins>\n          <plugin>\n            <groupId>org.apache.maven.plugins</groupId>\n
+        \           <artifactId>maven-antrun-plugin</artifactId>\n            <version>${antrun-plugin.version}</version>\n
+        \           <configuration>\n              <target name=\"copy-java-artifacts\">\n
+        \               <mkdir dir=\"${avro.distDir}/java\"/>\n                <copy
+        todir=\"${avro.distDir}/java\" verbose=\"true\">\n                  <flattenmapper/>\n
+        \                 <fileset dir=\"lang/java/\"\n                           includes=\"**/target/*${project.version}*.jar\"\n
+        \                          excludes=\"**/original-*.jar **/*tests.jar\"/>\n
+        \               </copy>\n\n                <mkdir dir=\"${avro.docDir}\"/>\n
+        \               <copy todir=\"${avro.docDir}/java\">\n                  <fileset
+        dir=\"lang/java/target/site/apidocs\"/>\n                </copy>\n                <copy
+        todir=\"build/avro-doc-${project.version}/trevni\">\n                  <fileset
+        dir=\"lang/java/trevni/doc/target/site\"/>\n                </copy>\n              </target>\n
+        \           </configuration>\n          </plugin>\n        </plugins>\n      </build>\n
+        \   </profile>\n  </profiles>\n\n</project>\n"}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['4652329']
+      Connection: [keep-alive]
+      Content-Length: ['15651']
+      Content-Type: [text/xml]
+      Date: ['Mon, 30 Oct 2017 14:26:11 GMT']
+      ETag: ['"b370c934ea4f5d6034b43bb20d4e5932"']
+      Fastly-Debug-Digest: [f506c8ed4ed6c36f2626655b206424f3b8f94abbe30fb04bed371f5e66b187c1]
+      Last-Modified: ['Sun, 07 May 2017 18:52:10 GMT']
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['HIT, HIT']
+      X-Cache-Hits: ['1, 2']
+      X-Checksum-MD5: [b370c934ea4f5d6034b43bb20d4e5932]
+      X-Checksum-SHA1: [56471549ed82e96e9ebe959470d80d9cb900c108]
+      X-Served-By: ['cache-iad2128-IAD, cache-atl6232-ATL']
+      X-Timer: ['S1509373571.282142,VS0,VE0']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://repo.maven.apache.org/maven2/org/apache/apache/10/apache-10.pom
+  response:
+    body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<!--\nLicensed to
+        the Apache Software Foundation (ASF) under one\nor more contributor license
+        agreements.  See the NOTICE file\ndistributed with this work for additional
+        information\nregarding copyright ownership.  The ASF licenses this file\nto
+        you under the Apache License, Version 2.0 (the\n\"License\"); you may not
+        use this file except in compliance\nwith the License.  You may obtain a copy
+        of the License at\n\n  http://www.apache.org/licenses/LICENSE-2.0\n\nUnless
+        required by applicable law or agreed to in writing,\nsoftware distributed
+        under the License is distributed on an\n\"AS IS\" BASIS, WITHOUT WARRANTIES
+        OR CONDITIONS OF ANY\nKIND, either express or implied.  See the License for
+        the\nspecific language governing permissions and limitations\nunder the License.\n-->\n\n<project
+        xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\n
+        \ <modelVersion>4.0.0</modelVersion>\n\n  <!-- for more information, see the
+        documentation of this POM: http://maven.apache.org/pom/asf/ -->\n  <groupId>org.apache</groupId>\n
+        \ <artifactId>apache</artifactId>\n  <version>10</version>\n  <packaging>pom</packaging>\n\n
+        \ <name>The Apache Software Foundation</name>\n  <description>\n    The Apache
+        Software Foundation provides support for the Apache community of open-source
+        software projects.\n    The Apache projects are characterized by a collaborative,
+        consensus based development process, an open and\n    pragmatic software license,
+        and a desire to create high quality software that leads the way in its field.\n
+        \   We consider ourselves not simply a group of projects sharing a server,
+        but rather a community of developers\n    and users.\n  </description>\n  <url>http://www.apache.org/</url>\n
+        \ <organization>\n    <name>The Apache Software Foundation</name>\n    <url>http://www.apache.org/</url>\n
+        \ </organization>\n  <licenses>\n    <license>\n      <name>The Apache Software
+        License, Version 2.0</name>\n      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>\n
+        \     <distribution>repo</distribution>\n    </license>\n  </licenses>\n\n
+        \ <repositories>\n    <repository>\n      <id>apache.snapshots</id>\n      <name>Apache
+        Snapshot Repository</name>\n      <url>http://repository.apache.org/snapshots</url>\n
+        \     <releases>\n        <enabled>false</enabled>\n      </releases>\n    </repository>\n
+        \ </repositories>\n\n  <mailingLists>\n    <mailingList>\n      <name>Apache
+        Announce List</name>\n      <subscribe>announce-subscribe@apache.org</subscribe>\n
+        \     <unsubscribe>announce-unsubscribe@apache.org</unsubscribe>\n      <post>announce@apache.org</post>\n
+        \     <archive>http://mail-archives.apache.org/mod_mbox/www-announce/</archive>\n
+        \   </mailingList>\n  </mailingLists>\n\n  <scm>\n    <connection>scm:svn:http://svn.apache.org/repos/asf/maven/pom/tags/apache-10</connection>\n
+        \   <developerConnection>scm:svn:https://svn.apache.org/repos/asf/maven/pom/tags/apache-10</developerConnection>\n
+        \   <url>http://svn.apache.org/viewvc/maven/pom/tags/apache-10</url>\n  </scm>\n\n
+        \ <distributionManagement>\n    <repository>\n      <id>apache.releases.https</id>\n
+        \     <name>Apache Release Distribution Repository</name>\n      <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>\n
+        \   </repository>\n    <snapshotRepository>\n      <id>apache.snapshots.https</id>\n
+        \     <name>${distMgmtSnapshotsName}</name>\n      <url>${distMgmtSnapshotsUrl}</url>\n
+        \   </snapshotRepository>\n  </distributionManagement>\n\n  <properties>\n
+        \   <distMgmtSnapshotsName>Apache Development Snapshot Repository</distMgmtSnapshotsName>\n
+        \   <distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</distMgmtSnapshotsUrl>\n
+        \   <organization.logo>http://www.apache.org/images/asf_logo_wide.gif</organization.logo>\n
+        \   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\n    <sourceReleaseAssemblyDescriptor>source-release</sourceReleaseAssemblyDescriptor>\n
+        \   <gpg.useagent>true</gpg.useagent>\n  </properties>\n\n  <build>\n    <pluginManagement>\n
+        \     <plugins>\n        <!-- set versions of common plugins for reproducibility,
+        ordered alphabetically -->\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-antrun-plugin</artifactId>\n          <version>1.6</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-assembly-plugin</artifactId>\n          <version>2.2.1</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-clean-plugin</artifactId>\n          <version>2.4.1</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-compiler-plugin</artifactId>\n          <version>2.3.2</version>\n
+        \         <configuration>\n            <source>1.4</source>\n            <target>1.4</target>\n
+        \         </configuration>\n        </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-deploy-plugin</artifactId>\n          <version>2.6</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-docck-plugin</artifactId>\n          <version>1.0</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-enforcer-plugin</artifactId>\n          <version>1.0.1</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-gpg-plugin</artifactId>\n          <version>1.3</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-install-plugin</artifactId>\n          <version>2.3.1</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-invoker-plugin</artifactId>\n          <version>1.5</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-jar-plugin</artifactId>\n          <version>2.3.1</version>\n
+        \         <configuration>\n            <archive>\n              <manifest>\n
+        \               <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>\n
+        \               <addDefaultImplementationEntries>true</addDefaultImplementationEntries>\n
+        \             </manifest>\n            </archive>\n          </configuration>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-javadoc-plugin</artifactId>\n          <version>2.8</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-plugin-plugin</artifactId>\n          <version>2.8</version>\n
+        \       </plugin>\n        <!-- START SNIPPET: release-plugin-configuration
+        -->\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-release-plugin</artifactId>\n          <version>2.1</version>\n
+        \         <configuration>\n            <useReleaseProfile>false</useReleaseProfile>\n
+        \           <goals>deploy</goals>\n            <arguments>-Papache-release</arguments>\n
+        \         </configuration>\n        </plugin>\n        <!-- END SNIPPET: release-plugin-configuration
+        -->\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-remote-resources-plugin</artifactId>\n          <version>1.2.1</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-resources-plugin</artifactId>\n          <version>2.5</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-scm-plugin</artifactId>\n          <version>1.4</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-site-plugin</artifactId>\n          <version>3.0</version>\n
+        \         <dependencies>\n            <dependency>\n              <groupId>org.apache.maven.wagon</groupId>\n
+        \             <artifactId>wagon-ssh</artifactId>\n              <version>1.0</version>\n
+        \           </dependency>\n          </dependencies>\n        </plugin>\n
+        \       <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-source-plugin</artifactId>\n          <version>2.1.2</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.apache.maven.plugins</groupId>\n
+        \         <artifactId>maven-surefire-plugin</artifactId>\n          <version>2.9</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.apache.rat</groupId>\n
+        \         <artifactId>apache-rat-plugin</artifactId>\n          <version>0.7</version>\n
+        \       </plugin>\n        <plugin>\n          <groupId>org.codehaus.mojo</groupId>\n
+        \         <artifactId>clirr-maven-plugin</artifactId>\n          <version>2.3</version>\n
+        \       </plugin>\n      </plugins>\n    </pluginManagement>\n    <plugins>\n
+        \     <!-- We want to package up license resources in the JARs produced -->\n
+        \     <plugin>\n        <groupId>org.apache.maven.plugins</groupId>\n        <artifactId>maven-remote-resources-plugin</artifactId>\n
+        \       <executions>\n          <execution>\n            <goals>\n              <goal>process</goal>\n
+        \           </goals>\n            <configuration>\n              <resourceBundles>\n
+        \               <resourceBundle>org.apache:apache-jar-resource-bundle:1.4</resourceBundle>\n
+        \             </resourceBundles>\n            </configuration>\n          </execution>\n
+        \       </executions>\n      </plugin>\n    </plugins>\n  </build>\n\n  <reporting>\n
+        \   <plugins>\n      <plugin>\n        <groupId>org.apache.maven.plugins</groupId>\n
+        \       <artifactId>maven-project-info-reports-plugin</artifactId>\n        <version>2.4</version>\n
+        \       <reportSets>\n          <reportSet>\n            <reports>\n              <report>index</report>\n
+        \             <report>summary</report>\n              <report>modules</report>\n
+        \             <report>license</report>\n              <report>project-team</report>\n
+        \             <report>scm</report>\n              <report>issue-tracking</report>\n
+        \             <report>mailing-list</report>\n              <report>dependency-management</report>\n
+        \             <report>dependencies</report>\n              <report>dependency-convergence</report>\n
+        \             <report>cim</report>\n              <report>plugin-management</report>\n
+        \             <report>plugins</report>\n              <report>distribution-management</report>\n
+        \           </reports>\n          </reportSet>\n        </reportSets>\n      </plugin>\n
+        \   </plugins>\n  </reporting>\n\n  <profiles>\n    <!-- START SNIPPET: release-profile
+        -->\n    <profile>\n      <id>apache-release</id>\n      <build>\n        <plugins>\n
+        \         <!-- Create a source-release artifact that contains the fully buildable
+        \n               project directory source structure. This is the artifact
+        which is \n               the official subject of any release vote. -->\n
+        \         <plugin>\n            <artifactId>maven-assembly-plugin</artifactId>\n
+        \           <dependencies>\n              <dependency>\n                <groupId>org.apache.apache.resources</groupId>\n
+        \               <artifactId>apache-source-release-assembly-descriptor</artifactId>\n
+        \               <version>1.0.3</version>\n              </dependency>\n            </dependencies>\n
+        \           <executions>\n              <execution>\n                <id>source-release-assembly</id>\n
+        \               <phase>package</phase>\n                <goals>\n                  <goal>single</goal>\n
+        \               </goals>\n                <configuration>\n                  <runOnlyAtExecutionRoot>true</runOnlyAtExecutionRoot>\n
+        \                 <descriptorRefs>\n                    <descriptorRef>${sourceReleaseAssemblyDescriptor}</descriptorRef>\n
+        \                 </descriptorRefs>\n                  <tarLongFileFormat>gnu</tarLongFileFormat>\n
+        \               </configuration>\n              </execution>\n            </executions>\n
+        \         </plugin>\n          <!-- We want to deploy the artifact to a staging
+        location for perusal -->\n          <plugin>\n            <inherited>true</inherited>\n
+        \           <groupId>org.apache.maven.plugins</groupId>\n            <artifactId>maven-deploy-plugin</artifactId>\n
+        \           <configuration>\n              <updateReleaseInfo>true</updateReleaseInfo>\n
+        \           </configuration>\n          </plugin>\n          <plugin>\n            <groupId>org.apache.maven.plugins</groupId>\n
+        \           <artifactId>maven-source-plugin</artifactId>\n            <executions>\n
+        \             <execution>\n                <id>attach-sources</id>\n                <goals>\n
+        \                 <goal>jar</goal>\n                </goals>\n              </execution>\n
+        \           </executions>\n          </plugin>\n          <plugin>\n            <groupId>org.apache.maven.plugins</groupId>\n
+        \           <artifactId>maven-javadoc-plugin</artifactId>\n            <executions>\n
+        \             <execution>\n                <id>attach-javadocs</id>\n                <goals>\n
+        \                 <goal>jar</goal>\n                </goals>\n              </execution>\n
+        \           </executions>\n          </plugin>\n          <!-- We want to
+        sign the artifact, the POM, and all attached artifacts -->\n          <plugin>\n
+        \           <groupId>org.apache.maven.plugins</groupId>\n            <artifactId>maven-gpg-plugin</artifactId>\n
+        \           <configuration>\n              <passphrase>${gpg.passphrase}</passphrase>\n
+        \             <useAgent>${gpg.useagent}</useAgent>\n            </configuration>\n
+        \           <executions>\n              <execution>\n                <goals>\n
+        \                 <goal>sign</goal>\n                </goals>\n              </execution>\n
+        \           </executions>\n          </plugin>\n        </plugins>\n      </build>\n
+        \   </profile>\n    <!-- END SNIPPET: release-profile -->\n\n    <profile>\n
+        \     <id>maven-3</id>\n      <activation>\n        <file>\n          <!--
+        \ This employs that the basedir expression is only recognized by Maven 3.x
+        (see MNG-2363) -->\n          <exists>${basedir}</exists>\n        </file>\n
+        \     </activation>\n      <build>\n        <plugins>\n          <plugin>\n
+        \           <groupId>org.apache.maven.plugins</groupId>\n            <artifactId>maven-site-plugin</artifactId>\n
+        \           <executions>\n              <execution>\n                <id>attach-descriptor</id>\n
+        \               <goals>\n                  <goal>attach-descriptor</goal>\n
+        \               </goals>\n              </execution>\n            </executions>\n
+        \         </plugin>\n        </plugins>\n      </build>\n    </profile>    \n
+        \ </profiles>\n</project>\n\n"}
+    headers:
+      Accept-Ranges: [bytes]
+      Age: ['1496363']
+      Connection: [keep-alive]
+      Content-Length: ['14799']
+      Content-Type: [text/xml]
+      Date: ['Mon, 30 Oct 2017 14:26:11 GMT']
+      ETag: ['"1bd311a9208bdbd749b7925e71fb9968"']
+      Fastly-Debug-Digest: [3a11c5866a4bb7d3317fbf4d21f664730fa2a6e7e63314ecc8e959ba6bdf7e04]
+      Last-Modified: ['Sat, 06 Aug 2011 21:50:20 GMT']
+      Via: [1.1 varnish, 1.1 varnish]
+      X-Cache: ['HIT, HIT']
+      X-Cache-Hits: ['7225, 11037']
+      X-Checksum-MD5: [1bd311a9208bdbd749b7925e71fb9968]
+      X-Checksum-SHA1: [48296e511366fa13aad48c58d8e09721774abec6]
+      X-Served-By: ['cache-iad2138-IAD, cache-atl6232-ATL']
+      X-Timer: ['S1509373571.467256,VS0,VE0']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://mvnrepository.com/artifact/org.apache.avro/avro-ipc_2.10.6/1.8.2
+  response:
+    body: {string: '<html><head><title>Maven Repository: 404 - Not Found</title></head><body><div
+        style="text-align: center; color: red"><h1>[404]</h1><h1>Not Found: /artifact/org.apache.avro/avro-ipc_2.10.6/1.8.2</h1><div><div><a
+        href="/search?q=+artifact+org.apache.avro+avro-ipc_2.10.6+1.8.2">Try Search</a></div><div><a
+        href="/">Home</a></div></div></div></body></html>'}
+    headers:
+      Cache-Control: ['public, max-age=60']
+      Connection: [keep-alive]
+      Content-Length: ['353']
+      Content-Type: [text/html; charset=utf-8]
+      Date: ['Mon, 30 Oct 2017 14:26:12 GMT']
+      ETag: ['"274db7f7430d761d436e75dc1568834b"']
+      Server: [nginx/1.10.1]
+      Set-Cookie: ['MVN_SESSION=63e4fa6dacf4495df477d233545b9302cbc8f4b5-uid=4781fe40-bd7e-11e7-9089-d19e06634963;
+          Max-Age=31536000; Expires=Tue, 30 Oct 2018 14:26:12 GMT; Path=/; HTTPOnly']
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      Cookie: [MVN_SESSION=63e4fa6dacf4495df477d233545b9302cbc8f4b5-uid=4781fe40-bd7e-11e7-9089-d19e06634963]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://mvnrepository.com/artifact/org.apache.avro/avro-ipc_2.10/1.8.2
+  response:
+    body: {string: '<html><head><title>Maven Repository: 404 - Not Found</title></head><body><div
+        style="text-align: center; color: red"><h1>[404]</h1><h1>Not Found: /artifact/org.apache.avro/avro-ipc_2.10/1.8.2</h1><div><div><a
+        href="/search?q=+artifact+org.apache.avro+avro-ipc_2.10+1.8.2">Try Search</a></div><div><a
+        href="/">Home</a></div></div></div></body></html>'}
+    headers:
+      Cache-Control: ['public, max-age=60']
+      Connection: [keep-alive]
+      Content-Length: ['349']
+      Content-Type: [text/html; charset=utf-8]
+      Date: ['Mon, 30 Oct 2017 14:26:12 GMT']
+      ETag: ['"f3b8c264353a16ce930dc2a827627fc2"']
+      Server: [nginx/1.10.1]
+      Set-Cookie: ['MVN_SESSION=63e4fa6dacf4495df477d233545b9302cbc8f4b5-uid=4781fe40-bd7e-11e7-9089-d19e06634963;
+          Max-Age=31536000; Expires=Tue, 30 Oct 2018 14:26:12 GMT; Path=/; HTTPOnly']
+    status: {code: 404, message: Not Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: [identity]
+      Connection: [keep-alive]
+      Cookie: [MVN_SESSION=63e4fa6dacf4495df477d233545b9302cbc8f4b5-uid=4781fe40-bd7e-11e7-9089-d19e06634963]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://mvnrepository.com/artifact/org.apache.avro/avro-ipc/1.8.2
+  response:
+    body: {string: "<!DOCTYPE html><html><head><meta charset=\"UTF-8\"><title>Maven
+        Repository: org.apache.avro \xBB avro-ipc \xBB 1.8.2</title><link rel=\"canonical\"
+        href=\"https://mvnrepository.com/artifact/org.apache.avro/avro-ipc/1.8.2\"/><link
+        rel=\"shortcut icon\" type=\"image/x-icon\" href=\"/assets/images/7080b8b0f6f48e6fbaffd5f9d85fcc7f-favicon.ico\"><link
+        rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"/opensearch.xml\"
+        title=\"MvnRepository\"><script>\n(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+        Date();a=s.createElement(o),\nm=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');\nga('create',
+        'UA-76305-3', 'auto'); ga('send', 'pageview');\n</script><script type=\"text/javascript\">\nvar
+        enc=encodeURIComponent;window.onerror=function(dsc,p,l,c,e){(new Image()).src=\"/assets/images/e.gif?v=2&p=\"+\nenc(p)+\"&l=\"+l+\"&c=\"+c+\"&d=\"+
+        enc(dsc)+\"&e=\"+enc(e);if(console){console.error(dsc+\"(p: \"+p+\" l: \"+l+\"c:\"+c+\")\");}\nreturn
+        true;};\n</script></head><body><style>\nhtml,body{margin:0;padding:0;height:100%;font-size:12px;font-family:Verdana,Arial,Helvetica,sans-serif;}h1{border-bottom:1px
+        solid lightgray;padding-bottom:0.7em;margin-top:0.2em;font-size:18px;}h2{color:black;font-size:14px;}h3,#tabs{color:#222222;padding:2px
+        10px;margin-top:10px;font-size:12px;border:1px solid #aaa;}#left h3{border:1px
+        solid #aaa;font-size:12px;margin-top:4px;background:#efefef;color:#175bb0;}#left
+        ul{list-style-type:none;padding:0;margin:0 0 10px 0;}#left li{padding-left:7px;padding-top:4px;padding-bottom:0;border-left:4px
+        solid #bbb;font-size:12px;margin:1px;vertical-align:text-bottom;min-height:20px;height:0.8em;}#left
+        li.selected{background:#d7e6f6;}ul.repositories{list-style-type:none;padding:0;margin:0
+        0 10px 0;text-align:left;}ul.repositories li{padding-left:7px;padding-top:4px;padding-bottom:0;font-size:12px;margin:1px;vertical-align:text-bottom;min-height:20px;height:0.8em;}#header{height:48px;border-top:2px
+        solid #ddd;border-bottom:1px solid #bbb;background:#eee;background:linear-gradient(to
+        bottom,#fff,#eee);}#logo{float:left;padding:3px 13px;}#logo .sub{font-size:10px;color:#222;}#left{position:absolute;left:0;padding-left:10px;top:65px;width:200px;}#right{padding-left:10px;padding-right:20px;padding-top:5px;position:absolute;right:0;top:55px;width:290px;}#maincontent{margin-left:221px;margin-right:321px;padding:9px
+        10px 10px;min-height:1600px;border-left:1px solid #dfdfdf;border-right:1px
+        solid #dfdfdf;}#footer{text-align:center;clear:both;background-color:#F5F5F5;padding:10px;}a{text-decoration:none;color:#175bb0;}a:hover{text-decoration:underline;}#logo
+        a:hover{text-decoration:none;}#navigation{position:absolute;top:22px;right:45px;font-weight:bold;font-size:13px;color:gray;}#search{padding:9px
+        7px 8px 15px;position:relative;margin-left:221px;margin-right:321px;}#search
+        input{background:#fff;border:1px solid darkgray;border-radius:4px;font-size:14px;height:28px;padding-right:6px;padding-left:6px;}#search
+        .textfield{width:60%;color:#666;outline:0;border:1px solid #999;text-shadow:none;}#search
+        .button{margin-left:10px;padding:0 15px;height:28px;}ul.search-nav{margin:25px
+        0 20px 0;padding:0;list-style-type:none;text-align:center;}ul.search-nav li{display:inline;background-color:#1857ad;color:#fff;padding:.2em
+        0;margin:.2em;}.search-nav a{text-decoration:none;color:#fff;padding:.2em
+        0.8em;}.search-nav span{padding:.2em 0.8em;}.search-nav li.current{background-color:#a9a9a9;}.adbox{margin-top:10px;}.snippet{font-size:12px;}.vbtn{background:#FAFAFF;border:1px
+        solid #ddd;border-radius:4px;border-spacing:0;box-shadow:1px 1px 1px #eee;padding:1px
+        4px;white-space:nowrap;vertical-align:baseline;}hr{border-top:1px solid #a9a9a9;}.rb{display:block;background:orange;height:5px;box-shadow:1px
+        1px 1px #999;}.pb{width:100%;}.pbv{background:#dadada;color:#356cb0;height:5px;}.beta{background:#FAEAEF;}.alpha{background:#FFCCDD;}.candidate{background:#FAEAEF;}.sidebar{background-color:#f5f5f5;}.t1{font-size:12px;color:#7b94b0;}.t2{font-size:13px;color:#6a89b0;}.t3{font-size:14px;color:#5880b0;}.t4{font-size:16px;color:#4676b0;}.t5{font-size:18px;color:#356cb0;}.t6{font-size:19px;color:#2363b0;}.t7{font-size:24px;color:#1259b0;}.b{display:inline-block;font-style:normal;font-size:11px;padding:2px
+        4px;margin:1px;background-color:#d3d3d3;color:white;}.tag{border-left:4px
+        solid #478be0;background-color:#175bb0;}.c{text-align:center;background-color:#df2d4f;}.lic{text-align:center;background-color:#5285c5;}.bookimg{box-shadow:4px
+        4px 2px #888888;}.breadcrumb{padding:6px 0 10px 0;font-size:13px;}table.grid{border-spacing:1px;font-family:Verdana,Arial,Helvetica,sans-serif;font-size:12px;background-color:#e1e1e1;color:#222;}table.grid
+        td,th{padding:4px;}table.grid tbody th{font-weight:bold;}table.grid tbody
+        tr{background-color:#FFF;text-align:left;}table.grid tbody tr td{background:#FFF;border:1px
+        solid #FFF;}.im{border-bottom:1px solid #ddd;padding-bottom:1.5em;font-size:13px;}.im-category{color:#555;margin:10px
+        0;}.im-usage{color:#444;background:#eeeeee;padding:1px 5px;border-radius:2px;float:right;font-weight:normal;font-size:12px;}.im-lic{padding:1px
+        5px;float:right;font-weight:normal;font-size:12px;}a:hover.im-usage{text-decoration:none;}.im-title{font-size:13px;margin-bottom:0.8em}.im-title
+        a{color:black;}h2.im-title{margin-top:0.6em;margin-bottom:0.5em;}.im-subtitle{color:#999;font-size:95%;margin:0;}.im-header{margin-top:1.5em;margin-left:65px;}.im-description{margin-top:1em;margin-left:65px;}.im-logo{float:left;margin-right:1em;border-radius:4px;padding:2px;box-shadow:1px
+        1px 1px 1px #ccc;}.im-link{color:#006a00;}.im-n{color:#777777;font-weight:normal}.version-section{padding-bottom:1.5em;}\n</style><div
+        id=\"page\"><div id=\"header\" style=\"text-align:center\"><div id=\"logo\"><a
+        href=\"/\"><img src=\"/assets/images/392dffac024b9632664e6f2c0cac6fe5-logo.png\"
+        border=\"0\" width=\"195\" height=\"39\" alt=\"MavenRepository\"/></a></div><div
+        id=\"search\"><form action=\"/search\"><input class=\"textfield\" placeholder=\"Search
+        for groups, artifacts, categories\" type=\"text\" id=\"query\" size=\"45\"
+        maxlength=\"100\" name=\"q\" value=\"\" onfocus=\"var cur=this.value; this.value='';
+        this.value=cur\" autofocus/><input class=\"button\" type=\"submit\" value=\"Search\"/></form></div><div
+        id=\"navigation\"><a href=\"/open-source\"><b>Categories</b></a> |\n<a href=\"/popular\">Popular</a>
+        |\n<a href=\"mailto:info@mvnrepository.com\">Contact Us</a></div><div style
+        =\"clear: both;\"></div></div><div id=\"left\"><div><h3><a href=\"/repos\">Indexed
+        Artifacts (8.07M)</a></h3><div style=\"text-align: center\"><a href=\"/repos\"><img
+        src=\"/growth/d558b4473af75c62c50025c82b22bd16\" width=\"170\" height=\"120\"/></a></div></div><div><h3><a
+        href=\"/open-source\">Popular Categories</a></h3><ul class=\"categories\"><li
+        ><a href=\"/open-source/aop-programming\">Aspect Oriented</a></li><li ><a
+        href=\"/open-source/actor-frameworks\">Actor Frameworks</a></li><li ><a href=\"/open-source/application-metrics\">Application
+        Metrics</a></li><li ><a href=\"/open-source/build-tools\">Build Tools</a></li><li
+        ><a href=\"/open-source/bytecode-libraries\">Bytecode Libraries</a></li><li
+        ><a href=\"/open-source/command-line-parsers\">Command Line Parsers</a></li><li
+        ><a href=\"/open-source/cache-implementations\">Cache Implementations</a></li><li
+        ><a href=\"/open-source/cloud-computing-integration\">Cloud Computing</a></li><li
+        ><a href=\"/open-source/code-analyzers\">Code Analyzers</a></li><li ><a href=\"/open-source/collections\">Collections</a></li><li
+        ><a href=\"/open-source/config-libraries\">Configuration Libraries</a></li><li
+        ><a href=\"/open-source/core-utilities\">Core Utilities</a></li><li ><a href=\"/open-source/date-time-utilities\">Date
+        and Time Utilities</a></li><li ><a href=\"/open-source/dependency-injection\">Dependency
+        Injection</a></li><li ><a href=\"/open-source/embedded-sql-databases\">Embedded
+        SQL Databases</a></li><li ><a href=\"/open-source/html-parsers\">HTML Parsers</a></li><li
+        ><a href=\"/open-source/http-clients\">HTTP Clients</a></li><li ><a href=\"/open-source/io-utilities\">I/O
+        Utilities</a></li><li ><a href=\"/open-source/jdbc-extensions\">JDBC Extensions</a></li><li
+        ><a href=\"/open-source/jdbc-pools\">JDBC Pools</a></li><li ><a href=\"/open-source/jpa-implementations\">JPA
+        Implementations</a></li><li ><a href=\"/open-source/json-libraries\">JSON
+        Libraries</a></li><li ><a href=\"/open-source/jvm-languages\">JVM Languages</a></li><li
+        ><a href=\"/open-source/logging-frameworks\">Logging Frameworks</a></li><li
+        ><a href=\"/open-source/logging-bridges\">Logging Bridges</a></li><li ><a
+        href=\"/open-source/mail-clients\">Mail Clients</a></li><li ><a href=\"/open-source/maven-plugins\">Maven
+        Plugins</a></li><li ><a href=\"/open-source/mocking\">Mocking</a></li><li
+        ><a href=\"/open-source/orm\">Object/Relational Mapping</a></li><li ><a href=\"/open-source/pdf-libraries\">PDF
+        Libraries</a></li><li><a href=\"/open-source\"><b>Top Categories</b></a></li></ul></div></div><div
+        id=\"maincontent\"><div class=\"breadcrumb\"><a href=\"/\">Home</a> \xBB <a
+        href=\"/artifact/org.apache.avro\">org.apache.avro</a> \xBB <a href=\"/artifact/org.apache.avro/avro-ipc\">avro-ipc</a>
+        \xBB\n<span class=\"vbtn release\">1.8.2</span></div><div class=\"im\" style=\"border-bottom:
+        none; padding-bottom: 0.5em\"><a href=\"/artifact/org.apache.avro/avro-ipc\"><picture><source
+        type=\"image/webp\" srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/be7352a0d384e70e8f3b79d2ead78997\"><img
+        class=\"im-logo\" width=\"48\" height=\"48\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/db924a1f7745c46a6ad701c42cb71771\"/></picture></a><div
+        class=\"im-header\" style=\"margin-top: 0\"><h2 class=\"im-title\" style=\"font-size:
+        130%\"><a href=\"/artifact/org.apache.avro/avro-ipc\">Apache Avro IPC</a>
+        \xBB <a href=\"/artifact/org.apache.avro/avro-ipc/1.8.2\">1.8.2</a></h2><p
+        class=\"im-subtitle\"></p></div><div class=\"im-description\">\nAvro inter-process
+        communication components\n</div></div><br/><table class=\"grid\" width=\"100%\"><tr><th>License</th><td><span
+        class=\"b lic\">Apache 2.0</span></td></tr><tr><th>Categories</th><td><a href=\"/open-source/distributed-communication\"
+        class=\"b c\">Distributed Communication</a></td></tr><tr><th>HomePage</th><td><a
+        href=\"http://avro.apache.org\" rel=\"nofollow\"> http://avro.apache.org </a></td></tr><tr><th>Date</th><td>(May
+        07, 2017) </td></tr><tr><th style=\"width: 12em;\">Files</th><td><a class=\"vbtn\"
+        href=\"http://central.maven.org/maven2/org/apache/avro/avro-ipc/1.8.2/avro-ipc-1.8.2.jar\">Download
+        (BUNDLE)</a><span style=\"color: black; font-weight: bold;\"> (129 KB) </span></td></tr><tr><th
+        style=\"width: 12em;\">Repositories</th><td><a class=\"b lic\" href=\"/repos/central\">Central</a><a
+        class=\"b lic\" href=\"/repos/spring-libs-milestone\">Spring Libs</a><a class=\"b
+        lic\" href=\"/repos/springio-plugins-release\">Spring Plugins</a></td></tr><tr><th>Used
+        By</th><td><a href=\"/artifact/org.apache.avro/avro-ipc/usages\"><b>90 artifacts</b></a></td></tr></table><br/><style>\n.tabs,.tab_container{padding:0}.tabs
+        li{position:relative;float:left;list-style:none;}.tabs li a{padding:5px 10px
+        0 10px;margin-right:2px;border-radius:4px 4px 0 0;border:1px solid gray;border-bottom-color:transparent;}.tabs
+        .active a,.tabs .active a:hover{background-color:#fafafa;border:1px solid
+        gray;border-bottom-color:transparent;cursor:default;text-decoration:none;}.tab_container{clear:both;background-color:#fafafa;}.tab_content{display:none;padding:10px;border:1px
+        solid gray;list-style:none;}.tab_container .active{display:block;}.msg{text-align:center;font-weight:bold;border:2px
+        solid #fff0f0;padding:5px;margin-top:5px;color:red;background-color:#fff8f8;}\n</style><div
+        id=\"snippets\"><ul class=\"tabs\"><li id=\"maven-li\" class=\"active\"><a
+        href=\"#maven\">Maven</a></li><li id=\"gradle-li\" ><a href=\"#gradle\">Gradle</a></li><li
+        id=\"sbt-li\" ><a href=\"#sbt\">SBT</a></li><li id=\"ivy-li\" ><a href=\"#ivy\">Ivy</a></li><li
+        id=\"grape-li\" ><a href=\"#grape\">Grape</a></li><li id=\"leiningen-li\"
+        ><a href=\"#leiningen\">Leiningen</a></li><li id=\"buildr-li\" ><a href=\"#buildr\">Buildr</a></li></ul><div
+        class=\"tab_container\"><div id=\"maven-div\" class=\"tab_content active\"><textarea
+        id=\"maven-a\" readonly=\"true\" rows=\"7\" cols=\"40\" style=\"width: 100%\"
+        class=\"snippet\">\n&lt;!-- https://mvnrepository.com/artifact/org.apache.avro/avro-ipc
+        --&gt;\n&lt;dependency&gt;\n&#32;&#32;&#32;&#32;&lt;groupId&gt;org.apache.avro&lt;/groupId&gt;\n&#32;&#32;&#32;&#32;&lt;artifactId&gt;avro-ipc&lt;/artifactId&gt;\n&#32;&#32;&#32;&#32;&lt;version&gt;1.8.2&lt;/version&gt;\n&lt;/dependency&gt;\n</textarea></div><div
+        id=\"gradle-div\" class=\"tab_content \"><textarea id=\"gradle-a\" readonly=\"true\"
+        rows=\"7\" cols=\"40\" style=\"width: 100%\" class=\"snippet\">\n// https://mvnrepository.com/artifact/org.apache.avro/avro-ipc\ncompile
+        group: 'org.apache.avro', name: 'avro-ipc', version: '1.8.2'\n</textarea></div><div
+        id=\"sbt-div\" class=\"tab_content \"><textarea id=\"sbt-a\" readonly=\"true\"
+        rows=\"7\" cols=\"40\" style=\"width: 100%\" class=\"snippet\">\n// https://mvnrepository.com/artifact/org.apache.avro/avro-ipc\nlibraryDependencies
+        += &quot;org.apache.avro&quot; % &quot;avro-ipc&quot; % &quot;1.8.2&quot;\n</textarea></div><div
+        id=\"ivy-div\" class=\"tab_content \"><textarea id=\"ivy-a\" readonly=\"true\"
+        rows=\"7\" cols=\"40\" style=\"width: 100%\" class=\"snippet\">\n&lt;!-- https://mvnrepository.com/artifact/org.apache.avro/avro-ipc
+        --&gt;\n&lt;dependency org=&quot;org.apache.avro&quot; name=&quot;avro-ipc&quot;
+        rev=&quot;1.8.2&quot;/&gt;\n</textarea></div><div id=\"grape-div\" class=\"tab_content
+        \"><textarea id=\"grape-a\" readonly=\"true\" rows=\"7\" cols=\"40\" style=\"width:
+        100%\" class=\"snippet\">\n// https://mvnrepository.com/artifact/org.apache.avro/avro-ipc\n@Grapes(\n&#32;&#32;&#32;&#32;@Grab(group='org.apache.avro',
+        module='avro-ipc', version='1.8.2')\n)\n</textarea></div><div id=\"leiningen-div\"
+        class=\"tab_content \"><textarea id=\"leiningen-a\" readonly=\"true\" rows=\"7\"
+        cols=\"40\" style=\"width: 100%\" class=\"snippet\">\n;; https://mvnrepository.com/artifact/org.apache.avro/avro-ipc\n[org.apache.avro/avro-ipc
+        &quot;1.8.2&quot;]\n</textarea></div><div id=\"buildr-div\" class=\"tab_content
+        \"><textarea id=\"buildr-a\" readonly=\"true\" rows=\"7\" cols=\"40\" style=\"width:
+        100%\" class=\"snippet\">\n# https://mvnrepository.com/artifact/org.apache.avro/avro-ipc\n'org.apache.avro:avro-ipc:jar:1.8.2'\n</textarea></div><label><input
+        name=\"includelink\" id=\"includelink\" type=\"checkbox\" checked=\"checked\">\nInclude
+        comment with link to declaration\n</label><div id=\"clipboardmsg\"></div></div></div><script
+        src=\"/assets/javascripts/8882454824536e15a805d4d263e05aa7-snippets.js\" type=\"text/javascript\"></script><script
+        type=\"text/javascript\">initSnippets();</script><br/><div style=\"min-height:
+        120px\"><script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins
+        class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-1185571689816607\"
+        data-ad-slot=\"6295186330\" data-ad-format=\"auto\"></ins><script> (adsbygoogle
+        = window.adsbygoogle || []).push({}); </script><br/><br/></div><div class=\"version-section\"><h2>Compile
+        Dependencies (8)</h2><style>\n.im-logo { margin-right: 0}\n</style><table
+        class=\"grid\" style=\"vertical-align: middle\" width=\"100%\"><thead><tr><th
+        style=\"width: 12em; text-align: center\">Category/License</th><th style=\"width:
+        28px\"></th><th>\nGroup / Artifact</th><th style=\"text-align: center\">Version</th><th
+        style=\"text-align: center\">Updates</th></tr></thead><tbody><tr><td style=\"text-align:
+        right\"><a href=\"/open-source/network-application-frameworks\" class=\"b
+        c\">Network Framework</a><br/><span class=\"b lic\">Apache 2.0</span></td><td><picture><source
+        type=\"image/webp\" srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/ec3d102e41acaac1d2229a42611b4e08\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/244564e6f95af08d816c65dc618ec0d7\"/></picture></td><td><a
+        href=\"/artifact/io.netty\">io.netty</a>\n\xBB\n<a href=\"/artifact/io.netty/netty\">netty</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/io.netty/netty/3.5.13.Final\">\n3.5.13.Final</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/io.netty/netty-all/4.1.16.Final\">4.1.16.Final</a></td></tr><tr><td
+        style=\"text-align: right\"><a href=\"/open-source/object-serialization\"
+        class=\"b c\">Serializer</a><br/><span class=\"b lic\">Apache 2.0</span></td><td><picture><source
+        type=\"image/webp\" srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/be7352a0d384e70e8f3b79d2ead78997\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/db924a1f7745c46a6ad701c42cb71771\"/></picture></td><td><a
+        href=\"/artifact/org.apache.avro\">org.apache.avro</a>\n\xBB\n<a href=\"/artifact/org.apache.avro/avro\">avro</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.apache.avro/avro/1.8.2\">\n1.8.2</a></td><td
+        style=\"text-align: center\">\n&#10004\n</td></tr><tr><td style=\"text-align:
+        right\"><a href=\"/open-source/template-engines\" class=\"b c\">Template Engine</a><br/><span
+        class=\"b lic\">Apache 2.0</span></td><td><picture><source type=\"image/webp\"
+        srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/e7cb46f555e94ff3aa028516b43da4bb\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/b6af8a130aeaecd8c7254839a2dfabab\"/></picture></td><td><a
+        href=\"/artifact/org.apache.velocity\">org.apache.velocity</a>\n\xBB\n<a href=\"/artifact/org.apache.velocity/velocity\">velocity</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.apache.velocity/velocity/1.7\">\n1.7</a></td><td
+        style=\"text-align: center\">\n&#10004\n</td></tr><tr><td style=\"text-align:
+        right\"><a href=\"/open-source/json-libraries\" class=\"b c\">JSON Lib</a><br/><span
+        class=\"b lic\">Apache 2.0</span></td><td><picture><source type=\"image/webp\"
+        srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/2c2e3f4f9b199847aa18229ef8440e1a\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/d4d2eaae0c97e93687c1b66db6a0efcd\"/></picture></td><td><a
+        href=\"/artifact/org.codehaus.jackson\">org.codehaus.jackson</a>\n\xBB\n<a
+        href=\"/artifact/org.codehaus.jackson/jackson-core-asl\">jackson-core-asl</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.codehaus.jackson/jackson-core-asl/1.9.13\">\n1.9.13</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/com.fasterxml.jackson.core/jackson-core/2.9.2\">2.9.2</a></td></tr><tr><td
+        style=\"text-align: right\"><a href=\"/open-source/json-libraries\" class=\"b
+        c\">JSON Lib</a><br/><span class=\"b lic\">Apache 2.0</span></td><td><picture><source
+        type=\"image/webp\" srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/2c2e3f4f9b199847aa18229ef8440e1a\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/d4d2eaae0c97e93687c1b66db6a0efcd\"/></picture></td><td><a
+        href=\"/artifact/org.codehaus.jackson\">org.codehaus.jackson</a>\n\xBB\n<a
+        href=\"/artifact/org.codehaus.jackson/jackson-mapper-asl\">jackson-mapper-asl</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.codehaus.jackson/jackson-mapper-asl/1.9.13\">\n1.9.13</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/com.fasterxml.jackson.core/jackson-databind/2.9.2\">2.9.2</a></td></tr><tr><td
+        style=\"text-align: right\"><a href=\"/open-source/web-servers\" class=\"b
+        c\">Web Server</a><br/><span class=\"b lic\">Apache 2.0</span><span class=\"b
+        lic\">EPL 1.0</span></td><td><picture><source type=\"image/webp\" srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/c19c49c2541ea2bd5c4f70d48cb04597\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/3e9a36be690a429f6102a532a16960c7\"/></picture></td><td><a
+        href=\"/artifact/org.mortbay.jetty\">org.mortbay.jetty</a>\n\xBB\n<a href=\"/artifact/org.mortbay.jetty/jetty\">jetty</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.mortbay.jetty/jetty/6.1.26\">\n6.1.26</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.eclipse.jetty/jetty-server/9.4.7.v20170914\">9.4.7.v20170914</a></td></tr><tr><td
+        style=\"text-align: right\"><br/><span class=\"b lic\">Apache 2.0</span><span
+        class=\"b lic\">EPL 1.0</span></td><td><picture><source type=\"image/webp\"
+        srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/c19c49c2541ea2bd5c4f70d48cb04597\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/3e9a36be690a429f6102a532a16960c7\"/></picture></td><td><a
+        href=\"/artifact/org.mortbay.jetty\">org.mortbay.jetty</a>\n\xBB\n<a href=\"/artifact/org.mortbay.jetty/jetty-util\">jetty-util</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.mortbay.jetty/jetty-util/6.1.26\">\n6.1.26</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.eclipse.jetty/jetty-util/9.4.7.v20170914\">9.4.7.v20170914</a></td></tr><tr><td
+        style=\"text-align: right\"><br/><span class=\"b lic\">Apache 2.0</span><span
+        class=\"b lic\">EPL 1.0</span></td><td><picture><source type=\"image/webp\"
+        srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/c19c49c2541ea2bd5c4f70d48cb04597\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/3e9a36be690a429f6102a532a16960c7\"/></picture></td><td><a
+        href=\"/artifact/org.mortbay.jetty\">org.mortbay.jetty</a>\n\xBB\n<a href=\"/artifact/org.mortbay.jetty/servlet-api\">servlet-api</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.mortbay.jetty/servlet-api/2.5-20081211\">\n2.5-20081211</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.mortbay.jetty/servlet-api/3.0.20100224\">3.0.20100224</a></td></tr></tbody></table></div><div
+        class=\"version-section\"><h2>Test Dependencies (2)</h2><style>\n.im-logo
+        { margin-right: 0}\n</style><table class=\"grid\" style=\"vertical-align:
+        middle\" width=\"100%\"><thead><tr><th style=\"width: 12em; text-align: center\">Category/License</th><th
+        style=\"width: 28px\"></th><th>\nGroup / Artifact</th><th style=\"text-align:
+        center\">Version</th><th style=\"text-align: center\">Updates</th></tr></thead><tbody><tr><td
+        style=\"text-align: right\"><a href=\"/open-source/object-serialization\"
+        class=\"b c\">Serializer</a><br/><span class=\"b lic\">Apache 2.0</span></td><td><picture><source
+        type=\"image/webp\" srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/be7352a0d384e70e8f3b79d2ead78997\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/db924a1f7745c46a6ad701c42cb71771\"/></picture></td><td><a
+        href=\"/artifact/org.apache.avro\">org.apache.avro</a>\n\xBB\n<a href=\"/artifact/org.apache.avro/avro\">avro</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.apache.avro/avro/1.8.2\">\n1.8.2</a></td><td
+        style=\"text-align: center\">\n&#10004\n</td></tr><tr><td style=\"text-align:
+        right\"><br/><span class=\"b lic\">Apache 2.0</span></td><td><picture><source
+        type=\"image/webp\" srcset=\"https://d2j3q9yua85jt3.cloudfront.net/img/be7352a0d384e70e8f3b79d2ead78997\"><img
+        class=\"im-logo\" width=\"28\" height=\"28\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/db924a1f7745c46a6ad701c42cb71771\"/></picture></td><td><a
+        href=\"/artifact/org.apache.avro\">org.apache.avro</a>\n\xBB\n<a href=\"/artifact/org.apache.avro/avro-compiler\">avro-compiler</a></td><td
+        style=\"text-align: center\"><a class=\"vbtn release\" href=\"/artifact/org.apache.avro/avro-compiler/1.8.2\">\n1.8.2</a></td><td
+        style=\"text-align: center\">\n&#10004\n</td></tr></tbody></table></div><div
+        class=\"version-section\"><h2>Licenses</h2><table class=\"grid\" width=\"100%\"><thead><tr><th
+        style=\"width: 16em;\">License</th><th>URL</th></tr></thead><tbody><tr><td>The
+        Apache Software License, Version 2.0</td><td><a href=\"http://www.apache.org/licenses/LICENSE-2.0.txt\"
+        rel=\"nofollow\"> http://www.apache.org/licenses/LICENSE-2.0.txt </a></td></tr></tbody></table></div><div
+        class=\"version-section\"><h3>Related Books</h3><style>\n.bt { font-size:
+        125%; }\n.ba { font-size: 115%; }\n</style><div><table class=\"grid\" width=\"100%\"><tr><td
+        style=\"padding: 15px\" align=\"center\"><a href=\"https://www.amazon.com/Hadoop-Hours-Sams-Teach-Yourself/dp/0672338521?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=0672338521\"
+        rel=\"nofollow\"><img alt=\"Hadoop in 24 Hours, Sams Teach Yourself\" width=\"52\"
+        height=\"64\" class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/4210602c2199784f934e9d52a8926122\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Hadoop-Hours-Sams-Teach-Yourself/dp/0672338521?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=0672338521\"
+        rel=\"nofollow\">Hadoop in 24 Hours, Sams Teach Yourself</a><b class=\"bt\">
+        (2017)</b><br/><span class=\"ba\">by Jeffrey Aven</span></td></tr><tr><td
+        style=\"padding: 15px\" align=\"center\"><a href=\"https://www.amazon.com/Apache-Hadoop-Interview-Questions-Answers-ebook/dp/B01N0WGIEF?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01N0WGIEF\"
+        rel=\"nofollow\"><img alt=\"Top 50 Apache Hadoop Interview Questions and Answers\"
+        width=\"52\" height=\"64\" class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/7d7da7437fd3ba9ed26f670d31573250\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Apache-Hadoop-Interview-Questions-Answers-ebook/dp/B01N0WGIEF?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01N0WGIEF\"
+        rel=\"nofollow\">Top 50 Apache Hadoop Interview Questions and Answers</a><b
+        class=\"bt\"> (2016)</b><br/><span class=\"ba\">by Knowledge Powerhouse</span></td></tr><tr><td
+        style=\"padding: 15px\" align=\"center\"><a href=\"https://www.amazon.com/Pro-Hadoop-Data-Analytics-Designing/dp/1484219090?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1484219090\"
+        rel=\"nofollow\"><img alt=\"Pro Hadoop Data Analytics: Designing and Building
+        Big Data Systems using the Hadoop Ecosystem\" width=\"52\" height=\"64\" class=\"bookimg\"
+        src=\"https://d2j3q9yua85jt3.cloudfront.net/img/f7c01fad103aaf75980d65f1c779579b\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Pro-Hadoop-Data-Analytics-Designing/dp/1484219090?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1484219090\"
+        rel=\"nofollow\">Pro Hadoop Data Analytics: Designing and Building Big Data
+        Systems using the Hadoop Ecosystem</a><b class=\"bt\"> (2016)</b><br/><span
+        class=\"ba\">by Kerry Koitzsch</span></td></tr><tr><td style=\"padding: 15px\"
+        align=\"center\"><a href=\"https://www.amazon.com/Expert-Hadoop-Administration-Addison-Wesley-Analytics/dp/0134597192?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=0134597192\"
+        rel=\"nofollow\"><img alt=\"Expert Hadoop Administration: Managing, Tuning,
+        and Securing Spark, YARN, and HDFS (Addison-Wesley Data &amp; Analytics Series)\"
+        width=\"52\" height=\"64\" class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/514b5bfe988e2bebdce8f4c35cc9aa63\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Expert-Hadoop-Administration-Addison-Wesley-Analytics/dp/0134597192?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=0134597192\"
+        rel=\"nofollow\">Expert Hadoop Administration: Managing, Tuning, and Securing
+        Spark, YARN, and HDFS (Addison-Wesley Data &amp; Analytics Series)</a><b class=\"bt\">
+        (2016)</b><br/><span class=\"ba\">by Sam R. Alapati</span></td></tr><tr><td
+        style=\"padding: 15px\" align=\"center\"><a href=\"https://www.amazon.com/Programming-Pig-Dataflow-Scripting-Hadoop/dp/1491937092?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1491937092\"
+        rel=\"nofollow\"><img alt=\"Programming Pig: Dataflow Scripting with Hadoop\"
+        width=\"52\" height=\"64\" class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/e244405e5e540c3abeafe54f2ddbbb6e\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Programming-Pig-Dataflow-Scripting-Hadoop/dp/1491937092?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1491937092\"
+        rel=\"nofollow\">Programming Pig: Dataflow Scripting with Hadoop</a><b class=\"bt\">
+        (2016)</b><br/><span class=\"ba\">by Alan Gates, Daniel Dai</span></td></tr><tr><td
+        style=\"padding: 15px\" align=\"center\"><a href=\"https://www.amazon.com/Practical-Hadoop-Ecosystem-Definitive-Hadoop-Related/dp/1484221982?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1484221982\"
+        rel=\"nofollow\"><img alt=\"Practical Hadoop Ecosystem: A Definitive Guide
+        to Hadoop-Related Frameworks and Tools\" width=\"52\" height=\"64\" class=\"bookimg\"
+        src=\"https://d2j3q9yua85jt3.cloudfront.net/img/fa1081b1695b386e3286b341fccba79e\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Practical-Hadoop-Ecosystem-Definitive-Hadoop-Related/dp/1484221982?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1484221982\"
+        rel=\"nofollow\">Practical Hadoop Ecosystem: A Definitive Guide to Hadoop-Related
+        Frameworks and Tools</a><b class=\"bt\"> (2016)</b><br/><span class=\"ba\">by
+        Deepak Vohra</span></td></tr><tr><td style=\"padding: 15px\" align=\"center\"><a
+        href=\"https://www.amazon.com/Professional-Hadoop-Benoy-Antony/dp/111926717X?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=111926717X\"
+        rel=\"nofollow\"><img alt=\"Professional Hadoop\" width=\"52\" height=\"64\"
+        class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/4b959478c3fd40e6d0344bea1265e71c\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Professional-Hadoop-Benoy-Antony/dp/111926717X?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=111926717X\"
+        rel=\"nofollow\">Professional Hadoop</a><b class=\"bt\"> (2016)</b><br/><span
+        class=\"ba\">by Benoy Antony, Konstantin Boudnik, Cheryl Adams, Branky Shao,
+        Cazen Lee, Kai Sasaki</span></td></tr><tr><td style=\"padding: 15px\" align=\"center\"><a
+        href=\"https://www.amazon.com/Kick-Start-Hadoop-Getting-started-ebook/dp/B01A39WEJ2?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01A39WEJ2\"
+        rel=\"nofollow\"><img alt=\"Kick Start Hadoop: Apache Pig: Getting started
+        with Data Science on Hadoop\" width=\"52\" height=\"64\" class=\"bookimg\"
+        src=\"https://d2j3q9yua85jt3.cloudfront.net/img/107bceab22c6a9219484bdfd548f3f45\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Kick-Start-Hadoop-Getting-started-ebook/dp/B01A39WEJ2?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01A39WEJ2\"
+        rel=\"nofollow\">Kick Start Hadoop: Apache Pig: Getting started with Data
+        Science on Hadoop</a><b class=\"bt\"> (2016)</b><br/><span class=\"ba\">by
+        Mario Meir-Huber</span></td></tr><tr><td style=\"padding: 15px\" align=\"center\"><a
+        href=\"https://www.amazon.com/Hadoop-Quick-Start-Guide-Essentials-Addison-Wesley/dp/0134049942?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=0134049942\"
+        rel=\"nofollow\"><img alt=\"Hadoop 2 Quick-Start Guide: Learn the Essentials
+        of Big Data Computing in the Apache Hadoop 2 Ecosystem (Addison-Wesley Data
+        &amp; Analytics)\" width=\"52\" height=\"64\" class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/2234685122ac73ead66c22e397ae90a5\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Hadoop-Quick-Start-Guide-Essentials-Addison-Wesley/dp/0134049942?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=0134049942\"
+        rel=\"nofollow\">Hadoop 2 Quick-Start Guide: Learn the Essentials of Big Data
+        Computing in the Apache Hadoop 2 Ecosystem (Addison-Wesley Data &amp; Analytics)</a><b
+        class=\"bt\"> (2015)</b><br/><span class=\"ba\">by Douglas Eadline</span></td></tr><tr><td
+        style=\"padding: 15px\" align=\"center\"><a href=\"https://www.amazon.com/Data-Algorithms-Recipes-Scaling-Hadoop/dp/1491906189?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1491906189\"
+        rel=\"nofollow\"><img alt=\"Data Algorithms: Recipes for Scaling Up with Hadoop
+        and Spark\" width=\"52\" height=\"64\" class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/f6b30d6aacbf2e96515d9f10c87c6a80\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Data-Algorithms-Recipes-Scaling-Hadoop/dp/1491906189?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1491906189\"
+        rel=\"nofollow\">Data Algorithms: Recipes for Scaling Up with Hadoop and Spark</a><b
+        class=\"bt\"> (2015)</b><br/><span class=\"ba\">by Mahmoud Parsian</span></td></tr><tr><td
+        style=\"padding: 15px\" align=\"center\"><a href=\"https://www.amazon.com/Hadoop-Security-Protecting-Your-Platform/dp/1491900989?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1491900989\"
+        rel=\"nofollow\"><img alt=\"Hadoop Security: Protecting Your Big Data Platform\"
+        width=\"52\" height=\"64\" class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/f1cd9bed52473496d6d883c1764b268e\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Hadoop-Security-Protecting-Your-Platform/dp/1491900989?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1491900989\"
+        rel=\"nofollow\">Hadoop Security: Protecting Your Big Data Platform</a><b
+        class=\"bt\"> (2015)</b><br/><span class=\"ba\">by Ben Spivey, Joey Echeverria</span></td></tr><tr><td
+        style=\"padding: 15px\" align=\"center\"><a href=\"https://www.amazon.com/Apache-Oozie-Workflow-Scheduler-Hadoop/dp/1449369928?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1449369928\"
+        rel=\"nofollow\"><img alt=\"Apache Oozie: The Workflow Scheduler for Hadoop\"
+        width=\"52\" height=\"64\" class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/c17bb1d9abc184ac74218756cd81843d\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Apache-Oozie-Workflow-Scheduler-Hadoop/dp/1449369928?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1449369928\"
+        rel=\"nofollow\">Apache Oozie: The Workflow Scheduler for Hadoop</a><b class=\"bt\">
+        (2015)</b><br/><span class=\"ba\">by Mohammad Kamrul Islam, Aravind Srinivasan</span></td></tr><tr><td
+        style=\"padding: 15px\" align=\"center\"><a href=\"https://www.amazon.com/Hadoop-Definitive-Storage-Analysis-Internet/dp/1491901632?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1491901632\"
+        rel=\"nofollow\"><img alt=\"Hadoop: The Definitive Guide: Storage and Analysis
+        at Internet Scale\" width=\"52\" height=\"64\" class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/6e6b243bd4cc2c28547724936d634f44\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Hadoop-Definitive-Storage-Analysis-Internet/dp/1491901632?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1491901632\"
+        rel=\"nofollow\">Hadoop: The Definitive Guide: Storage and Analysis at Internet
+        Scale</a><b class=\"bt\"> (2015)</b><br/><span class=\"ba\">by Tom White</span></td></tr><tr><td
+        style=\"padding: 15px\" align=\"center\"><a href=\"https://www.amazon.com/Field-Guide-Hadoop-Introduction-Technologies/dp/1491947934?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1491947934\"
+        rel=\"nofollow\"><img alt=\"Field Guide to Hadoop: An Introduction to Hadoop,
+        Its Ecosystem, and Aligned Technologies\" width=\"52\" height=\"64\" class=\"bookimg\"
+        src=\"https://d2j3q9yua85jt3.cloudfront.net/img/73bdce23d3798f0f353151f69c53f4e2\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Field-Guide-Hadoop-Introduction-Technologies/dp/1491947934?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1491947934\"
+        rel=\"nofollow\">Field Guide to Hadoop: An Introduction to Hadoop, Its Ecosystem,
+        and Aligned Technologies</a><b class=\"bt\"> (2015)</b><br/><span class=\"ba\">by
+        Kevin Sitto, Marshall Presser</span></td></tr><tr><td style=\"padding: 15px\"
+        align=\"center\"><a href=\"https://www.amazon.com/Hadoop-Practice-Techniques-Alex-Holmes/dp/1617292222?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1617292222\"
+        rel=\"nofollow\"><img alt=\"Hadoop in Practice: Includes 104 Techniques\"
+        width=\"52\" height=\"64\" class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/51b327d8267edb740b363739d4351b70\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Hadoop-Practice-Techniques-Alex-Holmes/dp/1617292222?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1617292222\"
+        rel=\"nofollow\">Hadoop in Practice: Includes 104 Techniques</a><b class=\"bt\">
+        (2014)</b><br/><span class=\"ba\">by Alex Holmes</span></td></tr><tr><td style=\"padding:
+        15px\" align=\"center\"><a href=\"https://www.amazon.com/Getting-Started-Impala-Interactive-Apache/dp/1491905778?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1491905778\"
+        rel=\"nofollow\"><img alt=\"Getting Started with Impala: Interactive SQL for
+        Apache Hadoop\" width=\"52\" height=\"64\" class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/dfb6a507b0d7f1a12d380df64cf4ca1d\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Getting-Started-Impala-Interactive-Apache/dp/1491905778?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1491905778\"
+        rel=\"nofollow\">Getting Started with Impala: Interactive SQL for Apache Hadoop</a><b
+        class=\"bt\"> (2014)</b><br/><span class=\"ba\">by John Russell</span></td></tr><tr><td
+        style=\"padding: 15px\" align=\"center\"><a href=\"https://www.amazon.com/Pro-Apache-Hadoop-Jason-Venner/dp/1430248637?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1430248637\"
+        rel=\"nofollow\"><img alt=\"Pro Apache Hadoop\" width=\"52\" height=\"64\"
+        class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/b9d1f8ddf6c86ef331f2d857cc40a4ce\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Pro-Apache-Hadoop-Jason-Venner/dp/1430248637?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1430248637\"
+        rel=\"nofollow\">Pro Apache Hadoop</a><b class=\"bt\"> (2014)</b><br/><span
+        class=\"ba\">by Jason Venner, Sameer Wadkar, Madhu Siddalingaiah</span></td></tr><tr><td
+        style=\"padding: 15px\" align=\"center\"><a href=\"https://www.amazon.com/Hadoop-Laymen-Lars-Nielsen-ebook/dp/B00M8HMSMG?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00M8HMSMG\"
+        rel=\"nofollow\"><img alt=\"Hadoop for Laymen\" width=\"52\" height=\"64\"
+        class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/871c11e62ac86719d718ccace4f06e98\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Hadoop-Laymen-Lars-Nielsen-ebook/dp/B00M8HMSMG?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00M8HMSMG\"
+        rel=\"nofollow\">Hadoop for Laymen</a><b class=\"bt\"> (2014)</b><br/><span
+        class=\"ba\">by Lars Nielsen</span></td></tr><tr><td style=\"padding: 15px\"
+        align=\"center\"><a href=\"https://www.amazon.com/Hadoop-Dummies-Dirk-deRoos/dp/1118607554?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1118607554\"
+        rel=\"nofollow\"><img alt=\"Hadoop For Dummies\" width=\"52\" height=\"64\"
+        class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/cd9531d3dbda41457d617b389caa862a\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Hadoop-Dummies-Dirk-deRoos/dp/1118607554?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1118607554\"
+        rel=\"nofollow\">Hadoop For Dummies</a><b class=\"bt\"> (2014)</b><br/><span
+        class=\"ba\">by Dirk deRoos</span></td></tr><tr><td style=\"padding: 15px\"
+        align=\"center\"><a href=\"https://www.amazon.com/Apache-Hadoop-YARN-Processing-Addison-Wesley/dp/0321934504?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=0321934504\"
+        rel=\"nofollow\"><img alt=\"Apache Hadoop YARN: Moving beyond MapReduce and
+        Batch Processing with Apache Hadoop 2 (Addison-Wesley Data &amp; Analytics)\"
+        width=\"52\" height=\"64\" class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/76286febfad99061b6d3da8c6fa1249f\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Apache-Hadoop-YARN-Processing-Addison-Wesley/dp/0321934504?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=0321934504\"
+        rel=\"nofollow\">Apache Hadoop YARN: Moving beyond MapReduce and Batch Processing
+        with Apache Hadoop 2 (Addison-Wesley Data &amp; Analytics)</a><b class=\"bt\">
+        (2014)</b><br/><span class=\"ba\">by Arun Murthy, Vinod Vavilapalli, Douglas
+        Eadline, Joseph Niemiec, Jeff Markham</span></td></tr><tr><td style=\"padding:
+        15px\" align=\"center\"><a href=\"https://www.amazon.com/Professional-Hadoop-Solutions-Boris-Lublinsky/dp/1118611934?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1118611934\"
+        rel=\"nofollow\"><img alt=\"Professional Hadoop Solutions\" width=\"52\" height=\"64\"
+        class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/45c1e318b5c43400d5a6717e5ef3ebd0\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Professional-Hadoop-Solutions-Boris-Lublinsky/dp/1118611934?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1118611934\"
+        rel=\"nofollow\">Professional Hadoop Solutions</a><b class=\"bt\"> (2013)</b><br/><span
+        class=\"ba\">by Boris Lublinsky, Kevin T. Smith, Alexey Yakubovich</span></td></tr><tr><td
+        style=\"padding: 15px\" align=\"center\"><a href=\"https://www.amazon.com/Apache-Sqoop-Cookbook-Unlocking-Relational/dp/1449364624?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1449364624\"
+        rel=\"nofollow\"><img alt=\"Apache Sqoop Cookbook: Unlocking Hadoop for Your
+        Relational Database\" width=\"52\" height=\"64\" class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/fafd9b4ca0c43b844ce3c75b2861454b\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Apache-Sqoop-Cookbook-Unlocking-Relational/dp/1449364624?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1449364624\"
+        rel=\"nofollow\">Apache Sqoop Cookbook: Unlocking Hadoop for Your Relational
+        Database</a><b class=\"bt\"> (2013)</b><br/><span class=\"ba\">by Kathleen
+        Ting, Jarek Jarcec Cecho</span></td></tr><tr><td style=\"padding: 15px\" align=\"center\"><a
+        href=\"https://www.amazon.com/Apache-Flume-Distributed-Collection-Hadoop/dp/1782167919?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1782167919\"
+        rel=\"nofollow\"><img alt=\"Apache Flume: Distributed Log Collection for Hadoop
+        (What You Need to Know)\" width=\"52\" height=\"64\" class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/d8d858d506c3e5849538de49e64eb1c1\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Apache-Flume-Distributed-Collection-Hadoop/dp/1782167919?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1782167919\"
+        rel=\"nofollow\">Apache Flume: Distributed Log Collection for Hadoop (What
+        You Need to Know)</a><b class=\"bt\"> (2013)</b><br/><span class=\"ba\">by
+        Steve Hoffman</span></td></tr><tr><td style=\"padding: 15px\" align=\"center\"><a
+        href=\"https://www.amazon.com/Programming-Hive-Warehouse-Language-Hadoop/dp/1449319335?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1449319335\"
+        rel=\"nofollow\"><img alt=\"Programming Hive: Data Warehouse and Query Language
+        for Hadoop\" width=\"52\" height=\"64\" class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/baf8139b3c2b4b0b299e6580a1d50809\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Programming-Hive-Warehouse-Language-Hadoop/dp/1449319335?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1449319335\"
+        rel=\"nofollow\">Programming Hive: Data Warehouse and Query Language for Hadoop</a><b
+        class=\"bt\"> (2012)</b><br/><span class=\"ba\">by Edward Capriolo, Dean Wampler,
+        Jason Rutherglen</span></td></tr><tr><td style=\"padding: 15px\" align=\"center\"><a
+        href=\"https://www.amazon.com/Hadoop-Definitive-Guide-Tom-White/dp/1449311520?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1449311520\"
+        rel=\"nofollow\"><img alt=\"Hadoop: The Definitive Guide\" width=\"52\" height=\"64\"
+        class=\"bookimg\" src=\"https://d2j3q9yua85jt3.cloudfront.net/img/716763d2c59fbc9890f76919804d1da6\"/></a></td><td
+        style=\"padding: 15px\" valign=\"top\"><a class=\"bt\" href=\"https://www.amazon.com/Hadoop-Definitive-Guide-Tom-White/dp/1449311520?SubscriptionId=1K6EGPGKK5C3SN1X67R2&amp;tag=2c68ca2-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1449311520\"
+        rel=\"nofollow\">Hadoop: The Definitive Guide</a><b class=\"bt\"> (2012)</b><br/><span
+        class=\"ba\">by Tom White</span></td></tr></table></div></div></div><div id=\"right\"><div
+        id=\"ad1\" class=\"adbox\"><script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins
+        class=\"adsbygoogle\" style=\"display:inline-block;width:300px;height:250px\"
+        data-ad-client=\"ca-pub-1185571689816607\" data-ad-slot=\"2936886459\"></ins><script>
+        (adsbygoogle = window.adsbygoogle || []).push ({}); </script></div><div class=\"adbox\"><script
+        type=\"text/javascript\" src=\"https://ap.lijit.com/www/delivery/fpi.js?z=236049&u=frodriguez&width=300&height=250\"></script></div><div
+        class=\"adbox\"><script type=\"text/javascript\" src=\"https://ap.lijit.com/www/delivery/fpi.js?z=234067&u=frodriguez&width=300&height=250\"></script></div><div
+        style=\"text-align:center\"><h3><a href=\"/tags\">Popular Tags</a></h3><script
+        type=\"text/javascript\">\nvar tags = ['android','apache','api','application','archetype','assets','build','build-system','client','clojure','cloud','codehaus','config','database','eclipse','example','extension','github','groovy','gwt','http','ide','io','jboss','json','library','logging','maven','module','netbeans','osgi','persistence','platform','plugin','rest','scala','sdk','security','server','service','spring','streaming','testing','tools','ui','web','web-framework','webapp','webserver','xml'];\nvar
+        sizes = [4,5,4,3,1,5,5,4,4,5,3,2,1,3,4,5,1,5,2,1,2,2,5,3,1,2,2,4,3,1,3,2,3,5,2,4,2,1,4,3,4,1,5,3,3,5,2,4,1,1];\nfor
+        (var i in tags) {\ndocument.write(\"<a href='/tags/\" + tags[i] + \"' class='t\"
+        + sizes[i] + \"'>\" + tags[i] + \"</a>\\n\");\n}\n</script><br/><br/></div><br/><div
+        style=\"font-size: 13px; border-top: 1px solid gray; text-align: center; padding-top:
+        1em\">\nWeb site developed by <a href=\"https://twitter.com/frodriguez\">@frodriguez</a><br/><br/>\nPowered
+        by:\n<a href=\"/artifact/org.scala-lang\">Scala</a>,\n<a href=\"/artifact/com.typesafe.play\">Play</a>,\n<a
+        href=\"/artifact/org.apache.spark\">Spark</a>,\n<a href=\"/artifact/com.typesafe.akka\">Akka</a>
+        and\n<a href=\"/artifact/org.apache.cassandra\">Cassandra</a></div></div></div><div
+        id=\"footer\">\nCopyright &copy; 2006-2017 MvnRepository. All rights reserved.<br/><span
+        style=\"text-align: center\">Web site developed by <a href=\"https://twitter.com/frodriguez\">@frodriguez</a></span><br/><a
+        href=\"mailto:info@mvnrepository.com\">Contact Us</a></div><script src=\"/assets/javascripts/d41af0256b967c47b1d19aae48699662-perf.js\"
+        type=\"text/javascript\" async></script></body></html>"}
+    headers:
+      Cache-Control: ['public, max-age=60']
+      Connection: [keep-alive]
+      Content-Length: ['49702']
+      Content-Type: [text/html; charset=utf-8]
+      Date: ['Mon, 30 Oct 2017 14:26:12 GMT']
+      ETag: ['"8cdc5073a56b33badf20a3c728501896"']
+      Server: [nginx/1.10.1]
+      Set-Cookie: ['MVN_SESSION=63e4fa6dacf4495df477d233545b9302cbc8f4b5-uid=4781fe40-bd7e-11e7-9089-d19e06634963;
+          Max-Age=31536000; Expires=Tue, 30 Oct 2018 14:26:12 GMT; Path=/; HTTPOnly']
+    status: {code: 200, message: OK}
+version: 1
