@@ -8,23 +8,30 @@ from app.manifest import *
 
 
 PIPFILE_PATTERN = 'Pipfile'
-RUNTIME_REQUIREMENTS_PATTERN = 'requirements.txt'
-DEVELOPMENT_REQUIREMENTS_PATTERNS = [
+
+RUNTIME_REQUIREMENTS_PATTERNS = (
+    'requirements.txt',
+    'requirements'
+)
+
+DEVELOPMENT_REQUIREMENTS_PATTERNS = (
     'requirements?test.txt',
-    'requirements?testing.txt',
+    'requirements?test',
     'requirements?dev.txt',
+    'requirements?dev',
     'requirements?development.txt',
-    'requirements?docs.txt',
+    'requirements?development',
     'test?requirements.txt',
-    'testing?requirements.txt',
+    'test?requirements',
     'dev?requirements.txt',
+    'dev?requirements',
     'development?requirements.txt',
-    'docs?requirements.txt'
-]
+    'development?requirements'
+)
 
 PATTERNS = [
     PIPFILE_PATTERN,
-    RUNTIME_REQUIREMENTS_PATTERN,
+    *RUNTIME_REQUIREMENTS_PATTERNS,
     *DEVELOPMENT_REQUIREMENTS_PATTERNS
 ]
 
@@ -105,4 +112,4 @@ class PythonRepositoryMatcher(RepositoryMatcher):
         return node.match_any(DEVELOPMENT_REQUIREMENTS_PATTERNS)
 
     def __runtime_requirements_file(self, node):
-        return node.match(RUNTIME_REQUIREMENTS_PATTERN)
+        return node.match_any(RUNTIME_REQUIREMENTS_PATTERNS)
