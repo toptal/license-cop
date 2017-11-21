@@ -12,11 +12,11 @@ The following platforms are supported:
 
 - Ruby — [RubyGems](https://rubygems.org):
   - [x] [`Gemfile`](http://bundler.io/v1.15/man/gemfile.5.html)
-  - [ ] [`*.gemspec`](http://guides.rubygems.org/specification-reference/) files (_not being used in Toptal projects_)
+  - [ ] [`*.gemspec`](http://guides.rubygems.org/specification-reference/) files
 - Python — [PyPI](https://pypi.python.org):
   - [x] [Requirements files](https://pip.readthedocs.io/en/1.1/requirements.html) (eg: `requirements.txt`, `requirements-test.txt`...)
   - [x] [`Pipfile`](https://github.com/pypa/pipfile)
-  - [ ] [`setup.py`](https://packaging.python.org/tutorials/distributing-packages/) (_not being used in Toptal projects_)
+  - [ ] [`setup.py`](https://packaging.python.org/tutorials/distributing-packages/)
 - Node.js — [NPM](https://www.npmjs.com):
   - [x] `package.json`
 - Scala:
