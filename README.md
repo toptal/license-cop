@@ -1,6 +1,6 @@
 # License Cop
 
-[![Build Status](https://travis-ci.com/toptal/license-cop.svg?token=KZzZ9kSFesRfQ58xUpUp&branch=master)](https://travis-ci.com/toptal/license-cop)
+[![Build Status](https://travis-ci.org/toptal/license-cop.svg?branch=master)](https://travis-ci.org/toptal/license-cop)
 
 A nifty script that fetches the licenses for all your third-party libraries.
 
