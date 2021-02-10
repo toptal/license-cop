@@ -37,6 +37,34 @@ You will need:
 - Python 3.6+
 - [Pipenv](https://pypi.python.org/pypi/pipenv)
 
+## Using Docker
+
+Docker allows you to build whole environment required for running license-bot in an easy way.
+
+### Building a Docker image
+
+Enter directory with project, then run:
+
+```
+docker image build . -t license-bot-image
+```
+
+### Running license bot
+
+The following command will collect all licenses for given repository in `report.txt`
+```
+docker run -e GITHUB_TOKEN='YOUR_GH_TOKEN' --entrypoint ./license-cop license-bot-image  https://github.com/toptal/some-repository report.txt
+```
+
+### Running tests and linter
+
+```
+docker run --entrypoint ./test.sh license-bot-image
+docker run --entrypoint ./lint.sh license-bot-image
+```
+
+## Local installation
+
 ### Installing Pipenv
 
 It's advisable to [install Pipenv locally](http://docs.python-guide.org/en/latest/dev/virtualenvs/#installing-pipenv),
